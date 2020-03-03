@@ -1,0 +1,30 @@
+/* CSS Document */
+
+#pg-search form { margin: 0; }
+
+#pg-search form .textinput
+{
+    height:20px;
+    width: 300px;
+    margin: 5px 0 0 7px;
+    float: left;
+    border: none;
+    font-family:'Trebuchet MS';
+    font-size:12px;
+    color:rgb(88,88,88);
+    line-height:20px;
+    background: url(/skins/default/img/inputback.gif) repeat-x;
+}
+
+#pg-search form .search { margin: 5px 0 0 10px }
+
+table.simpleTable input[type="text"], table.simpleTable input[type="password"] { width: 200px }
+
+form.simpleForm {
+    width: 415px;
+    text-align: left;
+}
+
+form.simpleForm input[type="checkbox"] { margin: 0 }
+
+form.simpleForm input[type="button"] { margin: 20px 0 50px 305px }

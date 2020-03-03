@@ -1,0 +1,926 @@
+﻿
+/***************
+ * Név:         _text.css
+ * Leírás:      eduline.hu text css
+ * Keletkezés:  2007.08.22.
+ * Fejlesztő:   Zsibrita György
+ * FONTOS:		Éles site-on belül a kommenteket távolítsuk el.
+ ****************/
+.topmenu ul
+{
+    list-style-type: none;
+    margin: 8px 0 0 0;
+    padding: 0;
+    height: 20px;
+    line-height: 20px;
+}
+.topmenu li
+{
+    display: inline;
+    margin: 0 0 0 15px;
+    padding: 0 0 0 25px;
+    height: 20px;
+    background: url( "../img/top_bullet.gif" ) no-repeat left top;
+    float: left;
+}
+ul
+{
+    list-style-type: disc;
+    font: normal 11px Arial, Verdana, Geneva, Helvetica, sans-serif;
+    padding-top: 0px;
+    margin: 0;
+}
+
+li
+{
+    padding-left: 10px;
+    margin: 0;
+}
+
+#menubar ul
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height: 28px;
+    line-height: 28px;
+}
+#menubar h4
+{
+    display: inline;
+    margin: 0;
+    padding: 0;
+    width: 110px;
+    height: 28px;
+    background: url("../img/menu_bg.gif" ) no-repeat left top;
+    float: left;
+}
+
+#menubar h4.puska_menu
+{
+	background: url("../img/MC_caffe/edu_1.gif" ) no-repeat left top;
+	/*background: url("../img/MC_caffe/edu_0.gif" ) no-repeat left top;*/
+}
+
+#menubar h4.puska_menu a:link, #menubar h4.puska_menu a:visited { color: #4A220E }
+
+#menubar h4.puska_menu a:hover, #menubar h4#selected_puska
+{
+	background: url("../img/MC_caffe/edu_1.gif" ) no-repeat left top;	
+}
+
+#menubar h4.felvetelip{
+width:250px;
+}
+
+#menubar h4.separ
+{
+    display: inline;
+    margin: 0;
+    padding: 0;
+    width: 4px;
+    height: 28px;
+    background: url(../img/separ_bg.gif);
+    float: left;
+}
+.quart-box ul, .box .content ul, .relatio ul
+{
+    margin: 0 0 0 12px;
+    padding: 0 0 0 0;
+}
+.quart-box li, .box .content li, .relatio li
+{
+    margin: 0px 0 0 12px;
+    padding: 0;
+    font-family: "Trebuchet MS" , Tahoma, Arial;
+    font-size: 9px;
+    color: #afafaf;
+    text-align: left;
+    line-height: 16px;
+    list-style-image: url(../img/bullet.gif);
+}
+.quart-box li.opp
+{
+    margin: 0px 0 0 12px;
+    padding: 0;
+    font-family: "Trebuchet MS" , Tahoma, Arial;
+    font-size: 11px;
+    color: #768991;
+    text-align: left;
+    line-height: 16px;
+    list-style-image: url(../img/bullet.gif);
+}
+.quart-box li.date
+{
+    margin: 0px 0 0 12px;
+    padding: 0;
+    font-family: "Trebuchet MS" , Tahoma, Arial;
+    font-size: 9px;
+    color: #afafaf;
+    text-align: left;
+    line-height: 16px;
+    list-style-image: none;
+    list-style: none;
+}
+.ajanlo-col li.date
+{
+    margin: 0px 0 8px 12px;
+    padding: 0;
+    font-family: "Trebuchet MS" , Tahoma, Arial;
+    font-size: 11px;
+    color: #768991;
+    text-align: left;
+    line-height: 16px;
+    list-style-image: none;
+    list-style: none;
+}
+.lead p, .search-content p
+{
+    font-family: "Trebuchet MS" , Tahoma, Arial;
+    font-size: 12px;
+    color: #000000;
+    text-align: left;
+    margin-right: 5px;
+    line-height: 16px;
+}
+.article-more p
+{
+    font-family: "Trebuchet MS" , Tahoma, Arial;
+    font-size: 12px;
+    color: #212121;
+    text-align: left;
+    margin: 0;
+    line-height: 16px;
+}
+.content-col h2, .ajanlo-col .article-more h2
+{
+    font-family: "Trebuchet MS" , Tahoma, Arial;
+    font-size: 15px;
+    color: #afbac1;
+    text-align: left;
+    margin-right: 5px;
+    line-height: 20px;
+}
+.search-content h2 {
+    font-family: "Trebuchet MS" , Tahoma, Arial;
+    font-size: 14px;
+    color: #F0710C;
+    text-align: left;
+    margin-right: 5px;
+    line-height: 20px;
+}
+
+.upload h4
+{
+    font-family: "Trebuchet MS" , Tahoma, Arial;
+    font-size: 12px;
+    color: #afbac1;
+    text-align: left;
+    margin: 5px 0 5px 15px;
+    line-height: 20px;
+}
+.nyelv h4
+{
+    /*font-family: "Trebuchet MS" , Tahoma, Arial;
+    font-size: 12px;
+    color: #afbac1;
+    text-align: left;
+    margin: 5px 0 5px 15px;
+    line-height: 20px;*/
+background:transparent url(../img/ajanlo_h1_bg.gif) repeat-x scroll left top;
+color:#FFFFFF;
+font-family:"Trebuchet MS",Tahoma,Arial;
+font-size:16px;
+height:27px;
+line-height:27px;
+margin:0pt;
+padding-left:15px;
+text-align:left;
+width:600px;
+
+
+}
+
+.content-col .head-alt h2, .ajanlo-col .head-alt h2
+{
+    font-family: "Trebuchet MS" , Tahoma, Arial;
+    font-size: 15px;
+    color: #768991;
+    text-align: left;
+    line-height: 20px;
+    margin: 0 0 0 12px;
+    padding: 0;
+}
+.subsearch h2
+{
+    font-family: "Trebuchet MS" , Tahoma, Arial;
+    font-size: 15px;
+    color: #afbac1;
+    text-align: left;
+    margin-left: 13px;
+    line-height: 20px;
+}
+.article-more h3
+{
+    font-family: "Trebuchet MS" , Tahoma, Arial;
+    font-size: 13px;
+    color: #f0710c;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+}
+.content-col .content h5
+{
+    font-family: "Trebuchet MS" , Tahoma, Arial;
+    font-size: 12px;
+    font-weight: bold;
+    color: #212121;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+}
+.content p span, .lead p span
+{
+    font-size: 16px;
+    font-weight: bold;
+    color: #0087cf;
+}
+.lead h1
+{
+    font-family: "Trebuchet MS" , Tahoma, Arial;
+    font-size: 16px;
+    color: #ee6c03;
+    text-align: left;
+}
+.ajanlo-col h1
+{
+    height: 27px;
+    width: 572px;
+    margin: 0 0 10px 5px;
+    padding: 0 0 0 15px;
+    font: bold 16px "Trebuchet MS", Tahoma, Arial, Helvetica, sans-serif;
+    color: #FFF;
+    line-height: 27px;
+    text-align: left;
+    background: url(../img/ajanlo_h1_bg.gif) repeat-x top left;
+}
+.content-col .lead h1, .content-col .lead span
+{
+    font: bold 16px "Trebuchet MS", Tahoma, Arial;
+    color: #FFF;
+    line-height: 22px;
+    padding: 2px 0 0 0;
+    margin: 0 0 25px 15px;
+    text-align: left;
+}
+
+.content-col .lead h1.tagh1, .content-col .lead span {
+	margin: 0;
+	display: inline;
+}
+
+.content-col .head h1
+{
+    font-family: "Trebuchet MS" , Tahoma, Arial;
+    font-size: 16px;
+    color: #ffffff;
+    line-height: 22px;
+    padding: 2px 0 0 0;
+    margin: 0 0 0 15px;
+    text-align: left;
+    clear: both;
+}
+
+.content-col .content h1
+{
+    font-family: "Trebuchet MS" , Tahoma, Arial;
+    font-size: 20px;
+    color: #ffffff;
+    line-height: 19px;
+    margin: 0 0 25px 0px;
+    text-align: left;
+}
+.quart-box h1, .quart-box h4, .affiliate .quart-box h4, .quart-box h6
+{
+    background: url(../img/quart_h1_bg.gif) no-repeat;
+    width: 182px;
+    height: 28px;
+    margin: 0;
+    padding: 0;
+    line-height: 28px;
+    padding-left: 15px;
+    font-family: "Trebuchet MS" , Tahoma, Arial;
+    font-size: 15px;
+    color: #ee6c03;
+}
+.quart-box h2, .quart-box h5
+{
+    background: url(../img/h2_bg.gif) no-repeat;
+    width: 182px;
+    height: 28px;
+    margin: 0;
+    padding: 0;
+    line-height: 28px;
+    padding-left: 15px;
+    font-family: "Trebuchet MS" , Tahoma, Arial;
+    font-size: 15px;
+    color: #fff;
+}
+.content .fenyitem
+{
+    width: 182px;
+    background: url(../img/feny_bg.gif) no-repeat top left;
+    display: block;
+    line-height: 18px;
+}
+
+.content .fenyitem span
+{
+    font-size: 16px;
+    font-weight: bold;
+    color: #0087cf;
+}
+.half-col .box .head h2, h2#search_again_head
+{
+    margin: 0;
+    padding: 0;
+    line-height: 28px;
+    padding-left: 15px;
+    font-family: "Trebuchet MS" , Tahoma, Arial;
+    font-size: 15px;
+    color: #fff;
+    float: left;
+}
+.ajanlo-col .box .head h2
+{
+    margin: 0 0 0 15px;
+    padding: 0;
+    line-height: 28px;
+    width: 600px;
+    text-align: left;
+    padding-left: 15px;
+    font-family: "Trebuchet MS" , Tahoma, Arial;
+    background: url(../img/ajanlo_h1_bg.gif) repeat-x;
+    font-size: 15px;
+    color: #fff;
+    float: left;
+}
+
+
+.half-col .box .head h3
+{
+    margin: 0;
+    padding: 0;
+    line-height: 28px;
+    padding-right: 15px;
+    font-family: "Trebuchet MS" , Tahoma, Arial;
+    font-size: 13px;
+    color: #fff;
+    float: right;
+}
+.half p, .box .content p
+{
+    margin: 0 0 0 12px;
+}
+.pg-foot-top p, .pg-foot-btm p
+{
+    font-family: "Trebuchet MS" , Tahoma, Arial;
+    color: #768991;
+    font-size: 11px;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+.content-col .content p
+{
+    font-family: "Trebuchet MS" , Tahoma, Arial;
+    font-size: 12px;
+    color: #000000;
+    text-align: left;
+    margin-right: 5px;
+    line-height: 16px;
+}
+
+ .content-col .content { font-family: "Trebuchet MS" , Tahoma, Arial;
+    font-size: 12px;
+    color: #000000;
+    text-align: left;}
+.content-col .content p.leader
+{
+    font-weight: bold;
+    clear: left;
+	line-height:20px;
+}
+
+.content-col .content .date p
+{
+    font-family: "Trebuchet MS" , Tahoma, Arial;
+    font-size: 11px;
+    color: #afafaf;
+    text-align: left;
+    line-height: 23px;
+}
+.content-col .content .icons p
+{
+    font-family: "Trebuchet MS" , Tahoma, Arial;
+    font-size: 11px;
+    color: #afafaf;
+    text-align: right;
+}
+.comment .user p
+{
+    margin: 0 0 0 15px;
+    font-family: "Trebuchet MS" , Tahoma, Arial;
+    font-size: 11px;
+    color: #768991;
+    font-weight: bold;
+    text-align: left;
+    line-height: 16px;
+}
+.comment .date p
+{
+    margin: 0 15px 0 0;
+    font-family: "Trebuchet MS" , Tahoma, Arial;
+    font-size: 11px;
+    color: #a7b3b9;
+    font-weight: bold;
+    text-align: right;
+    line-height: 16px;
+}
+
+.comment-body p
+{
+    font-family: "Trebuchet MS" , Tahoma, Arial;
+    font-size: 11px;
+    color: #a7b3b9;
+    padding: 5px;
+    text-align: left;
+}
+
+
+.ajanlo-col td h4
+{
+    font-family: "Trebuchet MS" , Tahoma, Arial;
+    font-size: 12px;
+    color: #212121;
+    margin: 0;
+    padding: 0 0 0 5px;
+    text-align: left;
+}
+
+.ajanlo-col td p
+{
+    font-family: "Trebuchet MS" , Tahoma, Arial;
+    font-size: 11px;
+    color: #768991;
+    font-weight: bold;
+    padding: 0 0 0px 5px;
+    text-align: left;
+}
+.ajanlo-col td.content p span, .ajanlo-col p span
+{
+    font-family: "Trebuchet MS" , Tahoma, Arial;
+    font-size: 12px;
+    color: #768991;
+    margin: 0;
+    font-weight: bold;
+    padding: 0 0 0 0px;
+    text-align: left;
+}
+.ajanlo-col td.content h3 span, .ajanlo-col td.content h2 span
+{
+    font-family: "Trebuchet MS" , Tahoma, Arial;
+    font-size: 12px;
+    color: #768991;
+    margin: 0;
+    font-weight: bold;
+    padding: 0 0 0 0px;
+    text-align: left;
+}
+.ajanlo-col td.content p, .ajanlo-col p, .ajanlo-col td.content h3
+{
+    margin: 0 0 0 10px;
+    padding: 0;
+    font: normal 11px "Trebuchet MS" , Tahoma, Arial;
+    color: #000;
+    line-height: 18px;
+    text-align: left;
+}
+
+ .ajanlo-col td.content h2.description
+{
+    margin: 5px 0 5px 10px;
+    padding: 0;
+    font: normal 11px "Trebuchet MS" , Tahoma, Arial;
+    color: #000;
+    line-height: 18px;
+    text-align: left;
+}
+.ajanlo-col td.content #tdOpened529 p.description { padding: 10px 5px; }
+
+.ajanlo-col td.content #tdOpened76 p.description { margin: 0 0 0 15px; }
+
+.ajanlo-col td.content #tdOpened76 p.keywords { margin: 0 0 0 15px; }
+
+.ajanlo-col td.content #tdOpened76 p.keywords span { padding: 0; }
+
+.pager p
+{
+    font-family: "Trebuchet MS" , Tahoma, Arial;
+    font-size: 11px;
+    color: #212121;
+    font-weight: bold;
+    line-height: 18px;
+}
+
+.content .star ul
+{
+    margin: 0 0 0 0;
+    list-style: none;
+    padding: 0;
+}
+.content .star li, .lead .star li
+{
+    display: inline;
+    padding: 0;
+    margin: 0 0 0 0;
+    list-style: none;
+    line-height: 16px;
+}
+
+.mehet .poll ul
+{
+    margin: 4px 0 0 0;
+    list-style: none;
+    padding: 0;
+}
+
+.mehet .poll li
+{
+    display: inline;
+    padding: 0;
+    margin: 0 0 0 0;
+    list-style: none;
+}
+
+.mehet .poll li img
+{
+    border: none;
+}
+
+.reinvited
+{
+  color: #8899a0;
+  font-weight: bold;
+  line-height: 20px;
+	position: absolute;
+	vertical-align: middle;
+	text-align: center;
+	left: 200px;
+	top: 200px;
+	width: 300px;
+	height: 80px;
+	background-color: White;
+	z-index: 101;
+	display: inline;
+	border: medium double rgb(0,0,0);
+}
+
+table.profil td p
+{
+    color: #8899a0;
+    font-weight: bold;
+    line-height: 20px;
+    margin: 0;
+    padding: 0;
+}
+span.public
+{
+    width: 23px;
+    height: 23px;
+    background: url(../img/public.gif) no-repeat;
+    float: right;
+}
+
+span.private
+{
+    width: 23px;
+    height: 23px;
+    background: url(../img/private.gif) no-repeat;
+    float: right;
+}
+
+.usermenu ul
+{
+    list-style-type: none;
+    margin: 0 0 0 0;
+    padding: 0;
+    line-height: 20px;
+}
+.usermenu li
+{
+    margin: 0 0 0 5px;
+    list-style: none;
+    line-height: 18px;
+    background: url( "../img/usep.gif" ) repeat-x left bottom;
+}
+
+.usermenu li.sub span
+{
+    margin: 0 0 0 8px;
+    padding: 0 0 0 14px;
+    line-height: 18px;
+    background: url( "../img/sub.gif" ) no-repeat left top;
+}
+
+.details li.sub
+{
+    background: none;
+}
+.details li.sub span
+{
+    margin: 0;
+    padding: 0 0 0 14px;
+    line-height: 18px;
+    background: url( "../img/sub.gif" ) no-repeat left top;
+}
+.content table.forum td p
+{
+    color: #768991;
+    font-family: "Trebuchet MS" , Tahoma, Arial;
+    font-size: 11px;
+    line-height: 18px;
+    font-weight: bold;
+}
+table.profil td 
+{
+     color: #768991;
+    font-family: "Trebuchet MS" , Tahoma, Arial;
+    font-size: 11px;
+    line-height: 18px;
+    font-weight: bold;
+    margin:0 0 0 5px;
+    }
+.content table.forum td p span
+{
+    background: url( "../img/pen.gif" ) no-repeat left 5px;
+    padding: 0 0 0 20px;
+}
+.num p, .other p
+{
+    color: #768991;
+    font-family: "Trebuchet MS" , Tahoma, Arial;
+    font-size: 11px;
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+p.posted
+{
+    color: #4a575c;
+    font-family: "Trebuchet MS" , Tahoma, Arial;
+    font-size: 11px;
+}
+
+
+.post-avatar p
+{
+    color: #4a575c;
+    font-family: "Trebuchet MS" , Tahoma, Arial;
+    font-size: 11px;
+    text-align: center;
+    line-height: 20px;
+}
+
+p.forum
+{
+    font-size: 10px;
+}
+
+p.forum span
+{
+    color: #f0710c;
+    font-family: "Trebuchet MS" , Tahoma, Arial;
+    font-size: 10px;
+    font-weight: bold;
+    background: url( "../img/oarr.gif" ) no-repeat left top;
+    padding: 0 0 0 20px;
+}
+blockquote
+{
+    background: #ffe7cb url( "../img/quote1.gif" ) no-repeat left top;
+    overflow: hidden;
+}
+
+
+blockquote span
+{
+    background: url( "../img/quote1.gif" ) no-repeat left top;
+    float: right;
+    width: 30px;
+    height: 30px;
+}
+
+
+blockquote h6
+{
+    margin: 15px 0 0 30px;
+    line-height: 22px;
+    color: #f0710c;
+    font-family: "Trebuchet MS" , Tahoma, Arial;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.content-col .content blockquote p.prev
+{
+    color: #eb6400;
+    font-family: "Trebuchet MS" , Tahoma, Arial;
+    font-size: 11px;
+    font-style: italic;
+    padding: 5px;
+}
+
+
+span.opener
+{
+    background: url(../img/opener.gif) no-repeat left 2px;
+    width: 11px;
+    float: left;
+    margin: 0 10px 0 0;
+    _margin: 0 10px 0 3px;
+    display: block;
+}
+span.edit
+{
+    background: url(../img/szerkeszt.gif) no-repeat top left;
+    width:18px;
+    height:18px;
+    
+    float: left;
+   /* margin: 0 10px 0 0;
+    _margin: 0 10px 0 3px;*/
+    /*display: block;*/
+}
+
+span.closer
+{
+    background: url(../img/closer.gif) no-repeat left 2px;
+    width: 11px;
+    float: left;
+    margin: 0 10px 0 0;
+    _margin: 0 10px 0 3px;
+    display: block;
+}
+
+
+.partner .details h3
+{
+    color: #768991;
+    font-family: "Trebuchet MS" , Tahoma, Arial;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+
+.partner .details ul
+{
+    list-style-type: none;
+    margin: 0 0 0 0;
+    padding: 0;
+    line-height: 20px;
+}
+.partner .details li
+{
+    margin: 0 0 0 5px;
+    list-style: none;
+    line-height: 18px;
+}
+.group p  span {
+    font-family: "Trebuchet MS" , Tahoma, Arial;
+    font-size: 11px;
+    font-weight: bold;
+    color: #212121;
+}
+
+.group p  {
+    font-family: "Trebuchet MS" , Tahoma, Arial;
+    font-size: 11px;
+    font-weight: bold;
+    color: #91a0a7;
+    line-height:22px;
+    margin:0 0 0 10px;
+}
+
+
+.messagebody p  {
+    font-family: "Trebuchet MS" , Tahoma, Arial;
+    font-size: 11px;
+    font-weight: normal;
+    color: #91a0a7;
+    line-height:22px;
+    margin:0 0 0 10px;
+}
+
+p.message span {
+    font-family: "Trebuchet MS" , Tahoma, Arial;
+    font-size: 11px;
+    font-weight: bold;
+    color: #212121;
+    line-height:22px;
+    margin:0 0 0 10px;
+}
+span.message {
+    font-family: "Trebuchet MS" , Tahoma, Arial;
+    font-size: 11px;
+    font-weight: bold;
+    color: #212121;
+    line-height:22px;
+    
+}
+
+table.messages p 
+{
+    color: #768991;
+    font-family: "Trebuchet MS" , Tahoma, Arial;
+    font-size: 11px;
+    font-weight: bold;
+    margin:0; padding:0 0 0 5px;
+    line-height:22px;
+}.nyelv h1
+{
+    font-family: "Trebuchet MS" , Tahoma, Arial;
+    font-size: 15px;
+    color: #768991;
+    text-align: left;
+    line-height: 20px;
+    margin: 0 0 0 0px;
+    padding-left: 0px;
+    height: 27px;
+    text-align: left;
+    width: 394px;
+    background:none;
+}
+.nyelv .quart-box h2
+{
+    background: url(../img/quart_h1_bg.gif) no-repeat;
+color: #768991;
+font-family:"Trebuchet MS",Tahoma,Arial;
+font-size:15px;
+height:28px;
+line-height:28px;
+margin:4px 0 0 0;
+text-align:left;
+padding:0pt 0pt 0pt 10px;
+width:182px
+}
+
+ .content-col h1.ponthatarok
+{
+    font-family: "Trebuchet MS" , Tahoma, Arial;
+    font-size: 16px;
+    color: #ffffff;
+    line-height: 27px;
+    margin: 2px 0 0 0;
+    padding-left: 15px;
+    height: 27px;
+    text-align: left;
+    background: url(../img/ajanlo_h1_bg.gif) repeat-x top left;
+    width:594px;
+}
+
+.tagcloudbox .content p { margin: 5px 10px 10px 10px; }
+
+.content-col .content h6 {
+	color: #000000;
+	font-family: "Trebuchet MS",Tahoma,Arial;
+	font-size: 11px;
+	text-align: left;
+	margin: 0;
+	padding: 3px 0;
+}
+
+
+form.content h3 {
+    margin: auto;
+    font-size: 16px;
+    color: #768991;
+    text-align: center;
+}
+
+h3.tag, h3.tag a {
+	display: inline;
+	font: bold 11px "Trebuchet MS", Tahoma, Arial, Helvetica, Sans-Serif;
+	color: #768991;
+	text-decoration: none;
+}
+
+h3.tag a:hover { text-decoration: underline }
+
+h2.leadh2 {
+	margin: 0;
+	font: bold 12px "Trebuchet MS", Tahoma, Arial, Helvetica, Sans-Serif;
+	color: #000;
+	line-height: 20px;
+	clear: both;
+}

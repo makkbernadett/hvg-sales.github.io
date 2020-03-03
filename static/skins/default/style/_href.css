@@ -1,0 +1,345 @@
+﻿a, #loggedInFBWrapper a.FB_Link, #loggedInHVGUser a.FB_Link,#loggedInFBWrapper a.fb_link, #loggedInHVGUser a.fb_link {
+    color: #004276;
+    text-decoration: none;
+    outline: none;
+}
+
+#topics h3 a, #topicpages h3 a { font-size: 15px }
+
+.articlecontent a { font-weight: bold }
+
+.articlecontent table a { font-weight: normal }
+
+.articlecontent table.picture td.zoomitem { text-align: center }
+
+.articlecontent table.picture td.zoomitem a.warning {
+	position: relative;
+	top: 300px;
+	font-size: 20px;
+	line-height: normal;
+	color: #FFF;
+	z-index:15;
+}
+
+.articlecontent table.picture td.zoomitem a.warning:hover { text-decoration: none }
+
+#indexSelector a
+{
+	font-size: 12px;
+    font-weight: bold;
+    display: block;
+    margin: 3px 0px 3px 0px;
+}
+
+#sharetip a {
+    display: block;
+    width: 107px;
+    margin: 0 0 5px 0;
+    float: left;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#sharetip p a {
+    display: inline;
+    width: auto;
+    float: none;
+    font-size: 13px;
+}
+
+#loggedInFBWrapper a, #loggedInHVGUser a {
+    float: right;
+    padding: 20px 0 0 0;
+    color: #707070;
+}
+
+#loggedInFBWrapper a.FB_Link, #loggedInHVGUser a.FB_Link, #loggedInFBWrapper a.fb_link, #loggedInHVGUser a.fb_link { float: none }
+
+a:hover,.columnarticleinfo a:hover { text-decoration: underline /*#FF6600 #FFAC63 #FFA242 #FF9E37*/ }
+
+#headmenu h6 a, #loggedInFBWrapper a, #loggedInHVGUser a { font-size: 11px }
+
+#pg-menu h3 a, #pg-menu p a {
+    font-size: 11px;
+    font-weight: bold;
+    color: #4B4B4B;
+    line-height: 24px;
+}
+
+#pg-menu p a {
+    padding: 0 10px 0 0;
+    color: #004276;
+}
+
+#pg-menu h3 a:hover, #pg-menu p a:hover { color: #FF6600 }
+
+p#toptopics a {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#printtoptopics a {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+h2#quicknews a, h2#quicknews span {
+    padding: 0 10px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #4B4B4B;
+    line-height: 58px;
+}
+
+.box h1 a {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 28px;
+}
+
+.box h2 a,
+.youtube h5,
+.box h5 a,
+.wbox h5 a,
+.columnarticle h2 a,
+#loggedInFBWrapper a.FB_Link, #loggedInHVGUser a.FB_Link,
+#loggedInFBWrapper a.fb_link, #loggedInHVGUser a.fb_link {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.half h1 a.comments, .half h2 a.comments {
+    display: block;
+    font-size: 11px;
+    color: #878787;
+    text-decoration: none;
+}
+
+.half h1 img, .half h2 a.comments img  { vertical-align: middle }
+
+p.articlemenu a {
+    font-size: 11px;
+    color: #7E7E7E;
+}
+
+.boxtitle h6 a, .boxtitle h4 a {
+    color: #4B4B4B;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 40px;
+}
+
+.box .half .boxtitle h6 a { line-height: 26px }
+
+.boxtitle h6 a:hover, .boxtitle h4 a:hover { color: #4B4B4B }
+
+.boxtitle h4 a {
+    font-size: 11px;
+    line-height: 20px;
+}
+
+#newspanes td.more a { font-weight: bold }
+
+#newspanes td a { font-weight: bold }
+
+.box #newspanes table tr td { padding-bottom: 10px }
+
+#lates_top_news h6 a { color: #BBB; }
+#lates_top_news  h6 a.selected, #lates_top_news  h4 a.selected { color: #4B4B4B }
+
+.box table a { font-size: 13px }
+
+.box a.more {
+    display: block;
+    padding: 0 15px;
+    border-top: solid 1px #E7E7E7;
+    font-weight: bold;
+    line-height: 40px;
+    text-align: right;
+}
+
+.box .half a.more { border: none }
+
+a.more2 {
+    display: block;
+    float: right;
+    margin: 0 10px 20px 10px;
+    font-weight: bold;
+}
+
+a.more1 {
+	display: block;
+    margin: 0 10px 20px 10px;
+    font-weight: bold;
+}
+
+.box .half h5 a, .box .half h4 a, span.highlighted {
+    display: inline-block;
+    padding: 0 8px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #FFF;
+    line-height: 21px;
+    background: url(http://images.hvg.hu/static/skins/default/img/orangelabel.gif) repeat-x;
+}
+
+.boxtitle a {
+    font-size: 10px;
+    line-height: 40px;
+}
+
+.box .half h4 a { background: url(http://images.hvg.hu/static/skins/default/img/greylabel.gif) repeat-x }
+
+.footercolumn p a { color: #4B4B4B }
+
+#pg-sidecolumn .box .half a {
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.greyboxbody h4 a {
+    padding: 0 20px 0 0;
+    font-size: 15px;
+    font-weight: bold;
+    color: #4B4B4B;
+    background: url(http://images.hvg.hu/static/skins/default/img/arrow.gif) no-repeat right;
+}
+
+p.adcloud a { padding: 0 5px 0 0 }
+
+p.adcloud a.ad_level6, p.adcloud a.ad_level5 { font-size: 11px }
+
+p.adcloud a.ad_level5, p.adcloud a.ad_level4 p.adcloud a.ad_level1 { font-weight: bold }
+
+p.adcloud a.ad_level3 { font-size: 15px }
+
+p.adcloud a.ad_level2, p.adcloud a.ad_level1 { font-size: 19px }
+
+.location a, .location h1#tagh1 a {
+    font-weight: bold;
+    color: #4B4B4B;
+}
+
+.location h1#tagh1 {
+    display: inline;
+    font-size: 13px;
+}
+
+p.location a:hover { text-decoration: underline }
+
+.articlemenu p a {
+    display: inline-block;
+    margin: 0 3px;
+    font-size: 11px;
+    color: #7E7E7E;
+}
+
+.articlemenu p a:hover { color: #FF6600 }
+
+.columnarticleinfo a {
+    float: right;
+    padding: 0 0 0 10px;
+    font-size: 11px;
+    font-weight: bold;
+    color: #9A9A9A;
+}
+
+.columnarticleinfo a.nofloat {
+    float: none;
+    padding: 0;
+}
+
+.thumber a {
+    padding: 0 5px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #9A9A9A;
+}
+
+.thumber a.num {
+    background: #F7F7F7;
+    border: solid 1px #E7E7E7;
+}
+
+.thumber a#selectedpage {
+    color: #F7F7F7;
+    background: #9A9A9A;
+    border: solid 1px #747679;
+}
+
+ul.decimal li a { font-weight: normal }
+
+#loggedInFBWrapper a, #loggedInHVGUser a { vertical-align: middle }
+
+#logInFBWrapper a { margin: 0 10px 0 0 }
+
+.commentbox a.FB_Link, .commentbox a.fb_link {
+    font-weight: bold;
+    color: #004276;
+}
+
+.commentbox a.FB_Link:hover, .commentbox a.fb_link:hover { color: #FF6600 }
+
+div.zoom { position: relative; z-index:15;}
+div.zoom span {
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -103px 0 0 -110px;
+    width: 220px;
+    height: 207px;
+    background: url(http://images.hvg.hu/skins/default/img/galleryhover.png) no-repeat;
+    z-index: 9999;
+}
+div.zoom:hover span { display: block; }
+
+.messagebox a { font-weight: bold }
+
+
+a.hide
+{
+	padding-right: 4px;
+	margin-top: 2px;
+	display: block;
+	padding-left: 4px;
+	float: right;
+	padding-bottom: 3px;
+	width: 14px;
+	cursor: pointer;
+	padding-top: 4px;
+	height: 14px;
+}
+a.show
+{
+	padding-right: 4px;
+	margin-top: 2px;
+	display: block;
+	padding-left: 4px;
+	float: right;
+	padding-bottom: 3px;
+	width: 14px;
+	cursor: pointer;
+	padding-top: 4px;
+	height: 14px;
+}
+a.hide
+{
+	background: url(http://images.hvg.hu/skins/default/img/switcher.gif) no-repeat center 50%;
+	padding:0;
+}
+a.show
+{
+	background: url(http://images.hvg.hu/skins/default/img/switcher_closed.gif) no-repeat center 50%;
+	padding:0;
+}
+
+.orangelink {
+    font-weight: normal;
+    color: #FF6700;
+}
+
+.twitter-share-button
+{
+    position:absolute; top:9px; right:2px; z-index:10;
+}

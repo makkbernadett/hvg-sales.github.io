@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+    <head>
+        <title>Froogaloop JavaScript API Example</title>
+        <style>
+            iframe{
+                display:block;
+                border:0;
+            }
+            body > div {
+                width: 100%;
+                float: left;
+                overflow: hidden;
+            }
+            div div {
+                margin-bottom:20px;
+            }
+
+            .api_output {
+                float:right;
+                padding-left: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <div>
+                <h1>Player 1</h1>
+                <div class="api_output"></div>
+                <iframe src="http://player.vimeo.com/video/19393073?js_api=1&js_swf_id=player_1" width="280" height="157" frameborder="0"></iframe>
+                <button class="simple" id="api_play">Play</button>
+                <button class="simple" id="api_pause">Pause</button>
+                <button class="simple" id="api_unload">Unload</button>
+                <button class="seek">Seek to 30</button>
+                <button class="loop">Toggle Loop</button>
+                <button class="volume">Toggle Volume</button>
+                <button class="color">Random Color</button>
+            </div>
+        </div>
+
+        <div>
+            <div>
+                <h1>Player 2</h1>
+                <div class="api_output"></div>
+                <iframe src="http://player.vimeo.com/video/19393073?js_api=1&js_swf_id=player_2" width="280" height="157" frameborder="0"></iframe>
+                <button class="simple" id="api_play">Play</button>
+                <button class="simple" id="api_pause">Pause</button>
+                <button class="simple" id="api_unload">Unload</button>
+                <button class="seek">Seek to 30</button>
+                <button class="loop">Toggle Loop</button>
+                <button class="volume">Toggle Volume</button>
+                <button class="color">Random Color</button>
+            </div>
+        </div>
+
+	<div align="center"> 
+	
+	<script type="text/javascript" src="/videoplayer/swfobject.js">
+        </script>
+	
+	<script language="javascript" type="text/javascript"> 
+	
+	var so = new SWFObject('/videoplayer/player-viral.swf','mpl', 560, 445, '7');
+	
+	so.addParam('allowfullscreen',true);
+	
+	so.addVariable("provider","http");
+	
+	so.addVariable("file", " http://vod.hvg.hu/hvg_flv/delori1.mp4"); 
+	
+	so.addVariable("image", " http://hvg.hu/images/hvg_video_player_skin_8.png");
+
+	
+	</script> 
+	
+	</div> 
+
+
+    </body>
+</html>

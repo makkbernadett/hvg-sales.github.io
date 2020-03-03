@@ -1,0 +1,85 @@
+/* CSS Document */
+
+
+.banner-sep-high
+{
+	background:url(/skins/default/img/banner-sep-high.gif) repeat;
+	height:4px;
+	line-height:4px;
+	font-size:4px;
+}
+.banner-sep-low
+{
+	background:url(/skins/default/img/banner-sep-low.gif) repeat;
+	height:1px;
+	line-height:1px;
+	font-size:1px;
+}
+
+.banner-body
+{
+border-top: rgb(191,195,201) solid 1px;
+border-bottom: rgb(191,195,201) solid 1px;
+background-color: rgb(238,238,238);
+text-align: center;
+margin: 5px;
+padding: 3px 0;
+clear: both;
+overflow:hidden;
+}
+
+.banner0
+{
+background-image:url(/skins/default/img/hirdetes.gif);
+background-position:left bottom;
+background-repeat:no-repeat;
+display:block;
+margin:0 auto;
+text-align:center;
+width:758px;
+}
+
+.banner1
+{
+background-image:url(/skins/default/img/hirdetes.gif);
+background-position:left bottom;
+background-repeat:no-repeat;
+display:block;
+margin:0 auto;
+text-align:center;
+width:498px;
+}
+
+.btn-banner
+{
+clear:both;
+}
+
+.banner3
+{
+text-align:center;
+background-image:url(/skins/default/img/hirdetes.gif);
+background-position:left bottom;
+background-repeat:no-repeat;
+display:block;
+margin:0 auto;
+clear:both;
+width:498px;
+}
+
+.abanner-sep
+{
+	background:url(/skins/default/img/artic-banner-sep.gif) repeat;
+	height:1px;
+	line-height:1px;
+	font-size:1px;
+}
+
+.banner2
+{
+padding:15px 10px 20px 8px;
+background:url(/skins/default/img/ad_top.gif) no-repeat scroll left top;
+margin:0 auto 0 2px;
+overflow:hidden;
+}
+.bannergoogle72815 {margin:5px auto 5px auto;}

@@ -1,0 +1,33 @@
+﻿@import "_pg.css";
+@import "_text.css";
+@import "_form.css";
+@import "_href.css";
+@import "_table.css";
+
+.boxcontainer.tem_box .boxtitle { background: #fff; }
+.boxcontainer.tem_box .boxtitle { text-align: left; }
+.boxcontainer.tem_box .greyboxbody { padding: 15px; }
+.boxcontainer.tem_box .boxtitle a { display: block; }
+.boxcontainer.tem_box .boxtitle img { margin: 0; }
+.boxcontainer.tem_box .framed3 { 
+	margin: 0 10px 10px 0; 
+	*margin-bottom: 2px; 
+}
+ .boxcontainer.tem_box .sep { 
+	clear: both;
+	height: 1px;
+	background: #fff;
+	border-top: 1px solid black;
+	margin: 10px 0;
+}
+
+/**/
+
+.boxcontainer.edu { border-color: #f7f0f3; }
+.boxcontainer.edu .greyboxbody { background: #f7f0f3; }
+.boxcontainer.edu .box, 
+.boxcontainer.edu .boxtitle,
+.boxcontainer.edu .framed3,
+.boxcontainer.edu a.more,
+.boxcontainer.edu .sep { border-color: #f1cdde; }
+.boxcontainer.edu .boxtitle { background: #cf2474; }

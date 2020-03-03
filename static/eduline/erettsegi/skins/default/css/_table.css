@@ -1,0 +1,68 @@
+/* CSS Document */
+
+.rovatcolumn
+{
+width:100%;
+border:none;
+padding:0 0 0 5px;
+margin:0;
+}
+
+.rovatcolumn td
+{
+vertical-align:top;
+}
+
+.pic01 table {
+margin:0; 
+}
+
+table.simpleTable {
+    width: 415px;
+}
+
+#form_registration table a {
+	color: #585858;
+	text-decoration: none;
+}
+
+#form_registration table a:hover { text-decoration: underline }
+
+table.sharetable  
+{
+    vertical-align: middle;  
+    font-weight: bold;   
+} 
+
+table.sharetable a         
+{ 
+    color: #104F82; 
+    text-decoration: none; 
+    font-size: 12px;
+    vertical-align: middle;    
+    font-family:Verdana;
+} 
+
+p.sharetablelinks 
+{
+    color: #585858;
+    font-family: Tahoma,Arial,sans serif;
+    font-size: 13px;
+}
+
+p.sharetablelinks a {
+    color: #104F82; 
+    text-decoration: none; 
+    font-size: 13px;
+    vertical-align: middle;
+    font-weight:bold;
+}
+
+table.blueborder  
+{
+    border-top: 2px solid #104F82;  
+    border-bottom: 2px solid #104F82; 
+    width: 560px;
+} 
+
+

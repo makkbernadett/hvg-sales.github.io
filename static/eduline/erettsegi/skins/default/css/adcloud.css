@@ -1,0 +1,215 @@
+﻿div.adcloud 
+{
+	background-image:url(/img/adcloud_icon.png);
+	background-position:4pt 7px;
+	background-repeat:no-repeat;
+	background-color:#EEEEEE;
+	margin:13px 5px 0 5px;
+	padding:5px 5px 6px;	
+	border:1px solid #BFC3C9;
+	width:768px;
+
+	clear:both;
+	overflow:hidden;
+}
+
+#pg-rightcolumn .adcloud 
+{
+	width: auto;
+	height: auto;
+	margin:13px 5px;
+}
+
+.rovat .adcloud, #other-articles .adcloud
+{
+	background-image:url(/img/adcloud_icon.png);
+	background-position:4pt 7px;
+	background-repeat:no-repeat;
+	background-color:#EEEEEE;
+	margin:13px 0pt 0pt;
+	padding:5px 5px 6px;	
+	border:1px solid #BFC3C9;
+	width:560px;
+/*	height:90px;*/
+	clear:both;
+	overflow:hidden }
+	
+	.xcikk .adcloud
+{
+	background-image:url(/img/adcloud_icon.png);
+	background-position:4pt 7px;
+	background-repeat:no-repeat;
+	background-color:#EEEEEE;
+	margin:13px 0pt 0pt;
+	padding:5px 5px 6px;	
+	border:1px solid #BFC3C9;
+	width:540px;
+/*	height:90px;*/
+	clear:both;
+	overflow:hidden }
+div.adcloud p
+{
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+div.adcloud h3
+{
+	color:#5F5F5F;
+	font-family:arial,sans-serif;
+	font-size:9px;
+	padding:0pt 0pt 0pt 10px;
+	font-weight: normal;
+	margin: 0px;
+}
+
+div.adcloud h3 a
+{
+	color:#5F5F5F;
+	text-decoration: none;
+}
+
+div.adcloud h3 a:hover
+{
+	text-decoration: underline;
+}
+
+
+span.adcloud_0, p.adcloud_0
+{
+    color: #24468A;
+    font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+    font-size: 9px;
+    font-weight: bold;
+}
+span.adcloud_1, p.adcloud_1
+{
+    color: #24468A;
+    font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+span.adcloud_2, p.adcloud_2
+{
+    color: #24468A;
+    font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+}
+span.adcloud_3, p.adcloud_3
+{
+    color: #24468A;
+    font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+}
+.tagline .adcloud_3
+{
+    line-height: 23px;
+}
+span.adcloud_4, p.adcloud_4
+{
+    color: #24468A;
+    font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: normal;
+}
+span.adcloud_5, p.adcloud_5
+{
+    color: #24468A;
+    font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    font-weight: normal;
+}
+
+span.adcloud_1 a:link, span.adcloud_1 a:visited, span.adcloud_0 a:link, span.adcloud_0 a:visited,
+p.adcloud_1 a:link, p.adcloud_1 a:visited, p.adcloud_0 a:link, p.adcloud_0 a:visited
+{
+    color: #24468A;
+    text-decoration: none;
+    padding: 4px 6px 4px 0px;
+    line-height: 26px;
+}
+span.adcloud_2 a:link, span.adcloud_2 a:visited,
+p.adcloud_2 a:link, p.adcloud_2 a:visited
+{
+    color: #24468A;
+    text-decoration: none;
+    padding: 4px 6px 4px 0px;
+    line-height: 26px;
+}
+span.adcloud_3 a:link, span.adcloud_3 a:visited,
+p.adcloud_3 a:link, p.adcloud_3 a:visited
+{
+    color: #24468A;
+    text-decoration: none;
+    padding: 4px 6px 4px 0px;
+    line-height: 26px;
+}
+span.adcloud_4 a:link, span.adcloud_4 a:visited,
+p.adcloud_4 a:link, p.adcloud_4 a:visited
+{
+    color: #24468A;
+    text-decoration: none;
+    padding: 4px 6px 4px 0px;
+    line-height: 26px;
+}
+span.adcloud_5 a:link, span.adcloud_5 a:visited,
+p.adcloud_5 a:link, p.adcloud_5 a:visited
+{
+    color: #24468A;
+    text-decoration: none;
+    padding: 4px 6px 4px 0px;
+    line-height: 26px;
+}
+
+span.adcloud_1 a:hover, span.adcloud_0 a:hover,
+p.adcloud_1 a:hover, p.adcloud_0 a:hover
+{
+    background-color: #24468A;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 4px 6px 4px 0px;
+    line-height: 26px;
+}
+span.adcloud_2 a:hover, p.adcloud_2 a:hover
+{
+    background-color: #24468A;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 4px 6px 4px 0px;
+    line-height: 26px;
+}
+span.adcloud_3 a:hover, p.adcloud_3 a:hover
+{
+    background: none;
+    color: #24468A;
+    text-decoration: underline;
+    padding: 4px 6px 4px 0px;
+    line-height: 26px;
+}
+span.adcloud_3 a:hover, p.adcloud_3 a:hover
+{
+    background-color: #24468A;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 4px 6px 4px 0px;
+    line-height: 26px;
+}
+
+span.adcloud_4 a:hover, p.adcloud_4 a:hover
+{
+    background-color: #24468A;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 4px 6px 4px 0px;
+    line-height: 26px;
+}
+span.adcloud_5 a:hover, p.adcloud_5 a:hover
+{
+    background-color: #24468A;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 4px 6px 4px 0px;
+    line-height: 26px;
+}

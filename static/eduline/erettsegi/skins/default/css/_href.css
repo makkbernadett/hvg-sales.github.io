@@ -1,0 +1,566 @@
+/* CSS Document */
+#header ul li a:link, #header ul li a:visited
+{
+    font: bold 10px Tahoma, Verdana, Arial, Helvetica, sans-serif;
+    color: #3f7095;
+    text-decoration: none; /*background:url(/skins/default/img/underlin1.gif) bottom repeat-x;*/
+    line-height: 10px;
+}
+
+#header ul li a:hover
+{
+    text-decoration: underline;
+}
+
+#header #pg-search ul li a:link, #header #pg-search ul li a:visited
+{
+    font: bold 10px Tahoma, Verdana, Arial, Helvetica, sans-serif;
+    color: #3f7095;
+    text-decoration: none;
+    float: left;
+}
+
+#header #pg-search ul li a:hover { text-decoration: underline; }
+
+#menu-box ul li a:link, #menu-box ul li a:visited
+{
+    font: bold 13px Arial, Verdana, Helvetica, sans-serif;
+    color: #edf2f3;
+    display: block;
+    padding: 5px 0 0 0;
+    text-decoration: none;
+    background: url(/skins/default/img/menuitemback.gif) repeat-x;
+    height: 28px;
+    width: 100px;
+}
+
+#menu-box ul li a.home:link, #menu-box ul li a.home:visited 
+{
+    width: 31px;
+    background: url(/skins/default/img/home.gif) no-repeat;
+}
+
+#menu-box ul li a:hover
+{
+    background: url(/skins/default/img/menuitemhovback.gif) repeat-x;
+    color: rgb(254,255,255);
+    float: left;
+    height: 29px;
+    width: 100px;
+}
+
+#menu-box ul li a.home:hover 
+{
+    width: 31px;
+    background: url(/skins/default/img/homehov.gif) no-repeat;
+}
+
+#menu-box .menu-background a:link, #menu-box .menu-background a:visited, #menu-box .menu-background a:hover
+{
+    background: url(/skins/default/img/menuitemhovback.gif) repeat-x;
+    color: rgb(254,255,255);
+    height: 29px;
+    width: 100px;
+}
+
+.lead h3 a:link, .lead h3 a:visited
+{
+    font-family: "Trebuchet MS" , Tahoma, Arial, sans serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(88,88,88);
+    margin: 10px 0;
+    line-height: 20px;
+    text-decoration: none;
+    background: none;
+}
+
+.lead h1 a:link, .lead h1 a:visited
+{
+    font: normal 19px Arial, Helvetica, sans-serif;
+    color: #125687;
+    text-decoration: none;
+}
+
+.lead h3 a:hover, .lead h1 a:hover
+{
+    text-decoration: underline;
+}
+
+.lead h1.leadh1 a:link, .lead h1.leadh1 a:visited
+{
+    font-size: 18px;
+    color: #fff;
+}
+
+.cikkek h1 a, .cikkek h2 a
+{
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+    text-decoration: none;
+}
+
+.cikkek h1 a:hover, .cikkek h2 a:hover { text-decoration: underline }
+
+.cikkbox h4 a:link, .cikkbox h4 a:visited
+{
+    font-family: "Trebuchet MS" , Tahoma, Arial, sans serif;
+    font-size: 12px;
+    font-weight: bold;
+    color: #ff6900; /*	color: rgb(88,88,88);*/
+    margin: 10px 0 0 15px;
+    line-height: 20px;
+    text-decoration: none;
+}
+
+.cikkbox h4 a:hover { text-decoration: underline }
+
+.leadbox a:link, .leadbox a:visited
+{
+    font: normal 16px Arial, Helvetica, sans-serif;
+    color: #125687;
+    text-decoration: none;
+}
+
+.leadbox a:hover
+{
+    text-decoration: underline;
+}
+
+.cikkek a
+{
+    text-decoration: none;
+    color: #125687;
+    font-weight: bold;
+    font-family: "Trebuchet MS" ,Tahoma, Verdana, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    float: none;
+    text-align: left;
+}
+
+.cikkek a:hover
+{
+    text-decoration: underline;
+}
+
+.small-next-link a:link, .cikkek p a:link, .small-next-link a:visited, .cikkek p a:visited
+{
+    text-decoration: none;
+    color: #125687;
+    font-weight: bold;
+    font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11px; /*background:url(/skins/default/img/underlin3.gif) bottom repeat-x;*/
+}
+
+.small-next-link a:hover, .cikkek p a:hover
+{
+    text-decoration: underline;
+}
+.top24 li a.strong:link, .top24 li a.strong:visited
+{
+    color: rgb(88,88,88);
+    font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.job .top24 li a:link, .job .top24 li a:visited, .job .top24 li a:hover
+{   font-weight:bold;
+    }
+.top24 li a.strong:hover
+{
+    text-decoration: underline;
+}
+.top24 ul a:link, .top24 ul a:visited
+{
+    color: rgb(88,88,88);
+    font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+.top24 ul a:hover
+{
+    text-decoration: underline;
+}
+
+.lead p a:link, .lead p a:visited
+{
+    font: bold 11px Tahoma, Verdana, Arial, Helvetica, sans-serif;
+    color: #125687;
+    margin: 0 10px 0 0; /*background:url(/skins/default/img/underlin3.gif) bottom repeat-x;*/
+}
+
+.lead-body a:hover
+{
+    text-decoration: underline;
+}
+
+.rcikkek h5 a:link, .rcikkek h5 a:visited
+{
+    color: rgb(86,89,92);
+    font-family: "Trebuchet MS" ,Tahoma, Verdana, Arial, Helvetica, sans-serif;
+    margin: 0 0 0 10px;
+    line-height: 20px;
+    font-size: 10px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.cikkek h5 a:link, .cikkek h5 a:visited
+{
+    color: rgb(86,89,92);
+    font-family: "Trebuchet MS" ,Tahoma, Verdana, Arial, Helvetica, sans-serif;
+    margin: 0 0 0 12px;
+    line-height: 26px;
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.rcikkek h3 a:link, .rcikkek h3 a:visited
+{
+    margin: 0;
+    font-family: "Trebuchet MS" , Tahoma, Arial, sans serif;
+    font-size: 12px;
+    font-weight: bold;
+    color: rgb(88,88,88);
+    text-decoration: none;
+}
+
+.cikkek h3 a:link, .cikkek h3 a:visited
+{
+    margin: 0;
+    font-family: "Trebuchet MS" , Tahoma, Arial, sans serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(88,88,88);
+    text-decoration: none;
+}
+
+.cikkek h4 a:link, .cikkek h4 a:visited
+{
+    margin: 0;
+    font-family: "Trebuchet MS" , Tahoma, Arial, sans serif;
+    font-size: 18px;
+    font-weight: normal;
+    color: rgb(88,88,88);
+    text-decoration: none;
+}
+
+.cikkek h3 a:hover, .cikkek h5 a:hover, .rcikkek h3 a:hover, .rcikkek h5 a:hover, .cikkek h4 a:hover
+{
+    text-decoration: underline;
+}
+
+.top-artic-line a:link, .top-artic-line a:visited
+{
+    background: none;
+    text-decoration: none;
+    color: #ff7e15;
+    font-weight: normal;
+    font-size: 11px;
+    font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+}
+
+.top-artic-line a:hover
+{
+    text-decoration: underline;
+}
+
+.headerbox a:link, .headerbox a:visited
+{
+    margin: 0;
+    padding: 0;
+    height: 20px;
+    line-height: 14px;
+    width: 100%;
+    font-family: Tahoma, Arial, sans serif;
+    font-size: 11px;
+    color: rgb(88,88,88);
+    text-decoration: none;
+}
+
+.cikkbox ul a:link, .cikkbox ul a:visited, .cikkbox2 ul a:link, .cikkbox2 ul a:visited
+{
+    font-family: Tahoma, Arial, sans serif;
+    font-size: 11px;
+    font-weight: bold;
+    color: rgb(88,88,88);
+    text-decoration: none;
+}
+
+.relatio a:link, .relatio a:visited
+{
+    font-family: Tahoma, Arial, sans serif;
+    font-size: 11px;
+    color: rgb(147,148,149);
+    text-decoration: none;
+    font-weight: normal;
+}
+
+.headerbox a:hover, .cikkbox ul a:hover, .cikkbox2 ul a:hover, .relatio a:hover
+{
+    text-decoration: underline;
+}
+
+.content p a:link, .content p a:visited
+{
+    font: bold 11px Tahoma, Verdana, Arial, Helvetica, sans-serif;
+    color: #104F82;
+    text-decoration: none;
+}
+
+.content p a:hover
+{
+    text-decoration: underline;
+}
+/*tagek*/
+/*span.tagcloud_1 a, span.tagcloud_2 a, span.tagcloud_3 a, span.tagcloud_4 a, span.tagcloud_5 a
+{
+	margin: 2px;
+}*/
+.cikkbox h3.tagcloud_1 a:link,
+.cikkbox h3.tagcloud_1 a:visited,
+.cikkbox h3.tagcloud_0 a:link,
+.cikkbox h3.tagcloud_0 a:visited,
+.cloudbox h3.tagcloud_1 a:link,
+.cloudbox h3.tagcloud_1 a:visited,
+.cloudbox h3.tagcloud_0 a:link,
+.cloudbox h3.tagcloud_0 a:visited
+
+{
+    color: #585858;
+    text-decoration: none;
+    padding: 2px;
+    line-height: 17px;
+    font-size: 22px;
+    font-weight: bold;
+}
+.cikkbox h3.tagcloud_2 a:link,
+.cikkbox h3.tagcloud_2 a:visited,
+.cloudbox h3.tagcloud_2 a:link,
+.cloudbox h3.tagcloud_2 a:visited,
+h1.tagh1
+{
+    color: #585858;
+    text-decoration: none;
+    padding: 2px;
+    line-height: 17px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.cikkbox h3.tagcloud_3 a:link,
+.cikkbox h3.tagcloud_3 a:visited,
+.cloudbox h3.tagcloud_3 a:link,
+.cloudbox h3.tagcloud_3 a:visited
+{
+    color: #585858;
+    text-decoration: none;
+    padding: 2px;
+    line-height: 17px;
+    font-size: 12px;
+    font-weight: bold;
+}
+.cikkbox h3.tagcloud_4 a:link,
+.cikkbox h3.tagcloud_4 a:visited,
+.cloudbox h3.tagcloud_4 a:link,
+.cloudbox h3.tagcloud_4 a:visited
+{
+    color: #585858;
+    text-decoration: none;
+    padding: 2px;
+    line-height: 17px;
+    font-size: 12px;
+}
+.cikkbox h3.tagcloud_5 a:link,
+.cikkbox h3.tagcloud_5 a:visited,
+.cloudbox h3.tagcloud_5 a:link,
+.cloudbox h3.tagcloud_5 a:visited
+{
+    color: #585858;
+    text-decoration: none;
+    padding: 2px;
+    line-height: 17px;
+    font-size: 11px;
+}
+
+
+
+.cikkbox h3.tagcloud_1 a:hover,
+.cikkbox h3.tagcloud_0 a:hover,
+.cloudbox h3.tagcloud_1 a:hover,
+.cloudbox h3.tagcloud_0 a:hover
+{
+    background-color: #585858;
+    color: #f4f2d6;
+    text-decoration: none;
+    padding: 2px;
+    line-height: 17px;
+}
+.cikkbox h3.tagcloud_2 a:hover, .cloudbox h3.tagcloud_2 a:hover
+{
+    background-color: #585858;
+    color: #f4f2d6;
+    text-decoration: none;
+    padding: 2px;
+    line-height: 17px;
+}
+
+.tagline span.tagcloud_3 a:link,
+.tagline span.tagcloud_3 a:visited,
+.tagline span.tagcloud_3 a:hover
+{
+    font: normal 11px Tahoma, Verdana, Arial, Helvetica, sans-serif;
+    color: #585858;
+    line-height: 17px;
+}
+.tagline span.tagcloud_3 a:hover
+{
+    background: none;
+    color: #585858;
+    text-decoration: underline;
+    /*padding: 2px;*/
+    line-height: 17px;
+}
+.cikkbox h3.tagcloud_3 a:hover, .cloudbox h3.tagcloud_3 a:hover
+{
+    background-color: #585858;
+    color: #f4f2d6;
+    text-decoration: none;
+    padding: 2px;
+    line-height: 17px;
+}
+
+.cikkbox h3.tagcloud_4 a:hover, .cloudbox h3.tagcloud_4 a:hover
+{
+    background-color: #585858;
+    color: #f4f2d6;
+    text-decoration: none;
+    padding: 2px;
+    line-height: 17px;
+}
+.cikkbox h3.tagcloud_5 a:hover, .cloudbox h3.tagcloud_5 a:hover
+{
+    background-color: #585858;
+    color: #f4f2d6;
+    text-decoration: none;
+    padding: 2px;
+    line-height: 17px;
+}
+
+td.navigator_cursor a:link, td.navigator_cursor a:visited
+{
+    color: #235ea4;
+    text-decoration: none;
+}
+td.navigator_cursor a:hover
+{
+    color: #235ea4;
+    text-decoration: underline;
+}
+.rovat .cikkbox h3 a:link, .rovat .cikkbox h3 a:visited
+{
+    color: #FF6600;
+    text-decoration: none;
+}
+
+.rovat .cikkbox h3 a:hover
+{
+    color: #FF6600;
+    text-decoration: underline;
+}
+.rovat .cikkbox h5 a:link, .rovat .cikkbox h5 a:visited
+{
+    font: bold 16px Arial,Helvetica,sans-serif;
+    color: #FF6600;
+    text-decoration: none;
+}
+
+.rovat .cikkbox h5 a:hover
+{
+    /*color: #FF6600;*/
+    text-decoration: underline;
+}
+.leadboxbody a:link, .leadboxbody a:visited
+{
+    font: normal 15px Arial, Helvetica, sans-serif;
+    color: #6b9cbb;
+    line-height: 21px;
+    text-decoration: none;
+}
+.leadboxbody a:hover { text-decoration: underline; }
+/*.navi {font-weight: bold;
+    font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11px;}
+.navi a:link, .navi a:visited
+{ color: #585858;
+    text-decoration: none;
+}
+
+.navi a:hover 
+{ color: #585858;
+    text-decoration: underline;
+    }*/
+    
+.lead .articlenavigator ul li a.back:link, .lead .articlenavigator ul li a.back:visited
+{ background: url(/skins/default/img/navback0.gif) no-repeat; }
+
+
+.lead .articlenavigator ul li a:link, .lead .articlenavigator ul li a.back:hover
+{ background: url(/skins/default/img/navback1.gif) no-repeat; }
+
+.lead .articlenavigator ul li a.forward:link, .lead .articlenavigator ul li a.forward:visited
+{ background: url(/skins/default/img/navforward0.gif) no-repeat; }
+
+
+.lead .articlenavigator ul li a:link, .lead .articlenavigator ul li a.forward:hover
+{ background: url(/skins/default/img/navforward1.gif) no-repeat; }
+
+.lead .articlenavigator ul li a:link, .lead .articlenavigator ul li a:visited
+{
+    display: block;
+    height: 19px;
+    width: 31px;
+    font: bold 12px Arial, Helvetica, sans-serif;
+    color: #5997bf;
+    text-align: center;
+    line-height: 20px;
+    text-decoration: none;
+    background: url(/skins/default/img/navbuttonback0.gif) no-repeat;
+}
+.lead .articlenavigator ul li a:hover
+{
+    background: url(/skins/default/img/navbuttonback1.gif) no-repeat;
+}
+
+.os p a:link, .os p a:visited {
+    font: bold 10px Tahoma, Arial, Helvetica, sans-serif;
+    color: #ff6600;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.os p a:hover { text-decoration: underline; }
+
+
+p a.ps:link, p a.ps:visited {
+    color:Red;
+    text-decoration: none;
+}
+p a.ps:hover {color:Red; text-decoration: underline; }
+
+a.redlink:link, a.redlink:visited {
+    color: #FF0000;
+    text-decoration: none;
+}
+
+a.redlink:hover { text-decoration: underline; }
+
+.content p a:link, .content p a:visited{
+	color:#005a8c;
+	text-decoration:underline;
+}
+.content p a:hover { text-decoration:none; }

@@ -1,0 +1,282 @@
+/* --- ROBOTO / Regular --- */
+@font-face {
+	font-family: 'Roboto';
+	src: url('Roboto/Roboto-Regular.woff') format('woff');
+}
+@font-face {
+	font-family: 'Roboto';
+	font-style: italic;
+	src: url('Roboto/Roboto-Italic.woff') format('woff');
+}
+
+/* --- ROBOTO / Thin --- */
+@font-face {
+	font-family: 'Roboto';
+	font-weight: 200;
+	src: url('Roboto/Roboto-Thin.woff') format('woff');
+}
+@font-face {
+	font-family: 'Roboto';
+	font-weight: 200;
+	font-style: italic;
+	src: url('Roboto/Roboto-ThinItalic.woff') format('woff');
+}
+
+/* --- ROBOTO / Light --- */
+@font-face {
+	font-family: 'Roboto';
+	font-weight: 300;
+	src: url('Roboto/Roboto-Light.woff') format('woff');
+}
+@font-face {
+	font-family: 'Roboto';
+	font-weight: 300;
+	font-style: italic;
+	src: url('Roboto/Roboto-LightItalic.woff') format('woff');
+}
+
+/* --- ROBOTO / Medium --- */
+@font-face {
+	font-family: 'Roboto';
+	font-weight: 600;
+	src: url('Roboto/Roboto-Medium.woff') format('woff');
+}
+@font-face {
+	font-family: 'Roboto';
+	font-weight: 600;
+	font-style: italic;
+	src: url('Roboto/Roboto-MediumItalic.woff') format('woff');
+}
+
+/* --- ROBOTO / Bold --- */
+@font-face {
+	font-family: 'Roboto';
+	font-weight: bold;
+	src: url('Roboto/Roboto-Bold.woff') format('woff');
+}
+@font-face {
+	font-family: 'Roboto';
+	font-weight: bold;
+	font-style: italic;
+	src: url('Roboto/Roboto-BoldItalic.woff') format('woff');
+}
+
+/* --- ROBOTO / Black --- */
+@font-face {
+	font-family: 'Roboto';
+	font-weight: 900;
+	src: url('Roboto/Roboto-Black.woff') format('woff');
+}
+@font-face {
+	font-family: 'Roboto';
+	font-weight: 900;
+	font-style: italic;
+	src: url('Roboto/Roboto-BlackItalic.woff') format('woff');
+}
+
+
+/* ------------------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------------- */
+
+
+/* --- MONTSERRAT / Regular --- */
+@font-face {
+	font-family: 'Montserrat';
+	src: url('Montserrat/Montserrat.woff') format('woff');
+}
+
+
+
+
+/* --- MONTSERRAT / Bold --- */
+@font-face {
+	font-family: 'Montserrat';
+	font-weight: bold;
+	src: url('Montserrat/Montserrat-Bold.woff') format('woff');
+}
+
+/* ----------------------------*/
+/* JOBLINE FONTICON -- ICOMOON */
+/* ----------------------------*/
+
+@font-face {
+  font-family: 'jobline-fonticon';
+  src:  url('jobline-fonticon/jobline-fonticon.eot?53cllc');
+  src:  url('jobline-fonticon/jobline-fonticon.eot?53cllc#iefix') format('embedded-opentype'),
+    url('jobline-fonticon/jobline-fonticon.ttf?53cllc') format('truetype'),
+    url('jobline-fonticon/jobline-fonticon.woff?53cllc') format('woff'),
+    url('jobline-fonticon/jobline-fonticon.svg?53cllc#jobline-fonticon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'jobline-fonticon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-location:before {
+  content: "\e1b7";
+}
+.icon-books:before {
+  content: "\e02f";
+}
+.icon-school:before {
+  content: "\e80c";
+}
+.icon-search2:before {
+  content: "\e8b6";
+}
+.icon-cards:before {
+  content: "\e41d";
+}
+.icon-trending_up:before {
+  content: "\e8e5";
+}
+.icon-phone:before {
+  content: "\e942";
+}
+.icon-jobline-separator:before {
+  content: "\e91e";
+}
+.icon-jobline-logo-j:before {
+  content: "\e908";
+}
+.icon-jobline-logo:before {
+  content: "\e902";
+}
+.icon-search:before {
+  content: "\e905";
+}
+.icon-star-bordered:before {
+  content: "\e900";
+}
+.icon-star:before {
+  content: "\e901";
+}
+.icon-trash-o:before {
+  content: "\f014";
+}
+.icon-envelope:before {
+  content: "\f0e0";
+}
+.icon-envelope-o:before {
+  content: "\f003";
+}
+.icon-alap:before {
+  content: "\e918";
+}
+.icon-ujsagiras:before {
+  content: "\e903";
+}
+.icon-vendeglatas:before {
+  content: "\e904";
+}
+.icon-minosegbiztositas:before {
+  content: "\e906";
+}
+.icon-oktatas:before {
+  content: "\e907";
+}
+.icon-penzugy:before {
+  content: "\e909";
+}
+.icon-ssc:before {
+  content: "\e90a";
+}
+.icon-szakmunka:before {
+  content: "\e90b";
+}
+.icon-ugyfelszolgalat:before {
+  content: "\e90c";
+}
+.icon-mezogazdasag:before {
+  content: "\e90d";
+}
+.icon-it:before {
+  content: "\e90e";
+}
+.icon-jog:before {
+  content: "\e90f";
+}
+.icon-karbantartas:before {
+  content: "\e916";
+}
+.icon-kutatas:before {
+  content: "\e910";
+}
+.icon-logisztika:before {
+  content: "\e911";
+}
+.icon-marketing:before {
+  content: "\e912";
+}
+.icon-menedzsment:before {
+  content: "\e913";
+}
+.icon-human:before {
+  content: "\e914";
+}
+.icon-admin:before {
+  content: "\e915";
+}
+.icon-bank:before {
+  content: "\e91d";
+}
+.icon-egeszseg:before {
+  content: "\e91c";
+}
+.icon-egyeb:before {
+  content: "\e91b";
+}
+.icon-epitoipar:before {
+  content: "\e91a";
+}
+.icon-ertekesites:before {
+  content: "\e919";
+}
+.icon-gyartas:before {
+  content: "\e917";
+}
+.icon-check:before {
+  content: "\e5ca";
+}
+.icon-navigate_before:before {
+  content: "\e408";
+}
+.icon-navigate_next:before {
+  content: "\e409";
+}
+.icon-fiber_manual_record:before {
+  content: "\e061";
+}
+.icon-close:before {
+  content: "\e5cd";
+}
+.icon-add:before {
+  content: "\e145";
+}
+.icon-office:before {
+  content: "\e91f";
+}
+.icon-user:before {
+  content: "\e971";
+}
+.icon-user-plus:before {
+  content: "\e973";
+}
+.icon-enter:before {
+  content: "\ea13";
+}
+

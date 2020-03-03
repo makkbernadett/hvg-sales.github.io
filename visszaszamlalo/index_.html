@@ -1,0 +1,295 @@
+﻿<!doctype html>
+<html>
+
+<head>
+	<title>HVG360 - visszaszámláló</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+	<link href="favicon.png" rel="icon">
+	<link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:900|Roboto:400,500&display=swap&subset=latin-ext" rel="stylesheet">
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-776778-66"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'UA-776778-66');
+	</script>
+
+	<meta property="og:url" content="https://static.hvgrt.hu/visszaszamlalo/" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="HVG360 - visszaszámláló" />
+	<meta property="og:description" content="Hamarosan..." />
+	<meta property="og:image" content="https://static.hvgrt.hu/static/hvg360_og_img.png" />
+
+	<!-- Twitter Card data -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@hvg_hu">
+	<meta name="twitter:title" content="Hamarosan...hvg360">
+	<meta name="twitter:description" content="Hamarosan...hvg360">
+	<meta name="twitter:creator" content="@hvg_hu">
+	<meta name="twitter:image:src" content="https://static.hvgrt.hu/static/hvg360_og_img.png">
+
+
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+		}
+
+		.fb_iframe_widget {
+			display: block !important;
+			text-align: center;
+			position: absolute !important;
+			bottom: 50px;
+		}
+
+		.countdown-container {
+			background-color: #75d1b7 !important;
+			margin: 0;
+			padding: 0;
+			display: flex;
+			width: 100%;
+			height: 100vh;
+			align-items: center;
+			overflow: hidden;
+			justify-content: center;
+			position: absolute;
+		}
+
+		.countdown-box {
+			transform: translateY(-30%);
+		}
+
+		.countdown-header img {
+			max-width: 100%;
+			height: auto;
+			display: block;
+			margin: 0 auto 70px;
+		}
+
+		.countdown-header h1 {
+			font-family: 'Playfair Display', serif;
+			font-size: 30px;
+			font-weight: 900;
+			color: #222222;
+			text-align: center;
+			margin-bottom: 40px;
+			letter-spacing: 1px;
+		}
+
+		.countdown-footer h2 {
+			font-family: 'Playfair Display', serif;
+			font-size: 30px;
+			font-weight: 900;
+			color: #222222;
+			text-align: center;
+			margin-top: 40px;
+			letter-spacing: 1px;
+		}
+
+		#countdown {
+			margin: 0 auto;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			min-height: 62px;
+		}
+
+			#countdown div.item {
+				font-family: 'Roboto', sans-serif;
+				text-align: center;
+				font-size: 70px;
+				margin-top: 0px;
+				font-weight: 500;
+				color: #f0fffb;
+				display: inline-block;
+				padding: 0 10px;
+				position: relative;
+				width: 110px;
+				text-align: center;
+			}
+
+				#countdown div.item:after {
+					content: '';
+					border-right: 1px solid #9ce9d3;
+					position: absolute;
+					width: 1px;
+					height: 100%;
+					top: 0;
+					right: 0;
+				}
+
+				#countdown div.item:last-child:after {
+					border-right: none;
+				}
+
+				#countdown div.item span {
+					font-size: 18px;
+					display: block;
+					font-weight: 300;
+				}
+
+		@media (max-width: 480px) {
+			.countdown-box {
+				transform: translateY(-20%);
+			}
+
+			.countdown-header h1 {
+				font-size: 22px;
+				margin-bottom: 30px;
+			}
+
+			.countdown-footer h2 {
+				font-size: 22px;
+				margin-top: 30px;
+			}
+
+			#countdown div.item {
+				font-size: 36px;
+				width: 60px;
+			}
+
+				#countdown div.item span {
+					font-size: 14px;
+				}
+		}
+
+		.logo-box {
+			position: relative;
+			margin: 0 auto 80px;
+			width: 82px;
+			height: 82px;
+			background: transparent;
+			transform: translateX(-50%);
+		}
+
+			.logo-box:before {
+				content: '';
+				position: absolute;
+				border: 6px solid #222222;
+				border-radius: 50%;
+				height: 8px;
+				width: 8px;
+				left: 50%;
+				top: 50%;
+				transform: translateX(-50%) translateY(-50%);
+			}
+
+		.logo-css {
+			position: relative;
+			margin: 0;
+			width: 82px;
+			height: 82px;
+		}
+
+			.logo-css:after {
+				content: '';
+				width: 82px;
+				height: 82px;
+				border-radius: 0 0 82px 0;
+				background: #222222;
+				background-size: contain;
+				position: absolute;
+				top: 41px;
+				left: 41px;
+				transform-origin: top left;
+				transform: translateX(10px) translateY(10px);
+			}
+	</style>
+	<!-- Facebook Pixel Code -->
+	<script>
+		!function (f, b, e, v, n, t, s) {
+			if (f.fbq) return; n = f.fbq = function () {
+				n.callMethod ?
+					n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+			};
+			if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+			n.queue = []; t = b.createElement(e); t.async = !0;
+			t.src = v; s = b.getElementsByTagName(e)[0];
+			s.parentNode.insertBefore(t, s)
+		}(window, document, 'script',
+			'https://connect.facebook.net/en_US/fbevents.js');
+		fbq('init', '661937150568841');
+		fbq('track', 'PageView');
+	</script>
+	<noscript>
+		<img height="1" width="1" style="display:none"
+			 src="https://www.facebook.com/tr?id=661937150568841&ev=PageView&noscript=1" />
+	</noscript>
+	<!-- End Facebook Pixel Code -->
+</head>
+
+<body>
+
+
+	<!-- Load Facebook SDK for JavaScript -->
+	<div id="fb-root"></div>
+	<script>
+		(function (d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) return;
+			js = d.createElement(s); js.id = id;
+			js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
+			fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+	<div class="countdown-container">
+		<div class="countdown-box">
+			<div class="countdown-header">
+				<!--img src="hvg_countdown_logo.png" />-->
+				<div class="logo-box">
+					<div class="logo-css"></div>
+				</div>
+				<h1>Gyere vissza</h1>
+			</div>
+			<div id="countdown">
+				<!--<div class='item'>22<span>nap</span></div>
+				<div class='item'>18<span>óra</span></div>
+				<div class='item'>11<span>perc</span></div>
+				<div class='item'>10<span>mp</span></div>-->
+			</div>
+			<div class="countdown-footer">
+				<h2>múlva</h2>
+			</div>
+		</div>
+
+
+		<!-- Your share button code -->
+		<!--<div class="fb-share-button" data-href="https://static.hvgrt.hu/visszaszamlalo/" data-layout="button_count" data-size="small">
+			<a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fstatic.hvgrt.hu%2Fvisszaszamlalo%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Megosztás</a>
+		</div>-->
+		<!-- Your like button code -->
+		<!--<div class="fb-like" data-href="https://static.hvgrt.hu/visszaszamlalo/" data-width="" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>-->
+	</div>
+
+
+	<script>
+		window.onload = function () {
+			var countDownDate = new Date("Sept 18, 2019 09:00:00").getTime();
+			var x = setInterval(function () {
+
+				var now = new Date().getTime();
+				var distance = countDownDate - now;
+				var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+				var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+				var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+				var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+				document.getElementById("countdown").innerHTML = "<div class='item'>" + days + "<span>nap</span></div><div class='item'>" + hours + "<span>óra</span></div><div class='item'>" + minutes + "<span>perc</span></div><div class='item'>" + seconds + "<span>mp</span></div>";
+
+				if (distance < 0) {
+					clearInterval(x);
+					document.getElementsByClassName("header-h").innerHTML = "A hvg360 elindult";
+					//document.getElementById("countdown").hide();
+				}
+			}, 1000);
+		}
+	</script>
+</body>
+</html>

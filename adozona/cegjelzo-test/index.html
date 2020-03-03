@@ -1,0 +1,207 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Cégjelző</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+	<link rel='stylesheet'  href='cegjelzo.css' type='text/css'  />
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"      rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700,900&display=swap&subset=latin-ext" rel="stylesheet">
+</head>
+
+<body>
+
+
+<div id="cegjelzoApplication">
+	<div class="cegjelzo-container">
+	
+		<transition name="fade" mode="out-in" >
+			<div class="loading" v-if="autoCompleteProgress" ><span class="cegjelzo-loader"></span> <strong>Keresés...</strong></div>
+		</transition>
+		
+		<div class="cegjelzo-container_top">
+			<div class="cegjelzo-container_row">
+				<h1>Cégkereső<span>Az Adózóna céginformációs szolgáltatása a Cégjelző Kft. támogatásával</span></h1>
+
+				<autocomplete 
+					:place-holder-text="placeHolderInputText"
+					:result-items="autoCompleteResult"
+					:on-key-up="onKeyUpAutoCompleteEvent"
+					:on-enter="onEnterEvent"
+					:on-selected="onSelectedAutoCompleteEvent"
+					:auto-complete-progress="autoCompleteProgress"
+					:item-id="autoCompleteFieldId">
+				</autocomplete>		
+
+			</div>
+		</div>
+		
+		<div class="cegjelzo-container_results">
+            			
+			<div class="cegjelzo-container_row">				
+				<resultList v-if="resultList" :searchresultprop="searchResult" :showresult="onSelectedAutoCompleteEvent"></resultList>
+				<bar v-if="result" :searchresultprop="computedResults" :issearchlist="isSearchList"></bar>
+			</div>
+
+            <p class="cegjelzo-banner">
+				<a href="https://cegjelzo.com" target="_blank">
+					<img src="cegjelzo-banner.png" alt="Cégjelző | Céginformációs Rendszer"/>
+				</a>
+            </p>
+
+            <h3 class="toggle-link" @click="baseShowHowTo = !baseShowHowTo" :class="baseShowHowTo ? 'active' : ''"><i class="material-icons">contact_support</i>  Használati útmutató<span class="indicator"><i class="material-icons">expand_more</i><i class="material-icons">expand_less</i></span></h3>
+            <div class="cegjelzo-document" v-if="baseShowHowTo">
+					<ol class="ol-heading">
+<li><strong> A Céginformációs szolgáltatás</strong></li>
+</ol>
+<p>A Céginformációs szolgáltatás segítségével cégek, egyéni vállalkozók, civil szervezetek és költségvetési szervek adatbázisában kereshet.</p>
+<p>A partner ellenőrzésekor megtudhatja, hogy</p>
+<ul>
+<li>az működő vagy törölt,</li>
+<li>a partner ellen van-e eljárás folyamatban,</li>
+<li>a partner ellen volt-e eljárás folyamatban, ami már lezárult.</li>
+</ul>
+<p>&nbsp;</p>
+<ol start="2"  class="ol-heading">
+<li><strong> A Céginformációs szolgáltatás célja és használatának előnyei:</strong></li>
+</ol>
+<p>Az Adózóna Céginformációs szolgáltatásának számos előnye van, amelyeknek az a célja, hogy használatával időt spóroljon meg, hatékonyabb legyen a munkájában.</p>
+<p><strong>Több adatbázisban kereshet egyszerre</strong></p>
+<p>A kereső mezőre kattintva több adatbázisban (cégnyilvántartás, Cégközlöny, egyéni vállalkozók nyilvántartása, civil szervezetek nyilvántartása ) egyszerre indít keresést, és pár másodperc alatt valamennyiből egyszerre hívhatja le a keresett információkat.</p>
+<p><strong>Előszűrt információk</strong></p>
+<p>Az adatok mennyisége átlátható, annak tartalmát a könyvelők számára priorizáltuk a gyorsabb tájékozódás érdekében. Nem árasztjuk el ön számára érdektelen információkkal, az adatlista a könyvelői munka során fontos adatokra van szűkítve, ezzel is könnyítve az ön munkáját.</p>
+<p><strong>Gyors hozzáférés</strong></p>
+<p>A keresőmezőre kattintva azonnal elindíthatja a keresést, elég pár betűt beírnia, és látni fogja a lehetséges találatokat.</p>
+<p><strong>Magas adatminőség</strong></p>
+<p>A Cégközlöny közhiteles adatait használva a Cégjelző Kft. garantálja a keresett adatok naprakészségét.</p>
+<p><strong>Könnyű kezelhetőség</strong></p>
+<p>Felhasználói felületünk gyors és kényelmes böngészést tesz lehetővé.</p>
+<p>&nbsp;</p>
+<ol start="3"  class="ol-heading">
+<li><strong>Az adatok lekérdezésének a módja</strong></li>
+</ol>
+<p>(Ha még nincs előfizetése <strong><u>itt </u></strong>tájékozódhat az előfizetési lehetőségekről.)</p>
+<ol start="1" class="ol-sub">
+<li>A Céginformációs szolgáltatást az Adózóna előfizetői érik el. Ha van aktív előfizetése, lépjen be email címével és jelszavával.</li>
+<li>Az adatok lekérdezéséhez írja be a keresőmezőbe a keresett cég nevét vagy adószámát.</li>
+<li>A megfelelő cég kiválasztását rögtön a legördülőben megjelenített előzetes találati lista segíti. A keresőmezőbe kattintva már pár karakter beütése után megjelenik a lehetséges találati lista, amelyet hosszabb keresési kifejezések vagy pontos adatsorok beírásával finomíthat.</li>
+<li>A cégadatok eléréséhez válassza ki, és kattintson a keresett cég sorára.</li>
+</ol>
+<p>&nbsp;</p>
+<ol start="4"  class="ol-heading">
+<li><strong> A lekérdezhető adatok</strong></li>
+</ol>
+<p>A Céginformációs szolgáltatás a Cégjelző céginformációs rendszer adatain alapszik, melynek közhiteles forrásai közhiteles, nyilvános adatbázisok (cégnyilvántartás, Cégközlöny, egyéni vállalkozók nyilvántartása, civil szervezetek nyilvántartása).</p>
+<p>Az adatszolgáltatás köre a társas vállalkozásokra (cégekre), az egyéni vállalkozásokra, a civil szervezetekre és a költségvetési szervekre terjed ki.</p>
+<p>A lekérdezhető adatok:</p>
+<p>Cégek esetén:</p>
+<ul>
+<li>Cég rövid neve</li>
+<li>Cég hosszú neve</li>
+<li>Székhely</li>
+<li>Cégjegyzékszám</li>
+<li>Adószám</li>
+<li>Főtevékenység</li>
+<li>Alapítóokirat</li>
+<li>Cég státusza</li>
+<li>Jegyzett tőke</li>
+<li>Eljárások</li>
+<li>Bankszámlaszám</li>
+<li>Email cím</li>
+</ul>
+<p>Civilszervezetek esetén</p>
+<ul>
+<li>Regisztrációs szám</li>
+<li>Név</li>
+<li>Székhely</li>
+<li>Civilszervezet státusza</li>
+<li>Bejegyzés dátuma</li>
+<li>Alapítás dátuma</li>
+<li>Civilszervezet tevékenysége</li>
+<li>Közhasznúsági fokozat</li>
+<li>Tevékenység leírása</li>
+<li>Adószám</li>
+<li>Bankszámlaszám</li>
+</ul>
+<p>Egyéni Vállalkozók esetén</p>
+<ul>
+<li>Egyéni vállalkozó neve</li>
+<li>KSH szám</li>
+<li>Nyilvántartási szám</li>
+<li>Tevékenység</li>
+<li>Státusz</li>
+<li>Adószám</li>
+<li>Indulás dátuma</li>
+<li>Cím</li>
+</ul>
+<p>Költségvetési szervek esetén:</p>
+<ul>
+<li>Név</li>
+<li>Székhely</li>
+<li>Alaptevékenység fő TEÁOR kódja</li>
+<li>Adószám</li>
+<li>Közoktatási OM azonosító</li>
+<li>Alapítói jog gyakorlója</li>
+</ul>
+<p>&nbsp;</p>
+<p>Az adatokat, információkat a Cégjelző Céginformációs Kft. (székhely: 1124 Budapest, Kempelen Farkas u. 1., adószám: 26163190-2-43, cégjegyzékszám: 01-09-305302) szerkeszti, és a HVG Zrt. által tulajdonolt Adózóna előfizetői férhetnek hozzá.</p>
+<p>Amennyiben a szolgáltatással kapcsolatban bármi kérdése vagy észrevétele merül fel, kérjük írjon az <a href="mailto:info@cegjelzo.hu">info@cegjelzo.hu</a> címre.</p>
+<p>&nbsp;</p>
+            </div>
+			
+            <h3 class="toggle-link" @click="baseShowLegals = !baseShowLegals"  :class="baseShowLegals ? 'active' : ''"><i class="material-icons">assignment</i> Felhasználási feltételek<span class="indicator"><i class="material-icons">expand_more</i><i class="material-icons">expand_less</i></span></h3>
+            <div class="cegjelzo-document"  v-if="baseShowLegals">
+					<p>az adozona.hu portálon elérhető Céginformációs szolgáltatás online felületének felhasználói részére</p>
+<p><strong>1. A működtetés alapelvei</strong></p>
+<ol>
+<li>A <a href="http://www.adozona.hu">adozona.hu</a> oldalon elérhető Céginformációs szolgáltatás lekérdezési lehetőséget biztosít API-n keresztül a Cégjelző céginformációs rendszer adatbázisából azzal a céllal, hogy a szolgáltatás használói számlakiállításaik vagy számláik befogadása/ellenőrzése során kontrollálhassák a számlán szereplő partnerük alapvető adatait.</li>
+<li>Az információkat a Cégjelző Céginformációs Kft. (székhely: 1124 Budapest, Kempelen Farkas u. 1., adószám: 26163190-2-43, cégjegyzékszám: 01-09-305302) szerkeszti, és a HVG Zrt. által tulajdonolt Adózóna előfizetői férhetnek hozzá.</li>
+<li>A szolgáltatás nem képezi részét az Adózóna előfizetési csomagjának, de a használata csak előfizetők számára elérhető.</li>
+<li>A <a href="http://www.adozona.hu">adozona.hu</a> oldalon elérhető Céginformációs szolgáltatás időszakos szolgáltatás. A HVG Kiadó Zrt. fenntartja magának a jogot, hogy az előfizetési időszakok időtartamától függetlenül bármikor, előzetes bejelentés nélkül megszüntesse.</li>
+
+</ol>
+<p><strong>2.  Tartalom általános védelme</strong></p>
+<ol>
+<li>Valamennyi felhasználó azzal, hogy belép a HVG Kiadó Zrt. (továbbiakban Kiadó) által elérhetővé tett Céginformációs szolgáltatás oldalaira, automatikusan elfogadja az alábbi felhasználási feltételeket.</li>
+<li>A Céginformációs szolgáltatás oldalán megjelenő minden tartalom a Kiadó törvény által védett szellemi tulajdonát képezi, ezért az oldalon közzétett tartalmak és azok egyes részei (videók, ppt-k, pdf-ek, cikkek, grafikák, képek, kalkulátorok, kérdések és válaszok, jogszabályok, leírások, iratminták stb.) bármilyen módon történő felhasználása, különösen másolása, többszörözése, feldolgozása, átdolgozása, adatbázisban történő tárolása, rendszerezése, átcsoportosítása, változatlan vagy bármilyen módosítással, átszerkesztéssel történő közzététele, terjesztése, nyilvánossághoz közvetítése és kereskedelmi forgalomba hozatala kizárólag a Kiadó előzetes írásbeli engedélyével történhet (szerzői jogról szóló 1999. évi LXXVI. törvény). A felhasználó a Céginformációs szolgáltatás egyes részeit kizárólag saját felhasználás céljából használhatja.</li>
+<li>A Céginformációs szolgáltatás oldalairól értesülést és információkat átvenni és más felületeken publikálni vagy más módon nyilvánosságra hozni szigorúan TILOS. A tartalmak átvétele a szokásos hivatkozási szabályok betartása mellett sem engedélyezett! A jogosulatlan felhasználás büntető- és polgári jogi, illetőleg szerzői jogi következményeket von maga után, amelynek során a Kiadó – önkéntes teljesítés hiányában – értesítési-eltávolítási eljárásban követelheti az interneten megjelentetett jogsértő tartalom eltávolítását, illetőleg ahhoz a hozzáférés biztosításának megszüntetését, továbbá bírósági úton követelheti a jogsértés megállapítását, abbahagyását, a jogsértéstől való jövőbeni eltiltást, valamint elégtétel adását és a jogsértéssel okozott vagyoni és nem vagyoni károk megtérítését. A fentiekben foglaltak a szerzői jogról szóló 1999. évi LXXVI. törvény szerinti tiltó nyilatkozatnak minősülnek.</li>
+</ol>
+<p><strong>3. Felhasználói hozzáférések</strong></p>
+<p><strong>Felhasználó:</strong> Látogató, Regisztrált felhasználó és Adózóna előfizető.</p>
+<p><strong>Látogató:</strong> a www.adozona.hu portál regisztráció nélküli látogatói, akik a Céginformációs szolgáltatás ingyenesen és jogosultsági szinttől függetlenül elérhető tartalmait olvashatják. Cégadatok lekérdezésére a látogatók nem jogosultak.</p>
+<p><strong>Regisztrált felhasználó:</strong> a www.adozona.hu portál regisztrált látogatói hozzáférnek a site regisztrációhoz kötött tartalmaihoz, és megkapják az Adózóna Heti szemle című hetente kiküldött szakmai értesítőt. A Céginformációs szolgáltatás ingyenesen és jogosultsági szinttől függetlenül elérhető tartalmait olvashatják, cégadatok lekérdezésére a regisztrált felhasználók nem jogosultak.</p>
+<p><strong>Adózóna-előfizető:</strong> azon felhasználók, akik a látogatásuk időpontjában aktív Adózóna előfizetéssel rendelkeznek, a megrendelt előfizetési csomag típusától függetlenül díjmentesen jogosultak a Céginformációs szolgáltatás keretében cégadatok lekérdezésére.</p>
+<p><strong>4. A Kiadó felelősségének korlátozásai</strong></p>
+
+<ol>
+<li>A Kiadót nem terheli felelősség a fentiek szerint nem kellő elővigyázatossággal kezelt jogosultságok miatt bekövetkező esetleges károkért, valamint személyiségi jogsérelmekért.</li>
+<li>A Kiadó kizár minden felelősséget a Cégjelző Kft. által szolgáltatott Céginformációs szolgáltatás használatából fakadó minden nemű kárért. A Kiadó felhívja a figyelmet arra, hogy az lekért adatokat a felhasználók saját felelősségükre használják, alkalmazzák, annak következményei a felhasználó kizárólagos felelősségi körébe tartoznak. A Kiadó kizárja a felelősségét minden olyan kárért, mely a szolgáltatás és a segédanyagok nem szakszerű vagy nem jogszerű felhasználásából ered.</li>
+<li>A Kiadó az online működés tekintetében kizárja a felelősségét minden olyan kárért, mely előre nem látható, illetve el nem hárítható külső okból (pl. vis maior) ered. A Kiadó kifejezetten kizárja felelősségét a következményi károk tekintetében. A Szolgáltató kártérítési felelősségének felső összeghatára az Adózóna előfizetési csomag díjára korlátozott, kivéve, ha jogszabály a felelősség ilyen korlátozását kifejezetten kizárja.</li>
+</ol>
+<p><strong>4. A Cégjelző felelősségének korlátozásai</strong></p>
+<ol>
+<li>A Cégjelző céginformációs szolgáltatásokban közzétett adatok tájékoztató jellegűek. Ennélfogva a Cégjelző Kft. kizárja mindennemű felelősségét a terméken (szolgáltatáson) &#8211; az azok elkészítéséhez felhasznált (adat)források, illetőleg kiadványszerkesztési, informatikai adatkezelési és adattovábbítási módok miatt &#8211; előforduló minden hibáért, a terméken (szolgáltatáson) megjelenő szerzői véleményekre alapozott döntésért, illetve az ezekből eredő károkért. Kizárja a felelősségét különösen az olyan esetekben, amikor az Országos Cégnyilvántartó és Céginformációs Rendszer, illetve a Magyar Közlöny Lap- és Könyvkiadó Kft. (MHK) hibásan, vagy az addig szokásostól eltérő módon tesz közzé adatokat, illetve ha az Igazságügyi Minisztérium Céginformációs és Elektronikus Cégeljárásban Közreműködő Szolgálata által üzemeltetett, közhiteles cégnyilvántartás (e-cegjegyzek.hu), illetőleg a Magyar Közlöny Lap- és Könyvkiadó Kft. által kiadott, ugyancsak közhiteles Cégközlöny (e-cegkozlony.hu) adatai között eltérés van.</li>
+<li>A Cégjelző Kft. szavatol azért, hogy a cégadatokat a Magyar Közlöny Lap-és Könyvkiadó Kft.-től jogszerűen szerezte/szerzi meg, illetőleg rendelkezik a kiadó engedélyével, miszerint az adatokat bármely szabadon kiválasztott ügyfele számára bármilyen szolgáltatáscsomagba beépítve szabadon felhasználhatja, illetőleg forgalmazhatja.</li>
+<li>A Cégjelző Kft. kijelenti, hogy a cégadatok között átadott, harmadik személy gazdasági társaságok elektronikus elérhetőségére vonatkozó információk az országos cégnyilvántartás közhiteles adatbázisából származnak, bármi legyen is azok tartalma. Ennélfogva az adat felhasználója nem követ el jogsértést, ha azon a címen üzleti ajánlattal keresi meg a bejegyzett gazdasági társaságot, minthogy az a küldemény ily módon nem minősülhet kéretlen reklámlevélnek (SPAM-nek).</li>
+<li>Amennyiben szolgáltatásban hibás adatot találnának, szíveskedjenek jelezni az</li>
+</ol>
+<p><strong>5. Adatvédelem </strong></p>
+<p>A <a href="http://www.adozona.hu">www.adozona.hu</a> portálon elérhető Céginformációs szolgáltatás felhasználóira a HVG Kiadó Zrt. általános adatvédelmi elvei az irányadók.</p>
+<p>A HVG Kiadó Zrt. részletes Adatvédelmi nyilatkozatát <a href="http://hvg.hu/adatvedelem"><strong>ITT</strong></a> olvashatja el.</p>
+<p>Tovább&#8230;</p>
+            </div>			
+		</div>
+		
+
+
+	</div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="az-cegjelzo.js"></script>
+</body>
+</html>

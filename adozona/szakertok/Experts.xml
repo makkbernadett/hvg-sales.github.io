@@ -1,0 +1,615 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<AdozonaExperts>
+
+  <Expert id="6b785748-2956-4463-80d5-1221149a5095"
+			sid="372B403A"
+			name="dr. Radics Zsuzsanna"
+			title="tb-szakértő, jogász"
+			articleid="50728670-8e1e-4213-97ad-1062317ef7de"
+			company=""
+			description=""
+			photo="">
+  </Expert>
+
+  <Expert id="4079da76-6e13-4f57-a74f-61ab153e6bdf"
+			sid="458AB8FD"
+			name="Siklós Márta"
+			title="adótanácsadó, könyvvizsgáló"
+			articleid="100026b3-0073-4a4e-b705-fda3305abb3c"
+			company="LeitnerLeitner"
+			description=""
+			photo="">
+  </Expert>
+
+  <Expert id="a7a230ec-2567-47ab-94d0-2c97b0899b07"
+			sid="42F3AB4C"
+			name="dr. Viszló László"
+			title="szakértő"
+			articleid="3aefb2b4-6561-4d00-991e-9a10f363902e"
+			company=""
+			description=""
+			photo="">
+  </Expert>
+
+  <Expert id="1bff45f3-c1da-43d9-9567-1edd23a29097"
+			sid="6364EA26"
+			name="dr. Kathi Krisztina"
+			title="ügyvéd"
+			articleid="8630e908-9506-4ffc-b067-74997905645b"
+			company=""
+			description=""
+			photo="">
+  </Expert>
+
+  <Expert id="70b029bd-b1a8-4568-a499-24ec5ba202fd"
+			sid="0CFFB8E1"
+			name="dr. Csurgay András"
+			title="ügyvéd"
+			articleid=""
+			company=""
+			description="A budapesti székhellyel, de az ország egész területén működő ügyvédi iroda egyebek mellett kiemelten foglalkozik társasági jogi, adójogi, 
+				ingatlanjogi, valamint polgári és kereskedelmi jogi jogügyletekkel. Tevékenységük igen szerteágazó. Munkatársaik között társasági szakjogász, 
+				ingatlanjogi szakértő, adótanácsadó és mérlegképes könyvelő egyaránt megtalálható. Ügyfélkörük változatos, így cégek, önkormányzatok, oktatási 
+				intézmények és magánszemélyek képviseletét egyaránt ellátják."
+			photo="">
+  </Expert>
+
+  <Expert id="833c46e7-2496-4328-a45b-7fbc521fac75"
+			sid="EFA7AB8A"
+			name="Angyal József"
+			title="okleveles adószakértő"
+			articleid="28424974-e5a5-44a4-8e9f-24d5e3add971"
+			company=""
+			description=""
+			photo="">
+  </Expert>
+
+  <Expert id="29b50252-4fe9-4cb1-a0e8-c4e7bbe046ff"
+			sid="089BD36D"
+			name="Erdős Gabriella"
+			title="adószakértő"
+			articleid="34e8f3b7-0b38-4b82-8bfb-85a45588dda4"
+			company="TaxMind Kft."
+			description=""
+			photo="">
+  </Expert>
+
+  <Expert id="10ec6f5b-e19e-466d-87a7-a3307cec33b1"
+			sid="30C150F4"
+			name="Béres Molnár Gergely"
+			title="könyvvizsgáló, adószakértő"
+			articleid="a34234dc-092e-4f2f-b830-23a78b024a14"
+			company=""
+			description=""
+			photo="">
+  </Expert>
+
+  <Expert id="51a31134-4119-4677-bca2-b832c6ffc163"
+			sid="C0655B9B"
+			name="Veszprémi István"
+			title="Deloitte, adópartner"
+			articleid="f1d4b436-4514-4fef-81bb-91cfe26feb08"
+			company=""
+			description=""
+			photo="">
+  </Expert>
+
+  <Expert id="916a5fe5-2995-4505-aea2-b800eb632805"
+			sid="2DD0E96F"
+			name="Szolnoki Béla"
+			title="adószakértő, könyvvizsgáló"
+			articleid="36ca4d9e-0f5d-4e86-a004-e6abdd4bb5fa"
+			company=""
+			description=""
+			photo="">
+  </Expert>
+
+  <Expert id="f9f748b2-07c7-4c9a-8ffb-ca1dd1fcdf42"
+			sid="60F93FB6"
+			name="Széles Imre"
+			title="tb-szakértő"
+			articleid="d5aa53fe-884a-441d-99ad-50f015d6a62c"
+			company=""
+			description=""
+			photo="">
+  </Expert>
+
+  <Expert id="3c3af84e-1a59-4dcb-81f2-ec403016e90f"
+			sid="37F4D062"
+			name="dr. Marosi Andrea"
+			title="ügyvéd"
+			articleid="c76a4e46-9ab4-47ae-a635-ebbb9b6b7ee4"
+			company=""
+			description=""
+			photo="">
+  </Expert>
+
+  <Expert id="86e7b441-bb50-4a00-aef9-9f904d4e61a5"
+			sid="1EF6F5DC"
+			name="Molnár László"
+			title="nyugdíjszakértő"
+			articleid="6fa73650-67dc-4284-9f2a-00e719df01b0"
+			company=""
+			description=""
+			photo="">
+  </Expert>
+
+  <Expert id="b4387d8b-54d3-414d-812b-b5bdf22b7efd"
+			sid="1971640B"
+			name="Surányi Imréné"
+			title="okleveles közgazda"
+			articleid="07be54da-f415-472f-9023-b188262dbe0b"
+			company=""
+			description=""
+			photo="">
+  </Expert>
+
+  <Expert id="e4a7b4dd-ca68-48e9-a265-27eda8bb5889"
+			sid="7569AFD9"
+			name="Csobánczy Péter"
+			title="adószakértő"
+			articleid="ea4b568f-510b-4761-a157-0c16c9da4ad2"
+			company=""
+			description=""
+			photo="">
+  </Expert>
+
+  <Expert id="3a754690-8f0b-40ee-8ceb-6b5c7b3fae03"
+			sid="7F208730"
+			name="Szikszainé Bérces Anna"
+			title="társadalombiztosítási szakértő"
+			articleid="37c6a2b4-904b-4a51-a3b4-b122da179418"
+			company=""
+			description=""
+			photo="">
+  </Expert>
+
+  <Expert id="38b1bd5d-680e-4eef-8b60-662ab2be7c8d"
+			sid="97D6E420"
+			name="Adózóna szakértő"
+			title="kérdések és válaszok"
+			articleid=""
+			company=""
+			description=""
+			photo="">
+  </Expert>
+
+  <Expert id="1e04bbd8-4b27-4ce0-a22a-9a7e379ded5b"
+			sid="F218D74A"
+			name="Frankó Éva"
+			title="Sodexo cafetéria-szakértője"
+			articleid="342484bb-d9fb-45aa-9d02-9c5173bb6c00"
+			company=""
+			description=""
+			photo="">
+  </Expert>
+
+  <Expert id="13356b71-aaaf-4fa1-ba26-1761efaeb23e"
+			sid="3D7A9F65"
+			name="Ferencz Gyöngyi"
+			title="könyvvizsgáló, audit partner (VGD)"
+			articleid="02b608bb-13fc-4675-a6d4-d3803d788aaf"
+			company=""
+			description=""
+			photo="">
+  </Expert>
+
+  <Expert id="00612e2b-e7cc-4403-adcd-618347dee519"
+			sid="02420C47"
+			name="dr. Hajdu-Dudás Mária"
+			title="ügyvéd"
+			articleid="d9b372ac-e059-4758-93fa-e0c61636fe6e"
+			company=""
+			description=""
+			photo="">
+  </Expert>
+
+  <Expert id="e689e311-ed2e-4d1b-8446-2e1dcd9aeb27"
+			sid="A2B24D71"
+			name="Jánossy Gyula"
+			title="cafeteria-szakértő, Sodexo"
+			articleid="8a79a2d9-8198-4efc-9434-f7d1542012d6"
+			company=""
+			description=""
+			photo="">
+  </Expert>
+
+  <Expert id="382060a5-e8e8-4243-8cf4-0d0b87625d56"
+			sid="4326FBDD"
+			name="dr. Kocsis Ildikó"
+			title="ügyvéd"
+			articleid=""
+			company=""
+			description="Dr. Kocsi Ildikó 1998-ban szerezte meg jogi diplomáját a József Attila Tudományegyetem Állam- és Jogtudományi Karán. 2002-ben Európa jogi 
+				szakjogász diplomát szerzett. Folyékonyan beszél angolul. A Dr. Kocsis Ildikó Ügyvédi Iroda 2004-ben történt megalapítása előtt a Magyar Állam 
+				képviseletét látta el a Kincstári Vagyoni Igazgatóság jogtanácsosaként és munkája elismeréseként 2003-ban főtanácsosi címet kapott. Szerzője számos 
+				országos és helyi médiában megjelent cikknek és gyakran meghívott előadója szemináriumoknak, valamint szakértőként több TV és rádió csatorna műsorában 
+				is találkozhattak már vele. 2011-ben megjelent első könyve, mely a jogot érthető formában adja át a vállalkozások vezetőinek, ezzel életre keltve az 
+				Érthető Jogot, melynek keretében folyamatosan újabb jogi területek kerülnek érthető formában a nagyközönség elé. 2008 februárjában az Ügyvéd Világ 
+				magazin készített interjút pályafutásáról, majd 2008 májusában szakmai munkássága elismeréseként a Who is Who Magyarországon (Ki kicsoda Magyarországon) 
+				lexikon szerkesztősége döntése alapján bekerült a gazdaság, politika, tudomány, kultúra és művészet területein tevékenykedő híres vagy kiemelkedő 
+				teljesítményt nyújtó személyiségek életrajzait tartalmazó enciklopédiába."
+			photo="">
+  </Expert>
+
+  <Expert id="d9d39ec6-04bd-4b32-a9c7-03bb4ac30dff"
+			sid="57E94646"
+			name="Lakatos Istvánné"
+			title="mérlegképes könyvelő"
+			articleid="2071fb96-608d-406c-82df-24cbc629ab00"
+			company=""
+			description=""
+			photo="">
+  </Expert>
+
+  <Expert id="97f33b76-9369-420b-a2c4-557f99e3ee49"
+			sid="3CE118D0"
+			name="Bartha Katalin"
+			title="okleveles adószakértő"
+			articleid="34bb7948-0270-4b02-878c-c831505ca975"
+			company=""
+			description=""
+			photo="">
+  </Expert>
+
+  <Expert id="2a135da9-dcfd-46ad-98aa-22e36e3ba9ad"
+			sid="FC3F0653"
+			name="Juhász Tibor"
+			title="okleveles nemzetközi és ellenőrzési adószakértő"
+			articleid="e965459e-71d2-41b1-8b8f-1cbf70f54700"
+			company=""
+			description=""
+			photo="">
+  </Expert>
+
+  <Expert id="21c8fb6c-0285-43bf-8987-409f0b077dcb"
+			sid="1580C059"
+			name="dr. Verbai Tamás"
+			title="jogász"
+			articleid="d6254d5a-98da-4cf2-a71e-fcc78738445a"
+			company=""
+			description=""
+			photo="">
+  </Expert>
+
+  <Expert id="ab5b5766-cde5-44f5-8bec-f48af7f01585"
+			sid="4668A837"
+			name="Nagy Norbert"
+			title="adószakértő"
+			articleid="477fc6cc-7246-4b9a-82ed-2910dfcf1fd8"
+			company=""
+			description=""
+			photo="">
+  </Expert>
+
+  <Expert id="c0234e8d-32ae-4ee2-abba-184903c0d400"
+			sid="EEAD9D72"
+			name="dr. Szilágyi Roland"
+			title="adószakértő"
+			articleid="b7766888-d053-4795-bd32-98530eb992b7"
+			company=""
+			description=""
+			photo="">
+  </Expert>
+
+  <Expert id="55ce1564-399e-4203-8d53-96ac1e5126e7"
+			sid="1A6890A9"
+			name="Szipszer Tamás"
+			title="adószakértő"
+			articleid="45e0586a-6969-4aaf-92e8-23ab976dcc07"
+			company=""
+			description=""
+			photo="">
+  </Expert>
+
+  <Expert id="61a9c03d-16b0-4b7e-a054-8a0147979268"
+			sid="8FB51F8B"
+			name="Pölöskei Pálné"
+			title="adószakértő"
+			articleid="7431718d-a7c6-401b-808f-f93e8dd009b5"
+			company=""
+			description=""
+			photo="">
+  </Expert>
+
+  <Expert id="a097fdab-38bf-4936-b991-21f0ce9a3bc7"
+			sid="8093300E"
+			name="Sinka Júlia"
+			title="adó és számviteli tanácsadó"
+			articleid="e5b480ef-c180-43a3-bb71-1654974dc60b"
+			company=""
+			description=""
+			photo="">
+  </Expert>
+
+  <Expert id="1fb83d89-4879-47d7-916e-d72b08b99196"
+			sid="EF9AA532"
+			name="Winkler Róbert"
+			title="nyugdíjszakértő"
+			articleid="b8a6521a-b1f6-4c72-8fd3-939e08312ff5"
+			company=""
+			description=""
+			photo="">
+  </Expert>
+
+  <Expert id="155bfc21-5f79-431c-8494-ec392fd8df8e"
+			sid="712FFD20"
+			name="dr. Szeiler Nikolett"
+			title="ügyvéd, adótanácsadó"
+			articleid="ecc5ea81-7bdc-466f-a7aa-4b5dfd807fe4"
+			company=""
+			description=""
+			photo="">
+  </Expert>
+
+  <Expert id="006e865e-1058-4d5c-80a0-457897a156d3"
+			sid="AC570E54"
+			name="Kneitner Lea"
+			title="okleveles nemzetközi és igazságügyi adószakértő"
+			articleid="4f75c670-01d0-4669-ab58-089b80692250"
+			company=""
+			description=""
+			photo="">
+  </Expert>
+
+  <Expert id="524615a1-ae06-4bdc-895c-52240123e586"
+			sid="43E0092B"
+			name="dr. Kelemen László"
+			title="adószakértő, jogász"
+			articleid="1d85ffd0-2adc-4770-a2fb-a3d425a4e9ea"
+			company=""
+			description=""
+			photo="">
+  </Expert>
+
+  <Expert id="37f4b554-f2aa-4adf-86be-4ee2d0a8d0c6"
+			sid="C8218D70"
+			name="dr. Bartha László"
+			title="adójogi szakjogász"
+			articleid="6aee5580-d87c-4ad2-aab8-6f59da5fb7fa"
+			company=""
+			description=""
+			photo="">
+  </Expert>
+
+  <Expert id="760fe663-3836-4a8d-a2f4-ce258f4e6bc3"
+			sid="E088CD8A"
+			name="Lepsényi Mária"
+			title="adószakértő"
+			articleid="cfe2f162-aa4a-4550-a886-ae97bfe8987e"
+			company=""
+			description=""
+			photo="">
+  </Expert>
+
+  <Expert id="0a4b796d-3489-4eb3-b03d-9cc6a9f1892c"
+			sid="81BB12B2"
+			name="dr. Kéri Ádám"
+			title="ügyvéd, adatvédelmi tisztviselő"
+			articleid="ca897a8b-1f6c-4c72-b4a1-e9f5bc07ae6a"
+			company=""
+			description=""
+			photo="">
+  </Expert>
+
+  <Expert id="f6ed3720-206c-4dc8-b290-f3549b57cd6c"
+			sid="4E7959C9"
+			name="Hunyadné Szűts Veronika"
+			title="igazságügyi adó- és járulékszakértő"
+			articleid="4b981cc2-d733-476f-a9ef-03ed31fc8c68"
+			company=""
+			description=""
+			photo="">
+  </Expert>
+
+  <!--<Expert id="f6ed3720-206c-4dc8-b290-f3549b57cd6c"
+			sid="4E7959C9"
+			name="Hunyadné Szűts Veronika"
+			title="igazságügyi adó- és járulékszakértő"
+			articleid="4b981cc2-d733-476f-a9ef-03ed31fc8c68"
+			company="Taxmind Kft."
+			description=""
+			photo="">
+	</Expert>-->
+
+  <Expert id="5868bac8-6656-4684-a50e-acb9e78d9de8"
+    sid="71DC53D3"
+    name="Tirpák Anita"
+    title="Mérlegképes könyvelő és adószakértő"
+    articleid="01553ac2-6195-46d2-9a42-6c7e93303698"
+    company="Corvin-Alkusz Kft."
+    description=""
+    photo="">
+  </Expert>
+
+  <Expert id="815170a8-e86c-4c9c-a4ec-fadd56108ec3"
+    sid="BE887411"
+    name="Tirpák Anita"
+    title="Könyvelési és bérszámfejtési Üzletágvezető"
+    articleid="01553ac2-6195-46d2-9a42-6c7e93303698"
+    company="Niveus Consulting Group Kft"
+    description=""
+    photo="">
+  </Expert>
+
+  <Expert id="51433d5b-b7dc-4c4f-86c2-096d4d5c6d97"
+    sid="B946CFD4"
+    name="Bagdi Lajos"
+    title="Adótanácsadás Üzletágvezető"
+    articleid="f379da2e-a23a-4d38-a880-d539a535472b"
+    company="Niveus Consulting Group Kft"
+    description=""
+    photo="">
+  </Expert>
+
+  <Expert id="e7e40d74-f257-40ed-af76-f16477c4dc7f"
+    sid="C7079FE4"
+    name="Giraszin János"
+    title="Transzferár Üzletágvezető"
+    articleid="fff7a7a3-2d91-4c92-9d9b-b89a7228c20d"
+    company="Niveus Consulting Group Kft"
+    description=""
+    photo="">
+  </Expert>
+
+  <Expert id="0409df2a-08c4-42fd-80ee-b0e3ed9cf6bb"
+    sid="FADE0661"
+    name="Magos Zoltánné"
+    title="adószakértő"
+    articleid="310a2959-f79a-47fb-86c3-66266c86af2c"
+    company=""
+    description=""
+    photo="">
+  </Expert>
+
+  <Expert id="ba4f9d20-8583-4fc2-8038-c993638c206d"
+	sid= "9D4655E4"
+	name="Antretter Erzsébet"
+	title="adószakértő, mérlegképes könyvelő"
+	articleid="5f112bda-a2db-48f9-8ab6-020952f684d1"
+	company="Niveus Consulting Group Kft."
+	description=""
+	photo="">
+  </Expert>
+
+  <Expert id="271aa6b0-1168-428f-a261-aa023f2df308"
+    sid= "6D835881"
+    name="dr. Somos Géza"
+    title="ügyvéd"
+    articleid="a8dc74f3-2108-476c-b946-7669d8b96042"
+    company=""
+    description=""
+    photo="">
+  </Expert>
+
+  <Expert id="bc178a1c-9218-41db-8522-1da2aff77d71"
+    sid= "6DE41345"
+    name="Szarvas Imréné"
+    title="könyvvizsgáló, adószakértő, könyvelő"
+    articleid="282885b3-c0b9-46f5-8422-55db861b1104"
+    company=""
+    description=""
+    photo="">
+  </Expert>
+
+  <Expert id="b3a24836-17cb-4e45-bbb7-c6db2de05294"
+    sid= "B0CE1351"
+    name="Tüske Péter"
+    title="vámszakértő"
+    articleid="13e61490-c1c9-45d1-810a-0edfb04bdd34"
+    company=""
+    description=""
+    photo="">
+  </Expert>
+
+  <Expert id="817d3ba0-345c-4162-a63c-455e70386dab"
+    sid= "667077B6"
+    name="Tüske Zsuzsanna"
+    title="vámszakértő"
+    articleid="039af496-198a-463d-9596-37d10453a31c"
+    company=""
+    description=""
+    photo="">
+  </Expert>
+  
+  <Expert id="84e6005b-1afa-4235-9c6e-1e5e3add7a5d"
+    sid= "6F41374B"
+    name="dr. Császár Zoltán"
+    title="adótanácsadó, jogász"
+    articleid="29d11285-4ecb-41e0-a0d8-71446aec9546"
+    company=""
+    description=""
+    photo="">
+  </Expert>
+  
+  <Expert id="e6c03f1e-08e5-49f1-9f0c-dccacbdd71dc"
+    sid= "4470B6EC"
+    name="Tupac Shakur"
+    title="Isten"
+    articleid=""
+    company=""
+    description="Tupac Shakur"
+    photo="">
+  </Expert>
+  
+  <Expert id="8a963fd7-418b-4ad0-a8b3-3a5737bf0335"
+    sid= "2083EA00"
+    name="Lakatos Zsuzsa"
+    title="transzferár- és adószakértő"
+    articleid="a76f7eab-04df-4cba-9de1-d280861cb25b"
+    company=""
+    description=""
+    photo="">
+  </Expert>
+  
+  <Expert id="53cd2abd-98c9-4b72-b793-c4a7c00b0b15"
+    sid= "BD391D66"
+    name="Kocsis Zoltán"
+    title="közgazdász "
+    articleid="8cac8818-65a4-4282-a532-f3f7da09888c"
+    company="Dr. Szeiler &amp; Partners Könyvelő és Adótanácsadó Iroda"
+    description=""
+    photo="">
+  </Expert>
+  
+  <Expert id="ad6fc397-9e09-479a-8536-5f54556afe32"
+    sid= "FB3CADE3"
+    name="dr. Gindl Dorottya"
+    title="adatvédelmi szakértő "
+    articleid="90f18444-6b23-4fa4-ab21-f10583771aac"
+    company=""
+    description=""
+    photo="">
+  </Expert>
+  
+  <Expert id="e4a786ac-581a-4339-b855-38ccdbe18aaa"
+    sid= "A236FB95"
+    name="dr. Nagy András Zoltán"
+    title="ügyvéd"
+    articleid="af0aaaaf-e6a4-48c6-82d5-5bfcb77bd33f"
+    company="Dr. Nagy András Zoltán Ügyvédi Iroda"
+    description=""
+    photo="">
+  </Expert>
+  
+  <Expert id="b7e326b8-5bab-4396-a1f9-9e3a47511998"
+    sid= "FD91419C"
+    name="Horváthné Szabó Beáta"
+    title="adószakértő"
+    articleid="eb3cc642-2351-4b35-85e3-4be1d00b7185"
+    company=""
+    description=""
+    photo="">
+  </Expert>
+  
+  <Expert id="87806e16-cd0c-4472-a412-c738b75500da"
+    sid= "D8AACA55"
+    name="Kiss Péter"
+    title="adószakértő"
+    articleid="7b073a3e-0bb5-4743-9367-b392ae84fccf"
+    company="OrienTax Adótanácsadó Zrt."
+    description=""
+    photo="">
+  </Expert>
+  
+  <Expert id="21c699a8-1c4e-4194-835c-ad4dea72f9da"
+    sid="21AE089C"
+    name="Bunna Erika"
+    title="adótanácsadó"
+    articleid="739a0ba9-52f4-412b-9167-cc5ebdf71b54"
+    company=""
+    description=""
+    photo="">
+  </Expert>
+  
+  <Expert id="e0c10b2c-c371-4161-b47c-2414d44e3f58"
+    sid="296EA0DA"
+    name="Czeglédi Bernadett"
+    title="munkajogi és társadalombiztosítási szakértő"
+    articleid="397dcaae-cdd2-45c6-8f47-c4fd5a17f973"
+    company="Talent4U Consulting Bt."
+    description=""
+    photo="">
+  </Expert>
+
+</AdozonaExperts>

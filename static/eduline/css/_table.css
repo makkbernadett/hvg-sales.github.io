@@ -1,0 +1,269 @@
+
+/***************
+ * Név:         _table.css
+ * Leírás:      eduline.hu táblázatok css
+ * Keletkezés:  2006.10.25.
+ * Fejlesztő:   Zsibrita György
+ * FONTOS:		Éles site-on belül a kommenteket távolítsuk el.
+ ****************/
+.ajanlo-col table
+{
+    width: 600px;
+    display: block;
+    margin: 0 auto;
+    float: left;
+}
+.ajanlo-col tr
+{
+    vertical-align: top;
+}
+
+.ajanlo-col tr.alternate
+{
+    vertical-align: top; /* background: #f6f6f6;*/
+}
+.ajanlo-col tr.alt
+{
+    vertical-align: top;  background: #f6f6f6;
+}
+.ajanlo-col tr.alternate td.bottom
+{
+    /*border-bottom: solid 1px #000000;*/
+}
+.ajanlo-col td.separ
+{
+    background: url(../img/cikkseparb.gif) repeat-x top left;
+    height: 8px;
+    margin: 0;
+    padding: 0;
+    font-size: 6px;
+    line-height: 6px;
+}
+.ajanlo-col td
+{
+    margin: 0;
+    width: 600px;
+    padding-bottom: 8px;
+    margin-bottom: 8px;
+}
+.ajanlo-col td.stx 
+{
+	width:110px;
+}
+.ajanlo-col .lead table
+{
+    width: 600px;
+    display: block;
+    margin: 0 auto;
+    float: left;
+}
+.ajanlo-col .lead td.tutorial
+{
+    margin: 0;
+    width: 150px;
+}
+.ajanlo-col .lead td.content
+{
+    margin: 0;
+    width: 450px;
+}
+.content-col table.profil
+{
+    width: 450px;
+    float: left;
+}
+
+table.group
+{
+    width: 350px;
+    background: url(../img/r_sep.gif) repeat-y right top;
+    padding-right: 5px;
+}
+table.group td
+{
+    width: 180px;
+    overflow: hidden;
+    margin: 0;
+    text-align: left;
+}
+table.group td.mod
+{
+    width: 100px;
+    background: url(../img/r_sep.gif) repeat-y left top;
+    padding-left: 5px;
+}
+.upload table.profil
+{
+    width: 570px;
+    float: left;
+}
+.content-col .box .group table.profil
+{
+    float: none;
+    width: 570px;
+    margin: 0 0 0 35px;
+}
+
+table.profil td
+{
+    width: 180px;
+    overflow: hidden;
+    margin: 0;
+    text-align: left;
+}
+.content-col .box table.profil td
+{
+    overflow: hidden;
+    margin: 0;
+}
+.content-col .box table.profil
+{
+    width: 450px;
+    margin: 0 0 0 5px;
+    float: left;
+}
+.content-col .box table.profil td.first
+{
+    width: 320px;
+    overflow: hidden;
+    margin: 0;
+}
+table.profil tr
+{
+    line-height: 15px;
+    margin: 0;
+    padding: 0;
+}
+table.profil td.colA
+{
+    text-align: right;
+    margin: 0;
+    padding: 0 15px 0 0;
+}
+table.profil td.colB
+{
+    text-align: left;
+    margin: 0;
+    padding: 0 0 0 15px;
+}
+
+
+table.profil td.colD
+{
+    text-align: left;
+    margin: 0;
+    padding: 0 0 0 15px;
+    width: 250px;
+}
+table.profil td.colC
+{
+    text-align: left;
+    margin: 0;
+    padding: 0 0 0 15px;
+    width: 160px;
+}
+.content table.forum
+{
+    width: 590px;
+    margin: 0;
+    padding: 0;
+}
+
+.content table.meghivo
+{
+    width: 590px;
+    margin: -10px 0 0 15px;
+    padding: 0;
+}
+.content table.forum td
+{
+    border-bottom: solid 1px #f2f2f2;
+    width: inherit;
+}
+.content table.forum th, .content table.meghivo th
+{
+    color: #000000;
+    font-family: "Trebuchet MS" , Tahoma, Arial;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 0 0 0 5px;
+    text-align: left;
+    margin: 0;
+    height: 35px;
+    border-bottom: solid 1px #f2f2f2;
+}
+.content table.forum tr
+{
+    vertical-align: top;
+}
+.content table.forum th.colA
+{
+    width: 280px;
+}
+
+.content table.forum th.colB
+{
+    width: 90px;
+}
+.content table.forum th.colC
+{
+    width: 90px;
+}
+.content table.forum th.colD
+{
+    width: 134px;
+}
+
+
+.content table td.nobg
+{
+    background: none;
+    border: none;
+}
+
+.content table.page
+{
+    float: left;
+    margin-top: -15px;
+}
+table.messages
+{
+   margin:0 auto;
+   width:590px;
+}
+
+
+table.messages th
+{
+    color: #000000;
+    font-family: "Trebuchet MS" , Tahoma, Arial;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 0 0 0 5px;
+
+}
+table.messages th.col-head
+{
+
+    border-left: solid 1px #c8dcea;
+}
+
+table.messages td.msep
+{
+    height:2px;
+    line-height:2px;
+    font-size:2px;
+    padding:0; margin:0;
+    background:none;
+    border-bottom: solid 1px #c8dcea;
+}
+
+table.messages td 
+{   background:url(../img/cikksepar.gif) repeat-x bottom left;
+    
+    }
+#voteTable
+{
+	width: 178px;
+	padding: 5px 2px 2px;
+}

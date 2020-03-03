@@ -1,0 +1,92 @@
+/* CSS Document */
+
+body
+{
+
+}
+
+#maincontainer
+{
+	width: 608px;
+	height: 458px;
+	position: absolute;
+	margin-left: -300px;
+	margin-top: -225px;
+	top:50%;
+	left:50%;	
+}
+
+#container
+{
+	width:600px;
+	height:450px;
+	float:left;
+	background-color:rgb(235,235,235);
+	background-repeat:repeat-y;
+	border:none;
+	margin:0;
+	padding:0;
+	/*overflow: hidden;*/
+}
+#main-body {
+	margin:0;
+	padding:0;
+}
+
+.up-header
+{
+	background-image:url(../img/fejlec2.jpg);
+	background-repeat:repeat-x;
+	height:23px;
+	width:590px;
+	color:rgb(99,132,156);
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	font-weight:bold;
+	text-transform:uppercase;
+	vertical-align:middle;
+	margin:0;
+	text-align:right;
+	padding-right:13px;
+	padding-top:6px;
+}
+
+.up-header a:link, .up-header a:visited
+{
+	text-decoration:none;
+	color:rgb(99,132,156);
+}
+
+.up-header a:hover
+{
+	text-decoration:underline;
+}
+
+
+.side-border
+{
+	width:4px;
+	height:479px;
+	margin:0;
+	padding:0;
+	border:none;
+	float:left;
+	background-image:url(../img/aborder.gif);
+	background-repeat:repeat-y;
+	
+}
+
+.horiz-border
+{
+	width:608px;
+	height:4px;
+	margin:0;
+	padding:0;
+	border:none;
+	background-image:url(../img/hborder.gif);
+	background-repeat:repeat-x;
+	overflow:hidden;
+	display:block;
+	clear:both;
+	
+}

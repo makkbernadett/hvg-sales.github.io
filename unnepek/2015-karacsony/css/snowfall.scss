@@ -1,0 +1,72 @@
+#snowfall {
+	
+	height:100%;
+	position: relative;
+	overflow: hidden;
+
+	.snowflake {
+		
+		position:absolute;
+		top:0;
+		left:0;
+		height:auto;
+		opacity: 0;
+		
+
+		&.large {
+			width:150px;
+			height:150px;
+
+		}
+		&.small {
+			height:200px;
+			width:200px;
+		}
+		img {
+			width:100%;
+			height:100%;
+			position: absolute;
+			top:0;
+			left:0;
+
+			&.work {
+				opacity: 1;
+			}
+			&.sing {
+				opacity: 0;
+			}
+		}
+
+		&#snowflake-01 {
+			top:0%;
+			left:5%;
+		}
+		&#snowflake-02 {
+			top:40%;
+			left:70%;
+		}
+
+		&#snowflake-03 {
+			top:80%;
+			left:10%;
+		}
+
+		&#snowflake-04 {
+			top:10%;
+			left:85%;
+		}
+
+		&#snowflake-05 {
+			top:50%;
+			left:10%;
+		}
+
+		&#snowflake-06 {
+			top:90%;
+			left:75%;
+		}
+
+
+	}
+
+}

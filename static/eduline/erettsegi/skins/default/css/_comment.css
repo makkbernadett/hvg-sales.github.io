@@ -1,0 +1,159 @@
+.posts-box {
+	margin: 21px auto;
+	width:550px;
+	display:block;
+	padding:0;
+}
+
+.posts-box a:link, .posts-box a:visited {
+	font: normal 11px Tahoma,Verdana, Arial, Helvetica, sans-serif;
+	color: #104F82;
+	text-decoration: none;
+	
+
+}
+
+.posts-box a:hover { text-decoration: underline; }
+
+.posts-box-head {
+ 	width:550px;
+	height:5px;
+	background:url(/skins/default/img/postboxhead.gif) no-repeat top left;
+	display:block;
+	overflow:hidden;
+	margin:0;
+	padding:0;
+}
+
+.posts-box-content {
+ 	width:550px;
+	background-image:url(/skins/default/img/postbox_bg.gif);
+	background-repeat:repeat-y;
+	display:block;
+	
+	margin:0;
+	padding:0;
+
+
+}
+
+
+.posts-box-comment p{
+ 	color:rgb(127, 115, 103);
+	font-weight: normal;
+	font-family:Tahoma,Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	margin:2px;
+	padding:4px 0;
+	line-height:16px;
+}
+
+.posts-box-comment span{
+ 	color:rgb(0,0,0);
+	font-weight: bold;
+	font-family:Tahoma,Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	margin:2px;
+	padding:0;
+}
+
+.posts-box-comment label{
+	width:60px;
+ 	color:rgb(127, 115, 103);
+	font-family:Tahoma,Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	text-align:right;
+	display:block;
+}
+
+.reg-box, .posts-box-comment {
+ 	width:545px;
+	display:block;
+	overflow:hidden;
+	margin: 0 auto;
+	padding:0;
+}
+
+.reg-box p{
+ 	color:rgb(0,0,0);
+	font-weight: normal;
+	font-family:Tahoma,Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	margin:2px;
+	padding:4px 0;
+	line-height:16px;
+}
+
+.reg-box span{
+ 	color:rgb(0,0,0);
+	font-weight: bold;
+	font-family:Tahoma,Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	margin:2px;
+	padding:0;
+}
+
+.reg-box label{
+ 	color:rgb(127, 115, 103);
+	font-family:Tahoma,Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	text-align:right;
+	display:block;
+}
+
+.reg-box-left label{
+ 	color:rgb(127, 115, 103);
+	font-family:Tahoma,Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	text-align:left;
+	display:block;
+}
+
+.posts-box-comment table{
+ 	width:530px;
+	margin: 0 auto;
+	padding:0;
+}
+
+.form-inputpost{
+	border:solid 1px #C3C3C3;
+	color:#000000;
+	font-family:Tahoma,Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	text-align:left;
+	display:block;
+	margin:0;
+	padding:0;
+	height:18px;
+}
+
+.form-inputpostarea{
+	border:solid 1px #C3C3C3;
+	color:#000000;
+	font-family:Tahoma,Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	text-align:left;
+	display:block;
+	margin:0;
+	padding:0;
+}
+
+.posts-box-footer {
+	width:550px;
+	height:5px;
+	background:url(/skins/default/img/postbox_bottom.gif) no-repeat top left;
+	display:block;
+	overflow:hidden;
+	margin:0;
+	padding:0;
+}
+
+.white {
+	background:white;
+	padding:10px;
+}
+
+.text-justify {
+	text-align:justify;
+	width:362px;
+}

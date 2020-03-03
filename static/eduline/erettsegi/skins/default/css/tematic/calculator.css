@@ -1,0 +1,330 @@
+﻿/*//////////////////////////////////////////////////////////////////////////////////////////////////
+//
+//	calculator.css
+//
+//////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*//////////////////////////////////////////////////////////////////////////////////////////////////
+//	global definitions
+//////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+
+div.hvg_content a,
+div.hvg_content p,
+div.hvg_content h1,
+div.hvg_content h2,
+div.hvg_content h3,
+div.hvg_content ul,
+div.hvg_content ol,
+div.hvg_content li {
+	font-family: Arial, Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	margin: 0;
+	padding: 0;
+}
+
+div.hvg_content label,
+div.hvg_content input,
+div.hvg_content select,
+div.hvg_content button {
+
+    font-family: Arial, Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+}
+
+div.hvg_content form,
+div.hvg_content fieldset {
+
+	border: none;
+	margin: 0;
+	padding: 0;
+}
+
+div.hvg_content ul,
+div.hvg_content ol {
+
+	list-style-position: outside;
+}
+
+div.hvg_content a {
+
+	text-decoration: none;
+	outline: none;
+}
+
+/*//////////////////////////////////////////////////////////////////////////////////////////////////
+//	layout definitions
+//////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+div.hvg_content {
+	display: block;
+	clear: both;
+	width: 590px;
+	margin: -20px -20px 0 0;
+	padding: 20px;
+}
+
+html>body div.hvg_content {
+
+	width: 590px;
+}
+
+div.hvg_content div.hvg_panel {
+
+	display: block;
+	clear: both;
+	overflow: hidden;
+	width: 570px;
+	padding: 0;
+}
+
+html>body div.hvg_content div.hvg_panel {
+
+	width: 590px;
+}
+
+/*//////////////////////////////////////////////////////////////////////////////////////////////////
+//	table definitions
+//////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+div.hvg_content div.hvg_table,
+div.hvg_content div.hvg_canvas {
+
+    width: 590px;
+	display: block;
+	clear: both;
+    background: #fff;
+	margin-bottom: 20px;
+}
+
+div.hvg_content table td h1,
+div.hvg_content table td h2,
+div.hvg_content table td h3 {
+
+	margin-top: 4px;
+	margin-bottom: 4px;
+	padding-left: 4px;
+	padding-right: 4px;
+}
+
+div.hvg_content table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+div.hvg_content table td {
+    padding: 3px 10px;
+    border: 1px solid #ccc;
+}
+div.hvg_content table td p {
+
+	margin: 0;
+	padding: 0;
+    line-height: 30px;
+}
+
+div.hvg_content table td p.normalized { line-height: 16px; }
+
+div.hvg_content thead td {
+    background: #eee;
+}
+
+div.hvg_content thead td p {
+    line-height: 14px;
+    font-size:11px;
+    margin: 5px 0;
+}
+
+div.hvg_content thead td p b {
+    font-size:13px;
+}
+
+div.hvg_content tbody td p { 
+	text-align: center;
+}
+
+div.hvg_content tfoot td.hvg_bullet {
+    vertical-align: middle;
+}
+
+div.hvg_content tfoot td.hvg_ruler {
+    
+    padding: 0;
+	border-top: 1px solid #ccc;
+}
+
+div.hvg_content tfoot td p {
+
+	text-align: left;
+}
+
+div.hvg_content tfoot td.hvg_bullet p {
+
+	text-align: center;
+	color: #01385f !important;
+}
+
+div.hvg_content tfoot td.hvg_ruler p {
+
+	font-size: 1px !important;
+	line-height: 1px !important;
+}
+
+/*//////////////////////////////////////////////////////////////////////////////////////////////////
+//	type definitions
+//////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+div.hvg_content h1 {
+
+    font-family: 'InformaProMediumCondensed';
+	font-weight: bold;
+	font-size: 38px;
+    line-height: 42px;
+    margin: -20px -20px 20px -20px;
+    padding: 0 0 20px 20px;
+    border-left: 5px solid #e12e82;
+    background: #fff;
+}
+
+div.hvg_content h2 {
+
+	font-weight: bold;
+	font-size: 14px;
+    margin: 0;
+    padding: 10px;
+    background-color: #646464;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#646464), to(#272727));
+	background-image: -webkit-linear-gradient(top, #646464, #272727);
+	background-image: -moz-linear-gradient(top, #646464, #272727);
+	background-image: -ms-linear-gradient(top, #646464, #272727);
+	background-image: -o-linear-gradient(top, #646464, #272727);
+	background-image: linear-gradient(top, #646464, #272727);
+    color: #fff;
+    position: relative;
+}
+
+div.hvg_content h3 {
+
+	font-weight: bold;
+	font-size: 12px;
+	color: black;
+	margin-bottom: 12px;
+	padding-left: 8px;
+	padding-right: 8px;
+}
+
+div.hvg_content p {
+
+	font-size: 12px;
+	line-height: 15px;
+	color: black;
+	margin-bottom: 12px;
+	padding-left: 8px;
+	padding-right: 8px;
+}
+
+div.hvg_content p span.hvg_red {
+
+	color: red;
+}
+
+div.hvg_content p span.hvg_gray {
+
+	color: #c0c0c0;
+}
+
+/*//////////////////////////////////////////////////////////////////////////////////////////////////
+//	list definitions
+//////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+div.hvg_content ul {
+
+	margin: 12px 8px 12px 32px;
+}
+
+div.hvg_content ol {
+
+	margin: 12px 8px 12px 38px;
+}
+
+div.hvg_content li {
+
+	font-size: 12px;
+	color: black;
+	padding-bottom: 4px;
+}
+
+div.hvg_content ul li {
+
+	padding-bottom: 0;
+}
+
+html>body div.hvg_content ul li {
+
+	padding-bottom: 4px;
+}
+
+/*//////////////////////////////////////////////////////////////////////////////////////////////////
+//	input definitions
+//////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+div.hvg_content input.hvg_input,
+div.hvg_content input.hvg_output,
+div.hvg_content input.hvg_hidden {
+
+	text-align: right;
+	font-size: 14px;
+	color: black;
+	width: 90%;
+}
+
+
+div.hvg_content input.hvg_output, div.hvg_content input.hvg_small {
+    
+    border: 0;
+}
+
+div.hvg_content input.hvg_big {
+
+	font-size: 18px;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    width: 90px;
+    background: #fff;
+}
+div.hvg_content h2.result {
+    padding: 20px;
+}
+
+div.hvg_content input.hvg_hidden {
+
+	background: white;
+	color: white;
+	border: 1px solid white;
+}
+
+div.hvg_content select {
+
+	text-align: left;
+	font-size: 14px;
+	color: black;
+	width: 90%;
+}
+
+div.hvg_content button {
+    font-weight: bold;
+    display: block;
+    margin: 20px auto 0;
+}
+.error { margin-top: 20px; }
+
+/*//////////////////////////////////////////////////////////////////////////////////////////////////
+//
+//	calculator.css
+//
+//////////////////////////////////////////////////////////////////////////////////////////////////*/

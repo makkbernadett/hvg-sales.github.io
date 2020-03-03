@@ -1,0 +1,163 @@
+/*
+ * Stylesheet for local elements v1.0.0
+ * License: MIT (http://www.opensource.org/licenses/mit-license.php)
+ */
+
+div.hvg-calculator table {
+
+    border-collapse: collapse;
+    margin-bottom: 12px;
+}
+
+div.hvg-calculator thead tr {
+
+    background-color: #444444;
+}
+
+div.hvg-calculator thead th {
+
+    border: 1px solid #555555;
+}
+
+div.hvg-calculator thead th p {
+
+    text-align: center;
+    color: #eeeeee;
+    margin: 8px 0;
+}
+
+div.hvg-calculator tbody tr {
+
+    background-color: #e0e0e0;
+}
+
+div.hvg-calculator tbody td {
+
+    border: 1px solid #cccccc;
+}
+
+div.hvg-calculator tbody td p {
+
+    text-align: center;
+    color: #2a2a2a;
+    margin: 6px 0;
+}
+
+div.hvg-calculator tfoot tr:nth-child(2n) {
+
+    background-color: #e0e0e0;
+}
+
+div.hvg-calculator tfoot tr:nth-child(2n+1) {
+
+    background-color: white;
+}
+
+div.hvg-calculator tfoot tr.hvg-button {
+
+    background-color: #e0e0e0 !important;
+}
+
+div.hvg-calculator tfoot td {
+
+    border: 1px solid #cccccc;
+}
+
+div.hvg-calculator tfoot td p {
+
+    text-align: left;
+    color: #2a2a2a;
+    margin: 6px 10px;
+}
+
+div.hvg-calculator tfoot td.hvg-center p {
+
+    text-align: center;
+}
+
+div.hvg-calculator tfoot td.hvg-right p {
+
+    text-align: right;
+}
+
+div.hvg-calculator h1,
+div.hvg-calculator h2,
+div.hvg-calculator h3 {
+
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    color: #2a2a2a;
+    margin-bottom: 12px;
+}
+
+div.hvg-calculator p {
+
+    font-size: 14px;
+    line-height: 20px;
+    color: #2a2a2a;
+    margin-bottom: 12px;
+}
+
+div.hvg-calculator p span.hvg-error {
+
+    color: #ff0000;
+}
+
+div.hvg-calculator p span.hvg-light {
+
+    color: #c0c0c0;
+}
+
+div.hvg-calculator select,
+div.hvg-calculator input.hvg-input,
+div.hvg-calculator input.hvg-output {
+
+    font-weight: bold;
+    font-size: 14px;
+    color: #2a2a2a;
+    width: 100%;
+    border: 1px solid #888888;
+}
+
+div.hvg-calculator select {
+
+    background-color: #eeeeee;
+    text-align: left;
+}
+
+div.hvg-calculator input.hvg-input {
+
+    background-color: #eeeeee;
+    text-align: right;
+}
+
+div.hvg-calculator input.hvg-output {
+
+    background-color: #fff2ca;
+    text-align: right;
+}
+
+div.hvg-calculator input.hvg-check,
+div.hvg-calculator input.hvg-radio {
+
+    vertical-align: middle;
+}
+
+div.hvg-calculator label {
+
+    vertical-align: middle;
+    font-size: 14px;
+    line-height: 20px;
+    color: #2a2a2a;
+    padding-left: 6px;
+}
+
+div.hvg-calculator button {
+
+    background: transparent url(../img/hvg-button.png) no-repeat 0 0;
+    cursor: pointer;
+    width: 118px;
+    height: 48px;
+    border: none;
+}

@@ -1,0 +1,307 @@
+#pg-breaking {
+	clear: both;
+	border-bottom: solid 4px #FF6600;
+	padding-bottom: 9px;
+}
+
+
+/* ez kell a id="pg-head" div-be */
+.maintitle-side-red {
+	background-image: url('http://images.hvg.hu/static/skins/default/img/altCim/maintitle-side-red.png');
+	background-repeat: no-repeat;
+	background-position: 3px 110px;
+}
+
+
+/* felsõ címsor */
+
+#pg-breaking-title {
+	margin: 9px 0 0 0;
+	padding: 10px 0 0 0;
+	background-color: #6B6B6B;
+	border-bottom: solid 1px #353535;
+}
+.pg-breaking-tit-end {
+	float: left;
+	background-image: url('http://images.hvg.hu/static/skins/default/img/altCim/pg-breaking-titleright.png');
+	height: 44px;
+	width: 8px;
+}
+
+#pg-breaking-content h1 a {
+	color: #FFF;
+}
+
+#pg-breaking-title h2 {
+	float: left;
+	margin: 0 0 10px 0;
+	padding: 7px 20px 0 14px;
+	background-color: #F5482D;
+	color: #FFF;
+	height: 37px;
+	text-transform: uppercase;
+	font-size: 24px;
+	background-image: url('http://images.hvg.hu/static/skins/default/img/altCim/pg-breaking-titlebg.png');
+	background-repeat: repeat-x;
+}
+
+div.pg-breaking-title {
+	float: left;
+	margin: 11px 0 0 9px;
+	padding: 2px 2px 0 11px;
+	height: 19px;
+	background-image: url('http://images.hvg.hu/static/skins/default/img/altCim/pg-breaking-title-button.png');
+	background-position: top left;
+	background-repeat: no-repeat;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+div.pg-breaking-titleend {
+	float: left;
+	margin-top: 11px;
+	height: 22px;
+	width: 9px;
+	background: url('http://images.hvg.hu/static/skins/default/img/altCim/pg-breaking-title-button-right.png');
+	background-position: left;
+	background-repeat: no-repeat;
+}
+
+div.pg-breaking-title a {
+	color: #FFC028;
+}
+
+/* felsõ címsor vége */
+
+
+
+
+/* alsó, szürke tartalom */
+
+#pg-breaking-content {
+	background-color: #6B6B6B;
+	color: #ffffff;
+}
+
+/* vezetõ cikk doboz */
+.pg-breaking-content-doublebox {
+	width: 600px;
+	float: left;
+}
+
+.pg-breaking-content-box {
+	width: 290px;
+	float: left;
+}
+
+.pg-breaking-content-row {
+	padding: 15px 15px 20px 15px;
+}
+
+/* bezáró sáv */
+.pg-breakingclose {
+	background-image: url('http://images.hvg.hu/static/skins/default/img/altCim/pg-breakingclose-button-bg.png');
+	text-align: center;
+}
+
+.bordertop {
+	border-top: solid 1px #989898;
+}
+
+.borderbottom {
+	border-bottom: solid 1px #353535;
+}
+
+.pg-breaking-content-box ul {
+    margin: 0 10px 10px 1px;
+	padding: 0;
+    overflow: hidden;
+}
+
+.pg-breaking-content-box ul li {
+    padding: 5px 0 10px 12px;
+    background: url('http://images.hvg.hu/static/skins/default/img/altCim/listitem-gray-white.png') no-repeat left 11px;
+}
+
+.pg-breaking-content-box ul li a {
+	color: #FFC028;
+	font-weight: bold;
+}
+
+.space {
+	margin-right: 20px;
+}
+
+.pg-breaking-content-doublebox h1 {
+	margin: 0 0 15px 0;
+	padding: 0;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.pg-breaking-content-box h2 {
+	margin: 0 0 10px 0;
+	padding: 3px 0 3px 28px;
+	font-size: 14px;
+	text-transform: uppercase;
+	color: #EBEBEB;
+}
+
+.pg-breaking-content-box h2 a {
+	color: #FFC028;
+}
+
+.pg-breaking-content-box h3 {
+	margin: 0px 0px 10px 0px;
+	padding: 3px 0px 3px 28px;
+	font-size: 14px;
+	text-transform: uppercase;
+	color: #EBEBEB;
+}
+
+.percrolpercre {
+	background: url('http://images.hvg.hu/static/skins/default/img/altCim/icon-percrolpercre.png') no-repeat top left;
+}
+.shoutbox {
+	background: url('http://images.hvg.hu/static/skins/default/img/altCim/icon-shoutbox.png') no-repeat top left;
+}
+.grafikon {
+	background: url('http://images.hvg.hu/static/skins/default/img/altCim/icon-grafikon.png') no-repeat top left;
+}
+
+.breaking-top-news tr td {
+	padding-right: 10px;
+	padding-bottom: 14px;
+}
+.breaking-top-news a {
+	font-size: 14px;
+	color: #FFC028;
+	line-height: 16px;
+	font-weight: bold;
+}
+
+.pg-breaking-content-doublebox h1 {
+	margin: 0px 0px 15px 0px;
+	padding: 0px;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.pg-breaking-content-doublebox p {
+	color: #EBEBEB;
+	line-height: 18px;
+	margin: 0px 0px 14px 0px;
+}
+.pg-breaking-content-doublebox p a {
+	color: #EBEBEB;
+}
+
+.pg-breaking-content-doublebox ul {
+    margin: 0px 10px 15px 1px;
+	padding: 0px;
+    overflow: hidden;
+}
+
+.pg-breaking-content-doublebox ul li {
+    margin: 0px 0px 15px 0px;
+    padding: 5px 0px 0px 12px;
+    background: url('http://images.hvg.hu/static/skins/default/img/altCim/listitem-gray-white.png') no-repeat left 11px;
+}
+
+.pg-breaking-content-doublebox ul li a {
+	color: #FFC028;
+}
+
+
+.percrolpercre {
+	background: url('http://images.hvg.hu/static/skins/default/img/altCim/icon-percrolpercre.png') no-repeat top left;
+}
+.shoutbox {
+	background: url('http://images.hvg.hu/static/skins/default/img/altCim/icon-shoutbox.png') no-repeat top left;
+}
+.grafikon {
+	background: url('http://images.hvg.hu/static/skins/default/img/altCim/icon-grafikon.png') no-repeat top left;
+}
+
+.breaking-top-news tr td {
+	padding-right: 10px;
+	padding-bottom: 14px;
+}
+.breaking-top-news a {
+	font-size: 14px;
+	color: #FFC028;
+	line-height: 16px;
+	font-weight: bold;
+}
+
+.pg-breaking-content-box p {
+	line-height: 18px;
+	margin: 0 0 14px 0;
+	font-style: italic;
+}
+
+.pg-breaking-content-box a { color: #FFF }
+
+.shout {
+	border: #484848 1px solid;
+	background-color: #EDEDED;
+	font-size: 14px;
+	padding: 3px;
+	width: 282px;
+	font-style: normal;
+}
+
+/* videó folyam */
+
+#videofolyam-box {
+	height: 250px;
+	width: 290px;
+	overflow: hidden;
+}
+
+#videofolyam-scroller { width: 290px }
+
+#videofolyam-scroller td {
+	height: 217px;
+	text-align: center;
+}
+
+#videofolyam-scroller td h2 {
+	text-align: left;
+	margin: 10px 10px 0 10px;
+}
+
+#videofolyam-box h3 {
+	margin: 9px 0 10px 12px;
+	font-size: 12px;
+	color: #FFF;
+	letter-spacing: 1px;
+	text-shadow: 1px 1px 1px #343434;
+}
+
+#videofolyam-box h4 {
+	margin: 0 0 10px 0;
+	padding: 9px 0 3px 12px;
+	font-size: 12px;
+	color: #FFF;
+	letter-spacing: 1px;
+	text-shadow: 1px 1px 1px #343434;
+}
+
+#videofolyam-box a {
+	color: #FFC028;
+	text-transform: none;
+}
+
+#videofolyam-box a.imageframe4 {
+	display: block;
+	width: 246px;
+	margin: 0 10px;
+	padding: 2px;
+	border: 1px solid #353535;
+}
+
+#videofolyam-scroller h2 {
+	margin: 5px;
+	padding: 0;
+}

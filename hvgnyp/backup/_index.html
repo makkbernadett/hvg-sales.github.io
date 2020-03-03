@@ -1,0 +1,2672 @@
+﻿
+<HTML>
+	<HEAD>
+		<title>hvg.hu</title>
+		<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<base href="http://hvg.hu/">
+		<link id="_ctl0_MainStyle" type="text/css" rel="stylesheet" href="/skins/default/style.css"></link>
+		<SCRIPT src="js/collector.js" type="text/javascript"></SCRIPT>		
+		
+<meta http-equiv="refresh" content="1740"/>
+<link rel="icon" href="http://hvg.hu/favicon.ico"></link>
+<script language="javascript" event="onmouseover" for="MenuItem">this.className='Menu_Item_Active';</script>
+<script language="javascript" event="onmouseout" for="MenuItem">this.className='Menu_Item';</script>
+<script language="javascript" event="onmouseover" for="MainMenuItem">this.className='MainMenu_Item_Active';</script>
+<script language="javascript" event="onmouseout" for="MainMenuItem">this.className='MainMenu_Item';</script>
+<script language="javascript" event="onmouseover" for="SubMenuItem">this.className='SubMenu_Item_Active';</script>
+<script language="javascript" event="onmouseout" for="SubMenuItem">this.className='SubMenu_Item';</script>		
+<script language="JavaScript">
+	function rand(n) { return (Math.floor(Math.random()*n)) }
+	var same = rand(1000000)
+</script>
+		
+<script language="javascript">
+	function openGallery(id)
+	{
+		newWindow = window.open("/gallery/" + id + ".aspx", "_blank", "width=625,height=545,scrollbars=auto,resizable,screenX=150,screenY=10,status=0").focus();
+		return;
+	}	
+	function openCartoonSelector()
+	{
+		newWindow = window.open("/cartoonSelector.aspx", "_blank", "width=625,height=250,scrollbars=auto,resizable,screenX=150,screenY=10,status=0").focus();
+		return;
+	}
+</script>
+	</HEAD>
+	<body TOPMARGIN="0" MARGINHEIGHT="0">
+		<div id="PageContent">
+			<div id="TopBanner">
+				
+<DIV>
+	<SCRIPT language="JavaScript">
+		<!--
+		var ord=Math.round(Math.random()*100000000);
+		document.write('<sc'+'ript language=JavaScript src="http://ad.adverticum.net/js.prm?zona=18477&ord='+ord+'"></scr'+'ipt>');
+		//-->
+	</SCRIPT>
+	<NOSCRIPT>
+		<A href="http://ad.adverticum.net/click.prm?zona=18477" target="_top">
+			<IMG height="120" alt="Kattintson a hirdetésre!" src="http://ad.adverticum.net/img.prm?zona=18477" width="728" border="0">
+		</A>
+	</NOSCRIPT>
+</DIV>
+			</div>
+			
+<table border="0" cellpadding="0" cellspacing="0" id="Layout_full">
+	<tr>
+		<td rowspan="2" valign="bottom"><a href="http://hvg.hu/"><img src="images/logo_green.gif" border="0"/></a></td>
+		<td id="Layout_right_620">
+			<img src="images/spacer.gif" height="17" border="0"/>
+		</td>
+	</tr>
+	<tr>					
+		<td id="Layout_right_620" valign="bottom">
+			<DIV class="menuOutline" id="menuCollectors"><DIV id="CollectorsContainer"></DIV><DIV id="CollectorsControls"><A href="javascript:eventClearReadCollectors()" class="collectorMenuItem">Olvasott cikkek törlése</A><A href="javascript:eventClearAllCollectors()" class="collectorMenuItem">Összes cikk törlése</A></DIV></DIV>
+<div id="ToolBar">										
+					<div id="Layout_left_482">
+						<div id="ToolGroup1">
+							<form method="post" name="searchForm"  id="searchForm" action="search.aspx" target="_top" onsubmit="return isValid();"> 
+								<INPUT type="hidden" name="cof" VALUE="">
+								<input type="hidden" name="f" id="f">
+								<input type="hidden" name="ie" value="utf-8">
+								<script language="javascript">
+									function isValid()
+									{
+										if (document.searchForm.q.value == "")
+										{
+											alert("Nem adott meg keresési feltételt!");
+											document.searchForm.q.focus();
+											return false;
+										}	
+										var type = document.searchForm.searchType.options[document.searchForm.searchType.selectedIndex].value;
+										
+										if (type == 1)
+										{
+											document.searchForm.action = "http://www.google.com/custom";
+											document.searchForm.target = "_blank";
+											document.searchForm.cof.value = "S:http://hvg.hu;AH:center;LH:56;L:http://hvg.hu/images/logo_large.gif;LW:140;AWFID:67c1d846272c6395;";
+											document.searchForm.method = "get";
+										} else {
+											document.searchForm.action = "/search.aspx";
+											document.searchForm.target = "_self";
+											document.searchForm.method = "post";
+										}
+										
+										return true;
+									}	
+									function show(value)
+									{
+										if (isValid())
+										{
+											document.searchForm.f.value = value;
+											document.searchForm.submit();
+										}
+									}																		
+								</script>
+								<table cellpadding="0" cellspacing="0" width="460">
+									<tr>
+										<td id="ToolText">
+											KERESÉS:
+											<!--span id="Icon">
+												<img src="images/google_dark.gif"/>
+											</span-->
+										</td>
+										<td>
+											<input class="GoogleInput" NAME="q" ID="q" value="" maxlength="50"/>
+										</td>
+										<td>&#160;</td>
+										<td>
+											<select id="searchType" name="searchType" class="GoogleInput">
+												<option value="2">hvg.hu-n</option>
+												<option value="1">világhálón</option>												
+											</select>
+										</td>
+										<td>
+											<span id="Icon">
+												<a onClick="javascript:show('1');" style="cursor: hand;"><img src="images/DotteArrow.gif" border="0"/></a>
+											</span>
+										</td>
+										<td>&#160;</td>
+										<td>
+											<div id="ToolLink">												
+												<span id="Icon">
+													<img src="images/arrow_right.gif" border="0"/>
+												</span>
+												<a href="#" onClick="this.style.behavior='url(#default#homepage)'; this.setHomePage('http://hvg.hu');">hvg.hu kezdőlapnak</a>
+											</div>						
+												<div id="ToolLink">
+												<span id="Icon">
+													<img src="images/arrow_right.gif"/>
+												</span><a href="/registration.aspx">
+Feliratkozás a hírlevélre</a></div>
+										</td>
+									</tr>
+								</table>
+							</form>
+						</div>
+					</div>
+					<div id="Layout_right_140">
+						<div id="ToolGroup2">
+							<table cellpadding="0" cellspacing="0" valign="middle" id="ToolGroup2">
+								<tr>
+									<td>
+										<a href="javascript:ShowCollectors();"><img src="images/doc_small_white.gif" border="0"/></a>
+									</td>
+									<td>&#160;</td>
+									<td><a href="javascript:ShowCollectors();">Cikkgyűjtő</a></td>
+									<td>&#160;</td>
+									<td>
+										<a href="javascript:ShowCollectors();"><img src="images/arrow_down_white.gif" border="0"/></a>
+									</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+		</td>
+	</tr>
+</table>
+<div id="Layout_full">
+	<div id="Light_background"><img src="/images/spacer.gif"/></div>
+	<div id="Dark_background"><img src="/images/spacer.gif"/></div>
+</div>						
+			<!-- Bal hasáb -->
+			<div id="Layout_left_140">
+				<div id="LeftContent">
+					
+<div id="Menu" class="Left_Main_Menu">
+				
+				<a id="_ctl0_Menu1_MenuItems__ctl0_MenuLink" href="/itthon.aspx">
+						<div id="MenuItem" class="Menu_Item">Itthon</div>
+					</a>
+				
+					
+				
+					
+				<a id="_ctl0_Menu1_MenuItems__ctl1_MenuLink" href="/vilag.aspx">
+						<div id="MenuItem" class="Menu_Item">Világ</div>
+					</a>
+				
+					
+				
+					
+				<a id="_ctl0_Menu1_MenuItems__ctl2_MenuLink" href="/gazdasag.aspx">
+						<div id="MenuItem" class="Menu_Item">Gazdaság</div>
+					</a>
+				
+					
+				
+					
+				<a id="_ctl0_Menu1_MenuItems__ctl3_MenuLink" href="/Tudomany.aspx">
+						<div id="MenuItem" class="Menu_Item">IT | Tudomány</div>
+					</a>
+				
+					
+				
+					
+				<a id="_ctl0_Menu1_MenuItems__ctl4_MenuLink" href="/velemeny.aspx">
+						<div id="MenuItem" class="Menu_Item">Vélemény</div>
+					</a>
+				
+					
+				
+					
+				<a id="_ctl0_Menu1_MenuItems__ctl5_MenuLink" href="/kultura.aspx">
+						<div id="MenuItem" class="Menu_Item">Kultúra</div>
+					</a>
+				
+					
+				
+					
+				<a id="_ctl0_Menu1_MenuItems__ctl6_MenuLink" href="/media.aspx">
+						<div id="MenuItem" class="Menu_Item">Média</div>
+					</a>
+				
+					
+				
+					
+				<a id="_ctl0_Menu1_MenuItems__ctl7_MenuLink" href="/karrier.aspx">
+						<div id="MenuItem" class="Menu_Item">Karrier</div>
+					</a>
+				
+					
+				
+					
+				<a id="_ctl0_Menu1_MenuItems__ctl8_MenuLink" href="/hvgfriss.aspx">
+						<div id="MenuItem" class="Menu_Item">HVG Friss</div>
+					</a>
+				
+					
+				
+		
+	<div id="MenuItem" class="Menu_Item">&nbsp;</div>
+	
+			<a id="_ctl0_Menu1_SiteMenu__ctl0_SiteMenuLink" href="http://jobline.hu" target="_blank">					
+						<div id="MenuItem" class="Menu_Item">Jobline</div>					
+				</a>
+		
+			<a id="_ctl0_Menu1_SiteMenu__ctl1_SiteMenuLink" href="/befektetes.aspx">					
+						<div id="MenuItem" class="Menu_Item">Befektetés</div>					
+				</a>
+		
+			<a id="_ctl0_Menu1_SiteMenu__ctl2_SiteMenuLink" href="http://hvg.hu/hvgkonyvek.aspx">					
+						<div id="MenuItem" class="Menu_Item">Könyvek</div>					
+				</a>
+		
+			<a id="_ctl0_Menu1_SiteMenu__ctl3_SiteMenuLink" href="/hvgfriss/archive.aspx">					
+						<div id="MenuItem" class="Menu_Item">HVG Archívum</div>					
+				</a>
+		
+			<a id="_ctl0_Menu1_SiteMenu__ctl4_SiteMenuLink" href="/cover.aspx">					
+						<div id="MenuItem" class="Menu_Item">Címlapkereső</div>					
+				</a>
+		
+			<a id="_ctl0_Menu1_SiteMenu__ctl5_SiteMenuLink" href="/gallery.aspx">					
+						<div id="MenuItem" class="Menu_Item">Fotógaléria</div>					
+				</a>
+		
+			<a id="_ctl0_Menu1_SiteMenu__ctl6_SiteMenuLink" href="/other/rss.aspx">					
+						<div id="MenuItem" class="Menu_Item">RSS</div>					
+				</a>
+		
+			<a id="_ctl0_Menu1_SiteMenu__ctl7_SiteMenuLink" href="http://nf.hvg.hu" target="_blank">					
+						<div id="MenuItem" class="Menu_Item">Hírbörze</div>					
+				</a>
+		
+			<a id="_ctl0_Menu1_SiteMenu__ctl8_SiteMenuLink" href="/ratecard.aspx">					
+						<div id="MenuItem" class="Menu_Item">Hirdetési árak</div>					
+				</a>
+		
+			<a id="_ctl0_Menu1_SiteMenu__ctl9_SiteMenuLink" href="https://ugyfelpont.hvg.hu/pls/webitem/pkg_webshop_products.show" target="_blank">					
+						<div id="MenuItem" class="Menu_Item">Ügyfélpont</div>					
+				</a>
+		
+</div>
+										
+					
+<script language="javascript">
+function Login()
+{
+	if (document.auth.username.value.length == 0) 
+	{
+		alert("Adja meg azonosítóját!");
+		document.auth.username.focus();
+		return false;
+	}
+	
+	if (document.auth.password.value.length == 0) 
+	{
+		alert("Adja meg jelszavát!");
+		document.auth.password.focus();
+		return false;
+	}
+	
+	document.auth.submit();
+	return true;
+}
+function Logout()
+{
+	document.auth.command.value = "logout";
+	document.auth.submit();
+	return true;
+}
+function keyPressed(e)
+{
+	if (e.keyCode == 13)
+		Login();  
+	return true;
+}
+
+</script>
+
+<div id="SideBlokk">
+	<form method="post" action="http://auth.hvg.hu" name="auth">
+		<input type="hidden" name="rawurl" value="http://hvg.hu/Default.aspx">
+		<input type="hidden" name="host" value="1">
+		<input type="hidden" name="command" value=""/>
+		
+		
+			<table class="Login" cellpadding="0" cellspacing="0" border="0" width="100%">
+				<tr>
+					<td align="right">
+						Név:
+					</td>
+					<td>
+						<input type="text" name="username" maxlength="20" style="WIDTH: 70px" onkeypress="return keyPressed(event);">
+					</td>
+				</tr>
+				<tr>
+					<td align="right">
+						Jelszó:
+					</td>
+					<td>
+						<input type="password" name="password" maxlength="20" style="WIDTH: 70px" onkeypress="return keyPressed(event);">
+					</td>
+				</tr>
+				
+				<tr>
+					<td colspan="2" align="right">
+						<a href="/registration.aspx" class="font_small">Regisztráció</a> ::<br/>
+						<a href="javascript:window.open('/sendpwd.aspx','email','height=280,width=350,scrollbars=no,resize=no, menubar=no, status=no, toolbar=no'); void('');" class="font_small">Elfelejtette jelszavát?</a> ::
+					</td>					
+				</tr>
+			</table>
+			<table class="LoginFooter" cellpadding="0" cellspacing="0" border="0" width="100%">
+				<tr>
+					<td align="right">
+						<a OnClick="javascript:Login()" style="cursor: hand;">BEJELENTKEZÉS</a>
+					</td>
+					<td>
+						<a OnClick="javascript:Login()" style="cursor: hand;"><img src="images/DotteArrow.gif" border="0" ></a>
+					</td>
+				</tr>
+			</table>
+		
+	</form>
+</div>					
+					       
+<div id="SideBlokk">
+	<div id="PiarCikk"><a id="_ctl0_Pagelayout16__ctl2_CaptionLink" href="http://hvg.hu/other/20050218uPC.aspx">Gyors internet elérhető áron - új távlatok kisvállalkozások számára</a> (x)</div>
+</div>
+     
+<div id="SideBlokk">
+	<div id="PiarCikk"><a id="_ctl0_Pagelayout16__ctl3_CaptionLink" href="http://hvg.hu/other/20050301-albatros.aspx">A múlandó művészet mestere</a> (x)</div>
+</div>
+					
+				</div>
+			</div>
+			<div id="Layout_right_620">
+				<div id="Layout_left_470">
+					<!-- Középső hasáb -->
+					<div id="CenterContent">
+						                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
+<div id="TopBlokk">
+	<table style="FONT-SIZE:10px" cellpadding="0" cellspacing="0">
+		<tr>
+			<td valign="top">
+				
+					<table align="left" cellpadding="0" cellspacing="0">
+						<tr>
+							<td>
+								<a id="_ctl0_Pagelayout2__ctl2_ImageLink" href="http://hvg.hu/itthon/20050304hivatasoslista.aspx"><img id="_ctl0_Pagelayout2__ctl2_ArticleImage" class="LaImage" src="http://hvg.hu/image.aspx?id=5f9315b5-2abf-4c4a-9c2e-7ed3dc8f862d&amp;view=9B0A31C7-B6D3-4874-BBB1-0648B581D04C" alt="" align="Left" border="0" /></a>
+							</td>
+						</tr>
+					</table>
+				
+			</td>
+			<td valign="top">
+				<div id="LeadingArticle">
+					<a id="_ctl0_Pagelayout2__ctl2_SubCaptionLink" class="LaSubCaption" href="http://hvg.hu/itthon/20050304hivatasoslista.aspx">Tartók és beszervezők</a>&nbsp;<span class="shelfIcon" id="clp20050304hivatasoslista"><img src="/images/doc_small.gif" alt="Gyüjtobe vele!" border="0"></span>
+					<div><a id="_ctl0_Pagelayout2__ctl2_CaptionLink" class="LaCaption" href="http://hvg.hu/itthon/20050304hivatasoslista.aspx">A III/III. központi állománya:<br>nevek, rangfokozatok</a></div>
+					<div class="LaLead">
+						Kik szervezték be a hálózati személyeket? Kik működtették az állambiztonság rendszerét? A hvg.hu most azoknak az állambiztonsági tiszteknek és főtiszteknek a nevét sorolja fel, akik 1989-ben a BM III/III. Csoportfőnökség központi állományának tagjai voltak.  
+						<span>
+							<a id="_ctl0_Pagelayout2__ctl2_MoreLink" class="La" href="http://hvg.hu/itthon/20050304hivatasoslista.aspx">Részletek<small><b>&raquo;</b></small></a>
+						</span>
+					</div>
+				</div>
+				
+						<div>
+							<span class="shelfIcon" id="clp20050304listapeterfalvi"><img src="/images/doc_small.gif" alt="Gyüjtobe vele!" border="0"></span>
+							<span id="DubleDot">::</span>
+							<a id="_ctl0_Pagelayout2__ctl2_LinkedArticlesRepeater__ctl0_LinkedArticleLink" class="LaBoxCaption" href="http://hvg.hu/itthon/20050304listapeterfalvi.aspx">Péterfalvi nem nyilatkozik a hvg.hu listájáról</a>							
+						</div>
+						
+			</td>
+		</tr>
+	</table>
+	<div class="ColumnTableBottom"><img src="/images/spacer.gif" border="0" height="10"/></div>
+</div>
+<table style="FONT-SIZE: 10px" cellspacing="2" cellpadding="2"><tbody><tr><td><div>
+<div id="Layout_left_half">
+	<div id="ParalelArticleL">
+		<div>
+			<a id="_ctl0_Pagelayout2__ctl3_SubCaptionLink" class="PaSubCaption" href="http://hvg.hu/Tudomany/20050304mstechfest.aspx">Microsoft TechFest </a>&nbsp;
+			<span class="shelfIcon" id="clp20050304mstechfest"><img src="/images/doc_small.gif" alt="Gyüjtobe vele!" border="0"></span>
+		</div>		
+		
+		<div class="PaCaption"><a id="_ctl0_Pagelayout2__ctl3_CaptionLink" class="PaCaption" href="http://hvg.hu/Tudomany/20050304mstechfest.aspx">A kismackó figyel téged </a></div>
+		<div id="PaLead">
+			<span>
+			<a id="_ctl0_Pagelayout2__ctl3_ImageLink" href="http://hvg.hu/Tudomany/20050304mstechfest.aspx"><img id="_ctl0_Pagelayout2__ctl3_ArticleImage" class="LaImage" src="http://hvg.hu/image.aspx?id=1d18e6ec-24a4-45ac-92f3-3de0700056cc&amp;view=5058F0E2-FA92-4BD4-A315-51D3260005B7" alt="" align="Left" border="0" /></a>
+			A Microsoft dolgozói számára évente fesztivált rendez, ahol bemutathatják legvadabb ötleteiket is. 
+			<span>
+				<a id="_ctl0_Pagelayout2__ctl3_MoreLink" class="La" href="http://hvg.hu/Tudomany/20050304mstechfest.aspx">Részletek<small><b>&raquo;</b></small></a>
+			</span>
+		</div>
+	</div>
+</div> </div></b />
+<div id="Layout_left_half">
+	<div id="ParalelArticleL">
+		<div>
+			<a id="_ctl0_Pagelayout2__ctl4_SubCaptionLink" class="PaSubCaption" href="http://hvg.hu/gazdasag/20050303fizetesiranglista.aspx">Európai fizetési ranglista</a>&nbsp;
+			<span class="shelfIcon" id="clp20050303fizetesiranglista"><img src="/images/doc_small.gif" alt="Gyüjtobe vele!" border="0"></span>
+		</div>		
+		
+		<div class="PaCaption"><a id="_ctl0_Pagelayout2__ctl4_CaptionLink" class="PaCaption" href="http://hvg.hu/gazdasag/20050303fizetesiranglista.aspx">Lemaradtak a magyar bérek</a></div>
+		<div id="PaLead">
+			<span>
+			<a id="_ctl0_Pagelayout2__ctl4_ImageLink" href="http://hvg.hu/gazdasag/20050303fizetesiranglista.aspx"><img id="_ctl0_Pagelayout2__ctl4_ArticleImage" class="LaImage" src="http://hvg.hu/image.aspx?id=5444ac37-8663-43b8-af8b-4f3047ffd37d&amp;view=5058F0E2-FA92-4BD4-A315-51D3260005B7" alt="Forrás: Magyar Nemzeti Bank" align="Left" border="0" /></a>
+			Béreink a lista utolsó előtti csoportjában vannak, de az euró-<br>pai fizetések közti különbség csökken.
+			<span>
+				<a id="_ctl0_Pagelayout2__ctl4_MoreLink" class="La" href="http://hvg.hu/gazdasag/20050303fizetesiranglista.aspx">Részletek<small><b>&raquo;</b></small></a>
+			</span>
+		</div>
+	</div>
+</div>          </td></tr></tbody></table><div class="ColumnTableBottom"><img height="10" src="/images/spacer.gif" border="0" /></div><table style="FONT-SIZE: 10px" cellspacing="2" cellpadding="2"><tbody><tr><td>
+<div id="Layout_left_half">
+	<div id="ParalelArticleL">
+		<div>
+			<a id="_ctl0_Pagelayout2__ctl5_SubCaptionLink" class="PaSubCaption" href="http://hvg.hu/Tudomany/20050303pacehacker.aspx">A távvezérlés halálos veszélye</a>&nbsp;
+			<span class="shelfIcon" id="clp20050303pacehacker"><img src="/images/doc_small.gif" alt="Gyüjtobe vele!" border="0"></span>
+		</div>		
+		
+		<div class="PaCaption"><a id="_ctl0_Pagelayout2__ctl5_CaptionLink" class="PaCaption" href="http://hvg.hu/Tudomany/20050303pacehacker.aspx">A hackerek már ölhetnek is</a></div>
+		<div id="PaLead">
+			<span>
+			
+			A hálózaton át a modern szívritmus-szabályozókhoz illetéktelenek is hozzáférhetnek.
+			<span>
+				<a id="_ctl0_Pagelayout2__ctl5_MoreLink" class="La" href="http://hvg.hu/Tudomany/20050303pacehacker.aspx">Részletek<small><b>&raquo;</b></small></a>
+			</span>
+		</div>
+	</div>
+</div>        
+<div id="Layout_left_half">
+	<div id="ParalelArticleL">
+		<div>
+			<a id="_ctl0_Pagelayout2__ctl6_SubCaptionLink" class="PaSubCaption" href="http://hvg.hu/vilag/20050304kemek.aspx">Nem lesz Amerika</a>&nbsp;
+			<span class="shelfIcon" id="clp20050304kemek"><img src="/images/doc_small.gif" alt="Gyüjtobe vele!" border="0"></span>
+		</div>		
+		
+		<div class="PaCaption"><a id="_ctl0_Pagelayout2__ctl6_CaptionLink" class="PaCaption" href="http://hvg.hu/vilag/20050304kemek.aspx">Ex-kémeknek nem jár apanázs</a></div>
+		<div id="PaLead">
+			<span>
+			
+			Az amerikai legfelsőbb bíróság elutasította egy kelet-Európai házaspár keresetét.
+			<span>
+				<a id="_ctl0_Pagelayout2__ctl6_MoreLink" class="La" href="http://hvg.hu/vilag/20050304kemek.aspx">Részletek<small><b>&raquo;</b></small></a>
+			</span>
+		</div>
+	</div>
+</div>       </td></tr></tbody></table>
+						
+<div id="Blokk">
+	<div id="FrissBox">
+		
+				<div>
+					<span id="FrissBoxTime">14:49</span>
+					<span class="shelfIcon" id="clp20050304dealersziberia"><img src="/images/doc_small.gif" alt="Gyüjtobe vele!" border="0"></span>
+					<a id="_ctl0_Pagelayout8__ctl1_NewsRepeater__ctl0_LinkedArticleLink" class="FrissBoxCaption" href="http://hvg.hu/kultura/20050304dealersziberia.aspx">Szibériában tartolt a Dealer</a>
+				</div>
+			
+				<div>
+					<span id="FrissBoxTime">14:48</span>
+					<span class="shelfIcon" id="clp20050304gyurcsany"><img src="/images/doc_small.gif" alt="Gyüjtobe vele!" border="0"></span>
+					<a id="_ctl0_Pagelayout8__ctl1_NewsRepeater__ctl1_LinkedArticleLink" class="FrissBoxCaption" href="http://hvg.hu/itthon/20050304gyurcsany.aspx">Kinevették Gyurcsányt a postások</a>
+				</div>
+			
+				<div>
+					<span id="FrissBoxTime">14:33</span>
+					<span class="shelfIcon" id="clp20050304listapeterfalvi"><img src="/images/doc_small.gif" alt="Gyüjtobe vele!" border="0"></span>
+					<a id="_ctl0_Pagelayout8__ctl1_NewsRepeater__ctl2_LinkedArticleLink" class="FrissBoxCaption" href="http://hvg.hu/itthon/20050304listapeterfalvi.aspx">Péterfalvi nem nyilatkozik a hvg.hu listájáról</a>
+				</div>
+			
+				<div>
+					<span id="FrissBoxTime">14:14</span>
+					<span class="shelfIcon" id="clp20050304kukorica"><img src="/images/doc_small.gif" alt="Gyüjtobe vele!" border="0"></span>
+					<a id="_ctl0_Pagelayout8__ctl1_NewsRepeater__ctl3_LinkedArticleLink" class="FrissBoxCaption" href="http://hvg.hu/gazdasag/20050304kukorica.aspx">Az EU engedélyezte a génmanipulált kukoricát </a>
+				</div>
+			
+				<div>
+					<span id="FrissBoxTime">14:08</span>
+					<span class="shelfIcon" id="clp20050304mausmetro"><img src="/images/doc_small.gif" alt="Gyüjtobe vele!" border="0"></span>
+					<a id="_ctl0_Pagelayout8__ctl1_NewsRepeater__ctl4_LinkedArticleLink" class="FrissBoxCaption" href="http://hvg.hu/kultura/20050304mausmetro.aspx">Maus képregénykockák a pesti metróban</a>
+				</div>
+			
+				<div>
+					<span id="FrissBoxTime">13:30</span>
+					<span class="shelfIcon" id="clp20050304gazda"><img src="/images/doc_small.gif" alt="Gyüjtobe vele!" border="0"></span>
+					<a id="_ctl0_Pagelayout8__ctl1_NewsRepeater__ctl5_LinkedArticleLink" class="FrissBoxCaption" href="http://hvg.hu/gazdasag/20050304gazda.aspx">Gyurcsány: nincs 200 milliárd a gazdák követeléseire </a>
+				</div>
+										
+	</div>
+</div>   
+<DIV>
+	<SCRIPT language="JavaScript">
+		<!--
+		var ord=Math.round(Math.random()*100000000);
+		document.write('<sc'+'ript language=JavaScript src="http://ad.adverticum.net/js.prm?zona=18416&ord='+ord+'"></scr'+'ipt>');
+		//-->
+	</SCRIPT>
+	<NOSCRIPT>
+		<A href="http://ad.adverticum.net/click.prm?zona=18416" target="_top">
+			<IMG height="180" alt="Kattintson a hirdetésre!" src="http://ad.adverticum.net/img.prm?zona=18416" width="468" border="0">
+		</A>
+	</NOSCRIPT>
+</DIV>
+					</div>
+				</div>
+				<div id="Layout_right_140">
+					<!-- Jobb hasáb -->
+					<div id="RightContent"><img src="/images/spacer.gif" border="0" width="1" height="5"/><br/>
+<div id="Blokk_Right">
+	<div id="HVGFrissBox">
+		<div id="HVGFrissBoxHeader">
+			<table class="TabTable" cellSpacing="0" cellPadding="0">
+				<tbody>
+					<tr>
+						<td class="TabTable">
+							<div class="Tab_Active"><a href="/hvgfriss.aspx">HVG<span id="Icon"><img src="images/arrow_right.gif" border="0"></span></a>
+							</div>
+						</td>
+						<td class="TabTable">
+							<div class="Tab"><a href="https://ugyfelpont.hvg.hu/pls/webitem/pkg_webshop_products.show" target="_blank">Előfizetés</a></div>
+						</td>
+					</tr>
+				</tbody></table>
+		</div>
+		<div id="HVGFrissBoxContent">
+			<center><a href="/hvgfriss.aspx"><img id="_ctl0_Pagelayout3__ctl1_CoverImage" src="http://hvg.hu/image.aspx?id=610294c9-d001-4432-9bcf-c5fff4e9d028&amp;view=10F22E5E-7665-49A7-A6F9-814CA617E072" alt="" style="border-width:0px;" /></a></center>
+		</div>
+	</div>
+</div>
+                                                                                 
+<div id="SideBlokk">	
+	
+		<DIV>
+			<a id="_ctl0_Pagelayout3__ctl2_ColumnLink" href="http://hvg.hu/ugynok.aspx"><img src="http://hvg.hu/image.aspx?id=c454d24c-8992-49d6-9b07-09aaef3a335a&amp;view=E9D9EA94-21C3-4876-A20C-34294B9230B3" alt="" border="0" /></a></DIV>
+	
+	
+	
+	
+			<div id="LinkRows1">
+				
+											
+					<div id="DottedRow" class="wrap">		
+						<a id="_ctl0_Pagelayout3__ctl2_AddedArticlesRepeater__ctl0_Hyperlink1" class="LrSubCaption" href="http://hvg.hu/ugynok/20050225allambiztonsag.aspx">Jelentéstan</a><span class="shelfIcon" id="clp20050225allambiztonsag"><img src="/images/doc_small.gif" alt="Gyüjtobe vele!" border="0"></span>
+							<br />
+							<a id="_ctl0_Pagelayout3__ctl2_AddedArticlesRepeater__ctl0_Hyperlink2" class="LrCaptionSmall" href="http://hvg.hu/ugynok/20050225allambiztonsag.aspx">Állambiztonsági szótár</a>
+					</div>
+				
+			</div>
+		
+			<div id="LinkRows1">
+				
+											
+					<div id="DottedRow" class="wrap">		
+						<a id="_ctl0_Pagelayout3__ctl2_AddedArticlesRepeater__ctl1_Hyperlink1" class="LrSubCaption" href="http://hvg.hu/ugynok/20050301lista.aspx">Lista – nevek nélkül</a><span class="shelfIcon" id="clp20050301lista"><img src="/images/doc_small.gif" alt="Gyüjtobe vele!" border="0"></span>
+							<br />
+							<a id="_ctl0_Pagelayout3__ctl2_AddedArticlesRepeater__ctl1_Hyperlink2" class="LrCaptionSmall" href="http://hvg.hu/ugynok/20050301lista.aspx">Kommunisták az ügynökhálózaton kívül és belül</a>
+					</div>
+				
+			</div>
+						
+				
+</div>
+
+<div id="SideBlokk">	
+	
+		<DIV>
+			<a id="_ctl0_Pagelayout3__ctl3_ColumnLink" href="http://hvg.hu/karrier.aspx"><img src="http://hvg.hu/image.aspx?id=9c9c2c9a-9a18-498b-b625-7eb430fc7064&amp;view=E9D9EA94-21C3-4876-A20C-34294B9230B3" alt="" border="0" /></a></DIV>
+	
+	
+	
+	
+			<div id="LinkRows1">
+				
+											
+					<div id="DottedRow" class="wrap">		
+						<a id="_ctl0_Pagelayout3__ctl3_AddedArticlesRepeater__ctl0_Hyperlink1" class="LrSubCaption" href="http://hvg.hu/karrier/20050303happyjob.aspx">Hol repül az idő? </a><span class="shelfIcon" id="clp20050303happyjob"><img src="/images/doc_small.gif" alt="Gyüjtobe vele!" border="0"></span>
+							<br />
+							<a id="_ctl0_Pagelayout3__ctl3_AddedArticlesRepeater__ctl0_Hyperlink2" class="LrCaptionSmall" href="http://hvg.hu/karrier/20050303happyjob.aspx">Munka élvezeti rangsor</a>
+					</div>
+				
+			</div>
+						
+				
+</div>
+  
+<DIV>
+	<SCRIPT language="JavaScript">
+		<!--
+		var ord=Math.round(Math.random()*100000000);
+		document.write('<sc'+'ript language=JavaScript src="http://ad.adverticum.net/js.prm?zona=19050&ord='+ord+'"></scr'+'ipt>');
+		//-->
+	</SCRIPT>
+	<NOSCRIPT>
+		<A href="http://ad.adverticum.net/click.prm?zona=19050" target="_top">
+			<IMG height="120" alt="Kattintson a hirdetésre!" src="http://ad.adverticum.net/img.prm?zona=19050" width="120" border="0">
+		</A>
+	</NOSCRIPT>
+</DIV>                                        </div>
+				</div>
+			</div>
+		</div>
+		<!-- Középső rész-->
+		<div id="PageContent">
+			<!-- Bal hasáb -->
+			<div id="Layout_left_140">
+				<div id="LeftContent">
+					<div id="Blokk_Left">                         
+<DIV>
+	<SCRIPT language="JavaScript">
+		<!--
+		var ord=Math.round(Math.random()*100000000);
+		document.write('<sc'+'ript language=JavaScript src="http://ad.adverticum.net/js.prm?zona=18419&ord='+ord+'"></scr'+'ipt>');
+		//-->
+	</SCRIPT>
+	<NOSCRIPT>
+		<A href="http://ad.adverticum.net/click.prm?zona=18419" target="_top">
+			<IMG height="240" alt="Kattintson a hirdetésre!" src="http://ad.adverticum.net/img.prm?zona=18419" width="120" border="0">
+		</A>
+	</NOSCRIPT>
+</DIV>                                                                    
+<div id="SideBlokk">
+	<div id="Blokk_Header_Right"><a id="_ctl0_Pagelayout4__ctl4_HeaderLink">Banki keresők</a> </div>
+	<table style="font-size:10" cellpadding="0" cellspacing="0" border="0" width="100%">
+		<tr>
+			<td>
+				<table cellsapcing="0" cellspacing="0" width="100%">
+						
+							
+							
+							
+								<tr>
+									<td class="IconCol">
+										<img src="images/DotteArrow.gif">
+									</td>
+									<td class="TextCol"><a id="_ctl0_Pagelayout4__ctl4_LinkRepeater__ctl0_Hyperlink1" href="/atmsearch.aspx" target="_self">ATM-kereső</a></td>
+								</tr>
+							
+							
+							
+							
+							
+								<tr>
+									<td class="IconCol">
+										<img src="images/DotteArrow.gif">
+									</td>
+									<td class="TextCol"><a id="_ctl0_Pagelayout4__ctl4_LinkRepeater__ctl1_Hyperlink1" href="/banksearch.aspx" target="_self">Bankfiók kereső</a></td>
+								</tr>
+							
+							
+							
+							
+							
+								<tr>
+									<td class="IconCol">
+										<img src="images/DotteArrow.gif">
+									</td>
+									<td class="TextCol"><a id="_ctl0_Pagelayout4__ctl4_LinkRepeater__ctl2_Hyperlink1" href="/depositsearch.aspx" target="_self">Bankbetét kereső</a></td>
+								</tr>
+							
+							
+							
+							
+							
+								<tr>
+									<td class="IconCol">
+										<img src="images/DotteArrow.gif">
+									</td>
+									<td class="TextCol"><a id="_ctl0_Pagelayout4__ctl4_LinkRepeater__ctl3_Hyperlink1" href="/accountSearch.aspx" target="_self">Folyószámla kereső</a></td>
+								</tr>
+							
+							
+							
+							
+							
+								<tr>
+									<td class="IconCol">
+										<img src="images/DotteArrow.gif">
+									</td>
+									<td class="TextCol"><a id="_ctl0_Pagelayout4__ctl4_LinkRepeater__ctl4_Hyperlink1" href="/creditSearch.aspx" target="_self">Lakáshitel kereső</a></td>
+								</tr>
+							
+							
+							
+							
+							
+								<tr>
+									<td class="IconCol">
+										<img src="images/DotteArrow.gif">
+									</td>
+									<td class="TextCol"><a id="_ctl0_Pagelayout4__ctl4_LinkRepeater__ctl5_Hyperlink1" href="/changer.aspx" target="_self">Pénzváltó </a></td>
+								</tr>
+							
+												
+				</table>								
+			</td>
+		</tr>
+	</table>
+</div>                                                                              <?xml version="1.0" encoding="utf-8"?><div id="SideBlokk"><table style="FONT-SIZE:10px" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td><div id="Blokk_Header_Right"><a href="/bux.aspx">BUX <span id="Icon"><img src="images/arrow_right.gif" border="0" /></span></a></div></td></tr><tr><td class="NormalTextColWithoutPadding"><center><img src="/cachedData/nbux.gif" width="140" /></center><table style="FONT-SIZE:10px" cellpadding="0" cellspacing="5" border="0"><tr><td><img src="/images/t_le.gif" /></td><td><a href="/bux.aspx"><b>BUX</b></a></td><td align="right">17696.30</td></tr><tr><td> </td><td width="70">13:59:00</td><td align="right"><font color="red">-.38%
+					</font></td></tr><tr><td><img src="/images/t_fel.gif" /></td><td><a href="/bux.aspx"><b>BUMIX</b></a></td><td align="right">1544.68</td></tr><tr><td> </td><td width="70">13:59:00</td><td align="right"><font color="green">.12%
+					</font></td></tr><tr><td><img src="/images/t_fel.gif" /></td><td><a href="/bux.aspx"><b>EGIS</b></a></td><td align="right">17595</td></tr><tr><td> </td><td width="70">13:58:56</td><td align="right"><font color="green">1.18%
+					</font></td></tr><tr><td><img src="/images/t_fel.gif" /></td><td><a href="/bux.aspx"><b>MATAV</b></a></td><td align="right">947</td></tr><tr><td> </td><td width="70">13:58:11</td><td align="right"><font color="green">0.64%
+					</font></td></tr><tr><td><img src="/images/t_le.gif" /></td><td><a href="/bux.aspx"><b>MOL</b></a></td><td align="right">15430</td></tr><tr><td> </td><td width="70">13:55:49</td><td align="right"><font color="red">-0.36%
+					</font></td></tr><tr><td><img src="/images/t_le.gif" /></td><td><a href="/bux.aspx"><b>OTP</b></a></td><td align="right">6949</td></tr><tr><td> </td><td width="70">13:55:56</td><td align="right"><font color="red">-0.70%
+					</font></td></tr><tr><td><img src="/images/t_le.gif" /></td><td><a href="/bux.aspx"><b>RICHTER</b></a></td><td align="right">26200</td></tr><tr><td> </td><td width="70">13:58:39</td><td align="right"><font color="red">-1.13%
+					</font></td></tr></table></td></tr></table></div>                                                                            <a href="/klub" target="_blank"><img src="images/klub.jpg" border="0" /></a> </div>
+<DIV>
+	<SCRIPT language="JavaScript">
+		<!--
+		var ord=Math.round(Math.random()*100000000);
+		document.write('<sc'+'ript language=JavaScript src="http://ad.adverticum.net/js.prm?zona=19049&ord='+ord+'"></scr'+'ipt>');
+		//-->
+	</SCRIPT>
+	<NOSCRIPT>
+		<A href="http://ad.adverticum.net/click.prm?zona=19049" target="_top">
+			<IMG height="240" alt="Kattintson a hirdetésre!" src="http://ad.adverticum.net/img.prm?zona=19049" width="120" border="0">
+		</A>
+	</NOSCRIPT>
+</DIV>     
+<div id="SideBlokk">	
+	
+		<DIV>
+			<a id="_ctl0_Pagelayout4__ctl7_ColumnLink"></a></DIV>
+	
+	
+		<DIV id="Blokk_Header_Right">
+			<a id="_ctl0_Pagelayout4__ctl7_ColumnTextLink" href="http://hvg.hu/english.aspx">English version
+				<span id="Icon">
+					<img src="images/arrow_right.gif" border="0"></span>
+			</a></DIV>
+	
+	
+	
+			<div id="LinkRows1">
+				
+											
+					<div id="DottedRow" class="wrap">		
+						<a id="_ctl0_Pagelayout4__ctl7_AddedArticlesRepeater__ctl0_Hyperlink1" class="LrSubCaption" href="http://hvg.hu/english/20050302swellingdeficit.aspx">Bad luck</a><span class="shelfIcon" id="clp20050302swellingdeficit"><img src="/images/doc_small.gif" alt="Gyüjtobe vele!" border="0"></span>
+							<br />
+							<a id="_ctl0_Pagelayout4__ctl7_AddedArticlesRepeater__ctl0_Hyperlink2" class="LrCaptionSmall" href="http://hvg.hu/english/20050302swellingdeficit.aspx">EU Gets Tough On Hungary’s Swelling Deficit</a>
+					</div>
+				
+			</div>
+		
+			<div id="LinkRows1">
+				
+											
+					<div id="DottedRow" class="wrap">		
+						<a id="_ctl0_Pagelayout4__ctl7_AddedArticlesRepeater__ctl1_Hyperlink1" class="LrSubCaption" href="http://hvg.hu/english/20050302realwages.aspx">Rosy outlook</a><span class="shelfIcon" id="clp20050302realwages"><img src="/images/doc_small.gif" alt="Gyüjtobe vele!" border="0"></span>
+							<br />
+							<a id="_ctl0_Pagelayout4__ctl7_AddedArticlesRepeater__ctl1_Hyperlink2" class="LrCaptionSmall" href="http://hvg.hu/english/20050302realwages.aspx">Real Wages To Grow In 2005</a>
+					</div>
+				
+			</div>
+		
+			<div id="LinkRows1">
+				
+											
+					<div id="DottedRow" class="wrap">		
+						<a id="_ctl0_Pagelayout4__ctl7_AddedArticlesRepeater__ctl2_Hyperlink1" class="LrSubCaption" href="http://hvg.hu/english/20050302erstebank.aspx">Bigger and more</a><span class="shelfIcon" id="clp20050302erstebank"><img src="/images/doc_small.gif" alt="Gyüjtobe vele!" border="0"></span>
+							<br />
+							<a id="_ctl0_Pagelayout4__ctl7_AddedArticlesRepeater__ctl2_Hyperlink2" class="LrCaptionSmall" href="http://hvg.hu/english/20050302erstebank.aspx">Erste To Continue Expansion</a>
+					</div>
+				
+			</div>
+		
+			<div id="LinkRows1">
+				
+											
+					<div id="DottedRow" class="wrap">		
+						<a id="_ctl0_Pagelayout4__ctl7_AddedArticlesRepeater__ctl3_Hyperlink1" class="LrSubCaption" href="http://hvg.hu/english/20050303digitaltv.aspx">Digital TV</a><span class="shelfIcon" id="clp20050303digitaltv"><img src="/images/doc_small.gif" alt="Gyüjtobe vele!" border="0"></span>
+							<br />
+							<a id="_ctl0_Pagelayout4__ctl7_AddedArticlesRepeater__ctl3_Hyperlink2" class="LrCaptionSmall" href="http://hvg.hu/english/20050303digitaltv.aspx">Hungary Goes Digital</a>
+					</div>
+				
+			</div>
+		
+			<div id="LinkRows1">
+				
+											
+					<div id="DottedRow" class="wrap">		
+						<a id="_ctl0_Pagelayout4__ctl7_AddedArticlesRepeater__ctl4_Hyperlink1" class="LrSubCaption" href="http://hvg.hu/english/20050303trigranitinromania.aspx">Hungarians in Bucharest</a><span class="shelfIcon" id="clp20050303trigranitinromania"><img src="/images/doc_small.gif" alt="Gyüjtobe vele!" border="0"></span>
+							<br />
+							<a id="_ctl0_Pagelayout4__ctl7_AddedArticlesRepeater__ctl4_Hyperlink2" class="LrCaptionSmall" href="http://hvg.hu/english/20050303trigranitinromania.aspx">Real Estate Tycoon Invests 1 Bln In Romania</a>
+					</div>
+				
+			</div>
+		
+			<div id="LinkRows1">
+				
+											
+					<div id="DottedRow" class="wrap">		
+						<a id="_ctl0_Pagelayout4__ctl7_AddedArticlesRepeater__ctl5_Hyperlink1" class="LrSubCaption" href="http://hvg.hu/english/20050303taxreform.aspx">Tax reform</a><span class="shelfIcon" id="clp20050303taxreform"><img src="/images/doc_small.gif" alt="Gyüjtobe vele!" border="0"></span>
+							<br />
+							<a id="_ctl0_Pagelayout4__ctl7_AddedArticlesRepeater__ctl5_Hyperlink2" class="LrCaptionSmall" href="http://hvg.hu/english/20050303taxreform.aspx">Tax Committee Unveils Reform Proposals</a>
+					</div>
+				
+			</div>
+						
+				
+</div>
+<?xml version="1.0" encoding="utf-8"?><div id="SideBlokk"><div id="NfBoxRight"><table cellpadding="0" cellspacing="0" class="TabTable"><tbody><tr><td><div class="Tab_Active" style="width: 80px;"><a href="http://nf.hvg.hu" target="_blank">HÍRBÖRZE<span id="Icon"><img src="images/arrow_right.gif" border="0" /></span></a></div></td><td><div class="Tab"><a href="http://nf.hvg.hu/market/aide.html" target="_blank">LEÍRÁS</a></div></td></tr><tr><td colspan="2"><a target="_blank" href="http://nf.hvg.hu/market/market.html?symbol=BU0304PU"><center><img width="140" border="0" src="http://www.newsfutures.com/newgraphs/en/BU0304PU-M.gif"></img></center><div id="LinkRows2"><div id="LinkRow"><div id="LrSubcaption2">A BUX március 4-én 1%-nál többet változik</div></div></div></a><table id="LinkRows2" cellsapcing="0" width="100%"><tr><td valign="top"><div id="LrDubleDot">::</div></td><td id="FrissBoxCaption">Egy tőzsde, ahol <b>bármire</b> spekulálhat!</td></tr><tr><td valign="top"><div id="LrDubleDot">::</div></td><td id="FrissBoxCaption">Egy tőzsde, ahol az jár jól, aki igazán tájékozott! </td></tr><tr><td valign="top"><div id="LrDubleDot">::</div></td><td id="FrissBoxCaption">Egy tőzsde, ahol a hvg.hu Hírbörzéjétől kapott alaptőkéből játszhat <b>valódi nyereményért!</b></td></tr></table></td></tr></tbody></table></div></div>
+                                                             
+<div id="SideBlokk">	
+	
+		<DIV>
+			<a id="_ctl0_Pagelayout4__ctl9_ColumnLink" href="http://hvg.hu/itszalon.aspx"><img src="http://hvg.hu/image.aspx?id=e8c86280-792e-439c-b330-99e2537be698&amp;view=E9D9EA94-21C3-4876-A20C-34294B9230B3" alt="" border="0" /></a></DIV>
+	
+	
+	
+	
+			<div id="LinkRows1">
+				
+					<div>
+							
+							
+						<div id="boxarticle" class="wrap">	
+							<a id="_ctl0_Pagelayout4__ctl9_AddedArticlesRepeater__ctl0_Hyperlink3" class="LrCaptionSmall" href="http://hvg.hu/itszalon/20050128itdepo.aspx">
+								<b>
+									<div>Műszaki cikkek</div>
+								</b>
+							</a><span class="shelfIcon" id="clp20050128itdepo"><img src="/images/doc_small.gif" alt="Gyüjtobe vele!" border="0"></span>
+							<br />
+							A számítástechnika, a telekommunikáció és a szórakoztató-elektronika legújabb eszközei itt tekinthetők meg.
+							<br />
+							<a id="_ctl0_Pagelayout4__ctl9_AddedArticlesRepeater__ctl0_Hyperlink5" class="La" href="http://hvg.hu/itszalon/20050128itdepo.aspx">Részletek <small>
+									<b>&raquo;</b></small></a>
+						</div>
+					</div>
+				
+				
+			</div>
+						
+				
+</div>
+        
+<div id="SideBlokk">
+	<table style="FONT-SIZE:10px" cellpadding="0" cellspacing="0" width="100%">
+		<tr>
+			<td>
+				<div id="Blokk_Header_Right"><a href="/gallery.aspx">Fotógaléria<span id="Icon"><img src="images/arrow_right.gif" border="0"></span></a>									
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td align="center">
+				
+						<img id="_ctl0_Pagelayout4__ctl10_ItemRepeater__ctl0_MainGalleryImage" onclick="openGallery('0fdc489c-3711-4a0e-b651-6002d86a8f8e');return false;" src="http://hvg.hu/image.aspx?id=5bac2d7c-0f76-4714-b3e9-1706a02cb567&amp;view=E9D9EA94-21C3-4876-A20C-34294B9230B3" alt="" border="0" style="cursor: hand;" />
+									
+			</td>
+		</tr>
+		<tr>
+			<td align="center" class="NormalTextCol">
+				<a id="_ctl0_Pagelayout4__ctl10_GalleryName" onclick="openGallery('0fdc489c-3711-4a0e-b651-6002d86a8f8e');return false;" style="cursor: hand;">Jégvilág a Genfi-tó környékén</a>				
+			</td>
+		</tr>
+	</table>
+</div>      
+<div id="SideBlokk">	
+	
+		<DIV>
+			<a id="_ctl0_Pagelayout4__ctl11_ColumnLink"><img src="http://hvg.hu/image.aspx?id=be6b5f9d-35eb-4ff3-a872-d9456f9824cb&amp;view=E9D9EA94-21C3-4876-A20C-34294B9230B3" alt="" border="0" /></a></DIV>
+	
+	
+	
+	
+			<div id="LinkRows1">
+				
+					<div>
+							
+							
+						<div id="boxarticle" class="wrap">	
+							<a id="_ctl0_Pagelayout4__ctl11_AddedArticlesRepeater__ctl0_Hyperlink3" class="LrCaptionSmall" href="http://hvg.hu/media/20041230internetes.aspx">
+								<b>
+									<div>Internetes átverések</div>
+								</b>
+							</a><span class="shelfIcon" id="clp20041230internetes"><img src="/images/doc_small.gif" alt="Gyüjtobe vele!" border="0"></span>
+							<br />
+							Csokorba szedtük a tavalyi év tíz legnagyobb internetes átverését. Legendák a Bush-szavazók IQ-járól, ál-Kovács munkásőr- mundérban, emberevő óriáspókok, repülők Trója ostrománál – többek között ezt hozta nekünk 2004-ben az elektronikus posta.
+							<br />
+							<a id="_ctl0_Pagelayout4__ctl11_AddedArticlesRepeater__ctl0_Hyperlink5" class="La" href="http://hvg.hu/media/20041230internetes.aspx">Részletek <small>
+									<b>&raquo;</b></small></a>
+						</div>
+					</div>
+				
+				
+			</div>
+						
+				
+</div>
+         
+					<SCRIPT language="JavaScript">document.write('<!-- Medián WebAudit HVG Online 1/2 --><img src="http://audit.median.hu/cgi-bin/track.cgi?uc=9900054786936&dc=1&ui='+same+'" width="1" height="1">');</SCRIPT><NOSCRIPT><img src="http://audit.median.hu/cgi-bin/track.cgi?uc=9900054786936&dc=1" width="1" height="1"></NOSCRIPT>
+				</div>
+			</div>
+			<div id="Layout_right_620">
+				<div id="Layout_left_470">
+					<!-- Középső hasáb -->
+					<div id="CenterContent">
+						<div id="Blokk">
+<table style="FONT-SIZE:10px" cellpadding="0" cellspacing="0">
+	<tr>
+		<td colspan="2" class="ColumnTableTop2">&nbsp;</td>
+	</tr>
+	<tr class="GaleryBlokk">
+		<td>
+			<table style="FONT-SIZE:10px" cellpadding="0" cellspacing="0" width="470">
+				<tr>
+					<td class="LeftPic">
+						
+								<img id="_ctl0_Pagelayout7__ctl1_ItemRepeater__ctl0_MainGalleryImage" onclick="openGallery('90285c8f-af99-4175-8ab2-154dec42bdac');return false;" src="http://hvg.hu/image.aspx?id=292337a5-a603-44a8-9a03-e5a96132b80d&amp;view=D826F9FB-D662-4B9C-88E2-2A316CE885B2" alt="" border="0" style="cursor: hand;" />
+								
+						<div id="LeftPic"><a id="_ctl0_Pagelayout7__ctl1_GalleryName" onclick="openGallery('90285c8f-af99-4175-8ab2-154dec42bdac');return false;" style="cursor: hand;">Egy cunami-áldozat utolsó fotói</a></div>
+					</td>
+					<td class="Place">
+						<a href="/gallery.aspx">
+							<div id="PicHolder">&nbsp;</div>
+						</a><a onclick="openGallery('29e6d5b0-ccb4-4b18-b3cb-2e1acd382f24');" style="cursor:hand;">
+							<div id="PicHolder">&nbsp;</div>
+						</a>
+					</td>
+					<td class="RightPic">
+						
+								<img id="_ctl0_Pagelayout7__ctl1_RightItemRepeater__ctl0_RightGalleryImage" onclick="openGallery('29e6d5b0-ccb4-4b18-b3cb-2e1acd382f24');return false;" src="http://hvg.hu/image.aspx?id=3c15c97d-199e-47b0-9640-b7df19128382&amp;view=D826F9FB-D662-4B9C-88E2-2A316CE885B2" alt="" border="0" style="cursor: hand;" />
+								
+						<div id="RightPic"><a onclick="openGallery('29e6d5b0-ccb4-4b18-b3cb-2e1acd382f24');" style="cursor:hand;">További karikatúrák</a></div>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2" class="ColumnTableBottom">&nbsp;</td>
+	</tr>
+</table>
+</div><img height="2" src="images/spacer.gif" /><br />                   
+						
+<div id="Blokk">
+	<table style="FONT-SIZE:10px" cellpadding="0" cellspacing="0" class="ColumnTable">
+		<tr>
+			<td>
+				<div id="Blokk_Header"><a id="_ctl0_Pagelayout5__ctl1_ColumnLink" href="http://hvg.hu/itthon.aspx">Itthon<span id="Icon"><img src="images/arrow_right.gif" border="0"></span></a>									
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td class="ColumnTableTop">&nbsp;</td>
+		</tr>
+		<tr>
+			<td>
+				<div id="Layout_left_half">
+					<div id="ParalelArticleL">
+						
+						
+							<div>
+								<a id="_ctl0_Pagelayout5__ctl1_ImageLink" href="http://hvg.hu/hvgfriss/2005.09/200509HVGFriss194.aspx"><img id="_ctl0_Pagelayout5__ctl1_ArticleImage" src="http://hvg.hu/image.aspx?id=ecfb861e-6cbc-4e2a-b315-20ef630ebbfc&amp;view=1C685FB1-113E-4CA7-B7F4-9213709C7F23" alt="Túry Gergely" border="0" /></a>
+							</div>
+						
+						
+						
+						<div class="PaSubCaption">
+							<a id="_ctl0_Pagelayout5__ctl1_SubCaptionLink" class="PaSubCaption" href="http://hvg.hu/hvgfriss/2005.09/200509HVGFriss194.aspx">A körök négyszögesítése</a>&nbsp;<span class="shelfIcon" id="clp200509HVGFriss194"><img src="/images/doc_small.gif" alt="Gyüjtobe vele!" border="0"></span>						
+						</div>
+						<div><a id="_ctl0_Pagelayout5__ctl1_CaptionLink" class="PaCaption" href="http://hvg.hu/hvgfriss/2005.09/200509HVGFriss194.aspx">MSZP-s terjeszkedési tervek</a></div>
+						<div class="PaLead">
+							<span>
+								Mindenütt jelen lenni, mozogni, nyüzsögni - ez a vezérmotívuma az MSZP új terjeszkedési filozófiájá-<br>nak. Sikeres Magyarországért, helyi programok, net-játékok.
+							</span>
+							<span>
+								<a id="_ctl0_Pagelayout5__ctl1_MoreLink" class="La" href="http://hvg.hu/hvgfriss/2005.09/200509HVGFriss194.aspx">Részletek<small><b>&raquo;</b></small></a>
+							</span>
+						</div>
+					</div>
+				</div>
+				<div id="Layout_right_half">
+					<div id="LinkRows">
+							
+								<div id="LinkRow">																					
+									<table border="0">
+										<tr>
+											<td valign="top"><span id="LrDubleDot">::</span></td>
+											<td valign="top">
+												<div id="_ctl0_Pagelayout5__ctl1_AddedArticlesRepeater__ctl0_SubCaptionPanel">
+									
+													<div>
+														<a id="_ctl0_Pagelayout5__ctl1_AddedArticlesRepeater__ctl0_Hyperlink1" class="LrSubCaption" href="http://hvg.hu/itthon/20050303magyarposta.aspx">5 millió forintos bírság</a> 		
+														<span class="shelfIcon" id="clp20050303magyarposta"><img src="/images/doc_small.gif" alt="Gyüjtobe vele!" border="0"></span>	
+													</div>												
+													<a id="_ctl0_Pagelayout5__ctl1_AddedArticlesRepeater__ctl0_Hyperlink2" class="LrCaption" href="http://hvg.hu/itthon/20050303magyarposta.aspx">
+														<b>Megtévesztette a fogyasztókat a Magyar Posta</b>
+													</a>
+												
+</div>
+												
+											</td>
+										</tr>
+									</table>																																								
+								</div>
+								
+								<div id="LinkRow">																					
+									<table border="0">
+										<tr>
+											<td valign="top"><span id="LrDubleDot">::</span></td>
+											<td valign="top">
+												<div id="_ctl0_Pagelayout5__ctl1_AddedArticlesRepeater__ctl1_SubCaptionPanel">
+									
+													<div>
+														<a id="_ctl0_Pagelayout5__ctl1_AddedArticlesRepeater__ctl1_Hyperlink1" class="LrSubCaption" href="http://hvg.hu/itthon/20050303nyklub.aspx">Nyilvánosság</a> 		
+														<span class="shelfIcon" id="clp20050303nyklub"><img src="/images/doc_small.gif" alt="Gyüjtobe vele!" border="0"></span>	
+													</div>												
+													<a id="_ctl0_Pagelayout5__ctl1_AddedArticlesRepeater__ctl1_Hyperlink2" class="LrCaption" href="http://hvg.hu/itthon/20050303nyklub.aspx">
+														<b>Ironikus közleményben támadják a "listazúzó" ombudsmant</b>
+													</a>
+												
+</div>
+												
+											</td>
+										</tr>
+									</table>																																								
+								</div>
+								
+								<div id="LinkRow">																					
+									<table border="0">
+										<tr>
+											<td valign="top"><span id="LrDubleDot">::</span></td>
+											<td valign="top">
+												<div id="_ctl0_Pagelayout5__ctl1_AddedArticlesRepeater__ctl2_SubCaptionPanel">
+									
+													<div>
+														<a id="_ctl0_Pagelayout5__ctl1_AddedArticlesRepeater__ctl2_Hyperlink1" class="LrSubCaption" href="http://hvg.hu/itthon/20050302borton.aspx">Ököljogi esetek</a> 		
+														<span class="shelfIcon" id="clp20050302borton"><img src="/images/doc_small.gif" alt="Gyüjtobe vele!" border="0"></span>	
+													</div>												
+													<a id="_ctl0_Pagelayout5__ctl1_AddedArticlesRepeater__ctl2_Hyperlink2" class="LrCaption" href="http://hvg.hu/itthon/20050302borton.aspx">
+														<b>Erőszak a börtönökben</b>
+													</a>
+												
+</div>
+												
+											</td>
+										</tr>
+									</table>																																								
+								</div>
+									
+					</div>
+					<div id="_ctl0_Pagelayout5__ctl1_NewsFuturesBox" class="NfBox">
+	
+						<div id="NfBox">						
+							<div id="LinkRow">
+								<table border="0">
+									<tr>
+										<td valign="top"><span id="LrDubleDot">::</span></td>
+										<td valign="top">
+											<b>HÍRBÖRZE</b><br/>
+											<a id="_ctl0_Pagelayout5__ctl1_NewsFuturesLink" href="http://nf.hvg.hu/market/market.html?symbol=KE0606EY" target="_blank">Lesz-e az ellenzéknek saját államfőjelöltje?</a>
+										</td>
+									</tr>
+								</table>															
+							</div>
+						</div>
+					
+</div>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td class="ColumnTableBottom">&nbsp;</td>
+		</tr>
+	</table>
+</div><div></div>
+						
+<DIV>
+	<SCRIPT language="JavaScript">
+		<!--
+		var ord=Math.round(Math.random()*100000000);
+		document.write('<sc'+'ript language=JavaScript src="http://ad.adverticum.net/js.prm?zona=18417&ord='+ord+'"></scr'+'ipt>');
+		//-->
+	</SCRIPT>
+	<NOSCRIPT>
+		<A href="http://ad.adverticum.net/click.prm?zona=18417" target="_top">
+			<IMG height="60" alt="Kattintson a hirdetésre!" src="http://ad.adverticum.net/img.prm?zona=18417" width="468" border="0">
+		</A>
+	</NOSCRIPT>
+</DIV>                                                                                                                                   
+<div id="Blokk">
+	<table style="FONT-SIZE:10px" cellpadding="0" cellspacing="0" class="ColumnTable">
+		<tr>
+			<td>
+				<div id="Blokk_Header"><a id="_ctl0_Pagelayout9__ctl2_ColumnLink" href="http://hvg.hu/vilag.aspx">Világ<span id="Icon"><img src="images/arrow_right.gif" border="0"></span></a>									
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td class="ColumnTableTop">&nbsp;</td>
+		</tr>
+		<tr>
+			<td>
+				<div id="Layout_left_half">
+					<div id="LinkRows">
+							
+								<div id="LinkRow">						
+									<table border="0">
+										<tr>
+											<td valign="top"><span id="LrDubleDot">::</span></td>
+											<td valign="top">
+												<div id="_ctl0_Pagelayout9__ctl2_AddedArticlesRepeater__ctl0_SubCaptionPanel">
+									
+													<div>
+														<a id="_ctl0_Pagelayout9__ctl2_AddedArticlesRepeater__ctl0_Hyperlink1" class="LrSubCaption" href="http://hvg.hu/vilag/20050303edzohalal.aspx">Labdarúgás</a> 		
+														<span class="shelfIcon" id="clp20050303edzohalal"><img src="/images/doc_small.gif" alt="Gyüjtobe vele!" border="0"></span>	
+													</div>
+													<a id="_ctl0_Pagelayout9__ctl2_AddedArticlesRepeater__ctl0_Hyperlink2" class="LrCaption" href="http://hvg.hu/vilag/20050303edzohalal.aspx">Elhunyt a totális futball atyja</a>
+												
+</div>
+												
+											</td>
+										</tr>
+									</table>							
+								</div>
+								
+								<div id="LinkRow">						
+									<table border="0">
+										<tr>
+											<td valign="top"><span id="LrDubleDot">::</span></td>
+											<td valign="top">
+												<div id="_ctl0_Pagelayout9__ctl2_AddedArticlesRepeater__ctl1_SubCaptionPanel">
+									
+													<div>
+														<a id="_ctl0_Pagelayout9__ctl2_AddedArticlesRepeater__ctl1_Hyperlink1" class="LrSubCaption" href="http://hvg.hu/vilag/20050301kabitoszer.aspx">Vélemény</a> 		
+														<span class="shelfIcon" id="clp20050301kabitoszer"><img src="/images/doc_small.gif" alt="Gyüjtobe vele!" border="0"></span>	
+													</div>
+													<a id="_ctl0_Pagelayout9__ctl2_AddedArticlesRepeater__ctl1_Hyperlink2" class="LrCaption" href="http://hvg.hu/vilag/20050301kabitoszer.aspx">Engedélyezéssel a kábítószer ellen </a>
+												
+</div>
+												
+											</td>
+										</tr>
+									</table>							
+								</div>
+								
+								<div id="LinkRow">						
+									<table border="0">
+										<tr>
+											<td valign="top"><span id="LrDubleDot">::</span></td>
+											<td valign="top">
+												<div id="_ctl0_Pagelayout9__ctl2_AddedArticlesRepeater__ctl2_SubCaptionPanel">
+									
+													<div>
+														<a id="_ctl0_Pagelayout9__ctl2_AddedArticlesRepeater__ctl2_Hyperlink1" class="LrSubCaption" href="http://hvg.hu/vilag/20050303paleszt.aspx">Rendteremtés</a> 		
+														<span class="shelfIcon" id="clp20050303paleszt"><img src="/images/doc_small.gif" alt="Gyüjtobe vele!" border="0"></span>	
+													</div>
+													<a id="_ctl0_Pagelayout9__ctl2_AddedArticlesRepeater__ctl2_Hyperlink2" class="LrCaption" href="http://hvg.hu/vilag/20050303paleszt.aspx">Újra lesznek kivégzések a Palesztin Autonómia területén</a>
+												
+</div>
+												
+											</td>
+										</tr>
+									</table>							
+								</div>
+								
+								<div id="LinkRow">						
+									<table border="0">
+										<tr>
+											<td valign="top"><span id="LrDubleDot">::</span></td>
+											<td valign="top">
+												<div id="_ctl0_Pagelayout9__ctl2_AddedArticlesRepeater__ctl3_SubCaptionPanel">
+									
+													<div>
+														<a id="_ctl0_Pagelayout9__ctl2_AddedArticlesRepeater__ctl3_Hyperlink1" class="LrSubCaption" href="http://hvg.hu/vilag/20050303eszakkoreamoratorium.aspx">Bekeményítenek</a> 		
+														<span class="shelfIcon" id="clp20050303eszakkoreamoratorium"><img src="/images/doc_small.gif" alt="Gyüjtobe vele!" border="0"></span>	
+													</div>
+													<a id="_ctl0_Pagelayout9__ctl2_AddedArticlesRepeater__ctl3_Hyperlink2" class="LrCaption" href="http://hvg.hu/vilag/20050303eszakkoreamoratorium.aspx">Észak-Korea felmondja az atomfegyver-kísérletek moratóriumát</a>
+												
+</div>
+												
+											</td>
+										</tr>
+									</table>							
+								</div>
+								
+								<div id="LinkRow">						
+									<table border="0">
+										<tr>
+											<td valign="top"><span id="LrDubleDot">::</span></td>
+											<td valign="top">
+												<div id="_ctl0_Pagelayout9__ctl2_AddedArticlesRepeater__ctl4_SubCaptionPanel">
+									
+													<div>
+														<a id="_ctl0_Pagelayout9__ctl2_AddedArticlesRepeater__ctl4_Hyperlink1" class="LrSubCaption" href="http://hvg.hu/vilag/20050303bushvizit.aspx">Vizit</a> 		
+														<span class="shelfIcon" id="clp20050303bushvizit"><img src="/images/doc_small.gif" alt="Gyüjtobe vele!" border="0"></span>	
+													</div>
+													<a id="_ctl0_Pagelayout9__ctl2_AddedArticlesRepeater__ctl4_Hyperlink2" class="LrCaption" href="http://hvg.hu/vilag/20050303bushvizit.aspx">Bush még az idén Budapestre látogathat</a>
+												
+</div>
+												
+											</td>
+										</tr>
+									</table>							
+								</div>
+									
+					</div>
+					
+								
+				</div>
+				<div id="Layout_right_half">
+				
+					<div id="ParalelArticleR">
+						
+						
+							<div>
+								<a id="_ctl0_Pagelayout9__ctl2_ImageLink" href="http://hvg.hu/hvgfriss/2005.09/200509HVGFriss61.aspx"><img id="_ctl0_Pagelayout9__ctl2_ArticleImage" src="http://hvg.hu/image.aspx?id=3d433f33-2fee-49e3-8798-4de9ac28a497&amp;view=1C685FB1-113E-4CA7-B7F4-9213709C7F23" alt="AP" border="0" /></a>
+							</div>
+						
+						
+						
+						<div class="PaSubCaption">
+							<a id="_ctl0_Pagelayout9__ctl2_SubCaptionLink" class="PaSubCaption" href="http://hvg.hu/hvgfriss/2005.09/200509HVGFriss61.aspx">KÖZEL-KELETI BIZONYTALANSÁGOK</a>&nbsp;<span class="shelfIcon" id="clp200509HVGFriss61"><img src="/images/doc_small.gif" alt="Gyüjtobe vele!" border="0"></span>
+						</div>
+						<div><a id="_ctl0_Pagelayout9__ctl2_CaptionLink" class="PaCaption" href="http://hvg.hu/hvgfriss/2005.09/200509HVGFriss61.aspx">Változó lőterek</a></div>
+						<div class="PaLead">
+							<span>
+								Megingatta az izraeli-palesztin tűzszünetet a tel-avivi öngyilkos merénylet, amelynek szálai - palesztin és izraeli források szerint - Libanonba, illetve Szíriába vezetnek. 
+							</span>
+							<span>
+								<a id="_ctl0_Pagelayout9__ctl2_MoreLink" class="La" href="http://hvg.hu/hvgfriss/2005.09/200509HVGFriss61.aspx">Részletek<small><b>&raquo;</b></small></a>
+							</span>
+						</div>
+					</div>
+						
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td class="ColumnTableBottom">&nbsp;</td>
+		</tr>
+	</table>
+</div>
+						
+<div id="Blokk">
+	<table style="FONT-SIZE:10px" cellpadding="0" cellspacing="0" class="ColumnTable">
+		<tr>
+			<td>
+				<div id="Blokk_Header"><a id="_ctl0_Pagelayout10__ctl1_ColumnLink" href="http://hvg.hu/gazdasag.aspx">Gazdaság<span id="Icon"><img src="images/arrow_right.gif" border="0"></span></a>									
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td class="ColumnTableTop">&nbsp;</td>
+		</tr>
+		<tr>
+			<td>
+				<div id="Layout_left_half">
+					<div id="ParalelArticleL">
+						
+						
+							<div>
+								<a id="_ctl0_Pagelayout10__ctl1_ImageLink" href="http://hvg.hu/gazdasag/20050304hitelkamat.aspx"><img id="_ctl0_Pagelayout10__ctl1_ArticleImage" src="http://hvg.hu/image.aspx?id=0b7e2c38-a561-4144-ad3d-9a3f32bcc563&amp;view=1C685FB1-113E-4CA7-B7F4-9213709C7F23" alt="Marton Szilvia" border="0" /></a>
+							</div>
+						
+						
+						
+						<div class="PaSubCaption">
+							<a id="_ctl0_Pagelayout10__ctl1_SubCaptionLink" class="PaSubCaption" href="http://hvg.hu/gazdasag/20050304hitelkamat.aspx">Bankok, százalékok</a>&nbsp;<span class="shelfIcon" id="clp20050304hitelkamat"><img src="/images/doc_small.gif" alt="Gyüjtobe vele!" border="0"></span>						
+						</div>
+						<div><a id="_ctl0_Pagelayout10__ctl1_CaptionLink" class="PaCaption" href="http://hvg.hu/gazdasag/20050304hitelkamat.aspx">Csökkennek a hitelkamatok</a></div>
+						<div class="PaLead">
+							<span>
+								A betéti kamatok mérséklését a hitelintézetek többsége már februárban bejelentette, a hitelek kamatainak csökkentése egy hónappal később, március elején indult meg.
+
+
+							</span>
+							<span>
+								<a id="_ctl0_Pagelayout10__ctl1_MoreLink" class="La" href="http://hvg.hu/gazdasag/20050304hitelkamat.aspx">Részletek<small><b>&raquo;</b></small></a>
+							</span>
+						</div>
+					</div>
+				</div>
+				<div id="Layout_right_half">
+					<div id="LinkRows">
+							
+								<div id="LinkRow">																					
+									<table border="0">
+										<tr>
+											<td valign="top"><span id="LrDubleDot">::</span></td>
+											<td valign="top">
+												<div id="_ctl0_Pagelayout10__ctl1_AddedArticlesRepeater__ctl0_SubCaptionPanel">
+									
+													<div>
+														<a id="_ctl0_Pagelayout10__ctl1_AddedArticlesRepeater__ctl0_Hyperlink1" class="LrSubCaption" href="http://hvg.hu/gazdasag/20050304subway.aspx">Ha megfelelő a környezet</a> 		
+														<span class="shelfIcon" id="clp20050304subway"><img src="/images/doc_small.gif" alt="Gyüjtobe vele!" border="0"></span>	
+													</div>												
+													<a id="_ctl0_Pagelayout10__ctl1_AddedArticlesRepeater__ctl0_Hyperlink2" class="LrCaption" href="http://hvg.hu/gazdasag/20050304subway.aspx">
+														<b>Logisztikai központot építene a Subway</b>
+													</a>
+												
+</div>
+												
+											</td>
+										</tr>
+									</table>																																								
+								</div>
+								
+								<div id="LinkRow">																					
+									<table border="0">
+										<tr>
+											<td valign="top"><span id="LrDubleDot">::</span></td>
+											<td valign="top">
+												<div id="_ctl0_Pagelayout10__ctl1_AddedArticlesRepeater__ctl1_SubCaptionPanel">
+									
+													<div>
+														<a id="_ctl0_Pagelayout10__ctl1_AddedArticlesRepeater__ctl1_Hyperlink1" class="LrSubCaption" href="http://hvg.hu/gazdasag/20050304ingatlan.aspx">Beruház az IVG</a> 		
+														<span class="shelfIcon" id="clp20050304ingatlan"><img src="/images/doc_small.gif" alt="Gyüjtobe vele!" border="0"></span>	
+													</div>												
+													<a id="_ctl0_Pagelayout10__ctl1_AddedArticlesRepeater__ctl1_Hyperlink2" class="LrCaption" href="http://hvg.hu/gazdasag/20050304ingatlan.aspx">
+														<b>Német eurómilliók Budapest Champs Elysse-jének</b>
+													</a>
+												
+</div>
+												
+											</td>
+										</tr>
+									</table>																																								
+								</div>
+								
+								<div id="LinkRow">																					
+									<table border="0">
+										<tr>
+											<td valign="top"><span id="LrDubleDot">::</span></td>
+											<td valign="top">
+												<div id="_ctl0_Pagelayout10__ctl1_AddedArticlesRepeater__ctl2_SubCaptionPanel">
+									
+													<div>
+														<a id="_ctl0_Pagelayout10__ctl1_AddedArticlesRepeater__ctl2_Hyperlink1" class="LrSubCaption" href="http://hvg.hu/gazdasag/20050304hitelkamat.aspx">Bankok, százalékok</a> 		
+														<span class="shelfIcon" id="clp20050304hitelkamat"><img src="/images/doc_small.gif" alt="Gyüjtobe vele!" border="0"></span>	
+													</div>												
+													<a id="_ctl0_Pagelayout10__ctl1_AddedArticlesRepeater__ctl2_Hyperlink2" class="LrCaption" href="http://hvg.hu/gazdasag/20050304hitelkamat.aspx">
+														<b>Csökkennek a hitelkamatok</b>
+													</a>
+												
+</div>
+												
+											</td>
+										</tr>
+									</table>																																								
+								</div>
+								
+								<div id="LinkRow">																					
+									<table border="0">
+										<tr>
+											<td valign="top"><span id="LrDubleDot">::</span></td>
+											<td valign="top">
+												<div id="_ctl0_Pagelayout10__ctl1_AddedArticlesRepeater__ctl3_SubCaptionPanel">
+									
+													<div>
+														<a id="_ctl0_Pagelayout10__ctl1_AddedArticlesRepeater__ctl3_Hyperlink1" class="LrSubCaption" href="http://hvg.hu/gazdasag/20050304airport.aspx">Búcsú a Cariontól</a> 		
+														<span class="shelfIcon" id="clp20050304airport"><img src="/images/doc_small.gif" alt="Gyüjtobe vele!" border="0"></span>	
+													</div>												
+													<a id="_ctl0_Pagelayout10__ctl1_AddedArticlesRepeater__ctl3_Hyperlink2" class="LrCaption" href="http://hvg.hu/gazdasag/20050304airport.aspx">
+														<b>A PM tilos jelzést adott a Budapest Airport-szerződésnek</b>
+													</a>
+												
+</div>
+												
+											</td>
+										</tr>
+									</table>																																								
+								</div>
+									
+					</div>
+					<div id="_ctl0_Pagelayout10__ctl1_NewsFuturesBox" class="NfBox">
+	
+						<div id="NfBox">						
+							<div id="LinkRow">
+								<table border="0">
+									<tr>
+										<td valign="top"><span id="LrDubleDot">::</span></td>
+										<td valign="top">
+											<b>HÍRBÖRZE</b><br/>
+											<a id="_ctl0_Pagelayout10__ctl1_NewsFuturesLink" href="http://nf.hvg.hu/group/group.html?groupId=2229" target="_blank">Hogyan alakul a BUX a héten?</a>
+										</td>
+									</tr>
+								</table>															
+							</div>
+						</div>
+					
+</div>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td class="ColumnTableBottom">&nbsp;</td>
+		</tr>
+	</table>
+</div>
+						
+<div id="Blokk">
+	<table style="FONT-SIZE:10px" cellpadding="0" cellspacing="0" class="ColumnTable">
+		<tr>
+			<td>
+				<div id="Blokk_Header"><a id="_ctl0_Pagelayout11__ctl1_ColumnLink" href="http://hvg.hu/Tudomany.aspx">IT | Tudomány<span id="Icon"><img src="images/arrow_right.gif" border="0"></span></a>									
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td class="ColumnTableTop">&nbsp;</td>
+		</tr>
+		<tr>
+			<td>
+				<div id="Layout_left_half">
+					<div id="LinkRows">
+							
+								<div id="LinkRow">						
+									<table border="0">
+										<tr>
+											<td valign="top"><span id="LrDubleDot">::</span></td>
+											<td valign="top">
+												<div id="_ctl0_Pagelayout11__ctl1_AddedArticlesRepeater__ctl0_SubCaptionPanel">
+									
+													<div>
+														<a id="_ctl0_Pagelayout11__ctl1_AddedArticlesRepeater__ctl0_Hyperlink1" class="LrSubCaption" href="http://hvg.hu/Tudomany/20050303pacehacker.aspx">A távvezérelt pacemaker kockázatai</a> 		
+														<span class="shelfIcon" id="clp20050303pacehacker"><img src="/images/doc_small.gif" alt="Gyüjtobe vele!" border="0"></span>	
+													</div>
+													<a id="_ctl0_Pagelayout11__ctl1_AddedArticlesRepeater__ctl0_Hyperlink2" class="LrCaption" href="http://hvg.hu/Tudomany/20050303pacehacker.aspx">A hackerek a hálózaton át akár ölhetnek is</a>
+												
+</div>
+												
+											</td>
+										</tr>
+									</table>							
+								</div>
+								
+								<div id="LinkRow">						
+									<table border="0">
+										<tr>
+											<td valign="top"><span id="LrDubleDot">::</span></td>
+											<td valign="top">
+												<div id="_ctl0_Pagelayout11__ctl1_AddedArticlesRepeater__ctl1_SubCaptionPanel">
+									
+													<div>
+														<a id="_ctl0_Pagelayout11__ctl1_AddedArticlesRepeater__ctl1_Hyperlink1" class="LrSubCaption" href="http://hvg.hu/Tudomany/20050303napenergiaar.aspx">Tizenöt-húsz év múlva</a> 		
+														<span class="shelfIcon" id="clp20050303napenergiaar"><img src="/images/doc_small.gif" alt="Gyüjtobe vele!" border="0"></span>	
+													</div>
+													<a id="_ctl0_Pagelayout11__ctl1_AddedArticlesRepeater__ctl1_Hyperlink2" class="LrCaption" href="http://hvg.hu/Tudomany/20050303napenergiaar.aspx">Versenyképessé válhat a napenergia ára </a>
+												
+</div>
+												
+											</td>
+										</tr>
+									</table>							
+								</div>
+								
+								<div id="LinkRow">						
+									<table border="0">
+										<tr>
+											<td valign="top"><span id="LrDubleDot">::</span></td>
+											<td valign="top">
+												<div id="_ctl0_Pagelayout11__ctl1_AddedArticlesRepeater__ctl2_SubCaptionPanel">
+									
+													<div>
+														<a id="_ctl0_Pagelayout11__ctl1_AddedArticlesRepeater__ctl2_Hyperlink1" class="LrSubCaption" href="http://hvg.hu/Tudomany/20050303tmobile.aspx">Hízik a Vodafone és a Pannon</a> 		
+														<span class="shelfIcon" id="clp20050303tmobile"><img src="/images/doc_small.gif" alt="Gyüjtobe vele!" border="0"></span>	
+													</div>
+													<a id="_ctl0_Pagelayout11__ctl1_AddedArticlesRepeater__ctl2_Hyperlink2" class="LrCaption" href="http://hvg.hu/Tudomany/20050303tmobile.aspx">Tovább csökkent a T-Mobile hazai részesedése</a>
+												
+</div>
+												
+											</td>
+										</tr>
+									</table>							
+								</div>
+								
+								<div id="LinkRow">						
+									<table border="0">
+										<tr>
+											<td valign="top"><span id="LrDubleDot">::</span></td>
+											<td valign="top">
+												<div id="_ctl0_Pagelayout11__ctl1_AddedArticlesRepeater__ctl3_SubCaptionPanel">
+									
+													<div>
+														<a id="_ctl0_Pagelayout11__ctl1_AddedArticlesRepeater__ctl3_Hyperlink1" class="LrSubCaption" href="http://hvg.hu/Tudomany/20050302gates.aspx">A királynő kardot ragadott </a> 		
+														<span class="shelfIcon" id="clp20050302gates"><img src="/images/doc_small.gif" alt="Gyüjtobe vele!" border="0"></span>	
+													</div>
+													<a id="_ctl0_Pagelayout11__ctl1_AddedArticlesRepeater__ctl3_Hyperlink2" class="LrCaption" href="http://hvg.hu/Tudomany/20050302gates.aspx">Bill Gates-t lovaggá ütötték </a>
+												
+</div>
+												
+											</td>
+										</tr>
+									</table>							
+								</div>
+									
+					</div>
+					<div id="_ctl0_Pagelayout11__ctl1_NewsFuturesBox" class="NfBox">
+	
+						<div id="NfBox">
+							<div id="LinkRow">
+								<table border="0">
+									<tr>
+										<td valign="top"><span id="LrDubleDot">::</span></td>
+										<td valign="top">
+											<b>HÍRBÖRZE</b><br/>
+											<a id="_ctl0_Pagelayout11__ctl1_NewsFuturesLink" href="http://nf.hvg.hu/market/market.html?symbol=DIST*SPT" target="_blank">A Spirit messzebb jut, mint az Opportunity?</a>
+										</td>
+									</tr>
+								</table>	
+							</div>
+						</div>
+					
+</div>
+								
+				</div>
+				<div id="Layout_right_half">
+				
+					<div id="ParalelArticleR">
+						
+						
+							<div>
+								<a id="_ctl0_Pagelayout11__ctl1_ImageLink" href="http://hvg.hu/Tudomany/20050303fossett.aspx"><img id="_ctl0_Pagelayout11__ctl1_ArticleImage" src="http://hvg.hu/image.aspx?id=91bbaca4-1722-4627-98ae-a33c815fcac1&amp;view=1C685FB1-113E-4CA7-B7F4-9213709C7F23" alt="" border="0" /></a>
+							</div>
+						
+						
+						
+						<div class="PaSubCaption">
+							<a id="_ctl0_Pagelayout11__ctl1_SubCaptionLink" class="PaSubCaption" href="http://hvg.hu/Tudomany/20050303fossett.aspx">Rekordhalmozás</a>&nbsp;<span class="shelfIcon" id="clp20050303fossett"><img src="/images/doc_small.gif" alt="Gyüjtobe vele!" border="0"></span>
+						</div>
+						<div><a id="_ctl0_Pagelayout11__ctl1_CaptionLink" class="PaCaption" href="http://hvg.hu/Tudomany/20050303fossett.aspx">Steve Fossett leszállás nélkül körberepülte a Földet</a></div>
+						<div class="PaLead">
+							<span>
+								Az amerikai milliárdos szuperkönnyű sugárhajtású repülőgépén leszállás és üzemanyag-feltöltés nélkül, 67 óra 1 perc alatt egyedül körberepülte a Földet, és csütörtök este az amerikai Salina repterén leszállt. 
+							</span>
+							<span>
+								<a id="_ctl0_Pagelayout11__ctl1_MoreLink" class="La" href="http://hvg.hu/Tudomany/20050303fossett.aspx">Részletek<small><b>&raquo;</b></small></a>
+							</span>
+						</div>
+					</div>
+						
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td class="ColumnTableBottom">&nbsp;</td>
+		</tr>
+	</table>
+</div>
+						
+<div id="Blokk">
+	<table style="FONT-SIZE:10px" cellpadding="0" cellspacing="0" class="ColumnTable">
+		<tr>
+			<td>
+				<div id="Blokk_Header"><a id="_ctl0_Pagelayout12__ctl1_ColumnLink" href="http://hvg.hu/velemeny.aspx">Vélemény<span id="Icon"><img src="images/arrow_right.gif" border="0"></span></a>									
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td class="ColumnTableTop">&nbsp;</td>
+		</tr>
+		<tr>
+			<td>
+				<div id="Layout_left_half">
+					<div id="ParalelArticleL">
+						
+						
+							<div>
+								<a id="_ctl0_Pagelayout12__ctl1_ImageLink" href="http://hvg.hu/velemeny/20050228kiszely.aspx"><img id="_ctl0_Pagelayout12__ctl1_ArticleImage" src="http://hvg.hu/image.aspx?id=a3895610-b7e3-4669-bb79-f7a9b048c4f4&amp;view=1C685FB1-113E-4CA7-B7F4-9213709C7F23" alt="" border="0" /></a>
+							</div>
+						
+						
+						
+						<div class="PaSubCaption">
+							<a id="_ctl0_Pagelayout12__ctl1_SubCaptionLink" class="PaSubCaption" href="http://hvg.hu/velemeny/20050228kiszely.aspx">Bizonyíték híján</a>&nbsp;<span class="shelfIcon" id="clp20050228kiszely"><img src="/images/doc_small.gif" alt="Gyüjtobe vele!" border="0"></span>						
+						</div>
+						<div><a id="_ctl0_Pagelayout12__ctl1_CaptionLink" class="PaCaption" href="http://hvg.hu/velemeny/20050228kiszely.aspx">Ügynöklisták: Kiszely Gábor óvatosságra int</a></div>
+						<div class="PaLead">
+							<span>
+								A Szakértő ’90 listájának megjelenésével előállt új helyzetről, a lista megítéléséről kérdezte a hvg.hu Kiszely Gábor történészt, a Terror Háza Múzeum szakmai igazgatóját. 
+
+
+							</span>
+							<span>
+								<a id="_ctl0_Pagelayout12__ctl1_MoreLink" class="La" href="http://hvg.hu/velemeny/20050228kiszely.aspx">Részletek<small><b>&raquo;</b></small></a>
+							</span>
+						</div>
+					</div>
+				</div>
+				<div id="Layout_right_half">
+					<div id="LinkRows">
+							
+								<div id="LinkRow">																					
+									<table border="0">
+										<tr>
+											<td valign="top"><span id="LrDubleDot">::</span></td>
+											<td valign="top">
+												<div id="_ctl0_Pagelayout12__ctl1_AddedArticlesRepeater__ctl0_SubCaptionPanel">
+									
+													<div>
+														<a id="_ctl0_Pagelayout12__ctl1_AddedArticlesRepeater__ctl0_Hyperlink1" class="LrSubCaption" href="http://hvg.hu/velemeny/20050208ugynok.aspx">Nyilvánosság: kizárva  </a> 		
+														<span class="shelfIcon" id="clp20050208ugynok"><img src="/images/doc_small.gif" alt="Gyüjtobe vele!" border="0"></span>	
+													</div>												
+													<a id="_ctl0_Pagelayout12__ctl1_AddedArticlesRepeater__ctl0_Hyperlink2" class="LrCaption" href="http://hvg.hu/velemeny/20050208ugynok.aspx">
+														<b>Kiherélt ügynöktörvény </b>
+													</a>
+												
+</div>
+												
+											</td>
+										</tr>
+									</table>																																								
+								</div>
+								
+								<div id="LinkRow">																					
+									<table border="0">
+										<tr>
+											<td valign="top"><span id="LrDubleDot">::</span></td>
+											<td valign="top">
+												<div id="_ctl0_Pagelayout12__ctl1_AddedArticlesRepeater__ctl1_SubCaptionPanel">
+									
+													<div>
+														<a id="_ctl0_Pagelayout12__ctl1_AddedArticlesRepeater__ctl1_Hyperlink1" class="LrSubCaption" href="http://hvg.hu/hvgfriss/2005.07/200507HVGFriss197.aspx"><img src='images\hvg_small.gif' border='0' alt='HVG'/>&nbsp;Portré</a> 		
+														<span class="shelfIcon" id="clp200507HVGFriss197"><img src="/images/doc_small.gif" alt="Gyüjtobe vele!" border="0"></span>	
+													</div>												
+													<a id="_ctl0_Pagelayout12__ctl1_AddedArticlesRepeater__ctl1_Hyperlink2" class="LrCaption" href="http://hvg.hu/hvgfriss/2005.07/200507HVGFriss197.aspx">
+														<b>Bozóki András: kulturális miniszter</b>
+													</a>
+												
+</div>
+												
+											</td>
+										</tr>
+									</table>																																								
+								</div>
+								
+								<div id="LinkRow">																					
+									<table border="0">
+										<tr>
+											<td valign="top"><span id="LrDubleDot">::</span></td>
+											<td valign="top">
+												<div id="_ctl0_Pagelayout12__ctl1_AddedArticlesRepeater__ctl2_SubCaptionPanel">
+									
+													<div>
+														<a id="_ctl0_Pagelayout12__ctl1_AddedArticlesRepeater__ctl2_Hyperlink1" class="LrSubCaption" href="http://hvg.hu/hvgfriss/2005.08/200508HVGFriss236.aspx"><img src='images\hvg_small.gif' border='0' alt='HVG'/>&nbsp;Portré</a> 		
+														<span class="shelfIcon" id="clp200508HVGFriss236"><img src="/images/doc_small.gif" alt="Gyüjtobe vele!" border="0"></span>	
+													</div>												
+													<a id="_ctl0_Pagelayout12__ctl1_AddedArticlesRepeater__ctl2_Hyperlink2" class="LrCaption" href="http://hvg.hu/hvgfriss/2005.08/200508HVGFriss236.aspx">
+														<b>Hunvald György: Erzsébetváros polgármestere</b>
+													</a>
+												
+</div>
+												
+											</td>
+										</tr>
+									</table>																																								
+								</div>
+								
+								<div id="LinkRow">																					
+									<table border="0">
+										<tr>
+											<td valign="top"><span id="LrDubleDot">::</span></td>
+											<td valign="top">
+												<div id="_ctl0_Pagelayout12__ctl1_AddedArticlesRepeater__ctl3_SubCaptionPanel">
+									
+													<div>
+														<a id="_ctl0_Pagelayout12__ctl1_AddedArticlesRepeater__ctl3_Hyperlink1" class="LrSubCaption" href="http://hvg.hu/velemeny/20050203retro8029.aspx">Retro: 1980. február 9.</a> 		
+														<span class="shelfIcon" id="clp20050203retro8029"><img src="/images/doc_small.gif" alt="Gyüjtobe vele!" border="0"></span>	
+													</div>												
+													<a id="_ctl0_Pagelayout12__ctl1_AddedArticlesRepeater__ctl3_Hyperlink2" class="LrCaption" href="http://hvg.hu/velemeny/20050203retro8029.aspx">
+														<b>25 éve írta a HVG (Amikor még 400 ezerért épült egy lakás) </b>
+													</a>
+												
+</div>
+												
+											</td>
+										</tr>
+									</table>																																								
+								</div>
+								
+								<div id="LinkRow">																					
+									<table border="0">
+										<tr>
+											<td valign="top"><span id="LrDubleDot">::</span></td>
+											<td valign="top">
+												<div id="_ctl0_Pagelayout12__ctl1_AddedArticlesRepeater__ctl4_SubCaptionPanel">
+									
+													<div>
+														<a id="_ctl0_Pagelayout12__ctl1_AddedArticlesRepeater__ctl4_Hyperlink1" class="LrSubCaption" href="http://hvg.hu/velemeny/20050204jarai3.aspx">A tanácsbővítésről</a> 		
+														<span class="shelfIcon" id="clp20050204jarai3"><img src="/images/doc_small.gif" alt="Gyüjtobe vele!" border="0"></span>	
+													</div>												
+													<a id="_ctl0_Pagelayout12__ctl1_AddedArticlesRepeater__ctl4_Hyperlink2" class="LrCaption" href="http://hvg.hu/velemeny/20050204jarai3.aspx">
+														<b>Járai: „a négy új taggal nekem semmi bajom”</b>
+													</a>
+												
+</div>
+												
+											</td>
+										</tr>
+									</table>																																								
+								</div>
+									
+					</div>
+					
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td class="ColumnTableBottom">&nbsp;</td>
+		</tr>
+	</table>
+</div>
+						
+<div id="Blokk">
+	<table style="FONT-SIZE:10px" cellpadding="0" cellspacing="0" class="ColumnTable">
+		<tr>
+			<td>
+				<div id="Blokk_Header"><a id="_ctl0_Pagelayout13__ctl1_ColumnLink" href="http://hvg.hu/kultura.aspx">Kultúra<span id="Icon"><img src="images/arrow_right.gif" border="0"></span></a>									
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td class="ColumnTableTop">&nbsp;</td>
+		</tr>
+		<tr>
+			<td>
+				<div id="Layout_left_half">
+					<div id="LinkRows">
+							
+								<div id="LinkRow">						
+									<table border="0">
+										<tr>
+											<td valign="top"><span id="LrDubleDot">::</span></td>
+											<td valign="top">
+												<div id="_ctl0_Pagelayout13__ctl1_AddedArticlesRepeater__ctl0_SubCaptionPanel">
+									
+													<div>
+														<a id="_ctl0_Pagelayout13__ctl1_AddedArticlesRepeater__ctl0_Hyperlink1" class="LrSubCaption" href="http://hvg.hu/kultura/20050301progrmarcius.aspx">Ha van egy szabad estéd </a> 		
+														<span class="shelfIcon" id="clp20050301progrmarcius"><img src="/images/doc_small.gif" alt="Gyüjtobe vele!" border="0"></span>	
+													</div>
+													<a id="_ctl0_Pagelayout13__ctl1_AddedArticlesRepeater__ctl0_Hyperlink2" class="LrCaption" href="http://hvg.hu/kultura/20050301progrmarcius.aspx">Bangkoki punkok a színházban</a>
+												
+</div>
+												
+											</td>
+										</tr>
+									</table>							
+								</div>
+								
+								<div id="LinkRow">						
+									<table border="0">
+										<tr>
+											<td valign="top"><span id="LrDubleDot">::</span></td>
+											<td valign="top">
+												<div id="_ctl0_Pagelayout13__ctl1_AddedArticlesRepeater__ctl1_SubCaptionPanel">
+									
+													<div>
+														<a id="_ctl0_Pagelayout13__ctl1_AddedArticlesRepeater__ctl1_Hyperlink1" class="LrSubCaption" href="http://hvg.hu/hvgfriss/2005.09/200509HVGFriss157.aspx"><img src='images\hvg_small.gif' border='0' alt='HVG'/>&nbsp;A TÁMOGATVA TŰRT ARTHUR MILLER</a> 		
+														<span class="shelfIcon" id="clp200509HVGFriss157"><img src="/images/doc_small.gif" alt="Gyüjtobe vele!" border="0"></span>	
+													</div>
+													<a id="_ctl0_Pagelayout13__ctl1_AddedArticlesRepeater__ctl1_Hyperlink2" class="LrCaption" href="http://hvg.hu/hvgfriss/2005.09/200509HVGFriss157.aspx">Drámák komédiája</a>
+												
+</div>
+												
+											</td>
+										</tr>
+									</table>							
+								</div>
+								
+								<div id="LinkRow">						
+									<table border="0">
+										<tr>
+											<td valign="top"><span id="LrDubleDot">::</span></td>
+											<td valign="top">
+												<div id="_ctl0_Pagelayout13__ctl1_AddedArticlesRepeater__ctl2_SubCaptionPanel">
+									
+													<div>
+														<a id="_ctl0_Pagelayout13__ctl1_AddedArticlesRepeater__ctl2_Hyperlink1" class="LrSubCaption" href="http://hvg.hu/kultura/20050304mausmetro.aspx">Egerek, emberek, vagonok</a> 		
+														<span class="shelfIcon" id="clp20050304mausmetro"><img src="/images/doc_small.gif" alt="Gyüjtobe vele!" border="0"></span>	
+													</div>
+													<a id="_ctl0_Pagelayout13__ctl1_AddedArticlesRepeater__ctl2_Hyperlink2" class="LrCaption" href="http://hvg.hu/kultura/20050304mausmetro.aspx">Maus képregénykockák a pesti metróban</a>
+												
+</div>
+												
+											</td>
+										</tr>
+									</table>							
+								</div>
+									
+					</div>
+					<div id="_ctl0_Pagelayout13__ctl1_NewsFuturesBox" class="NfBox">
+	
+						<div id="NfBox">
+							<div id="LinkRow">
+								<table border="0">
+									<tr>
+										<td valign="top"><span id="LrDubleDot">::</span></td>
+										<td valign="top">
+											<b>HÍRBÖRZE</b><br/>
+											<a id="_ctl0_Pagelayout13__ctl1_NewsFuturesLink" href="http://nf.hvg.hu/group/group.html?groupId=2300" target="_blank">Tippelje meg a mozi-látogatottsági adatokat!</a>
+										</td>
+									</tr>
+								</table>	
+							</div>
+						</div>
+					
+</div>
+								
+				</div>
+				<div id="Layout_right_half">
+				
+					<div id="ParalelArticleR">
+						
+						
+							<div>
+								<a id="_ctl0_Pagelayout13__ctl1_ImageLink" href="http://hvg.hu/kultura/20050303nagykonyvdecemberig.aspx"><img id="_ctl0_Pagelayout13__ctl1_ArticleImage" src="http://hvg.hu/image.aspx?id=f925ccc7-b7d4-42a5-a064-2db7047e73a4&amp;view=1C685FB1-113E-4CA7-B7F4-9213709C7F23" alt="" border="0" /></a>
+							</div>
+						
+						
+						
+						<div class="PaSubCaption">
+							<a id="_ctl0_Pagelayout13__ctl1_SubCaptionLink" class="PaSubCaption" href="http://hvg.hu/kultura/20050303nagykonyvdecemberig.aspx">Tévés olvasó-show</a>&nbsp;<span class="shelfIcon" id="clp20050303nagykonyvdecemberig"><img src="/images/doc_small.gif" alt="Gyüjtobe vele!" border="0"></span>
+						</div>
+						<div><a id="_ctl0_Pagelayout13__ctl1_CaptionLink" class="PaCaption" href="http://hvg.hu/kultura/20050303nagykonyvdecemberig.aspx">A Nagy Könyv egészen decemberig tart</a></div>
+						<div class="PaLead">
+							<span>
+								A voksok alapján április végén mutatják be az ország száz kedvenc könyvét. Itt elolvashatja, ki, mit ajánl; Ákostól Esterházy Péterig,  Ganxsta Zolee-tól Zelinka Ildikóig!
+							</span>
+							<span>
+								<a id="_ctl0_Pagelayout13__ctl1_MoreLink" class="La" href="http://hvg.hu/kultura/20050303nagykonyvdecemberig.aspx">Részletek<small><b>&raquo;</b></small></a>
+							</span>
+						</div>
+					</div>
+						
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td class="ColumnTableBottom">&nbsp;</td>
+		</tr>
+	</table>
+</div>
+						
+<div id="Blokk">
+	<table style="FONT-SIZE:10px" cellpadding="0" cellspacing="0" class="ColumnTable">
+		<tr>
+			<td>
+				<div id="Blokk_Header"><a id="_ctl0_Pagelayout14__ctl1_ColumnLink" href="http://hvg.hu/media.aspx">Média<span id="Icon"><img src="images/arrow_right.gif" border="0"></span></a>									
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td class="ColumnTableTop">&nbsp;</td>
+		</tr>
+		<tr>
+			<td>
+				<div id="Layout_left_half">
+					<div id="ParalelArticleL">
+						
+						
+							<div>
+								<a id="_ctl0_Pagelayout14__ctl1_ImageLink" href="http://hvg.hu/hvgfriss/2005.09/200509HVGFriss117.aspx"><img id="_ctl0_Pagelayout14__ctl1_ArticleImage" src="http://hvg.hu/image.aspx?id=b2eca2ec-78fe-4be1-938c-3fe550d10af6&amp;view=1C685FB1-113E-4CA7-B7F4-9213709C7F23" alt="AP" border="0" /></a>
+							</div>
+						
+						
+						
+						<div class="PaSubCaption">
+							<a id="_ctl0_Pagelayout14__ctl1_SubCaptionLink" class="PaSubCaption" href="http://hvg.hu/hvgfriss/2005.09/200509HVGFriss117.aspx">Hollywoodi sztárok reklámokban</a>&nbsp;<span class="shelfIcon" id="clp200509HVGFriss117"><img src="/images/doc_small.gif" alt="Gyüjtobe vele!" border="0"></span>						
+						</div>
+						<div><a id="_ctl0_Pagelayout14__ctl1_CaptionLink" class="PaCaption" href="http://hvg.hu/hvgfriss/2005.09/200509HVGFriss117.aspx">Több bőrt egy arcról</a></div>
+						<div class="PaLead">
+							<span>
+								Hosszú idő óta először adták arcukat az Egyesült Államokban is látható reklámokhoz olyan hollywoodi sztárok, akik hirdetési kalandjaikat eddig elsősorban Ázsiában bonyolították.
+							</span>
+							<span>
+								<a id="_ctl0_Pagelayout14__ctl1_MoreLink" class="La" href="http://hvg.hu/hvgfriss/2005.09/200509HVGFriss117.aspx">Részletek<small><b>&raquo;</b></small></a>
+							</span>
+						</div>
+					</div>
+				</div>
+				<div id="Layout_right_half">
+					<div id="LinkRows">
+							
+								<div id="LinkRow">																					
+									<table border="0">
+										<tr>
+											<td valign="top"><span id="LrDubleDot">::</span></td>
+											<td valign="top">
+												<div id="_ctl0_Pagelayout14__ctl1_AddedArticlesRepeater__ctl0_SubCaptionPanel">
+									
+													<div>
+														<a id="_ctl0_Pagelayout14__ctl1_AddedArticlesRepeater__ctl0_Hyperlink1" class="LrSubCaption" href="http://hvg.hu/media/20050301.aspx">Toplista</a> 		
+														<span class="shelfIcon" id="clp20050301"><img src="/images/doc_small.gif" alt="Gyüjtobe vele!" border="0"></span>	
+													</div>												
+													<a id="_ctl0_Pagelayout14__ctl1_AddedArticlesRepeater__ctl0_Hyperlink2" class="LrCaption" href="http://hvg.hu/media/20050301.aspx">
+														<b>Erdeit, az Oscart és a gazdákat is lenyomta az ügynöklista</b>
+													</a>
+												
+</div>
+												
+											</td>
+										</tr>
+									</table>																																								
+								</div>
+								
+								<div id="LinkRow">																					
+									<table border="0">
+										<tr>
+											<td valign="top"><span id="LrDubleDot">::</span></td>
+											<td valign="top">
+												<div id="_ctl0_Pagelayout14__ctl1_AddedArticlesRepeater__ctl1_SubCaptionPanel">
+									
+													<div>
+														<a id="_ctl0_Pagelayout14__ctl1_AddedArticlesRepeater__ctl1_Hyperlink1" class="LrSubCaption" href="http://hvg.hu/media/20050301nezettseg.aspx">Televíziós nézettség</a> 		
+														<span class="shelfIcon" id="clp20050301nezettseg"><img src="/images/doc_small.gif" alt="Gyüjtobe vele!" border="0"></span>	
+													</div>												
+													<a id="_ctl0_Pagelayout14__ctl1_AddedArticlesRepeater__ctl1_Hyperlink2" class="LrCaption" href="http://hvg.hu/media/20050301nezettseg.aspx">
+														<b>„Szakértő ’90” akciója megdobta a hírműsorok nézettségét </b>
+													</a>
+												
+</div>
+												
+											</td>
+										</tr>
+									</table>																																								
+								</div>
+								
+								<div id="LinkRow">																					
+									<table border="0">
+										<tr>
+											<td valign="top"><span id="LrDubleDot">::</span></td>
+											<td valign="top">
+												<div id="_ctl0_Pagelayout14__ctl1_AddedArticlesRepeater__ctl2_SubCaptionPanel">
+									
+													<div>
+														<a id="_ctl0_Pagelayout14__ctl1_AddedArticlesRepeater__ctl2_Hyperlink1" class="LrSubCaption" href="http://hvg.hu/media/20050301kamerahungaria.aspx">94 induló</a> 		
+														<span class="shelfIcon" id="clp20050301kamerahungaria"><img src="/images/doc_small.gif" alt="Gyüjtobe vele!" border="0"></span>	
+													</div>												
+													<a id="_ctl0_Pagelayout14__ctl1_AddedArticlesRepeater__ctl2_Hyperlink2" class="LrCaption" href="http://hvg.hu/media/20050301kamerahungaria.aspx">
+														<b>Kilencvennégy tévéműsor versenyez a Kamera Hungárián</b>
+													</a>
+												
+</div>
+												
+											</td>
+										</tr>
+									</table>																																								
+								</div>
+								
+								<div id="LinkRow">																					
+									<table border="0">
+										<tr>
+											<td valign="top"><span id="LrDubleDot">::</span></td>
+											<td valign="top">
+												<div id="_ctl0_Pagelayout14__ctl1_AddedArticlesRepeater__ctl3_SubCaptionPanel">
+									
+													<div>
+														<a id="_ctl0_Pagelayout14__ctl1_AddedArticlesRepeater__ctl3_Hyperlink1" class="LrSubCaption" href="http://hvg.hu/media/20050302bbcatalakitas.aspx">A függetlenség ára</a> 		
+														<span class="shelfIcon" id="clp20050302bbcatalakitas"><img src="/images/doc_small.gif" alt="Gyüjtobe vele!" border="0"></span>	
+													</div>												
+													<a id="_ctl0_Pagelayout14__ctl1_AddedArticlesRepeater__ctl3_Hyperlink2" class="LrCaption" href="http://hvg.hu/media/20050302bbcatalakitas.aspx">
+														<b>Radikálisan átalakítják a BBC vezetését</b>
+													</a>
+												
+</div>
+												
+											</td>
+										</tr>
+									</table>																																								
+								</div>
+									
+					</div>
+					
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td class="ColumnTableBottom">&nbsp;</td>
+		</tr>
+	</table>
+</div>
+						
+<div id="Blokk">
+	<table style="FONT-SIZE:10px" cellpadding="0" cellspacing="0" class="ColumnTable">
+		<tr>
+			<td>
+				<div id="Blokk_Header"><a id="_ctl0_Pagelayout15__ctl1_ColumnLink" href="http://hvg.hu/karrier.aspx">Karrier<span id="Icon"><img src="images/arrow_right.gif" border="0"></span></a>									
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td class="ColumnTableTop">&nbsp;</td>
+		</tr>
+		<tr>
+			<td>
+				<div id="Layout_left_half">
+					<div id="LinkRows">
+							
+								<div id="LinkRow">						
+									<table border="0">
+										<tr>
+											<td valign="top"><span id="LrDubleDot">::</span></td>
+											<td valign="top">
+												<div id="_ctl0_Pagelayout15__ctl1_AddedArticlesRepeater__ctl0_SubCaptionPanel">
+									
+													<div>
+														<a id="_ctl0_Pagelayout15__ctl1_AddedArticlesRepeater__ctl0_Hyperlink1" class="LrSubCaption" href="http://hvg.hu/karrier/20050228interyou.aspx">Beépített intelligencia </a> 		
+														<span class="shelfIcon" id="clp20050228interyou"><img src="/images/doc_small.gif" alt="Gyüjtobe vele!" border="0"></span>	
+													</div>
+													<a id="_ctl0_Pagelayout15__ctl1_AddedArticlesRepeater__ctl0_Hyperlink2" class="LrCaption" href="http://hvg.hu/karrier/20050228interyou.aspx">A te interjúkérdéseid </a>
+												
+</div>
+												
+											</td>
+										</tr>
+									</table>							
+								</div>
+								
+								<div id="LinkRow">						
+									<table border="0">
+										<tr>
+											<td valign="top"><span id="LrDubleDot">::</span></td>
+											<td valign="top">
+												<div id="_ctl0_Pagelayout15__ctl1_AddedArticlesRepeater__ctl1_SubCaptionPanel">
+									
+													<div>
+														<a id="_ctl0_Pagelayout15__ctl1_AddedArticlesRepeater__ctl1_Hyperlink1" class="LrSubCaption" href="http://hvg.hu/karrier/20050228bosscv.aspx">Profitcentrum </a> 		
+														<span class="shelfIcon" id="clp20050228bosscv"><img src="/images/doc_small.gif" alt="Gyüjtobe vele!" border="0"></span>	
+													</div>
+													<a id="_ctl0_Pagelayout15__ctl1_AddedArticlesRepeater__ctl1_Hyperlink2" class="LrCaption" href="http://hvg.hu/karrier/20050228bosscv.aspx">A főnök önéletrajza </a>
+												
+</div>
+												
+											</td>
+										</tr>
+									</table>							
+								</div>
+								
+								<div id="LinkRow">						
+									<table border="0">
+										<tr>
+											<td valign="top"><span id="LrDubleDot">::</span></td>
+											<td valign="top">
+												<div id="_ctl0_Pagelayout15__ctl1_AddedArticlesRepeater__ctl2_SubCaptionPanel">
+									
+													<div>
+														<a id="_ctl0_Pagelayout15__ctl1_AddedArticlesRepeater__ctl2_Hyperlink1" class="LrSubCaption" href="http://hvg.hu/karrier/20050224britjob.aspx">Dolgozók, nem menekültek</a> 		
+														<span class="shelfIcon" id="clp20050224britjob"><img src="/images/doc_small.gif" alt="Gyüjtobe vele!" border="0"></span>	
+													</div>
+													<a id="_ctl0_Pagelayout15__ctl1_AddedArticlesRepeater__ctl2_Hyperlink2" class="LrCaption" href="http://hvg.hu/karrier/20050224britjob.aspx">Több mint 50 ezren vállaltak brit állást az új EU-tagországokból</a>
+												
+</div>
+												
+											</td>
+										</tr>
+									</table>							
+								</div>
+								
+								<div id="LinkRow">						
+									<table border="0">
+										<tr>
+											<td valign="top"><span id="LrDubleDot">::</span></td>
+											<td valign="top">
+												<div id="_ctl0_Pagelayout15__ctl1_AddedArticlesRepeater__ctl3_SubCaptionPanel">
+									
+													<div>
+														<a id="_ctl0_Pagelayout15__ctl1_AddedArticlesRepeater__ctl3_Hyperlink1" class="LrSubCaption" href="http://hvg.hu/karrier/20050223munkavallalas.aspx">Nemzeti sajátosságok</a> 		
+														<span class="shelfIcon" id="clp20050223munkavallalas"><img src="/images/doc_small.gif" alt="Gyüjtobe vele!" border="0"></span>	
+													</div>
+													<a id="_ctl0_Pagelayout15__ctl1_AddedArticlesRepeater__ctl3_Hyperlink2" class="LrCaption" href="http://hvg.hu/karrier/20050223munkavallalas.aspx">Külföldi munka: tippek országról-országra </a>
+												
+</div>
+												
+											</td>
+										</tr>
+									</table>							
+								</div>
+								
+								<div id="LinkRow">						
+									<table border="0">
+										<tr>
+											<td valign="top"><span id="LrDubleDot">::</span></td>
+											<td valign="top">
+												<div id="_ctl0_Pagelayout15__ctl1_AddedArticlesRepeater__ctl4_SubCaptionPanel">
+									
+													<div>
+														<a id="_ctl0_Pagelayout15__ctl1_AddedArticlesRepeater__ctl4_Hyperlink1" class="LrSubCaption" href="http://hvg.hu/karrier/20050223igyszerezhetsz.aspx">Tízpontos gyakorlat</a> 		
+														<span class="shelfIcon" id="clp20050223igyszerezhetsz"><img src="/images/doc_small.gif" alt="Gyüjtobe vele!" border="0"></span>	
+													</div>
+													<a id="_ctl0_Pagelayout15__ctl1_AddedArticlesRepeater__ctl4_Hyperlink2" class="LrCaption" href="http://hvg.hu/karrier/20050223igyszerezhetsz.aspx">Így szerezhetsz munkát a médiában</a>
+												
+</div>
+												
+											</td>
+										</tr>
+									</table>							
+								</div>
+								
+								<div id="LinkRow">						
+									<table border="0">
+										<tr>
+											<td valign="top"><span id="LrDubleDot">::</span></td>
+											<td valign="top">
+												<div id="_ctl0_Pagelayout15__ctl1_AddedArticlesRepeater__ctl5_SubCaptionPanel">
+									
+													<div>
+														<a id="_ctl0_Pagelayout15__ctl1_AddedArticlesRepeater__ctl5_Hyperlink1" class="LrSubCaption" href="http://hvg.hu/karrier/20050222kreativitas.aspx">C-vitamin és álomfejtés </a> 		
+														<span class="shelfIcon" id="clp20050222kreativitas"><img src="/images/doc_small.gif" alt="Gyüjtobe vele!" border="0"></span>	
+													</div>
+													<a id="_ctl0_Pagelayout15__ctl1_AddedArticlesRepeater__ctl5_Hyperlink2" class="LrCaption" href="http://hvg.hu/karrier/20050222kreativitas.aspx">Tippek a kreativitás erősítésére</a>
+												
+</div>
+												
+											</td>
+										</tr>
+									</table>							
+								</div>
+									
+					</div>
+					
+								
+				</div>
+				<div id="Layout_right_half">
+				
+					<div id="ParalelArticleR">
+						
+						
+							<div>
+								<a id="_ctl0_Pagelayout15__ctl1_ImageLink" href="http://hvg.hu/karrier/20050228jobinterview.aspx"><img id="_ctl0_Pagelayout15__ctl1_ArticleImage" src="http://hvg.hu/image.aspx?id=c20f4ee5-7e48-4cf9-8d4b-b7834586704a&amp;view=1C685FB1-113E-4CA7-B7F4-9213709C7F23" alt="sxc.hu" border="0" /></a>
+							</div>
+						
+						
+						
+						<div class="PaSubCaption">
+							<a id="_ctl0_Pagelayout15__ctl1_SubCaptionLink" class="PaSubCaption" href="http://hvg.hu/karrier/20050228jobinterview.aspx">Átvilágítás</a>&nbsp;<span class="shelfIcon" id="clp20050228jobinterview"><img src="/images/doc_small.gif" alt="Gyüjtobe vele!" border="0"></span>
+						</div>
+						<div><a id="_ctl0_Pagelayout15__ctl1_CaptionLink" class="PaCaption" href="http://hvg.hu/karrier/20050228jobinterview.aspx">Intim állásinterjúk és jogszerűtlen szerződések </a></div>
+						<div class="PaLead">
+							<span>
+								Mikor akar gyereket? Gyakran van székrekedése? Mi a véleménye a főnök és beosztott közötti munkahelyen kívüli kapcsolatokról? Dohányzik? – állásinterjúkon gyakran megjelennek ezek, vagy hasonló kérdések.
+							</span>
+							<span>
+								<a id="_ctl0_Pagelayout15__ctl1_MoreLink" class="La" href="http://hvg.hu/karrier/20050228jobinterview.aspx">Részletek<small><b>&raquo;</b></small></a>
+							</span>
+						</div>
+					</div>
+						
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td class="ColumnTableBottom">&nbsp;</td>
+		</tr>
+	</table>
+</div>
+						
+<DIV>
+	<SCRIPT language="JavaScript">
+		<!--
+		var ord=Math.round(Math.random()*100000000);
+		document.write('<sc'+'ript language=JavaScript src="http://ad.adverticum.net/js.prm?zona=15045&ord='+ord+'"></scr'+'ipt>');
+		//-->
+	</SCRIPT>
+	<NOSCRIPT>
+		<A href="http://ad.adverticum.net/click.prm?zona=15045" target="_top">
+			<IMG height="1" alt="Kattintson a hirdetésre!" src="http://ad.adverticum.net/img.prm?zona=15045" width="1" border="0">
+		</A>
+	</NOSCRIPT>
+</DIV>	
+					</div>
+				</div>
+				<div id="Layout_right_140">
+					<!-- Jobb hasáb -->
+					<div id="RightContent">
+<DIV>
+	<SCRIPT language="JavaScript">
+		<!--
+		var ord=Math.round(Math.random()*100000000);
+		document.write('<sc'+'ript language=JavaScript src="http://ad.adverticum.net/js.prm?zona=18418&ord='+ord+'"></scr'+'ipt>');
+		//-->
+	</SCRIPT>
+	<NOSCRIPT>
+		<A href="http://ad.adverticum.net/click.prm?zona=18418" target="_top">
+			<IMG height="240" alt="Kattintson a hirdetésre!" src="http://ad.adverticum.net/img.prm?zona=18418" width="120" border="0">
+		</A>
+	</NOSCRIPT>
+</DIV>                    
+<div id="SideBlokk">
+	<div id="Blokk_Header_Right">Top 24 óra</div>
+	<div id="LinkRows2">					
+			
+				<div id="DottedRow" class="wrap">					
+					<a id="_ctl0_Pagelayout6__ctl2_ArticlesRepeater__ctl0_LinkedArticleLink" class="FrissBoxCaption" href="http://hvg.hu/itthon/20050304hivatasoslista.aspx">A III/III. központi állománya: nevek, beosztások, rangfokozatok</a>
+				</div>
+				
+				<div id="DottedRow" class="wrap">					
+					<a id="_ctl0_Pagelayout6__ctl2_ArticlesRepeater__ctl1_LinkedArticleLink" class="FrissBoxCaption" href="http://hvg.hu/gazdasag/20050303fizetesiranglista.aspx">Fizetési ranglista: a magyar bérek lemaradtak</a>
+				</div>
+				
+				<div id="DottedRow" class="wrap">					
+					<a id="_ctl0_Pagelayout6__ctl2_ArticlesRepeater__ctl2_LinkedArticleLink" class="FrissBoxCaption" href="http://hvg.hu/itthon/20050303bulanyi.aspx">Egyházi ügynöklista a Magyar Narancsban </a>
+				</div>
+				
+				<div id="DottedRow" class="wrap">					
+					<a id="_ctl0_Pagelayout6__ctl2_ArticlesRepeater__ctl3_LinkedArticleLink" class="FrissBoxCaption" href="http://hvg.hu/vilag/20050303aszalyportugaliaban.aspx">Kísértetfalut hozott a felszínre a portugál aszály</a>
+				</div>
+				
+				<div id="DottedRow" class="wrap">					
+					<a id="_ctl0_Pagelayout6__ctl2_ArticlesRepeater__ctl4_LinkedArticleLink" class="FrissBoxCaption" href="http://hvg.hu/Tudomany/20050303pacehacker.aspx">A hackerek a hálózaton át akár ölhetnek is</a>
+				</div>
+				
+				<div id="DottedRow" class="wrap">					
+					<a id="_ctl0_Pagelayout6__ctl2_ArticlesRepeater__ctl5_LinkedArticleLink" class="FrissBoxCaption" href="http://hvg.hu/gazdasag/20050303forinthitel.aspx">Ismét hódíthat a forinthitel</a>
+				</div>
+				
+				<div id="DottedRow" class="wrap">					
+					<a id="_ctl0_Pagelayout6__ctl2_ArticlesRepeater__ctl6_LinkedArticleLink" class="FrissBoxCaption" href="http://hvg.hu/gazdasag/20050303bux.aspx">Két nap alatt 900 ponttal esett a BUX</a>
+				</div>
+																
+	</div>
+</div>                                                                           <?xml version="1.0" encoding="utf-8"?><div id="SideBlokk"><div id="Blokk_Header_Right"><a href="http://jobline.hu" target="_blank">Jobline<span id="Icon"><img src="images/arrow_right.gif" border="0" /></span></a></div><div class="wrap" id="LinkRowJD"><div id="LrjlCaption"><a target="_blank" href="http://www.jobline.hu/HUN/pages/search_main3.jsp?advid=24737">Pénzügyi és számviteli munkatárs</a></div><div id="LrjlSubCaption"><a target="_blank" href="http://www.jobline.hu/HUN/pages/search_main3.jsp?advid=24737"></a></div></div><div class="wrap" id="LinkRowJL"><div id="LrjlCaption"><a target="_blank" href="http://www.jobline.hu/HUN/pages/search_main3.jsp?advid=24738">Klinikai kutatási munkatárs 2.</a></div><div id="LrjlSubCaption"><a target="_blank" href="http://www.jobline.hu/HUN/pages/search_main3.jsp?advid=24738"></a></div></div><div class="wrap" id="LinkRowJD"><div id="LrjlCaption"><a target="_blank" href="http://www.jobline.hu/HUN/pages/search_main3.jsp?advid=24739">Klinikai kutatási munkatárs 1.</a></div><div id="LrjlSubCaption"><a target="_blank" href="http://www.jobline.hu/HUN/pages/search_main3.jsp?advid=24739"></a></div></div><div class="wrap" id="LinkRowJL"><div id="LrjlCaption"><a target="_blank" href="http://www.jobline.hu/HUN/pages/search_main3.jsp?advid=24740">Kutatási asszisztens</a></div><div id="LrjlSubCaption"><a target="_blank" href="http://www.jobline.hu/HUN/pages/search_main3.jsp?advid=24740"></a></div></div><div class="wrap" id="LinkRowJD"><div id="LrjlCaption"><a target="_blank" href="http://www.jobline.hu/HUN/pages/search_main3.jsp?advid=24749">Marketing és szakmai vezető/Egészségügyi vonal</a></div><div id="LrjlSubCaption"><a target="_blank" href="http://www.jobline.hu/HUN/pages/search_main3.jsp?advid=24749"></a></div></div></div> 
+<div id="SideBlokk">
+	<table style="FONT-SIZE:10px" cellpadding="0" cellspacing="0" border="0" width="100%">
+		<tr>
+			<td>
+				<div id="Blokk_Header_Right">Szavazás</div>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<form method="post" name="voteForm">
+					<input type="hidden" id="voteID" name="voteID" value="a623f224-4c2a-4e5f-8d5b-06b5cb6bec90"/>
+					<table width="100%" cellspacing="0" cellpadding="0" border="0">
+						<tr>
+							<td colspan="2" class="TextRow">Gyurcsány Ferenc vagy Orbán Viktor beszéde tetszett-e önnek jobban?</td>
+						</tr>
+						
+									<tr>
+										<td class="IconCol"><INPUT id="Radio1" type="radio" name="voteAnswer" value="d7089d43-da79-4ee9-a9bd-5ffe647ada82"></td>
+										<td class="TextCol">Gyurcsányé.</td>
+									</tr>
+								
+									<tr>
+										<td class="IconCol"><INPUT id="Radio1" type="radio" name="voteAnswer" value="bbd841d8-575c-4746-ad1d-bdbfa42b8ad6"></td>
+										<td class="TextCol">Orbáné.</td>
+									</tr>
+								
+									<tr>
+										<td class="IconCol"><INPUT id="Radio1" type="radio" name="voteAnswer" value="6d8337c2-6c91-4fee-b731-dd8000a42eaf"></td>
+										<td class="TextCol">Mindkettő tetszett.</td>
+									</tr>
+								
+									<tr>
+										<td class="IconCol"><INPUT id="Radio1" type="radio" name="voteAnswer" value="d073fda0-d2a8-4391-b696-c85bd2eceae4"></td>
+										<td class="TextCol">Mindkettő feledhető.</td>
+									</tr>
+								
+							<tr>
+								<td colspan="2" align="right" class="TextRow">
+									<span>
+										<input type="image" src="/images/mehet.gif">
+									</span>
+								</td>
+							</tr>
+						
+						
+					</table>
+				</form>
+			</td>
+		</tr>
+	</table>
+</div>               
+<div id="SideBlokk">
+	<table style="font-size:10" cellpadding="0" cellspacing="0" border="0" width="100%">
+		<tr>
+			<td>
+				
+					<div ><a id="_ctl0_Pagelayout6__ctl5_ColumnLink" href="http://hvg.hu/gocpontok.aspx"><img src="http://hvg.hu/image.aspx?id=9ce46a48-abc9-46ee-8f94-0764f832817f&amp;view=E9D9EA94-21C3-4876-A20C-34294B9230B3" alt="" border="0" /></a>						
+					</div>
+				
+				
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<table cellsapcing="0" cellspacing="0" width="100%">
+													
+							<tr id="LinkRows2">
+								<td valign="top" width="15">
+									<div id="LrDubleDot">::</div>
+								</td>
+								<td><a id="_ctl0_Pagelayout6__ctl5_LinkRepeater__ctl0_CategoryLink" href="http://hvg.hu/gocpontok.irak.aspx"><b>Irak</b></a></td>
+							</tr>							
+														
+							<tr id="LinkRows2">
+								<td valign="top" width="15">
+									<div id="LrDubleDot">::</div>
+								</td>
+								<td><a id="_ctl0_Pagelayout6__ctl5_LinkRepeater__ctl1_CategoryLink" href="http://hvg.hu/gocpontok.csecsenfold.aspx"><b>Csecsenföld</b></a></td>
+							</tr>							
+														
+							<tr id="LinkRows2">
+								<td valign="top" width="15">
+									<div id="LrDubleDot">::</div>
+								</td>
+								<td><a id="_ctl0_Pagelayout6__ctl5_LinkRepeater__ctl2_CategoryLink" href="http://hvg.hu/gocpontok.kozelkelet.aspx"><b>Közel-Kelet </b></a></td>
+							</tr>							
+														
+							<tr id="LinkRows2">
+								<td valign="top" width="15">
+									<div id="LrDubleDot">::</div>
+								</td>
+								<td><a id="_ctl0_Pagelayout6__ctl5_LinkRepeater__ctl3_CategoryLink" href="http://hvg.hu/gocpontok.afganisztan.aspx"><b>Afganisztán</b></a></td>
+							</tr>							
+														
+							<tr id="LinkRows2">
+								<td valign="top" width="15">
+									<div id="LrDubleDot">::</div>
+								</td>
+								<td><a id="_ctl0_Pagelayout6__ctl5_LinkRepeater__ctl4_CategoryLink" href="http://hvg.hu/gocpontok.szudan.aspx"><b>Szudán</b></a></td>
+							</tr>							
+														
+							<tr id="LinkRows2">
+								<td valign="top" width="15">
+									<div id="LrDubleDot">::</div>
+								</td>
+								<td><a id="_ctl0_Pagelayout6__ctl5_LinkRepeater__ctl5_CategoryLink" href="http://hvg.hu/gocpontok.iran.aspx"><b>Irán</b></a></td>
+							</tr>							
+														
+							<tr id="LinkRows2">
+								<td valign="top" width="15">
+									<div id="LrDubleDot">::</div>
+								</td>
+								<td><a id="_ctl0_Pagelayout6__ctl5_LinkRepeater__ctl6_CategoryLink" href="http://hvg.hu/gocpontok.kolumbia.aspx"><b>Kolumbia</b></a></td>
+							</tr>							
+														
+							<tr id="LinkRows2">
+								<td valign="top" width="15">
+									<div id="LrDubleDot">::</div>
+								</td>
+								<td><a id="_ctl0_Pagelayout6__ctl5_LinkRepeater__ctl7_CategoryLink" href="http://hvg.hu/gocpontok.ekorea.aspx"><b>Észak-Korea</b></a></td>
+							</tr>							
+														
+							<tr id="LinkRows2">
+								<td valign="top" width="15">
+									<div id="LrDubleDot">::</div>
+								</td>
+								<td><a id="_ctl0_Pagelayout6__ctl5_LinkRepeater__ctl8_CategoryLink" href="http://hvg.hu/gocpontok.koszovo.aspx"><b>Koszovó</b></a></td>
+							</tr>							
+														
+							<tr id="LinkRows2">
+								<td valign="top" width="15">
+									<div id="LrDubleDot">::</div>
+								</td>
+								<td><a id="_ctl0_Pagelayout6__ctl5_LinkRepeater__ctl9_CategoryLink" href="http://hvg.hu/gocpontok.kasmir.aspx"><b>Kasmír</b></a></td>
+							</tr>							
+														
+							<tr id="LinkRows2">
+								<td valign="top" width="15">
+									<div id="LrDubleDot">::</div>
+								</td>
+								<td><a id="_ctl0_Pagelayout6__ctl5_LinkRepeater__ctl10_CategoryLink" href="http://hvg.hu/gocpontok.kurd.aspx"><b>Kurd</b></a></td>
+							</tr>							
+														
+							<tr id="LinkRows2">
+								<td valign="top" width="15">
+									<div id="LrDubleDot">::</div>
+								</td>
+								<td><a id="_ctl0_Pagelayout6__ctl5_LinkRepeater__ctl11_CategoryLink" href="http://hvg.hu/gocpontok.elefantcsontpart.aspx"><b>Elefántcsontpart</b></a></td>
+							</tr>							
+														
+							<tr id="LinkRows2">
+								<td valign="top" width="15">
+									<div id="LrDubleDot">::</div>
+								</td>
+								<td><a id="_ctl0_Pagelayout6__ctl5_LinkRepeater__ctl12_CategoryLink" href="http://hvg.hu/gocpontok.ciprus.aspx"><b>Ciprus</b></a></td>
+							</tr>							
+														
+							<tr id="LinkRows2">
+								<td valign="top" width="15">
+									<div id="LrDubleDot">::</div>
+								</td>
+								<td><a id="_ctl0_Pagelayout6__ctl5_LinkRepeater__ctl13_CategoryLink" href="http://hvg.hu/gocpontok.algeria.aspx"><b>Algéria</b></a></td>
+							</tr>							
+														
+							<tr id="LinkRows2">
+								<td valign="top" width="15">
+									<div id="LrDubleDot">::</div>
+								</td>
+								<td><a id="_ctl0_Pagelayout6__ctl5_LinkRepeater__ctl14_CategoryLink" href="http://hvg.hu/gocpontok.szomalia.aspx"><b>Szomália</b></a></td>
+							</tr>							
+								
+				</table>											
+			</td>
+		</tr>
+	</table>
+</div>                                                                                        
+<div id="SideBlokk">	
+	
+		<DIV>
+			<a id="_ctl0_Pagelayout6__ctl6_ColumnLink"></a></DIV>
+	
+	
+		<DIV id="Blokk_Header_Right">
+			<a id="_ctl0_Pagelayout6__ctl6_ColumnTextLink" href="http://hvg.hu/jogitanacsok.aspx">Jogi tanácsok
+				<span id="Icon">
+					<img src="images/arrow_right.gif" border="0"></span>
+			</a></DIV>
+	
+	
+	
+			<div id="LinkRows1">
+				
+											
+					<div id="DottedRow" class="wrap">		
+						<a id="_ctl0_Pagelayout6__ctl6_AddedArticlesRepeater__ctl0_Hyperlink1" class="LrSubCaption" href="http://hvg.hu/jogitanacsok/20050221feketelista.aspx">BAR</a><span class="shelfIcon" id="clp20050221feketelista"><img src="/images/doc_small.gif" alt="Gyüjtobe vele!" border="0"></span>
+							<br />
+							<a id="_ctl0_Pagelayout6__ctl6_AddedArticlesRepeater__ctl0_Hyperlink2" class="LrCaptionSmall" href="http://hvg.hu/jogitanacsok/20050221feketelista.aspx">Kik és miért kerülhetnek fel a banki fekete-<br>listára?</a>
+					</div>
+				
+			</div>
+		
+			<div id="LinkRows1">
+				
+											
+					<div id="DottedRow" class="wrap">		
+						<a id="_ctl0_Pagelayout6__ctl6_AddedArticlesRepeater__ctl1_Hyperlink1" class="LrSubCaption" href="http://hvg.hu/jogitanacsok/20050121jogitanacsok.aspx">Közös költség</a><span class="shelfIcon" id="clp20050121jogitanacsok"><img src="/images/doc_small.gif" alt="Gyüjtobe vele!" border="0"></span>
+							<br />
+							<a id="_ctl0_Pagelayout6__ctl6_AddedArticlesRepeater__ctl1_Hyperlink2" class="LrCaptionSmall" href="http://hvg.hu/jogitanacsok/20050121jogitanacsok.aspx">Tartozás miatt mikor jegyez-<br>hetnek be jelzálogjogot?</a>
+					</div>
+				
+			</div>
+						
+				
+</div>
+              
+<div id="SideBlokk">	
+	
+		<DIV>
+			<a id="_ctl0_Pagelayout6__ctl7_ColumnLink"></a></DIV>
+	
+	
+		<DIV id="Blokk_Header_Right">
+			<a id="_ctl0_Pagelayout6__ctl7_ColumnTextLink" href="http://hvg.hu/adougyek.aspx">Adó
+				<span id="Icon">
+					<img src="images/arrow_right.gif" border="0"></span>
+			</a></DIV>
+	
+	
+	
+			<div id="LinkRows1">
+				
+					<div>
+						
+							<center>
+								<img id="_ctl0_Pagelayout6__ctl7_AddedArticlesRepeater__ctl0_LeadImage" class="boxImage" src="http://hvg.hu/image.aspx?id=70f1d442-5a78-48c4-92eb-9bb495fbafe1&amp;view=10f22e5e-7665-49a7-a6f9-814ca617e072" alt="" style="border-width:0px;" />
+							</center>
+							
+							
+						<div id="boxarticle" class="wrap">	
+							<a id="_ctl0_Pagelayout6__ctl7_AddedArticlesRepeater__ctl0_Hyperlink3" class="LrCaptionSmall" href="http://hvg.hu/adougyek/20050222adokonszolidacio.aspx">
+								<b>
+									<div>Lekerülhet Magyarország a holdingcégek térképéről?</div>
+								</b>
+							</a><span class="shelfIcon" id="clp20050222adokonszolidacio"><img src="/images/doc_small.gif" alt="Gyüjtobe vele!" border="0"></span>
+							<br />
+							Nem jöhet több holdingtársaság Magyarországra, illetve az itt lévők akár el is költözhetnek, ha egy, az adókonszo- lidáció témájában jelenleg is folyó brit ügyben az Európai Bíróság az egyik legnagyobb kiskereskedelmi vállalatnak ad igazat - áll az <a href="http://int.sitestat.com/ernst-and-young/hungary/s?HVG&ns_type=clickin" target="_blank" class="La" >Ernst & Young tanácsadó cég</a> a hvg.hu számára készült elemzésében.
+							<br />
+							<a id="_ctl0_Pagelayout6__ctl7_AddedArticlesRepeater__ctl0_Hyperlink5" class="La" href="http://hvg.hu/adougyek/20050222adokonszolidacio.aspx">Részletek <small>
+									<b>&raquo;</b></small></a>
+						</div>
+					</div>
+				
+				
+			</div>
+						
+				
+</div>
+    
+<div id="SideBlokk">	
+	
+		<DIV>
+			<a id="_ctl0_Pagelayout6__ctl8_ColumnLink"></a></DIV>
+	
+	
+		<DIV id="Blokk_Header_Right">
+			<a id="_ctl0_Pagelayout6__ctl8_ColumnTextLink" href="http://hvg.hu/markatar.aspx">Márka- és logótár
+				<span id="Icon">
+					<img src="images/arrow_right.gif" border="0"></span>
+			</a></DIV>
+	
+	
+	
+			<div id="LinkRows1">
+				
+					<div>
+						
+							<center>
+								<img id="_ctl0_Pagelayout6__ctl8_AddedArticlesRepeater__ctl0_LeadImage" class="boxImage" src="http://hvg.hu/image.aspx?id=0b073106-be2c-4bdb-a1ca-ffda0c1a74f1&amp;view=10f22e5e-7665-49a7-a6f9-814ca617e072" alt="" style="border-width:0px;" />
+							</center>
+							
+							
+						<div id="boxarticle" class="wrap">	
+							<a id="_ctl0_Pagelayout6__ctl8_AddedArticlesRepeater__ctl0_Hyperlink3" class="LrCaptionSmall" href="http://hvg.hu/markatar/ikea.aspx">
+								<b>
+									<div>Logótörténetek</div>
+								</b>
+							</a><span class="shelfIcon" id="clpikea"><img src="/images/doc_small.gif" alt="Gyüjtobe vele!" border="0"></span>
+							<br />
+							Hogyan került az Alfa Romeo címeré- be egy gyermeket felfaló kígyó? Mit keres egy ló a Ferra- ri logójában? Mi a története a Michelin Bibendum nevű figu- rájának? Ezeket is megtudhatja közis- mert márkanevek és logók eredetét be- mutató új soroza- tunkból. 
+							<br />
+							<a id="_ctl0_Pagelayout6__ctl8_AddedArticlesRepeater__ctl0_Hyperlink5" class="La" href="http://hvg.hu/markatar/ikea.aspx">Részletek <small>
+									<b>&raquo;</b></small></a>
+						</div>
+					</div>
+				
+				
+			</div>
+						
+				
+</div>
+      
+<div id="SideBlokk">
+	<table style="FONT-SIZE:10px" cellpadding="0" cellspacing="0" width="100%">
+		<tr>
+			<td>
+				<div id="Blokk_Header_Right"><a href="/gallery.aspx">Fotógaléria<span id="Icon"><img src="images/arrow_right.gif" border="0"></span></a>									
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td align="center">
+				
+						<img id="_ctl0_Pagelayout6__ctl9_ItemRepeater__ctl0_MainGalleryImage" onclick="openGallery('b0657d04-fee9-48b3-b17e-66e98630d3ac');return false;" src="http://hvg.hu/image.aspx?id=af2c76bf-5e14-4795-a142-da0a2f855ac3&amp;view=E9D9EA94-21C3-4876-A20C-34294B9230B3" alt="" border="0" style="cursor: hand;" />
+									
+			</td>
+		</tr>
+		<tr>
+			<td align="center" class="NormalTextCol">
+				<a id="_ctl0_Pagelayout6__ctl9_GalleryName" onclick="openGallery('b0657d04-fee9-48b3-b17e-66e98630d3ac');return false;" style="cursor: hand;">Élet a marson?</a>				
+			</td>
+		</tr>
+	</table>
+</div>
+					</div>
+				</div>
+			</div>
+			<IMG height="0" src="images/spacer.gif" width="768">
+			
+<table width="100%" cellpadding="0" cellspacing="0">
+	<tr>
+		<td>
+			<div id="Footer">
+				<div id="ImpressumLine"><a href="/other/impresszum.aspx">Impresszum</a> :: <a href="/other/privacy.aspx">Adatvédelem</a> :: <a href="mailto:hvg.hu@hvg.hu?subject=Olvasoi visszajelzes">Írjon nekünk!</a> :: <a href="http://hvg.hu/other/rss.aspx"><img src="images/xml_button.gif" border="0">  RSS hírek</a></div>
+				<div id="ImpressumLine"><a href="https://ugyfelpont.hvg.hu/pls/webitem/pkg_webshop_products.show" target="_blank">Kiadványok és szolgáltatások</a> :: <a href="http://hvg.hu/ratecard.aspx" target="_blank">Hirdetési információk</a>
+				</div>
+			</div>
+		</td>
+	</tr>
+</table>
+
+		</div>
+	</body>
+</HTML>
+	<SCRIPT type="text/javascript">	 		allCollectors[allCollectors.length] =  new Collector("20050218uPC","Gyors internet elérhető áron - új távlatok kisvállalkozások számára", "http://hvg.hu/other/20050218uPC.aspx", "no");
+allCollectors[allCollectors.length] =  new Collector("20050301-albatros","A múlandó művészet mestere", "http://hvg.hu/other/20050301-albatros.aspx", "no");
+allCollectors[allCollectors.length] =  new Collector("20050304hivatasoslista","A III/III. központi állománya:<br>nevek, rangfokozatok", "http://hvg.hu/itthon/20050304hivatasoslista.aspx", "no");
+allCollectors[allCollectors.length] =  new Collector("20050304listapeterfalvi","Péterfalvi nem nyilatkozik a hvg.hu listájáról", "http://hvg.hu/itthon/20050304listapeterfalvi.aspx", "no");
+allCollectors[allCollectors.length] =  new Collector("20050304mstechfest","A kismackó figyel téged ", "http://hvg.hu/Tudomany/20050304mstechfest.aspx", "no");
+allCollectors[allCollectors.length] =  new Collector("20050303fizetesiranglista","Lemaradtak a magyar bérek", "http://hvg.hu/gazdasag/20050303fizetesiranglista.aspx", "no");
+allCollectors[allCollectors.length] =  new Collector("20050303pacehacker","A hackerek már ölhetnek is", "http://hvg.hu/Tudomany/20050303pacehacker.aspx", "no");
+allCollectors[allCollectors.length] =  new Collector("20050304kemek","Ex-kémeknek nem jár apanázs", "http://hvg.hu/vilag/20050304kemek.aspx", "no");
+allCollectors[allCollectors.length] =  new Collector("20050304dealersziberia","Szibériában tartolt a Dealer", "http://hvg.hu/kultura/20050304dealersziberia.aspx", "no");
+allCollectors[allCollectors.length] =  new Collector("20050304gyurcsany","Kinevették Gyurcsányt a postások", "http://hvg.hu/itthon/20050304gyurcsany.aspx", "no");
+allCollectors[allCollectors.length] =  new Collector("20050304kukorica","Az EU engedélyezte a génmanipulált kukoricát ", "http://hvg.hu/gazdasag/20050304kukorica.aspx", "no");
+allCollectors[allCollectors.length] =  new Collector("20050304mausmetro","Maus képregénykockák a pesti metróban", "http://hvg.hu/kultura/20050304mausmetro.aspx", "no");
+allCollectors[allCollectors.length] =  new Collector("20050304gazda","Gyurcsány: nincs 200 milliárd a gazdák követeléseire ", "http://hvg.hu/gazdasag/20050304gazda.aspx", "no");
+allCollectors[allCollectors.length] =  new Collector("20050225allambiztonsag","Állambiztonsági szótár", "http://hvg.hu/ugynok/20050225allambiztonsag.aspx", "no");
+allCollectors[allCollectors.length] =  new Collector("20050301lista","Kommunisták az ügynökhálózaton kívül és belül", "http://hvg.hu/ugynok/20050301lista.aspx", "no");
+allCollectors[allCollectors.length] =  new Collector("20050303happyjob","Munka élvezeti rangsor", "http://hvg.hu/karrier/20050303happyjob.aspx", "no");
+allCollectors[allCollectors.length] =  new Collector("20050221-wifi","A tréningek kulisszatitkai", "http://hvg.hu/other/20050221-wifi.aspx", "no");
+allCollectors[allCollectors.length] =  new Collector("20050111","A budapesti előváros a tét", "http://hvg.hu/other/20050111.aspx", "no");
+allCollectors[allCollectors.length] =  new Collector("20050112Karoli","Felvételi előkészítő a Károli Gáspár Református Egyetemen", "http://hvg.hu/other/20050112Karoli.aspx", "no");
+allCollectors[allCollectors.length] =  new Collector("20050302swellingdeficit","EU Gets Tough On Hungary’s Swelling Deficit", "http://hvg.hu/english/20050302swellingdeficit.aspx", "no");
+allCollectors[allCollectors.length] =  new Collector("20050302realwages","Real Wages To Grow In 2005", "http://hvg.hu/english/20050302realwages.aspx", "no");
+allCollectors[allCollectors.length] =  new Collector("20050302erstebank","Erste To Continue Expansion", "http://hvg.hu/english/20050302erstebank.aspx", "no");
+allCollectors[allCollectors.length] =  new Collector("20050303digitaltv","Hungary Goes Digital", "http://hvg.hu/english/20050303digitaltv.aspx", "no");
+allCollectors[allCollectors.length] =  new Collector("20050303trigranitinromania","Real Estate Tycoon Invests 1 Bln In Romania", "http://hvg.hu/english/20050303trigranitinromania.aspx", "no");
+allCollectors[allCollectors.length] =  new Collector("20050303taxreform","Tax Committee Unveils Reform Proposals", "http://hvg.hu/english/20050303taxreform.aspx", "no");
+allCollectors[allCollectors.length] =  new Collector("20050128itdepo","Műszaki cikkek", "http://hvg.hu/itszalon/20050128itdepo.aspx", "no");
+allCollectors[allCollectors.length] =  new Collector("20041230internetes","Internetes átverések", "http://hvg.hu/media/20041230internetes.aspx", "no");
+allCollectors[allCollectors.length] =  new Collector("200509HVGFriss194","MSZP-s terjeszkedési tervek", "http://hvg.hu/hvgfriss/2005.09/200509HVGFriss194.aspx", "no");
+allCollectors[allCollectors.length] =  new Collector("20050303magyarposta","Megtévesztette a fogyasztókat a Magyar Posta", "http://hvg.hu/itthon/20050303magyarposta.aspx", "no");
+allCollectors[allCollectors.length] =  new Collector("20050303nyklub","Ironikus közleményben támadják a \"listazúzó\" ombudsmant", "http://hvg.hu/itthon/20050303nyklub.aspx", "no");
+allCollectors[allCollectors.length] =  new Collector("20050302borton","Erőszak a börtönökben", "http://hvg.hu/itthon/20050302borton.aspx", "no");
+allCollectors[allCollectors.length] =  new Collector("200509HVGFriss61","Változó lőterek", "http://hvg.hu/hvgfriss/2005.09/200509HVGFriss61.aspx", "no");
+allCollectors[allCollectors.length] =  new Collector("20050303edzohalal","Elhunyt a totális futball atyja", "http://hvg.hu/vilag/20050303edzohalal.aspx", "no");
+allCollectors[allCollectors.length] =  new Collector("20050301kabitoszer","Engedélyezéssel a kábítószer ellen ", "http://hvg.hu/vilag/20050301kabitoszer.aspx", "no");
+allCollectors[allCollectors.length] =  new Collector("20050303paleszt","Újra lesznek kivégzések a Palesztin Autonómia területén", "http://hvg.hu/vilag/20050303paleszt.aspx", "no");
+allCollectors[allCollectors.length] =  new Collector("20050303eszakkoreamoratorium","Észak-Korea felmondja az atomfegyver-kísérletek moratóriumát", "http://hvg.hu/vilag/20050303eszakkoreamoratorium.aspx", "no");
+allCollectors[allCollectors.length] =  new Collector("20050303bushvizit","Bush még az idén Budapestre látogathat", "http://hvg.hu/vilag/20050303bushvizit.aspx", "no");
+allCollectors[allCollectors.length] =  new Collector("20050304hitelkamat","Csökkennek a hitelkamatok", "http://hvg.hu/gazdasag/20050304hitelkamat.aspx", "no");
+allCollectors[allCollectors.length] =  new Collector("20050304subway","Logisztikai központot építene a Subway", "http://hvg.hu/gazdasag/20050304subway.aspx", "no");
+allCollectors[allCollectors.length] =  new Collector("20050304ingatlan","Német eurómilliók Budapest Champs Elysse-jének", "http://hvg.hu/gazdasag/20050304ingatlan.aspx", "no");
+allCollectors[allCollectors.length] =  new Collector("20050304airport","A PM tilos jelzést adott a Budapest Airport-szerződésnek", "http://hvg.hu/gazdasag/20050304airport.aspx", "no");
+allCollectors[allCollectors.length] =  new Collector("20050303fossett","Steve Fossett leszállás nélkül körberepülte a Földet", "http://hvg.hu/Tudomany/20050303fossett.aspx", "no");
+allCollectors[allCollectors.length] =  new Collector("20050303pacehacker","A hackerek a hálózaton át akár ölhetnek is", "http://hvg.hu/Tudomany/20050303pacehacker.aspx", "no");
+allCollectors[allCollectors.length] =  new Collector("20050303napenergiaar","Versenyképessé válhat a napenergia ára ", "http://hvg.hu/Tudomany/20050303napenergiaar.aspx", "no");
+allCollectors[allCollectors.length] =  new Collector("20050303tmobile","Tovább csökkent a T-Mobile hazai részesedése", "http://hvg.hu/Tudomany/20050303tmobile.aspx", "no");
+allCollectors[allCollectors.length] =  new Collector("20050302gates","Bill Gates-t lovaggá ütötték ", "http://hvg.hu/Tudomany/20050302gates.aspx", "no");
+allCollectors[allCollectors.length] =  new Collector("20050228kiszely","Ügynöklisták: Kiszely Gábor óvatosságra int", "http://hvg.hu/velemeny/20050228kiszely.aspx", "no");
+allCollectors[allCollectors.length] =  new Collector("20050208ugynok","Kiherélt ügynöktörvény ", "http://hvg.hu/velemeny/20050208ugynok.aspx", "no");
+allCollectors[allCollectors.length] =  new Collector("200507HVGFriss197","Bozóki András: kulturális miniszter", "http://hvg.hu/hvgfriss/2005.07/200507HVGFriss197.aspx", "no");
+allCollectors[allCollectors.length] =  new Collector("200508HVGFriss236","Hunvald György: Erzsébetváros polgármestere", "http://hvg.hu/hvgfriss/2005.08/200508HVGFriss236.aspx", "no");
+allCollectors[allCollectors.length] =  new Collector("20050203retro8029","25 éve írta a HVG (Amikor még 400 ezerért épült egy lakás) ", "http://hvg.hu/velemeny/20050203retro8029.aspx", "no");
+allCollectors[allCollectors.length] =  new Collector("20050204jarai3","Járai: „a négy új taggal nekem semmi bajom”", "http://hvg.hu/velemeny/20050204jarai3.aspx", "no");
+allCollectors[allCollectors.length] =  new Collector("20050303nagykonyvdecemberig","A Nagy Könyv egészen decemberig tart", "http://hvg.hu/kultura/20050303nagykonyvdecemberig.aspx", "no");
+allCollectors[allCollectors.length] =  new Collector("20050301progrmarcius","Bangkoki punkok a színházban", "http://hvg.hu/kultura/20050301progrmarcius.aspx", "no");
+allCollectors[allCollectors.length] =  new Collector("200509HVGFriss157","Drámák komédiája", "http://hvg.hu/hvgfriss/2005.09/200509HVGFriss157.aspx", "no");
+allCollectors[allCollectors.length] =  new Collector("200509HVGFriss117","Több bőrt egy arcról", "http://hvg.hu/hvgfriss/2005.09/200509HVGFriss117.aspx", "no");
+allCollectors[allCollectors.length] =  new Collector("20050301","Erdeit, az Oscart és a gazdákat is lenyomta az ügynöklista", "http://hvg.hu/media/20050301.aspx", "no");
+allCollectors[allCollectors.length] =  new Collector("20050301nezettseg","„Szakértő ’90” akciója megdobta a hírműsorok nézettségét ", "http://hvg.hu/media/20050301nezettseg.aspx", "no");
+allCollectors[allCollectors.length] =  new Collector("20050301kamerahungaria","Kilencvennégy tévéműsor versenyez a Kamera Hungárián", "http://hvg.hu/media/20050301kamerahungaria.aspx", "no");
+allCollectors[allCollectors.length] =  new Collector("20050302bbcatalakitas","Radikálisan átalakítják a BBC vezetését", "http://hvg.hu/media/20050302bbcatalakitas.aspx", "no");
+allCollectors[allCollectors.length] =  new Collector("20050228jobinterview","Intim állásinterjúk és jogszerűtlen szerződések ", "http://hvg.hu/karrier/20050228jobinterview.aspx", "no");
+allCollectors[allCollectors.length] =  new Collector("20050228interyou","A te interjúkérdéseid ", "http://hvg.hu/karrier/20050228interyou.aspx", "no");
+allCollectors[allCollectors.length] =  new Collector("20050228bosscv","A főnök önéletrajza ", "http://hvg.hu/karrier/20050228bosscv.aspx", "no");
+allCollectors[allCollectors.length] =  new Collector("20050224britjob","Több mint 50 ezren vállaltak brit állást az új EU-tagországokból", "http://hvg.hu/karrier/20050224britjob.aspx", "no");
+allCollectors[allCollectors.length] =  new Collector("20050223munkavallalas","Külföldi munka: tippek országról-országra ", "http://hvg.hu/karrier/20050223munkavallalas.aspx", "no");
+allCollectors[allCollectors.length] =  new Collector("20050223igyszerezhetsz","Így szerezhetsz munkát a médiában", "http://hvg.hu/karrier/20050223igyszerezhetsz.aspx", "no");
+allCollectors[allCollectors.length] =  new Collector("20050222kreativitas","Tippek a kreativitás erősítésére", "http://hvg.hu/karrier/20050222kreativitas.aspx", "no");
+allCollectors[allCollectors.length] =  new Collector("20050221feketelista","Kik és miért kerülhetnek fel a banki fekete-<br>listára?", "http://hvg.hu/jogitanacsok/20050221feketelista.aspx", "no");
+allCollectors[allCollectors.length] =  new Collector("20050121jogitanacsok","Tartozás miatt mikor jegyez-<br>hetnek be jelzálogjogot?", "http://hvg.hu/jogitanacsok/20050121jogitanacsok.aspx", "no");
+allCollectors[allCollectors.length] =  new Collector("20050222adokonszolidacio","Lekerülhet Magyarország a holdingcégek térképéről?", "http://hvg.hu/adougyek/20050222adokonszolidacio.aspx", "no");
+allCollectors[allCollectors.length] =  new Collector("ikea","Logótörténetek", "http://hvg.hu/markatar/ikea.aspx", "no");
+		initialize();	</SCRIPT>		<img src="images/spacer.gif?u=" width="0" height="0"/>

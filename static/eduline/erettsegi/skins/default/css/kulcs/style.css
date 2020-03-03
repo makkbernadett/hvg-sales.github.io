@@ -1,0 +1,432 @@
+@charset "utf-8";
+
+@font-face{
+    font-family:'Informa';
+    src:url('/skins/default/css/Kulcs/fonts/informapromediumcondensed-webfont.eot');
+    src:url('/skins/default/css/Kulcs/fonts/informapromediumcondensed-webfont.eot?#iefix') format('embedded-opentype'),
+        url('/skins/default/css/Kulcs/fonts/informapromediumcondensed-webfont.woff') format('woff'),
+        url('/skins/default/css/Kulcs/fonts/informapromediumcondensed-webfont.ttf') format('truetype'),
+        url('/skins/default/css/Kulcs/fonts/informapromediumcondensed-webfont.svg#InformaProMediumCondensed') format('svg');
+    font-weight:normal;
+    font-style:normal;
+}
+*{padding:0; margin:0; font-family:Arial, Helvetica, serif;}
+img, input{border:0;}
+ul, ol{list-style-type:none;}
+table{border-collapse:collapse; border-spacing:0;}
+a, a:hover, a:focus, a:active{color:#444; text-decoration:none; outline:0;}
+.fl{float:left;} .fr{float:right;}
+.cl{clear:both; height:0; font:0/0 arial;}
+
+::selection{background:#f3720b; color:#fff;}
+::-moz-selection{background:#f3720b; color:#fff;}
+::-webkit-selection{background:#f3720b; color:#fff;}
+
+html, body{
+	font:normal 14px Arial, Helvetica, serif;
+	color:#444;
+	background:#f0f0f0;
+}
+
+h2{
+	font:30px Informa;
+	margin:0 0 10px;
+	filter:none;
+}
+	h2 *{font-family:Informa;}
+	
+h3{
+	font:bold 18px/14px Arial;
+	color:#004276;
+	border-left:5px solid #f3720b;
+	padding:0 0 0 15px;
+	margin:0 0 20px -20px;
+}
+	h3 span{
+		font:normal 14px Arial;
+		display:block;
+	}
+	
+textarea{resize:vertical;}
+
+.textinput, .passinput, select{
+	border:1px solid #4c4c4c;
+	height:18px;
+	line-height:18px;
+	padding:5px;
+	margin:0 0 20px;
+	box-shadow:inset 0 1px 2px rgba(0,0,0,.3);
+	vertical-align:middle;
+}
+select{height:30px;}
+	
+	option:nth-child(even){background:#ccc;}
+
+.textinput:focus, .passinput:focus{
+	border-color:#f3720b;
+	color:#f3720b;
+	box-shadow:none;
+	outline:0;
+}
+.submitinput, .buttoninput, button{
+	background:#f3720b;
+	color:#fff;
+	height:28px;
+	line-height:28px;
+	border-radius:2px;
+	cursor:pointer;
+	font:bold 14px Arial;
+	padding:0 10px;
+	margin:0;
+	float:right !important;
+	width:auto !important;
+}
+.submitinput:hover, .buttoninput:hover, button:hover{text-decoration:underline;}
+.submitinput:active, .buttoninput:hover, button:active{box-shadow:0 0 3px rgba(0,0,0,.5);}
+
+input[disabled="disabled"], input[disabled]{
+    background:#eee;
+    color:#aaa;
+    border-color:#aaa;
+	box-shadow:none;
+}
+input[placeholder],[placeholder], input:-moz-placeholder, input::-webkit-input-placeholder{color:#444;}
+
+.radioinput{vertical-align:text-bottom;}
+.checkinput{vertical-align:bottom; *vertical-align:baseline;}
+
+div.head{
+	width:100%;
+	height:72px;
+	position:fixed;
+	left:0;
+	top:0;
+	z-index:2;
+	background-color:#646464;
+	background-image:-webkit-gradient(linear, left top, left bottom, from(#646464), to(#272727));
+	background-image:-webkit-linear-gradient(top, #646464, #272727);
+	background-image:-moz-linear-gradient(top, #646464, #272727);
+	background-image:-ms-linear-gradient(top, #646464, #272727);
+	background-image:-o-linear-gradient(top, #646464, #272727);
+	background-image:linear-gradient(top, #646464, #272727);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorStr='#646464', EndColorStr='#272727');
+	-moz-box-shadow:0px 2px 4px rgba(0,0,0,0.3);
+	-webkit-box-shadow:0px 2px 4px rgba(0,0,0,0.3);
+	box-shadow:0px 2px 4px rgba(0,0,0,0.3);
+	border-bottom: 5px solid #f3720b;
+}
+div.headCenterLeft a{
+	background:url(/skins/default/img/Kulcs/era-logo.png) left no-repeat;
+	text-indent:-999em;
+	float:left;
+	display:block;
+	width:500px;
+	height:22px;
+}
+div.headCenterRight a{
+	float:right;
+	display:block;
+	width:200px;
+	height:22px;
+	color:#FFF;
+	font-weight: bold;
+	font-family: Arial, Helvetica, serif;
+	font-size:16px;
+}
+
+div.headCenter
+{
+    display:block;
+		width:990px;
+		height:22px;
+		margin:26px auto 0;
+}
+/**/
+
+div.wrap{
+	width:988px;
+	margin:0 auto;	
+	overflow:hidden;
+	padding:77px 0 0;
+	border:1px solid #c0c0c0;
+	background:#fff;
+	-moz-box-shadow:0px 0px 4px rgba(0,0,0,0.3);
+	-webkit-box-shadow:0px 0px 4px rgba(0,0,0,0.3);
+	box-shadow:0px 0px 4px rgba(0,0,0,0.3);
+	z-index:1;
+	position:relative;
+}
+
+/**/
+
+div.section{
+	background:url(/skins/default/img/Kulcs/section-bg.gif) right repeat-y;
+	border-bottom:1px solid #d9d9d9;
+}
+div.section:last-child{border:0;}
+div.section:hover div.exp{color:#222;}
+div.section:hover div.exp h4{background-position:0 -25px;}
+div.section:hover div.exp span{display:block;}
+
+/**/		
+	
+div.data{
+	float:left;
+	width:589px;
+	padding:20px;
+}
+
+	div.grey{
+		padding:20px;
+		background:#e7e7e7;
+		border:1px solid #DCDCDC;
+	}
+	
+	.reg {
+		width: 315px;
+		margin: 0 20px 0 0;
+	}
+	
+		div.reg label{
+			width:80px;
+			display:block;
+			float:left;
+			font-weight:bold;
+			text-align:right;
+			margin:0 15px 20px 0;
+		}
+			div.reg label span{
+				font-size:12px;
+				display:block;
+			}
+			
+		div.reg input{
+			float:left;
+			width:208px;
+		}
+		
+		.textinput, .passinput { color: #444 }
+		
+		div.reg input.submitinput{ color: #FFF }
+		
+	div.login {
+		width:170px;
+		min-height:180px;
+	}
+	
+	div.import { width: 170px }
+	
+	div.import p {
+	    margin: -10px 0 0 0;
+	    font-weight: bold;
+	}
+	
+	a.toggle {
+		display: block;
+		text-align: center;
+		height :38px;
+		font: bold 12px/38px Arial;
+		background: #E7E7E7;
+		border: 1px solid #DCDCDC;
+		border-top: 0;
+	}
+		
+	a.toggle.active {
+		background: #444 url('/skins/default/img/Kulcs/arrow_down.gif') no-repeat 185px 16px;
+		color: #FFF;
+		border-color: #DADADA;
+	}
+	
+	a.login-button{
+		border-radius:2px;
+		background:#f3720b;
+		display:block;
+		margin:14px 0;
+		padding:0 10px;
+		color:#fff;
+		height:40px;
+		font:bold 12px/40px Arial;
+		text-align:right;
+	}
+	
+	.import a.login-button { margin: 14px 0 0 0 }
+		
+	a.login-button.fb{	
+		background-color:#3b5997;
+		background-image:-webkit-gradient(linear, left top, left bottom, from(#4e6eaf), to(#3b5997));
+		background-image:-webkit-linear-gradient(top, #4e6eaf, #3b5997);
+		background-image:-moz-linear-gradient(top, #4e6eaf, #3b5997);
+		background-image:-ms-linear-gradient(top, #4e6eaf, #3b5997);
+		background-image:-o-linear-gradient(top, #4e6eaf, #3b5997);
+		background-image:linear-gradient(top, #4e6eaf, #3b5997);
+		filter:progid:DXImageTransform.Microsoft.gradient(startColorStr='#4e6eaf', EndColorStr='#3b5997');
+	}
+	a.login-button.ggl{
+		background:#fff;
+		color:#444;
+		border:1px solid #d9d9d9;
+		height:38px;
+	}
+	
+		a.login-button img{float:left; margin-top:7px;}
+		a.login-button.fb img{margin-top:10px;}
+		
+		a.login-button.hvg:hover{background:#ff7d15;}
+		a.login-button.fb:hover{background:#4e6eaf;}
+		a.login-button.ggl:hover{border-color:#aaa;}
+
+/**/		
+		
+div.exp{
+	float:left;
+	color:#777;
+	background:#e7e7e7;
+	width:318px;
+	padding:20px;
+	border-left:1px solid #d9d9d9;
+	font-size:12px;
+	position:relative;
+}
+	div.exp h4{
+		background:url(/skins/default/img/Kulcs/info-ico.png) 0 0 no-repeat;
+		padding:0 0 0 20px;
+		margin:0 0 5px;
+		font-size:12px;
+	}
+	div.exp p{margin:0 0 20px;}
+	div.exp span{
+		display:none;
+		background:url(/skins/default/img/Kulcs/arrow.png) no-repeat;
+		width:10px;
+		height:17px;
+		position:absolute;
+		left:-1px;
+		top:30%;
+	}
+
+a.more{
+	/*background:url(/skins/default/img/Kulcs/arrow-right.png) left no-repeat;*/
+	padding-left:10px;
+	font-weight:bold;
+}
+a.more:hover{text-decoration:underline;}
+
+/**/
+
+div.upload{width:100px;}
+
+	div.upload img{
+		display:block;
+		border:1px solid #9e9e9e;
+	}
+	div.upload a{
+		background:#9a9a9a;
+		color:#fff;
+		text-align:center;
+		height:30px;
+		font:bold 12px/30px Arial;
+		display:block;
+	}
+	div.upload a:hover{box-shadow:inset 0 0 15px rgba(0,0,0,.2);}
+
+div.personal{
+	width:224px;
+	margin-left:20px;
+}
+	div.personal input.date{background:url(/skins/default/img/Kulcs/date-ico.png) right 6px no-repeat;}
+	
+	div.personal input{width:212px;}
+	div.personal select{width:224px;}
+	
+	div.personal input.fl{width:58px;}
+	div.personal select.fl{width:70px;}
+	
+	div.personal input.fr{width:122px;}
+
+/**/
+
+ul.tabs{
+	float:left;
+	width:120px;
+}
+	ul.tabs li{
+		border:1px solid #fff;
+		background:#fff;
+		text-align:right;
+		font:bold 12px Arial;
+		padding-right:12px;
+		overflow:hidden;
+		position:relative;
+	}
+	ul.tabs li a{
+		display:block;
+		height:30px;
+		line-height:30px;
+	}
+	ul.tabs li a:hover{text-decoration:underline;}
+	
+	ul.tabs li.active{
+		background:#fff;
+		border:1px solid #484848;
+		border-right:1px solid #fff;
+		border-left:5px solid #444;
+		margin-right:-1px;
+	}
+	ul.tabs li.adozona.active{border-left-color:#ffa44b;}
+	ul.tabs li.ecoline.active{border-left-color:#7a9b00;}
+	ul.tabs li.eduline.active{border-left-color:#c8dcea;}
+	ul.tabs li.techline.active{border-left-color:#4796b2;}
+	ul.tabs li.automanager.active{border-left-color:#a9a9a9;}
+	ul.tabs li.life-style.active{border-left-color:#bc34ba;}
+	ul.tabs li.hvg.active{border-left-color:#f3720b;}
+	ul.tabs li.hirszerzo.active{border-left-color:#80a311;}
+	ul.tabs li.ingatlanmanager.active{border-left-color:#bd8e47;}		
+	
+div.tab-container{
+	border:1px solid #484848;
+	float:left; 
+	width:467px;
+	min-height:400px;
+	background:#fff;
+}
+
+div.tab-content { padding: 20px }
+
+.centered { margin: auto }
+
+.nomargin { margin: 0 }
+
+.autowidth { width: auto }
+
+.message{
+                position:fixed;
+                top:50%;
+                left:50%;
+                z-index:1000;
+                padding:15px;
+                width:300px;
+                margin-left:-165px;
+}
+#msgSucceeded{
+                background:#c2eba4;
+                border:1px solid #51812f;
+                color:#51812f;
+}
+#msgFailed{
+                background:#eba4a4;
+                border:1px solid #812f2f;
+                color:#812f2f;
+}
+
+.message a{
+                position:absolute;
+                top:5px;
+                right:5px;
+                display:block;
+                width:12px;
+                height:12px;
+                /*background:url(close.png) no-repeat;*/
+                background:url(/skins/default/img/Kulcs/close.png) no-repeat;
+}
+
+#lo_message { margin: 15px 0 }

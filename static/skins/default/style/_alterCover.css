@@ -1,0 +1,275 @@
+#pg-breaking {
+	clear: both;
+	border-bottom: solid 4px #FD600B;
+	padding-bottom: 9px;
+}
+
+.maintitle-side-red { background: url('http://images.hvg.hu/static/skins/default/img/altCim/maintitle-side-blue.png') no-repeat 4px 110px; }
+
+#pg-breaking-title {
+	margin: 9px 0 0 0;
+	padding: 10px 0 0 0;
+	background-color: #413727;
+	border-bottom: solid 1px #251F1E;
+}
+.pg-breaking-tit-end {
+	float: left;
+	background: url('http://images.hvg.hu/static/skins/default/img/altCim/pg-breaking-titleright.png') no-repeat;
+	height: 44px;
+	width: 8px;
+}
+
+#pg-breaking-title h2 {
+	float: left;
+	margin: 0 0 10px 0;
+	padding: 7px 20px 0 14px;
+	color: #fff;
+	height: 37px;
+	text-transform: uppercase;
+	font-size: 24px;
+	background: url('http://images.hvg.hu/static/skins/default/img/altCim/pg-breaking-titlebg.png') #413727 repeat-x;
+	position: relative;
+	z-index:15;
+}
+
+#pg-breaking-title h2 a { color: #fff; }
+
+#pg-breaking-title h2 span {
+    display: block;
+    width: 7px;
+    height: 53px;
+    position: absolute;
+    z-index:10;
+    left: -7px;
+    top: 0;
+    background: url('http://images.hvg.hu/static/skins/default/img/altCim/maintitle-side-blue.png') no-repeat;
+}
+
+div.pg-breaking-title {
+	float: left;
+	margin: 11px 0 0 9px;
+	padding: 2px 2px 0 11px;
+	height: 19px;
+	background: url('http://images.hvg.hu/static/skins/default/img/altCim/pg-breaking-title-button.png') top left no-repeat;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+div.pg-breaking-titleend {
+	float: left;
+	margin-top: 11px;
+	height: 22px;
+	width: 9px;
+	background: url('http://images.hvg.hu/static/skins/default/img/altCim/pg-breaking-title-button-right.png') left no-repeat;
+}
+
+div.pg-breaking-title a { color: #99DCD9; }
+
+#pg-breaking-content {
+	background: #413727;
+	color: #FFF;
+	overflow:hidden;
+}
+
+.pg-breaking-content-doublebox {
+	width: 630px;
+	float: left;
+}
+
+.pg-breaking-content-box {
+	width: 305px;
+	float: left;
+}
+
+.pg-breaking-content-row { padding: 15px 15px 20px 15px; }
+
+.pg-breakingclose {
+	background-image: url('http://images.hvg.hu/static/skins/default/img/altCim/pg-breakingclose-button-bg.png');
+	text-align: center;
+}
+
+.bordertop { border-top: solid 1px #544E4C; }
+
+.borderbottom { border-bottom: solid 1px #251F1E; }
+
+.pg-breaking-content-box ul {
+    margin: 0 10px 10px 1px;
+	padding: 0;
+    overflow: hidden;
+}
+
+.pg-breaking-content-box ul li {
+    padding: 5px 0 10px 12px;
+    background: url('http://images.hvg.hu/static/skins/default/img/altCim/listitem-brown-orange.png') no-repeat left 11px;
+}
+
+.pg-breaking-content-box ul li a {
+	color: #FD600B;
+	font-weight: bold;
+}
+
+.space { margin-right: 20px; }
+
+.pg-breaking-content-box h2, .pg-breaking-content-box h6 {
+	margin: 0 0 10px 0;
+	padding: 3px 0 3px 28px;
+	font-size: 14px;
+	text-transform: uppercase;
+	color: #BEB3AD;
+}
+
+.pg-breaking-content-box h2 { padding-left: 0; }
+
+.pg-breaking-content-box h2 a { color: #FD600B; }
+
+.pg-breaking-content-box h3 {
+	margin: 0px 0px 10px 0px;
+	padding: 3px 0px 3px 28px;
+	font-size: 14px;
+	text-transform: uppercase;
+	color: #EBEBEB;
+}
+
+.percrolpercre { background: url('http://images.hvg.hu/static/skins/default/img/altCim/icon-percrolpercre.png') no-repeat top left; }
+.shoutbox { background: url('http://images.hvg.hu/static/skins/default/img/altCim/icon-shoutbox_new.png') no-repeat top left; }
+.grafikon { background: url('http://images.hvg.hu/static/skins/default/img/altCim/icon-grafikon.png') no-repeat top left; }
+
+.breaking-top-news tr td {
+	padding-right: 10px;
+	padding-bottom: 14px;
+}
+.breaking-top-news tr td a {
+	font-size: 13px;
+	color: #FD600B;
+	line-height: 16px;
+	font-weight: bold;
+}
+
+.pg-breaking-content-doublebox h1 {
+	margin: 0px 0px 15px 0px;
+	padding: 0px;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.pg-breaking-content-doublebox h1 a { color: #FFF; }
+
+.pg-breaking-content-doublebox p {
+	color: #EBEBEB;
+	line-height: 18px;
+	margin: 0px 0px 14px 0px;
+}
+.pg-breaking-content-doublebox p a { color: #EBEBEB; }
+
+.pg-breaking-content-doublebox ul {
+    margin: 0px 10px 15px 1px;
+	padding: 0px;
+    overflow: hidden;
+}
+
+.pg-breaking-content-doublebox ul li {
+    margin: 0px 0px 15px 0px;
+    padding: 5px 0px 0px 12px;
+    background: url('http://images.hvg.hu/static/skins/default/img/altCim/listitem-gray-white.png') no-repeat left 11px;
+}
+
+.pg-breaking-content-doublebox ul li a { color: #FD600B; }
+
+
+.breaking-top-news tr td {
+	padding-right: 10px;
+	padding-bottom: 14px;
+}
+.breaking-top-news a {
+	font-size: 14px;
+	color: #FD600B;
+	line-height: 16px;
+	font-weight: bold;
+}
+
+.pg-breaking-content-box p {
+	line-height: 18px;
+	margin: 0 0 14px 0;
+	font-style: italic;
+}
+
+.pg-breaking-content-box a { color: #FFF }
+
+.shout {
+	border: #484848 1px solid;
+	background: #EDEDED;
+	font-size: 14px;
+	padding: 3px;
+	width: 282px;
+	font-style: normal;
+}
+
+#videofolyam-box {
+	margin: 20px 0 4px 0;
+	background: #464646;
+	border: 1px solid #5f5f5f;
+	height: 248px;
+	width: 288px;
+	overflow: hidden;
+}
+
+#videofolyam-scroller { width: 290px }
+
+#videofolyam-scroller td {
+	height: 217px;
+	text-align: center;
+}
+
+#videofolyam-scroller td h2 {
+	text-align: left;
+	margin: 10px 10px 0 10px;
+}
+
+#videofolyam-box h6 {
+	margin: 0;
+	padding: 9px 0 10px 12px;
+	background: url('http://images.hvg.hu/static/skins/default/img/altCim/stripe.png') repeat-x;
+	font-size: 12px;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	text-shadow: 1px 1px 1px #343434;
+}
+
+#videofolyam-box h4 {
+	margin: 0 0 10px 0;
+	padding: 9px 0 3px 12px;
+	font-size: 12px;
+	color: #FFF;
+	letter-spacing: 1px;
+	text-shadow: 1px 1px 1px #343434;
+}
+
+#videofolyam-box a {
+	color: #FD600B;
+	text-transform: none;
+}
+
+#videofolyam-box a.imageframe4 {
+	display: block;
+	width: 246px;
+	margin: 0 10px;
+	padding: 2px;
+	border: 1px solid #251F1E;
+}
+
+#videofolyam-scroller h2 {
+	margin: 5px;
+	padding: 0;
+}
+.tetszett {
+	display:block;
+	float:left;
+	font-weight:bold;
+	line-height:22px;
+	padding-right:20px;
+}
+.graph { border: 4px solid #251F1E; }
+.graph img { border: 1px solid #544E4C; }
+
+img#shoutTextLink, img#shoutPhotoLink, img#shoutVideoLink {cursor:pointer;}

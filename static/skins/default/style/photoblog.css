@@ -1,0 +1,86 @@
+.photo-slider {
+	text-align: center;
+	width: 928px;
+	height: 770px;
+	overflow: hidden;
+	margin: 0 0 0 21px;
+}
+	.photo-slider .viewport {
+		width: 928px;
+		height: 770px;
+		overflow: hidden;
+		position: relative;
+	}
+	.photo-slider .overview {
+		position: absolute;
+		left: 0;
+		top: 0;
+		padding: 0;
+	}
+	.photo-slider .buttons {
+		display: block;
+		position: absolute;
+		top: 300px;
+		width: 60px;
+		height: 60px;
+		background: #000 url(/skins/default/img/arrows.png) no-repeat;
+		text-decoration: none;
+	}
+		.photo-slider .buttons.prev { left: 4px; }
+		.photo-slider .buttons.next { right: 4px; background-position: 0 -60px; }
+		.photo-slider .buttons:hover { background-color: #f60; }
+
+	.photo-slider .overview li {
+		float: left;
+		width: 928px;
+	}
+	#pg-content-wide h1 { margin: 0 0 15px; }
+	#pg-content-wide .photo-slider  p {
+		width: 900px;
+		margin: 0 auto 10px;
+	}
+	.photo-slider small {
+		color: #7e7e7e;
+		font: bold 11px Arial;
+	}
+		.photo-slider small a { color: #7e7e7e; }
+
+/**/
+
+.grey {
+	background: #f7f7f7;
+	border-top: 1px solid #e4e4e4;
+	border-bottom: 1px solid #e4e4e4;
+	padding: 20px 0 20px 30px;
+	margin: 0 -10px;
+	zoom: 1;
+}
+.col {
+	float: left;
+	width: 220px;
+	margin: 0 17px 0 0;
+}
+
+	#pg-content-wide .col img.framed { margin: 0; }
+
+	.col strong {
+		color: #333;
+		display: block;
+		margin: 7px 0;
+		text-transform: uppercase;
+	}
+	#pg-content-wide .col h2 {
+		font-size: 14px;
+		margin: 0;
+	}
+
+/**/
+
+a.fl,
+a.fr {
+	margin: 0 20px 20px;
+	background: #ffad65;
+	color: #fff;
+	padding: 3px 5px 5px 4px;
+	font-weight: bold;
+}

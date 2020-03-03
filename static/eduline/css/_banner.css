@@ -1,0 +1,53 @@
+﻿
+/***************
+ * Név:         _banner.css
+ * Leírás:      eculine.hu bannerek css
+ * Keletkezés:  2007. 08. 22.
+ * Fejlesztő:   Zsibrita György
+ * FONTOS:		Éles site-on belül a kommenteket távolítsuk el.
+ ****************/
+
+#pg-advert {
+	margin:0;
+	/*height:114px;*/
+
+	width:960px;
+	overflow:hidden;
+	background: url("../img/topadbg.gif") repeat-x;
+}
+.banner0 {
+	padding:10px 0 10px 24px;
+	/*height:124px;*/
+    background: url("../img/h_hird.jpg")  no-repeat top left;
+
+}
+
+.banner2 
+{   width:124px;
+    text-align:center;
+    padding:2px 2px 24px 2px;
+    background:#dfdfdf url(../img/vert_hird.gif) no-repeat bottom left;
+    overflow:hidden;
+    margin:0 auto 8px auto;
+    }
+    
+    
+#pg-advert-bottom {
+    clear:left;
+	margin:0 auto;
+    
+	width:956px;
+	overflow:hidden;
+	background:url("../img/bottom_b_bg.gif") repeat-x;
+}
+
+
+.banner1 {
+	padding:0 0 0 24px;
+	/*height:70px;*/
+	margin:15px auto;
+	    background: url("../img/hirdetes.gif")  no-repeat top left;
+}
+.banner12 {
+	#margin-top: -4px
+}

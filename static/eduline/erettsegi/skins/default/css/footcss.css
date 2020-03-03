@@ -1,0 +1,74 @@
+/* CSS Document */
+
+.pg-footer
+{
+	width:940px;
+	margin:0 auto;
+	padding: 10px 0;
+	background: #d7e1e8;
+}
+
+.pg-foot-top
+{
+/*	background:url(/skins/default/img/pgfoot-top.gif) no-repeat; */
+	padding: 5px;
+}
+
+.pg-foot-top p
+{
+font-family:Tahoma,Verdana, Arial, Helvetica, sans-serif;
+	color: #3a5d93;
+	font-size:11px;
+	font-weight:bold;
+	text-align:center;
+	margin:0;
+	padding:0;
+}
+
+.pg-foot-top a:link , .pg-foot-top a:visited
+{
+	text-decoration:none;
+	color: #3a5d93;
+	font-size:11px;
+	font-weight:bold;
+}
+
+.pg-foot-top a:hover
+{
+	text-decoration:underline;
+	color: #3a5d93;
+	font-size:11px;
+	font-weight:bold;
+}
+
+.pg-foot-btm
+{
+	/*background:url(/skins/default/img/pgfoot-btm.gif) no-repeat;*/
+	padding: 5px;
+	line-height:14px;
+}
+
+.pg-foot-btm p
+{
+	font: normal 10px Arial, Helvetica, sans-serif;
+	color: #6b9cbb;
+	text-align:center;
+	padding: 0;
+	margin:0;
+}
+
+.pg-foot-btm a:link , .pg-foot-btm a:visited
+{
+	text-decoration:none;
+	color: #6b9cbb;
+	font-size:11px;
+	font-weight:normal;
+}
+
+.pg-foot-btm a:hover
+{
+	text-decoration:underline;
+	color: #6b9cbb;
+	font-size:11px;
+	font-weight:normal;
+}

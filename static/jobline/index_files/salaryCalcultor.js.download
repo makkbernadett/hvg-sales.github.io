@@ -1,0 +1,171 @@
+﻿Jobline.SalaryCalc = Jobline.SalaryCalc || {
+    //TODO [Refactor] include everything below.
+    //$(document) events into Inti: $('document').ready method.
+}
+
+// --- CHILDREN PICKER ---
+$(document).on('click mouseenter mouseleave', '.l-children_picker a.child', function (e) {
+    var $children_picker = $(this).closest('.l-children_picker');
+
+    // select stars
+    if (e.type === 'mouseenter') {
+        // mouseenter
+        $(this).add($(this).prevAll()).addClass('hover');
+    } else if (e.type === 'mouseleave') {
+        // mouseleave
+        $children_picker.find('.child').removeClass('hover');
+    } else if (e.type === 'click') {
+        // click
+        if ($(this).hasClass('selected')) {
+            // if selected, deselect it
+            $children_picker.find('.child').removeClass('selected');
+            $children_picker.find('input[type="hidden"]').val(0);
+            return;
+        }
+
+        $children_picker.find('.child').removeClass('selected');
+        $(this).add($(this).prevAll()).addClass('selected');
+    }
+
+    // fill in value
+    $children_picker.find('input[type="hidden"]').val($children_picker.find('.child.selected').length);
+});
+
+$(document).on('keyup', '#brutto', function (e) {
+    var brutto = $(this).val();
+    var isMarried = $('#hazas').prop('checked');
+    var children = $('#gyerekek').val();
+    var nettosalary = CalculateNettoSalary(brutto, children, isMarried);
+    $('#netto').val(nettosalary);   
+});
+
+$(document).on('keyup', '#netto', function (e) {
+    var netto = $(this).val();
+    var isMarried = $('#hazas').prop('checked');
+    var children = $('#gyerekek').val();
+    var bruttosalary = CalculateBruttoSalary(netto, children, isMarried);
+    $('#brutto').val(bruttosalary);
+});
+
+$(document).on('click', '.l-children_picker a.child', function (e) {
+    var isMarried = $('#hazas').prop('checked');
+    var children = $('#gyerekek').val();
+    if ($('#brutto').val() > 0) {
+        var brutto = $('#brutto').val();
+        var nettosalary = CalculateNettoSalary(brutto, children, isMarried);
+        $('#netto').val(nettosalary);
+    }
+});
+
+$(document).on('click', '#hazas', function (e) {
+    var isMarried = $('#hazas').prop('checked');
+    var children = $('#gyerekek').val();
+    if ($('#brutto').val() > 0) {
+        var brutto = $('#brutto').val();
+        var nettosalary = CalculateNettoSalary(brutto, children, isMarried);
+        $('#netto').val(nettosalary);
+    }
+});
+
+function CalculateBruttoSalary(netto, children, isMarried) {
+    var szamitottBrutto, szamitottNetto, maxBrutto, minBrutto, i;
+
+    minBrutto = 0;
+    maxBrutto = 4 * netto;
+
+    szamitottBrutto = Math.round((minBrutto + maxBrutto) / 2);
+
+    for (i = 0; i < 50; i++) {
+        szamitottNetto = Math.round(CalculateNettoSalary(szamitottBrutto, children, isMarried));
+
+        if (minBrutto > maxBrutto || szamitottNetto == netto) {
+            break;
+        }
+
+        szamitottNetto > netto
+            ? (maxBrutto = szamitottBrutto)
+            : (minBrutto = szamitottBrutto);
+
+        szamitottBrutto = Math.round((minBrutto + maxBrutto) / 2);
+    }
+
+    return Math.round(szamitottBrutto);
+}
+
+function CalculateNettoSalary(brutto, children, isMarried) {
+    var szja = 0.15;
+    var evesBrutto = brutto * 12;
+    var evesAdoalap = evesBrutto;
+
+    // Kedvezmenyek
+    var evesSzamitottCsaladiKedvezmeny = getCsaladiKedvezmeny(children) * 12;
+
+    var evesCsaladiKedvezmeny;
+    if ((evesAdoalap - evesSzamitottCsaladiKedvezmeny) * szja < 0) {
+        evesCsaladiKedvezmeny = evesAdoalap / szja;
+    }
+    else {
+        evesCsaladiKedvezmeny = evesSzamitottCsaladiKedvezmeny;
+    }
+
+    var evesFrissHazasKedvezmeny = getFrissHazasKedvezmeny(isMarried) * 12;
+    var evesAdo = Math.max((evesAdoalap - evesCsaladiKedvezmeny - evesFrissHazasKedvezmeny) * szja, 0);
+
+    // Jarulekok
+    var evesNyugdijJarulek = getNyugdijJarulek(evesBrutto);
+    var evesEgeszsegbiztositasiJarulek = getEgeszsegbiztositasiJarulek(evesBrutto);
+    var evesMunkaeroPiaciJarulek = getMunkaeroPiaciJarulek(evesBrutto);
+
+    var jarulekKorrekcio = 0;
+    if (evesSzamitottCsaladiKedvezmeny + evesFrissHazasKedvezmeny > evesAdoalap) {
+        jarulekKorrekcio = Math.min((evesSzamitottCsaladiKedvezmeny + evesFrissHazasKedvezmeny - evesAdoalap) * szja, (evesNyugdijJarulek + evesEgeszsegbiztositasiJarulek));
+    }
+    var evesJarulek = Math.max(evesNyugdijJarulek + evesEgeszsegbiztositasiJarulek - jarulekKorrekcio, 0) + evesMunkaeroPiaciJarulek;
+
+    // Levonasok
+    var netto, szamitottNetto;
+    szamitottNetto = (evesBrutto - evesAdo - evesJarulek) / 12;
+
+    if (szamitottNetto > brutto) {
+        var adoKorrekcio = Math.max((evesAdoalap - evesCsaladiKedvezmeny) * szja, 0);
+        netto = (evesBrutto - adoKorrekcio - evesJarulek) / 12;
+    }
+    else {
+        netto = szamitottNetto;
+    }
+
+    return Math.round(netto);
+}
+
+function getCsaladiKedvezmeny(children) {
+    if (children === 0) {
+        return 0;
+    }
+    else if (children === 1) {
+        return 66670;
+    }
+    else if (children === 2) {
+        return 166660; // 2*83330
+    }
+    else {
+        return children * 220000;
+    }
+}
+
+function getFrissHazasKedvezmeny(isMarried) {
+    return (isMarried ? 33335 : 0);
+}
+
+function getNyugdijJarulek(brutto) {
+    return brutto * 0.1;
+}
+
+function getEgeszsegbiztositasiJarulek(brutto) {
+    // penz (3%) - es termeszetbeli (4%)
+    return brutto * 0.07;
+}
+
+function getMunkaeroPiaciJarulek(brutto) {
+    return brutto * 0.015;
+}
+

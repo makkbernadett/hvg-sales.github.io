@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>EKHO kalkulátor</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Script-Type" content="text/javascript" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="stylesheet" type="text/css" href="css/calculator.local-1.0.0.css" />
+    <link rel="stylesheet" type="text/css" href="css/calculator.reset-1.0.0.css" />
+    <link rel="stylesheet" type="text/css" href="css/calculator.common-1.0.0.css" />
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/knockout-3.2.0.min.js"></script>
+    <script src="js/knockout.mapping-2.4.1.min.js"></script>
+    <script src="js/knockout.hvg-1.0.2.min.js"></script>
+</head>
+
+<body>
+    <div class="hvg-calculator">
+        <div class="hvg-block">
+            <table width="100%">
+                <thead>
+                    <tr>
+                        <th width="60%"><p><b>Megnevezés</b></p></th>
+                        <th width="28%"><p>&nbsp;</p></th>
+                        <th width="12%"><p>&nbsp;</p></th>
+                    </tr>
+                </thead>
+                <tfoot>
+                    <tr>
+                        <td><p>Havi bruttó munkabér összege</p></td>
+                        <td><p><input type="text" class="hvg-input" data-bind="value:input.A.format,hasFocus:input.A.focus,select:true" maxlength="9" /></p></td>
+                        <td><p>Forint</p></td>
+                    </tr><tr>
+                        <td>
+                            <p>Ebből nem ekho-s összeg, de nem nyugdíjas esetén legalább 149.000 Ft</p>
+                            <p data-bind="visible:output.V"><span class="hvg-error">Nem nyugdíjas esetén legalább a minimálbér, azaz 149.000 Ft</span></p>
+                        </td>
+                        <td><p><input type="text" class="hvg-input" data-bind="value:input.B.format,hasFocus:input.B.focus,select:true" maxlength="9" /></p></td>
+                        <td><p>Forint</p></td>
+                    </tr><tr>
+                        <td><p>Nyugdíjas</p></td>
+                        <td colspan="2"><p><select class="hvg-select" data-bind="value:input.C().value"><option value="">Válasszon!</option><option value="1">Igen</option><option value="-1">Nem</option></select></p></td>
+                    </tr><tr>
+                    </tr><tr>
+                        <td><p>Hivatásos sportoló</p></td>
+                        <td colspan="2"><p><select class="hvg-select" data-bind="value:input.G().value"><option value="">Válasszon!</option><option value="1">Igen</option><option value="-1">Nem</option></select></p></td>
+                    </tr><tr>
+                        <td><p>Családi pótlék számításánál figyelembe vett eltartottak száma</p></td>
+                        <td><p><input type="text" class="hvg-input" data-bind="value:input.D.format,hasFocus:input.D.focus,select:true" maxlength="2" /></p></td>
+                        <td><p>Fő</p></td>
+                    </tr><tr>
+                        <td><p>Ebből kedvezményezett eltartottak száma</p></td>
+                        <td><p><input type="text" class="hvg-input" data-bind="value:input.E.format,hasFocus:input.E.focus,select:true" maxlength="2" /></p></td>
+                        <td><p>Fő</p></td>
+                    </tr><tr>
+                        <td><p>Családi járulékkedvezmény érvényesítése</p></td>
+                        <td colspan="2"><p><select class="hvg-select" data-bind="value:input.F().value"><option value="">Válasszon!</option><option value="1">Igen</option><option value="-1">Nem</option></select></p></td>
+                    </tr><tr class="hvg-button">
+                        <td class="hvg-center" colspan="4"><p><button type="button" data-bind="click:calculate" value="0"></button></p></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+
+        <div class="hvg-block" data-bind="visible:output.Z">
+            <table width="100%">
+                <thead>
+                    <tr>
+                        <th width="60%"><p><b>Megnevezés</b></p></th>
+                        <th width="28%"><p>&nbsp;</p></th>
+                        <th width="12%"><p>&nbsp;</p></th>
+                    </tr>
+                </thead>
+                <tfoot>
+                    <tr>
+                        <td><p><b>Családi adóalap-csökkentő kedvezmény</b></p></td>
+                        <td><p><input type="text" class="hvg-output" data-bind="value:output.A.format" readonly="readonly" /></p></td>
+                        <td><p>Forint</p></td>
+                    </tr><tr>
+                        <td><p><b>Havi ekho-alap</b></p></td>
+                        <td><p><input type="text" class="hvg-output" data-bind="value:output.B.format" readonly="readonly" /></p></td>
+                        <td><p>Forint</p></td>
+                    </tr><tr>
+                        <td><p>Fizetendő ekho (15%)</p></td>
+                        <td><p><input type="text" class="hvg-output" data-bind="value:output.C.format" readonly="readonly" /></p></td>
+                        <td><p>Forint</p></td>
+                    </tr><tr>
+                        <td><p>Fizetendő ekho (11,1%)</p></td>
+                        <td><p><input type="text" class="hvg-output" data-bind="value:output.D.format" readonly="readonly" /></p></td>
+                        <td><p>Forint</p></td>
+                    </tr><tr>
+                        <td><p>A nem ekho-s összegből érvényesített családi adóalap-csökkentő kedvezmény</p></td>
+                        <td><p><input type="text" class="hvg-output" data-bind="value:output.E.format" readonly="readonly" /></p></td>
+                        <td><p>Forint</p></td>
+                    </tr><tr>
+                        <td><p>Havi szja alap</p></td>
+                        <td><p><input type="text" class="hvg-output" data-bind="value:output.F.format" readonly="readonly" /></p></td>
+                        <td><p>Forint</p></td>
+                    </tr><tr>
+                        <td><p>Fizetendő szja (15%)</p></td>
+                        <td><p><input type="text" class="hvg-output" data-bind="value:output.G.format" readonly="readonly" /></p></td>
+                        <td><p>Forint</p></td>
+                    </tr><tr>
+                        <td><p>Természetbeni egészségbiztosítási járulék (4%)</p></td>
+                        <td><p><input type="text" class="hvg-output" data-bind="value:output.H.format" readonly="readonly" /></p></td>
+                        <td><p>Forint</p></td>
+                    </tr><tr>
+                        <td><p>Pénzbeli egészségbiztosítási járulék (3%)</p></td>
+                        <td><p><input type="text" class="hvg-output" data-bind="value:output.J.format" readonly="readonly" /></p></td>
+                        <td><p>Forint</p></td>
+                    </tr><tr>
+                        <td><p>Nyugdíjjárulék (10%)</p></td>
+                        <td><p><input type="text" class="hvg-output" data-bind="value:output.K.format" readonly="readonly" /></p></td>
+                        <td><p>Forint</p></td>
+                    </tr><tr>
+                        <td><p>Munkaerőpiaci járulék (1,5%)</p></td>
+                        <td><p><input type="text" class="hvg-output" data-bind="value:output.L.format" readonly="readonly" /></p></td>
+                        <td><p>Forint</p></td>
+                    </tr><tr>
+                        <td><p>Családi járulék-kedvezmény</p></td>
+                        <td><p><input type="text" class="hvg-output" data-bind="value:output.M.format" readonly="readonly" /></p></td>
+                        <td><p>Forint</p></td>
+                    </tr><tr>
+                        <td><p><b>Családi járulék-kedvezménnyel csökkentett járulék</b></p></td>
+                        <td><p><input type="text" class="hvg-output" data-bind="value:output.N.format" readonly="readonly" /></p></td>
+                        <td><p>Forint</p></td>
+                    </tr><tr>
+                        <td><p><b>Nettó bér kifizetés</b></p></td>
+                        <td><p><input type="text" class="hvg-output" data-bind="value:output.O.format" readonly="readonly" /></p></td>
+                        <td><p>Forint</p></td>
+                    </tr><tr>
+                        <td><p>Nem érvényesíthető családi adóalap-csökkentő kedvezmény</p></td>
+                        <td><p><input type="text" class="hvg-output" data-bind="value:output.P.format" readonly="readonly" /></p></td>
+                        <td><p>Forint</p></td>
+                    </tr><tr>
+                        <td><p>A munkáltatót terhelő ekho (19,5%)</p></td>
+                        <td><p><input type="text" class="hvg-output" data-bind="value:output.Q.format" readonly="readonly" /></p></td>
+                        <td><p>Forint</p></td>
+                    </tr><tr>
+                        <td><p>A munkáltatót terhelő szocho (19,5%)</p></td>
+                        <td><p><input type="text" class="hvg-output" data-bind="value:output.R.format" readonly="readonly" /></p></td>
+                        <td><p>Forint</p></td>
+                    </tr><tr>
+                        <td><p>A munkáltatót terhelő szakképzési hozzájárulás (1,5%)</p></td>
+                        <td><p><input type="text" class="hvg-output" data-bind="value:output.S.format" readonly="readonly" /></p></td>
+                        <td><p>Forint</p></td>
+                    </tr><tr>
+                        <td><p><b>A munkáltatót terhelő összes költség</b></p></td>
+                        <td><p><input type="text" class="hvg-output" data-bind="value:output.T.format" readonly="readonly" /></p></td>
+                        <td><p>Forint</p></td>
+                    </tr><tr>
+                        <td><p>Nettó bérkifizetés aránya a munkáltatót terhelő összes költségben</p></td>
+                        <td><p><input type="text" class="hvg-output" data-bind="value:output.U.format" readonly="readonly" /></p></td>
+                        <td><p>%</p></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        function Field(value, level) {
+            this.value = ko.observable(value);
+            this.level = ko.observable(level);
+            this.focus = ko.observable(false);
+        }
+
+        function CalculatorInput() {
+            var self = this;
+
+            self.A = ko.observable(new Field(null, 0)).extend({ formatToCurrency: 0 });
+            self.B = ko.observable(new Field(null, 0)).extend({ formatToCurrency: 0 });
+            self.C = ko.observable(new Field(null, 0));
+            self.D = ko.observable(new Field(null, 0)).extend({ formatToNumber: 0 });
+            self.E = ko.observable(new Field(null, 0)).extend({ formatToNumber: 0 });
+            self.F = ko.observable(new Field(null, 0));
+            self.G = ko.observable(new Field(null, 0));
+        }
+
+        function CalculatorOutput() {
+            var self = this;
+
+            self.A = ko.observable().extend({ formatToCurrency: 0 });
+            self.B = ko.observable().extend({ formatToCurrency: 0 });
+            self.C = ko.observable().extend({ formatToCurrency: 0 });
+            self.D = ko.observable().extend({ formatToCurrency: 0 });
+            self.E = ko.observable().extend({ formatToCurrency: 0 });
+            self.F = ko.observable().extend({ formatToCurrency: 0 });
+            self.G = ko.observable().extend({ formatToCurrency: 0 });
+            self.H = ko.observable().extend({ formatToCurrency: 0 });
+            self.J = ko.observable().extend({ formatToCurrency: 0 });
+            self.K = ko.observable().extend({ formatToCurrency: 0 });
+            self.L = ko.observable().extend({ formatToCurrency: 0 });
+            self.M = ko.observable().extend({ formatToCurrency: 0 });
+            self.N = ko.observable().extend({ formatToCurrency: 0 });
+            self.O = ko.observable().extend({ formatToCurrency: 0 });
+            self.P = ko.observable().extend({ formatToCurrency: 0 });
+            self.Q = ko.observable().extend({ formatToCurrency: 0 });
+            self.R = ko.observable().extend({ formatToCurrency: 0 });
+            self.S = ko.observable().extend({ formatToCurrency: 0 });
+            self.T = ko.observable().extend({ formatToCurrency: 0 });
+            self.U = ko.observable().extend({ formatToPercent: 2 });
+            self.V = ko.observable();
+            self.Z = ko.observable();
+        }
+
+        var CustomMappingOptions = {
+            // applying custom mapping options
+        };
+
+        function CalculateMethod(input) {
+            var result = {};
+
+            console.log(input.E);
+            console.log(input.F);
+            result.A = Math.floor(input.D.value == 1 ? 66670 : input.D.value == 2 ? input.E.value*133330: input.E.value*220000);
+            result.B = Math.floor(input.A.value - input.B.value);
+            result.C = Math.floor(input.C.value > 0 ? 0 : result.B * 0.15 + 0.5);
+            result.D = Math.floor(input.C.value > 0 ? result.B * 0.111 : 0);
+            result.E = Math.floor(Math.min(input.B.value, result.A));
+            result.F = Math.floor(input.B.value);
+            result.G = Math.floor(((result.F - result.E) * 0.15) + 0.5);
+            result.H = Math.floor(input.B.value * 0.04 + 0.5);
+            result.J = Math.floor(input.C.value > 0 ? 0 : input.B.value * 0.03 + 0.5);
+            result.K = Math.floor(input.B.value * 0.1 + 0.5);
+            result.L = Math.floor(input.C.value > 0 ? 0 : input.B.value * 0.015 + 0.5);
+
+            result.M = Math.floor(result.H + result.J + result.K);
+            result.M = Math.floor(Math.min((result.A - input.B.value) * 0.15, result.M));
+            result.M = Math.floor(Math.min(input.B.value * 0.17, result.M));
+            result.M = Math.floor(input.F.value > 0 && result.A >= input.B.value ? result.M : 0);
+
+            result.N = Math.floor(result.H + result.J + result.K + result.L - result.M);
+            result.O = Math.floor(input.A.value - result.C - result.D - result.G - result.N);
+
+            result.P = Math.floor(((result.A - input.B.value) * 0.15 - input.B.value * 0.14) / 0.15);
+            result.P = Math.floor(input.C.value > 0 ? result.P : result.A - input.B.value * (1 + 0.17 / 0.15));
+            result.P = Math.floor(input.C.value < 0 && input.F.value < 0 ? result.A - input.B.value : result.P);
+            result.P = Math.floor(Math.max(result.P, 0));
+
+            result.Q = Math.floor(input.G.value == 1 ? 0 : result.B * 0.195 + 0.5);
+            result.R = Math.floor(input.B.value * 0.195 + 0.5);
+            result.S = Math.floor(input.B.value * 0.015 + 0.5);
+            result.T = Math.floor(input.A.value + result.Q + result.R + result.S);
+            result.U = result.T > 0 ? result.O / result.T : 0;
+            result.V = input.B.value < 149000 && input.C.value < 0 ? true : false;
+
+            return {
+                A: result.A,
+                B: result.B,
+                C: result.C,
+                D: result.D,
+                E: result.E,
+                F: result.F,
+                G: result.G,
+                H: result.H,
+                J: result.J,
+                K: result.K,
+                L: result.L,
+                M: result.M,
+                N: result.N,
+                O: result.O,
+                P: result.P,
+                Q: result.Q,
+                R: result.R,
+                S: result.S,
+                T: result.T,
+                U: result.U,
+                V: result.V,
+                Z: true
+            };
+        }
+
+        function CalculationsViewModel(input, output, method, customMappingOptions) {
+            var self = this;
+
+            self.input = input;
+            self.output = output;
+            self.method = method;
+            self.customMappingOptions = customMappingOptions;
+
+            self.calculate = function(data, event) {
+                // send POST request and display results
+                var level = event.target.value;
+                var url = window.location.href + "/" + level;
+                var input = ko.toJSON(self.input, function(key, value) {
+                    // filter not required fields
+                    if (value instanceof Object && value.hasOwnProperty('level') && value.level > level) {
+                        return;
+                    }
+
+                    return value;
+                });
+
+                //self.calculateRemote(url, input, resultCallback, errorCallback);
+                self.calculateLocal(url, input, resultCallback, errorCallback);
+            }
+
+            self.calculateRemote = function(url, input, resultCallback, errorCallback) {
+                $.ajax({
+                    url: url,
+                    type: "POST",
+                    data: input,
+                    contentType: "application/json; charset=utf-8",
+                    dataType: "json"
+                })
+                .done(resultCallback)
+                .fail(errorCallback);
+            }
+
+            self.calculateLocal = function(url, input, resultCallback, errorCallback) {
+                try {
+                    var result = CalculateMethod(JSON.parse(input));
+                    resultCallback(result);
+                } catch(err) {
+                    errorCallback(err);
+                }
+            }
+
+            var resultCallback = function(result) {
+                // if success then map the result on the output
+                console.log(result);
+                ko.mapping.fromJS(result, self.customMappingOptions, self.output);
+            };
+
+            var errorCallback = function(jqXHR, textStatus) {
+                // if error show validation errors or request failed msg
+                console.log(jqXHR);
+            };
+        }
+
+        ko.applyBindings(new CalculationsViewModel(
+            new CalculatorInput(),
+            new CalculatorOutput(),
+            CalculateMethod,
+            CustomMappingOptions
+        ));
+    </script>
+</body>
+</html>

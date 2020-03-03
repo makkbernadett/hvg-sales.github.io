@@ -1,0 +1,79 @@
+
+.footer {
+	background: @white;
+	color: @gray;
+	border-top: 1px solid @offwhite;
+	padding: 2*@margin-default 0 4*@margin-default 0 ;
+	text-align: center;
+	font-size: 0.875rem;
+	position: relative;
+	a {
+		color: @gray;
+		display: inline-block;
+		padding: 0;
+	}
+
+	.footer__socialpanel {
+		margin: 0 0 20px 0;
+		a{
+			text-decoration: none;
+			margin: 0 10px;
+			&:before{
+				font-family: 'hvg-iconset';
+				font-size: 1.625em;
+				color: @silver;
+			}
+			&.icon-brand-rss:before{
+				font-size: 1.375em;
+			}
+			&:hover{
+				&:before{
+					.transition(color 0.25s ease);
+				}
+				&.icon-brand-rss:before{
+					color: @hvg-orange;
+				}
+				&.icon-brand-facebook:before{
+					color: @facebook-color;
+				}
+				&.icon-brand-twitter:before{
+					color: @twitter-color;
+				}
+				&.icon-brand-youtube:before{
+					color: @youtube-color;
+				}
+				&.icon-brand-apple:before{
+					color: @alto;
+				}
+				&.icon-brand-android:before{
+					color: @android-color;
+				}
+
+			}
+		}
+	}
+	.footer__bottom-menu{
+		li {
+			display: inline-block;
+			font-size: 0.875rem;
+			padding: 0 10px;
+			a{
+				text-decoration: none;
+				&:hover{
+					color: @hvg-orange;
+				}
+			}
+		}
+
+	}
+
+	.footer__hosting {
+		background: url(https://static.hvgrt.hu/hosting/hosting.png);
+		width: 173px;
+		height: 72px;
+		position: absolute;
+		right: 20px;
+		bottom: 25px;
+	}
+}
+

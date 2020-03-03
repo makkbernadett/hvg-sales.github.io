@@ -1,0 +1,144 @@
+<table cellspacing="0" cellpadding="0">
+    <tbody>
+        <tr>
+            <td style="padding: 10px 0; background: #484848; font-size: 0; border-bottom: 5px solid #C10000;">
+                <center>
+                    <table style="margin: 0 auto; width: 600px; font-size: 14px;" cellspacing="0" cellpadding="0">
+                        <tbody>
+                            <tr>
+                                <td valign="bottom" style="padding:0px;"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </center>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <center>
+                    <table cellspacing="0" cellpadding="0">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <table style="margin: 0 auto; width: 560px;" cellspacing="0" cellpadding="0">
+                                        <tbody>
+                                            <tr>
+                                                <td align="right">
+                                                    <p style="margin:0;font-size:12px;color:#333;">@DateTime.Now.Date.ToString("yyyy/MM/dd")</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td align="left">
+                                                    <p style="margin:20px 0;font-size:16px;"> <strong>Tisztelt Szakértőnk, Munkatársunk!</strong> </p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <table style="margin: 0 auto; width: 560px; font-size: 14px; color: #343434; text-align: left;" cellspacing="0" cellpadding="0">
+                                        <tbody>
+
+                                            @if (Model.ExpertZeroDayToExpireQuestionAlerts.Count > 0)
+                                            {
+                                                <tr>
+                                                    <td style="font-family: Arial, Helvetica, sans-serif;font-size: 16px;line-height: 130%;color: #343434;">
+
+                                                        <strong>Az önnek kiosztott alábbi kérdés(ek) határideje ma lejár.</strong> <br />
+                                                        <div>Kérjük, hogy küldje el még ma a válaszát.</div>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td style="font-family: Arial, Helvetica, sans-serif;font-size: 5px;line-height: 130%;color: #343434;height: 10px;">
+                                                        &nbsp;
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="font-family: Arial, Helvetica, sans-serif;font-size: 16px;line-height: 130%;color: #343434;">
+
+
+                                                        @foreach (var item in Model.ExpertZeroDayToExpireQuestionAlerts)
+                                                        {
+                                                            <table width="100%" cellpadding="10" cellspacing="0" style="background: #f6f6f6;margin-bottom: 5px;">
+                                                                <tr>
+                                                                    <td style="font-family: Arial, Helvetica, sans-serif;font-size: 16px;line-height: 130%;color: #343434;">
+                                                                        <p>Kérdésfeltevő: @item.QuestionerEmail</p>
+                                                                        <p>
+                                                                            A kérdés címe:
+                                                                            @item.QuestionTitle
+                                                                        </p>
+                                                                        <p>
+                                                                            A kérdés szövege: <br />
+                                                                            @item.QuestionText
+                                                                        </p>
+                                                                        <p>
+                                                                            <a href="@item.QuestionURL">Ide kattintva</a> megválaszolhatja a feltett kérdést!
+                                                                        </p>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+
+                                                        }
+                                                    </td>
+                                                </tr>
+                                            }
+
+                                            @if (Model.ExpertOneDayToExpireQuestionAlerts.Count > 0)
+                                            {
+                                                <tr>
+                                                    <td style="font-family: Arial, Helvetica, sans-serif;font-size: 16px;line-height: 130%;color: #343434;">
+                                                        <strong>Az önnek kiosztott alábbi kérdés(ek) határideje egy nap múlva lejár.</strong> <br />
+                                                        <div>Kérjük, hogy küldje el holnapig a válaszát.</div>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td style="font-family: Arial, Helvetica, sans-serif;font-size: 5px;line-height: 130%;color: #343434;height: 10px;">
+                                                        &nbsp;
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="font-family: Arial, Helvetica, sans-serif;font-size: 16px;line-height: 130%;color: #343434;">
+
+                                                        @foreach (var item in Model.ExpertOneDayToExpireQuestionAlerts)
+                                                        {
+                                                            <table width="100%" cellpadding="10" cellspacing="0" style="background: #f6f6f6;margin-bottom: 5px;">
+                                                                <tr>
+                                                                    <td style="font-family: Arial, Helvetica, sans-serif;font-size: 16px;line-height: 130%;color: #343434;">
+                                                                        <p>Kérdésfeltevő: @item.QuestionerEmail</p>
+                                                                        <p>
+                                                                            A kérdés címe:
+                                                                            @item.QuestionTitle
+                                                                        </p>
+                                                                        <p>
+                                                                            A kérdés szövege: <br />
+                                                                            @item.QuestionText
+                                                                        </p>
+                                                                        <p>
+                                                                            <a href="@item.QuestionURL">Ide kattintva</a> megválaszolhatja a feltett kérdést!
+                                                                        </p>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        }
+                                                    </td>
+                                                </tr>
+                                            }
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </center>
+            </td>
+        </tr>
+        <tr>
+            <td style="background:#333333;padding:10px 20px;color:#D9D9D9;">
+                <!-- lablec -->
+                <p style="margin:10px 0;font-size:12px;">Ez egy automatikusan generált e-mail üzenet, kérjük, ne válaszoljon rá.</p>
+                <p style="margin:10px 0;font-size:12px;">© Minden jog fenntartva! 2009 - 2018 HVG Kiadó Zrt.</p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+

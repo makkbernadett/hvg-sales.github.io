@@ -1,0 +1,300 @@
+﻿#weatherinfo select {
+    font-size: 11px;
+    font-weight: bold;
+    color: #004276;
+    border: none;
+}
+
+#searchform {
+    margin: 5px 0;
+    padding: 5px;
+    float: right;
+    background: #F7F7F7;
+}
+
+#headmenu #searchform { margin: 14px 0 }
+
+#searchform input {
+    float: left;
+    margin: 1px 0 0 0;
+}
+
+#searchform input#searchterm {
+    width: 175px;
+    margin: 0 5px 0 0;
+    padding: 3px 0 4px 25px;
+    border: solid 1px #CCC;
+    font-size: 11px;
+    color: #878787;
+    background: #FFF url(http://images.hvg.hu/static/skins/default/img/magnifier.gif) no-repeat 5px 3px;
+}
+
+form.greyboxbody label { line-height: 18px }
+
+form.greyboxbody label.greylabel {
+    font-size: 11px;
+    font-weight: bold;
+    color: #888;
+}
+
+form.greyboxbody .textinput {
+    height: 22px;
+    width: 298px;
+    margin: 2px 0 5px 0;
+    border: solid 1px #CCC;
+}
+
+form.greyboxbody #w168 {
+    width: 168px;
+    margin: 2px 0 7px 0;
+}
+
+.radioinput {
+    height: 13px;
+    width: 13px;
+    margin: 2px 5px 0 0;
+    padding: 0;
+    float: left;
+}
+
+#commentForm {
+    width: 600px;
+    margin: 10px auto;
+    background: #EDEDED;
+    overflow: hidden;
+}
+
+#commentForm label {
+    float: left;
+    margin: 5px 10px 0 0;
+    font-size: 11px;
+    font-weight: bold;
+    color: #707070;
+}
+
+#commentForm fieldset {
+    margin: 10px 5px 5px 5px;
+    padding: 10px 0 10px 10px;
+    background: #F7F7F7;
+    border: none;
+}
+
+#commentForm fieldset input {
+    width: 100px;
+    border: solid 1px #CCC;
+}
+
+#commentForm fieldset #formFBBottomWrapper label input {
+    float: left;
+    height: auto;
+    width: auto;
+    padding: 0;
+    border: none;
+}
+
+#commentForm fieldset label input {
+    margin: 0 5px 0 0;
+    vertical-align: middle;    
+}
+
+#commentForm fieldset .half input,
+#registration fieldset input,
+#registration fieldset select {
+    width: 257px;
+    padding: 3px 3px 4px 3px;
+    font-size: 11px;
+    color: #7E7E7E;
+    border: solid 1px #CCC;
+}
+
+#registration fieldset select {
+    width: 165px;
+    margin: 0 100px 0 0;
+}
+    
+#registration fieldset input, #registration fieldset select { float: right }
+
+#commentForm fieldset textarea {
+    height: 100px;
+    width: 568px;
+    margin: 0 0 10px 0;
+    color: #111C24;
+    border: solid 1px #CCC;
+}
+
+#commentForm fieldset .inputimg {
+    float: right;
+    height: 20px;
+    width: 54px;
+    margin: 5px 10px 0 10px;
+    border: none;
+}
+
+#pg-sidecolumn .smallbox input.centered { margin: 7px auto 0 auto }
+
+#mailForm p label, #offerForm p label, #loginForm p label, .shoutForm p label{
+    display: block;
+	width: 370px;
+	margin: 5px 5px 5px 6px;
+	padding: 0;
+    position: absolute;
+    z-index:10;
+    top: 0;
+    left: 0;
+    color: #777;
+}
+
+#mailForm p br, #offerForm p br, #loginForm p br, .shoutForm p br{ display: none }
+
+#mailForm p input, #mailForm p textarea, #offerForm p input, #offerForm p textarea, #loginForm p input, #loginForm p textarea, .shoutForm p input, .shoutForm p textarea{
+	display: block;
+	width: 370px;
+	margin: 0;
+	padding: 4px;
+}
+
+#mailForm p textarea, #offerForm p textarea, #loginForm p textarea, .shoutForm p textarea {
+	padding: 2px;
+	width: 374px;
+}
+
+#mailForm p textarea, #mailForm p input, #offerForm p textarea, #offerForm p input, #loginForm p textarea, #loginForm p input, .shoutForm p textarea, .shoutForm p input{ border: solid 1px #CCC }
+
+#mailForm p.conditions input, #offerForm p.conditions input, #loginForm p.conditions input, .shoutForm p.conditions input {
+    display: inline;
+    width: auto;
+    border: none;
+    vertical-align: middle;
+}
+
+#mailForm p input.centered, #offerForm p input.centered, #loginForm p input.centered, .shoutForm p input.centered {
+    width: auto;
+    margin: auto;
+    border: none;
+}
+
+form#innersearch {
+    margin: 0;
+    padding: 5px;
+    background: #EDEDED;
+}
+
+#innersearch label {
+    font-size: 11px;
+    font-weight: bold;
+    color: #878787;
+    vertical-align: middle;
+}
+
+#innersearch input, #innersearch select {
+    width: 157px;
+    margin: 5px;
+    padding: 2px 5px;
+    border: 1px solid #CCC;
+    background: #FFF;
+}
+
+#innersearch select {
+    padding: 1px 1px 1px 0;
+    float: left;
+}
+
+#innersearch input#extendedSearch {
+    width: auto;
+    margin: 5px 5px 5px 0;
+    padding: 2px;
+    border-top: 3px solid #CCC;
+    border-bottom: 3px solid #CCC;
+    border-left: none;
+    border-right: 3px solid #CCC;
+}
+
+#innersearch input#word {
+    width: 516px;
+    float: left;
+    margin: 5px 0 5px 5px;
+    padding: 4px 5px;
+    border-top: 3px solid #CCC;
+    border-bottom: 3px solid #CCC;
+    border-left: 3px solid #CCC;
+    border-right: none;
+    font-weight: bold;
+}
+
+#innersearch input#from, #innersearch input#to { vertical-align: middle }
+
+#innersearch fieldset {
+    margin: 0;
+    padding: 5px;
+    border: none;
+    background: #F7F7F7;
+}
+
+#registration { margin: 10px }
+
+#registration fieldset label {
+    display: block;
+    padding: 5px 10px;
+    font-weight: bold;
+    color: #7E7E7E;
+    line-height: 22px;
+    overflow: hidden;
+}
+
+#registration .highlighted { background: #F7F7F7 }
+
+#registration fieldset {
+    padding: 0 0 15px 0;
+    border: none;
+    border-bottom: solid 1px #EDEDED;
+}
+
+#registration table td input { vertical-align: middle }
+
+#registration table td label { font-weight: bold }
+
+#registration label.widelabel {
+    width: 527px;
+    padding: 0 10px 20px 10px;
+    float: right;
+    color: #7E7E7E;
+}
+
+#registration input.centered { margin: 0 auto 20px auto }
+
+.coversearch {
+    border: solid 5px #EDEDED;
+    background: #F7F7F7;
+    overflow: hidden;
+}
+
+.coversearch form {
+    padding: 5px;
+    float: left;
+    overflow: hidden;
+}
+
+#pg-content .coversearch hr { margin: 0 10px }
+
+.coversearch input, .coversearch select {
+    margin: 5px;
+    padding: 2px 5px;
+    border: solid 1px #CCC;
+}
+
+.coversearch select { width: 90px }
+
+.coversearch input { width: 120px }
+
+.coversearch select { padding: 1px 1px 1px }
+
+.coversearch input.inputimg {
+    width: auto;
+    float: right;
+    padding: 0;
+    border: none;
+}
+
+#coverBottomForm { width: 270px }
+
+#coverBottomForm select { width: 195px }

@@ -1,0 +1,16 @@
+/*
+ * Stylesheet extension for local run v1.0.0
+ * License: MIT (http://www.opensource.org/licenses/mit-license.php)
+ */
+
+body {
+
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+}
+
+div.hvg-calculator {
+
+    border: 1px solid #d9d9d9;
+}

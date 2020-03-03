@@ -1,0 +1,945 @@
+body{
+  margin: 0;
+}
+
+ul {
+    padding: 0 0 0 40px !important;
+}
+
+ul li{
+  list-style-type: square;
+  padding: 0 0 5px 10px !important;
+}
+
+h2{
+  background: #458ea1;
+  padding: 15px;
+  margin-bottom: 25px;
+  color: #fff !important;
+  text-transform: uppercase;
+}
+
+.product-title{
+  font-size: 2rem;
+}
+.product-title-padding{
+  height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* HEADER-ben lévő speciális betűtípus*/
+
+@font-face {
+	font-family: 'SolanoGothicMVBProBd';
+  src: url('../fonts/SolanoGothicMVBProBd.otf');
+}
+
+/* FEJLÉC - navbar - teljes mértékben ctrl+c / ctrl+v a jelenlegi oldalról*/
+
+#header_wrapper{
+  width: 100%;
+    height: 72px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background: #282828 url(https://adozona.hu//skins/default/images/header_bg.png) repeat-x;
+    box-shadow: 0 2px 4px rgba(0,0,0,.3);
+    border-bottom: 5px solid #c10000;
+}
+
+#logo {
+    background: url(https://adozona.hu/skins/default/images/logo_adozona.png) top no-repeat;
+    display: inline-block;
+    width: 137px;
+    height: 86px;
+}
+
+#logo:hover {
+    background-position: 0 -86px;
+}
+
+#page{
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  padding-top: 70px;
+  z-index: 1;
+  position: relative;
+  word-break: break-all;
+}
+
+/* HEADER */
+.block-GDPR-title{
+  padding: 40px 0 70px 0;
+  display: block;
+  align-items: center;
+  color: #909090;
+  text-align: center;
+  word-break: break-word;
+  justify-content: center;
+  position: relative;
+}
+.document-templates{
+  font-weight: 700;
+  text-align: center;
+  color: #000;
+  font-size: 100px !important;
+  font-family: 'SolanoGothicMVBProBd';
+  line-height: 85px;
+}
+.document-templates-title{
+  padding: 0px;
+  background: #458ea1;
+  color: #fff;
+  font-weight: 400;
+  text-align: center;
+  width: 602px;
+  font-size: 37px !important;
+  margin: 0 auto;
+  padding: 10px;
+}
+.professional-partner{
+  display: flex;
+  justify-content: center;
+  padding: 4px;
+  background: #c02026;
+  border-radius: 15px;
+  width: 275px;
+  text-transform: uppercase;
+  font-weight: 600;
+  word-break: break-all;
+  color: #fff;
+  transition: 0.4s;
+  margin-left: 15px;
+}
+.professional-partner:hover{
+  color: #fff;
+  text-decoration: none;
+  transition: 0.4s;
+  background: #e72525;
+}
+.header-img{
+  width: 410px;
+}
+.block-header{
+  padding: 60px 0 60px;
+  display: block;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+  height: auto;
+  word-break: break-word;
+  justify-content: center;
+  position: relative;
+}
+.img-background-responsive{
+  display: none;
+}
+#more {display: none;}
+
+.header-text{
+  display: block;
+  margin: 0 auto !important;
+  text-align: center !important;
+  padding: 20px;
+  word-break: break-all;
+}
+.hvg_kiadvanyok_logo{
+  width: 150px;
+  margin-left: 108px;
+  }
+.header-text h1{
+  color: #565656;
+  font-size: 34px !important;
+}
+.header-text span{
+  color: #565656;
+  font-size: 24px;
+  word-break: break-word;
+}
+.block-GDPR-black{
+  background: #458ea1;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 23px;
+  padding: 25px;
+  font-weight: 600;
+  word-break: break-word;
+}
+.block-GDPR-black span{
+  padding: 0px;
+}
+/*
+.btn-scroll {
+    position: absolute !important;
+    bottom: 80px;
+    left: 50%;
+    z-index: 2;
+    display: inline-block;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    color: red;
+    letter-spacing: .1em;
+    text-decoration: none;
+    transition: opacity .3s;
+    margin-top: 20px !important;
+}
+.btn-scroll span {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 30px;
+    height: 50px;
+    margin-left: -15px;
+    border: 2px solid grey;
+    border-radius: 50px;
+    box-sizing: border-box;
+    margin-top: 50px !important;
+  }
+.btn-scroll span::before {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    content: '';
+    width: 6px;
+    height: 6px;
+    margin-left: -3px;
+    background-color: grey;
+    border-radius: 100%;
+    -webkit-animation: scrollAnimate 2s infinite;
+    animation: scrollAnimate 2s infinite;
+    box-sizing: border-box;
+}
+
+*/
+/* ÚTMUTATÓ A DOKUMENTUMOK HASZNÁLATÁHOZ - 2. block*/
+
+.block-gdpr-print h2{
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 0px !important;
+}
+
+.desktop-header{
+  display: flex;
+  justify-content: space-between;
+}
+.topics-padding{
+  padding: 50px 0 50px;
+  margin: 0 auto;
+}
+
+.guide-to-documents{
+  height: auto;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 30px;
+  color: #565656;
+}
+
+.guide-to-documents button, .impresszum-block button, .block-aszf button, .block-gdpr-print button{
+  width: 150px;
+  padding: 5px;
+  background: #458ea1;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  border: none;
+  color: #fff;
+  transition: 0.4s;
+  margin-top: 30px;
+}
+
+.links a{
+  font-weight: 700;
+}
+
+.guide-to-documents button:hover, .impresszum-block button:hover, .block-aszf button:hover{
+  background: #337e91;
+  transition: 0.4s;
+}
+.guide-to-documents h2{
+  color: #fff;
+  margin-top: 5px;
+}
+
+.impresszum-block{
+  height: auto;
+  padding: 30px;
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+.container-block{
+  width: 100%;
+  display: flex;
+  word-break: break-word;
+}
+.pagewrapper{
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  border: 1px solid silver;
+  box-shadow: 0 0 4px rgba(0,0,0,.3);
+}
+.content{ display:none; background:#CCC}
+.test{ margin-top:10px; padding: 10px;}
+
+
+.section{
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  position: absolute;
+  background: red;
+  justify-content: center;
+  padding: 15px;
+}
+
+.block-product{
+  display: block;
+  width: 100%;
+  color: #565656;
+  text-align: center;
+  background: #f6f6f6;
+  height: auto;
+  justify-content: center;
+  padding: 15px;
+  word-break: break-word;
+  padding-bottom: 60px;
+}
+
+.block-aszf{
+  display: block;
+  width: 100%;
+  height: auto;
+  padding: 0 0 50px;
+  word-break: break-word;
+}
+
+.block-gdpr-print{
+  display: flex;
+  width: 100%;
+  color: #565656;
+  height: auto;
+  justify-content: center;
+  padding: 30px 0 0 0;
+  word-break: break-word;
+}
+
+.logo-gdpr-header{
+  display: block;
+  margin: 0 auto;
+  width: 150px;
+  align-items: flex-end;
+  position: absolute;
+  top: 315px;
+}
+
+.logo-gdpr-fixed{
+  display: block;
+  margin: 0 auto;
+  width: 200px;
+}
+
+#product-section{
+  color: #fff;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#2b2b33+0,384756+33,066dab+100 */
+  background: rgb(43,43,51); /* Old browsers */
+  background: -moz-linear-gradient(left, rgba(43,43,51,1) 0%, rgba(56,71,86,1) 33%, rgba(6,109,171,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, rgba(43,43,51,1) 0%,rgba(56,71,86,1) 33%,rgba(6,109,171,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, rgba(43,43,51,1) 0%,rgba(56,71,86,1) 33%,rgba(6,109,171,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2b2b33', endColorstr='#066dab',GradientType=1 ); /* IE6-9 */
+  word-break: break-word;
+}
+
+#product-section h2{
+  color: #fff !important;
+  text-transform: uppercase;
+  margin-top: 60px;
+  background: none;
+}
+
+#product-section section{
+  padding-bottom: 50px;
+  border-bottom: 3px solid #fff;
+}
+
+.product-box{
+  padding: 25px 0 25px;
+  transition: 0.6s;
+}
+.product-box:hover{
+  background: #59678e;
+  box-shadow: 0 5px 0px 0 rgba(0,0,0,0.1), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.product-box h5{
+    text-transform: uppercase;
+}
+.inactive-product-box{
+  color: #a9a9a9 !important;
+}
+.inactive-product-box:hover{
+    background: none;
+    box-shadow: none;
+}
+.inactive-product-box, .truncate-wrapper .closed button .more{
+  color: #a9a9a9;
+}
+
+
+.button {
+  border-radius: 4px;
+  background-color: #78a420;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 20px;
+  padding: 5px;
+  width: 160px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+.button-inactive{
+  border-radius: 4px;
+  background-color: #787878;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 20px;
+  padding: 5px;
+  width: 160px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+.button-inactive span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+  text-transform: uppercase;
+  padding-top: 0px;
+}
+
+.button-order{
+  border-radius: 4px;
+  background: #c02026;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 20px;
+  padding: 5px;
+  width: 160px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+.all-download-btn-section{
+  margin-top: 40px;
+  display: flex;
+  justify-content: flex-end;
+
+}
+.all-download-btn{
+  width: 350px;
+  min-width: 485px;
+  padding: 15px;
+}
+
+.all-download-btn:hover{
+    background: #c02026;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+  text-transform: uppercase;
+  padding-top: 0px;
+}
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.button:hover span {
+  padding-right: 25px;
+}
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.button-order:hover{
+  background: #a70000;
+}
+
+.button-order span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+  text-transform: uppercase;
+  padding-top: 0px;
+}
+.button-order span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.button-order:hover span {
+  padding-right: 25px;
+}
+.button-order:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+
+
+.block-bg h1{
+      border-bottom: 2px solid #f0f0f0;
+      padding-bottom: 8px;
+      font-family: Solano Gothic MVB Pro;
+      color: #000;
+}
+.toggle-title{
+  cursor: pointer;
+  border-bottom: 2px solid #c02026;
+  font-size: 20px;
+  margin: 0px;
+  line-height: 1;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.widget-accordion {
+  .accordion-toggle {
+    background: deepskyblue;
+    color: #fff;
+    font-weight: bold;
+    padding: 2rem;
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+    &.opened {
+      background: tomato;
+      margin-bottom: 0;
+    }
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.accordion-content {
+  padding: 15px;
+  margin-bottom: 2rem;
+  color: #000;
+}
+.accordion-content span{
+  padding-bottom: 30px;
+}
+
+.lead{
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !im;
+font-size: 1rem !important;
+font-weight: 400 !important;
+padding-bottom: 15px;
+}
+
+h1{
+  font-family: Arial,sans-serif;
+  text-transform: uppercase;
+  text-align: left;
+  font-size: 45px !important;
+}
+h2{
+  padding-top: 15px;
+  font-family: Arial,sans-serif;
+}
+.first-collum-box{
+  background: red;
+  height: 500px;
+}
+.second-collum-box{
+  background: green;
+  height: 500px;
+}
+.egy{
+  background: red;
+  width:
+}
+.ketto{
+  background: green;
+}
+
+.block-bg{
+  background: #fff;
+  padding: 15px;
+  transition: 0.4s;
+  margin-bottom: 25px;
+  width: 15px !important;
+  display: block;
+  text-align: left;
+}
+
+@-webkit-keyframes scrollAnimate {
+  0% {
+    -webkit-transform: translate(0, 0);
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    -webkit-transform: translate(0, 20px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes scrollAnimate {
+  0% {
+    transform: translate(0, 0);
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    transform: translate(0, 20px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.topics{
+  display: flex;
+  justify-content: center;
+  text-decoration: none !important;
+  color: #fff;
+  font-size: 25px;
+  padding: 10px;
+  transition: 0.3s;
+  word-wrap: break-word;
+  text-transform: uppercase;
+  margin: 10px 0 10px;
+  border-radius: 5px;
+}
+.topics:hover{
+  transition: 0.3s;
+  background: #c02026;
+  color: #fff;
+  padding: 15px;
+  box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.product-1{
+  background: #44a8aa;
+}
+.product-2{
+  background: #4395a3;
+}
+.product-3{
+  background: #4685a4;
+}
+.product-4{
+  background: #097e9f;
+}
+
+
+.btn-hover{
+  transition: 0.5s;
+}
+.btn-hover:hover{
+  margin-top: -30px;
+  transition: 0.5s;
+  box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+
+.free-btn-box{
+  background: #fff;
+  height: auto;
+  position: relative;
+      word-wrap: break-word;
+}
+
+.free-btn-box p{
+  padding: 20px;
+}
+.premium-btn-box p{
+  padding: 20px;
+}
+
+
+
+
+
+
+/* footer */
+
+#footerwrapper {
+    width: 100%;
+    background: #333;
+}
+#footer {
+    padding: 20px 20px 20px 19px;
+    background: #333;
+    font-size: 13px;
+    line-height: 21px;
+    color: #ccc;
+    max-width: 990px;
+    margin: 0 auto;
+}
+#footer ul {
+    padding-bottom: 10px;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+ul li {
+    background: url(/skins/default/images/arrow_left.png) no-repeat 0 7px;
+    padding: 0 0 10px 10px;
+    margin: 0;
+}
+
+li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+#footer li {
+    display: inline;
+    padding: 0 11px 0 0;
+    margin-right: 3px;
+    background: url(https://adozona.hu//skins/default/images/bullet.png) no-repeat right 6px;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+/*
+.sdf{
+  background: #fff;
+  padding: 15px;
+  transition: 0.4s;
+  cursor: pointer;
+  margin-bottom: 25px;
+  width: 15px !important;
+}
+.sdf:hover{
+  margin-top: -5px;
+  transition: 0.4s;
+  background: #c02026;
+  color: #fff;
+  font-weight: 700;
+  box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+*/
+.show-aszf a, .show-aszf a:hover{
+  color: #fff !important;
+  text-decoration: none !important;
+}
+.show-more a{
+  color: #fff;
+  text-decoration: underline;
+}
+.show-more a:hover{
+    color: #fff;
+}
+.show-more {
+    padding: 10px 0;
+    text-align: center;
+}
+.show-more-red{
+  color: #c02026 !important;
+  text-decoration: none !important;
+  font-weight: 500;
+}
+
+.block-gdpr-print, .gdpr-log{
+  display: block;
+  align-items: center;
+}
+
+.bg-folgomb{
+  background: url(../img/foldgomb.png) no-repeat center;
+  background-position: top;
+  background-size: contain;
+}
+
+.lakat{
+  width: 100px;
+  display: block;
+  padding: 15px;
+  cursor: pointer;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+.lakat:hover {
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+.lakat-header:hover{
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+
+#return-to-top {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    background: #c02026;
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    display: none;
+    -webkit-transition: all 0.6s;
+    -moz-transition: all 0.6s;
+    -ms-transition: all 0.6s;
+    -o-transition: all 0.6s;
+    transition: all 0.6s;
+}
+#return-to-top i {
+    color: #fff !important;
+    margin: 0;
+    position: relative;
+    left: 14px;
+    top: 9px;
+    font-size: 19px;
+    -webkit-transition: all 0.6s;
+    -moz-transition: all 0.6s;
+    -ms-transition: all 0.6s;
+    -o-transition: all 0.6s;
+    transition: all 0.6s;
+}
+#return-to-top:hover {
+        background: #c10000;
+}
+#return-to-top:hover i {
+    color: #fff;
+    top: 5px;
+}
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+.active, .accordion:hover {
+    background-color: #ccc;
+}
+
+.accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2212";
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+/* KINYIT - BECSUK Tovább... / Kevesebb... Tartalmi blockok*/
+
+.truncate-wrapper button .less {
+  display: block;
+}
+.truncate-wrapper button .more {
+  display: none;
+}
+.truncate-wrapper.closed .truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-height: 30px;
+  white-space: nowrap;
+}
+.truncate-wrapper.closed button .less {
+  display: none;
+}
+.truncate-wrapper.closed button .more {
+  display: block;
+}
+
+.accordion-box {
+  display: inline-block;
+  width: 100%;
+  word-break: break-word;
+  padding: 15px 0 15px;
+}
+
+
+/* KINYIT - BECSUK Tovább... / Kevesebb... TERMÉKEK kinyit becsuk gombjai*/
+
+.truncate-button, .less, .more {
+    border: none;
+    background: none;
+    color: #fff;
+    text-decoration: underline;
+    cursor: pointer;
+    text-decoration: none;
+}

@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="hu">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+	<title>e-comm</title>
+	<!--Add to homescreen Android, Apple and Window-->
+	<meta name="mobile-web-app-capable" content="yes">
+	<link rel="icon" sizes="192x192" href="images/android-desktop.png">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="apple-mobile-web-app-title" content="Material Design Lite">
+	<link rel="apple-touch-icon-precomposed" href="images/ios-desktop.png">
+	<meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+	<meta name="msapplication-TileColor" content="#3372DF">
+
+	<link rel="shortcut icon" href="images/favicon.png">
+
+	<!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
+	<link rel="canonical" href="">
+
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,900&amp;subset=latin-ext" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"      rel="stylesheet">
+
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!--<link rel="stylesheet" href="css/style.css">-->
+	<link rel="stylesheet/less" type="text/css" href="css/styles.less" />
+	
+</head>
+<body class="onload">
+<header class="fixed-top navbar-light container-fluid">
+	<nav class="navbar  container justify-content-between">
+		<a class="navbar-brand" href="#"><img src="images/jobline-logo.svg" style="width: 100px;"></a>
+		<div class="navmenu-primary ml-auto d-flex align-items-center">
+			<a href="#" class="ml-0 white"><i class="material-icons">shopping_cart</i><span class="badge badge-pill badge-danger">4</span></a>	
+			<div class="ml-0 white">Üdv, NFadmin! </div>	
+			<button class="navbar-toggler white" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+				☰
+			</button>
+			<div class="collapse navbar-collapse" id="navbarText">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="#">Dashboard <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Jelentkezések</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Hirdetéseim</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Mentett CV</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">CV kereső</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Saját adatlap</a>
+					</li>	
+					<li class="nav-item">
+						<a class="nav-link" href="#">Kilépés</a>
+					</li>						
+				</ul>
+			</div>	
+		</div>
+	</nav>
+</header>
+<div class="container-fluid">
+	<div class="container">
+	
+
+		<div class="row">
+			<div class="col-md-12 mb-5 materialBoxShadowLight bg-white content">
+				<div class="title-block d-block w-100 mb-2">
+					<h1 class="text-left  main-title">Áttekintő</h1>
+				</div>	
+				
+				<!--hirdetés szerkesztő címsor és gombok - sticky lesz-->
+				<div class="row contingent-block">
+					<div class="col-md d-flex align-items-center">
+						<span class="h3">Hirdetés létrehozása/szerkesztése</span>
+						
+						<div class="ml-auto text-right">
+							<a href="#" class="btn btn-action bg-blue"><i class="material-icons">save</i> Elmentem</a>
+							<a href="#" class="btn  btn-action bg-orange"><i class="material-icons">play_circle_filled</i> Aktiválom</a>
+							<a href="#" class="btn  btn-action bg-white"><i class="material-icons">visibility</i> Előnézet</a>
+						</div>
+
+					</div>					
+				</div>
+				
+				<!--hirdetés szerkesztő blokk-->
+				<div class="row ad_edit my-3">
+					<!--hirdetész szerkesztő navigáció-->
+					<div class="col-md-4 ad_edit-nav">
+						<h4>Hirdetés részleteinek szerkesztése</h4>					
+						<nav class="ad_edit-nav-list">
+							<ul class="list-unstyled">
+								<li><a href="6_1_editad.html">Alapadatok <span class="badge badge-success ml-auto"><i class="material-icons">check</i></span></a></li>
+								<li><a href="6_2_editad.html">Cég részletei <span class="badge badge-success ml-auto">85%</span></a></li>
+								<li><a href="6_3_editad.html">Állás részletei <span class="badge badge-success ml-auto"><i class="material-icons">check</i></span></a></li>
+								<li><a href="6_4_editad.html" class="active">Jelölt részletei</a></li>
+								<li><a href="6_5_editad.html">Hirdetés beállításai</a></li>
+							</ul>
+						</nav>
+						<h4>Aktív hirdetés részletek</h4>
+						<nav class="ad_edit-nav-list">
+							<ul class="list-unstyled">						
+								<li><a href="6_6_editad.html">Statisztikák</a></li>
+								<li><a href="6_7_editad.html">Jelentkezések</a></li>
+							</ul>
+						</nav>						
+					</div>
+					
+					<!--szerkesztés-->
+					<div class="col-md-8 ad_edit-block pl-5 pr-5">
+					
+						<!--Alapadatok szerkesztése-->
+						<h2>Jelölt részletei</h2>
+						
+						<div class="ad_edit-form">
+						
+							<div class="form-group">
+								<label>
+									Nyelvtudás
+									<a href="#" data-toggle="tooltip" data-placement="auto top" class="ml-auto badge badge-pill badge-light" title="Segítség a kitöltéshez - plain text">?</a>
+								</label>
+								<div class="d-flex position-languages">
+									<div class="col-md px-0">
+										<span class="label w-100 d-block">Nyelv</span>
+										<input id="english" name="positionLanguage" type="radio" class="custom-chkradio">
+										<label for="english" class="sub-label">angol</label>
+
+										<input id="german" name="positionLanguage" type="radio" class="custom-chkradio">
+										<label for="german" class="sub-label">német</label>	
+
+										<input id="french" name="positionLanguage" type="radio" class="custom-chkradio">
+										<label for="french" class="sub-label">francia</label>
+
+										<input type="text" class="form-control d-inline-flex w-25"  placeholder="Egyéb nyelv">										
+									</div>
+									<div class="col-md px-0 position-languages">
+										<span class="label w-100 d-block">Szint <small class="text-muted">(többet is választhat)</small></span>
+										<input id="basicLanguage" name="positionLanguageLevel" type="checkbox" class="custom-chkradio">
+										<label for="basicLanguage" class="sub-label">alap</label>
+
+										<input id="intermediateLanguage" name="positionLanguageLevel" type="checkbox" class="custom-chkradio">
+										<label for="intermediateLanguage" class="sub-label">közép</label>	
+
+										<input id="expertLanguage" name="positionLanguageLevel" type="checkbox" class="custom-chkradio">
+										<label for="expertLanguage" class="sub-label">felső</label>
+									
+									</div>										
+								</div>
+								<button class="btn btn-action bg-green my-3">+ További nyelv hozzáadása</button>
+							</div>	
+							
+							<div class="form-group">
+								<label>
+									Képzettség <small class="text-muted">(többet is választhat)</small>
+									<a href="#" data-toggle="tooltip" data-placement="auto top" class="ml-auto badge badge-pill badge-light" title="Segítség a kitöltéshez - plain text">?</a>
+								</label>
+								<div class="d-flex position-languages">
+									<div class="col-md px-0">
+										<input id="basicEducation" name="positionEducation" type="checkbox" class="custom-chkradio">
+										<label for="basicEducation" class="sub-label">alapfokú</label>
+
+										<input id="intermediateEducation" name="positionEducation" type="checkbox" class="custom-chkradio">
+										<label for="intermediateEducation" class="sub-label">középfokú</label>	
+
+										<input id="expertEducation" name="positionEducation" type="checkbox" class="custom-chkradio">
+										<label for="expertEducation" class="sub-label">felsőfokú</label>									
+									</div>									
+								</div>
+								<button class="btn btn-action bg-green my-3">+ Képzettség hozzáadása</button>
+								
+							</div>																				
+							
+							<div class="form-group">
+								<label>
+									Tapasztalat <small class="text-muted">(többet is választhat)</small>
+									<a href="#" data-toggle="tooltip" data-placement="auto top" class="ml-auto badge badge-pill badge-light" title="Segítség a kitöltéshez - plain text">?</a>
+								</label>
+								<div class="d-flex position-languages">
+									<div class="col-md px-0">
+
+										<input id="experienceNone" name="positionExperience" type="checkbox" class="custom-chkradio">
+										<label for="experienceNone" class="sub-label">pályakezdő /tapasztalat nélkül</label>
+										
+										<input id="experience1_2" name="positionExperience" type="checkbox" class="custom-chkradio">
+										<label for="experience1_2" class="sub-label">1 - 2 év tapasztalat</label>
+
+										<input id="experience3_5" name="positionExperience" type="checkbox" class="custom-chkradio">
+										<label for="experience3_5" class="sub-label">3 - 5 év tapasztalat</label>	
+
+										<input id="experience5plus" name="positionExperience" type="checkbox" class="custom-chkradio">
+										<label for="experience5plus" class="sub-label">5+ év tapasztalat</label>	
+										
+									</div>									
+								</div>
+								
+							</div>								
+							
+							<div class="form-group">
+								<label for="positionExperience">
+									Tapasztalat
+									<a href="#" data-toggle="tooltip" data-placement="auto top" class="ml-auto badge badge-pill badge-light" title="Segítség a kitöltéshez - plain text">?</a>
+								</label>
+								<input type="text" class="form-control" id="positionExperience" aria-describedby="positionHelp" placeholder="Írja be az elvárt tapasztalati szintet">
+							</div>								
+							
+							<a href="#" class="btn btn-action bg-blue"><i class="material-icons">save</i> Mentés és tovább</a>
+						
+						</div>
+						
+					</div>					
+				</div>
+
+			
+			</div>
+		</div>
+		
+
+		
+	</div>
+</div>
+<footer class="footer container-fluid">
+  <div class="container">
+	<span class="text-muted">Lábléc Jobline Satöbbi</span>
+  </div>
+</footer>
+
+<!--HELP blokk, minden oldalon megegyezik-->
+<div id="helpBox" class="help-box">
+	<div class="helpTitle"><i class="material-icons">help_outline</i> Segíthetünk?</div>
+	<div class="d-flex align-items-center helpContent">
+		<div>
+			<h3>Elakadt? További kérdése van? Segítünk!</h3>
+		</div>
+		<div>
+			Keressen minket a következő elérhetőségeken:
+					
+			<i class="material-icons">phone</i> +36-1-123-1234
+
+			<i class="material-icons">mail_outline</i> helpjobinfo.hu	
+		</div>	
+		<div class="helpClose" id="helpClose">
+			<i class="material-icons">close</i>
+		</div>
+	</div>
+</div>
+	
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="js/bootstrap.bundle.js"></script>		
+	
+<script src="js/less.min.js"></script>		
+<script src="js/ecom.js"></script>	
+
+<div class="testnav">
+<div class="togglenav"></div>
+<div class="d-flex align-items-center">
+<a href="5_dashboard.html" class="back">&laquo;Dashboard</a>
+<strong>A hirdetés szerkesztőt a bal oldali menüvel lehet léptetni</strong>
+
+</div>
+</div>
+<script>
+$(document).ready(function() {
+	$('.togglenav').click(function(){
+		$('.testnav').toggleClass('close');
+	});
+});
+</script>
+
+</body>
+</html>

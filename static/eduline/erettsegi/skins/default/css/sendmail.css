@@ -1,0 +1,142 @@
+.sendboxmain {
+	width:410px;
+	padding:5px;
+	padding-top:0px;
+ }
+
+.sendboxmain h6 {
+	color:rgb(0,0,0);
+	text-align:center;
+	font-family:Tahoma,Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+}
+
+.sendboxhead {
+ 	width:400px;
+	height:30px;
+	background:url(/skins/default/img/cikksepar.gif) repeat-x bottom left;
+	margin:0;
+	padding:0;
+	padding-bottom:5px;
+ }
+
+.sendboxhead h5 {
+	font-family:Tahoma,Verdana, Arial, Helvetica, sans-serif;
+	font-size:13px;
+ 	width:620px;
+	height:30px;
+	background:url(/skins/default/img/tech-small-logo.gif) no-repeat top left;
+	padding-left:90px;
+	padding-top:0px;
+ }
+
+.send-box {
+	margin: 21px auto;
+	width:390px;
+	display:block;
+	padding:0;
+}
+
+.send-box a:link, .send-box a:visited {
+
+	font-family:Tahoma,Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color:rgb(0,120,206);
+	text-decoration: none;
+}
+
+.send-box a:hover {
+	color:rgb(0,120,206);
+	text-decoration: underline;
+
+	font-family:Tahoma,Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+}
+
+.send-box-head {
+ 	width:390px;
+	height:5px;
+	background:url(/skins/default/img/sendboxhead.gif) no-repeat top left;
+	display:block;
+	overflow:hidden;
+	margin:0;
+	padding:0;
+}
+
+.send-box-content {
+ 	width:390px;
+	background-image:url(/skins/default/img/sendbox_bg.gif);
+	background-repeat:repeat-y;
+	display:block;
+	
+	margin:0;
+	padding:0;
+}
+
+.send-box-content td{
+	margin:0;
+	padding:10px;
+}
+
+.send-box-content p{
+ 	color:rgb(127, 115, 103);
+	font-weight: normal;
+	font-family:Tahoma,Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	margin:2px;
+	padding:0;
+	padding-top:4px;
+	padding-bottom:4px;
+	line-height:16px;
+}
+
+.send-box-content span{
+ 	color:rgb(127, 115, 103);
+	font-weight: normal;
+	font-family:Tahoma,Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	margin:2px;
+	padding:0;
+}
+
+.send-box-content label{
+	width:150px;
+	font-weight: bold;
+ 	color:rgb(127, 115, 103);
+	font-family:Tahoma,Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	text-align:right;
+	display:block;
+}
+.send-box-footer {
+	width:390px;
+	height:5px;
+	background:url(/skins/default/img/sendbox_bottom.gif) no-repeat top left;
+	display:block;
+	overflow:hidden;
+	margin:0;
+	padding:0;
+}
+
+.form-inputpost{
+	border:solid 1px #C3C3C3;
+	color:#000000;
+	font-family:Tahoma,Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	text-align:left;
+	display:block;
+	margin:0;
+	padding:0;
+	height:18px;
+}
+
+.form-inputpostarea{
+	border:solid 1px #C3C3C3;
+	color:#000000;
+	font-family:Tahoma,Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	text-align:left;
+	display:block;
+	margin:0;
+	padding:0;
+}

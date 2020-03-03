@@ -1,0 +1,45 @@
+﻿.searchContainer {
+   position: abosolute;
+   z-index: 9;
+}
+
+.searchContainer > span {
+   position: relative;
+   z-index: 2;
+   top:120px;
+   left: 78px;
+}
+.searchContainer > form {
+ 	position: relative;
+    width: 100%;
+    top:70px;
+    min-height: 417px;
+    z-index: 6;
+    background: rgba(0, 0, 0, 0.8);
+	margin:-3px 0px 0px 0px;
+    padding: 5px 0px 0px 0px;
+}
+
+.sectionContainer {
+   position: abosolute;
+   z-index: 9;
+}
+
+.sectionContainer > span {
+   position: relative;
+   z-index: 2;
+   top:120px;
+   left: 15px;
+}
+
+.sectionContainer > form {
+ 	position: relative;
+    width: 100%;
+   top:70px;
+    min-height: 417px;
+    z-index: 6;
+    background: rgba(0, 0, 0, 0.8);
+	margin:-3px 0px 0px 0px;
+    padding: 5px 0px 0px 0px;
+}
+

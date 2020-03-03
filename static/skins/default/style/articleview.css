@@ -1,0 +1,71 @@
+.article-pager {
+	background: #f7f7f7 url(/skins/default/img/vertical-line.png) center top repeat-y;
+	border: 1px solid #E7E7E7;
+	font-weight: bold;
+	font-size: 15px;
+	width: 598px;
+	padding: 15px 0;
+	min-height: 55px;
+	margin: 15px auto;
+}
+.article-pager a {
+	width: 209px;
+	position: relative;
+}
+.article-pager .fl { padding: 10px 30px 0 60px; }
+.article-pager .fr { padding: 10px 60px 0 30px; }
+
+.article-pager span {
+    background: #5c5c5c url(/skins/default/img/arrows.png) 0 -2px no-repeat;
+    display: block;
+    height: 55px;
+    width: 55px;
+    position: absolute;
+    top: 0;
+}
+.article-pager .fl span { left: -10px; }
+.article-pager .fr span { right: -10px; background-position: -2px -62px; }
+
+.article-pager a:hover span { background-color: #F60; }
+
+.article-pager small {
+    background: url(/skins/default/img/corners.png) no-repeat;
+    display: block;
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    top: 54px;
+}
+.article-pager .fl small { left: -10px; }
+.article-pager .fr small { right: -10px; background-position: -15px 0; }
+
+/**/
+
+.dispute .col { background: url(/skins/default/img/dispute-sep.png) center top repeat-y; }
+.dispute .col div {
+	width: 280px;
+	min-height: 21px;
+}
+.dispute .col .thumbs {
+	background: url(/skins/default/img/thumb-default.png) no-repeat;
+	padding: 0 0 0 30px;
+	width: 250px;
+}
+.dispute .col .thumbs.win { background: url(/skins/default/img/thumb-win.png) no-repeat; }
+.dispute h3 { margin: 5px 0 0; }
+.dispute h5 { margin: 0; }
+#pg-content .dispute hr { margin: 20px 0; }
+
+.dispute .button {
+    background: url(/skins/default/img/dispute-button.png) no-repeat;
+	color: #FFF;
+	display: block;
+	font: bold 15px/38px Arial;
+	width: 100px;
+	height: 38px;
+	padding: 0 0 0 48px;
+	text-shadow: 0 2px 2px #e6620b;
+	text-decoration: none;
+	margin: 0 auto;
+}
+.dispute .button:hover { background-position: 0 -40px; }

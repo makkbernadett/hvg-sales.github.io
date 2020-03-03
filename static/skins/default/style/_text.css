@@ -1,0 +1,472 @@
+﻿p { margin: 0 }
+
+#pg-content-wide p { margin: 0 10px }
+
+#weatherinfo p {
+    margin: 0 0 0 5px;
+    padding: 0;
+    font-size: 24px;
+    color: #7E7E7E;
+}
+
+#weatherinfo p span { font-size: 11px }
+
+#headmenu h6, #pg-menu h3 {
+    display: inline;
+    line-height: 24px;
+}
+
+#pg-menu h3 {
+    padding: 0 0 0 11px;
+	margin: 0;
+	height: 24px;
+	*height: 23px;
+	display: block;
+	float: left;
+    background: url(http://images.hvg.hu/skins/default/img/menubullet.gif) no-repeat 4px center;
+	letter-spacing:-.2px\9;
+}
+
+#pg-menu h3.nomenubullet {
+    padding: 0;
+    background: none;
+}
+
+#pg-menu h3.marked div {
+    background: url(http://images.hvg.hu/skins/default/img/indicator.gif) no-repeat center 18px;
+}
+
+p#toptopics {
+    /*margin: 10px 0;
+    padding: 5px 10px;
+    font-size: 13px;
+    color: #004276;*/
+}
+
+#printtoptopics span {
+    display: block;
+    margin: 10px 0 0 0
+}
+
+p#toptopics span {
+    font-size: 11px;
+    color: #7E7E7E;
+}
+
+h2#quicknews {
+    width: 819px;
+    margin: 0 0 10px 0;
+    font-size: 11px;
+    font-weight: bold;
+    color: #DD0000;
+    background: #F7F7F7;
+    border: solid 1px #E8E8E8;
+    border-left: none;
+    overflow: hidden;
+}
+
+#pg-content p {
+    margin: 10px;
+    color: #7E7E7E;
+}
+
+#pg-content p#regsuccess, #pg-content p#regfail { padding: 0 0 0 20px }
+
+#pg-content p#regsuccess {
+    margin: 20px 10px;
+    background: url(http://images.hvg.hu/skins/default/img/success.jpg) no-repeat left top;
+}
+
+#pg-content p#regfail {
+    margin: 20px 10px 5px 10px;
+    background: url(http://images.hvg.hu/skins/default/img/fail.jpg) no-repeat left top
+}
+
+#pg-content #registration p { margin: 0 }
+
+#pg-content p#regsuccess span { color: #008B08 }
+
+#pg-content p#regfail span { color: #C10000 }
+
+#newsNotification .box p,
+#pg-content .box p,
+#pg-sidecolumn .box p,
+#pg-content .articlecontent p,
+.articlecontent blockquote {
+    margin: 0 10px 10px 10px;
+    color: /*#2C2C2C*/#333;
+}
+
+ #pg-sidecolumn .box p.rightfloatedp {
+	float: right;
+	width: 215px;
+	margin: 0 0 10px 0;
+ }
+#pg-sidecolumn .box p.leftfloatedp {
+	float: left;
+	width: 238px;
+    margin: 0 0 10px 0;
+}
+
+/*#pg-content .box .half p { margin: 0 10px }*/
+
+#pg-content #topicpages p { margin: 0 10px 15px 10px }
+
+#pg-content #topics p { margin: 0 10px }
+
+#pg-content .articlecontent p, .articlecontent table, table.picture { margin: 20px auto }
+
+.articlecontent table.monocle { margin: 20px 0 }
+
+#pg-content .articlecontent table.monocle p { margin: 0 auto }
+
+#pg-content .articlecontent table.articleTable p { margin: 0 }
+
+#pg-content #sharetip p {
+    margin: 5px 0 10px 0;
+    color: #2C2C2C;
+}
+
+#pg-sidecolumn .recommenderbox p { margin: 5px 10px }
+
+.articlecontent blockquote {
+    margin: 20px;
+    font-style: italic;
+}
+
+#pg-content table.picture p {
+    margin: 0 0 10px 0;
+    padding: 0 0 12px 0;
+    font-size: 13px;
+    font-weight: bold;
+    color: #7E7E7E;
+    background: url(http://images.hvg.hu/skins/default/img/separator.gif) repeat-x bottom;
+}
+
+#pg-content .articlemenu p {
+    margin: 0;
+    padding: 10px 5px;
+    color: #7E7E7E;
+}
+
+.adcloud {
+    margin: 5px;
+    line-height: 25px;
+}
+
+.adcloud div{
+    display: inline;
+}
+
+.location {
+    font-weight: bold;
+    color: #BBB;
+    line-height: 42px;
+	margin:0 10px; /* hirdeteshez */
+}
+
+#pg-content .box p.leading { font-size: 15px }
+
+#pg-content .box .modleading p {
+    margin: 0;
+    padding: 15px;
+    background: #373534;
+    font-size: 13px;
+}
+
+#pg-content .box .modleading p a { color: #FFF }
+
+#pg-content .box .modleading p a:hover { text-decoration: none }
+
+#newsNotification .boxtitle h6,
+#pg-content .boxtitle h6,
+#pg-sidecolumn .boxtitle h6,
+.boxtitle h4,
+#pg-content #sharetip h6 {
+    float: left;
+    margin: 0;
+    font-size: 15px;
+    font-weight: bold;
+    color: #4B4B4B;
+    line-height: 40px;
+}
+.boxtitle.inverse { background: #333; }
+#pg-sidecolumn .boxtitle.inverse h6 { color: #FFF; }
+
+#pg-content .boxtitle h6, #pg-sidecolumn .boxtitle h6 { text-transform: uppercase }
+
+#pg-content #sharetip h6 {
+    float: none;
+    line-height: normal;
+}
+
+#pg-content #registration h6 {
+    margin: 20px 0 0 0;
+    font-size: 15px;
+    font-weight: bold;
+    color: #9A9A9A;
+}
+
+.boxtitle h4 { line-height: 20px }
+
+.tabmenu h6, .boxtitle h4 { padding: 0 0 10px 0 }
+
+#pg-content .box .half .tabmenu h6 {
+    padding: 0;
+    line-height: normal;
+}
+
+/*.boxtitle h6 .selected, .tabmenu h4.selected { background: url(../img/indicator2.gif) no-repeat center bottom }*/
+
+.boxtitle div {
+    float: left;
+    padding: 0 10px;
+    font-size: 22px;
+    color: #BBB;
+    line-height: 40px;
+}
+
+#pg-content .box .half .boxtitle div  { line-height: normal }
+
+#pg-sidecolumn #indexes div {
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.boxtitle span {
+    margin: 10px 0 0 0;
+    line-height: 18px;
+}
+.pr .boxtitle span {margin:0;}
+.boxtitle span.hvgid {
+    float: right;
+    color: #BBB;
+}
+
+.defaultul li span, .defaultul li a.greylink {
+    font-size: 11px;
+    color: #4B4B4B;
+}
+
+.box ul li a.greylink:hover { text-decoration: underline }
+
+.footercolumn h3 {
+    font-size: 13px;
+    margin: 0;
+    padding: 10px 0;
+    border-bottom: solid 3px #E7E7E7;
+}
+
+p#copyright {
+    margin: 0;
+    font-size: 11px;
+    color: #4B4B4B;
+    line-height: 50px;
+}
+
+#pg-content-wide .articlecontent p {
+    margin: 15px 10px;
+    color: #2C2C2C;
+}
+
+#pg-content-wide p.greyboxbody, #pg-content-wide table.picture p {
+    margin: 0;
+    color: #7E7E7E;
+    padding: 10px 5px;
+}
+
+#pg-content-wide p.zoominfo { margin: 15px 10px }
+
+p.zoominfo, p.zoominfo a { color: #7E7E7E }
+
+p.zoominfo a { display: inline-block }
+
+p.zoominfo img {
+    float: left;
+    margin: 0 5px 0 0;
+}
+
+span.adcaption {
+    padding: 0 5px;
+    font-size: 9px;
+    font-weight: bold;
+    color: #888;
+    line-height: 16px;
+}
+
+.boxtitle span.metadata {
+    font-size: 10px;
+    color: #A1A0A0;
+    line-height: 40px;
+}
+
+.youtube h5 {
+    margin: 0 10px 10px 10px;
+    color: #004276;
+    text-align: left;
+}
+
+#pg-content .greyboxbody h6, #pg-sidecolumn .greyboxbody h6, #pg-content-wide .greyboxbody h6 {
+    display: inline-block;
+    margin: 0;
+    padding: 0 5px;
+    font-size: 10px;
+    color: #FFF;
+    background: #B6BACB;
+    line-height: 15px;
+}
+
+#pg-sidecolumn .wboxbody h6 {
+    display: inline-block;
+    margin: 0;
+    padding: 0 5px;
+    font-size: 10px;
+    color: #FFF;
+    background: #AA9488;
+    line-height: 15px;
+}
+
+#pg-content h1,
+#pg-content h6,
+#pg-content-wide h1,
+#pg-content-wide h2,
+h1.articleCaption {
+    margin: 10px 0 10px 10px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #4B4B4B;
+}
+
+h1.articleCaption { margin: 10px 10px 0 20px; }
+
+#pg-content h2.subcaption
+{
+    margin: -10px 0 10px 10px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #7E7E7E;
+    font-weight: normal;
+}
+
+#pg-content h6 { margin: 0 10px 15px 10px }
+
+#pg-content-wide h2, #pg-content-wide h1 { margin: 0 10px 15px 10px }
+
+#pg-content-wide img.framed { margin: 15px auto }
+
+#pg-content h6.redh6 {
+    margin: 0 10px;
+    font-size: 13px;
+    color: #C10000;
+}
+
+#pg-content h6.hthree, #pg-content-wide h6.hthree {
+    margin: 15px 10px 10px 10px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #9A9A9A;
+}
+
+.commentbox span {
+    float: right;
+    padding: 0 10px;
+    line-height: 42px;
+}
+
+#pg-content .commentbox p, #pg-content-wide .commentbox p {
+    clear: both;
+    margin: 0;
+    padding: 10px;
+    color: #111C24;
+    line-height: normal;
+    background: #F7F7F7 url(http://images.hvg.hu/skins/default/img/separator.gif) repeat-x top;
+    border-bottom: solid 3px #EDEDED;
+    overflow: hidden;
+}
+
+#commentForm h6 {
+    margin: 10px 15px 0 15px;
+    font-size: 19px;
+    font-weight: bold;
+    color: #707070;
+}
+
+#commentForm p {
+    margin: 0 15px;
+    font-size: 11px;
+    color: #707070;
+}
+
+#commentForm fieldset p { margin: 0 0 5px 0 }
+
+#commentForm p span { color: #E31A1A }
+
+#pg-content .columnarticle p { color: #2C2C2C; line-height: 18px; }
+
+#pg-content p.columnarticleinfo {
+    margin: 0 10px;
+    font-size: 11px;
+    font-weight: bold;
+    color: #9A9A9A;
+}
+
+#mailForm p, #offerForm p, #loginForm p, .shoutForm p {
+    position: relative;
+    margin: 10px 0;
+    color: #777;
+    z-index:15;
+}
+
+#offerForm p.counter {
+    margin: 10px 0 20px 0;
+    padding: 0 0 22px 0;
+    background: url(http://images.hvg.hu/skins/default/img/separator.gif) repeat-x bottom;
+}
+
+#offerForm p.conditions, #loginForm p.conditions, .shoutForm p.conditions { margin: 20px 0 10px 0 }
+
+#mailForm p#articleSend_message, #offerForm p#bo_message, #loginForm p#lo_message, .shoutForm p#lo_message  { text-align: center }
+
+#mailForm p span, #mailForm p#articleSend_message, #offerForm p span, #offerForm p#bo_message, #loginForm p span, #loginForm p#lo_message, .shoutForm p span, .shoutForm p#lo_message { color: #CF0000 }
+
+#offerForm p.counter span {
+    float: right;
+    padding: 3px 5px;
+    color: #FFF;
+    background: #AAA;
+}
+
+.commentbox strong { color: #004276 }
+
+#innersearch h6 {
+    margin: 5px 5px 10px 5px;
+    font-size: 19px;
+    font-weight: bold;
+    color: #707070;
+}
+
+#pg-content p.resultinfo {
+    margin: 10px 0;
+    padding: 0 0 10px 0;
+    border-bottom: solid 1px #E7E7E7;
+    color: #FF6600;
+}
+
+#pg-content p.resultinfo span { text-transform: uppercase }
+
+#pg-content .warning {
+    font-weight: bold;
+    color: #DE0000;
+}
+
+.sourceText strong {
+    float: right;
+    font-size: 13px;
+}
+
+#pg-content .messagebox p {
+    margin: 10px;
+    color: #111C24;
+}
+
+#pg-content p.dark { color: #111C24 }

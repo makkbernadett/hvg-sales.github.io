@@ -1,0 +1,263 @@
+﻿.box table {
+    padding: 5px 10px 10px 10px;
+    background: #F7F7F7;
+    color: #4B4B4B;
+}
+
+table.articleTable[align=right] { margin: 0 0 0 10px }
+
+table.articleTable[align=left] { margin: 0 10px 0 0 }
+
+.box #newspanes { padding: 5px 10px 0 10px }
+
+.box #newspanes table {
+    clear: both;
+    padding: 0;
+    background: #FFF;
+}
+
+#pg-sidecolumn .box #indexpanes table {
+    width: 300px;
+    margin: 0 10px;
+    padding: 0;
+    font-weight: bold;
+    color: #4B4B4B;
+}
+
+#indexSelector table th, #indexSelector table td { padding: 0 0 0 10px }
+
+.box table td { padding: 0 5px 5px 5px }
+
+#newspanes td.more { padding: 5px }
+
+#pg-sidecolumn .box #indexpanes table td {
+    height: 30px;
+    padding: 0 0 2px 0;
+    background: url(http://images.hvg.hu/skins/default/img/separator.gif) repeat-x bottom;
+}
+
+#indexSelector td {
+    height: 20px;
+    border-left: solid 1px #E7E7E7;
+}
+
+#pg-sidecolumn .box #indexpanes table td.rise { color: #2E9500 }
+
+#pg-sidecolumn .box #indexpanes table td.fall { color: #E31A1A }
+
+#pg-sidecolumn .box #indexpanes table td.noborder { background: none }
+
+#indexSelector td.noborder, #indexSelector th.noborder {
+    border: none;
+    padding: 0;
+}
+
+.articlecontent table.picture { width: 150px }
+
+.articlecontent table.picture td.zoomitem { background: #000 }
+
+td.greyboxbody {
+    /*padding: 10px;*/
+    padding: 0 10px;
+    font-size: 11px;
+    color: #7E7E7E;
+}
+
+.articlecontent table.leftpicture {
+    float: left;
+    margin: 0 10px 10px 0;
+}
+
+.articlecontent table.rightpicture {
+    float: right;
+    margin: 0 0 10px 10px;
+}
+
+td.monocleHeader, td.articleTableHeader {
+    padding: 10px;
+    color: #7E7E7E;
+    background: #DCDCDC;
+}
+
+td.monocleBody, td.articleTableBody {
+    padding: 10px;
+    background: #E7E7E7;
+}
+
+#pg-content td.monocleBody p, #pg-content td.articleTableBody p { margin: 0 }
+
+table.columnarticle {
+    padding: 0;
+    border: none;
+    border-collapse: collapse;
+}
+
+table.columnarticle td.content {
+    padding: 10px 0 16px 0;
+    background: url(http://images.hvg.hu/skins/default/img/separator.gif) repeat-x bottom;
+}
+
+table.columnarticle td.content img.framed { margin: 5px 10px 5px 0 }
+
+table.columnarticle td h2,
+#pg-content table.columnarticle td p,
+#pg-content table.columnarticle td p.columnarticleinfo { margin-left: 0 }
+
+table.columnarticle td.timeribbon {
+    width: 29px;
+    padding: 10px 0 0 0;
+    font-size: 15px;
+    font-weight: bold;
+    color: #FFF;
+    text-align: center;
+    border: none;
+}
+
+table.columnarticle td.timeribbon span {
+    font-size: 10px;
+    vertical-align: text-top;
+}
+
+table.columnarticle_darker td.timeribbon { background: #BDBDBD }
+
+table.columnarticle_darker td.closearrow { background: #BDBDBD url(http://images.hvg.hu/skins/default/img/darkerarrow.gif) no-repeat bottom }
+
+table.columnarticle_darker td.lastarrow { background: #BDBDBD url(http://images.hvg.hu/skins/default/img/lastdarkerarrow.gif) no-repeat bottom }
+
+table.columnarticle_lighter td.timeribbon { background: #D6D6D4 }
+
+table.columnarticle_lighter td.closearrow { background: #D6D6D4 url(http://images.hvg.hu/skins/default/img/lighterarrow.gif) no-repeat bottom }
+
+table.columnarticle_lighter td.lastarrow { background: #D6D6D4 url(http://images.hvg.hu/skins/default/img/lastlighterarrow.gif) no-repeat bottom }
+
+#registration table {
+    margin: 20px 0;
+    padding: 0 0 20px 0;
+    border-bottom: solid 1px #EDEDED;
+    color: #7E7E7E;
+}
+
+#registration table td {
+    height: 50px;
+    padding: 0 10px;
+}
+
+#registration table td.inputcol {
+    width: 35px;
+    padding: 0;
+    text-align: center;
+}
+
+#registration table td.labelcol {
+    width: 135px;
+    padding: 0 10px 0 0;
+}
+
+#registration table td.bordered {
+    width: 48px;
+    border-left: dotted 1px #DADADA;
+    border-right: dotted 1px #DADADA;
+    text-align: center;
+    font-style: italic;
+}
+
+table.embedvideo {
+	font-size: 11px;
+	color: #FFF;
+}
+
+.embedvideobody {
+	padding: 0 10px;
+	background: #202020;
+}
+
+.embedvideotop {
+	padding: 0 0 3px 0;
+	background: #202020 url(http://images.hvg.hu/skins/default/img/videoupright.gif) no-repeat right top;
+}
+
+#pg-content table.embedvideo h6, table.embedvideo h6 {
+	margin: 0;
+	font-size: 15px;
+}
+
+#pg-content table.embedvideo h6 a, table.embedvideo h6 a {
+	font-size: 15px;
+	font-weight: bold;
+	color: #FF6600;
+}
+
+.embedvideofooter {
+	padding: 5px 10px 7px;
+	background: #202020 url(http://images.hvg.hu/skins/default/img/videodownleft.gif) no-repeat left bottom;
+}
+
+.embedvideobottom {
+	height: 22px;
+	padding: 0 10px 0 0;
+	background: url(http://images.hvg.hu/skins/default/img/videodownright.png) no-repeat right bottom;
+	text-align: right;
+}
+
+.articlecontent table.embedvideo .embedvideobottom a {
+	display: block;
+	margin: 0 0 5px 0;
+	padding: 0 25px 0 0;
+	background: url(http://images.hvg.hu/skins/default/img/morevideo.png) no-repeat right;
+	font-size: 13px;
+	font-weight: bold;
+	line-height: 17px;
+	color: #FFF;
+}
+
+.embedvideobottom img {
+	margin: 0 10px;
+	vertical-align: middle;
+}
+
+/**/
+
+div.video-cimlap{margin:0 0 10px;}
+div.video-cimlap table.embedvideo h2{
+	color:#fff;
+	font:bold 15px Arial;
+	margin:0 0 10px;
+}
+div.video-cimlap table.embedvideo h2 a{color:#fff;}
+div.video-cimlap .embedvideofooter, div.video-cimlap .embedvideobody{
+	padding:0 20px;
+}
+div.video-cimlap .embedvideobody div.related{
+	width:580px;
+	margin:10px 0 0;
+}
+div.video-cimlap div.related{
+	padding:10px 0 0;
+	background:url(http://images.hvg.hu/skins/default/img/sep.gif) top repeat-x;
+	color:#FF9252;
+}
+div.video-cimlap div.related .third{
+	padding:0 26px 0 0;
+	border:0;
+	height:170px;
+    float: left;
+    width: 176px;
+}
+div.video-cimlap div.related .third img{
+	border:3px solid #151515;
+	padding:1px;
+}
+/*div.video-cimlap */table.embedvideo .embedvideobottom a {
+    background: url(http://images.hvg.hu/skins/default/img/morevideo.png) no-repeat scroll right center transparent;
+    color: #fff;
+    display: block;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 17px;
+    margin: 0 0 5px;
+    padding: 0 25px 0 0;
+}
+div.video-cimlap div.related .third h2 a{color:#FF6600;}
+div.video-cimlap div.related .third.last{padding-right:0;}
+div.video-cimlap table.embedvideo h6 a, table.embedvideo h6 a{color:#ff9252;}
+#pg-content table.embedvideo h6, table.embedvideo h6{margin:10px 0 0;}

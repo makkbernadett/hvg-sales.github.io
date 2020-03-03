@@ -1,0 +1,156 @@
+#container 
+{
+	background:url(/skins/default/img/cikksepar.gif) repeat-x top left;
+	MARGIN-TOP: 0px;
+	background-color: #DEDEDE;
+}
+#horizon {
+	LEFT: 20px; POSITION: absolute; TOP: 20px; BACKGROUND-COLOR: transparent
+}
+#horizon {
+	LEFT: 0px; WIDTH: 100%; TOP: 10px; TEXT-ALIGN: center; min-width: 610px
+}
+#wrapper 
+{
+	MARGIN: 0px auto; WIDTH: 100%
+}
+
+.sidebar {
+	BACKGROUND-COLOR: #9aa19f
+}
+.infobar {
+	BACKGROUND-COLOR: #B9CEC1
+	}
+.content {
+	BACKGROUND-COLOR: #666666
+}
+#divider {
+	BACKGROUND: url(/skins/default/images/divider.gif) #dfeaee repeat-x left top; MARGIN-BOTTOM: 4px
+}
+#mainTheme {
+	BACKGROUND: url(/skins/default/images/mainback.jpg) #666666 no-repeat left top
+}
+.center {
+	TEXT-ALIGN: center
+}
+HR {
+	DISPLAY: none
+}
+A IMG {
+	BORDER-RIGHT: medium none; BORDER-TOP: medium none; BORDER-LEFT: medium none; BORDER-BOTTOM: medium none
+}
+DIV#hold {
+	Z-INDEX: 100; OVERFLOW: hidden; WIDTH: 610px; POSITION: relative; HEIGHT: 94px
+}
+DIV#wn {
+	Z-INDEX: 1; LEFT: 0px; OVERFLOW: hidden; WIDTH: 610px; CLIP: rect(0px 650px 94px 0px); POSITION: absolute; TOP: 4px; HEIGHT: 94px
+}
+DIV#lyr1 {
+	Z-INDEX: 1; LEFT: 0px; VISIBILITY: hidden; POSITION: absolute; TOP: 0px
+}
+DIV#scrollbar {
+	FONT-SIZE: 1px; Z-INDEX: 2; LEFT: 0px; WIDTH: 610px; POSITION: absolute; TOP: 80px; HEIGHT: 11px
+}
+DIV#track {
+	Z-INDEX: 1; BACKGROUND: #666666; LEFT: 12px; WIDTH: 600px; POSITION: absolute; TOP: 0px; HEIGHT: 11px
+}
+DIV#dragBar {
+	Z-INDEX: 1; LEFT: 1px; WIDTH: 20px; POSITION: absolute; TOP: 0px; HEIGHT: 9px; BACKGROUND-COLOR: #9aa19f
+}
+DIV#left {
+	Z-INDEX: 2; LEFT: 0px; POSITION: absolute; TOP: 0px
+}
+DIV#right {
+	Z-INDEX: 3; RIGHT: 0px; POSITION: absolute; TOP: 0px
+}
+.mainImage {
+	BORDER-RIGHT: #9aa19f 5px solid; BORDER-TOP: #9aa19f 5px solid; MARGIN: 15px; BORDER-LEFT: #9aa19f 5px solid; BORDER-BOTTOM: #9aa19f 5px solid
+}
+.thumb {
+	PADDING-RIGHT: 5px
+}
+.ImgClass {
+	BORDER-RIGHT: #dfeaee 2px solid; BORDER-TOP: #dfeaee 2px solid; BORDER-LEFT: #dfeaee 2px solid; CURSOR: hand; BORDER-BOTTOM: #dfeaee 2px solid
+}
+.ImgClassSelected {
+	BORDER-RIGHT: orange 2px solid; BORDER-TOP: orange 2px solid; BORDER-LEFT: orange 2px solid; BORDER-BOTTOM: orange 2px solid
+}
+#galleryTitleHolder {
+	BACKGROUND: url(/skins/default/images/galleryTitleBack.gif) #666666 no-repeat center 50%
+}
+#mainTop {
+	BACKGROUND: url(/skins/default/images/datasheet_top.gif) #a8b2af no-repeat right bottom; HEIGHT: 23px
+}
+#mainMiddle {
+	BACKGROUND: url(/skins/default/images/datasheet_middle.gif) #666 no-repeat right bottom
+}
+#mainMiddleRight {
+	BACKGROUND: url(/skins/default/images/datasheet_middle_right.gif) #a8b2af no-repeat left bottom
+}
+.galleryTitle {
+	FONT-WEIGHT: bold; FONT-SIZE: 16px; COLOR: #666; PADDING-TOP: 17px; FONT-FAMILY: 'Trebuchet MS', 'Lucida Grande', Verdana, Arial, Sans-Serif
+}
+#description {
+	FONT-SIZE: 12px; MARGIN-LEFT: 10px; COLOR: #666; MARGIN-RIGHT: 10px; FONT-FAMILY: 'Trebuchet MS', 'Lucida Grande', Verdana, Arial, Sans-Serif
+}
+
+.carousel-component {
+	VISIBILITY: visible; OVERFLOW: hidden; POSITION: relative; WIDTH: 610px
+}
+.carousel-component UL.carousel-list {
+	Z-INDEX: 1; WIDTH: 10000000px; POSITION: relative
+}
+.carousel-component .carousel-list LI {
+	FLOAT: left; OVERFLOW: hidden; LIST-STYLE-TYPE: none
+}
+.carousel-component .carousel-vertical LI {
+	FLOAT: none; MARGIN-BOTTOM: 0px
+}
+.carousel-component UL.carousel-vertical {
+	WIDTH: auto
+}
+.carousel-component .carousel-clip-region {
+	MARGIN: 0px; OVERFLOW: hidden
+}
+.carousel-component {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 6px; COLOR: #618cbe; PADDING-TOP: 6px; moz-border-radius: 10px
+}
+.carousel-component UL.carousel-list {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+.carousel-component .carousel-list LI {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; FONT: 10px verdana,arial,sans-serif; COLOR: #666; PADDING-TOP: 0px; TEXT-ALIGN: center
+}
+.carousel-component .carousel-vertical LI {
+	
+}
+.carousel-component UL.carousel-vertical {
+	
+}
+#dhtml-carousel .carousel-list LI {
+	MARGIN: 0px 10px 0px
+}
+#dhtml-carousel .carousel-list LI {
+	BORDER-RIGHT: green 0px solid; BORDER-TOP: green 0px solid; BORDER-LEFT: green 0px solid; WIDTH: 80px; BORDER-BOTTOM: green 0px solid
+}
+#dhtml-carousel .carousel-list LI IMG {
+	DISPLAY: block
+}
+#dhtml-carousel {
+	PADDING-RIGHT: 0px; FLOAT: left; MARGIN-BOTTOM: 0px; WIDTH: 500px
+}
+#prev-arrow-container 
+{
+	MARGIN-TOP: 20px;
+	FLOAT: left
+}
+#next-arrow-container {
+	MARGIN-TOP: 20px;
+	FLOAT: left
+}
+#next-arrow {
+	MARGIN-TOP: 5px; MARGIN-LEFT: 0px; CURSOR: pointer
+}
+#prev-arrow {
+	MARGIN-TOP: 5px; CURSOR: pointer; MARGIN-RIGHT: 0px
+}

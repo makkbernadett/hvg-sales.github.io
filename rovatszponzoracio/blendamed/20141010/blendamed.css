@@ -1,0 +1,76 @@
+.article-elet-kultura .container,
+.column-elet-kultura .container {
+  margin-top: 118px;
+  margin-bottom: 1000px;
+}
+.article-elet-kultura .rovatszponzoracio.background,
+.column-elet-kultura .rovatszponzoracio.background {
+  background: url('http://static.hvgrt.hu/rovatszponzoracio/blendamed/20141010/wallpaper.jpg') fixed top center no-repeat;
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+.article-elet-kultura .rovatszponzoracio-szalag-full .placeholder-ad,
+.column-elet-kultura .rovatszponzoracio-szalag-full .placeholder-ad {
+  display: block;
+}
+.article-elet-kultura .rovatszponzoracio-szalag-full .placeholder-ad .wrap-ad,
+.column-elet-kultura .rovatszponzoracio-szalag-full .placeholder-ad .wrap-ad {
+  border: none;
+}
+.article-elet-kultura .rovatszponzoracio-szalag-full .placeholder-ad .wrap-ad .rovatszponzoracio.superbanner,
+.column-elet-kultura .rovatszponzoracio-szalag-full .placeholder-ad .wrap-ad .rovatszponzoracio.superbanner {
+  background: url('http://static.hvgrt.hu/rovatszponzoracio/blendamed/20141010/wallpaper.jpg') fixed top center no-repeat;
+  display: block;
+  height: 250px;
+  width: 970px;
+}
+.article-elet-kultura .rovatszponzoracio-szalag-transparent,
+.column-elet-kultura .rovatszponzoracio-szalag-transparent {
+  height: 123px;
+  line-height: 50px;
+  color: #fff;
+  background: url('http://static.hvgrt.hu/rovatszponzoracio/blendamed/20141010/wallpaper.jpg') no-repeat fixed center top #d8d9db;
+}
+.article-elet-kultura .rovatszponzoracio-szalag-transparent a,
+.column-elet-kultura .rovatszponzoracio-szalag-transparent a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.article-elet-kultura .rovatszponzoracio-szalag-transparent ~ .toptopic,
+.column-elet-kultura .rovatszponzoracio-szalag-transparent ~ .toptopic {
+  margin-top: -47px;
+  background: rgba(0, 0, 0, 0.6);
+}
+.article-elet-kultura .rovatszponzoracio-szalag-transparent ~ .toptopic .linkbox,
+.column-elet-kultura .rovatszponzoracio-szalag-transparent ~ .toptopic .linkbox {
+  background: none;
+}
+.article-elet-kultura .rovatszponzoracio.righttop,
+.column-elet-kultura .rovatszponzoracio.righttop {
+  background: url('http://static.hvgrt.hu/rovatszponzoracio/blendamed/20141010/wallpaper.jpg') fixed top center no-repeat;
+  display: block;
+  width: 100%;
+  height: 600px;
+  margin: 0 0 13px;
+}
+.article-elet-kultura .rovatszponzoracio.rightbottom,
+.column-elet-kultura .rovatszponzoracio.rightbottom {
+  background: url('http://static.hvgrt.hu/rovatszponzoracio/blendamed/20141010/wallpaper.jpg') fixed top center no-repeat;
+  display: block;
+  width: 100%;
+  height: 250px;
+  margin: 0 0 13px;
+}
+.article-elet-kultura .rovatszponzoracio.lefttop,
+.column-elet-kultura .rovatszponzoracio.lefttop {
+  background: url('http://static.hvgrt.hu/rovatszponzoracio/blendamed/20141010/wallpaper.jpg') fixed center top no-repeat;
+  display: block;
+  height: 450px;
+  margin: 0 auto 13px;
+  width: 600px;
+}

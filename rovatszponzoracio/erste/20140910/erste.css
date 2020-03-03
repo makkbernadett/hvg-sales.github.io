@@ -1,0 +1,102 @@
+/* Görgetős rovatszponzoráció tapéta Vállalat + vezetes - ERSTE 2014.09.10. */
+.article-vallalat_vezeto .container,
+.column-vallalat_vezeto .container {
+  margin-top: 118px;
+}
+.article-vallalat_vezeto .rovatszponzoracio.background,
+.column-vallalat_vezeto .rovatszponzoracio.background {
+  background: url('http://static.hvgrt.hu/rovatszponzoracio/erste/20140910/wallpaper.jpg') fixed top center no-repeat;
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+.article-vallalat_vezeto .rovatszponzoracio-szalag-transparent,
+.column-vallalat_vezeto .rovatszponzoracio-szalag-transparent {
+  height: 160px;
+  line-height: 50px;
+  color: #fff;
+  background: url('http://static.hvgrt.hu/rovatszponzoracio/erste/20140910/wallpaper.jpg') no-repeat fixed center top #d8d9db;
+}
+.article-vallalat_vezeto .rovatszponzoracio-szalag-transparent a,
+.column-vallalat_vezeto .rovatszponzoracio-szalag-transparent a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.article-vallalat_vezeto .rovatszponzoracio-szalag-transparent ~ .toptopic,
+.column-vallalat_vezeto .rovatszponzoracio-szalag-transparent ~ .toptopic {
+  margin-top: -47px;
+  background: rgba(0, 0, 0, 0.6);
+}
+.article-vallalat_vezeto .rovatszponzoracio-szalag-transparent ~ .toptopic .linkbox,
+.column-vallalat_vezeto .rovatszponzoracio-szalag-transparent ~ .toptopic .linkbox {
+  background: none;
+}
+
+
+/* Erste Vállalat + vezető videodoboz */
+.videodobozszponzoracio-erste {
+  position: relative;
+  margin-bottom: 30px;
+}
+.videodobozszponzoracio-erste article {
+  margin: 2px;
+}
+.videodobozszponzoracio-erste article iframe {
+  display: block;
+}
+.videodobozszponzoracio-erste .caption {
+	bottom: -15px;
+	height: 10px;
+	left: 5px;
+	position: absolute;
+	width: 110px;
+	background: url(http://hvg.hu/Content/default/i/banner/adlabel.png) 0 -38px no-repeat transparent;
+}
+
+
+
+/* Erste Vállalat + vezető dobozszponzoráció */
+.dobozszponzoracio-erste {
+  position: relative;
+  margin-bottom: 30px;
+}
+.dobozszponzoracio-erste section article {
+  /*margin: 15px;*/
+  margin: 5px 0;
+}
+.dobozszponzoracio-erste h4 {
+  /*background: url(http://static.hvgrt.hu/rovatszponzoracio/erste/20140910/erstelogo.png) right center no-repeat;*/
+  height: 39px;
+  background: #A9D7EF url(http://static.hvgrt.hu/rovatszponzoracio/erste/20140910/erste-header.png) 0 0 repeat-y;
+  text-indent: -9999px;
+}
+.dobozszponzoracio-erste > a {
+  text-decoration: none;
+}
+.dobozszponzoracio-erste .box {
+  border: 0;
+  margin: 5px;
+  box-shadow: none;
+}
+.dobozszponzoracio-erste .box header {
+  display: none;
+}
+.dobozszponzoracio-erste .box .more {
+  display: none;
+}
+.dobozszponzoracio-erste .box a.more {
+  color: #fff;
+  text-decoration: none;
+}
+.dobozszponzoracio-erste .caption {
+  bottom: -15px;
+  height: 10px;
+  left: 5px;
+  position: absolute;
+  width: 50px;
+  background: url(http://hvg.hu/Content/default/i/banner/adlabel-horizontal.png) 0 0 no-repeat transparent;
+}

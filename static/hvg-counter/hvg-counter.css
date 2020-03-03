@@ -1,0 +1,32 @@
+.counter_block{
+  display: block;
+  background: rgb(124,188,10);
+  background: -moz-linear-gradient(top, rgba(124,188,10,1) 0%, rgba(124,188,10,1) 57%, rgba(124,188,10,1) 57%, rgba(161,213,79,1) 57%, rgba(157,213,58,1) 100%);
+  background: -webkit-linear-gradient(top, rgba(124,188,10,1) 0%,rgba(124,188,10,1) 57%,rgba(124,188,10,1) 57%,rgba(161,213,79,1) 57%,rgba(157,213,58,1) 100%);
+  background: linear-gradient(to bottom, rgba(124,188,10,1) 0%,rgba(124,188,10,1) 57%,rgba(124,188,10,1) 57%,rgba(161,213,79,1) 57%,rgba(157,213,58,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7cbc0a', endColorstr='#9dd53a',GradientType=0 );
+
+  border-radius: 5px;
+  padding: 12px 5px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.counter_block .counter_heading{
+  color: #fff;
+  font-size: 23px;
+  text-shadow: 1px 1px 1px rgba(20, 20, 20, 0.2);
+  letter-spacing: 0.2px;
+}
+.counter_block .counter_heading span{
+  margin-bottom: 3px;
+  display: block;
+}
+
+.counter_block #_counter{
+  color: #fff;
+  font-size: 36px;
+  font-weight: bold;
+  font-family: aleo, serif;
+  text-shadow: 1px 1px 1px rgba(20, 20, 20, 0.2);
+}

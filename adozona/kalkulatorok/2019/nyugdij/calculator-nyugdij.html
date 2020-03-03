@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Nyugdíjkalkulátor</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Script-Type" content="text/javascript" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="stylesheet" type="text/css" href="css/calculator.local-1.0.0.css" />
+    <link rel="stylesheet" type="text/css" href="css/calculator.reset-1.0.0.css" />
+    <link rel="stylesheet" type="text/css" href="css/calculator.common-1.0.0.css" />
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/knockout-3.2.0.min.js"></script>
+    <script src="js/knockout.mapping-2.4.1.min.js"></script>
+    <script src="js/knockout.hvg-1.0.6.min.js"></script>
+</head>
+
+<body>
+    <div class="hvg-calculator">
+        <div class="hvg-block">
+            <table width="100%">
+                <thead>
+                    <tr>
+                        <th width="12%"><p><b>Év</b></p></th>
+                        <th width="20%"><p><b>Kieső,<br />keresettel nem lefedett napok száma</b></p></th>
+                        <th width="34%"><p><b>Éves bruttó<br />kereset</b></p></th>
+                        <th width="34%"><p><b>Adómentes év<br />végi részesedés</b></p></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><p>&nbsp;</p></td>
+                        <td><p>Nap</p></td>
+                        <td colspan="2"><p>Forint</p></td>
+                    </tr>
+                </tbody>
+                <tfoot data-bind="foreach:input.A">
+                    <tr>
+                        <td><p data-bind="text:AA().value"></p></td>
+                        <td><p><input type="text" class="hvg-input" data-bind="value:AB.format,hasFocus:AB.focus,select:true" maxlength="3" /></p></td>
+                        <td><p><input type="text" class="hvg-input" data-bind="value:AC.format,hasFocus:AC.focus,select:true" maxlength="9" /></p></td>
+                        <td><p data-bind="hidden:AE().value"><input type="text" class="hvg-input" data-bind="value:AD.format,hasFocus:AD.focus,select:true" maxlength="9" /></p></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+
+        <div class="hvg-block">
+            <table width="100%">
+                <thead>
+                    <tr>
+                        <th width="60%"><p><b>Megnevezés</b></p></th>
+                        <th width="40%"><p>&nbsp;</p></th>
+                    </tr>
+                </thead>
+                <tfoot>
+                    <tr>
+                        <td><p>Munkában töltött évek száma</p></td>
+                        <td><p><select class="hvg-select" data-bind="value:input.B().value"><option value="0.43">15</option><option value="0.45">16</option><option value="0.47">17</option><option value="0.49">18</option><option value="0.51">19</option><option value="0.53">20</option><option value="0.55">21</option><option value="0.57">22</option><option value="0.59">23</option><option value="0.61">24</option><option value="0.63">25</option><option value="0.64">26</option><option value="0.65">27</option><option value="0.66">28</option><option value="0.67">29</option><option value="0.68">30</option><option value="0.69">31</option><option value="0.70">32</option><option value="0.71">33</option><option value="0.72">34</option><option value="0.73">35</option><option value="0.74">36</option><option value="0.755">37</option><option value="0.77">38</option><option value="0.785">39</option><option value="0.80">40</option><option value="0.82">41</option><option value="0.84">42</option><option value="0.86">43</option><option value="0.88">44</option><option value="0.90">45</option><option value="0.92">46</option><option value="0.94">47</option><option value="0.96">48</option><option value="0.98">49</option><option value="1">50 vagy több</option></select></p></td>
+                    </tr><tr class="hvg-button">
+                        <td class="hvg-center" colspan="2"><p><button type="button" data-bind="click:calculate" value="0"></button></p></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+
+        <div class="hvg-block" data-bind="visible:output.Z">
+            <table width="100%">
+                <thead>
+                    <tr>
+                        <th width="60%"><p><b>Megnevezés</b></p></th>
+                        <th width="28%"><p>&nbsp;</p></th>
+                        <th width="12%"><p>&nbsp;</p></th>
+                    </tr>
+                </thead>
+                <tfoot>
+                    <tr>
+                        <td><p>Korrekciós tényező a szolgálati évek alapján</p></td>
+                        <td><p><input type="text" class="hvg-output" data-bind="value:output.B.format" readonly="readonly" /></p></td>
+                        <td><p>%</p></td>
+                    </tr><tr>
+                        <td><p>Havi valorizált átlagkereset</p></td>
+                        <td><p><input type="text" class="hvg-output" data-bind="value:output.C.format" readonly="readonly" /></p></td>
+                        <td><p>Forint</p></td>
+                    </tr><tr>
+                        <td><p><b>Havi nyugdíj várható összege</b></p></td>
+                        <td><p><input type="text" class="hvg-output" data-bind="value:output.D.format" readonly="readonly" /></p></td>
+                        <td><p>Forint</p></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+
+        <div class="hvg-block" data-bind="visible:output.Z">
+            <table width="100%">
+                <thead>
+                    <tr>
+                        <th width="12%"><p><b>Év</b></p></th>
+                        <th width="10%"><p><b>Munk.<br />töltött<br />napok</b></p></th>
+                        <th width="22%"><p><b>Maximális<br />járulékalap</b></p></th>
+                        <th width="22%"><p><b>Figyelembe<br />vehető nettó<br />kereset</b></p></th>
+                        <th width="12%"><p><b>Valori-<br />zációs<br />szorzó</b></p></th>
+                        <th width="22%"><p><b>Valorizált<br />nettó<br />összeg</b></p></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><p>&nbsp;</p></td>
+                        <td><p>Nap</p></td>
+                        <td colspan="2"><p>Forint</p></td>
+                        <td><p>&nbsp;</p></td>
+                        <td><p>Forint</p></td>
+                    </tr>
+                </tbody>
+                <tfoot data-bind="foreach:output.A">
+                    <tr>
+                        <td><p data-bind="text:AA()"></p></td>
+                        <td><p><input type="text" class="hvg-output" data-bind="value:AB.format" readonly="readonly" /></p></td>
+                        <td><p><input type="text" class="hvg-output" data-bind="value:AC.format" readonly="readonly" /></p></td>
+                        <td><p><input type="text" class="hvg-output" data-bind="value:AD.format" readonly="readonly" /></p></td>
+                        <td><p><input type="text" class="hvg-output" data-bind="value:AE.format" readonly="readonly" /></p></td>
+                        <td><p><input type="text" class="hvg-output" data-bind="value:AF.format" readonly="readonly" /></p></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        function Field(value, level) {
+            this.value = ko.observable(value);
+            this.level = ko.observable(level);
+            this.focus = ko.observable(false);
+        }
+
+        function CalculatorInput() {
+            var self = this;
+            var data = {
+                A: [1988, 1989, 1990, 1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019],
+                B: []
+            };
+
+            $.each(data.A, function(index, element) {
+                data.B.push({
+                    AA: ko.observable(new Field(element, 0)),
+                    AB: ko.observable(new Field(null, 0)).extend({ formatToNumber: 0 }),
+                    AC: ko.observable(new Field(null, 0)).extend({ formatToCurrency: 0 }),
+                    AD: ko.observable(new Field(null, 0)).extend({ formatToCurrency: 0 }),
+                    AE: ko.observable(new Field(element > 1988, 0))
+                });
+            });
+
+            self.A = ko.observableArray(data.B);
+            self.B = ko.observable(new Field(null, 0));
+        }
+
+        function CalculatorOutput() {
+            var self = this;
+
+            self.A = ko.observableArray();
+            self.B = ko.observable().extend({ formatToPercent: 1 });
+            self.C = ko.observable().extend({ formatToCurrency: 0 });
+            self.D = ko.observable().extend({ formatToCurrency: 0 });
+            self.Z = ko.observable();
+        }
+
+        var CustomMappingOptions = {
+            // applying custom mapping options
+            AA: {
+                create: function(element) {
+                    return ko.observable(element.data);
+                }
+            },
+            AB: {
+                create: function(element) {
+                    return ko.observable(element.data).extend({ formatToNumber: 0 });
+                }
+            },
+            AC: {
+                create: function(element) {
+                    return ko.observable(element.data).extend({ formatToCurrency: 0 });
+                }
+            },
+            AD: {
+                create: function(element) {
+                    return ko.observable(element.data).extend({ formatToCurrency: 0 });
+                }
+            },
+            AE: {
+                create: function(element) {
+                    return ko.observable(element.data).extend({ formatToNumber: 3 });
+                }
+            },
+            AF: {
+                create: function(element) {
+                    return ko.observable(element.data).extend({ formatToCurrency: 0 });
+                }
+            }
+        };
+
+        function CalculateMethod(input) {
+            // applying backward compatibility
+            if (typeof Array.prototype.forEach != "function") {
+                Array.prototype.forEach = function(callback) {
+                    for (var index = 0; index < this.length; index++) {
+                        callback.apply(this, [this[index], index, this]);
+                    }
+                }
+            }
+
+            // applying data calculations
+            var result = {};
+            var data = {};
+
+
+            data.A = [1988, 1989, 1990, 1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019];
+            data.B = [366, 365, 365, 365, 366, 365, 365, 365, 366, 365, 365, 365, 366, 365, 365, 365, 366, 365, 365, 365, 366, 365, 365, 365, 366, 365, 365, 365, 366, 365, 365, 365];
+            data.C = [null, null, null, null, null, 915000, 912500, 912500, 915000, 1204500, 1565850, 1854200, 2020320, 2197300, 2368850, 3905500, 5307000, 6000600, 6325450, 6748850, 7137000, 7446000, 7453300, 7665000, 7942200, null, null, null, null, null, null, null];
+            data.D = [31.251, 26.733, 21.985, 17.518, 14.441, 12.27, 9.639, 8.56, 7.291, 5.876, 4.962, 4.403, 3.952, 3.401, 2.844, 2.489, 2.354, 2.138, 1.987, 1.929, 1.803, 1.771, 1.658, 1.558, 1.527,1.455, 1.412, 1.355, 1.257, 1.113, 1, 1];
+            data.E = [0.1, 0.1, 0.1, 0.102, 0.11, 0.12, 0.115, 0.115, 0.115, 0.115, 0.115, 0.125, 0.125, 0.125, 0.125, 0.125, 0.135, 0.135, 0.142, 0.17, 0.17, 0.17, 0.17, 0.175, 0.185, 0.185, 0.185, 0.185, 0.185, 0.185, 0.185, 0.185];
+            data.F = [999999999, 999999999, 999999999, 999999999, 999999999, 999999999, 999999999];
+
+            result.SA = 0;
+            result.SB = 0;
+
+            data.A.forEach(function(element, index) {
+                result.TA = data.B[index] - input.A[index].AB.value;
+                result.TB = data.C[index] / data.B[index] * result.TA;
+                result.TB = element > 1992 ? result.TB : input.A[index].AC.value;
+                result.TB = element > 2012 ? data.F[element - 2013] : result.TB;
+                result.TC = element > 1992 ? Math.min(input.A[index].AC.value, result.TB) : result.TB;
+                result.TD = (1 - data.E[index]) * result.TC;
+                result.TE = result.TC > 0 ? result.TD / result.TA * data.B[index] : 0;
+
+                switch (element) {
+                    case 1988: {
+                        result.PA = result.TE - 12000;
+                        result.PB1 = result.PA < 48000 ? result.PA : 48000;
+                        result.PB2 = result.PA > 70000 ? 70000 - 48000 : result.PA - 48000;
+                        result.PB3 = result.PA > 90000 ? 90000 - 70000 : result.PA - 70000;
+                        result.PB4 = result.PA > 120000 ? 120000 - 90000 : result.PA - 90000;
+                        result.PB5 = result.PA > 150000 ? 150000 - 120000 : result.PA - 120000;
+                        result.PB6 = result.PA > 180000 ? 180000 - 150000 : result.PA - 150000;
+                        result.PB7 = result.PA > 240000 ? 240000 - 180000 : result.PA - 180000;
+                        result.PB8 = result.PA > 360000 ? 360000 - 240000 : result.PA - 240000;
+                        result.PB9 = result.PA > 600000 ? 600000 - 360000 : result.PA - 360000;
+                        result.PB10 = result.PA > 800000 ? 800000 - 600000 : result.PA - 600000;
+                        result.PB11 = result.PA > 1250000000 ? 1250000000 - 800000 : result.PA - 800000;
+
+                        result.TF = Math.max(result.PB1, 0) * 0;
+                        result.TF += Math.max(result.PB2, 0) * 0.2;
+                        result.TF += Math.max(result.PB3, 0) * 0.25;
+                        result.TF += Math.max(result.PB4, 0) * 0.3;
+                        result.TF += Math.max(result.PB5, 0) * 0.35;
+                        result.TF += Math.max(result.PB6, 0) * 0.39;
+                        result.TF += Math.max(result.PB7, 0) * 0.44;
+                        result.TF += Math.max(result.PB8, 0) * 0.48;
+                        result.TF += Math.max(result.PB9, 0) * 0.52;
+                        result.TF += Math.max(result.PB10, 0) * 0.56;
+                        result.TF += Math.max(result.PB11, 0) * 0.6;
+                        result.TG = 0;
+                        result.TH = result.TA > 0 ? input.A[index].AD.value * 0.1 : 0;
+                        break;
+                    }
+
+                    case 1989: {
+                        result.PA = result.TE - 12000;
+                        result.PB1 = result.PA < 55000 ? result.PA : 55000;
+                        result.PB2 = result.PA > 70000 ? 70000 - 55000 : result.PA - 55000;
+                        result.PB3 = result.PA > 100000 ? 100000 - 70000 : result.PA - 70000;
+                        result.PB4 = result.PA > 150000 ? 150000 - 100000 : result.PA - 100000;
+                        result.PB5 = result.PA > 240000 ? 240000 - 150000 : result.PA - 150000;
+                        result.PB6 = result.PA > 360000 ? 360000 - 240000 : result.PA - 240000;
+                        result.PB7 = result.PA > 600000 ? 600000 - 360000 : result.PA - 360000;
+                        result.PB8 = result.PA > 1250000000 ? 1250000000 - 600000 : result.PA - 600000;
+
+                        result.TF = Math.max(result.PB1, 0) * 0;
+                        result.TF += Math.max(result.PB2, 0) * 0.17;
+                        result.TF += Math.max(result.PB3, 0) * 0.23;
+                        result.TF += Math.max(result.PB4, 0) * 0.29;
+                        result.TF += Math.max(result.PB5, 0) * 0.35;
+                        result.TF += Math.max(result.PB6, 0) * 0.42;
+                        result.TF += Math.max(result.PB7, 0) * 0.49;
+                        result.TF += Math.max(result.PB8, 0) * 0.56;
+                        result.TG = 0;
+                        result.TH = 0;
+                        break;
+                    }
+
+                    case 1990: {
+                        result.PA = result.TE - 12000;
+                        result.PB1 = result.PA < 55000 ? result.PA : 55000;
+                        result.PB2 = result.PA > 90000 ? 90000 - 55000 : result.PA - 55000;
+                        result.PB3 = result.PA > 300000 ? 300000 - 90000 : result.PA - 90000;
+                        result.PB4 = result.PA > 500000 ? 500000 - 300000 : result.PA - 300000;
+                        result.PB5 = result.PA > 1250000000 ? 0 : result.PA - 500000;
+
+                        result.TF = Math.max(result.PB1, 0) * 0;
+                        result.TF += Math.max(result.PB2, 0) * 0.15;
+                        result.TF += Math.max(result.PB3, 0) * 0.3;
+                        result.TF += Math.max(result.PB4, 0) * 0.4;
+                        result.TF += Math.max(result.PB5, 0) * 0.5;
+                        result.TG = 0;
+                        result.TH = 0;
+                        break;
+                    }
+
+                    case 1991: {
+                        result.PA = result.TE - 0;
+                        result.PB1 = result.PA < 55000 ? result.PA : 55000;
+                        result.PB2 = result.PA > 90000 ? 90000 - 55000 : result.PA - 55000;
+                        result.PB3 = result.PA > 120000 ? 120000 - 90000 : result.PA - 90000;
+                        result.PB4 = result.PA > 150000 ? 150000 - 120000 : result.PA - 120000;
+                        result.PB5 = result.PA > 300000 ? 300000 - 150000 : result.PA - 150000;
+                        result.PB6 = result.PA > 500000 ? 500000 - 300000 : result.PA - 300000;
+                        result.PB7 = result.PA > 1250000000 ? 0 : result.PA - 500000;
+
+                        result.TF = Math.max(result.PB1, 0) * 0;
+                        result.TF += Math.max(result.PB2, 0) * 0.12;
+                        result.TF += Math.max(result.PB3, 0) * 0.18;
+                        result.TF += Math.max(result.PB4, 0) * 0.3;
+                        result.TF += Math.max(result.PB5, 0) * 0.32;
+                        result.TF += Math.max(result.PB6, 0) * 0.4;
+                        result.TF += Math.max(result.PB7, 0) * 0.5;
+                        result.TG = -Math.min(result.TF, 3000);
+                        result.TH = 0;
+                        break;
+                    }
+
+                    case 1992: {
+                        result.PA = result.TE - 0;
+                        result.PB1 = result.PA < 100000 ? result.PA : 100000;
+                        result.PB2 = result.PA > 200000 ? 200000 - 100000 : result.PA - 100000;
+                        result.PB3 = result.PA > 500000 ? 500000 - 200000 : result.PA - 200000;
+                        result.PB4 = result.PA > 1250000000 ? 0 : result.PA - 500000;
+
+                        result.TF = Math.max(result.PB1, 0) * 0;
+                        result.TF += Math.max(result.PB2, 0) * 0.25;
+                        result.TF += Math.max(result.PB3, 0) * 0.35;
+                        result.TF += Math.max(result.PB4, 0) * 0.4;
+                        result.TG = 0;
+                        result.TH = 0;
+                        break;
+                    }
+
+                    case 1993: {
+                        result.PA = result.TE - 0;
+                        result.PB1 = result.PA < 100000 ? result.PA : 100000;
+                        result.PB2 = result.PA > 200000 ? 200000 - 100000 : result.PA - 100000;
+                        result.PB3 = result.PA > 500000 ? 500000 - 200000 : result.PA - 200000;
+                        result.PB4 = result.PA > 1250000000 ? 0 : result.PA - 500000;
+
+                        result.TF = Math.max(result.PB1, 0) * 0;
+                        result.TF += Math.max(result.PB2, 0) * 0.25;
+                        result.TF += Math.max(result.PB3, 0) * 0.35;
+                        result.TF += Math.max(result.PB4, 0) * 0.4;
+                        result.TG = -Math.min(result.TF, 2400);
+                        result.TH = 0;
+                        break;
+                    }
+
+                    case 1994: {
+                        result.PA = result.TE - (result.TE * 0.1);
+                        result.PB1 = result.PA < 110000 ? result.PA : 110000;
+                        result.PB2 = result.PA > 150000 ? 150000 - 110000 : result.PA - 110000;
+                        result.PB3 = result.PA > 220000 ? 220000 - 150000 : result.PA - 150000;
+                        result.PB4 = result.PA > 380000 ? 380000 - 220000 : result.PA - 220000;
+                        result.PB5 = result.PA > 550000 ? 550000 - 380000 : result.PA - 380000;
+                        result.PB6 = result.PA > 1250000000 ? 0 : result.PA - 550000;
+
+                        result.TF = Math.max(result.PB1, 0) * 0;
+                        result.TF += Math.max(result.PB2, 0) * 0.2;
+                        result.TF += Math.max(result.PB3, 0) * 0.25;
+                        result.TF += Math.max(result.PB4, 0) * 0.35;
+                        result.TF += Math.max(result.PB5, 0) * 0.4;
+                        result.TF += Math.max(result.PB6, 0) * 0.44;
+                        result.TG = 0;
+                        result.TH = 0;
+                        break;
+                    }
+
+                    case 1995: {
+                        result.PA = result.TE - 0;
+                        result.PB1 = result.PA < 110000 ? result.PA : 110000;
+                        result.PB2 = result.PA > 150000 ? 150000 - 110000 : result.PA - 110000;
+                        result.PB3 = result.PA > 220000 ? 220000 - 150000 : result.PA - 150000;
+                        result.PB4 = result.PA > 380000 ? 380000 - 220000 : result.PA - 220000;
+                        result.PB5 = result.PA > 550000 ? 550000 - 380000 : result.PA - 380000;
+                        result.PB6 = result.PA > 1250000000 ? 0 : result.PA - 550000;
+
+                        result.TF = Math.max(result.PB1, 0) * 0;
+                        result.TF += Math.max(result.PB2, 0) * 0.2;
+                        result.TF += Math.max(result.PB3, 0) * 0.25;
+                        result.TF += Math.max(result.PB4, 0) * 0.35;
+                        result.TF += Math.max(result.PB5, 0) * 0.4;
+                        result.TF += Math.max(result.PB6, 0) * 0.44;
+                        result.TG = -result.TE * 0.025;
+                        result.TH = 0;
+                        break;
+                    }
+
+                    case 1996: {
+                        result.PA = result.TE - 0;
+                        result.PB1 = result.PA < 150000 ? result.PA : 150000;
+                        result.PB2 = result.PA > 220000 ? 220000 - 150000 : result.PA - 150000;
+                        result.PB3 = result.PA > 380000 ? 380000 - 220000 : result.PA - 220000;
+                        result.PB4 = result.PA > 550000 ? 550000 - 380000 : result.PA - 380000;
+                        result.PB5 = result.PA > 900000 ? 900000 - 550000 : result.PA - 550000;
+                        result.PB6 = result.PA > 1250000000 ? 0 : result.PA - 900000;
+
+                        result.TF = Math.max(result.PB1, 0) * 0.2;
+                        result.TF += Math.max(result.PB2, 0) * 0.25;
+                        result.TF += Math.max(result.PB3, 0) * 0.35;
+                        result.TF += Math.max(result.PB4, 0) * 0.4;
+                        result.TF += Math.max(result.PB5, 0) * 0.44;
+                        result.TF += Math.max(result.PB6, 0) * 0.48;
+                        result.TG = 0;
+                        result.TH = 0;
+                        break;
+                    }
+
+                    case 1997: {
+                        result.PA = result.TE - 0;
+                        result.PB1 = result.PA < 250000 ? result.PA : 250000;
+                        result.PB2 = result.PA > 300000 ? 300000 - 250000 : result.PA - 250000;
+                        result.PB3 = result.PA > 500000 ? 500000 - 300000 : result.PA - 300000;
+                        result.PB4 = result.PA > 700000 ? 700000 - 500000 : result.PA - 500000;
+                        result.PB5 = result.PA > 1100000 ? 1100000 - 700000 : result.PA - 700000;
+                        result.PB6 = result.PA > 1250000000 ? 0 : result.PA - 1100000;
+
+                        result.TF = Math.max(result.PB1, 0) * 0.2;
+                        result.TF += Math.max(result.PB2, 0) * 0.22;
+                        result.TF += Math.max(result.PB3, 0) * 0.31;
+                        result.TF += Math.max(result.PB4, 0) * 0.35;
+                        result.TF += Math.max(result.PB5, 0) * 0.39;
+                        result.TF += Math.max(result.PB6, 0) * 0.42;
+                        result.TG = -Math.min(result.TE * 0.2, 3600 * 12);
+                        result.TH = 0;
+                        break;
+                    }
+
+                    case 1998: {
+                        result.PA = result.TE - 0;
+                        result.PB1 = result.PA < 250000 ? result.PA : 250000;
+                        result.PB2 = result.PA > 300000 ? 300000 - 250000 : result.PA - 250000;
+                        result.PB3 = result.PA > 500000 ? 500000 - 300000 : result.PA - 300000;
+                        result.PB4 = result.PA > 700000 ? 700000 - 500000 : result.PA - 500000;
+                        result.PB5 = result.PA > 1100000 ? 1100000 - 700000 : result.PA - 700000;
+                        result.PB6 = result.PA > 1250000000 ? 0 : result.PA - 1100000;
+
+                        result.TF = Math.max(result.PB1, 0) * 0.2;
+                        result.TF += Math.max(result.PB2, 0) * 0.22;
+                        result.TF += Math.max(result.PB3, 0) * 0.31;
+                        result.TF += Math.max(result.PB4, 0) * 0.35;
+                        result.TF += Math.max(result.PB5, 0) * 0.39;
+                        result.TF += Math.max(result.PB6, 0) * 0.42;
+                        result.TG = -Math.min(result.TE * 0.2, 4200 * 12);
+                        result.TH = -result.TE * 0.07 * 0.25;
+                        break;
+                    }
+
+                    case 1999: {
+                        result.PA = result.TE - 0;
+                        result.PB1 = result.PA < 400000 ? result.PA : 400000;
+                        result.PB2 = result.PA > 1000000 ? 1000000 - 400000 : result.PA - 400000;
+                        result.PB3 = result.PA > 1250000000 ? 0 : result.PA - 1000000;
+
+                        result.TF = Math.max(result.PB1, 0) * 0.2;
+                        result.TF += Math.max(result.PB2, 0) * 0.3;
+                        result.TF += Math.max(result.PB3, 0) * 0.4;
+                        result.TG = -Math.min(result.TE * 0.1, 3000 * 12);
+                        result.TH = -result.TE * 0.08 * 0.25;
+                        break;
+                    }
+
+                    case 2000: {
+                        result.PA = result.TE - 0;
+                        result.PB1 = result.PA < 400000 ? result.PA : 400000;
+                        result.PB2 = result.PA > 1000000 ? 1000000 - 400000 : result.PA - 400000;
+                        result.PB3 = result.PA > 1250000000 ? 0 : result.PA - 1000000;
+
+                        result.TF = Math.max(result.PB1, 0) * 0.2;
+                        result.TF += Math.max(result.PB2, 0) * 0.3;
+                        result.TF += Math.max(result.PB3, 0) * 0.4;
+                        result.TG = -Math.min(result.TE * 0.1, 3000 * 12);
+                        result.TH = -result.TE * 0.08 * 0.25;
+                        break;
+                    }
+
+                    case 2001: {
+                        result.PA = result.TE - 0;
+                        result.PB1 = result.PA < 480000 ? result.PA : 480000;
+                        result.PB2 = result.PA > 1050000 ? 1050000 - 480000 : result.PA - 480000;
+                        result.PB3 = result.PA > 1250000000 ? 0 : result.PA - 1050000;
+
+                        result.TF = Math.max(result.PB1, 0) * 0.2;
+                        result.TF += Math.max(result.PB2, 0) * 0.3;
+                        result.TF += Math.max(result.PB3, 0) * 0.4;
+                        result.TG = -Math.min(result.TE * 0.1, 3000 * 12);
+                        result.TH = -result.TE * 0.08 * 0.25;
+                        break;
+                    }
+
+                    case 2002: {
+                        result.PA = result.TE - 0;
+                        result.PB1 = result.PA < 600000 ? result.PA : 600000;
+                        result.PB2 = result.PA > 1200000 ? 1200000 - 600000 : result.PA - 600000;
+                        result.PB3 = result.PA > 1250000000 ? 0 : result.PA - 1200000;
+
+                        result.TF = Math.max(result.PB1, 0) * 0.2;
+                        result.TF += Math.max(result.PB2, 0) * 0.3;
+                        result.TF += Math.max(result.PB3, 0) * 0.4;
+                        result.TG = -Math.min(result.TE * 0.18, 3000 * 12 + 24000);
+                        result.TH = -result.TE * 0.08 * 0.25;
+                        break;
+                    }
+
+                    case 2003: {
+                        result.PA = result.TE - 0;
+                        result.PB1 = result.PA < 650000 ? result.PA : 650000;
+                        result.PB2 = result.PA > 1350000 ? 1350000 - 650000 : result.PA - 650000;
+                        result.PB3 = result.PA > 1250000000 ? 0 : result.PA - 1350000;
+
+                        result.TF = Math.max(result.PB1, 0) * 0.2;
+                        result.TF += Math.max(result.PB2, 0) * 0.3;
+                        result.TF += Math.max(result.PB3, 0) * 0.4;
+                        result.TG = -Math.min(result.TE * 0.18, 9000 * 12);
+                        result.TH = -result.TE * 0.085 * 0.25;
+                        break;
+                    }
+
+                    case 2004: {
+                        result.PA = result.TE - 0;
+                        result.PB1 = result.PA < 800000 ? result.PA : 800000;
+                        result.PB2 = result.PA > 1500000 ? 1500000 - 800000 : result.PA - 800000;
+                        result.PB3 = result.PA > 1250000000 ? 0 : result.PA - 1500000;
+
+                        result.TF = Math.max(result.PB1, 0) * 0.18;
+                        result.TF += Math.max(result.PB2, 0) * 0.26;
+                        result.TF += Math.max(result.PB3, 0) * 0.38;
+                        result.TG = -Math.min(result.PA * 0.18, 9000 * 12);
+                        result.TH = 0;
+                        break;
+                    }
+
+                    case 2005: {
+                        result.PA = result.TE - 0;
+                        result.PB1 = result.PA < 1500000 ? result.PA : 1500000;
+                        result.PB2 = result.PA > 1250000000 ? 0 : result.PA - 1500000;
+
+                        result.TF = Math.max(result.PB1, 0) * 0.18;
+                        result.TF += Math.max(result.PB2, 0) * 0.38;
+                        result.TG = -Math.min(result.PA * 0.18, 9000 * 12);
+                        result.TH = 0;
+                        break;
+                    }
+
+                    case 2006: {
+                        result.PA = result.TE - 0;
+                        result.PB1 = result.PA < 1550000 ? result.PA : 1550000;
+                        result.PB2 = result.PA > 1250000000 ? 0 : result.PA - 1550000;
+
+                        result.TF = Math.max(result.PB1, 0) * 0.18;
+                        result.TF += Math.max(result.PB2, 0) * 0.36;
+                        result.TG = -Math.min(result.TE * 0.18, 9000 * 12);
+                        result.TH = 0;
+                        break;
+                    }
+
+                    case 2007: {
+                        result.PA = result.TE - 0;
+                        result.PB1 = result.PA < 1700000 ? result.PA : 1700000;
+                        result.PB2 = result.PA > 1250000000 ? 0 : result.PA - 1700000;
+
+                        result.TF = Math.max(result.PB1, 0) * 0.18;
+                        result.TF += Math.max(result.PB2, 0) * 0.36;
+                        result.TG = -Math.min(result.TE * 0.18, 9000 * 12);
+                        result.TH = 0;
+                        break;
+                    }
+
+                    case 2008: {
+                        result.PA = result.TE - 0;
+                        result.PB1 = result.PA < 1700000 ? result.PA : 1700000;
+                        result.PB2 = result.PA > 1250000000 ? 0 : result.PA - 1700000;
+
+                        result.TF = Math.max(result.PB1, 0) * 0.18;
+                        result.TF += Math.max(result.PB2, 0) * 0.36;
+                        result.TG = -Math.min(result.TE * 0.18, 11340 * 12);
+                        result.TH = 0;
+                        break;
+                    }
+
+                    case 2009: {
+                        result.PA = result.TE - 0;
+                        result.PB1 = result.PA < 1900000 ? result.PA : 1900000;
+                        result.PB2 = result.PA > 1250000000 ? 0 : result.PA - 1900000;
+
+                        result.TF = Math.max(result.PB1, 0) * 0.18;
+                        result.TF += Math.max(result.PB2, 0) * 0.36;
+                        result.TG = -Math.min(result.TE * 0.18, 11340 * 12);
+                        result.TH = 0;
+                        break;
+                    }
+
+                    case 2010: {
+                        result.PA = result.TE + (result.TE * 0.27);
+                        result.PB1 = result.PA < 5000000 ? result.PA : 5000000;
+                        result.PB2 = result.PA > 1250000000 ? 0 : result.PA - 5000000;
+
+                        result.TF = Math.max(result.PB1, 0) * 0.17;
+                        result.TF += Math.max(result.PB2, 0) * 0.32;
+                        result.TG = -Math.min(result.TE * 0.17 *1.27, 15100 * 12);
+                        result.TH = 0;
+                        break;
+                    }
+
+                    case 2011: {
+                        result.TF = Math.max(result.TE + (result.TE * 0.27), 0) * 0.16;
+                        result.TG = -Math.min(result.TE * 0.16 *1.27, 12100 * 12);
+                        result.TH = 0;
+                        break;
+                    }
+
+                    case 2012: {
+                        result.PA = result.TE - 0;
+                        result.PB1 = result.PA < 2424000 ? result.PA : 2424000;
+                        result.PB2 = result.PA > 1250000000 ? 0 : result.PA - 2424000;
+
+                        result.TF = Math.max(result.PB1, 0) * 0.16;
+                        result.TF += Math.max(result.PB2, 0) * 0.16 * 1.27;
+                        result.TG = 0;
+                        result.TH = 0;
+                        break;
+                    }
+
+                    case 2013:
+                    case 2014:
+                    case 2015: {
+                        result.TF = Math.max(result.TE, 0) * 0.16;
+                        result.TG = 0;
+                        result.TH = 0;
+                        break;
+                    }
+
+                    case 2016:
+                    case 2017:
+                    case 2018:
+                    case 2019: {
+                        result.TF = Math.max(result.TE, 0) * 0.15;
+                        result.TG = 0;
+                        result.TH = 0;
+                        break;
+                    }
+                }
+
+                result.TJ = result.TE - result.TF - result.TH;
+                result.TJ += element > 1988 ? -result.TG : result.TG;
+                result.TK = result.TJ / data.B[index] * result.TA;
+                result.TK += element > 1988 ? 0 : input.A[index].AD.value;
+                result.TK = result.TE < result.TK ? result.TE : result.TK;
+                result.TL = result.TK * data.D[index];
+
+                result.SA += result.TA;
+                result.SB += result.TL;
+
+                result.A = result.A instanceof Array ? result.A : [];
+                result.A.push({
+                    AA: element,
+                    AB: result.TA,
+                    AC: data.C[index],
+                    AD: result.TK,
+                    AE: data.D[index],
+                    AF: result.TL
+                });
+            });
+
+            result.B = input.B.value;
+            result.C = result.SB / result.SA * 365 / 12;
+
+            result.PC1 = result.C < 372000 ? result.C : 372000;
+            result.PC2 = result.C > 421000 ? 421000 - 372000 : result.C - 372000;
+            result.PC3 = result.C > 500000000 ? 500000000 - 421000 : result.C - 421000;
+
+            result.D = Math.max(result.PC1, 0) * 1;
+            result.D += Math.max(result.PC2, 0) * 0.9;
+            result.D += Math.max(result.PC3, 0) * 0.8;
+            result.D *= input.B.value;
+            result.D = input.B.value > 0.51 && result.D < 28500 && result.SB > 0 ? 28500 : result.D;
+
+            return {
+                A: result.A,
+                B: result.B,
+                C: result.C,
+                D: result.D,
+                Z: true
+            };
+        }
+
+        function CalculationsViewModel(input, output, method, customMappingOptions) {
+            var self = this;
+
+            self.input = input;
+            self.output = output;
+            self.method = method;
+            self.customMappingOptions = customMappingOptions;
+
+            self.calculate = function(data, event) {
+                // send POST request and display results
+                var level = event.target.value;
+                var url = window.location.href + "/" + level;
+                var input = ko.toJSON(self.input, function(key, value) {
+                    // filter not required fields
+                    if (value instanceof Object && value.hasOwnProperty('level') && value.level > level) {
+                        return;
+                    }
+
+                    return value;
+                });
+
+                //self.calculateRemote(url, input, resultCallback, errorCallback);
+                self.calculateLocal(url, input, resultCallback, errorCallback);
+            }
+
+            self.calculateRemote = function(url, input, resultCallback, errorCallback) {
+                $.ajax({
+                    url: url,
+                    type: "POST",
+                    data: input,
+                    contentType: "application/json; charset=utf-8",
+                    dataType: "json"
+                })
+                .done(resultCallback)
+                .fail(errorCallback);
+            }
+
+            self.calculateLocal = function(url, input, resultCallback, errorCallback) {
+                try {
+                    var result = CalculateMethod(JSON.parse(input));
+                    resultCallback(result);
+                } catch(err) {
+                    errorCallback(err);
+                }
+            }
+
+            var resultCallback = function(result) {
+                // if success then map the result on the output
+                //console.log(result);
+                ko.mapping.fromJS(result, self.customMappingOptions, self.output);
+            };
+
+            var errorCallback = function(jqXHR, textStatus) {
+                // if error show validation errors or request failed msg
+                //console.log(jqXHR);
+            };
+        }
+
+        ko.applyBindings(new CalculationsViewModel(
+            new CalculatorInput(),
+            new CalculatorOutput(),
+            CalculateMethod,
+            CustomMappingOptions
+        ));
+    </script>
+</body>
+</html>

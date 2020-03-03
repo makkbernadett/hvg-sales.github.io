@@ -1,0 +1,26 @@
+.placeholder-ad{
+	padding: 20px 0;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: @color-advert;
+	.placeholder__aligner{
+
+	}
+
+	&.has--caption{
+		padding-bottom: 0;
+		.placeholder__caption{
+			text-decoration: none;
+			line-height: 20px;
+			&::before{
+				content: "hirdetés";
+				font-size: 0.5em;
+				color: @gray;
+				font-family: @font-default;
+			}
+		}
+	}
+}

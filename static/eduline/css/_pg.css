@@ -1,0 +1,814 @@
+	/***************
+ * Név:         pg.css
+ * Leírás:      eculine.hu szerkezeti css
+ * Keletkezés:  2007.08.22.
+ * Fejlesztõ:   Zsibrita György
+ * FONTOS:		Éles site-on belül a kommenteket távolítsuk el.
+ ****************/
+
+
+body
+{
+    margin: 0;
+    text-align: center;
+    background: #c8dcea url("../img/main_bg.gif" ) repeat-x;
+}
+#pg-main
+{
+    margin: 0 auto;
+    width: 960px;
+    overflow: hidden;
+    background: url("../img/content_bg.gif" ) repeat-y;
+}
+.puska {
+background:none;
+background: url("../img/puska.gif" ) no-repeat;}
+#pg-head
+{
+    width: 956px;
+    height: 207px;
+    margin: 0 auto;
+    display: block;
+}
+
+#pg-head .separ
+{
+    width: 956px;
+    height: 6px;
+    line-height: 6px;
+    font-size: 2px;
+    margin: 0 auto;
+    background: #f0710c;
+}
+
+#tophead
+{
+    width: 956px;
+    height: 56px;
+    overflow: hidden;
+    margin: 0 auto;
+    border-top: solid 1px white;
+    background: url("../img/topmbg.gif" ) repeat-x;
+}
+#menubar
+{
+    width: 956px;
+    height: 28px;
+    overflow: hidden;
+    margin: 1px auto 0 auto;
+    background: url("../img/menu_bar_bg.gif" ) repeat-x;
+    text-align: center;
+}
+#pg-content-wrapper
+{
+    background: url(../img/content_bg_w.gif) repeat-y top left;
+    width: 960px;
+    overflow: hidden;
+    margin: 0px auto;
+    display: block;
+}
+#pg-content
+{
+    background: none;
+    width: 819px;
+    margin: 10px 0px 0 1px;
+    overflow: hidden;
+    float: left;
+}
+
+#pg-right
+{
+    text-align: center;
+    width: 140px;
+    _width: 130px;
+    margin: 10px 0 0 0;
+    overflow: hidden;
+    float: left;
+}
+
+
+.quart-col
+{
+    width: 192px;
+    float: left;
+    margin: 0 0 0 5px;
+	_margin: 0 0 0 3px;
+    padding: 0 0 0 5px;
+	_padding:0 0 0 3px;
+    display: block;
+    overflow: hidden;
+    background: url(../img/r_sep.gif) repeat-y top left;
+    text-align: left;
+}
+.full-col .quart-col
+{
+    width: 200px;
+    margin: 0;
+}
+.ajanlo-col .quart-col
+{
+    width: 195px;
+    float: left;
+    margin: 0;
+    display: block;
+    overflow: hidden;
+    background: url(../img/r_sep.gif) repeat-y top left;
+    text-align: left;
+}
+.half-col
+{
+    width: 414px;
+    float: left;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+}
+
+.lead
+{
+    width: 394px;
+    margin: 0 5px 0 5px;
+    float: left;
+    padding: 0 0 0 8px;
+}
+.nyelv .lead
+{
+     width: 394px;
+    margin: 0 5px 0 5px;
+    float: left;
+    padding: 0 0 20px 8px;
+}
+
+.content-col
+{
+    width: 594px;
+    margin: 0 auto;
+    float: left;
+    overflow: hidden;
+}
+
+.ajanlo-col
+{
+    width: 600px;
+    margin: 0 auto;
+    float: left;
+    padding: 0;
+    overflow: hidden;
+}
+.content-col .article-more
+{
+    display: block;
+    overflow: hidden;
+    margin: 10px 0;
+}
+.content-col .separ, .nyelv .separ
+{
+    background: url(../img/cikksepar.gif) repeat-x top left;
+    height: 8px;
+    width: 594px;
+    margin: 10px 0 10px 0;
+    clear: left;
+}
+
+.content-col .lead
+{
+    width: 594px;
+    background: url(../img/art_head.gif) no-repeat top left;
+    margin: 0 5px 15px 5px;
+    float: left;
+    display: block;
+    overflow: hidden;
+}
+
+.content-col .box .lead
+{
+    width: 594px;
+    background: url(../img/art_head.gif) no-repeat top left;
+    margin: 0 5px 15px 5px;
+    display: block;
+    overflow: hidden;
+}
+
+.lead img, .article-more img
+{
+    margin: 0 8px 0 0;
+    padding: 1px;
+    border: solid 1px #d7e5f0;
+}
+
+.quart-box
+{
+    width: 182px;
+    margin: 0px auto 10px auto;
+    overflow: hidden;
+}
+
+.quart-box .content
+{
+    border-top: solid 1px white;
+    width: 178px;
+    margin: 0px auto;
+    background: url(../img/quart_cont_bg.gif) no-repeat top left;
+    overflow: hidden;
+    display: block;
+    padding: 5px 2px 2px 2px;
+}
+
+.quart-box .usermenu
+{
+    border-top: solid 1px white;
+    width: 182px;
+    margin: 0px auto;
+    background: url(../img/quart_cont_bg.gif) no-repeat top left;
+    overflow: hidden;
+    display: block;
+    padding: 5px 2px 2px 2px;
+}
+
+.full-col
+{
+    width: 820px;
+    background: url(../img/full_top_bg.gif) no-repeat top left;
+    margin: 8px 0 0 0;
+    padding: 8px 0 0 8px;
+    float: left;
+    overflow: hidden;
+}
+
+.half-col
+{
+    width: 414px;
+    float: left;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+}
+.full-col .half-col
+{
+    width: 410px;
+    float: left;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    background: url(../img/r_sep.gif) repeat-y top left;
+}
+
+
+.half-col .box
+{
+    width: 382px;
+    margin: 0px auto 10px auto;
+    display: block;
+    overflow: hidden;
+    border: 1px solid #efefef;
+    text-align: left;
+}
+
+
+.half-col .box .head 
+{
+    width: 382px;
+    margin: 0;
+    padding:0;
+    clear:both;
+    overflow:hidden;
+    background: url(../img/puska.gif) no-repeat top left;
+    height: 29px;
+}
+.half-col .for .box .head
+{
+    width: 382px;
+    margin: 0;
+    padding:0;
+    clear:both;
+    overflow:hidden;
+
+    background: url(../img/half_head.gif) no-repeat top left;
+    height: 29px;
+}
+.content-col .box .head
+{
+    width: 594px;
+    margin: 0;
+    background: url(../img/ajanlo_h1_bg.gif) repeat-x top left;
+    height: 29px;
+}
+.content-col .box .head-alt, .ajanlo-col .head-alt
+{
+    width: 590px;
+    margin: 0;
+    background: url(../img/forumh.gif) repeat-x top left;
+    height: 22px;
+    border: solid 1px #c8dcea;
+    overflow: hidden;
+    display: block;
+    padding: 0;
+}
+.content-col .lead .head-alt
+{
+    width: 570px;
+    margin: 0;
+    background: url(../img/forumh.gif) repeat-x top left;
+    height: 22px;
+    border: solid 1px #c8dcea;
+    overflow: hidden;
+    display: block;
+    padding: 0;
+}
+.content-col .box
+{
+    width: 592px;
+    margin: 0px auto 10px auto;
+    display: block;
+    overflow: hidden;
+    border: 1px solid #efefef;
+    border-top: none;
+    text-align: left;
+}
+
+.ajanlo-col .box .head
+{
+    width: 600px;
+    margin: 0;
+    height: 29px;
+}
+.ajanlo-col .box .searchpanel
+{
+    width: 600px;
+    overflow: hidden;
+    margin: 0 0 0 15px;
+    float: left;
+    text-align: left;
+}
+.box .half
+{
+    float: left;
+    margin: 0;
+    overflow: hidden;
+    width: 191px;
+}
+
+.box .content
+{
+    margin: 0px auto;
+    background: url(../img/quart_cont_bg.gif) repeat-x top left;
+    overflow: hidden;
+    display: block;
+    padding: 5px 0px 2px 0px;
+}
+.ajanlo-col .box .content
+{
+    width: 588px;
+    margin: 0 0 15px 0;
+    background: url(../img/quart_cont_bg.gif) repeat-x top left;
+    overflow: hidden;
+    display: block;
+    border: 1px solid #efefef;
+    padding: 5px 0px 2px 2px;
+}
+.fullsepar
+{
+    width: 956px;
+    height: 6px;
+    line-height: 6px;
+    font-size: 2px;
+    margin: 0 auto 2px auto;
+    background: #f0710c;
+}
+#pg-footer
+{
+    width: 956px;
+    margin: 0px auto;
+    overflow: hidden;
+    background: white url(../img/footer_bg.gif) no-repeat top left;
+	padding-bottom:10px;
+}
+
+
+
+.pg-foot-top
+{
+    margin: 0 auto;
+    width: 600px;
+    padding: 7px 0 4px 0;
+    overflow: hidden;
+    border-bottom: solid 1px #e5e5e5;
+    text-align: left;
+}
+
+.pg-foot-btm
+{
+    margin: 0 auto;
+    text-align: left;
+    width: 600px;
+    height: 67px;
+    padding-top: 7px;
+    line-height: 14px;
+}
+.logo
+{
+    margin: 8px 0 0 15px;
+    float: left;
+    width: 230px;
+}
+
+
+.topmenu
+{
+    margin: 10px 0px 0 180px;
+    _margin: 10px 0px 0 160px;
+    float: left;
+}
+.csoplogo
+{
+    margin: 6px 15px 0 0;
+    _margin: -33px 15px 0 0;
+    float: right;
+    overflow: hidden;
+    width: 115px;
+}
+.content-col .content .date
+{
+    float: left;
+    margin: 0;
+    width: 297px;
+    overflow: hidden;
+}
+
+.content-col .content .icons
+{
+    float: left;
+    margin: 0;
+    width: 297px;
+    overflow: hidden;
+}
+.comment
+{
+    width: 590px;
+    overflow: hidden;
+}
+.comment-head
+{
+    width: 588px;
+    overflow: hidden;
+    height: 24px;
+    background: url(../img/comment_h.gif) no-repeat top left;
+    border-left: solid 1px #c8dcea;
+    border-right: solid 1px #c8dcea;
+    border-top: solid 1px #c8dcea;
+}
+.comment-body
+{
+    margin: 0 0 20px 0;
+    width: 588px;
+    overflow: hidden;
+    border-left: solid 1px #efefef;
+    border-right: solid 1px #efefef;
+    border-bottom: solid 1px #efefef;
+}
+.comment .user, .comment .date
+{
+    width: 290px;
+    float: left;
+}
+.comment-body img
+{
+    margin: 8px;
+    padding: 1px;
+    border: solid 1px #d7e5f0;
+}
+
+.ajanlo-col .separ
+{
+    width: 606px;
+    line-height: 5px;
+    margin: 0 auto;
+    font-size: 4px;
+    clear: left;
+}
+.nyelv .separ
+{
+    width: 570px;
+    line-height: 5px;
+    margin: 0 auto;
+    font-size: 4px;
+    clear: left;
+}
+
+.ajanlo-col .suggest
+{
+    float: left;
+    text-align: right;
+    overflow: hidden;
+    width: 165px;
+    margin: 0;
+    padding: 0;
+}
+
+
+.pager
+{
+    /*width: 250px;*/
+    width: 290px;
+    margin: 0 auto;
+    _margin: 15px auto 15px auto;
+    display: block;
+    overflow: hidden;
+    clear: both;
+	
+}
+.pager p a {font:bold 16px arial; color:red;}
+
+.content tabel td.page .pager
+{
+    
+       margin:0;
+    float:right;
+    display: block;
+    overflow: hidden;
+    clear: both;
+}
+.searchpanel
+{
+    width: 600px;
+    overflow: hidden;
+    margin: 0 auto;
+    float: left;
+    text-align: left;
+}
+.box .searchpanel
+{
+    width: 380px;
+}
+.searchpanel .quart-box, .nyelv .quart-box
+{
+    float: left;
+}
+
+.subsearch
+{
+    width: 600px;
+    overflow: hidden;
+    margin: 0;
+    float: left;
+    text-align: left;
+}
+.subsearch .item
+{
+    width: 190px;
+    overflow: hidden;
+    margin: 0 10px 0 0;
+    float: left;
+    text-align: left;
+}
+.content .line
+{
+    width: 100px;
+    float: left;
+}
+
+.content .star
+{
+    width: 75px;
+    float: left;
+    padding: 0 5px 0 0;
+    text-align: right;
+}
+.lead .star img
+{
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+.lead .star
+{
+    width: 110px;
+    margin: 0 15px 0 0;
+    _margin: 0;
+    float: right;
+}
+.lead .leftbox
+{
+    width: 350px;
+    float: left;
+    margin: 0;
+    display: block;
+    overflow: hidden;
+}
+.lead .rightbox
+{
+    width: 200px;
+    float: left;
+    margin: 0;
+    display: block;
+    overflow: hidden;
+}
+.ajanlo-col .lead td.content .mehet
+{
+    float: left;
+}
+.mehet .dl
+{
+    float: left;
+    margin: 0 15px;
+}
+.mehet .poll
+{
+    margin: 15px;
+    padding: 5px;
+    border: 1px solid #ebebeb;
+    overflow: hidden;
+}
+td.tutorial a img { margin: 15px 0 0 15px; }
+
+.user-avatar
+{
+    display: block;
+    overflow: hidden;
+    border: solid 1px #d2e1ec;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+.user-avatar img
+{
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+.num
+{
+    float: left;
+    margin: 0 0 0 5px;
+    padding: 3px 0 0 0;
+}
+.other
+{
+    float: right;
+    margin: 0 15px 0 0;
+    padding: 3px 0 0 0;
+}
+
+.post-avatar
+{
+    display: block;
+    overflow: hidden;
+    border-bottom: solid 1px #d2e1ec;
+    text-align: center;
+    margin: 0 auto 0 auto;
+    padding: 0;
+    width: 124px;
+}
+.upload
+{
+    float: left;
+    overflow: hidden;
+    text-align: left;
+    margin: 10px 0 0 0px;
+}
+
+
+.partner
+{
+    width: 260px;
+    float: left;
+    overflow: hidden;
+    margin: 0 20px 20px 15px;
+    _padding:0;
+    _margin: 0 10px 20px 15px;
+    border: solid 1px #efefef;
+    display: block;
+    height: 140px;
+}
+
+.known {
+  border: solid 1px #07932e;
+}
+.signed {
+  border: solid 1px #930725;
+}
+
+.teszt {display:none;}
+.teszt2 {display:block;}
+
+.partner .avatar
+{
+    display: block;
+    border: solid 1px #d2e1ec;
+    overflow: hidden;
+    margin: 15px 10px 0 5px;
+    float: left;
+    padding: 0;
+    width: 75px;
+    height: 75px;
+}
+.partner .avatar img 
+{   border:none;
+    margin:0 auto;
+    }
+.partner .details
+{
+    display: block;
+    overflow: hidden;
+    text-align: left;
+    margin: 5px 10px 10px 15px;
+    float: left;
+    padding: 0;
+}
+.content-col .box .group
+{
+    text-align:center;
+    
+    }
+	
+#seobar { background: url(/topbarimg/fejlechatter.gif) repeat-x; }
+
+#seobarcontent {
+	height: 24px;
+	width: 945px;
+	margin: 0 auto;
+}
+
+#seobar img { margin: 0 10px; }
+
+#seobarcontent ul {
+    margin: 0;
+    padding: 0;
+}
+
+#seobarcontent ul li {
+	margin: 0 10px;
+	padding: 0;
+	list-style: none;
+	background: url(http://eduline.hu/topbarimg/fejleclistajel.gif) no-repeat left 7px;
+	float: left;
+}
+
+#seobarcontent ul li a:link, #seobarcontent ul li a:visited {
+	margin: 0 0 0 9px;
+	font: bold 11px Tahoma, Arial, Helvetica, sans-serif;
+	color: #797979;
+	line-height: 22px;
+	_line-height: 20px;
+	text-decoration: none;
+}
+
+#seobarcontent ul li a:hover { text-decoration: underline; }
+
+.ajanlo-col td p.description {
+    margin: 0;
+    padding 10px 0;
+}
+
+td.t-fejlec{
+
+border-right: 1px solid rgb(243, 243, 243); color: rgb(255, 255, 255); font-weight: bold; font-family: 'Trebuchet MS',Tahoma,Arial; font-size: 12px; text-align: center;
+background:#F0750C;
+padding:3px;
+}
+
+.pontok2009 table{
+width:590px;
+ font-weight: bold; font-family: 'Trebuchet MS',Tahoma,Arial; font-size: 12px; text-align: center;
+color: #797979;
+}
+
+.content-col h1.ponthatarok a {color:#fff; text-decoration:none;}
+.pontok2009 table a {
+color:#EE6C03;
+}
+
+
+.kvizdoboz {
+	width:180px;
+	height:120px;
+	margin:10px auto;
+	background:url(../img/bgct.jpg) no-repeat;
+	overflow:hidden;
+
+}
+.kvizdoboz span {
+			color:#ff6600;
+			text-align:center; 
+			display:block;
+			margin-top:55px;
+			margin-left:66px;
+			font:normal 35px Impact;
+			width:46px;
+			height:44px;
+
+}
+
+.kvizdoboz span a {	color:#ff6600; text-decoration:none;}
+
+.left {float:left;width:80px; clear:left; }
+
+.tags {
+	clear: both;
+	padding: 0 0 0 20px;
+	background: url(http://adozona.hu/skins/default/img/label.gif) no-repeat left top;
+}
+.right {float:left;  clear:right; }

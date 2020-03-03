@@ -1,0 +1,73 @@
+﻿body {
+    margin: 0;
+    background: #F5F5F5 url(http://images.hvg.hu/skins/default/img/galleryback.jpg) repeat-x left 85px;
+    font: 13px Arial, Helvetica, Sans-Serif;
+    color: #FFF;
+}
+
+#gallerytitle { float: left }
+
+img { border: 0 }
+
+img#hvghulogo {
+    margin: 10px 20px 10px 10px;
+    float: left;
+}
+
+h1 {
+    margin: 15px 0 0 0;
+    font-size: 28px;
+    font-weight: bold;
+    color: #4B4B4B;
+}
+
+h3 {
+    margin: 0;
+    font-size: 14px;
+    font-weight: normal;
+    color: #7E7E7E;
+}
+
+table#gallery {
+    clear: both;
+    border-top: solid 5px #FF6600;
+    border-bottom: solid 1px #313131;
+}
+
+#gallerymain { width: 783px }
+
+#gallerymain table td { text-align: center }
+
+#gallerymain, #galleryad { height: 557px }
+
+#galleryad {
+    width: 169px;
+    background: url(http://images.hvg.hu/skins/default/img/galleryshadow.jpg) no-repeat left top;
+}
+
+table.banner2 { margin: auto }
+
+.bannercontainer {
+    padding: 3px;
+    background: #494949;
+    border: solid 1px #2B2D30;
+}
+
+.bannerframe {
+    padding: 0 0 12px 0;
+    background: url(http://images.hvg.hu/skins/default/img/adlabel_horizontal.png) no-repeat right bottom;
+}
+
+p {
+    margin: 10px 52px 0 0;
+    padding: 0 5px 0 52px;
+    font-size: 11px;
+}
+
+p#gallerydescription {
+    padding: 10px 10px 10px 52px;
+    font-size: 13px;
+    background: #27282B;    
+}
+
+p span { float: right }

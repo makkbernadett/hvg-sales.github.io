@@ -1,0 +1,29 @@
+/* CSS Document */
+
+.rovatcolumn
+{
+width:100%;
+border:none;
+padding:0 0 0 5px;
+margin:0;
+}
+
+.rovatcolumn td
+{
+vertical-align:top;
+}
+
+.pic01 table {
+margin:0; 
+}
+
+table.simpleTable {
+    width: 415px;
+}
+
+#form_registration table a {
+	color: #585858;
+	text-decoration: none;
+}
+
+#form_registration table a:hover { text-decoration: underline }

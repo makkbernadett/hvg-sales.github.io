@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="hu">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+	<title>e-comm</title>
+	<!--Add to homescreen Android, Apple and Window-->
+	<meta name="mobile-web-app-capable" content="yes">
+	<link rel="icon" sizes="192x192" href="images/android-desktop.png">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="apple-mobile-web-app-title" content="Material Design Lite">
+	<link rel="apple-touch-icon-precomposed" href="images/ios-desktop.png">
+	<meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+	<meta name="msapplication-TileColor" content="#3372DF">
+
+	<link rel="shortcut icon" href="images/favicon.png">
+
+	<!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
+	<link rel="canonical" href="">
+
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,900&amp;subset=latin-ext" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"      rel="stylesheet">
+
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!--<link rel="stylesheet" href="css/style.css">-->
+	<link rel="stylesheet/less" type="text/css" href="css/styles.less" />
+	
+</head>
+<body class="onload">
+<header class="fixed-top navbar-light container-fluid">
+	<nav class="navbar  container justify-content-between">
+		<a class="navbar-brand" href="#"><img src="images/jobline-logo.svg" style="width: 100px;"></a>
+		<div class="navmenu-primary ml-auto d-flex align-items-center">
+			<a href="#" class="ml-0 white"><i class="material-icons">shopping_cart</i><span class="badge badge-pill badge-danger">4</span></a>	
+			<div class="ml-0 white">Üdv, NFadmin! </div>	
+			<button class="navbar-toggler white" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+				☰
+			</button>
+			<div class="collapse navbar-collapse" id="navbarText">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="#">Dashboard <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Jelentkezések</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Hirdetéseim</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Mentett CV</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">CV kereső</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Saját adatlap</a>
+					</li>	
+					<li class="nav-item">
+						<a class="nav-link" href="#">Kilépés</a>
+					</li>						
+				</ul>
+			</div>	
+		</div>
+	</nav>
+</header>
+<div class="container-fluid">
+	<div class="container">
+		<ul id="progressbar" class="my-5">
+			<li class="done">Termékválasztás</li>
+			<li class="done">Kosár</li>
+			<li class="done">Belépés</li>
+			<li class="active">Fizetés</li>
+			<li>Hirdetés szerkesztése</li>
+			<li>Hirdetés aktiválás</li>
+		</ul>	
+		<div class="title-block d-block w-100 mb-5">
+			<h1 class="text-center white main-title"><i class="material-icons">mood</i> Sikeres fizetés</h1>
+			<p class="text-center description white">
+				Köszi ;)
+			</p>
+		</div>
+		<div class="row cart-content">
+			<div class="col-md-12">
+				<div class="checkout-container mb-5 materialBoxShadowLight">
+
+					<div class="tab-content bg-white ">
+						
+						<div class="tab-pane active" id="registration">
+											
+								
+
+								<h3>
+									Az Ön rendelése
+								</h3>
+								
+								<table class="table table-responsive-md table-hover product-list">
+									<tbody>
+										<tr>
+											<th scope="row">Az Ön által megrendelt termékek:</th>
+											<td>
+												Csomag neve - felhasználható: XY-ig | részletek><br />
+
+												Csomag neve - felhasználható: XY-ig | részletek><br />
+
+												Csomag neve - felhasználható: XY-ig | részletek><br />
+
+												Csomag neve - felhasználható: XY-ig | részletek>											
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">Beterhelt összeg</th>
+											<td>1234567 Ft</td>
+										</tr>
+										<tr>
+											<th scope="row">Tranzakcióazonosító</th>
+											<td>fhr734989234</td>
+										</tr>
+										<tr>
+											<th scope="row">Egnedélyszám</th>
+											<td>BCS123</td>
+										</tr>											
+									</tbody>	
+								</table>	
+					
+							<div class="row navigation mb-5">
+								<div class="col-md-12 text-center"> 
+									<button type="submit" class="btn btn-cta bg-orange">Készíte el a hirdetését &rsaquo;</button>	
+
+								</div>	
+							</div>						
+						</div>
+						
+					</div>
+				</div>
+			
+			</div>
+		</div>
+		
+
+		<!--<div class="wrapper bg-white border-radius materialBoxShadowLight rounded-4px">
+			<h1 class="text-center bg-green white p-3 main-title">Termékválasztás</h1>
+			<div class="content">
+		content
+			</div>
+		</div>-->
+	</div>
+</div>
+<footer class="footer container-fluid">
+  <div class="container">
+	<span class="text-muted">Lábléc Jobline Satöbbi</span>
+  </div>
+</footer>
+
+<!--HELP blokk, minden oldalon megegyezik-->
+<div id="helpBox" class="help-box">
+	<div class="helpTitle"><i class="material-icons">help_outline</i> Segíthetünk?</div>
+	<div class="d-flex align-items-center helpContent">
+		<div>
+			<h3>Elakadt? További kérdése van? Segítünk!</h3>
+		</div>
+		<div>
+			Keressen minket a következő elérhetőségeken:
+					
+			<i class="material-icons">phone</i> +36-1-123-1234
+
+			<i class="material-icons">mail_outline</i> helpjobinfo.hu	
+		</div>	
+		<div class="helpClose" id="helpClose">
+			<i class="material-icons">close</i>
+		</div>
+	</div>
+</div>
+	
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="js/bootstrap.bundle.js"></script>		
+	
+<script src="js/less.min.js"></script>		
+<script src="js/ecom.js"></script>	
+
+<div class="testnav">
+<div class="togglenav"></div>
+<div class="d-flex align-items-center">
+<a href="4_fizetes.html" class="back">&laquo;Fizetés</a>
+<a href="5_dashboard.html" class="next">Dashboard  &raquo;</a>
+
+</div>
+</div>
+<script>
+$(document).ready(function() {
+	$('.togglenav').click(function(){
+		$('.testnav').toggleClass('close');
+	});
+});
+</script>
+
+</body>
+</html>
+  

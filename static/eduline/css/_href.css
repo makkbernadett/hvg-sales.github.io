@@ -1,0 +1,612 @@
+﻿
+/***************
+ * Név:         _href.css
+ * Leírás:      eduline.hu linkek css
+ * Keletkezés:  2006.10.25.
+ * Fejlesztő:   Zsibrita György
+ * FONTOS:		Éles site-on belül a kommenteket távolítsuk el.
+ ****************/
+
+#menubar h4 a:link, #menubar h4 a:visited
+{
+    font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: white;height:28px;
+	line-height:28px;
+	font-weight:normal;
+    text-decoration: none;
+}
+
+#menubar h4 a:hover
+{
+    overflow: hidden;
+    display: block;
+    text-decoration: none;
+    background: url(        "../img/menu_bg_on.gif" ) repeat-x;
+    background-position: top left;
+    height: 28px;
+    width: 110px;
+	font-weight:normal;
+    line-height: 28px;
+}
+#menubar h4.felvetelip a:hover{
+width:250px;
+    background:#F0710C;
+}
+#menubar h4.selected2 a
+{
+    overflow: hidden;font-weight:normal;
+    display: block;
+    text-decoration: none;
+    background:#F0710C;
+    background-position: top left;
+    height: 28px;
+    width: 200px;
+    line-height: 28px;
+}
+
+
+#menubar h4.selected a
+{
+    overflow: hidden;font-weight:normal;
+    display: block;
+    text-decoration: none;
+    background: url(        "../img/menu_bg_on.gif" ) repeat-x;
+    background-position: top left;
+    height: 28px;
+    width: 110px;
+    line-height: 28px;
+}
+#menubar h4.felvetelip a{
+width:250px;
+}
+.lead p a:link, .lead p a:visited, .content p a:link, .content p a:visited, .article-more p a:link, .article-more p a:visited
+{
+    font-family: "Trebuchet MS" , Tahoma, Arial;
+    font-size: 11px;
+    color: #0087cf;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.lead p a:hover, .content p a:hover, article-more p a:hover
+{
+    font-family: "Trebuchet MS" , Tahoma, Arial;
+    font-size: 11px;
+    color: #0087cf;
+    font-weight: bold;
+    text-decoration: none;
+}
+.content p.dark a:link, .content p.dark a:visited
+{
+    color: #768991;
+}
+.content p.dark a:hover
+{
+    color: #768991;
+}
+.content p.dark span a:link
+{
+    font-size: 16px;
+    font-weight: bold;
+    color: #0087cf;
+    text-decoration: none;
+}
+.quart-box li a:link, .quart-box li a:visited, .box .content li a:link, .box .content li a:visited, .relatio li a:link, relatio li a:visited
+{
+    color: #768991;
+    font-size: 11px;
+    text-decoration: none;
+    font-weight: 600;
+}
+.quart-box li.opp a:link, .quart-box li.opp a:visited
+{
+    color: #f0710c;
+    font-size: 11px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.quart-box li.opp a.user:link, .quart-box li.opp a.user:visited
+{
+    color: #768991;
+    text-decoration: underline;
+}
+.quart-box li.opp a:hover
+{
+    font-family: "Trebuchet MS" , Tahoma, Arial;
+    color: #f0710c;
+    font-size: 11px;
+    text-decoration: underline;
+}
+.relatio li a:link, .relatio li a:visited
+{
+    font-family: "Trebuchet MS" , Tahoma, Arial;
+    color: red;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.relatio li a:hover
+{
+    font-family: "Trebuchet MS" , Tahoma, Arial;
+    color: red;
+    font-size: 14px;
+    text-decoration: underline;
+}
+.quart-box li a:hover, .box .content li a:hover
+{
+    color: #768991;
+    font-size: 11px;
+    text-decoration: underline;
+}
+
+.quart-box li.fenyitem a:link, .quart-box li.fenyitem a:visited
+{
+    color: #768991;
+    font-size: 11px;
+    text-decoration: none;
+}
+.quart-box li.fenyitem a:hover
+{
+    color: #768991;
+    font-size: 11px;
+    text-decoration: underline;
+}
+
+.lead h1 a:link, .lead h1 a:visited
+{
+    font-family: "Trebuchet MS" , Tahoma, Arial;
+    font-size: 16px;
+    color: #ee6c03;
+    text-align: left;
+    text-decoration: none;
+}
+
+.lead h1 a:hover
+{
+    font-family: "Trebuchet MS" , Tahoma, Arial;
+    font-size: 16px;
+    color: #ee6c03;
+    text-align: left;
+    text-decoration: underline;
+}
+
+.content-col .lead h1 a:link, .content-col .lead h1 a:visited, .ajanlo-col .lead h1 a:link, .ajanlo-col .lead h1 a:visited
+{
+    font-family: "Trebuchet MS" , Tahoma, Arial;
+    font-size: 18px;
+    text-align: left;
+    line-height: 27px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.content-col .lead h1 a:hover, .ajanlo-col .lead h1 a:hover
+{
+    font-family: "Trebuchet MS" , Tahoma, Arial;
+    font-size: 18px;
+    text-align: left;
+    text-decoration: underline;
+    color: #ffffff;
+}
+
+.ajanlo-col .lead h1 a:link, .ajanlo-col .lead h1 a:visited
+{
+    font-size: 15px;
+    color: #ffffff;
+}
+
+.ajanlo-col .lead h1 a:hover
+{
+    font-size: 15px;
+    color: #ffffff;
+}
+
+
+.pg-foot-top a:link, .pg-foot-top a:visited
+{
+    text-decoration: none;
+    color: #768991;
+    font-size: 11px;
+}
+
+.pg-foot-top a:hover
+{
+    text-decoration: underline;
+    color: #768991;
+    font-size: 11px;
+}
+
+
+
+.pg-foot-btm a:link, .pg-foot-btm a:visited
+{
+    text-decoration: none;
+    color: #768991;
+    font-size: 11px;
+}
+
+.pg-foot-btm a:hover
+{
+    text-decoration: none;
+    color: #768991;
+    font-size: 11px;
+}
+
+.topmenu a:link, .topmenu a:visited
+{
+    font-size: 11px;
+    font-weight: bold;
+    color: #0087cf;
+    text-decoration: none;
+}
+
+.topmenu a:hover
+{
+    font-size: 11px;
+    font-weight: bold;
+    color: #0087cf;
+    text-decoration: underline;
+}
+.article-more h3 a:link, .article-more h3 a:visited
+{
+    color: #f0710c;
+    text-decoration: none;
+}
+
+.article-more h3 a:hover
+{
+    color: #f0710c;
+    text-decoration: underline;
+}
+
+.content-col .content h1 a:link, .content-col .content h1 a:visited
+{
+    color: #ee6c03;
+    text-decoration: none;
+}
+
+.content-col .content h1 a:hover
+{
+    color: #ee6c03;
+    text-decoration: underline;
+}
+.comment .user p a:link, .comment .user p a:visited
+{
+    color: #768991;
+    text-decoration: none;
+}
+.comment .user p a:hover
+{
+    color: #768991;
+    text-decoration: underline;
+}
+
+.ajanlo-col li a:link, .ajanlo-col li a:visited
+{
+    font-family: "Trebuchet MS" , Tahoma, Arial;
+    color: #212121;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.ajanlo-col li.test a:link, .ajanlo-col li.test a:visited
+{
+    font-family: "Trebuchet MS" , Tahoma, Arial;
+    color: #212121;
+    font-size: 11px;
+    font-weight: bold;
+    line-height: 22px;
+}
+.ajanlo-col .suggest p a
+{
+    padding: 0;
+    text-align: right;
+    margin: 0 0 0 0;
+    font-size: 11px;
+    color: #2774aa;
+}
+
+.ajanlo-col td h4 a:link, .ajanlo-col td h4 a:visited
+{
+    color: #212121;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.ajanlo-col td h4 a:hover
+{
+    color: #212121;
+    text-decoration: underline;
+    font-weight: bold;
+}
+.ajanlo-col td.content h4 a:link, .ajanlo-col td.content h4 a:visited
+{
+    color: #ff6c00;
+    font-size: 12px;
+    text-decoration: none;
+    font-weight: bold;
+    margin:0;
+    padding:0;
+}
+
+.ajanlo-col td.content h4 a:hover
+{
+    font-size: 12px;
+    color: #212121;
+    text-decoration: underline;
+    font-weight: bold;
+}
+.ajanlo-col td p a:link, .ajanlo-col td p a:visited
+{
+    color: #768991;
+    text-decoration: none;
+}
+.ajanlo-col td p a:hover
+{
+    color: #768991;
+    text-decoration: underline;
+}
+
+.ajanlo-col td p a:link.items, .ajanlo-col td p a:visited.items,
+.ajanlo-col p a:link.items, .ajanlo-col p a:visited.items
+{
+    color: #000000;
+    text-decoration: none;
+    font-weight: normal;
+}
+.ajanlo-col td p a:hover.items, .ajanlo-col p a:hover.items
+{
+    text-decoration: underline;
+}
+
+
+.pager p a:link, .pager p a:visited
+{
+    font-family: "Trebuchet MS" , Tahoma, Arial;
+    font-size: 11px;
+    color: #0087cf;
+    font-weight: bold;
+    text-decoration: none;
+    line-height: 18px;    
+}
+.pager p a:hover
+{
+    font-family: "Trebuchet MS" , Tahoma, Arial;
+    font-size: 11px;
+    color: #0087cf;
+    font-weight: bold;
+    line-height: 18px;
+    text-decoration: underline;
+}
+
+.content .pager p a:link, .content .pager p a:visited
+{
+    font-family: "Trebuchet MS" , Tahoma, Arial;
+    font-size: 16px;
+    color: red;
+    font-weight: bold;
+    text-decoration: none;
+    line-height: 18px;    
+}
+.content .pager p a:hover
+{
+    font-family: "Trebuchet MS" , Tahoma, Arial;
+    font-size: 16px;
+    color: red;
+    font-weight: bold;
+    line-height: 18px;
+    text-decoration: underline;
+}
+.pager p span a:link, .pager p span a:visited
+{
+    font-size: 16px;
+    line-height: 18px;
+    text-decoration: none;
+}
+.pager p span a:hover
+{
+    font-size: 16px;
+    line-height: 18px;
+}
+.lead li a:link, .lead p a:visited, .content p a:link, .content p a:visited, .article-more p a:link, .article-more p a:visited, .lead li a:visited
+{
+    font-family: "Trebuchet MS" , Tahoma, Arial;
+    font-size: 11px;
+    color: #0087cf;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.lead p a:hover, .content p a:hover, article-more p a:hover
+{
+    font-family: "Trebuchet MS" , Tahoma, Arial;
+    font-size: 11px;
+    color: #0087cf;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+table.profil td p a:link, table.profil td p a:visited, table.profil td p a:hover
+{
+    color: #8899a0;
+}
+.usermenu li a:link, .usermenu li a:visited, .details li.sub span a:link, .details li.sub span a:visited
+{
+    color: #768991;
+    font-family: "Trebuchet MS" , Tahoma, Arial;
+    font-size: 11px;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+.usermenu li a:hover, .details li.sub span a:hover
+{
+    color: #768991;
+    font-family: "Trebuchet MS" , Tahoma, Arial;
+    font-size: 11px;
+    font-weight: normal;
+    text-decoration: underline;
+}
+
+
+.usermenu li.aktiv a:link, .usermenu.aktiv li a:visited
+{
+    color: #f0710c;
+    font-family: "Trebuchet MS" , Tahoma, Arial;
+    font-size: 11px;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+.content table.forum td p a:link, .content table.forum td p a:visited
+{
+    color: #768991;
+    font-family: "Trebuchet MS" , Tahoma, Arial;
+    font-size: 11px;
+    text-decoration: none;
+}
+.content table.forum td p a:hover
+{
+    color: #768991;
+    font-family: "Trebuchet MS" , Tahoma, Arial;
+    font-size: 11px;
+    text-decoration: underline;
+}
+
+.content table.forum td p span a:link, .content table.forum td p span a:visited
+{
+    color: #f0710c;
+    font-family: "Trebuchet MS" , Tahoma, Arial;
+    font-size: 11px;
+    text-decoration: none;
+}
+.content table.forum td p span a:hover
+{
+    color: #f0710c;
+    font-family: "Trebuchet MS" , Tahoma, Arial;
+    font-size: 11px;
+    text-decoration: underline;
+}
+
+.content table.forum td.mod a:link, .content table.forum td.mod a:visited {
+color:#F0710C;
+font-family:"Trebuchet MS",Tahoma,Arial;
+font-size:11px;
+font-weight:bold;
+text-decoration:underline;
+}
+
+.num p a:link, .other p a:link, .num p a:visited, .other p a:visited
+{
+    color: #768991;
+    font-family: "Trebuchet MS" , Tahoma, Arial;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.post-avatar p a:link, .post-avatar p a:visited
+{
+    color: #f0710c;
+    font-family: "Trebuchet MS" , Tahoma, Arial;
+    font-size: 11px;
+    text-decoration: none;
+    text-align: center;
+}
+.post-avatar p a:hover
+{
+    color: #f0710c;
+    font-family: "Trebuchet MS" , Tahoma, Arial;
+    font-size: 11px;
+    text-decoration: underline;
+}
+table.group td.mod a:link, table.group td.mod a:visited
+{
+    color: #f0710c;
+    font-family: "Trebuchet MS" , Tahoma, Arial;
+    font-size: 11px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+table.messages p a:link, table.messages p a:visited
+{
+    color: #768991;
+    font-family: "Trebuchet MS" , Tahoma, Arial;
+    font-size: 11px;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+
+table.messages p a:hover
+{
+    color: #768991;
+    font-family: "Trebuchet MS" , Tahoma, Arial;
+    font-size: 11px;
+  
+    text-decoration: underline;
+}
+.nyelv .lead h1 a:link,.nyelv .lead h1 a:visited {
+
+    font-family: "Trebuchet MS" , Tahoma, Arial;
+    font-size: 16px;
+    color: #ee6c03;
+    text-align: left;
+    text-decoration: none;
+}
+.nyelv .lead  h1 a:hover{
+
+    font-family: "Trebuchet MS" , Tahoma, Arial;
+    font-size: 16px;
+    color: #ee6c03;
+    text-align: left;
+    text-decoration: none;
+}
+.lead p span a:link, .lead p span a:visited {
+    font: bold 16px "Trebuchet MS", Arial, Helvetica, sans-serif;
+    color: #EE6C03;
+    text-decoration: none;
+}
+
+.lead p span a:hover { text-decoration: underline; }
+
+.tagcloudbox .content p a:link, .tagcloudbox .content p a:visited {
+    color: #EE6C03;
+    text-decoration: none;
+}
+
+.tagcloudbox .content p a:hover { text-decoration: underline; }
+
+
+
+.ajanlo-col td p.keywords a:link, ajanlo-col td p.keywords a:visited {
+    padding: 0 5px 0 0;
+    font: bold 11px "Trebuchet MS",Tahoma,Arial;
+    color: #EE6C03;
+    text-decoration: none;
+}
+
+.ajanlo-col td p.keywords a:hover { text-decoration: underline; }
+
+ .ajanlo-col td.content h2.description a:link,  .ajanlo-col td.content h2.description a:visited {
+    color: #EE6C03;
+	    text-decoration: none;
+ }
+
+  .ajanlo-col td.content h2.description a:hover {
+    color: #EE6C03;
+	    text-decoration: underline;
+ }
+
+ 
+.tagcloudbox .content p a.tagcloud_5:link { font-size: 9px; }
+
+.tagcloudbox .content p a.tagcloud_4:link { font-size: 11px; }
+
+.tagcloudbox .content p a.tagcloud_3:link { font-size: 13px; }
+
+.tagcloudbox .content p a.tagcloud_2:link { font-size: 14px; }
+
+.tagcloudbox .content p a.tagcloud_1:link { font-size: 15px; }

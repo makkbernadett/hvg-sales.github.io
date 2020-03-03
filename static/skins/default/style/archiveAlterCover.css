@@ -1,0 +1,24 @@
+﻿.uppercase 
+    {
+		text-transform: uppercase;
+	}
+.italic 
+    {
+		font-style: italic;
+	}
+.bold 
+    {
+		font-weight: bold;
+	}
+.shadowbox 
+    {
+		padding: 10px;
+		border: 1px solid #D2D2D2;
+		background: url('http://images.hvg.hu/static/skins/default/img/altCim/shadow.png') top repeat-x;
+		background: url('http://images.hvg.hu/static/skins/default/img/altCim/shadow.png') top repeat-x, url('http://images.hvg.hu/static/skins/default/img/altCim/shadowud.png') bottom repeat-x;
+		overflow: auto;
+	}
+.boxheight 
+    {
+		height: 380px;
+	}

@@ -1,0 +1,43 @@
+/* EDULINE CSS
+************************/
+#logo { background-image: url('/skins/default/css/images/logo_eduline.png'); }
+
+a:hover img,
+#header_wrapper,
+#ad_top,
+#highlights,
+#article header,
+#rightbar .box h1,
+#postlist .post .title,
+#postlist .post.illustrated .picture,
+#more,
+#fresh, 
+.search_result section { border-color: #27c120; }
+
+input.button:hover,
+#header_tools .control:hover,
+#header_articles li a:hover { border-color: rgba(39,192,32,0.8); }
+
+.message {
+    position: fixed;
+    left: 0;
+    top: -80px;
+    background: #f8f59e;
+    border-bottom: 1px solid #dbd879;
+    width: 100%;
+    color: #333;
+    font-size: 12px;
+    line-height: 14px;
+    z-index: 10000;
+}
+.message p { padding: 10px 35px 10px 15px; }
+.message span {
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+}
+.message a, .message span:hover { text-decoration: underline; }

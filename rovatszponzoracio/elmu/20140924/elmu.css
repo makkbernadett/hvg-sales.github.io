@@ -1,0 +1,46 @@
+/* ELMÜ Ingatlan dobozszponzoráció */
+.dobozszponzoracio-elmu {
+  position: relative;
+  margin-bottom: 30px;
+}
+.dobozszponzoracio-elmu section article {
+  margin: 15px;
+}
+.dobozszponzoracio-elmu h4 {
+  background: #006CB5 url(http://static.hvgrt.hu/rovatszponzoracio/elmu/20140924/elmu-header.jpg) right 0 no-repeat;
+  height: 40px;
+  text-indent: -9999px;
+}
+.dobozszponzoracio-elmu > a {
+  color: #fff;
+  text-decoration: none;
+}
+.dobozszponzoracio-elmu .more {
+  color: #ff6600;
+}
+.dobozszponzoracio-elmu .box {
+  border: 0;
+  margin: 5px;
+  box-shadow: none;
+}
+.dobozszponzoracio-elmu .box header {
+  display: none;
+}
+.dobozszponzoracio-elmu .box .more {
+  display: none;
+}
+.dobozszponzoracio-elmu .box a.more {
+  color: #fff;
+  text-decoration: none;
+}
+.dobozszponzoracio-elmu .caption {
+  bottom: -15px;
+  height: 10px;
+  left: 5px;
+  position: absolute;
+  width: 50px;
+  background: url(http://hvg.hu/Content/i/banner/adlabel-horizontal.png) 0 0 no-repeat transparent;
+}
+.dobozszponzoracio-elmu .goAdverticum {
+  height: 0;
+}

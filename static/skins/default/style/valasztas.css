@@ -1,0 +1,128 @@
+﻿.box table.egyenikorzet td {
+    padding: 5px;
+    background-color: #EFEFEF;
+}
+
+.box table.egyenikorzet th { font-weight: bold }
+
+.box table.egyenikorzet td.first {
+    background-color: #EE8928;
+	color: #FFF;
+}
+
+table.egyenikorzet td.szazalek { text-align: right }
+
+.box table.egyenikorzet {
+    width: 100%;
+    padding: 0 0 20px 0;
+}
+
+.tabul {
+    width: 277px;
+    padding: 20px 0 0 10px;
+    float: left;
+}
+
+.tabul li {
+    background: url(http://images.hvg.hu/skins/default/img/gradient.gif) repeat-x;
+    border-bottom: solid 1px #CFCFCF;
+}
+
+.tabul li.selected, .tabul li:hover {
+    background: url(http://images.hvg.hu/skins/default/img/gradient2.gif) repeat-x;
+    border-bottom: 1px solid #5C5C5C;
+}
+
+.tabul li a {
+    display: block;
+	overflow: hidden;
+	zoom: 1;
+    padding: 0 0 0 14px;
+    font: bold 14px Arial, Helvetica, Sans-Serif;
+    color: #696969;
+    line-height: 30px;
+}
+
+.tabul li.selected a, .tabul li a:hover {
+    position: relative;
+    left: 14px;
+    padding: 0;
+    color: #FFF;
+    background: url(http://images.hvg.hu/skins/default/img/rightarrow.jpg) no-repeat right;
+    text-decoration: none;
+    zoom: 1;
+}
+
+#egyenipanes { float: right }
+
+.tablecontainer {
+	min-height: 410px;
+    width: 592px;
+    margin: 10px 10px 0 0;
+    padding: 20px 20px 0 20px;
+    background: #F7F7F7 url(http://images.hvg.hu/skins/default/img/dropshadow2.gif) repeat-y;
+    border-left: solid 1px #CFCFCF;
+}
+.chartlist { 
+  float: left; 
+  border-top: 1px solid #EEE; 
+  width: 200px;
+  padding:0;
+  width:320px;
+}
+.chartlist li { 
+  position: relative;
+  display: block;  
+  border-bottom: 1px solid #EEE; 
+  _zoom: 1;
+}
+.chartlist li a { 
+  display: block; 
+  padding: 0.4em 4.5em 0.4em 0.5em;
+  position: relative; 
+  z-index: 2; 
+}
+.chartlist .count { 
+  display: block; 
+  position: absolute; 
+  top: 0; 
+  right: 0; 
+  margin: 0 0.3em; 
+  text-align: right; 
+  color: #999; 
+  font-weight: bold; 
+  font-size: 12px; 
+  line-height: 2em; 
+}
+.chartlist .index { 
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  height: 100%; 
+  background: #B8E4F5; 
+  text-indent: -9999px; 
+  overflow: hidden; 
+  line-height: 2em;
+}
+.chartlist .index { 
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  height: 100%; 
+  background: #B8E4F5; 
+  text-indent: -9999px; 
+  overflow: hidden; 
+  line-height: 2em;
+}
+.chartlist li:hover { 
+  background: #EFEFEF; 
+}
+.chartlist .num
+{
+    position:absolute;
+    top:0;
+    margin: 6px; 
+    color: #999; 
+    font-weight: bold; 
+    font-size: 12px; 
+}

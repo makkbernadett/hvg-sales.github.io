@@ -1,0 +1,127 @@
+.latest24 { 
+	background: #f0f0f0 url(/skins/default/img/latest24-bg.png) 16px top repeat-y;
+	padding: 10px 0;
+}
+
+.latest24 h2 { 
+	background: url(/skins/default/img/latest24-sprite.png) 16px -125px no-repeat; 
+	color: #4B4B4B;
+	font-size: 18px;
+	margin: 0 0 10px;
+	padding: 0 0 0 36px;
+	line-height: 40px;
+	height: 40px;
+}
+
+.article {
+	background: #FFF;
+	border: 1px solid #E1E1E1;
+	margin: 0 10px 10px 30px;
+	padding: 10px 0 0;
+	position: relative;
+}
+#pg-content .article img { margin: 0 10px 10px 30px; }
+ 
+.article h3 {
+	font-size: 15px;
+	margin: 0 0 10px 30px;
+}
+#pg-content .article p { 
+	color: #333; 
+	margin: 10px 10px 10px 30px;
+}
+.article span {
+	background: url(/skins/default/img/latest24-sprite.png) 0 -170px no-repeat;
+	color: #FFF;
+	font: bold 12px Arial;
+	position: absolute;
+	top: 10px;
+	left: -25px;
+	text-align: center;
+	width: 48px;
+	height: 26px;
+	padding: 2px 0 0;
+}
+.article .info {
+	background: #FAFAFA;
+	border-top: 1px solid #E1E1E1;
+	font-size: 11px;
+	height: 30px;
+	line-height: 30px;
+}
+.article .info .fl { 
+	border-right: 1px solid #E1E1E1;
+	color: #9a9a9a;
+	padding: 0 10px;
+}
+
+/**/
+
+.pager { margin: 20px 0; }
+
+/**/
+
+.calendar-pager {
+	background: #F7F7F7;
+	border-bottom: 1px solid #E7E7E7;
+	color: #878787;
+	font-size: 15px;
+	line-height: 30px;
+	height: 30px;
+	text-align: center;
+	position: relative;
+}
+.calendar-pager .prev,
+.calendar-pager .next {
+	background: url(/skins/default/img/latest24-sprite.png) no-repeat;
+	display: block;
+	width: 45px;
+	height: 30px;
+	position: absolute;
+	top: 0;
+	text-indent: -999em;
+}
+.calendar-pager .prev { left: 0; }
+.calendar-pager .next { right: 0; background-position: 0 -60px; }
+.calendar-pager .prev:hover { background-position: 0 -30px; }
+.calendar-pager .next:hover { background-position: 0 -90px; }
+
+.calendar table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	font-size: 15px;
+	text-align: center;
+	width: 100%;
+}
+.calendar th {
+	background: #E7E7E7;
+	border: 1px solid #FFF;
+	color: #878787;
+	font-size: 12px;
+	padding: 2px 0;
+}
+.calendar .box table td {
+	background: #F8F8F8;
+	border: 1px solid #FFF;
+	padding: 10px 0;
+	width: 10%;
+}
+.calendar a { color: #333; }
+
+.calendar .box table td.active { background: #F60; }
+.calendar .active a { 
+	color: #FFF;
+	font-weight: bold;
+}
+.calendar .sunday a { color: #F00; }
+
+.calendar .box a.more span { 
+	background: #F60;
+	padding: 3px 10px;
+}
+.calendar .box a.more {
+	color: #FFF;
+	font-size: 11px;
+	padding: 0 10px;
+	text-align: left;
+}

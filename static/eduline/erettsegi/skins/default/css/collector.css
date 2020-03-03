@@ -1,0 +1,62 @@
+/***************
+ * Név:         style.css
+ * Leírás:      hvg.hu cikgyujto css
+ * Keletkezés:  2006.10.25.
+ * Fejlesztõ:   Zsibrita György
+ * FONTOS:		Éles site-on belül a kommenteket távolítsuk el.
+ ****************/
+
+
+
+
+
+.menuOutline {
+	BORDER-RIGHT: #4F86C3 1px solid; 
+	BORDER-TOP: #4F86C3 1px solid; 
+	BACKGROUND: #A9C0DA; 
+	BORDER-LEFT: #4F86C3 1px solid; 
+	BORDER-BOTTOM: #4F86C3 2px solid;
+	overflow:	hidden;
+}
+/*#menuCollectors {
+	DISPLAY: block; 
+	LEFT: 520px; 
+	VISIBILITY: hidden; 
+	WIDTH: 250px; 
+	POSITION: absolute; 
+	TOP: 50px
+}*/
+#menuCollectors {
+
+
+	WIDTH: 143px;
+	POSITION: absolute;
+	BORDER-RIGHT: #4F86C3 1px solid; 
+	BORDER-TOP: #4F86C3 1px solid; 
+	BACKGROUND: #A9C0DA; 
+	BORDER-LEFT: #4F86C3 1px solid; 
+	BORDER-BOTTOM: #4F86C3 2px solid;
+	margin: 0 0 0 0;
+	left:825px;
+	top:210px;
+	z-index:1;
+	display:none;
+	overflow:visible;
+	
+}
+#CollectorsContainer {
+	OVERFLOW: auto; 
+	WIDTH: 100%; 
+	HEIGHT: 200px;
+	padding: 5px;
+}
+
+.CollectorItem {
+	color:rgb(0, 120, 206);
+	font-family:Tahoma,Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	font-weight:normal;
+	width:130px;
+
+
+}

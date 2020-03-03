@@ -1,0 +1,207 @@
+.hiddenPic {display:none;}
+#maintab 
+{
+	width:220px;
+	margin:0 0 0 15px;
+	padding:0;
+	overflow:hidden;
+	height:25px;
+}
+#maintab li.selected a
+{	
+	font: normal 10px Verdana;
+	background:url(/skins/default/img/selected.gif) left 2px no-repeat; 
+	text-decoration: none;
+	padding: 2px 0 10px 7px;
+	margin-right: 0px;
+	color: #002e4f;
+	float:left;
+	height:30px;
+	line-height:23px;
+	z-index:15;
+}
+#maintab li.selected a span
+{
+	background: url(/skins/default/img/closer_sel.gif);
+	background-position:right 7px;
+	_background-position:right 6px;
+	background-repeat: no-repeat;
+	padding: 12px 7px 8px 0; 
+	height:30px;
+	margin:0;
+	line-height:23px;
+}
+#maintab li.selected a:hover
+{
+	font: normal 10px Verdana;
+	background:url(/skins/default/img/selected.gif) left 2px no-repeat; 
+	text-decoration: none;
+	padding: 2px 0 10px 7px;
+	margin-top:0px;
+	_margin: 0 0px 0 0;
+	color: #002e4f;
+	float:left;
+	height:30px;
+	line-height:23px;
+
+}
+#maintab li.selected a:hover span
+{
+	background: url(/skins/default/img/closer_sel.gif);
+	background-position:right 7px;
+	_background-position:right 6px;
+	background-repeat: no-repeat;
+	padding: 12px 7px 8px 0; 
+	height:30px;
+	margin:0;
+	line-height:23px;
+}
+
+#maintab li a
+{	
+	font: normal 10px Verdana;
+	background:url(/skins/default/img/tabbg.gif) left top no-repeat; 
+	text-decoration: none;
+	padding: 5px 0 6px 10px;
+	margin-right: 0px;
+	color: #002e4f;
+	float:left;
+	height:30px;
+	line-height:23px;
+}
+
+
+#maintab li a span
+{
+	background: url(/skins/default/img/closerbg.gif);
+	background-position:right top;
+	background-repeat: no-repeat;
+	padding: 5px 10px 6px 0; 
+	height:23px;
+	margin:0;
+	_margin-top:-5px;
+	line-height:23px;
+}
+
+#maintab li a, #maintab li a span
+{
+	float: left
+}
+
+/* Hide from IE5-Mac \*/
+#maintab li a, #maintab li a span
+{
+	float: none
+}
+/* End hide */
+
+#maintab li a:hover
+{
+	background:url(/skins/default/img/tabbg_hover.gif) left 2px no-repeat;
+	_background:url(/skins/default/img/tabbg_hover.gif) left 4px no-repeat;
+	padding: 7px 0 6px 10px;
+	margin-right: 0px;
+	margin:-3px 0px 0 0;
+	_margin:0px 0px 0 0;
+	color: #002e4f;
+	height:23px;
+	line-height:23px;
+}
+
+#maintab li a:hover span
+{
+	background: url(/skins/default/img/closerbg_hover.gif);
+	background-position:right top;
+	background-repeat: no-repeat;
+	padding: 5px 10px 6px 0; 
+	margin:-3px 0 0 0;
+}
+
+#maintab ul
+{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	overflow:hidden;
+	height:35px;
+	line-height:23px;
+}
+
+#maintab li
+{
+	display: inline;
+	float: left;
+	margin: 0;
+}
+
+.tabcontentstyle
+{
+	/*style of tab content oontainer*/
+	border: 1px solid #c9cacb;
+	background:	#f3f2f2;
+	width: 220px;
+	margin:0 0 0 15px;
+	padding: 10px;
+	overflow:hidden;
+	_margin-top:-2px;
+	z-index:0;
+}
+
+.tabcontent-main
+{
+	display: none;
+	z-index:1;
+}
+
+
+.tabcontent-main ul 
+{
+	margin:0;
+	margin-top:3px;
+	margin-left:10px;
+	margin-bottom:0;
+	padding-left:15px;
+	font-family:Tahoma,Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	font-weight:normal;
+	list-style-image:url(/skins/default/img/arrow.gif);
+}
+.tabcontent-main li 
+{
+	list-style-image:url(/skins/default/img/arrow.gif);
+	padding-bottom:5px;
+	padding-right:3px;
+	padding-top:0;
+	padding-left:0;
+	margin-right:3px;
+	margin-left:0;
+	line-height:15px;
+}
+
+.tabcontent-main a:link, .tabcontent-main a:visited 
+{
+	color:#002e4f;
+} 
+
+.tabcontent-main img 
+{
+	border:solid 1px #c9cacb;
+	margin:5px;
+}
+.tabcontent-main p img 
+{
+	margin-right:5px;
+}
+
+@media print
+{
+	.tabcontent-main
+	{
+		display: block !important;
+	}
+}
+
+.image 
+{
+	float:right;
+}

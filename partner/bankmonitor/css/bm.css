@@ -1,0 +1,109 @@
+.bm-calc-box {
+	font-family: 'PT Sans', sans-serif;
+	background: #F7F7F7;
+	max-width: 640px;
+	margin: 0 auto;
+	text-align: center;
+	border: 1px solid #e4e4e4;
+	border-top: 4px solid #cf5127;
+	padding-bottom: 4px;
+	position: relative;
+}
+.bm-calc-box h1 {
+	margin-bottom: 10px;
+	margin-top: 10px;
+	padding: 0px 10px;
+}
+.bm-calc-box h1 mark {
+	background: #E25900;
+	color: white;
+	padding: 0px 0px;
+	box-shadow: 10px 0 0 #E25900, -10px 0 0 #E25900;
+}
+.bm-calc-box h2 {
+	background: #f3f3f3;
+	border: 1px solid #e6e6e6;
+	font-size: 22px;
+	color: #555;
+	font-weight: 400;
+	line-height: 25px;
+	padding: 5px 5%;
+	text-shadow: 1px 1px 2px #ffffff;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+.bm-calc-box a {
+	text-decoration: none;
+	display: inline-block;
+	background: #12B6EC;
+	color: white;
+	border: none;
+	padding: 7px 40px;
+	font-size: 16px;
+	cursor: pointer;
+	line-height: 20px;
+	height: auto;
+	margin: 5px 10px 5px 10px;
+	transition-duration: 0.2s;
+}
+.bm-calc-box a:hover {
+	background: #149ecc;
+}
+/* LH */
+.loan-title {
+	margin: 0px 0px 5px 0px;
+}
+.loan-cont {
+	margin: 0px 0px 6px 0px;
+}
+.loan-cont span {
+	padding: .5rem .75rem;
+	margin-bottom: 0;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.25;
+	color: #464a4c;
+	text-align: center;
+	background-color: #eceeef;
+	border: 1px solid rgba(0, 0, 0, .15);
+	border-radius: .25rem;
+	border-bottom-left-radius: 0px;
+	border-top-left-radius: 0px;
+}
+.loan-cont input {
+	padding: .5rem .75rem;
+	font-size: 1.02rem;
+	line-height: 1.25;
+	color: #464a4c;
+	background-color: #fff;
+	background-image: none;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
+	border: 1px solid rgba(0, 0, 0, .15);
+	border-radius: .25rem;
+	-webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+	transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+	-o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+	transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+	transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+	border-bottom-right-radius: 0px;
+	border-top-right-radius: 0px;
+}
+.lh-calc .error {
+	color: #ff5b5b;
+	font-size: 14px;
+	margin: 0px;
+}
+/* LTP */
+.ltp-calc .ltp-calc-slider {
+	margin: 0px;
+	color: #605a55;
+	font-size: 16px;
+	padding: 0px 25px;
+	margin-bottom: 8px;
+}
+.irs-min, .irs-max { color: #e25900; }
+.irs-from, .irs-to, .irs-single { background: rgb(226, 89, 0); font-size: 13px;	top: -4px; }
+.irs-grid-text { color: #555555; }
+.irs-grid-pol {	background: #555555;}
+.irs-hidden-input { display:none!important; }

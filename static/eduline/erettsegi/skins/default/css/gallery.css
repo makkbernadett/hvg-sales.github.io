@@ -1,0 +1,89 @@
+.galleryhead h5 {
+	margin:0px;
+	padding:0px;
+	font-family:Tahoma,Verdana, Arial, Helvetica, sans-serif;
+	font-size:13px;
+	color:rgb(88,88,88);
+ 	width:500px;
+	text-align:center;
+	text-transform:uppercase;
+}
+ 
+.gallerymain {
+	width:610px;
+	padding:5px;
+
+ }
+ 
+.gallery {
+	width:600px;
+	padding-bottom:10px;	
+}
+
+.gallery2 p {
+	padding-left:12px;	 
+	padding-right:8px;	 
+	font-family:Tahoma,Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	margin-top:15px;	
+}
+ 
+.galleryselect {
+  	width:600px;
+	height:58px;
+	background:url(/skins/default/img/galnav.gif) no-repeat top left;
+}
+  
+.galleryselect table {
+  	width:620px;
+}
+ 
+.galleryboard {
+  	width:560px;
+	height:58px;
+	margin:0 auto 0 auto;
+}
+.galleryboard img{
+	margin:0 auto 0 auto;
+	margin-left:12px;
+	margin-right:12px;
+	border:solid 1px #43657E;
+}
+ 
+.pic span 
+{
+	font-family:Tahoma,Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color:#43657E;
+}
+
+.pic img {
+	margin:0px 0px 10px 5px;
+	border:1px solid #43657E;
+}
+
+.pg-contentwrapper{
+	float: left;
+	width: 100%;
+	margin:0;
+	padding:0;
+	clear:both;
+	display:block;
+	overflow:hidden;
+
+
+}
+.pg-contentcolumn{
+	margin-top:14px;
+
+	width:620px;
+	margin-right: -620px;
+	padding-right:3px;
+	margin-bottom:20px;
+	margin-left:0;
+	padding-left:0;
+}
+
+.jobbSepar{
+	background:url("/skins/default/img/jobbSepar.gif") top left repeat-x;
+}

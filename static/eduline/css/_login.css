@@ -1,0 +1,85 @@
+#pg-loginbox
+{
+	position:absolute;
+	z-index:99999;
+	left:580px;
+	top:150px;
+	background:#F1740B;
+	border:solid 1px #7D8896;
+	width:210px;
+	height:72px;
+	height:72px!important;
+	overflow:hidden;
+	display: none;
+}
+
+#pg-loginbox table
+{
+	width:180px;
+	margin-left:2px;
+}
+
+#pg-loginbox span
+{
+	color:rgb(255, 255, 255);
+	font-family:Tahoma,Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	text-align:left;
+
+}
+
+#pg-loginbox label
+{
+	width:63px;
+	color:rgb(255, 255, 255);
+	font-family:Tahoma,Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	text-align:right;
+}
+
+#pg-loginbox p
+{
+
+	color:rgb(255, 255, 255);
+	font-family:Tahoma,Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	text-align:left;
+	margin:0;
+	padding:0;
+}
+
+#pg-loginbox a:link, #pg-loginbox a:visited
+{
+
+	color:#F7C87E;
+	font-family:Tahoma,Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	text-align:left;
+	margin:0;
+	padding:0;
+	text-decoration:none;
+	font-weight:bold;
+}
+
+#pg-loginbox a:hover
+{
+	color:#F7C87E;
+	font-family:Tahoma,Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	text-align:left;
+	margin:0;
+	padding:0;
+	text-decoration:underline;
+}
+
+.form-input
+{
+	border:solid 1px #808080;
+	color:#000000;
+	font-family:Tahoma,Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	text-align:left;
+	display:block;
+	margin:0;
+	padding:0;
+}

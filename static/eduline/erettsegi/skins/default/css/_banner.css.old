@@ -1,0 +1,54 @@
+/* CSS Document */
+
+
+.banner-sep-high
+{
+	background:url(/skins/default/img/banner-sep-high.gif) repeat;
+	height:4px;
+	line-height:4px;
+	font-size:4px;
+}
+.banner-sep-low
+{
+	background:url(/skins/default/img/banner-sep-low.gif) repeat;
+	height:1px;
+	line-height:1px;
+	font-size:1px;
+}
+
+.banner-body
+{
+background-color:rgb(238,238,238);
+text-align:center;
+padding:10px 0;
+}
+
+.banner3
+{
+margin:0 10px;
+clear:both;
+}
+
+.abanner-sep
+{
+	background:url(/skins/default/img/artic-banner-sep.gif) repeat;
+	height:1px;
+	line-height:1px;
+	font-size:1px;
+}
+
+.banner2
+{
+padding:10px 10px 20px 10px;
+}
+
+.banner2 p
+{
+text-align:right;
+color:rgb(124,152,174);
+font-family:"Trebuchet MS";
+font-size:11px;
+font-weight:normal;
+padding:5px 0;
+margin:0;
+}

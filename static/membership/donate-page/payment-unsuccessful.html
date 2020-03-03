@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="hu">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+	
+	<meta name="mobile-web-app-capable" content="yes">
+
+	<!-- for Facebook -->          
+	<meta property="og:title" content="" />
+	<meta property="og:image" content="" />
+	<meta property="og:type" content="article" />
+	<meta property="og:description" content="" />
+	<meta property="og:url" content="" />
+	<meta property="og:site_name" content="hvg.hu" />
+
+	<title>HVG Támogatás </title>
+
+	<link rel="shortcut icon" href="images/favicon.png"> 
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto:300,400,500&amp;subset=latin-ext" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">	
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<link rel="canonical" href="" />
+</head>
+<body>
+<header>
+	<div class="hero d-flex py-5 hero-thanks">
+		<div class="container py-5">
+			<div class="row row-flex pb-5">
+
+				<div class="col-md-12 ">
+					<h3 class="pb-3">Sikertelen támogatás</h3>
+					<h1 class="title">Tisztelt Felhasználónk!</h1>
+					<h2>
+						Sajnáljuk, hogy probléma lépett fel a folyamatban. 
+					</h2> 
+					<p class="pb-0 mb-0 mt-5">
+						<button type="button" class="btn btn-primary btn-cta btn-icon btn-icon-left"><i class="material-icons">keyboard_backspace</i> Megpróbálom újra</button>
+					</p>					
+					<p class="pt-5">
+						Amennyiben kérdése van, kérjük keresse ügyfélszolgálatunkat az ugyfelszolgalat@hvg.hu e-mail címen, vagy a +36 1 436 2045 telefonszámon.
+						<br />&nbsp;<br />
+						Köszönettel: <strong>HVG Kiadó Zrt.</strong>					
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+
+<footer class="container-fluid bg-grey">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 d-flex align-items-center">
+				<div class="hvg-logo mr-2">
+					<a href="">
+						<img src="images/hvg_logo.jpg" alt="HVG" title="HVG">
+					</a>
+				</div>			
+				<h6>© Minden jog fenntartva</h6>
+				<h6><span class="icon-address"></span> HVG Kiadó Zrt., 1037 Budapest, Montevideo u. 14.</h6>
+				<h6><span class="icon-email"></span> <a href="mailto:ugyfelszolgalat@hvg.hu">ugyfelszolgalat@hvg.hu</a></h6>
+				<h6 class="ml-auto"><a href="#">Adatvédelmi tákékoztató</a></h6>
+			</div>
+			<div class="col-md-4 text-right">
+
+			</div>
+		</div>
+	</div>
+</footer>
+
+<script src="js/jquery-3.2.1.min.js" ></script>
+<script type="text/javascript">
+var duration = 40; // duration in seconds
+var fadeAmount = 0.5; // fade duration amount relative to the time the image is visible
+
+$(document).ready(function (){
+    $("[data-background]").each(function() {
+        var attr = $(this).attr('data-background');
+        if (typeof attr !== typeof undefined && attr !== false && !$(this).hasClass('hero-inside-post')) {
+            $(this).css('background-image', 'url(' + attr + ')');
+        }
+	});
+  var images = $(".image-slider .image-slide");
+  var numImages = images.length;
+  var durationMs = duration * 1000;
+  var imageTime = durationMs / numImages; // time the image is visible 
+  var fadeTime = imageTime * fadeAmount; // time for cross fading
+  var visibleTime = imageTime  - (imageTime * fadeAmount * 2);// time the image is visible with opacity == 1
+  var animDelay = visibleTime * (numImages - 1) + fadeTime * (numImages - 2); // animation delay/offset for a single image 
+  
+  images.each( function( index, element ){
+    if(index != 0){
+      $(element).css("opacity","0");
+      setTimeout(function(){
+        doAnimationLoop(element,fadeTime, visibleTime, fadeTime, animDelay);
+      },visibleTime*index + fadeTime*(index-1));
+    }else{
+      setTimeout(function(){
+        $(element).animate({opacity:0},fadeTime, function(){
+          setTimeout(function(){
+            doAnimationLoop(element,fadeTime, visibleTime, fadeTime, animDelay);
+          },animDelay )
+        });
+      },visibleTime);
+    }
+  });
+});
+
+// creates a animation loop
+function doAnimationLoop(element, fadeInTime, visibleTime, fadeOutTime, pauseTime){
+  fadeInOut(element,fadeInTime, visibleTime, fadeOutTime ,function(){
+    setTimeout(function(){
+      doAnimationLoop(element, fadeInTime, visibleTime, fadeOutTime, pauseTime);
+    },pauseTime);
+  });
+}
+
+// shorthand for in- and out-fading
+function fadeInOut( element, fadeIn, visible, fadeOut, onComplete){
+  return $(element).animate( {opacity:1}, fadeIn ).delay( visible ).animate( {opacity:0}, fadeOut, onComplete);
+}
+</script>
+</body>
+</html>

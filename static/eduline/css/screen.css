@@ -1,0 +1,32 @@
+﻿
+/***************
+ * Név:         screen.css
+ * Leírás:      jobline.hu css
+ * Keletkezés:  2006.10.25.
+ * Fejlesztő:   Zsibrita György
+ * FONTOS:		Éles site-on belül a kommenteket távolítsuk el.
+ ****************/
+
+
+
+/*@charset "UTF-8";*/
+/**
+ * képernyő import
+ */
+
+
+/* befoglaló */
+@import url(_pg.css);
+
+/* proform */
+@import url(_text.css);
+
+@import url(_login.css);
+@import url(_href.css);
+@import url(_table.css);
+@import url(_forms.css);
+@import url(_banner.css);
+@import url(_calendar.css);
+@import url(_user.css);
+@import url(adcloud.css);
+

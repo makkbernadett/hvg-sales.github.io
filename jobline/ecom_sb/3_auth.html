@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="hu">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+	<title>e-comm</title>
+	<!--Add to homescreen Android, Apple and Window-->
+	<meta name="mobile-web-app-capable" content="yes">
+	<link rel="icon" sizes="192x192" href="images/android-desktop.png">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="apple-mobile-web-app-title" content="Material Design Lite">
+	<link rel="apple-touch-icon-precomposed" href="images/ios-desktop.png">
+	<meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+	<meta name="msapplication-TileColor" content="#3372DF">
+
+	<link rel="shortcut icon" href="images/favicon.png">
+
+	<!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
+	<link rel="canonical" href="">
+
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,900&amp;subset=latin-ext" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"      rel="stylesheet">
+
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!--<link rel="stylesheet" href="css/style.css">-->
+	<link rel="stylesheet/less" type="text/css" href="css/styles.less" />
+	
+</head>
+<body class="onload">
+<header class="fixed-top navbar-light container-fluid">
+	<nav class="navbar  container justify-content-between">
+		<a class="navbar-brand" href="#"><img src="images/jobline-logo.svg" style="width: 100px;"></a>
+		<div class="navmenu-primary ml-auto d-flex align-items-center">
+			<a href="2_kosar.html" class="ml-0 white"><i class="material-icons">shopping_cart</i><span class="badge badge-pill badge-danger">4</span></a>		
+			<button class="navbar-toggler white" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+				☰
+			</button>
+			<div class="collapse navbar-collapse" id="navbarText">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="#">Bejelentkezés</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Regisztráció</a>
+					</li>					
+				</ul>
+			</div>	
+		</div>
+	</nav>
+</header>
+<div class="container-fluid">
+	<div class="container">
+		<ul id="progressbar" class="my-5">
+			<li class="done"><a href="1_termekvalasztas.html">Termékválasztás</a></li>
+			<li class="done"><a href="2_kosar.html">Kosár</a></li>
+			<li class="active"><a href="3_auth.html">Belépés</a></li>
+			<li>Fizetés</li>
+			<li>Hirdetés szerkesztése</li>
+			<li>Hirdetés aktiválás</li>
+		</ul>	
+		<div class="title-block d-block w-100 mb-5">
+			<h1 class="text-center white main-title">Belépés</h1>
+			<p class="text-center description white">
+				Amennyiben Ön már rendelkezik céges regisztrációval, lépjen be az adatai megadásával. Ha még nem regisztrált, akkor kattintson a regisztráció fülre és töltse ki az adatokat, majd kattintson a regisztrálok gombra.
+			</p>
+		</div>
+		<div class="row cart-content">
+			<div class="col-md-12">
+				<div class="authentication-tabs-container mb-5 materialBoxShadowLight">
+					<ul class="nav nav-tabs">
+					  <li class="nav-item col-md">
+						<a class="nav-link active" data-toggle="tab" href="#login" role="tab"><i class="icon-exit_to_app"></i> Bejelentkezés</a>
+					  </li>
+					  <li class="nav-item col-md">
+						<a class="nav-link" data-toggle="tab" href="#registration" role="tab"><i class="icon-people"></i> Regisztráció</a>
+					  </li>
+					</ul>
+					<div class="tab-content bg-white ">
+
+						<div class="tab-pane active" id="login">
+						
+							<p class="text-muted">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus pronin sapien nunc accuan eget.
+							</p>
+							
+							<form>
+								<div class="form-row">
+									<div class="form-group col-md-6">
+										<label for="Email">Email cím</label>
+										<input type="text" class="form-control" id="Email" placeholder="Adja meg az email címét" required>
+									</div>
+									<div class="form-group col-md-6">
+										<label for="Password">Jelszó</label>
+										<div class="toggle-password">
+											<span class="toggle-password-button"><i class="material-icons">visibility</i></span>												
+											<input class="form-control"  id="Password" name="Password" placeholder="Adja meg a jelszavát" type="password" value="" required>
+										</div>								  
+									</div>
+								</div>
+								<p class="text-center">
+									<a href="#" class="btn btn-cta bg-orange">Belépek &rsaquo;</a>							  
+								</p>
+								<p class="text-center">
+									<a href="#"><i class="material-icons">lock_open</i> Elfelejtett jelszó &rsaquo;</a>							  
+									<a href="#"><i class="material-icons">create</i> Regisztráció &rsaquo;</a>							  
+								</p>								
+							</form>
+							
+						</div>
+						
+						<div class="tab-pane" id="registration">
+						
+							<p class="text-muted">
+								<i class="material-icons">info_outline</i> Az összes adat megadása kötelező! A reigsztráció után küldünk Önnek egy email-t, amiben az aktiváló linkre kattintva aktiválhatja céges Jobline fiókját és folyathatja a megrendelést.
+							</p>						
+						
+							<form>
+								<h3>Regisztrációhoz szükséges adatok</h3>							
+								<div class="form-row">
+									<div class="form-group col-md-6">
+										<label for="Email">Felhasználó email címe</label>
+										<input type="text" class="form-control" id="Email" placeholder="Adja meg az email címét" required>
+									</div>
+									<div class="form-group col-md-6">
+										<label for="Password">Felhasználó jelszó</label>
+										<div class="toggle-password">
+											<span class="toggle-password-button"><i class="material-icons">visibility</i></span>												
+											<input class="form-control"  id="Password" name="Password" placeholder="Adja meg a jelszavát" type="password" value="" required>
+										</div>								  
+									</div>
+								</div>
+								
+								<div class="form-row">
+									<div class="form-group col-md-6">
+										<label for="Name">Felhasználó neve</label>
+										<input type="text" class="form-control" id="Name" placeholder="Adja meg a kapcsolattartó nevét" required>
+									</div>
+									<div class="form-group col-md-6">
+										<label for="Phone">Felhasználó telefonszáma</label>
+										<input type="text" class="form-control" id="Phone" placeholder="Adja meg a kapcsolattartó telefonszámát" required>							  
+									</div>
+								</div>								
+							
+								
+								<h3>Számlázáshoz szükséges cégadatok</h3>
+								<div class="form-row">
+									<div class="form-group col-md-8">
+										<div class="d-flex py-3">
+
+												<input id="company" value="company" name="regCompanyType" type="radio" class="custom-chkradio">
+												<label for="company" class="sub-label w-50">Céges reigsztráció</label>
+
+												<input id="nonprofit" value="nonprofit" name="regCompanyType" type="radio" class="custom-chkradio">
+												<label for="nonprofit" class="sub-label w-50">Magányszemély vagy nonprofit regisztráció</label>										
+											
+										</div>
+									</div>	
+								</div>
+								<div class="form-row">
+								
+									<div class="form-group col-md-6">
+										<label for="Name">Szerződő partner</label>
+										<input type="text" class="form-control" id="Name" placeholder="Adja meg a szerződő partner nevét" required>
+									</div>
+									<div class="form-group col-md-6">
+										<label for="Phone">Szerződő partner adószáma <small class="text-muted">Formátum: 12345678-1-12</small></label>
+										
+										<input type="text" class="form-control" id="taxNumber" placeholder="Adja meg a szerződő partner adószámát" required>							  
+									</div>
+								</div>									
+								
+									<label for="Name">Szerződő partner címe</label>	
+									<small class="text-muted">
+										Példa: 1031 Budapest, Montevideo utca 14
+									</small>									
+								<div class="form-row">
+									
+									<div class="form-group col-md-2">
+										<input type="text" class="form-control" id="Zip" placeholder="Irányítószám" required>
+									</div>
+									<div class="form-group col-md-4">									
+										<input type="text" class="form-control" id="City" placeholder="Város" required>							  
+									</div>
+									<div class="form-group col-md-6">									
+										<input type="text" class="form-control" id="Address" placeholder="Cím ( utca, házszám, emelet, stb)" required>							  
+									</div>									
+								</div>	
+								
+								<div class="form-row">
+									<div class="form-group col-md-12">
+										<label for="Message">Megjegyzés</label>
+										<textarea class="form-control" id="Message" rows="3"></textarea>
+
+									</div>
+
+								</div>									
+								
+								<div class="form-row">
+									<label class="custom-control custom-checkbox">
+										<input type="checkbox" class="custom-control-input" required>
+										<span class="custom-control-indicator"></span>
+										<span class="custom-control-description">Fogadja el az elfogadnivalókat</span>
+									</label>								
+								</div>
+								
+								<div class="form-row">
+									<label class="custom-control custom-checkbox">
+										<input type="checkbox" class="custom-control-input">
+										<span class="custom-control-indicator"></span>
+										<span class="custom-control-description">Hírlevél feliratkozás</span>
+									</label>								
+								</div>
+								
+								<p class="text-center">
+									<button type="submit" class="btn btn-cta bg-orange">Regisztrálok &rsaquo;</button>							  
+								</p>
+								
+							</form>						
+						
+						</div>
+						
+					</div>
+				</div>
+			
+			</div>
+		</div>
+		
+		<div class="row navigation my-5">
+			<div class="col-md-12 text-center">
+				<a href="1_termekvalasztas.html" class="btn btn-pager bg-gray btn-back">&lsaquo; Vissza a csomagokhoz</a>
+
+			</div>	
+		</div>
+		<!--<div class="wrapper bg-white border-radius materialBoxShadowLight rounded-4px">
+			<h1 class="text-center bg-green white p-3 main-title">Termékválasztás</h1>
+			<div class="content">
+		content
+			</div>
+		</div>-->
+	</div>
+</div>
+<footer class="footer container-fluid">
+  <div class="container">
+	<span class="text-muted">Lábléc Jobline Satöbbi</span>
+  </div>
+</footer>
+
+<!--HELP blokk, minden oldalon megegyezik-->
+<div id="helpBox" class="help-box">
+	<div class="helpTitle"><i class="material-icons">help_outline</i> Segíthetünk?</div>
+	<div class="d-flex align-items-center helpContent">
+		<div>
+			<h3>Elakadt? További kérdése van? Segítünk!</h3>
+		</div>
+		<div>
+			Keressen minket a következő elérhetőségeken:
+					
+			<i class="material-icons">phone</i> +36-1-123-1234
+
+			<i class="material-icons">mail_outline</i> helpjobinfo.hu	
+		</div>	
+		<div class="helpClose" id="helpClose">
+			<i class="material-icons">close</i>
+		</div>
+	</div>
+</div>
+	
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="js/bootstrap.bundle.js"></script>		
+	
+<script src="js/less.min.js"></script>		
+<script src="js/ecom.js"></script>	
+
+<div class="testnav">
+<div class="togglenav"></div>
+<div class="d-flex align-items-center">
+<a href="2_kosar.html" class="back">&laquo;Kosár</a>
+<a href="4_fizetes.html" class="next">Fizetés(regisztrált)  &raquo;</a>
+<a href="4_fizetes_nemregisztralt_belepett.html" class="next">Fizetés(belépett)  &raquo;</a>
+</div>
+</div>
+<script>
+$(document).ready(function() {
+	$('.togglenav').click(function(){
+		$('.testnav').toggleClass('close');
+	});
+});
+</script>
+
+</body>
+</html>
+  

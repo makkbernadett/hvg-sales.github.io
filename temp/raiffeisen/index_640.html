@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <title>Lakáshitel - Raiffeisen Bank</title>
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" media="all">
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" media="all">
+<link rel="stylesheet" type="text/css" href="style_640.css" media="all">
+<script src="https://ad.adverticum.net/scripts/goa-helper.js"></script>
+</head>
+<body id="calcform">
+
+<div class="container">
+    <div id="kalkulator_iframe" class="row">
+        <div class="col-md-12 padding-30">
+            <form name="bannerform" id="bannerform" method="get" action="" target="_blank">
+            <h4 class="panel-title h4title">Raiffeisen Lakáshitel kalkulátor</h4>
+            <input checked="checked" id="lhkamatozas2" name="lhkamatozas" onchange="kamatvalt()" type="radio" value="2" data-type-name="5 évre rögzített kamatozás" style="display: none;" />
+            <input checked="checked" id="lhckedvezmeny_input_02" name="lhckedvezmeny_input" type="radio" value="0.2" data-type-name="600 000 Ft felett" style="display: none;" />
+            <input checked="checked" id="lhckedvezmeny_input_11" type="radio" name="lhckedvezmeny_input1" value="0.35" data-type-name="igen" style="display: none;" >
+            <input type="hidden" id="kalkulatorHouseAmount" name="kalkulatorHouseAmount" value="" disabled/>
+            <input type="hidden" name="fwdparams" value="1">
+            <input type="hidden" name="osszeg" id="osszeg" value="">
+            <input type="hidden" name="futamido" id="futamido" value="">
+            <input type="hidden" name="rtu" id="rtu" value="">
+            <div class="row" style="padding-top:10px;">
+                <div class="col-xs-5 col-sm-5">
+                    <div class="input-group reset height-full">
+                        <span class="input-group-addon text-left"><b>Futamidő:</b></span>
+                    </div>
+                </div>
+                <div class="col-xs-7 col-sm-7">
+                    <div class="input-group reset height-full text-right">
+                        <button id="year_btn_left" onclick="decrYear()" type="button">-</button>
+                        <input type="text" id="kalkulatorYear" name="kalkulatorYear" class="manualedit calc currency" value="20 év" disabled/>
+                        <button id="year_btn_right" onclick="incrYear()" type="button">+</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="padding-top:6px;">
+                <div class="col-xs-5 col-sm-5">
+                    <div class="input-group reset height-full">
+                        <span class="input-group-addon  text-left"><b>Hitelösszeg:</b></span>
+                    </div>
+                </div>
+                <div class="col-xs-7 col-sm-7 text-right">
+                    <div class="input-group reset height-full">
+                        <button id="amount_btn_left" onclick="decrOssz()" type="button">-</button>
+                        <input type="text" id="kalkulatorAmount" name="kalkulatorAmount" class="manualedit calc currency" value="5.000.000 Ft" disabled/>
+                        <button id="amount_btn_right" onclick="incrOssz()" type="button">+</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="padding-top:6px;" id="erdekel2a">
+                <div class="col-xs-8 col-sm-8">
+                    <div class="input-group reset height-full">
+                        <b>Havi törlesztő:</b><br><span class="apro">(5 éves kamatperiódussal, maximális kamatkedvezménnyel)*</span>
+                    </div>
+                </div>
+                <div class="col-xs-4 col-sm-4">
+                    <div class="input-group reset height-full text-right">
+                        <input id="installment" class="form-control pull-left mark" type="text" name="installment" value="" disabled style="cursor:default;">
+                        <span class="input-group-addon text-left" style="display:none;"><b style="color:#FFFFFF;">KAMATLÁB</b></span>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="padding-top:6px;" id="erdekel2b">
+                <div class="col-xs-8 col-sm-8">
+                    <div class="input-group reset height-full">
+                        <b>THM:</b><br><span class="apro">* A kamatkedvezményeknek feltételei vannak. </span>
+                    </div>
+                </div>
+                <div class="col-xs-4 col-sm-4">
+                    <div class="input-group reset height-full text-right">
+                        <input id="thm" class="form-control pull-left mark" type="text" name="thm" value="" disabled style="cursor:default;">
+
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="padding-top:30px;" id="erdekel2c">
+                <div class="col-xs-6 col-sm-9">
+                    <a target="blank" href="http://ad.adverticum.net/C/76407/5202381/520242100?"><button type="button" class="btn btn-yellow1 cta1" id="erdekel2">Visszahívást kérek  <i class="fa fa-caret-right" aria-hidden="true" style="font-size:20px;"></i></button></a>
+                </div>
+                <div class="col-xs-6 col-sm-3">
+                    <div class="input-group reset height-full text-right">
+                        <img src="logo_big.png" border="0" style="float: right">
+                    </div>
+                </div>
+            </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+<script
+              src="https://code.jquery.com/jquery-2.2.4.js"
+              integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+              crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" type="text/javascript"></script>
+
+
+<script src="main.js" type="text/javascript"></script>
+<script>
+    (function(){
+
+        var cT = document.getElementById('bannerform');
+        cT.action = goa.clickTAG;
+    })();
+
+</script>
+</body>
+</html>

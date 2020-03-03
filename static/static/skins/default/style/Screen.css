@@ -1,0 +1,125 @@
+﻿@import "_pg.css";
+@import "_text.css";
+@import "_form.css";
+@import "_href.css";
+@import "_table.css";
+
+/* For Kulcs */
+.message {
+    position: fixed;
+    left: 0;
+    top: -80px;
+    background: #f8f59e;
+    border-bottom: 1px solid #dbd879;
+    width: 100%;
+    color: #333;
+    font-size: 12px;
+    line-height: 14px;
+    z-index: 10000;
+}
+.message p { padding: 10px 35px 10px 15px; }
+.message span {
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    z-index:10;
+}
+.message a, .message span:hover { text-decoration: underline; }
+
+ .boxcontainer.tem_box .boxtitle { background: #fff; }
+ .boxcontainer.tem_box .boxtitle { text-align: left; }
+ .boxcontainer.tem_box .greyboxbody { padding: 15px; }
+ .boxcontainer.tem_box .boxtitle a { display: block; }
+ .boxcontainer.tem_box .boxtitle img { margin: 0; }
+ .boxcontainer.tem_box .framed3 { 
+	margin: 0 10px 10px 0; 
+	*margin-bottom: 2px; 
+}
+ .boxcontainer.tem_box .sep { 
+	clear: both;
+	height: 1px;
+	background: #fff;
+	border-top: 1px solid black;
+	margin: 10px 0;
+}
+
+/**/
+
+.boxcontainer.edu { border-color: #f7f0f3; }
+.boxcontainer.edu .greyboxbody { background: #f7f0f3; }
+.boxcontainer.edu .box, 
+.boxcontainer.edu .boxtitle,
+.boxcontainer.edu .framed3,
+.boxcontainer.edu a.more,
+.boxcontainer.edu .sep { border-color: #f1cdde; }
+.boxcontainer.edu .boxtitle { background: #cf2474; }
+
+/**/
+
+.boxcontainer.hsz { border-color: #f1f8da; }
+.boxcontainer.hsz .greyboxbody { background: #f1f8da; }
+.boxcontainer.hsz .box, 
+.boxcontainer.hsz .boxtitle,
+.boxcontainer.hsz .framed3,
+.boxcontainer.hsz a.more,
+.boxcontainer.hsz .sep { border-color: #dfe8c0; }
+.boxcontainer.hsz .boxtitle { background: #7d9721; }
+
+/**/
+
+.boxcontainer.im { border-color: #f9f2dd; }
+.boxcontainer.im .greyboxbody { background: #f9f2dd; }
+.boxcontainer.im .box, 
+.boxcontainer.im .boxtitle,
+.boxcontainer.im .framed3,
+.boxcontainer.im a.more,
+.boxcontainer.im .sep { border-color: #e3d8b6; }
+.boxcontainer.im .boxtitle { background: #7e3136; }
+
+/**/
+
+.boxcontainer.ls { border-color: #dbefe8; }
+.boxcontainer.ls .greyboxbody { background: #dbefe8; }
+.boxcontainer.ls .box, 
+.boxcontainer.ls .boxtitle,
+.boxcontainer.ls .framed3,
+.boxcontainer.ls a.more,
+.boxcontainer.ls .sep { border-color: #bfe1d5; }
+.boxcontainer.ls .boxtitle { background: #79c9af; }
+
+/**/
+
+.boxcontainer.eco { border-color: #f6f0e2; }
+.boxcontainer.eco .greyboxbody { background: #f6f0e2; }
+.boxcontainer.eco .box, 
+.boxcontainer.eco .boxtitle,
+.boxcontainer.eco .framed3,
+.boxcontainer.eco a.more,
+.boxcontainer.eco .sep { border-color: #ece0c4; }
+.boxcontainer.eco .boxtitle { background: #fbbd17; }
+
+/**/
+
+.boxcontainer.tech { border-color: #e0e7eb; }
+.boxcontainer.tech .greyboxbody { background: #eff4f6; }
+.boxcontainer.tech .box, 
+.boxcontainer.tech .boxtitle,
+.boxcontainer.tech .framed3,
+.boxcontainer.tech a.more,
+.boxcontainer.tech .sep { border-color: #cbd3d8; }
+.boxcontainer.tech .boxtitle { background: #2589bc; }
+
+/**/
+
+.boxcontainer.am { border-color: #efe6e6; }
+.boxcontainer.am .greyboxbody { background: #f9f4f4; }
+.boxcontainer.am .box, 
+.boxcontainer.am .boxtitle,
+.boxcontainer.am .framed3,
+.boxcontainer.am a.more,
+.boxcontainer.am .sep { border-color: #d8cbcb; }
+.boxcontainer.am .boxtitle { background: #d22229; }

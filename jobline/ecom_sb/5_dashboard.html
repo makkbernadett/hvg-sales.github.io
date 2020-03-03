@@ -1,0 +1,384 @@
+<!doctype html>
+<html lang="hu">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+	<title>e-comm</title>
+	<!--Add to homescreen Android, Apple and Window-->
+	<meta name="mobile-web-app-capable" content="yes">
+	<link rel="icon" sizes="192x192" href="images/android-desktop.png">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="apple-mobile-web-app-title" content="Material Design Lite">
+	<link rel="apple-touch-icon-precomposed" href="images/ios-desktop.png">
+	<meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+	<meta name="msapplication-TileColor" content="#3372DF">
+
+	<link rel="shortcut icon" href="images/favicon.png">
+
+	<!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
+	<link rel="canonical" href="">
+
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,900&amp;subset=latin-ext" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"      rel="stylesheet">
+
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!--<link rel="stylesheet" href="css/style.css">-->
+	<link rel="stylesheet/less" type="text/css" href="css/styles.less" />
+	
+</head>
+<body class="onload">
+<header class="fixed-top navbar-light container-fluid">
+	<nav class="navbar  container justify-content-between">
+		<a class="navbar-brand" href="#"><img src="images/jobline-logo.svg" style="width: 100px;"></a>
+		<div class="navmenu-primary ml-auto d-flex align-items-center">
+			<a href="#" class="ml-0 white"><i class="material-icons">shopping_cart</i><span class="badge badge-pill badge-danger">4</span></a>	
+			<div class="ml-0 white">Üdv, NFadmin! </div>	
+			<button class="navbar-toggler white" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+				☰
+			</button>
+			<div class="collapse navbar-collapse" id="navbarText">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="#">Dashboard <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Jelentkezések</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Hirdetéseim</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Mentett CV</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">CV kereső</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Saját adatlap</a>
+					</li>	
+					<li class="nav-item">
+						<a class="nav-link" href="#">Kilépés</a>
+					</li>						
+				</ul>
+			</div>	
+		</div>
+	</nav>
+</header>
+<div class="container-fluid">
+	<div class="container">
+	
+
+		<div class="row">
+			<div class="col-md-12 mb-5 materialBoxShadowLight bg-white content">
+				<div class="title-block d-block w-100 mb-2">
+					<h1 class="text-left  main-title">Áttekintő</h1>
+				</div>			
+				<!--kontingens jelölő-->
+				<div class="row contingent-block">
+					<div class="col-md d-flex align-items-center">
+						<span class="h3">Kontingensek:</span>
+						
+						<span class="contingent d-inline-flex align-items-center">
+							<img src="images/2het_normal.png"> 2 hetes normál: <strong>0 db</strong>
+						</span>
+						
+						<span class="contingent d-inline-flex align-items-center">
+							<img src="images/4het_normal.png"> 4 hetes normál: <strong>0 db</strong>
+						</span>	
+
+						<span class="contingent d-inline-flex align-items-center">
+							<img src="images/4het_szakmunkas.png"> 4 hetes szakmunkás: <strong>0 db</strong>
+						</span>						
+
+						<a href="#" class="btn btn-action bg-orange ml-auto"><i class="material-icons">add</i> Új hirdetés létrehozása</a>
+					</div>					
+				</div>
+				
+				<!--Hirdetés szűrő gombok: aktív gombnak btn-ads-active class-->
+				<div class="row ads-navigation-block my-3">
+					<div class="col-md  px-0">
+						<a href="#">Mutasd az összes hirdetést</a>
+						<div class="d-flex my-3">
+							<a href="#" class="btn btn-ads btn-ads-active"><i class="material-icons">pause</i> Aktiválásró váró hirdetéseim</a>
+							<a href="#" class="btn btn-ads"><i class="material-icons">play_arrow</i> Aktív hirdetéseim</a>
+							<a href="#" class="btn btn-ads"><i class="material-icons">stop</i> Lejárt hirdetéseim</a>
+						</div>
+					</div>					
+				</div>		
+		
+				<!--hirdetés lista cimkék és sort-->
+				<!--rendezés link class-ok: aktív rendezési: active, ezen kívül asc vagy desc class-ok-->
+				<div class="row ads-sort-block mt-3">
+					<div class="col-md-1">
+						<a href="#" class="sort-by">Típus</a>
+					</div>
+					<div class="col-md-5">
+						<a href="#" class="sort-by active asc">Pozíció neve</a>
+					</div>
+
+					<div class="col-md-1 text-center">
+						<a href="#" class="sort-by">Aktiválás</a>
+					</div>					
+					<div class="col-md-1 text-center">
+						<a href="#" class="sort-by">Lejárt</a>		
+					</div>
+					<div class="col-md-1 text-center">
+						<a href="#" class="sort-by">Megtekintve</a>
+					</div>									
+					<div class="col-md text-center">
+						Statisztika
+					</div>							
+					<div class="col-md text-center">
+						Módosítás
+					</div>					
+				</div>
+			
+				
+				<div class="row ads-list-item align-items-center">
+					<div class="col-md-1">
+						<img src="images/2het_normal.png" />
+					</div>
+					<div class="col-md-5 d-flex align-items-center position-relative">
+						<!--státuszok: active, inactive, pending-->
+						<span class="status active"></span>
+						<div class="item-title">
+							<h4><a href="#">Karbantartó mérnök (Sopronkövesd)</a></h4>
+							<small class="text-muted">Hirdetés azonosító: #ff4400</small>
+						</div>
+					</div>
+
+					<div class="col-md-1">
+						2017.12.23.
+					</div>					
+					<div class="col-md-1">
+						2017.12.24.	
+					</div>
+					<div class="col-md-1">
+						128
+					</div>									
+					<div class="col-md">
+						<!--ha nem aktív a gomb, akkor linknek class: inactive-->
+						<a href="#" title="Statisztika letöltése" class="inactive"><i class="material-icons">file_download</i></a>
+						<a href="#" title="Statisztika megtekintése"><i class="material-icons">insert_chart</i></a>
+					</div>							
+					<div class="col-md">
+						<a href="#" title="Hirdetés szerkesztése" class=""><i class="material-icons">edit</i></a>
+						<!--hirdetés szüneteltetése ikon: <i class="material-icons">pause</i> | aktiválásra váró: <i class="material-icons">hourglass_empty</i>-->
+						<a href="#" title="Hirdetés szüneteltetése"><i class="material-icons">pause</i></a>
+						<a href="#" title="Hirdetés újra indítása" class="inactive"><i class="material-icons">autorenew</i></a>
+					</div>					
+				</div>		
+		
+		
+				<div class="row ads-list-item align-items-center">
+					<div class="col-md-1">
+						<img src="images/2het_normal.png" />
+					</div>
+					<div class="col-md-5 d-flex align-items-center position-relative">
+						<span class="status pending"></span>
+						<div class="item-title">
+							<h4><a href="#">Karbantartó mérnök (Sopronkövesd)</a></h4>
+							<small class="text-muted">Hirdetés azonosító: #ff4400</small>
+						</div>
+					</div>
+
+					<div class="col-md-1">
+						2017.12.23.
+					</div>					
+					<div class="col-md-1">
+						2017.12.24.	
+					</div>
+					<div class="col-md-1">
+						128
+					</div>									
+					<div class="col-md">
+						<a href="#" title="Statisztika letöltése" class="inactive"><i class="material-icons">file_download</i></a>
+						<a href="#" title="Statisztika megtekintése"><i class="material-icons">insert_chart</i></a>
+					</div>							
+					<div class="col-md">
+						<a href="#" title="Hirdetés szerkesztése" class=""><i class="material-icons">edit</i></a>
+						<a href="#" title="Hirdetés aktiválásra vár" class="inactive"><i class="material-icons">hourglass_empty</i></a>
+						<a href="#" title="Hirdetés újra indítása" class="inactive"><i class="material-icons">autorenew</i></a>
+					</div>					
+				</div>	
+
+				<div class="row ads-list-item align-items-center">
+					<div class="col-md-1">
+						<img src="images/2het_normal.png" />
+					</div>
+					<div class="col-md-5 d-flex align-items-center position-relative">
+						<span class="status active"></span>
+						<div class="item-title">
+							<h4><a href="#">Karbantartó mérnök (Sopronkövesd)</a></h4>
+							<small class="text-muted">Hirdetés azonosító: #ff4400</small>
+						</div>
+					</div>
+
+					<div class="col-md-1">
+						2017.12.23.
+					</div>					
+					<div class="col-md-1">
+						2017.12.24.	
+					</div>
+					<div class="col-md-1">
+						128
+					</div>									
+					<div class="col-md">
+						<a href="#" title="Statisztika letöltése" class="inactive"><i class="material-icons">file_download</i></a>
+						<a href="#" title="Statisztika megtekintése"><i class="material-icons">insert_chart</i></a>
+					</div>							
+					<div class="col-md">
+						<a href="#" title="Hirdetés szerkesztése" class=""><i class="material-icons">edit</i></a>
+						<a href="#" title="Hirdetés szüneteltetése"><i class="material-icons">pause</i></a>
+						<a href="#" title="Hirdetés újra indítása" class="inactive"><i class="material-icons">autorenew</i></a>
+					</div>					
+				</div>	
+
+				<div class="row ads-list-item align-items-center">
+					<div class="col-md-1">
+						<img src="images/2het_normal.png" />
+					</div>
+					<div class="col-md-5 d-flex align-items-center position-relative">
+						<span class="status inactive"></span>
+						<div class="item-title">
+							<h4><a href="#">Karbantartó mérnök (Sopronkövesd)</a></h4>
+							<small class="text-muted">Hirdetés azonosító: #ff4400</small>
+						</div>
+					</div>
+
+					<div class="col-md-1">
+						2017.12.23.
+					</div>					
+					<div class="col-md-1">
+						2017.12.24.	
+					</div>
+					<div class="col-md-1">
+						128
+					</div>									
+					<div class="col-md">
+						<a href="#" title="Statisztika letöltése" class="inactive"><i class="material-icons">file_download</i></a>
+						<a href="#" title="Statisztika megtekintése"><i class="material-icons">insert_chart</i></a>
+					</div>							
+					<div class="col-md">
+						<a href="#" title="Hirdetés szerkesztése" class=""><i class="material-icons">edit</i></a>
+						<a href="#" title="Hirdetés szüneteltetése"><i class="material-icons">pause</i></a>
+						<a href="#" title="Hirdetés újra indítása" class="inactive"><i class="material-icons">autorenew</i></a>
+					</div>					
+				</div>	
+
+				<div class="row ads-list-item align-items-center">
+					<div class="col-md-1">
+						<img src="images/2het_normal.png" />
+					</div>
+					<div class="col-md-5 d-flex align-items-center position-relative">
+						<span class="status active"></span>
+						<div class="item-title">
+							<h4><a href="#">Karbantartó mérnök (Sopronkövesd)</a></h4>
+							<small class="text-muted">Hirdetés azonosító: #ff4400</small>
+						</div>
+					</div>
+
+					<div class="col-md-1">
+						2017.12.23.
+					</div>					
+					<div class="col-md-1">
+						2017.12.24.	
+					</div>
+					<div class="col-md-1">
+						128
+					</div>									
+					<div class="col-md">
+						<a href="#" title="Statisztika letöltése" class="inactive"><i class="material-icons">file_download</i></a>
+						<a href="#" title="Statisztika megtekintése"><i class="material-icons">insert_chart</i></a>
+					</div>							
+					<div class="col-md">
+						<a href="#" title="Hirdetés szerkesztése" class=""><i class="material-icons">edit</i></a>
+						<a href="#" title="Hirdetés szüneteltetése"><i class="material-icons">pause</i></a>
+						<a href="#" title="Hirdetés újra indítása" class="inactive"><i class="material-icons">autorenew</i></a>
+					</div>					
+				</div>					
+		
+		
+				<div class="row navigation my-5">
+					<nav aria-label="Navigáció" class="col-md">
+						<ul class="pagination pagination-lg justify-content-center">
+							<li class="page-item disabled">
+								<a class="page-link" href="#" tabindex="-1">&lsaquo;</a>
+							</li>
+							<li class="page-item active"><a class="page-link" href="#">1</a></li>
+							<li class="page-item"><a class="page-link" href="#">2</a></li>
+							<li class="page-item"><a class="page-link" href="#">3</a></li>
+							<li class="page-item">
+								<a class="page-link" href="#">&rsaquo;</a>
+							</li>
+						</ul>
+					</nav>
+				</div>						
+	
+			
+			</div>
+		</div>
+		
+
+		<!--<div class="wrapper bg-white border-radius materialBoxShadowLight rounded-4px">
+			<h1 class="text-center bg-green white p-3 main-title">Termékválasztás</h1>
+			<div class="content">
+		content
+			</div>
+		</div>-->
+	</div>
+</div>
+
+<footer class="footer container-fluid">
+  <div class="container">
+	<span class="text-muted">Lábléc Jobline Satöbbi</span>
+  </div>
+</footer>
+
+<!--HELP blokk, minden oldalon megegyezik-->
+<div id="helpBox" class="help-box">
+	<div class="helpTitle"><i class="material-icons">help_outline</i> Segíthetünk?</div>
+	<div class="d-flex align-items-center helpContent">
+		<div>
+			<h3>Elakadt? További kérdése van? Segítünk!</h3>
+		</div>
+		<div>
+			Keressen minket a következő elérhetőségeken:
+					
+			<i class="material-icons">phone</i> +36-1-123-1234
+
+			<i class="material-icons">mail_outline</i> helpjobinfo.hu	
+		</div>	
+		<div class="helpClose" id="helpClose">
+			<i class="material-icons">close</i>
+		</div>
+	</div>
+</div>
+	
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="js/bootstrap.bundle.js"></script>		
+	
+<script src="js/less.min.js"></script>		
+<script src="js/ecom.js"></script>	
+
+<div class="testnav">
+<div class="togglenav"></div>
+<div class="d-flex align-items-center">
+<a href="4_fizetes.html" class="back">&laquo;Fizetés</a>
+<a href="6_1_editad.html" class="next">Hirdetés létrehozás/szerkesztés  &raquo;</a>
+
+</div>
+</div>
+<script>
+$(document).ready(function() {
+	$('.togglenav').click(function(){
+		$('.testnav').toggleClass('close');
+	});
+});
+</script>
+</body>
+</html>
+  

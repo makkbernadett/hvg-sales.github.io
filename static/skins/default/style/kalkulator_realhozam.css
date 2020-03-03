@@ -1,0 +1,324 @@
+/*//////////////////////////////////////////////////////////////////////////////////////////////////
+//
+//	calculator.css
+//
+//////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*//////////////////////////////////////////////////////////////////////////////////////////////////
+//	global definitions
+//////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+body {
+
+	background-color: #e4e4e4;
+	margin: 0;
+	padding: 10px;
+}
+
+div.hvg_content a,
+div.hvg_content p,
+#pg-content div.hvg_content h1,
+div.hvg_content h2,
+div.hvg_content h3,
+div.hvg_content ul,
+div.hvg_content ol,
+div.hvg_content li {
+
+	font-family: arial, helvetica, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	margin: 0;
+	padding: 0;
+}
+
+div.hvg_content label,
+div.hvg_content input,
+div.hvg_content select,
+div.hvg_content button {
+
+	font-family: arial, helvetica, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+}
+
+div.hvg_content form,
+div.hvg_content fieldset {
+
+	border: none;
+	margin: 0;
+	padding: 0;
+}
+
+div.hvg_content ul,
+div.hvg_content ol {
+
+	list-style-position: outside;
+}
+
+div.hvg_content a {
+
+	text-decoration: none;
+	outline: none;
+}
+
+/*//////////////////////////////////////////////////////////////////////////////////////////////////
+//	layout definitions
+//////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+div.hvg_frame {
+
+	display: block;
+	clear: both;
+	width: 708px;
+	border: 3px solid #f7f7f7;
+	margin-bottom: 10px;
+}
+
+html>body div.hvg_frame {
+
+	width: 704px;
+}
+
+div.hvg_content {
+
+	display: block;
+	clear: both;
+	width: 702px;
+	border: 1px solid white;
+}
+
+div.hvg_content div.hvg_panel {
+
+	background-color: #f7f7f7;
+	display: block;
+	clear: both;
+	overflow: hidden;
+	width: 700px;
+	border: 1px solid #e7e7e7;
+	padding: 10px 10px 0 10px;
+}
+
+html>body div.hvg_content div.hvg_panel {
+
+	width: 680px;
+}
+
+/*//////////////////////////////////////////////////////////////////////////////////////////////////
+//	table definitions
+//////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+div.hvg_content div.hvg_table,
+div.hvg_content div.hvg_canvas {
+
+	display: block;
+	clear: both;
+	margin-bottom: 12px;
+}
+
+div.hvg_content div.hvg_canvas {
+
+	border: 1px solid #e7e7e7;
+}
+
+div.hvg_content table td h1,
+div.hvg_content table td h2,
+div.hvg_content table td h3 {
+
+	margin-top: 4px;
+	margin-bottom: 4px;
+	padding-left: 4px;
+	padding-right: 4px;
+}
+
+#pg-content div.hvg_content table td p {
+	margin: 0;
+	padding-left: 4px;
+	padding-right: 0;
+}
+
+div.hvg_content thead td {
+
+	background-color: white;
+	border: 1px solid #e7e7e7;
+}
+
+div.hvg_content thead td p {
+
+	text-align: center;
+	padding-top: 4px;
+	padding-bottom: 4px;
+}
+
+div.hvg_content tbody td p {
+
+	text-align: center;
+}
+
+div.hvg_content tfoot td p {
+
+	text-align: left;
+}
+
+/*//////////////////////////////////////////////////////////////////////////////////////////////////
+//	type definitions
+//////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+#pg-content div.hvg_content h1 {
+
+	font-weight: bold;
+	font-size: 18px;
+	color: #4b4b4b;
+	border: 1px solid #e7e7e7;
+	border-bottom: none;
+	padding: 10px;
+}
+
+div.hvg_content h2 {
+
+	font-weight: bold;
+	font-size: 14px;
+	color: #ff6700;
+	margin-bottom: 12px;
+	padding-left: 8px;
+	padding-right: 8px;
+}
+
+div.hvg_content h3 {
+
+	font-weight: bold;
+	font-size: 11px;
+	color: #333333;
+	margin-bottom: 12px;
+	padding-left: 8px;
+	padding-right: 8px;
+}
+
+div.hvg_content p {
+
+	font-size: 11px;
+	line-height: 15px;
+	color: #333333;
+	margin-bottom: 12px;
+	padding-left: 8px;
+	padding-right: 8px;
+}
+
+div.hvg_content p span.hvg_red {
+
+	color: red;
+}
+
+div.hvg_content p span.hvg_gray {
+
+	color: #c0c0c0;
+}
+
+/*//////////////////////////////////////////////////////////////////////////////////////////////////
+//	list definitions
+//////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+div.hvg_content ul {
+
+	margin: 12px 8px 12px 32px;
+}
+
+div.hvg_content ol {
+
+	margin: 12px 8px 12px 38px;
+}
+
+div.hvg_content li {
+
+	font-size: 11px;
+	color: #333333;
+	padding-bottom: 4px;
+}
+
+div.hvg_content ul li {
+
+	padding-bottom: 0;
+}
+
+html>body div.hvg_content ul li {
+
+	padding-bottom: 4px;
+}
+
+/*//////////////////////////////////////////////////////////////////////////////////////////////////
+//	input definitions
+//////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+div.hvg_content input.hvg_input,
+div.hvg_content input.hvg_output,
+div.hvg_content input.hvg_total,
+div.hvg_content input.hvg_error,
+div.hvg_content input.hvg_hidden {
+
+	text-align: right;
+	font-weight: bold;
+	font-size: 12px;
+	color: #333333;
+	width: 100%;
+	border: 1px solid #cccccc;
+}
+
+div.hvg_content input.hvg_input {
+
+	background-color: #ffe5c3;
+}
+
+div.hvg_content input.hvg_output {
+
+	background-color: #ffad65;
+}
+
+div.hvg_content input.hvg_total {
+
+	background-color: #ffad65;
+	font-size: 18px;
+}
+
+div.hvg_content input.hvg_error {
+
+	background-color: #ff6700;
+	color: white;
+}
+
+div.hvg_content input.hvg_hidden {
+
+	background-color: #f7f7f7;
+	color: white;
+	border: 1px solid #f7f7f7;
+}
+
+div.hvg_content select {
+
+	background-color: #ffe5c3;
+	text-align: left;
+	font-weight: bold;
+	font-size: 12px;
+	color: #333333;
+	width: 100%;
+	border: 1px solid #cccccc;
+}
+
+div.hvg_content button {
+
+	background-color: #333333;
+	text-align: center;
+	font-weight: bold;
+	font-size: 11px;
+	cursor: pointer;
+	color: white;
+	width: 100%;
+	height: 18px;
+	border: none;
+}
+
+/*//////////////////////////////////////////////////////////////////////////////////////////////////
+//
+//	calculator.css
+//
+//////////////////////////////////////////////////////////////////////////////////////////////////*/

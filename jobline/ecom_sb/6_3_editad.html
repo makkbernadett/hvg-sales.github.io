@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="hu">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+	<title>e-comm</title>
+	<!--Add to homescreen Android, Apple and Window-->
+	<meta name="mobile-web-app-capable" content="yes">
+	<link rel="icon" sizes="192x192" href="images/android-desktop.png">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="apple-mobile-web-app-title" content="Material Design Lite">
+	<link rel="apple-touch-icon-precomposed" href="images/ios-desktop.png">
+	<meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+	<meta name="msapplication-TileColor" content="#3372DF">
+
+	<link rel="shortcut icon" href="images/favicon.png">
+
+	<!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
+	<link rel="canonical" href="">
+
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,900&amp;subset=latin-ext" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"      rel="stylesheet">
+
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!--<link rel="stylesheet" href="css/style.css">-->
+	<link rel="stylesheet/less" type="text/css" href="css/styles.less" />
+	
+</head>
+<body class="onload">
+<header class="fixed-top navbar-light container-fluid">
+	<nav class="navbar  container justify-content-between">
+		<a class="navbar-brand" href="#"><img src="images/jobline-logo.svg" style="width: 100px;"></a>
+		<div class="navmenu-primary ml-auto d-flex align-items-center">
+			<a href="#" class="ml-0 white"><i class="material-icons">shopping_cart</i><span class="badge badge-pill badge-danger">4</span></a>	
+			<div class="ml-0 white">Üdv, NFadmin! </div>	
+			<button class="navbar-toggler white" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+				☰
+			</button>
+			<div class="collapse navbar-collapse" id="navbarText">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="#">Dashboard <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Jelentkezések</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Hirdetéseim</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Mentett CV</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">CV kereső</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Saját adatlap</a>
+					</li>	
+					<li class="nav-item">
+						<a class="nav-link" href="#">Kilépés</a>
+					</li>						
+				</ul>
+			</div>	
+		</div>
+	</nav>
+</header>
+<div class="container-fluid">
+	<div class="container">
+	
+
+		<div class="row">
+			<div class="col-md-12 mb-5 materialBoxShadowLight bg-white content">
+				<div class="title-block d-block w-100 mb-2">
+					<h1 class="text-left  main-title">Áttekintő</h1>
+				</div>	
+				
+				<!--hirdetés szerkesztő címsor és gombok - sticky lesz-->
+				<div class="row contingent-block">
+					<div class="col-md d-flex align-items-center">
+						<span class="h3">Hirdetés létrehozása/szerkesztése</span>
+						
+						<div class="ml-auto text-right">
+							<a href="#" class="btn btn-action bg-blue"><i class="material-icons">save</i> Elmentem</a>
+							<a href="#" class="btn  btn-action bg-orange"><i class="material-icons">play_circle_filled</i> Aktiválom</a>
+							<a href="#" class="btn  btn-action bg-white"><i class="material-icons">visibility</i> Előnézet</a>
+						</div>
+
+					</div>					
+				</div>
+				
+				<!--hirdetés szerkesztő blokk-->
+				<div class="row ad_edit my-3">
+					<!--hirdetész szerkesztő navigáció-->
+					<div class="col-md-4 ad_edit-nav">
+						<h4>Hirdetés részleteinek szerkesztése</h4>					
+						<nav class="ad_edit-nav-list">
+							<ul class="list-unstyled">
+								<li><a href="6_1_editad.html">Alapadatok <span class="badge badge-success ml-auto"><i class="material-icons">check</i></span></a></li>
+								<li><a href="6_2_editad.html">Cég részletei <span class="badge badge-success ml-auto">85%</span></a></li>
+								<li><a href="6_3_editad.html" class="active">Állás részletei</a></li>
+								<li><a href="6_4_editad.html">Jelölt részletei</a></li>
+								<li><a href="6_5_editad.html">Hirdetés beállításai</a></li>
+							</ul>
+						</nav>
+						<h4>Aktív hirdetés részletek</h4>
+						<nav class="ad_edit-nav-list">
+							<ul class="list-unstyled">						
+								<li><a href="6_6_editad.html">Statisztikák</a></li>
+								<li><a href="6_7_editad.html">Jelentkezések</a></li>
+							</ul>
+						</nav>						
+					</div>
+					
+					<!--szerkesztés-->
+					<div class="col-md-8 ad_edit-block pl-5 pr-5">
+					
+						<!--Alapadatok szerkesztése-->
+						<h2>Állás részletei</h2>
+						
+						<div class="ad_edit-form">
+						
+							<div class="form-group">
+								<label for="positionSalary">
+									Becsült jövedelem
+									<a href="#" data-toggle="tooltip" data-placement="auto top" class="ml-auto badge badge-pill badge-light" title="Segítség a kitöltéshez - plain text">?</a>
+								</label>
+								<input type="text" class="form-control" id="positionSalary" aria-describedby="positionHelp" placeholder="Írja be a becsült jövedelmet">
+							</div>	
+							
+							
+
+							<div class="wysiwyg form-group mb-5">
+								<label for="positionDetailedDescription ">
+									Pozíció részletes leírása
+									<a href="#" data-toggle="tooltip" data-placement="top" class="ml-auto badge badge-pill badge-light" title="Segítség a kitöltéshez - plain text">?</a>
+								</label>							
+								<div class="panel-buttons mt-3">
+									<div class="buttons-group">
+																			<button type="button" id="h1">h1</button>
+										<button type="button" id="bold"><i class="material-icons">format_bold</i></button>
+										<button type="button" id="italic"><i class="material-icons">format_italic</i></button>
+										<button type="button" id="underline"><i class="material-icons">format_underlined</i></button>
+										<button type="button" id="strikethrough"><i class="material-icons">format_strikethrough</i></button>	    			
+									</div>
+									<div class="buttons-group">
+										<button type="button" id="justifyleft"><i class="material-icons">format_align_left</i></button>
+										<button type="button" id="justifycenter"><i class="material-icons">format_align_center</i></button>
+										<button type="button" id="justifyright"><i class="material-icons">format_align_right</i></button>
+										<button type="button" id="justifyfull"><i class="material-icons">format_align_justify</i></button>
+									</div>
+									<div class="buttons-group">
+										<button type="button" id="insertunorderedlist"><i class="material-icons">format_list_bulleted</i></button>
+										<button type="button" id="insertorderedlist"><i class="material-icons">format_list_numbered</i></button>
+									</div>
+									<div class="buttons-group">
+										<button type="button" id="indent"><i class="material-icons">format_indent_increase</i></button>
+										<button type="button" id="outdent"><i class="material-icons">format_indent_decrease</i></button>
+									</div>
+									<div class="buttons-group">
+										<button type="button" id="undo"><i class="material-icons">undo</i></button>
+										<button type="button" id="redo"><i class="material-icons">undo</i></button>
+										<button type="button" id="delete"><i class="material-icons">delete</i></button>
+									</div>
+									<div class="buttons-group">
+										<button type="button" id="createLink"><i class="material-icons">link</i></button>
+										<button type="button" id="insertImage"><i class="material-icons">photo</i></button>
+									</div>
+									<div class="buttons-group">
+										<button type="button" id="forecolor"><i class="material-icons">format_paint</i></button>
+									</div>
+								</div>
+								<div class="editor" contentEditable id="positionDetailedDescription"></div>
+								<div class="htmlview"></div>
+							</div>
+						
+							<!--AUTOCOMPLETE-->
+							<div class="form-group">
+								<label for="positionRequirements">
+									Követelmények <small class="text-muted">(többet is megadhat)</small>
+									<a href="#" data-toggle="tooltip" data-placement="top" class="ml-auto badge badge-pill badge-light" title="Segítség a kitöltéshez - plain text">?</a>
+								</label>
+								<input type="text" class="form-control" id="positionRequirements" aria-describedby="positionHelp" placeholder="Kezdje el begépelni a követelményt">
+							</div>														
+							
+							<div class="form-group">
+								<label for="positionPreference">
+									Előnyök
+									<a href="#" data-toggle="tooltip" data-placement="top" class="ml-auto badge badge-pill badge-light" title="Segítség a kitöltéshez - plain text">?</a>
+								</label>
+								<textarea class="form-control" id="positionPreference" rows="3" placeholder=""></textarea>
+							</div>							
+							
+							<div class="form-group">
+								<label for="positionOffers">
+									Ajánlatok
+									<a href="#" data-toggle="tooltip" data-placement="top" class="ml-auto badge badge-pill badge-light" title="Segítség a kitöltéshez - plain text">?</a>
+								</label>
+								<textarea class="form-control" id="positionOffers" rows="3" placeholder=""></textarea>
+							</div>	
+							
+							<a href="#" class="btn btn-action bg-blue"><i class="material-icons">save</i> Mentés és tovább</a>
+						
+						</div>
+						
+					</div>					
+				</div>
+
+			
+			</div>
+		</div>
+		
+
+		
+	</div>
+</div>
+<footer class="footer container-fluid">
+  <div class="container">
+	<span class="text-muted">Lábléc Jobline Satöbbi</span>
+  </div>
+</footer>
+
+<!--HELP blokk, minden oldalon megegyezik-->
+<div id="helpBox" class="help-box">
+	<div class="helpTitle"><i class="material-icons">help_outline</i> Segíthetünk?</div>
+	<div class="d-flex align-items-center helpContent">
+		<div>
+			<h3>Elakadt? További kérdése van? Segítünk!</h3>
+		</div>
+		<div>
+			Keressen minket a következő elérhetőségeken:
+					
+			<i class="material-icons">phone</i> +36-1-123-1234
+
+			<i class="material-icons">mail_outline</i> helpjobinfo.hu	
+		</div>	
+		<div class="helpClose" id="helpClose">
+			<i class="material-icons">close</i>
+		</div>
+	</div>
+</div>
+	
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="js/bootstrap.bundle.js"></script>		
+	
+<script src="js/less.min.js"></script>		
+<script src="js/ecom.js"></script>	
+
+<div class="testnav">
+<div class="togglenav"></div>
+<div class="d-flex align-items-center">
+<a href="5_dashboard.html" class="back">&laquo;Dashboard</a>
+<strong>A hirdetés szerkesztőt a bal oldali menüvel lehet léptetni</strong>
+
+</div>
+</div>
+<script>
+$(document).ready(function() {
+	$('.togglenav').click(function(){
+		$('.testnav').toggleClass('close');
+	});
+});
+</script>
+
+</body>
+</html>

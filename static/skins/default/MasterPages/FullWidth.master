@@ -1,0 +1,117 @@
+﻿<%@ Master Language="C#" EnableViewState="false" %>
+<%@ Register TagPrefix="HVGControl" TagName="Footer" Src="~/skins/default/controls/footer.ascx" %>
+<%@ Register TagPrefix="HVGControl" TagName="Header" Src="~/skins/default/controls/Header.ascx" %>
+<%@ Register TagPrefix="HVGControl" TagName="Audit" Src="~/skins/default/controls/audit.ascx" %>
+<%@ Register TagPrefix="HVGControl" TagName="Notifier" Src="~/skins/default/controls/Notifier.ascx" %>
+<%@ Register TagPrefix="HVGControl" TagName="AdvButtomScriptControl" Src="~/skins/default/controls/AdvButtomScriptControl.ascx" %>
+<%@ Register TagPrefix="WCFKulcsControl" TagName="Notifier" Src="~/skins/default/controls/KulcsHandlerContainer.ascx" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml">
+    <head>
+        <title><asp:ContentPlaceHolder ID="phdTitle" runat="server">HVG.hu</asp:ContentPlaceHolder></title>   
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=960, user-scalable=yes" />
+        <meta name="author" content="HVG Online Zrt." /> 
+        <meta name="revisit-after" content="1 days" /> 
+        <meta name="distribution" content="Global" />         
+        <meta name="copyright" content="HVG Online Zrt." /> 
+        <meta name="resource-type" content="document" /> 
+        <meta http-equiv="cache-control" content="no-cache" /> 
+        <meta http-equiv="cache-control" content="must-revalidate" /> 
+        <meta http-equiv="pragma" content="no-cache" /> 
+        <meta http-equiv="refresh" content="1740" /> 
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+        <meta name="verify-v1" content="vtTp5MjkSZbbiXFqzVSilVAEq1uWYKNzFlBEAp7TD1g=" /> 
+        <link rel="alternate" type="application/rss+xml" title="RSS" href="/rss.aspx" />
+        <link rel="Stylesheet" type="text/css" href="<%=ConfigurationSettings.AppSettings["StaticServer"]%>/skins/default/Style/Screen.css" />
+        <script language="javascript" type="text/javascript" src="<%=ConfigurationSettings.AppSettings["StaticServer"]%>/js/jquery.min.js"></script>
+        <!-- Lazy load JAIL -->
+        <script language="javascript" type="text/javascript" src="<%=ConfigurationSettings.AppSettings["StaticServer"]%>/skins/default/js/JAIL/JAIL.js"></script>
+        <script type="text/javascript">
+            $(function() {
+                $('img.framed').asynchImageLoader({ effect: "fadeIn", speed: 1600 });
+                //$('img.framed').asynchImageLoader();
+            });
+        </script>
+        <script language="javascript" type="text/javascript" src="<%=ConfigurationSettings.AppSettings["StaticServer"]%>/js/jquery.beforeafter.min.js"></script>
+        <!-- / -->
+        <script language="javascript" type="text/javascript" src="<%=ConfigurationSettings.AppSettings["StaticServer"]%>/js/jquery-ui.min.js"></script>
+        <script language="javascript" type="text/javascript" src="<%=ConfigurationSettings.AppSettings["StaticServer"]%>/js/jquery.tools.min.js"></script>
+        <script language="javascript" type="text/javascript" src="<%=ConfigurationSettings.AppSettings["StaticServer"]%>/js/jquery.scrollTo-min.js"></script>
+        <script language="javascript" type="text/javascript" src="<%=ConfigurationSettings.AppSettings["StaticServer"]%>/js/jquery.cookie.js"></script>
+        <script language="javascript" type="text/javascript" src="<%=ConfigurationSettings.AppSettings["StaticServer"]%>/js/system.js"></script>
+        <script language="javascript" type="text/javascript" src="<%=ConfigurationSettings.AppSettings["StaticServer"]%>/js/jquery.colorbox-min.js"></script>
+        <script language="javascript" type="text/javascript" src="<%=ConfigurationSettings.AppSettings["StaticServer"]%>/js/jquery.infieldlabel.min.js"></script>
+        <script language="javascript" type="text/javascript" src="<%=ConfigurationSettings.AppSettings["StaticServer"]%>/js/jquery.json-1.3.js"></script>
+        <%--<script language="javascript" type="text/javascript" src="<%=ConfigurationSettings.AppSettings["StaticServer"]%>/js/jquery.json-2.2.js"></script>--%>
+        <script language="javascript" type="text/javascript" src="<%=ConfigurationSettings.AppSettings["StaticServer"]%>/js/jQuery.dPassword.js"></script>
+        <script language="javascript" type="text/javascript" src="<%=ConfigurationSettings.AppSettings["StaticServer"]%>/js/swfobject.js"></script>
+	<script src="http://platform.twitter.com/anywhere.js?id=g4yAxOIMTCKrcrkMog22Rw&v=1" type="text/javascript"></script>
+        <link rel="Stylesheet" type="text/css" href="<%=ConfigurationSettings.AppSettings["StaticServer"]%>/skins/default/Style/ui.tabs.css" />        
+        <link rel="Stylesheet" type="text/css" href="<%=ConfigurationSettings.AppSettings["StaticServer"]%>/skins/default/Style/colorbox.css" />        
+        <!--[if IE 6]><script language="JavaScript" type="text/javascript" src="<%=System.Configuration.ConfigurationSettings.AppSettings["StaticServer"]%>/skins/default/js/ie6fix.js"></script><![endif]-->
+        <asp:ContentPlaceHolder ID="HeadHolder" runat="server"></asp:ContentPlaceHolder>
+        <asp:ContentPlaceHolder ID="MetaHolder" runat="server">
+            <meta name="description" content="A HVG hírportálja, a legfrissebb, hazai és külföldi hírekkel, eseményekkel, gazdasági elemzésekkel, háttéranyagokkal." /> 
+            <meta name="keywords" content="hírek, itthon, világ, belföld, tudomány, hirek, sport, magazin, hírek, gazdaság, külföld, bulvár, belföld, hírgyűjtő, tech-tudomány, külföldi hírek, belföldi hírek, magyar hírek, külföldi hirek" /> 
+            <meta name="abstract" content="hírek, gazdaság, politika" /> 
+            <meta name="subject" lang="HU" content="hírek, itthon, világ, belföld, tudomány, hirek, sport, magazin, hírek, gazdaság, külföld, bulvár, belföld, hírgyűjtő, tech-tudomány, külföldi hírek, belföldi hírek, magyar hírek, külföldi hirek" /> 
+        </asp:ContentPlaceHolder>
+        <asp:ContentPlaceHolder ID="RobotsHolder" runat="server">
+            <meta name="robots" content="index,follow" /> 
+        </asp:ContentPlaceHolder>        
+    </head>    
+    <body>
+        <!-- ClickTale Top part -->
+        <script type="text/javascript">
+            var WRInitTime = (new Date()).getTime();
+        </script>
+        <!-- ClickTale end of Top part -->
+
+        <div id="pg-main">
+            <asp:ContentPlaceHolder ID="SuperBannerHolder" runat="server"></asp:ContentPlaceHolder>
+            
+            <div id="pg-head">
+                <HVGControl:Header runat="server" />
+                <asp:ContentPlaceHolder ID="HeadBottom" runat="server"></asp:ContentPlaceHolder>
+            </div>
+            
+            <asp:ContentPlaceHolder ID="TapetaTopHolder" runat="server"></asp:ContentPlaceHolder>            
+            
+            <div id="pg-content-wide">
+                <HVGControl:Notifier runat="server" />
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+                        
+            <HVGControl:Footer runat="server" />
+        </div>
+        <asp:ContentPlaceHolder ID="BodyBottomHolder" runat="server"></asp:ContentPlaceHolder>            
+        <HVGControl:Audit runat="server" />
+
+        <script language="javascript1.2" type="text/javascript">
+			//<![CDATA[
+        		    _gde_ykomjqhjqm = new Image(1, 1);
+        		    _gde_ykomjqhjqm.src = 'http://ghu.hit.gemius.pl/_' + (new Date()).getTime() + '/redot.gif?id=0iU7yeONXDrbmtf13SGqvsVHj341b5tmDNV4aqTFb5H.v7/stparam=ykomjqhjqm';
+        		    if (typeof (_gde_onunload_attached) == 'undefined')
+        		        document.write("<script language='javascript1.2' type='text/javascript' src='http://ghu.hit.gemius.pl/gdeonunload.js'><\/script>");
+        		    if (!(typeof (_gde_ids) == 'object')) _gde_ids = new Object();
+        		    _gde_id = 'id=0iU7yeONXDrbmtf13SGqvsVHj341b5tmDNV4aqTFb5H.v7/stparam=smmjqklsvc/'; _gde_ids[_gde_id] = true;
+			//]]>
+		</script>
+		
+		<!-- ClickTale Bottom part -->
+        <div id="ClickTaleDiv" style="display: none;"></div> 
+        <script type="text/javascript">
+            if (document.location.protocol != 'https:')
+                document.write(unescape("%3Cscript%20src='http://s.clicktale.net/WRc3.js'%20type='text/javascript'%3E%3C/script%3E"));
+        </script>
+        <script type="text/javascript">            if (typeof ClickTale == 'function') ClickTale(48518, 0.0001, "www");</script>
+        <!-- ClickTale end of Bottom part -->
+
+        <WCFKulcsControl:Notifier runat="server" />
+
+        <HVGControl:AdvButtomScriptControl runat="server" />
+    </body>    
+</html>

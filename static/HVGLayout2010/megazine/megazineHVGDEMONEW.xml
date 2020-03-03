@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE book SYSTEM "http://megazine.mightypirates.de/megazine.dtd">
+<book pagewidth="260" pageheight="350" lang="en" reflection="false" bggradient="false" hidebuttons="pages fullscreen help settings mute" color="#423e21" hover="#5e5934">
+<chapter>
+<page><img src="hvgdemonew/01.jpg" aa="true" height="auto" nocache="false" overlay="none" priority="10" showbutton="true" static="false" width="auto" /></page>
+<page><img src="hvgdemonew/02.jpg" overlay="none" aa="true" /></page>
+<page><img src="hvgdemonew/03.jpg" overlay="none" aa="true" /></page>
+<page><img src="hvgdemonew/04.jpg" overlay="none" aa="true" /></page>
+<page><img src="hvgdemonew/05.jpg" overlay="none" aa="true" /></page>
+<page><img src="hvgdemonew/06.jpg" overlay="none" aa="true" /></page>
+<page><img src="hvgdemonew/07.jpg" overlay="none" aa="true" /></page>
+<page><img src="hvgdemonew/08.jpg" overlay="none" aa="true" /></page>
+<page><img src="hvgdemonew/09.jpg" overlay="none" aa="true" /></page>
+<page><img src="hvgdemonew/10.jpg" overlay="none" aa="true" /></page>
+<page><img src="hvgdemonew/11.jpg" overlay="none" aa="true" /></page>
+<page><img src="hvgdemonew/12.jpg" overlay="none" aa="true" /></page>
+</chapter>
+</book>

@@ -1,0 +1,63 @@
+/*
+ * Stylesheet for local element reset v1.0.0
+ * License: MIT (http://www.opensource.org/licenses/mit-license.php)
+ */
+
+div.hvg-calculator,
+div.hvg-calculator div {
+
+    display: block;
+    clear: both;
+}
+
+div.hvg-calculator {
+
+    background-color: white;
+    overflow: hidden;
+    width: 588px;
+    padding: 20px 20px 0 20px;
+}
+
+div.hvg-calculator div.hvg-block {
+
+    margin-bottom: 24px;
+}
+
+div.hvg-calculator a,
+div.hvg-calculator p,
+div.hvg-calculator h1,
+div.hvg-calculator h2,
+div.hvg-calculator h3 {
+
+    font-family: Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    margin: 0;
+    padding: 0;
+}
+
+div.hvg-calculator label,
+div.hvg-calculator input,
+div.hvg-calculator select,
+div.hvg-calculator button {
+
+    font-family: Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+}
+
+div.hvg-calculator form,
+div.hvg-calculator fieldset {
+
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+div.hvg-calculator a {
+
+    text-decoration: none;
+    outline: none;
+}

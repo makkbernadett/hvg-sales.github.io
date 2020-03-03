@@ -1,0 +1,205 @@
+﻿@model HangfireWeb.Models.OrderTemplateModel
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>HVG360 - Megújítás lemondása</title>
+	<meta name="viewport" content="width=device-width" /> 	
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,900&amp;subset=latin-ext" rel="stylesheet">
+<style>
+
+html,
+body {
+    margin: 0 auto !important;
+    padding: 0 !important;
+    height: 100% !important;
+    width: 100% !important;
+    background: #f1f1f1;
+}
+
+/* What it does: Stops email clients resizing small text. */
+* {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+/* What it does: Centers email on Android 4.4 */
+div[style*="margin: 16px 0"] {
+    margin: 0 !important;
+}
+
+/* What it does: Stops Outlook from adding extra spacing to tables. */
+table,
+td {
+    mso-table-lspace: 0pt !important;
+    mso-table-rspace: 0pt !important;
+}
+
+/* What it does: Fixes webkit padding issue. */
+table {
+    border-spacing: 0 !important;
+    border-collapse: collapse !important;
+    table-layout: fixed !important;
+    margin: 0 auto !important;
+}
+
+/* What it does: Uses a better rendering method when resizing images in IE. */
+img {
+    -ms-interpolation-mode:bicubic;
+}
+
+/* What it does: Prevents Windows 10 Mail from underlining links despite inline CSS. Styles for underlined links should be inline. */
+a {
+    text-decoration: none;
+}
+
+/* What it does: A work-around for email clients meddling in triggered links. */
+*[x-apple-data-detectors],  /* iOS */
+.unstyle-auto-detected-links *,
+.aBn {
+    border-bottom: 0 !important;
+    cursor: default !important;
+    color: inherit !important;
+    text-decoration: none !important;
+    font-size: inherit !important;
+    font-family: inherit !important;
+    font-weight: inherit !important;
+    line-height: inherit !important;
+}
+
+/* What it does: Prevents Gmail from displaying a download button on large, non-linked images. */
+.a6S {
+    display: none !important;
+    opacity: 0.01 !important;
+}
+
+/* What it does: Prevents Gmail from changing the text color in conversation threads. */
+.im {
+    color: inherit !important;
+}
+
+/* If the above doesn't work, add a .g-img class to any image in question. */
+img.g-img + div {
+    display: none !important;
+}
+
+/* What it does: Removes right gutter in Gmail iOS app: https://github.com/TedGoas/Cerberus/issues/89  */
+/* Create one of these media queries for each additional viewport size you'd like to fix */
+
+/* iPhone 4, 4S, 5, 5S, 5C, and 5SE */
+@@media only screen and (min-device-width: 320px) and (max-device-width: 374px) {
+    u ~ div .email-container {
+        min-width: 320px !important;
+    }
+}
+/* iPhone 6, 6S, 7, 8, and X */
+@@media only screen and (min-device-width: 375px) and (max-device-width: 413px) {
+    u ~ div .email-container {
+        min-width: 375px !important;
+    }
+}
+/* iPhone 6+, 7+, and 8+ */
+@@media only screen and (min-device-width: 414px) {
+    u ~ div .email-container {
+        min-width: 414px !important;
+    }
+}
+
+</style>	
+</head>
+<body style="margin: 0; padding: 0;">
+<center style="width: 100%; background-color: #f1f1f1;">
+<!--[if mso]>
+ <center>
+ <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="620"><tr><td width="620">
+<![endif]-->
+	<div style="min-width: 320px;">
+		<table width="100%" border="0" cellpadding="0" cellspacing="0">
+			<tbody>
+				<tr>
+					<td style="background: #75d1b7; text-align: center; vertical-align: middle; padding: 55px 65px;font-family: 'Roboto', Arial, Helvetica, sans-serif;">
+						<a href="https://hvg.hu/360/" target="_blank"><img src="http://static.hvgrt.hu/static/hvg360/hvg360_newsletter/hvg360_logo.png" alt="HVG360" width="170px" height="48"></a>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<table width="100%" border="0" cellpadding="0" cellspacing="0"><tbody><tr><td style="text-align: left; vertical-align: middle; padding: 0px 20px;font-size: 1px;" height="20">&nbsp;</td></tr></tbody></table>
+
+		<table width="100%" border="0" cellpadding="0" cellspacing="0">
+			<tbody>
+				<tr>
+					<td style="text-align: left; vertical-align: middle; padding: 0px 20px;">
+						<h1 style="margin-top: 0; margin-bottom: 27px; font-family: 'Roboto', Arial, Helvetica, sans-serif; font-size: 30px; line-height: 38px;  color: #2b2b2b;">
+							Kedves Előfizetőnk!
+						</h1>
+						<p style="margin-bottom: 20px; font-family: Roboto; font-size: 16px; line-height: 24px; color: #2b2b2b;">
+							<!-- // ide kérlek valamilyen probléma jelzős linket tegyetek// -->
+							A rendszerünkben kezdeményezted előfizetésed lemondását. <br />
+							
+						</p>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<table width="100%" border="0" cellpadding="0" cellspacing="0">
+			<tbody>
+				<tr>
+					<td style="text-align: left; vertical-align: middle; padding: 0px 20px;">
+
+						<p style="margin-bottom: 20px; font-family: Roboto; font-size: 16px; line-height: 24px; color: #2b2b2b;">
+							Egyszer minden jó véget ér, de reméljük, hogy nem örökre. A hvg360 itt lesz
+							továbbra is, bármikor visszatérhetsz a minőségi tartalomra vágyók, a mindig
+							kíváncsiak, a tájékozottak, a tudásra vágyók, a pionírok klubjában.
+							Köszönjük, hogy idáig velünk voltál.
+						</p>
+						<p style="margin-bottom: 20px; font-family: Roboto; font-size: 16px; line-height: 24px; color: #2b2b2b;">
+							A hvg360-hoz az előfizetésed hónap fordulójáig továbbra is hozzáférsz.
+						</p>
+						<p style="margin-bottom: 20px; font-family: Roboto; font-size: 16px; line-height: 24px; color: #2b2b2b;">
+							Várunk vissza hamarosan.
+						</p>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<table width="100%" border="0" cellpadding="0" cellspacing="0"><tbody><tr><td style="text-align: left; vertical-align: middle; padding: 0px 20px;font-size: 1px;" height="20">&nbsp;</td></tr></tbody></table>
+
+		<table width="100%" border="0" cellpadding="0" cellspacing="0">
+			<tbody>
+				<tr>
+					<td style="text-align: left; vertical-align: middle; padding: 0px 20px;font-family: 'Roboto', Arial, Helvetica, sans-serif;">
+						<p style="margin-bottom: 20px; font-family: Roboto; font-size: 16px; line-height: 24px; color: #2b2b2b;">
+							Üdvözlettel,<br />
+							<strong>
+								Szauer Tamás<br />
+								Marketing- és terjesztési igazgató
+							</strong><br />&nbsp;<br />
+							Elérhetőség: <a href="mailto:@Model.CustomerServiceEmail" style="color:#5eb199;text-decoration: underline;">ugyfelszolgalat@hvg.hu</a>
+						</p>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<table width="100%" border="0" cellpadding="0" cellspacing="0">
+			<tbody>
+				<tr>
+					<td style="background: #75d1b7; text-align: center; vertical-align: middle; padding: 24px;">
+						<a href="https://hvg.hu/360/" target="_blank"><img src="http://static.hvgrt.hu/static/hvg360/hvg360_newsletter/hvg360_logo.png" alt="HVG360" width="170px" height="48"></a>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+<!--[if mso]>
+ </td></tr></table>
+ </center>
+<![endif]--> 
+</center>
+	
+</body>
+</html>

@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="hu">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+	<title>e-comm</title>
+	<!--Add to homescreen Android, Apple and Window-->
+	<meta name="mobile-web-app-capable" content="yes">
+	<link rel="icon" sizes="192x192" href="images/android-desktop.png">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="apple-mobile-web-app-title" content="Material Design Lite">
+	<link rel="apple-touch-icon-precomposed" href="images/ios-desktop.png">
+	<meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+	<meta name="msapplication-TileColor" content="#3372DF">
+
+	<link rel="shortcut icon" href="images/favicon.png">
+
+	<!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
+	<link rel="canonical" href="">
+
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,900&amp;subset=latin-ext" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"      rel="stylesheet">
+
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!--<link rel="stylesheet" href="css/style.css">-->
+	<link rel="stylesheet/less" type="text/css" href="css/styles.less" />
+	
+</head>
+<body class="onload">
+<header class="fixed-top navbar-light container-fluid">
+	<nav class="navbar  container justify-content-between">
+		<a class="navbar-brand" href="#"><img src="images/jobline-logo.svg" style="width: 100px;"></a>
+		<div class="navmenu-primary ml-auto d-flex align-items-center">
+			<a href="#" class="ml-0 white"><i class="material-icons">shopping_cart</i><span class="badge badge-pill badge-danger">4</span></a>	
+			<div class="ml-0 white">Üdv, NFadmin! </div>	
+			<button class="navbar-toggler white" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+				☰
+			</button>
+			<div class="collapse navbar-collapse" id="navbarText">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="#">Dashboard <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Jelentkezések</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Hirdetéseim</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Mentett CV</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">CV kereső</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Saját adatlap</a>
+					</li>	
+					<li class="nav-item">
+						<a class="nav-link" href="#">Kilépés</a>
+					</li>						
+				</ul>
+			</div>	
+		</div>
+	</nav>
+</header>
+<div class="container-fluid">
+	<div class="container">
+	
+
+		<div class="row">
+			<div class="col-md-12 mb-5 materialBoxShadowLight bg-white content">
+				<div class="title-block d-block w-100 mb-2">
+					<h1 class="text-left  main-title"><strong>Hirdetés neve</strong> - Áttekintő</h1>
+				</div>	
+				
+
+				
+				<!--hirdetés szerkesztő blokk-->
+				<div class="row ad_edit my-3">
+					<!--hirdetész szerkesztő navigáció-->
+					<div class="col-md-4 ad_edit-nav">
+						<h4>Hirdetés részleteinek szerkesztése</h4>					
+						<nav class="ad_edit-nav-list">
+							<ul class="list-unstyled">
+								<li><a href="6_1_editad.html">Alapadatok <span class="badge badge-success ml-auto"><i class="material-icons">check</i></span></a></li>
+								<li><a href="6_2_editad.html">Cég részletei <span class="badge badge-success ml-auto">85%</span></a></li>
+								<li><a href="6_3_editad.html">Állás részletei <span class="badge badge-success ml-auto"><i class="material-icons">check</i></span></a></li>
+								<li><a href="6_4_editad.html">Jelölt részletei</a></li>
+								<li><a href="6_5_editad.html">Hirdetés beállításai</a></li>
+							</ul>
+						</nav>
+						<h4>Aktív hirdetés részletek</h4>
+						<nav class="ad_edit-nav-list">
+							<ul class="list-unstyled">						
+								<li><a href="6_6_editad.html" class="active"><i class="material-icons">insert_chart</i> Statisztikák</a></li>
+								<li><a href="6_7_editad.html"><i class="material-icons">assignment_ind</i> Jelentkezések</a></li>
+							</ul>
+						</nav>						
+					</div>
+					
+
+					<div class="col-md-8 ad_edit-block pl-5 pr-5">
+						<h2>Statisztikák</h2>					
+						<p>Az alábbi grafikonon találja feladott hirdetéseinek megjelenési adatait és jelentkezési statisztikáit. (Az AV rövidítés a feladott hirdetésének összes megjelenését mutatja - ennyiszer látták felhasználóink a hirdetését a jobline.hu oldalon.)</p>
+						<div class="popup-chart"><iframe class="chartjs-hidden-iframe" style="width: 100%; display: block; border: 0px;height: 0; "></iframe><canvas width="570" height="400" data-chart="{&quot;labels&quot;:[&quot;2017.12.11.&quot;,&quot;2017.12.12.&quot;,&quot;2017.12.13.&quot;,&quot;2017.12.14.&quot;,&quot;2017.12.15.&quot;,&quot;2017.12.16.&quot;,&quot;2017.12.17.&quot;,&quot;2017.12.18.&quot;,&quot;2017.12.19.&quot;,&quot;2017.12.20.&quot;,&quot;2017.12.21.&quot;,&quot;2017.12.22.&quot;,&quot;2017.12.23.&quot;,&quot;2017.12.24.&quot;,&quot;2017.12.25.&quot;,&quot;2017.12.26.&quot;,&quot;2017.12.27.&quot;,&quot;2017.12.28.&quot;,&quot;2017.12.29.&quot;,&quot;2017.12.30.&quot;,&quot;2017.12.31.&quot;,&quot;2018.01.01.&quot;,&quot;2018.01.02.&quot;,&quot;2018.01.03.&quot;],&quot;datasets&quot;:[{&quot;label&quot;:&quot;Normál (AV)&quot;,&quot;backgroundColor&quot;:&quot;#5eb5ef&quot;,&quot;data&quot;:[20,153,22,6,6,6,4,17,7,5,5,4,1,1,2,1,7,7,6,4,2,4,16,12]},{&quot;label&quot;:&quot;TOP 1 (AV)&quot;,&quot;backgroundColor&quot;:&quot;#8acd7a&quot;,&quot;data&quot;:[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]},{&quot;label&quot;:&quot;TOP 5 (AV)&quot;,&quot;backgroundColor&quot;:&quot;#ff5d53&quot;,&quot;data&quot;:[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]},{&quot;label&quot;:&quot;Jelentkező (db)&quot;,&quot;backgroundColor&quot;:&quot;#ffaa6b&quot;,&quot;data&quot;:[0,2,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}]}" style="width: 570px; height: 400px;"></canvas></div>												
+					</div>		
+
+					
+				</div>
+
+			
+			</div>
+		</div>
+		
+
+		
+	</div>
+</div>
+<footer class="footer container-fluid">
+  <div class="container">
+	<span class="text-muted">Lábléc Jobline Satöbbi</span>
+  </div>
+</footer>
+
+<!--HELP blokk, minden oldalon megegyezik-->
+<div id="helpBox" class="help-box">
+	<div class="helpTitle"><i class="material-icons">help_outline</i> Segíthetünk?</div>
+	<div class="d-flex align-items-center helpContent">
+		<div>
+			<h3>Elakadt? További kérdése van? Segítünk!</h3>
+		</div>
+		<div>
+			Keressen minket a következő elérhetőségeken:
+					
+			<i class="material-icons">phone</i> +36-1-123-1234
+
+			<i class="material-icons">mail_outline</i> helpjobinfo.hu	
+		</div>	
+		<div class="helpClose" id="helpClose">
+			<i class="material-icons">close</i>
+		</div>
+	</div>
+</div>
+	
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>	
+<script src="js/bootstrap.bundle.js"></script>	
+
+<script src="js/less.min.js"></script>		
+<script src="js/ecom.js"></script>		
+<!--ugyanezt használjuk a jobline chartoknál-->
+<script src="js/Chart.bundle.min.js"></script>	
+<!--chart miatt kell-->
+<script>
+        $('[data-chart]').each(function () {
+            var $canvas = $(this);
+
+            new Chart($canvas[0].getContext('2d'), {
+                type: 'horizontalBar',
+                data: JSON.parse($canvas.attr('data-chart')),
+                options: {
+                    scales: {
+                        xAxes: [{ stacked: true }],
+                        yAxes: [{ stacked: true }]
+                    }
+                }
+            });
+        });
+
+</script>
+
+<div class="testnav">
+<div class="togglenav"></div>
+<div class="d-flex align-items-center">
+<a href="5_dashboard.html" class="back">&laquo;Dashboard</a>
+<strong>A hirdetés szerkesztőt a bal oldali menüvel lehet léptetni</strong>
+
+</div>
+</div>
+<script>
+$(document).ready(function() {
+	$('.togglenav').click(function(){
+		$('.testnav').toggleClass('close');
+	});
+});
+</script>
+
+</body>
+</html>
+  

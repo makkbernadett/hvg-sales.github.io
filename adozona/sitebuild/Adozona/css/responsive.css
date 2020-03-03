@@ -1,0 +1,211 @@
+@media only screen and (max-width: 1199px) {
+  .hvg_kiadvanyok_logo{
+    margin-left: 20px;
+  }
+  .product-title-padding{
+    height: 100px;
+  }
+  .lakat{
+    margin-top: 75px;
+  }
+}
+
+@media only screen and (max-width: 990px) {
+  .hvg_kiadvanyok_logo{
+    margin-left: -100px;
+  }
+
+.lakat{
+  margin-top: 55px !important;
+  width: 80px !important;
+}
+
+  h2{
+    font-size: 20px;
+    word-break: break-word !important;
+  }
+  .product-title-padding{
+    height: 150px;
+    font-size: 25px !important;
+  }
+
+}
+@media only screen and (max-width: 767px) {
+  .product-title-padding{
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 770px) {
+
+  #product-section{
+    margin-bottom: 50px;
+  }
+
+  .publications{
+    display: flex;
+    justify-content: center;
+  }
+
+  .hvg_kiadvanyok_logo{
+    margin-left: 0px;
+    margin-bottom: 15px ;
+
+  }
+
+  .guide-to-documents-block{
+    height: auto !important;
+    padding: 25px 0 25px 0;
+  }
+  .btn-hover:hover{
+    margin-top: 0px !important;
+  }
+  .free-documents-box:hover{
+    margin-top: 0px !important;
+  }
+  .premium-documents-box:hover{
+    margin-top: 0px !important;
+  }
+  .block-GDPR-title h1{
+    line-height: normal;
+  }
+  .professional-partner{
+    transform: rotate(0deg);
+    justify-content: center;
+    text-align: center;
+    width: 60%;
+    padding: 5px;
+    margin: 0 auto;
+    word-break: break-word;
+    font-size: 15px;
+  }
+
+  .gdpr-log{
+    margin-top: 25px;
+  }
+  .lakat{
+    width: 100px;
+  }
+  /*
+  .btn-scroll{
+    display: none;
+  }
+  */
+  .logo-gdpr-header{
+    display: block;
+    position: relative;
+    z-index: 15;
+  }
+  .block-header{
+    height: auto;
+  }
+  .block-header-background{
+    height: auto;
+    background: none;
+  }
+  .block-header-background{
+    background: block;
+  }
+  .document-templates{
+    font-size: 60px !important;
+  }
+  .document-templates-title{
+    width: 100%;
+    font-size: 30px !important;
+  }
+  .block-GDPR-title{
+    padding: 25px 0 30px 0;
+  }
+  .header-text{
+    padding-top: 0px;
+  }
+  .header-text h1{
+    font-size: 30px !important;
+  }
+  #product-section h2{
+    font-size: 22px !important;
+    word-break: break-all;
+  }
+  .block-gdpr-print h2{
+    text-align: center;
+  }
+  .impresszum-block, .block-aszf, .block-gdpr-print{
+    padding: 0 0 35px 0;
+  }
+  .impresszum-block h1{
+    padding-top: 20px;
+    text-align: center;
+  }
+  .content, .showContent{
+    padding: 10px;
+  }
+  .hideContent {
+    height: 112px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .all-download-btn-section{
+    display: block;
+    text-align: center;
+  }
+  #return-to-top{
+    display: none !important;
+  }
+  .all-download-btn{
+    margin-top: 15px;
+    min-width: 100%;
+    width: 100%;
+  }
+  .block-gdpr-print{
+    padding: 10px;
+  }
+  .logo-gdpr-fixed{
+    padding: 20px 0 20px;
+    width: 120px;
+  }
+
+  .block-GDPR-black{
+    font-size: 20px;
+  }
+  .prof-partner-disabled{
+    display: none;
+  }
+  .prof-partner-available{
+        display: block;
+        width: 100%;
+        margin-top: 20px;
+  }
+  .header-img{
+    display: none;
+  }
+  .header-img-hide{
+    display: block;
+    width: 150px;
+    margin: 0 auto;
+  }
+}
+
+
+@media only screen and (max-width: 490px) {
+  .block1{
+    height: 470px;
+  }
+  .document-templates{
+    font-size: 40px !important;
+  }
+  .document-templates-title{
+    font-size: 20px !important;
+  }
+
+}
+
+@media only screen and (max-width: 410px) {
+  .impresszum-block{
+    height: auto !important;
+    padding: 25px 0 25px 0 !important;
+  }
+  .block-gdpr-print h2{
+    text-align: center;
+  }
+}

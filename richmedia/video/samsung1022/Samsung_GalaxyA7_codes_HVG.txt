@@ -1,0 +1,45 @@
+HVG Kultura
+
+Placement Details: 
+Placement ID: 26409873 
+Agency: Starcom - Samsung Hungary 
+Campaign: AN~Samsung_AR~STA_AV~CE_FF~Hungary - 181011_CN~GalaxyA735013526-47_PH~LAUN_MK~HU_YQ~18Q4_BS~IM_PR~SMART_SB~GA7_OB~AWA_PK~AV_FS~Local Market_CP~Code 
+Campaign ID: 926823 
+Site: Hvg HU - Kultura 
+Placement Name: PD~HVGKultura_CH~VID_AD~SS1x1_DT~DT_FM~VPRE_PB~HVG.hu_SZ~30S_RT~FLAT_TG~NOTARG_SA~NA_VV~VGNONE_IT~ROS_FF~
+Placement Format Type: Tracking Only
+Booked Impressions: 200000 
+Placement Dates:
+2018.10.14. 23:00:00 - 2018.10.21. 22:59:00
+
+//To track Impressions use the following URL:
+https://bs.serving-sys.com/serving/adServer.bs?cn=display&c=19&mc=imp&pli=26409873&PluID=0&ord=[timestamp]&rtu=-1
+//To track Clicks use the following URL:
+//Note: Please ensure that you implement a click tracking URL only in the clicks location in your ad server, 
+//and an impression tracking URL only in the impression tracking location.
+//Client is solely responsible for, and Sizmek has no liability for, any failure to properly implement the URLs and any related billing and reporting discrepancies.
+https://bs.serving-sys.com/serving/adServer.bs?cn=trd&mc=click&pli=26409873&PluID=0&ord=[timestamp]
+====================================================
+HVG Video
+
+Placement Details: 
+Placement ID: 26409874 
+Agency: Starcom - Samsung Hungary 
+Campaign: AN~Samsung_AR~STA_AV~CE_FF~Hungary - 181011_CN~GalaxyA735013526-47_PH~LAUN_MK~HU_YQ~18Q4_BS~IM_PR~SMART_SB~GA7_OB~AWA_PK~AV_FS~Local Market_CP~Code 
+Campaign ID: 926823 
+Site: Hvg HU - Video 
+Placement Name: PD~HVGVideo_CH~VID_AD~SS1x1_DT~DT_FM~VPRE_PB~HVG.hu_SZ~30S_RT~FLAT_TG~NOTARG_SA~NA_VV~VGNONE_IT~ROS_FF~
+Placement Format Type: Tracking Only
+Booked Impressions: 100000 
+Placement Dates:
+2018.10.21. 23:00:00 - 2018.10.28. 22:59:00
+
+//To track Impressions use the following URL:
+https://bs.serving-sys.com/serving/adServer.bs?cn=display&c=19&mc=imp&pli=26409874&PluID=0&ord=[timestamp]&rtu=-1
+//To track Clicks use the following URL:
+//Note: Please ensure that you implement a click tracking URL only in the clicks location in your ad server, 
+//and an impression tracking URL only in the impression tracking location.
+//Client is solely responsible for, and Sizmek has no liability for, any failure to properly implement the URLs and any related billing and reporting discrepancies.
+https://bs.serving-sys.com/serving/adServer.bs?cn=trd&mc=click&pli=26409874&PluID=0&ord=[timestamp]
+====================================================
+ 

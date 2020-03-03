@@ -1,0 +1,76 @@
+.article-cegauto .container,
+.column-cegauto .container {
+  margin-top: 118px;
+  margin-bottom: 1000px;
+}
+.article-cegauto .rovatszponzoracio.background,
+.column-cegauto .rovatszponzoracio.background {
+  background: url('http://static.hvgrt.hu/rovatszponzoracio/opel/20140930/opelwallpaper-v1.jpg') fixed top center no-repeat;
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+.article-cegauto .rovatszponzoracio-szalag-full .placeholder-ad,
+.column-cegauto .rovatszponzoracio-szalag-full .placeholder-ad {
+  display: block;
+}
+.article-cegauto .rovatszponzoracio-szalag-full .placeholder-ad .wrap-ad,
+.column-cegauto .rovatszponzoracio-szalag-full .placeholder-ad .wrap-ad {
+  border: none;
+}
+.article-cegauto .rovatszponzoracio-szalag-full .placeholder-ad .wrap-ad .rovatszponzoracio.superbanner,
+.column-cegauto .rovatszponzoracio-szalag-full .placeholder-ad .wrap-ad .rovatszponzoracio.superbanner {
+  background: url('http://static.hvgrt.hu/rovatszponzoracio/opel/20140930/opelwallpaper-v1.jpg') fixed top center no-repeat;
+  display: block;
+  height: 250px;
+  width: 970px;
+}
+.article-cegauto .rovatszponzoracio-szalag-transparent,
+.column-cegauto .rovatszponzoracio-szalag-transparent {
+  height: 123px;
+  line-height: 50px;
+  color: #fff;
+  background: url('http://static.hvgrt.hu/rovatszponzoracio/opel/20140930/opelwallpaper-v1.jpg') no-repeat fixed center top #d8d9db;
+}
+.article-cegauto .rovatszponzoracio-szalag-transparent a,
+.column-cegauto .rovatszponzoracio-szalag-transparent a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.article-cegauto .rovatszponzoracio-szalag-transparent ~ .toptopic,
+.column-cegauto .rovatszponzoracio-szalag-transparent ~ .toptopic {
+  margin-top: -47px;
+  background: rgba(0, 0, 0, 0.6);
+}
+.article-cegauto .rovatszponzoracio-szalag-transparent ~ .toptopic .linkbox,
+.column-cegauto .rovatszponzoracio-szalag-transparent ~ .toptopic .linkbox {
+  background: none;
+}
+.article-cegauto .rovatszponzoracio.righttop,
+.column-cegauto .rovatszponzoracio.righttop {
+  background: url('http://static.hvgrt.hu/rovatszponzoracio/opel/20140930/opelwallpaper-v1.jpg') fixed top center no-repeat;
+  display: block;
+  width: 100%;
+  height: 600px;
+  margin: 0 0 13px;
+}
+.article-cegauto .rovatszponzoracio.rightbottom,
+.column-cegauto .rovatszponzoracio.rightbottom {
+  background: url('http://static.hvgrt.hu/rovatszponzoracio/opel/20140930/opelwallpaper-v1.jpg') fixed top center no-repeat;
+  display: block;
+  width: 100%;
+  height: 250px;
+  margin: 0 0 13px;
+}
+.article-cegauto .rovatszponzoracio.lefttop,
+.column-cegauto .rovatszponzoracio.lefttop {
+  background: url('http://static.hvgrt.hu/rovatszponzoracio/opel/20140930/opelwallpaper-v1.jpg') fixed center top no-repeat;
+  display: block;
+  height: 450px;
+  margin: 0 auto 13px;
+  width: 600px;
+}

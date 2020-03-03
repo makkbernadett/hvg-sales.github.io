@@ -1,0 +1,97 @@
+.button{
+    display: inline-block;
+    white-space: nowrap;
+    user-select: none;
+    background: @gray-light;
+    color: @color-default;
+    padding: 0 6px;
+    border-radius: 2px;
+    line-height: 2.2em;
+    font-size: @font-size-default - 5px;
+    letter-spacing: .5px;
+    cursor: pointer;
+    &:hover{
+        text-decoration: none;
+    }
+    
+    &.is--outline{
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        min-width: 130px;
+        width: auto;
+        height: auto;
+        padding: 10px 25px;
+        border-radius: 4px;
+        background: transparent;
+        font-size: 0.9375em;
+        text-align: center;
+        font-weight: normal;
+        line-height: 1;
+        text-decoration: none;
+        transition: background .2s,box-shadow .2s,border .2s;
+        border: 1px solid @color-default;
+        color: @color-default;
+        &:hover{
+            box-shadow: 0 2px 3px rgba(0,0,0,.1);
+            background: fade(@color-default, 10%);
+        }
+        &.is--light{
+            border: 1px solid @gray-light;
+            color: @silver;
+            &:hover{
+                box-shadow: 0 2px 3px rgba(0,0,0,.1);
+                background: fade(@white, 10%);
+            }
+
+        }
+    }
+
+    &.is--pale-back{
+        position: relative;
+        height: 44px;
+        padding: 5px 12px;
+        .border-radius(2px);
+        border: none;
+        background: transparent;
+        font-size: 0.875em;
+        font-weight: bold;
+        transition: background .2s,box-shadow .2s,color .2s;
+        &.is--light{
+            color: @white;
+        }
+        &:hover{
+            &.is--light{
+                background: fade(@white, 13%);
+            }
+        }
+        &:focus{
+            background: #fff;
+            box-shadow: 0 8px 13px 0 rgba(0,0,0,.19);
+            color: @emperor;
+            border: none;
+            outline: 0;
+        }
+    }
+
+    &.is--more{
+        margin-top: -@margin-default / 2;
+        text-transform: uppercase;
+        &::after{
+            transition: all 300ms ease-in-out;
+            font-family: "hvg-iconset";
+            content: "\e92e";
+            margin: 0 0 0 5px;
+            color: @silver;
+            font-size: 0.8em;
+        }
+        &:hover{
+            &::after{
+                color: @gray;
+            }
+        }
+    }
+
+    &.is--large{}
+    &.is--small{}
+}

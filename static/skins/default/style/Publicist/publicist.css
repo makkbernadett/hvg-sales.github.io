@@ -1,0 +1,93 @@
+﻿div.publicist_head { 
+	margin: 10px 10px 20px 10px;
+	padding-top: 15px;
+	height: 35px;
+	background: url(http://hvg.hu/static/skins/default/img/Publicist/publicist_head.jpg) no-repeat;
+}
+
+div.columnarticle.publicist h2 a { font-size: 18px }
+
+div.columnarticle.publicist p { font-size: 14px }
+
+div.columnarticle.publicist p a { font-weight: bold }
+
+ul.publicist {
+	padding: 0;
+	margin: 10px;
+	font-size: 13px;
+}
+
+ul.publicist li {
+	padding: 0 0 15px;
+	margin: 0 0 15px;
+	background: url(http://hvg.hu/static/skins/default/img/Publicist/sep.png) bottom repeat-x;
+}
+
+ul.publicist li span, ul.publicist li a { font-weight: bold }
+
+ul.publicist li a { float: right }
+
+ul.publicist li h3 a { float: none }
+
+ul.publicist li.last { 
+	background: none; 
+	padding: 0;
+	margin: 0;
+}
+
+#pg-sidecolumn .box ul.publicist p { margin: 5px 0 }
+
+div.publicist_related {
+	background: #EDEDED;
+	border: 1px solid #E1E1E1;
+	margin: 0 10px 30px 10px;
+}
+
+div.publicist_related h3 {
+	font-size: 19px;
+	color: #707070;
+	margin: 0;
+	padding: 10px 15px;
+	border-bottom: 1px solid #E1E1E1;
+}
+
+div.publicist_related ul {
+	border-top: 1px solid #F7F7F7;
+	padding: 15px 15px 0 15px;
+}
+
+#pg-content div.publicist_related h4 { margin: 0 }
+
+#pg-content div.publicist_related a { font-size: 15px }
+
+#pg-content div.publicist_related p { 
+	margin: 0 0 20px 0;
+	color: #000;
+}
+
+/*div.commentbox span { padding: 0 }*/
+
+div.commentbox span a { 
+	display: block;
+	width: 17px;
+	height: 42px;
+	background: url(http://hvg.hu/static/skins/default/img/Publicist/thumbs.png) 0 0 no-repeat;
+	float: left;
+	color: #7d7d7d;
+	padding-left: 20px;
+}
+
+div.commentbox span a:hover { text-decoration: none }
+
+div.commentbox span img { 
+	float: left; 
+	margin: 0 10px 0 0;
+}
+
+div.commentbox span a.thumb_down { background-position: 0 -84px }
+
+div.commentbox span a.thumb_up:hover { background-position: 0 -42px }
+
+div.commentbox span a.thumb_down:hover { background-position: 0 -126px }
+
+#pg-content span.date { float: left }

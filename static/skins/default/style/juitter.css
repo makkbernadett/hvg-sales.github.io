@@ -1,0 +1,64 @@
+﻿#juitterContainer
+{
+}
+#juitterContainer .twittList
+{
+	margin: 0;
+	padding: 0;
+}
+#juitterContainer .twittLI
+{
+	border-bottom: 1px solid #E7E7E7;
+	clear: both;
+	list-style-image: none;
+	list-style-position: outside;
+	list-style-type: none;
+	margin: 0;
+	padding: 5px 3px;
+}
+#juitterContainer .twittList span.time
+{
+	color: #777777;
+	font-size: 0.9em;
+}
+#juitterContainer .twittList a
+{
+	color: #004276;
+}
+#juitterContainer .twittList a:hover
+{
+	color: #FF6600;
+}
+#juitterContainer .juitterAvatar
+{
+	background: #FFFFFF none repeat scroll 0 0;
+	border: 1px solid #D3EECA;
+	float: left;
+	height: 48px;
+	margin-right: 5px;
+	padding: 2px;
+	width: 48px;
+}
+#juitterContainer .jRM
+{
+	clear: both;
+	float: right;
+}
+#juitterContainer .extLink
+{
+}
+#juitterContainer .hashLink
+{
+}
+.twtr-avatar
+{
+	display: block;
+	float: left;
+	height: 48px;
+	overflow: hidden;
+	width: 48px;
+}
+.twtr-tweet-text
+{
+	margin-left: 55px;
+}
