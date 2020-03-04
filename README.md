@@ -13,8 +13,8 @@ Itt tipikusan ezeket használjuk:
  + [TortoiseGit](https://tortoisegit.org)
 
 ## Költözés
-Ez a repó **2020. 03. 03. 15:00** órakor elköltözik:
+Ez a repó **2020. 03. 03. 15:00** órakor költözött:
  * innen: https://github.com/HVG/hvg.github.io
  * ide: https://github.com/hvg-sales/hvg-sales.github.io
 
-Addig ez a repó **nem éles**, előkészületek folynak rajta csak.
+Azóta **éles** itt, az új helyén.
