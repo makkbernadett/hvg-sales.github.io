@@ -1,3 +1,3 @@
 $(function () {
-	$("<section><b>A kiadvány díját csak 2020. április 28. után, az e-mailben küldött díjbekérő megérkezését követően kell átutalnia.</b> <br/><br/> Az adatok jóváhagyásához kattintson a 'Megrendelem' gombra, majd a következő megrendelés-összegző oldalon hagyja jóvá előrendelését a 'Fizetés' gombra való kattintással.</section>" ).insertAfter( "#ExtraInputDataSectionWrapper" );
+	$("<section class='above-order'><p><b>A kiadvány díját csak 2020. április 28-a után, az e-mailben kiküldött díjbekérő megérkezését követően kell csak átutalnia.</b></p><p>Az adatok jóváhagyásához kattintson a 'Megrendelem' gombra, majd a következő megrendelés-összegző oldalon hagyja jóvá előrendelését a 'Fizetés' gombra való kattintással.</p></section>" ).insertAfter( "#ExtraInputDataSectionWrapper" );
 });
