@@ -1,6 +1,8 @@
 $(document).ready(function () {
     $("#ExtraConditionSection label").attr({ for: "MakBistroGameRule" });
     $("#ExtraConditionSection").prependTo("#ExtraInputDataSectionWrapper");
+	var linkToReplace = $("body a[href='https://bolt.hvg.hu/megrendelesi_feltetelek");
+	linkToReplace.attr('href', 'https://bolt.hvg.hu/megrendelesi_feltetelek_360');	
 });
 
 function DoValidationextraInputData() {
