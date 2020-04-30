@@ -95,11 +95,11 @@ function DoValidationextraInputData() {
             alert("Önnek már van megrendelése a Számviteli iratmintacsomagra. Hozzáférési problémák esetén keresse ügyfélszolgálatunkat munkanapokon 9:00-től 14:00 óráig, az ugyfelszolgalat@hvg.hu email címen vagy a (+36-1)-436 2045 telefonszámon.");
         }
 
-        // if (data.succes && $('#kupon').val() === "")
-        // {
-            // $('#kupon').val('GKI1933');
-            // console.log('set kupon to GKI1933');
-        // }
+        if (data.succes && $('#kupon').val() === "")
+        {
+            $('#kupon').val('SZI2010');
+            console.log('set kupon to SZI2010');
+        }
 
         return data;
     });
