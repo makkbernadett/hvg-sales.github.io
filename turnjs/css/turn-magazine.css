@@ -154,13 +154,11 @@ body{
 .magazine-viewport .next-button{
 	right:-22px;
 	border-radius:0 15px 15px 0;
-	display: block;
 }
 
 .magazine-viewport .previous-button{
 	left:-22px;
 	border-radius:15px 0 0 15px;
-	display: block;
 }
 
 .magazine-viewport .previous-button-hover,
