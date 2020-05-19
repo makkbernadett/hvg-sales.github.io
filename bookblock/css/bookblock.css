@@ -178,12 +178,13 @@ display: block;
 	overflow: hidden;
 }
 
-.bb-bookblock a {
+.bb-bookblock .zoom-img {
 	position: absolute;
     overflow: hidden;
     left: 0;
     top: 0;
-    width: 100%;
+	width: 100%;
+	height: 100%;
 }
 
 /* No JS */
