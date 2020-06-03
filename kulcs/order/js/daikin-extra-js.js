@@ -18,7 +18,7 @@ function DoValidationextraInputData() {
         }
         else {
             data.succes = false;
-            showValidationMessage("A megrendelés feladásához el kell fogadnia a játékszabállyal kapcsolatos feltételeket, amellyel részt vehet a sorsolásán.", '#' + id + 'Error', '#' + id);
+            showValidationMessage("A megrendelés feladásához el kell fogadnia a játékszabállyal kapcsolatos feltételeket, amellyel részt vehet a sorsoláson.", '#' + id + 'Error', '#' + id);
         }
     }
     return data;
