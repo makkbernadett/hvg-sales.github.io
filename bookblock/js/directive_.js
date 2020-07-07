@@ -117,7 +117,7 @@ function zoom(classNames, settings) {
                 targetOffsetY = (elementHeight * targetScale) > containerHeight ? minMax(initialOffsetY, limitOffsetY * (-1), limitOffsetY) : 0;
 
                 if (targetScale === 1) {
-                    removeActive($container, _active);
+                    removeClass($container, _active);
                 }
 
                 /* Set attributes */
@@ -175,15 +175,15 @@ function zoom(classNames, settings) {
 
     /* @-<mouseEnter ************************************************************/
     /****************************************************************************/
-    /*function mouseEnter() {
+    function mouseEnter() {
         disableScroll();
-    }*/
+    }
 
     /* @-<mouseLeave ************************************************************/
     /****************************************************************************/
-    /*function mouseLeave() {
+    function mouseLeave() {
         enableScroll();
-    }*/
+    }
 
     /* @-<mouseDown *************************************************************/
     /****************************************************************************/
@@ -220,7 +220,7 @@ function zoom(classNames, settings) {
                 $element.setAttribute(_dataTranslateX, 0);
                 $element.setAttribute(_dataTranslateY, 0);
 
-                removeActive($container, _active);
+                removeClass($container, _active);
 
                 /* @->moveScaleElement */
                 moveScaleElement($element, 0, 0, 1);
@@ -355,7 +355,7 @@ function zoom(classNames, settings) {
                     $element.setAttribute(_dataTranslateX, 0);
                     $element.setAttribute(_dataTranslateY, 0);
 
-                    removeActive($container, _active);
+                    removeClass($container, _active);
 
                     /* @->moveScaleElement */
                     moveScaleElement($element, 0, 0, 1);
@@ -436,7 +436,7 @@ function zoom(classNames, settings) {
                 if (targetScale > 1) {
                     addClass($container, _active);
                 } else {
-                    removeActive($container, _active);
+                    removeClass($container, _active);
                 }
 
                 /* @->moveScaleElement */
@@ -546,7 +546,7 @@ function zoom(classNames, settings) {
         if (targetScale > 1) {
             addClass($container, _active);
         } else {
-            removeActive($container, _active);
+            removeClass($container, _active);
         }
 
         /* Set attributes */
@@ -681,9 +681,4 @@ function removeClass($element, targetClass) {
     var rgx = new RegExp("(?:^|\\s)" + targetClass + "(?!\\S)", "g");
 
     $element.className = $element.className.replace(rgx, "");
-}
-
-function removeActive($element, $activeClass) {
-    removeClass($element, $activeClass);
-    $($element).trigger('zoom.zoomout');
 }
