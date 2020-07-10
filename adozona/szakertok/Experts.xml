@@ -612,4 +612,24 @@
     photo="">
   </Expert>
 
+  <Expert id="3fcf05be-f07f-481b-b849-ba3c55378a99"
+    sid="3D13D6E6"
+    name="Dr. Pauker Zoltán"
+    title="menedzser, okleveles adótanácsadó"
+    articleid="15ebfc36-6fae-484d-900b-48802ffe63c6"
+    company="Andersen Adótanácsadó Zrt."
+    description=""
+    photo="">
+  </Expert>
+	
+  <Expert id="ce34e4af-0514-4375-ad3b-af0ac9dd4d1c"
+    sid="10546CB6"
+    name="Gombás Otilia"
+    title="szakértő"
+    articleid="3eb3b3dd-ee8d-4258-be0c-98f2bcc5d039"
+    company="J&amp;J Center Kft."
+    description=""
+    photo="">
+  </Expert>
+	
 </AdozonaExperts>
