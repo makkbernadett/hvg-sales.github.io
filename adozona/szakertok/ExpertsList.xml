@@ -526,7 +526,7 @@
     <Company></Company>
     <Description></Description>
     <Photo></Photo>
-    <IsActive>1</IsActive>
+    <IsActive>0</IsActive>
   </Expert>
   <Expert>
     <Id>817d3ba0-345c-4162-a63c-455e70386dab</Id>
@@ -625,7 +625,7 @@
     <Company>OrienTax Adótanácsadó Zrt.</Company>
     <Description></Description>
     <Photo></Photo>
-    <IsActive>1</IsActive>
+    <IsActive>0</IsActive>
   </Expert>
   <Expert>
     <Id>21c699a8-1c4e-4194-835c-ad4dea72f9da</Id>
