@@ -649,4 +649,26 @@
     <Photo></Photo>
     <IsActive>1</IsActive>
   </Expert>
+  <Expert>
+    <Id>3fcf05be-f07f-481b-b849-ba3c55378a99</Id>
+    <Sid>3D13D6E6</Sid>
+    <Name>Dr. Pauker Zoltán</Name>
+    <Title>menedzser, okleveles adótanácsadó</Title>
+    <ArticleId>15ebfc36-6fae-484d-900b-48802ffe63c6</ArticleId>
+    <Company>Andersen Adótanácsadó Zrt.</Company>
+    <Description></Description>
+    <Photo></Photo>
+    <IsActive>1</IsActive>
+  </Expert>
+  <Expert>
+    <Id>ce34e4af-0514-4375-ad3b-af0ac9dd4d1c</Id>
+    <Sid>10546CB6</Sid>
+    <Name>Gombás Otilia</Name>
+    <Title>szakértő</Title>
+    <ArticleId>3eb3b3dd-ee8d-4258-be0c-98f2bcc5d039</ArticleId>
+    <Company>J&amp;J Center Kft.</Company>
+    <Description></Description>
+    <Photo></Photo>
+    <IsActive>1</IsActive>
+  </Expert>
 </root>
