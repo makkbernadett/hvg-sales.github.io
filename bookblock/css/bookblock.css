@@ -4,15 +4,14 @@
 	margin: 0 auto;
 	position: relative;
 	z-index: 100;
-	-webkit-perspective: 1300px;
-	perspective: 1300px;
+	-webkit-perspective: 1700px;
+	perspective: 1700px;/*1300px*/
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
 }
-.bb-bookblock img{
-max-width: 100%;
-height: auto;
-display: block;
+
+.bb-custom-wrapper nav a {
+	text-decoration: none;
 }
 
 .bb-page {
@@ -178,15 +177,6 @@ display: block;
 	overflow: hidden;
 }
 
-.bb-bookblock .zoom-img {
-	position: absolute;
-    overflow: hidden;
-    left: 0;
-    top: 0;
-	width: 100%;
-	height: 100%;
-}
-
 /* No JS */
 .no-js .bb-bookblock, 
 .no-js ul.bb-custom-grid li {
@@ -197,4 +187,12 @@ display: block;
 .no-js .bb-item {
 	display: block;
 	position: relative;
+}
+
+.lazypage {
+	opacity: 0;
+}
+.yall-loaded {
+	opacity: 1;
+	transition: opacity 0.3s ease;
 }
