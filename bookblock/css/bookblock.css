@@ -177,6 +177,13 @@
 	overflow: hidden;
 }
 
+.bb-item img {
+    border: 0;
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+
 /* No JS */
 .no-js .bb-bookblock, 
 .no-js ul.bb-custom-grid li {
