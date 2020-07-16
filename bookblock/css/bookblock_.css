@@ -10,6 +10,10 @@
 	backface-visibility: hidden;
 }
 
+.bb-custom-wrapper nav a {
+	text-decoration: none;
+}
+
 .bb-page {
 	width: 800px;
 	height: 663px;
@@ -171,6 +175,13 @@
 	display: none;
 	background: #fff;
 	overflow: hidden;
+}
+
+.bb-item img {
+    border: 0;
+    max-width: 100%;
+    display: block;
+    height: auto;
 }
 
 /* No JS */

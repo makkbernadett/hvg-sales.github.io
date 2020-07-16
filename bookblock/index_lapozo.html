@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js demo-1">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>BookBlock</title>
+        <link rel="stylesheet" type="text/css" href="https://static.hvgrt.hu/bookblock/css/bookblock.css" />
+        <link rel="stylesheet" type="text/css" href="https://static.hvgrt.hu/bookblock/css/demo1.css" />
+
+		<style>
+			.bb-custom-wrapper .bb-bookblock {
+				box-shadow: 0 12px 20px -10px rgba(81,64,49,0);
+			}
+			.bb-bookblock {
+				margin-top: 40px;
+				background-color: #f7f6f1;
+				-webkit-perspective: 1700px;
+				perspective: 1700px;/*1300px*/
+			}
+			.bb-custom-wrapper nav a {
+				text-decoration: none;
+			}
+			.bb-box {
+				background-color: #f7f6f1; /*#fbf4ec;*/
+				padding: 0 0 20px 0;
+				margin-top: 20px;
+				position: relative;
+				z-index: 19;
+			}
+			.bb-custom-wrapper {
+				margin: 0 auto 20px;
+			}
+			.bb-item {
+				background-color: #f7f6f1;
+			}
+			.bb-content {
+				background: #f7f6f1;
+			}
+			.frame-holder {
+				margin:0;
+				padding:0;
+				height:0px;
+            }
+			.bb-item a.zoom-img-link-left {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 50%;
+				height: 100%;
+				z-index: 1;
+			}
+			.bb-item a.zoom-img-link-right {
+				position: absolute;
+				top: 0;
+				right: 0;
+				width: 50%;
+				height: 100%;
+				z-index: 1;
+			}
+			
+            /* frisshirek oldalra */
+            .latest-page .fullwidth .bb-custom-wrapper {
+                width: 800px;
+            }
+            .latest-page .fullwidth .bb-bookblock {
+                width: 700px;
+                height: 574px;
+            }
+            .latest-page .fullwidth .bb-box {
+            padding: 20px 0;
+                margin-top: 20px;
+            }
+            .latest-page .fullwidth .bb-custom-icon-arrow-left {
+                left: 10px;
+            }
+            .latest-page .fullwidth .bb-custom-icon-arrow-right {
+                right: 10px;
+            }
+		</style>
+		
+	</head>
+	<body>
+
+
+		
+		<div class="bb-box">
+			<div class="frame-holder">
+				<iframe data-adurl="https://ad.adverticum.net/C/76365/6154360/615435600?" id="btn-prev-iframe" style="width:0px;height:0px;border: 0;"></iframe>
+				<br>
+				<iframe data-adurl="https://ad.adverticum.net/C/76365/6154360/615435400?" id="btn-next-iframe" style="width:0px;height:0px;border: 0;"></iframe>
+			</div>
+		
+			<div class="bb-custom-wrapper">
+				<div id="bb-bookblock" class="bb-bookblock">
+					<div class="bb-item">
+						<div class="zoom-img">
+							<a href="https://ad.adverticum.net/C/76578/6154243/615428500?" target="_blank" class="zoom-img-link-right"></a>
+							<img src="https://static.hvgrt.hu/catalog/auchan/01.png" alt="01"/>
+						</div>
+					</div>
+					<div class="bb-item">
+						<div class="zoom-img">
+							<a href="https://ad.adverticum.net/C/76578/6154243/615428600?" target="_blank" class="zoom-img-link-left"></a>
+							<a href="https://ad.adverticum.net/C/76578/6154243/615428700?" target="_blank" class="zoom-img-link-right"></a>
+							<img src="https://static.hvgrt.hu/catalog/auchan/02-03.png" alt="02-03"/>
+						</div>
+					</div>
+					<div class="bb-item">
+						<div class="zoom-img">
+							<a href="https://ad.adverticum.net/C/76578/6154243/615428800?" target="_blank" class="zoom-img-link-left"></a>
+							<a href="https://ad.adverticum.net/C/76578/6154243/615428900?" target="_blank" class="zoom-img-link-right"></a>
+							<img src="https://static.hvgrt.hu/catalog/auchan/04-05.png" alt="04-05"/>
+						</div>
+					</div>
+					<div class="bb-item">
+						<div class="zoom-img">
+							<a href="https://ad.adverticum.net/C/76578/6154243/615429000?" target="_blank" class="zoom-img-link-left"></a>
+							<a href="https://ad.adverticum.net/C/76578/6154243/615429100?" target="_blank" class="zoom-img-link-right"></a>
+							<img src="https://static.hvgrt.hu/catalog/auchan/06-07.png" alt="06-07"/>
+						</div>
+					</div>
+					<div class="bb-item">
+						<div class="zoom-img">
+							<a href="https://ad.adverticum.net/C/76578/6154243/615429200?" target="_blank" class="zoom-img-link-left"></a>
+							<a href="https://ad.adverticum.net/C/76578/6154243/615429300?" target="_blank" class="zoom-img-link-right"></a>
+							<img src="https://static.hvgrt.hu/catalog/auchan/08-09.png" alt="08-09"/>
+						</div>
+					</div>
+					<div class="bb-item">
+						<div class="zoom-img">
+							<a href="https://ad.adverticum.net/C/76578/6154243/615429400?" target="_blank" class="zoom-img-link-left"></a>
+							<img src="https://static.hvgrt.hu/catalog/auchan/10.png" alt="10"/>
+						</div>
+					</div>
+				</div>
+				<nav>
+					<a id="bb-nav-first" href="#" class="bb-custom-icon bb-custom-icon-first">First page</a>
+					<a id="bb-nav-prev" href="#" class="bb-custom-icon bb-custom-icon-arrow-left">Previous</a>
+					<a id="bb-nav-next" href="#" class="bb-custom-icon bb-custom-icon-arrow-right">Next</a>
+					<a id="bb-nav-last" href="#" class="bb-custom-icon bb-custom-icon-last">Last page</a>
+				</nav>
+			</div>
+			<a class="caption" title="Hirdetés" href="https://hvg.hu/ratecard" style="margin-top: 5px;"></a>
+		</div>
+
+		<script src="https://static.hvgrt.hu/bookblock/js/modernizr.custom.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+		<script src="https://static.hvgrt.hu/bookblock/js/jquerypp.custom.js"></script>
+		<script src="https://static.hvgrt.hu/bookblock/js/jquery.bookblock.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-zoom/1.7.21/jquery.zoom.js"></script>
+		<script>
+			var Page = (function() {
+				
+				var config = {
+						$bookBlock : $( '#bb-bookblock' ),
+						$navNext : $( '#bb-nav-next' ),
+						$navPrev : $( '#bb-nav-prev' ),
+						$navFirst : $( '#bb-nav-first' ),
+						$navLast : $( '#bb-nav-last' )
+					},
+					init = function() {
+						config.$bookBlock.bookblock( {
+							speed : 400,
+							shadowSides : 0.8,
+							shadowFlip : 0.7
+						} );
+						initEvents();
+					},
+					initEvents = function() {
+						
+						var $slides = config.$bookBlock.children();
+
+						// add navigation events
+						config.$navNext.on( 'click touchstart', function() {
+							config.$bookBlock.bookblock( 'next' );
+							return false;
+						} );
+
+						config.$navPrev.on( 'click touchstart', function() {
+							config.$bookBlock.bookblock( 'prev' );
+							return false;
+						} );
+
+						config.$navFirst.on( 'click touchstart', function() {
+							config.$bookBlock.bookblock( 'first' );
+							return false;
+						} );
+
+						config.$navLast.on( 'click touchstart', function() {
+							config.$bookBlock.bookblock( 'last' );
+							return false;
+						} );
+						
+						// add swipe events
+						$slides.on( {
+							'swipeleft' : function( event ) {
+								config.$bookBlock.bookblock( 'next' );
+								return false;
+							},
+							'swiperight' : function( event ) {
+								config.$bookBlock.bookblock( 'prev' );
+								return false;
+							}
+						} );
+
+						// add keyboard events
+						$( document ).keydown( function(e) {
+							var keyCode = e.keyCode || e.which,
+								arrow = {
+									left : 37,
+									up : 38,
+									right : 39,
+									down : 40
+								};
+
+							switch (keyCode) {
+								case arrow.left:
+									config.$bookBlock.bookblock( 'prev' );
+									break;
+								case arrow.right:
+									config.$bookBlock.bookblock( 'next' );
+									break;
+							}
+						} );
+					};
+
+					return { init : init };
+
+			})();
+		</script>
+		<script>
+
+				/*$(document).ready(function(){
+
+					var imgLoad = imagesLoaded('#bb-bookblock');
+					imgLoad.on( 'always', function() {
+					console.log( imgLoad.images.length + ' images loaded' );
+					// detect which image is broken
+					for ( var i = 0, len = imgLoad.images.length; i < len; i++ ) {
+						var image = imgLoad.images[i];
+						var result = image.isLoaded ? 'loaded' : 'broken';
+						console.log( 'image is ' + result + ' for ' + image.img.src );
+					}
+					});
+
+					imgLoad.on( 'done', function() {
+						console.log('all images successfully loaded');
+						Page.init();
+						$('.bb-item .zoom-img').zoom({
+							duration: 0,
+							magnify: 1
+						});
+					});
+
+					imgLoad.on( 'progress', function() {
+						var image = $('.bb-item img');
+						var src = image.attr('src');
+						var result = image.isLoaded ? 'loaded' : 'broken';
+						console.log( 'image is ' + result + ' for ' + image.img.src );
+					});
+
+
+				/*$('#bb-bookblock').imagesLoaded()
+					.always( function( instance ) {
+						console.log('all images loaded');
+					})
+					.done( function( instance ) {
+						console.log('all images successfully loaded');
+						Page.init();
+						$('.bb-item .zoom-img').zoom({
+							duration: 0,
+							magnify: 1
+						});
+					})
+					.fail( function() {
+						console.log('all images loaded, at least one is broken');
+					})
+					.progress( function( instance, image ) {
+						var result = image.isLoaded ? 'loaded' : 'broken';
+						console.log( 'image is ' + result + ' for ' + image.img.src );
+				});*/
+
+
+
+					
+					// $('#ex2').zoom({ on:'grab' });
+					// $('#ex3').zoom({ on:'click' });			 
+					// $('#ex4').zoom({ on:'toggle' });
+				//});
+
+
+				$(document).ready(function() {
+					var imagesLoaded = 0;
+					var totalImages = $('.bb-item img').length;
+					$('.bb-item img').each(function(idx, img) {
+						$('<img>').on('load', imageLoaded).attr('src', $(img).attr('src'));
+					});
+					function imageLoaded() {
+						imagesLoaded++;
+						console.log('imgloaded > ' + imagesLoaded);
+						if (imagesLoaded == totalImages) {
+						allImagesLoaded();
+						}
+					}
+
+					function allImagesLoaded() {
+						console.log('ALL IMAGES LOADED');
+						Page.init();
+						$('.bb-item .zoom-img').zoom({
+							duration: 0,
+							magnify: 1
+							//on: 'grab'
+						});
+					}
+				});
+		</script>
+	</body>
+</html>

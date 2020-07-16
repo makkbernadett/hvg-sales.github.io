@@ -9,14 +9,16 @@
 	font-style: normal;
 }
 
+.main {
+	transform: translateY(15%);
+}
 
 .bb-custom-wrapper {
 	width: 960px;
 	position: relative;
-	margin: 40px auto;
+	margin: 0 auto 40px;
 	text-align: center;
 }
-
 
 .bb-custom-wrapper .bb-bookblock {
 	box-shadow: 0 12px 20px -10px rgba(81,64,49,0.6);
@@ -34,7 +36,7 @@
     margin: 0;
     position: absolute;
     z-index: 0;
-    transform: translateY(-50%);
+    transform: translateY(0%);
     text-align: center;
     top: 50%;
     left: 0;
@@ -51,13 +53,11 @@
 	font-size: 0;
 	margin: 0;
 	position: absolute;
-	text-decoration: none;
 }
 
 
 .bb-custom-wrapper nav a:hover {
 	opacity: 0.6;
-	text-decoration: none;
 }
 
 .bb-custom-icon-arrow-left {
@@ -109,17 +109,5 @@
 
 
 /* zoom */
-.bb-bookblock img:not(.zoomImg) {
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
-.bb-bookblock .zoom-img {
-    position: absolute;
-    overflow: hidden;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-}
+
 
