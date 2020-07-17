@@ -112,7 +112,7 @@
                     if (is_tag)
                         html += "<p class='instagram_tag'" + styles.profile_name + "><a href='https://www.instagram.com/explore/tags/" + options.tag + "' rel='noopener' target='_blank'>#" + options.tag + "</a></p>";
                     else
-                        html += "<p class='instagram_username'" + styles.profile_name + ">@" + data.full_name + " (<a href='https://www.instagram.com/" + options.username + "' rel='noopener' target='_blank'>@" + options.username + "</a>)</p>";
+                        html += "<p class='instagram_username'" + styles.profile_name + "><span>" + data.full_name + "</span><a href='https://www.instagram.com/" + options.username + "' rel='noopener' target='_blank'>@" + options.username + "</a></p>";
 
                     if (!is_tag && options.display_biography)
                         html += "<p class='instagram_biography'" + styles.profile_biography + ">" + data.biography + "</p>";
