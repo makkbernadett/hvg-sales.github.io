@@ -96,10 +96,10 @@
                     'gallery_image': ""
                 };
                 if (options.styling) {
-                    styles.profile_container = " style='text-align:center;'";
-                    styles.profile_image = " style='border-radius:10em;width:15%;max-width:125px;min-width:50px;'";
-                    styles.profile_name = " style='font-size:1.2em;'";
-                    styles.profile_biography = " style='font-size:1em;'";
+                    styles.profile_container = "";//" style='text-align:center;'";
+                    styles.profile_image = "";//" style='border-radius:10em;width:15%;max-width:125px;min-width:50px;'";
+                    styles.profile_name = "";//" style='font-size:1.2em;'";
+                    styles.profile_biography = "";//" style='font-size:1em;'";
                     var width = (100 - options.margin * 2 * options.items_per_row) / options.items_per_row;
                     styles.gallery_image = " style='margin:" + options.margin + "% " + options.margin + "%;width:" + width + "%;float:left;'";
                 }
@@ -112,7 +112,7 @@
                     if (is_tag)
                         html += "<p class='instagram_tag'" + styles.profile_name + "><a href='https://www.instagram.com/explore/tags/" + options.tag + "' rel='noopener' target='_blank'>#" + options.tag + "</a></p>";
                     else
-                        html += "<p class='instagram_username'" + styles.profile_name + "><span>" + data.full_name + "</span><a href='https://www.instagram.com/" + options.username + "' rel='noopener' target='_blank'>@" + options.username + "</a></p>";
+                        html += "<p class='instagram_username'" + styles.profile_name + "><a href='https://www.instagram.com/" + options.username + "' rel='noopener' target='_blank'><span class='instagram_fullname'>" + data.full_name + "</span><span class='instagram_link'>@" + options.username + "</span></a></p>";
 
                     if (!is_tag && options.display_biography)
                         html += "<p class='instagram_biography'" + styles.profile_biography + ">" + data.biography + "</p>";
