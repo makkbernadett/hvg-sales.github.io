@@ -131,14 +131,31 @@ img.g-img + div {
 			<tbody>
 				<tr>
 					<td style="text-align: left; vertical-align: middle; padding: 0px 20px;">
-						<h1 style="margin-top: 0; margin-bottom: 27px; font-family: 'Roboto', Arial, Helvetica, sans-serif; font-size: 30px; line-height: 38px;  color: #2b2b2b;">
-							Kedves Előfizetőnk!
-						</h1>
-						<p style="margin-bottom: 20px; font-family: Roboto; font-size: 16px; line-height: 24px; color: #2b2b2b;">
-							Köszönjük, hogy megrendelted a hvg360-at!<br />&nbsp;<br />
-							A hvg360 hozzáférésed az előfizetési díj beérkezésével automatikusan elindul. A sikeres fizetésről és az előfizetésed elindulásáról emailben fogunk tájékoztatni.<br />
-							Megrendelésed státuszát profil oldaladon is nyomon követheted.
-						</p>
+						@if (Model.Order.ExternalOrderCode == "MGM award")
+						{
+							<h1 style="margin-top: 0; margin-bottom: 27px; font-family: 'Roboto', Arial, Helvetica, sans-serif; font-size: 30px; line-height: 38px;  color: #2b2b2b;">
+								Kedves Olvasónk!
+							</h1>
+							<p style="margin-bottom: 20px; font-family: Roboto; font-size: 16px; line-height: 24px; color: #2b2b2b;">
+								Gratulálunk, a korábban küldött ajánló linkeddel már 5 sikeres regisztrációt rögzítettünk, ezért a következő hónapban díjmentes hozzáférést biztosítunk számodra az oldalhoz! 
+								Köszönjük, hogy bemutattad ismerőseidnek a hvg360-at, és ezzel hozzájárultál közösségünk bővüléséhez.
+								<br /><br />
+								Köszöntünk a leglelkesebb olvasók klubjában!
+							</p>
+							<h2 style="margin-top: 0; margin-bottom: 0px; font-family: 'Roboto', Arial, Helvetica, sans-serif; font-size: 20px; line-height: 28px;  color: #2b2b2b;">Most pedig irány a <a href="https://hvg.hu/360/" target="_blank" style="color:#5eb199;text-decoration: underline;">hvg360</a>!</h2>
+						}
+						else
+						{
+							<h1 style="margin-top: 0; margin-bottom: 27px; font-family: 'Roboto', Arial, Helvetica, sans-serif; font-size: 30px; line-height: 38px;  color: #2b2b2b;">
+								Kedves Előfizetőnk!
+							</h1>
+							
+							<p style="margin-bottom: 20px; font-family: Roboto; font-size: 16px; line-height: 24px; color: #2b2b2b;">
+								Köszönjük, hogy megrendelted a hvg360-at!<br />&nbsp;<br />
+								A hvg360 hozzáférésed az előfizetési díj beérkezésével automatikusan elindul. A sikeres fizetésről és az előfizetésed elindulásáról emailben fogunk tájékoztatni.<br />
+								Megrendelésed státuszát profil oldaladon is nyomon követheted.
+							</p>
+						}
 					</td>
 				</tr>
 			</tbody>
