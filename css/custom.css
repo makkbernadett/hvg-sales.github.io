@@ -1,5 +1,13 @@
 /* customcss*/
 
-.placeholder-ad .wrap-ad {
+/*.placeholder-ad .wrap-ad {
     width: auto;
+}*/
+
+.embedly-card {
+    margin: 10px auto;
+    max-width: 600px;
+}
+body.read-mode .embedly-card {
+    background: #d6d6d6;
 }
