@@ -10,12 +10,13 @@
 }
 body.read-mode .embedly-card {
     background: #d6d6d6;
+	margin: 10px auto;
 }
 
 body.read-mode section.articlebox {
 	border-bottom-color: #464545;
 }
 
-.font-settings .switch-holder .info {
+body.font-size .font-settings .info {
 	font-size: 12px;
 }
