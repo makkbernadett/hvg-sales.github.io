@@ -11,3 +11,7 @@
 body.read-mode .embedly-card {
     background: #d6d6d6;
 }
+
+body.read-mode section.articlebox {
+	border-bottom-color: #464545;
+}
