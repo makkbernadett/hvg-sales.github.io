@@ -15,3 +15,7 @@ body.read-mode .embedly-card {
 body.read-mode section.articlebox {
 	border-bottom-color: #464545;
 }
+
+.font-settings .switch-holder .info {
+	font-size: 12px;
+}
