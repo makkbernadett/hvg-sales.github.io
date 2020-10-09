@@ -403,8 +403,8 @@ html, body, .perspective-wrapper {
 @media screen and (min-width: 768px) and (orientation: portrait){
 
     .advorient-left.animate .container {
-        -webkit-transform: perspective(3280px) translateZ(-1000px) translateX(-1000px) rotateY(110deg);
-        transform: perspective(3280px) translateZ(-1000px) translateX(-1000px) rotateY(110deg);
+        -webkit-transform: perspective(2000px) translateZ(-1000px) translateX(-1100px) rotateY(110deg);
+        transform: perspective(2000px) translateZ(-1000px) translateX(-1100px) rotateY(110deg);
     }
     
 }
