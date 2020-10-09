@@ -219,6 +219,13 @@ html, body, .perspective-wrapper {
     background-position: center center;
 } 
 
+@media only screen and (max-width: 1199px) {
+.modalview.animate .container, #perspective.animate .ad-perspective-container, .modalview:not(.animate) .container,
+#perspective:not(.animate) .ad-perspective-container{
+	background-size: 100% auto;
+}
+}
+
 [data-counter-zone-id]{
     display: none;
 }
