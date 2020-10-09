@@ -204,7 +204,7 @@ html, body, .perspective-wrapper {
     -moz-transition-timing-function: cubic-bezier(0.680, -0.550, 0.265, 1.550);
     -o-transition-timing-function: cubic-bezier(0.680, -0.550, 0.265, 1.550);
     transition-timing-function: cubic-bezier(0.680, -0.550, 0.265, 1.550); /* easeInOutBack */
-    /*background-size: 100% auto;*/
+    background-size: 100% auto;
     background-position: center center;
 } 
 .modalview:not(.animate) .container,
@@ -214,16 +214,9 @@ html, body, .perspective-wrapper {
     -moz-transition-timing-function: cubic-bezier(0.680, -0.550, 0.265, 1.550);
     -o-transition-timing-function: cubic-bezier(0.680, -0.550, 0.265, 1.550);
     transition-timing-function: cubic-bezier(0.680, -0.550, 0.265, 1.550); /* easeInOutBack */
-    /*background-size: 100% auto;*/
+    background-size: 100% auto;
     /*transform-origin: 50% 50%;*/
     background-position: center center;
-} 
-
-@media only screen and (max-width: 1199px) {
-.modalview.animate .container, #perspective.animate .ad-perspective-container, .modalview:not(.animate) .container,
-#perspective:not(.animate) .ad-perspective-container{
-	background-size: 100% auto;
-}
 }
 
 [data-counter-zone-id]{
