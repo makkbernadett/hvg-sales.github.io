@@ -393,7 +393,7 @@ html, body, .perspective-wrapper {
 
     .advorient-left.animate .container {
         -webkit-transform: perspective(2000px) translateZ(-1000px) translateX(-1100px) rotateY(110deg);
-        transform: perspective(2000px) translateZ(-1000px) translateX(-1100px) rotateY(110deg);
+        transform: perspective(2000px) translateZ(-1000px) translateX(-1000px) rotateY(110deg);
     }
     
 }
@@ -402,7 +402,7 @@ html, body, .perspective-wrapper {
 
     .advorient-left.animate .container {
         -webkit-transform: perspective(2580px) translateZ(-1200px) translateX(-1200px) rotateY(110deg);
-        transform: perspective(2580px) translateZ(-1200px) translateX(-1200px) rotateY(110deg);
+        transform: perspective(2580px) translateZ(-1200px) translateX(-1100px) rotateY(110deg);
     }
     .advorient-right.animate .container {
         -webkit-transform: translateZ(-1024px) translateX(115%) rotateY(-90deg);
