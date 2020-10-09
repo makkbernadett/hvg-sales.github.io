@@ -222,12 +222,10 @@ html, body, .perspective-wrapper {
 @media screen and (min-width: 768px) and (orientation: portrait){
     .modalview.animate .container,
     #perspective.animate .ad-perspective-container{
-        /* background-size: 100% auto; */
         background-size: contain;
     }
     .modalview:not(.animate) .container,
     #perspective:not(.animate) .ad-perspective-container{
-        /* background-size: 100% auto; */
         background-size: contain;
     }
 }
@@ -235,12 +233,10 @@ html, body, .perspective-wrapper {
 @media screen and (min-width: 992px) and (orientation: landscape){
     .modalview.animate .container,
     #perspective.animate .ad-perspective-container{
-        /* background-size: 100% auto; */
         background-size: contain;
     }
     .modalview:not(.animate) .container,
     #perspective:not(.animate) .ad-perspective-container{
-        /* background-size: 100% auto; */
         background-size: contain;
     }
 }
@@ -404,7 +400,7 @@ html, body, .perspective-wrapper {
     transform-origin: 50% 50%;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (orientation: portrait){
 
     .advorient-left.animate .container {
         -webkit-transform: perspective(1280px) translateZ(-1000px) translateX(-1500px) rotateY(110deg);
@@ -413,7 +409,7 @@ html, body, .perspective-wrapper {
     
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1024px) and (orientation: landscape){
 
     .advorient-left.animate .container {
         -webkit-transform: perspective(1280px) translateZ(-1200px) translateX(-1500px) rotateY(110deg);
