@@ -32,3 +32,10 @@ body.read-mode .article-content .mobile-pr-article a.caption {
 body.font-size .site-header-sponsor a.sponsor-link {
     font-size: 14px;
 }
+
+.article-content .adtype-tematic a {
+    color: #222;
+}
+.read-mode .article-content .adtype-tematic a {
+color: #fff;
+}
