@@ -1,0 +1,324 @@
+@model HangfireWeb.Models.OrderTemplateModel
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+<meta charset="utf-8"> 
+<meta name="viewport" content="width=device-width"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+<meta name="x-apple-disable-message-reformatting"> 
+<title></title> 
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=latin-ext" rel="stylesheet">
+
+<style>
+
+html,
+body {
+    margin: 0 auto !important;
+    padding: 0 !important;
+    height: 100% !important;
+    width: 100% !important;
+    background: #f1f1f1;
+}
+
+/* What it does: Stops email clients resizing small text. */
+* {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+/* What it does: Centers email on Android 4.4 */
+div[style*="margin: 16px 0"] {
+    margin: 0 !important;
+}
+
+/* What it does: Stops Outlook from adding extra spacing to tables. */
+table,
+td {
+    mso-table-lspace: 0pt !important;
+    mso-table-rspace: 0pt !important;
+}
+
+/* What it does: Fixes webkit padding issue. */
+table {
+    border-spacing: 0 !important;
+    border-collapse: collapse !important;
+    table-layout: fixed !important;
+    margin: 0 auto !important;
+}
+
+/* What it does: Uses a better rendering method when resizing images in IE. */
+img {
+    -ms-interpolation-mode:bicubic;
+}
+
+/* What it does: Prevents Windows 10 Mail from underlining links despite inline CSS. Styles for underlined links should be inline. */
+a {
+    text-decoration: none;
+}
+
+/* What it does: A work-around for email clients meddling in triggered links. */
+*[x-apple-data-detectors],  /* iOS */
+.unstyle-auto-detected-links *,
+.aBn {
+    border-bottom: 0 !important;
+    cursor: default !important;
+    color: inherit !important;
+    text-decoration: none !important;
+    font-size: inherit !important;
+    font-family: inherit !important;
+    font-weight: inherit !important;
+    line-height: inherit !important;
+}
+
+/* What it does: Prevents Gmail from displaying a download button on large, non-linked images. */
+.a6S {
+    display: none !important;
+    opacity: 0.01 !important;
+}
+
+/* What it does: Prevents Gmail from changing the text color in conversation threads. */
+.im {
+    color: inherit !important;
+}
+
+/* If the above doesn't work, add a .g-img class to any image in question. */
+img.g-img + div {
+    display: none !important;
+}
+
+/* What it does: Removes right gutter in Gmail iOS app: https://github.com/TedGoas/Cerberus/issues/89  */
+/* Create one of these media queries for each additional viewport size you'd like to fix */
+
+/* iPhone 4, 4S, 5, 5S, 5C, and 5SE */
+@@media only screen and (min-device-width: 320px) and (max-device-width: 374px) {
+    u ~ div .email-container {
+        min-width: 320px !important;
+    }
+}
+/* iPhone 6, 6S, 7, 8, and X */
+@@media only screen and (min-device-width: 375px) and (max-device-width: 413px) {
+    u ~ div .email-container {
+        min-width: 375px !important;
+    }
+}
+/* iPhone 6+, 7+, and 8+ */
+@@media only screen and (min-device-width: 414px) {
+    u ~ div .email-container {
+        min-width: 414px !important;
+    }
+}
+
+</style>
+
+
+<style>
+
+
+.email-section{
+	padding:20px;
+}
+
+/*BUTTON*/
+.btn{
+	padding: 10px 15px;
+}
+.btn.btn-primary{
+	border-radius: 30px;
+	background: #f3a333;
+	color: #ffffff;
+}
+
+
+
+h1,h2,h3,h4,h5,h6{
+	font-family: 'Roboto', Arial, Helvetica, sans-serif;
+	color: #000000;
+	margin-top: 0;
+}
+
+body{
+	font-family: 'Roboto', Arial, Helvetica, sans-serif;
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 125%;
+	color: #454545;
+}
+
+a{
+	color: #004276;
+}
+
+
+table{
+}
+
+h2{
+	color: #454545;
+	font-size: 20px;
+	margin-bottom: 0;	
+}
+
+
+
+
+
+
+
+/*FOOTER*/
+
+
+@@media screen and (max-width: 500px) {
+	table td {
+        width:100%!important;
+        display: block!important;
+    }
+
+}
+
+</style>
+</head>
+<body width="100%" style="margin: 0; padding: 0 !important; mso-line-height-rule: exactly; background-color: #f1f1f1;">
+<center style="width: 100%; background-color: #f1f1f1;">
+<!--[if mso]>
+ <center>
+ <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="620"><tr><td width="620">
+<![endif]-->
+<div style="max-width: 620px; margin: 0 auto;" class="email-container">
+
+<table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="margin: auto;">
+
+	<tr><td style="font-size: 1px;" height="20">&nbsp;</td></tr>
+
+	<tr>
+		<td class="logo" style="padding: 0 20px; text-align: left; background: #454545;border-bottom: 4px solid #c10000;" >
+			<a href="https://adozona.hu" target="_blank" style="text-decoration: none;border: none;color: #c10000;">
+				<img src="http://static.hvgrt.hu/adozona/adozona_logo/logo.png" style="display: inline-block;" alt="Adózóna" />
+			</a>
+		</td>
+	</tr>
+
+	<tr>
+		<td valign="middle" style="background:#fcfcfc;" width="100%">
+			<table>
+			
+				<tr><td style="font-size: 1px;" height="20">&nbsp;</td></tr>			
+			
+				<tr>
+					<td style="padding:0 20px;"  width="100%" >
+						<div class="text" style="padding: 0; text-align: left;font-family: 'Roboto', Arial, Helvetica, sans-serif;">
+							<h2>FT – Tárgy: 30%-os HVG könyvkupont adunk a válaszaiért</h2>
+						</div>
+					</td>
+				</tr>			
+			
+				<tr><td style="font-size: 1px;" height="20">&nbsp;</td></tr>
+				
+				
+				<!--welcome-->
+				<tr>
+					<td style="padding: 0 20px;font-family: 'Roboto', Arial, Helvetica, sans-serif;"  width="100%">
+						<div class="text" style="padding:0px; text-align: left;">
+							<!--notice-->
+							<p style="margin: 0;padding-bottom: 0px;">
+								<strong>Kedves Ügyfelünk!</strong><br><br>
+                                Köszönjük, hogy kipróbálta az Adózóna szolgáltatásait 14 napos próba előfizetéssel. 
+                                A célunk, hogy ügyfeleink egy helyen, megbízható forrásból tájékozódhassanak a munkájukat érintő adózási kérdésekről és a kapcsolódó társtémákról. 
+                                Sajnálattal látjuk, hogy a lejáratkor nem fizetett végül elő az Adózóna szolgáltatásaira.<br><br>
+                                <strong>Kérjük, ossza meg velünk a véleményét, és töltse ki rövid kérdőívünket</strong>. 
+                                Ezzel sokat segítene abban, hogy a szolgáltatásunkat még hasznosabbá tegyük.
+                            </p>
+						</div>
+					</td>
+                </tr>
+
+				<tr><td style="font-size: 1px;font-size: 1px;line-height:1px;margin: 0;padding: 0;" height="10">&nbsp;</td></tr>							
+
+				<tr>
+					<td style="padding: 0 20px;font-family: 'Roboto', Arial, Helvetica, sans-serif;" width="100%">
+						<div class="text" style="padding: 0px; text-align: center;">
+							<strong>
+								A fáradozását 30%-os HVG könyvkuponnal köszönjük meg.
+							</strong>
+						</div>
+					</td>
+				</tr>
+                
+				<tr><td style="font-size: 1px;font-size: 1px;line-height:1px;margin: 0;padding: 0;" height="10">&nbsp;</td></tr>							
+
+				<tr>
+					<td style="padding: 20px;font-family: 'Roboto', Arial, Helvetica, sans-serif;" width="100%">
+						<div class="text" style="padding: 0px; text-align: center;">
+							<strong>
+								<a class="btn btn-primary" href="http://bit.ly/AZ-FTNO-20-09" title="">KITÖLTÖM</a>
+							</strong>
+						</div>
+					</td>
+				</tr>
+
+				<tr><td style="font-size: 1px;" height="20">&nbsp;</td></tr>	
+
+				<!--customer-service-->
+				<tr>
+					<td style="padding: 0 20px;font-family: 'Roboto', Arial, Helvetica, sans-serif;">
+						<div class="text" style="padding: 0px; text-align: left;">
+							
+							<p style="margin: 0;padding-bottom: 10px;">
+								Üdvözlettel: <br/>
+								<strong>az Adózóna.hu csapata</strong>
+								<br />&nbsp;<br />
+								Ha segítségre van szüksége, kérjük, hívja a (061) 436-2045-ös ügyfélszolgálati telefonszámot (9-14h között), vagy írjon e-mailt az 
+								<a href="mailto:ugyfelszolgalat@hvg.hu" style="color: #004276;text-decoration: underline;">ugyfelszolgalat@hvg.hu</a> címre. 
+							</p>								
+
+					
+							
+						</div>
+					</td>
+				</tr>					
+				
+				<tr><td style="font-size: 1px;" height="20">&nbsp;</td></tr>				
+					
+			</table>
+		</td>
+	</tr>
+
+
+
+</table>
+
+
+<table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="margin: auto;background:#454545; border-top: 2px solid #c10000;">
+
+	<tr>
+		<td valign="middle" class=" footer email-section" style="padding: 20px;">
+			<table>
+				<tr>
+					<td valign="top" width="100%">
+						<table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+							<tr>
+								<td style="text-align: left; color: #c2c2c2;font-size:12px;font-family: 'Roboto', Arial, Helvetica, sans-serif;">
+									<p style="margin: 0;padding-bottom: 10px;">Jelen üzenet címzettje: <a href="mailto:@Model.User.Email" target="_blank" style="color:#c2c2c2;text-decoration: none;">@Model.User.Email</a>. Ezt az értesítőt az Adózóna.hu oldalon történt (korábbi) regisztrációjával összefüggésben küldtük Önnek.</p>
+                                    <p style="margin: 0;padding-bottom: 10px;">Ez egy automatikusan generált e-mail üzenet, kérjük, ne válaszoljon rá.</p>
+                                    <p style="margin: 0;padding-bottom: 0px;">Minden jog fenntartva! 2009 - @DateTime.Now.Year HVG Kiadó Zrt.</p>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+
+<table>
+	<tr><td style="font-size: 1px;" height="20">&nbsp;</td></tr>
+</table>
+</div>
+<!--[if mso]>
+ </td></tr></table>
+ </center>
+<![endif]--> 
+</center>
+
+</body>
+</html>
