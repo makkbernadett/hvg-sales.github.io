@@ -39,3 +39,7 @@ body.font-size .site-header-sponsor a.sponsor-link {
 .read-mode .article-content .adtype-tematic a {
 color: #fff;
 }
+/* google text ads */
+div[id^="zone"] div[id^="div-gpt-ad"] {
+    margin: 0 auto;
+}
