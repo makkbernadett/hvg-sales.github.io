@@ -890,3 +890,25 @@ position: relative;
 .goa-sidekick-base {
     display: inline-block;
 }
+
+/* tablet styles */
+@media only screen and (max-width: 1199px) {
+    .slick-slider {
+        margin: 0;
+        top: 50%;
+        left: 50%;
+        transform: translateY(-50%) translateX(-50%);
+    }
+}
+@media only screen and (max-width: 992px) {
+    .gallery {
+        height: 320px;
+        width: 700px;
+    }
+    .slick-next {
+        right: -20px;
+    }
+    .slick-prev {
+        left: -20px;
+    }
+}

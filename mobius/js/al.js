@@ -300,7 +300,7 @@ window.onGoa3Event = function (jQueryEvent, goa3Event) {
                 $('.gallery').slick({
                     centerMode: true,
                     slide: 'a',
-                    swipe: false,
+                    swipe: true,
                     speed: 200,
                     centerPadding: '5%',
                     slidesToShow: slidesToShow,
