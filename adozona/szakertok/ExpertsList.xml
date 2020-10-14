@@ -671,4 +671,15 @@
     <Photo></Photo>
     <IsActive>1</IsActive>
   </Expert>
+  <Expert>
+<Id>a177a0d0-96db-40b7-80da-403b4328868a</Id>
+<Sid>47100B3A</Sid>
+<Name>Kiss Péter</Name>
+<Title>adószakértő</Title>
+<ArticleId>9c9b3086-2b11-4a30-90a2-2b872a15d851</ArticleId>
+<Company>TruTax Kft.</Company>
+<Description></Description>
+<Photo></Photo>
+<IsActive>1</IsActive>
+</Expert>
 </root>
