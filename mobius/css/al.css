@@ -919,3 +919,20 @@ position: relative;
         left: -20px;
     }
 }
+
+@media only screen and (min-width: 1280px) {
+    .perspective-gallery .gallery {
+        right: auto;
+    }
+    .perspective-gallery.advorient-left.animate .container {
+        -webkit-transform: perspective(1280px) translateZ(-1020px) translateX(-1240px) rotateY(111deg);
+        transform: perspective(1280px) translateZ(-1020px) translateX(-1240px) rotateY(111deg);
+    }
+    .slick-slider {
+        margin: 0;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translateY(-60%) translateX(-40%);
+    }
+}
