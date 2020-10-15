@@ -893,8 +893,8 @@ position: relative;
 
 /* tablet styles */
 @media only screen and (max-width: 1199px) {
-    .ad-perspective-container.active-template.ad-active.bg-loaded {
-        background-color: #1a1a1a;
+    .ad-perspective-container {
+        background-color: #1a1a1a !important;
     }
     .slick-slider {
         margin: 0;
