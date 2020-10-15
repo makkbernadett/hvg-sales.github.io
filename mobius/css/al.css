@@ -892,15 +892,29 @@ position: relative;
 }
 
 /* tablet styles */
-@media only screen and (max-width: 1199px) {
+@media only screen and (max-width: 1279px) {
     .ad-perspective-container {
         background-color: #1a1a1a !important;
     }
+}
+@media only screen and (max-width: 1199px) {
     .slick-slider {
         margin: 0;
         top: 50%;
         left: 50%;
         transform: translateY(-50%) translateX(-50%);
+    }
+}
+@media only screen and (max-width: 1024px) {
+    #perspective.perspective-gallery.animate .ad-perspective-container {
+        background-size: auto 1024px;
+    }
+    .slick-slider {
+        margin: 0;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translateY(-60%) translateX(-40%);
     }
 }
 @media only screen and (max-width: 992px) {
