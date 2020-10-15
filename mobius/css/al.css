@@ -920,6 +920,10 @@ position: relative;
         left: 50%;
         transform: translateY(-50%) translateX(-50%);
     }
+    .gallery {
+        height: 370px;
+        width: 800px;
+    }
 }
 @media only screen and (max-width: 992px) {
     #perspective.perspective-gallery.animate .ad-perspective-container {
