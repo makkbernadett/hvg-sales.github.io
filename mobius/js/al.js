@@ -288,6 +288,8 @@ window.onGoa3Event = function (jQueryEvent, goa3Event) {
                 
             } else if ($(zoneSettings.target).data('type') === 'gallery') {
 
+                perspectiveWrapper.addClass('perspective-gallery');
+
 
                 if ($(zoneSettings.target).data('item-type') === 'portrait') {
 
