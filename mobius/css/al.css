@@ -904,10 +904,11 @@ position: relative;
     }
 }
 @media only screen and (max-width: 992px) {
-    .advorient-left.animate .container {
-        -webkit-transform: perspective(2000px) translateZ(-1000px) translateX(-1300px) rotateY(110deg);
-        transform: perspective(2000px) translateZ(-1000px) translateX(-1300px) rotateY(110deg);
+    .perspective-gallery.advorient-left.animate .container {
+        -webkit-transform: perspective(2000px) translateZ(-1000px) translateX(-1500px) rotateY(110deg);
+        transform: perspective(2000px) translateZ(-1000px) translateX(-1500px) rotateY(110deg);
     }
+
     .gallery {
         height: 320px;
         width: 700px;
