@@ -276,10 +276,12 @@ html, body, .perspective-wrapper {
     position: relative;
 }
 
-
 .perspective-wrapper.modalview {
     position: fixed;
     perspective: 1500px;
+}
+.settings-sepia .perspective-wrapper.modalview {
+    background: #111;
 }
 
 .modalview .container {
