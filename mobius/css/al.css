@@ -280,7 +280,7 @@ html, body, .perspective-wrapper {
     position: fixed;
     perspective: 1500px;
 }
-.settings-sepia .perspective-wrapper.modalview {
+.settings-sepia .perspective-wrapper {
     background: #111;
 }
 
