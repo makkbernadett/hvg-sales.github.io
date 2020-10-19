@@ -4,3 +4,38 @@
     width: 28px;
     height: 28px;
 }
+
+/* banner teszt */
+@media screen and (max-width: 1199px) {
+    .adtype-multipanel .adtype-multipanel-wrapper .panel-position .panel-parent .expand-button {
+        width: 36px;
+        height: 36px;
+        left: 5px;
+    }
+
+    .adtype-multipanel .adtype-multipanel-wrapper .panel-position .panel-parent .expand-button::before, 
+    .adtype-multipanel .adtype-multipanel-wrapper .panel-position .panel-parent .expand-button::after {
+        width: 16px;
+        top: 16px;
+    }
+
+    .adtype-multipanel .adtype-multipanel-wrapper .panel-position .panel-parent .close-button {
+        width: 36px;
+        height: 36px;
+    }
+
+    .adtype-multipanel .adtype-multipanel-wrapper .panel-position .panel-parent .close-button::before, 
+    .adtype-multipanel .adtype-multipanel-wrapper .panel-position .panel-parent .close-button::after {
+        width: 24px;
+        top: 15px
+    }
+
+    .multipanel-wide .adtype-multipanel-wrapper:hover .panel-parent.panel-basic.current + .panel-parent {
+        animation: none; 
+    }
+    .multipanel-wide .adtype-multipanel-wrapper:hover .panel-parent.panel-basic.current + .panel-parent .panel {
+        animation: none;
+        animation-fill-mode: none;
+    }
+
+}
