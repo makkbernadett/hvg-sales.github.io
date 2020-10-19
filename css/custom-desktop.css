@@ -8,15 +8,52 @@
 /* banner teszt */
 @media screen and (max-width: 1199px) {
     .adtype-multipanel .adtype-multipanel-wrapper .panel-position .panel-parent .expand-button {
-        width: 36px;
+        width: 240px;
         height: 36px;
         left: 5px;
+        animation: none;
+        border: 0;
+        border-radius: 0;
+        background: transparent;
+        box-shadow: none;
     }
 
-    .adtype-multipanel .adtype-multipanel-wrapper .panel-position .panel-parent .expand-button::before, 
+    .adtype-multipanel .adtype-multipanel-wrapper .panel-position .panel-parent .expand-button::before {
+        content: '';
+        transform: rotate(0);
+        right: auto;
+        position: absolute;
+        bottom: auto;
+        border-radius: 50%;
+        border: 2px solid #fff;
+        background: rgba(0,0,0,0.3);
+        box-shadow: none;
+        cursor: pointer;
+        transition: none;
+        z-index: 2;
+        animation: none;
+        font-size: 20px;
+        width: 30px;
+        height: 30px;
+        top: 0;
+        left: 0;
+    }
     .adtype-multipanel .adtype-multipanel-wrapper .panel-position .panel-parent .expand-button::after {
-        width: 16px;
-        top: 16px;
+        content: '';
+        background: transparent;
+        box-sizing: border-box;
+        height: 15px;
+        width: 15px;
+        border-style: solid;
+        border-color: white;
+        border-width: 0px 2px 2px 0px;
+        box-shadow: none;
+        transform: rotate(45deg);
+        transition: none;
+        position: absolute;
+        left: 9px;
+        top: 6px;
+        z-index: 2;
     }
 
     .adtype-multipanel .adtype-multipanel-wrapper .panel-position .panel-parent .close-button {
