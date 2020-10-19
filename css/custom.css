@@ -31,6 +31,9 @@ body.font-size .site-header-sponsor a.sponsor-link {
 .article-content .mobile-pr-article a:not(.caption) {
   color: #222;
 }
+.article-content .mobile-pr-article a.caption {
+  color: #888;
+}
 .footer .icon-huawei {
   width: 27px;
   height: 30px;
