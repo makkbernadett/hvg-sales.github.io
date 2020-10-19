@@ -53,9 +53,6 @@ body.font-size .site-header-sponsor a.sponsor-link {
   }
 }
 /* parallax FPA */
-body {
-  /*read mode parallax*/
-}
 body.parallax-ad:before {
   content: "";
   position: fixed;
@@ -245,7 +242,13 @@ body.parallax-ad .grid-article + div[id^="zone"].goAdverticum.goa-embedded > div
     margin: 0 0 20px 0;
   }
 }
-body.read-mode.parallax-ad .content {
+body.read-mode.parallax-ad .lead-article,
+body.read-mode.parallax-ad .grid-article,
+body.read-mode.parallax-ad .placeholder-ad,
+body.read-mode.parallax-ad .adcaption,
+body.read-mode.parallax-ad .footer,
+body.read-mode.parallax-ad .content,
+body.read-mode.parallax-ad .more-button {
   background-color: #1a1a1a;
 }
 body.read-mode.parallax-ad .wrap {
@@ -273,7 +276,6 @@ body.read-mode.parallax-ad.article-page .grid-view {
   background: #1a1a1a;
 }
 body.read-mode.parallax-ad .grid-view .grid-article {
-  border-bottom: 1px solid #464545;
   background: #1a1a1a;
 }
 body.read-mode.parallax-ad .grid-view {
