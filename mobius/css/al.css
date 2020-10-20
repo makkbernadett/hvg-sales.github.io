@@ -147,8 +147,8 @@ html, body, .perspective-wrapper {
 }
 
 .animate .ad-active.ad-perspective-container {
-    -webkit-transform:scale(1) translateZ(0) translateX(0) translateY(0%) !important; /* reset transforms (Chrome bug) */
-    transform:scale(1) translateZ(0) translateX(0) translateY(0%) !important;
+    -webkit-transform:scale(1) translateZ(0px) translateX(0%) translateY(0%) !important; /* reset transforms (Chrome bug) */
+    transform:scale(1) translateZ(0) translateX(0%) translateY(0%) !important;
 }
 
 .modalview.animate .ad-perspective-container.ad-active[data-effect="opacity"]{
