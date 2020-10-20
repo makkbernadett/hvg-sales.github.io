@@ -930,6 +930,9 @@ position: relative;
         height: 300px;
         width: 650px;
     }
+    #perspective.perspective-gallery.animate .ad-perspective-container {
+        background-size: 100% auto;
+    }
 }
 @media only screen and (max-width: 992px) {
     .advorient-left.animate .container {
@@ -966,6 +969,9 @@ position: relative;
 @media only screen and (min-width: 1280px) {
     .perspective-gallery .gallery {
         right: auto;
+    }
+    #perspective.perspective-gallery.animate .ad-perspective-container {
+        background-size: 100% auto;
     }
     .perspective-gallery.advorient-left.animate .container {
         -webkit-transform: perspective(1280px) translateZ(-1020px) translateX(-1240px) rotateY(111deg);

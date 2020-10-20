@@ -270,7 +270,7 @@ window.onGoa3Event = function (jQueryEvent, goa3Event) {
                 };
                 
             
-                $("#video-" + zoneSettings.zoneInfo.targetId).click(function (e) {       
+                $("#video-" + zoneSettings.zoneInfo.targetId).on('click', function (e) {       
                     // get click position 
                     var clickY = (e.pageY - $(this).offset().top);
                     var height = parseFloat($(this).height());
@@ -387,8 +387,6 @@ window.onGoa3Event = function (jQueryEvent, goa3Event) {
             $('.close-popup').off('click.close');
             $('[data-ct]').off('click.ct');
         }
-
-
     }
 
     $.fn.adPerspective.defaults = {
