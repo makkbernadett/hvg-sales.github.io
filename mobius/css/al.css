@@ -63,6 +63,16 @@ html, body, .perspective-wrapper {
     text-align:center;
 }
 
+@media only screen and (max-height: 670px) {
+    [data-type="video"] video {
+        -webkit-transform: translateZ(0) translateX(-50%) translateY(0);
+        transform: translateZ(0) translateX(-50%) translateY(0);
+    }
+    .advorient-top [data-type="video"] video {
+        top: auto;
+        bottom: 50px;
+    }
+}
 
 .advorient-top [data-type="gallery"] .gallery{
     top: 60%;
@@ -894,16 +904,6 @@ position: relative;
 }
 
 /* tablet styles */
-@media only screen and (max-height: 670px) {
-    [data-type="video"] video {
-        -webkit-transform: translateZ(0) translateX(-50%) translateY(0);
-        transform: translateZ(0) translateX(-50%) translateY(0);
-    }
-    .advorient-top [data-type="video"] video {
-        top: auto;
-        bottom: 50px;
-    }
-}
 
 @media only screen and (max-width: 1500px) {
     .gallery {
