@@ -951,8 +951,9 @@ position: relative;
 }
 @media only screen and (max-width: 992px) {
     .advorient-left.animate .container {
-        -webkit-transform: perspective(2000px) translateZ(-1000px) translateX(-1100px) rotateY(110deg);
-        transform: perspective(2000px) translateZ(-1000px) translateX(-1000px) rotateY(110deg);
+        -webkit-transform: perspective(900px) translateZ(-1000px) translateX(-1200px) rotateY(115deg);
+        /*transform: perspective(2000px) translateZ(-1000px) translateX(-1000px) rotateY(110deg);*/
+        transform: perspective(900px) translateZ(-1000px) translateX(-1200px) rotateY(115deg);
     }
     .perspective-gallery.advorient-left.animate .container {
         -webkit-transform: perspective(1000px) translateZ(-1000px) translateX(-1200px) rotateY(115deg);
