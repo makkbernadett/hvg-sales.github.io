@@ -943,6 +943,9 @@ position: relative;
     #perspective.perspective-gallery.animate .ad-perspective-container {
         background-size: auto 1024px;
     }
+    .slick-slider {
+        transform: translateY(-50%) translateX(-40%);
+    }
     .gallery {
         height: 320px;
         width: 700px;
