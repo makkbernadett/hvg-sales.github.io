@@ -969,7 +969,16 @@ position: relative;
         transform: translateY(-50%) translateX(-40%);
     }
 }
-
+@media only screen and (max-height: 670px) {
+    [data-type="video"] video {
+        -webkit-transform: translateZ(0) translateX(-50%) translateY(0);
+        transform: translateZ(0) translateX(-50%) translateY(0);
+    }
+    .advorient-top [data-type="video"] video {
+        top: auto;
+        bottom: 0;
+    }
+}
 @media only screen and (min-width: 1280px) {
     .perspective-gallery .gallery {
         right: auto;
