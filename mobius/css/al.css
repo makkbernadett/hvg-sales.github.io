@@ -894,7 +894,11 @@ position: relative;
 }
 
 /* tablet styles */
-@media only screen and (max-width: 1279px) {
+@media only screen and (max-width: 1500px) {
+    .gallery {
+        height: 350px;
+        width: 800px;
+    }
     .ad-perspective-container {
         background-color: #1a1a1a !important;
     }
