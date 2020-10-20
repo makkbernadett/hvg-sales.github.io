@@ -976,7 +976,7 @@ position: relative;
     }
     .advorient-top [data-type="video"] video {
         top: auto;
-        bottom: 0;
+        bottom: 50px;
     }
 }
 @media only screen and (min-width: 1280px) {
