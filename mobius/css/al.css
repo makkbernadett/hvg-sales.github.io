@@ -1000,3 +1000,23 @@ position: relative;
         transform: translateY(-60%) translateX(-40%);
     }
 }
+
+/* ipad only css */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 2) 
+  and (orientation: portrait) {
+    .advorient-left.animate .container {
+        -webkit-transform: perspective(2580px) translateZ(-1200px) translateX(-1500px) rotateY(110deg);
+        transform: perspective(2580px) translateZ(-1200px) translateX(-1500px) rotateY(110deg);
+    }
+    .modalview:not(.animate) .container, #perspective:not(.animate) .ad-perspective-container {
+        background-size: auto 1100px;
+        background-position: 60% center;
+    }
+    .modalview.animate .container, #perspective.animate .ad-perspective-container {
+        background-size: auto 1100px;
+        background-position: 60% center;
+    }
+}
