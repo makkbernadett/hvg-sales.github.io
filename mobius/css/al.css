@@ -391,21 +391,21 @@ html, body, .perspective-wrapper {
     transform-origin: 50% 50%;
 }
 
-@media only screen and (min-width: 768px) {
+/* @media only screen and (min-width: 768px) {
 
     .advorient-left.animate .container {
         -webkit-transform: perspective(2000px) translateZ(-1000px) translateX(-1100px) rotateY(110deg);
         transform: perspective(2000px) translateZ(-1000px) translateX(-1000px) rotateY(110deg);
     }
     
-}
+} */
 
 @media only screen and (min-width: 1024px) {
 
-    .advorient-left.animate .container {
+    /* .advorient-left.animate .container {
         -webkit-transform: perspective(2580px) translateZ(-1200px) translateX(-1200px) rotateY(110deg);
         transform: perspective(2580px) translateZ(-1200px) translateX(-1100px) rotateY(110deg);
-    }
+    } */
     .advorient-right.animate .container {
         -webkit-transform: translateZ(-1024px) translateX(115%) rotateY(-90deg);
         transform: translateZ(-1024px) translateX(150%) rotateY(-90deg);
@@ -900,6 +900,10 @@ position: relative;
     }
 }
 @media only screen and (max-width: 1199px) {
+    .advorient-left.animate .container {
+        -webkit-transform: perspective(2580px) translateZ(-1200px) translateX(-1200px) rotateY(110deg);
+        transform: perspective(2580px) translateZ(-1200px) translateX(-1100px) rotateY(110deg);
+    }
     .slick-slider {
         margin: 0;
         top: 50%;
@@ -928,6 +932,14 @@ position: relative;
     }
 }
 @media only screen and (max-width: 992px) {
+    .advorient-left.animate .container {
+        -webkit-transform: perspective(2000px) translateZ(-1000px) translateX(-1100px) rotateY(110deg);
+        transform: perspective(2000px) translateZ(-1000px) translateX(-1000px) rotateY(110deg);
+    }
+    .perspective-gallery.advorient-left.animate .container {
+        -webkit-transform: perspective(1000px) translateZ(-1000px) translateX(-1200px) rotateY(115deg);
+        transform: perspective(1000px) translateZ(-1000px) translateX(-1200px) rotateY(115deg);
+    }
     #perspective.perspective-gallery.animate .ad-perspective-container {
         background-size: auto 1024px;
     }
@@ -940,6 +952,11 @@ position: relative;
     }
     .slick-prev {
         left: -20px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .slick-slider {
+        transform: translateY(-50%) translateX(-40%);
     }
 }
 
