@@ -916,15 +916,15 @@ position: relative;
 }
 @media only screen and (max-width: 1024px) {
     .perspective-gallery.advorient-left.animate .container {
-        -webkit-transform: perspective(1000px) translateZ(-1000px) translateX(-1200px) rotateY(115deg);
-        transform: perspective(1000px) translateZ(-1000px) translateX(-1200px) rotateY(115deg);
+        -webkit-transform: perspective(1000px) translateZ(-1000px) translateX(-1100px) rotateY(110deg);
+        transform: perspective(1000px) translateZ(-1000px) translateX(-1100px) rotateY(110deg);
     }
     .slick-slider {
         margin: 0;
         position: relative;
         top: 50%;
         left: 50%;
-        transform: translateY(-50%) translateX(-40%);
+        transform: translateY(-50%) translateX(-30%);
     }
     .gallery {
         height: 300px;
@@ -942,6 +942,9 @@ position: relative;
     }
     #perspective.perspective-gallery.animate .ad-perspective-container {
         background-size: auto 1024px;
+    }
+    .slick-slider {
+        transform: translateY(-50%) translateX(-40%);
     }
     .gallery {
         height: 320px;
