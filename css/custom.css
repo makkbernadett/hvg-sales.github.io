@@ -52,6 +52,14 @@ body.font-size .site-header-sponsor a.sponsor-link {
     width: 100vw !important;
   }
 }
+/* blog */
+.grid-view .grid-article-blog .text-holder span.info {
+  flex-wrap: wrap;
+}
+.grid-view .grid-article-blog .image-holder img:not([src]),
+.grid-view .grid-article-blog .image-holder img[src=""] {
+  height: 100%;
+}
 /* parallax FPA */
 body.parallax-ad:before {
   content: "";
