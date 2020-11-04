@@ -23,11 +23,16 @@ body.main-page {
 
 body:not(.main-page) .container .cimlap-grid {
     .dark {
-        padding-bottom: 30px;
-        margin-bottom: 30px;
+        padding-bottom: 0;
+        margin-bottom: 0;
 
         header.boxheader:before {
             background: #1e1e1e;
+        }
+        &.articlebox {
+            .articleitem:last-of-type {
+                padding-bottom: 30px;
+            }
         }
     }
     .h500 {
