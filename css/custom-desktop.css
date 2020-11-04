@@ -13,10 +13,10 @@ body:not(.main-page) .container .cimlap-grid .dark {
   padding-bottom: 0;
   margin-bottom: 0;
 }
-body:not(.main-page) .container .cimlap-grid .dark header.boxheader:before {
+body:not(.main-page) .container .cimlap-grid .dark.h500.articlebox header.boxheader:before {
   background: #1e1e1e;
 }
-body:not(.main-page) .container .cimlap-grid .dark.articlebox .articleitem:last-of-type {
+body:not(.main-page) .container .cimlap-grid .dark.h500.articlebox .articleitem:last-of-type {
   padding-bottom: 30px;
 }
 body:not(.main-page) .container .cimlap-grid .h500 {
