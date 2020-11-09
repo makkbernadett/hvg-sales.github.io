@@ -56,7 +56,16 @@ body {
 /* blog no image */
 .grid-view {
     .grid-article-blog {
+        .text-holder {
+            span.info {
+                flex-wrap: wrap;
+            }
+        }
         .image-holder {
+            img:not([src]), img[src=""] {
+                height: 100%;
+                display: none;
+            }
             a {
                 &.no-image {
                     display: none;
@@ -103,20 +112,6 @@ body {
     div[id^="zone"] div[id^="div-gpt-ad"] {
         margin: 0 auto 0 -20px;
         width: 100vw !important;
-    }
-}
-
-/* blog */
-.grid-view .grid-article-blog {
-    .text-holder span.info {
-      flex-wrap: wrap;
-    }
-  
-    .image-holder {
-        img:not([src]),
-        img[src=""] {
-            height: 100%;
-        }
     }
 }
 
