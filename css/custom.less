@@ -53,6 +53,42 @@ body {
     height: 30px;
 }
 
+/* blog no image */
+.grid-view {
+    .grid-article-blog {
+        .image-holder {
+            a {
+                &.no-image {
+                    display: none;
+                    @media screen and (min-width: 768px) {
+                        background-image: url("https://m.hvg.hu/Content/hvgmobile/i/hvg-hu-logo.svg") !important;
+						background-size: 40%;
+						background-position: center center;
+						background-repeat: no-repeat;
+						background-color: #bbbfc0;
+						position: absolute;
+						top: 0;
+						left: 0;
+						bottom: 0;
+						right: 0;
+						width: 100%;
+						display: block;
+						border: 0;
+						outline: none;
+						box-shadow: none;
+                        height: 100%;
+                    }
+                }
+            }
+            body.read-mode & {
+                a.no-image {
+                    background-color: #313131;
+                }
+            }
+        }
+    }
+}
+
 /* google adSense */
 
 .adsense-dfp {
