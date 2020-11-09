@@ -47,6 +47,9 @@ body.font-size .site-header-sponsor a.sponsor-link {
   height: 100%;
   display: none;
 }
+.grid-view .grid-article-blog .image-holder a {
+  background-position: top center;
+}
 .grid-view .grid-article-blog .image-holder a .inner {
   padding-top: 56%;
 }
