@@ -47,6 +47,14 @@ body.font-size .site-header-sponsor a.sponsor-link {
   height: 100%;
   display: none;
 }
+.grid-view .grid-article-blog .image-holder a .inner {
+  padding-top: 56%;
+}
+@media screen and (min-width: 768px) {
+  .grid-view .grid-article-blog .image-holder a .inner {
+    padding-top: 68%;
+  }
+}
 .grid-view .grid-article-blog .image-holder a.no-image {
   display: none;
 }
