@@ -50,6 +50,11 @@ body.font-size .site-header-sponsor a.sponsor-link {
 .grid-view .grid-article-blog .image-holder a {
   background-position: top center;
 }
+@media screen and (min-width: 768px) {
+  .grid-view .grid-article-blog .image-holder a {
+    background-size: 120%;
+  }
+}
 .grid-view .grid-article-blog .image-holder a .inner {
   padding-top: 56%;
 }
