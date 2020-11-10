@@ -22,9 +22,6 @@ body:not(.main-page) .container .cimlap-grid .dark.h500.articlebox .articleitem:
 body:not(.main-page) .container .cimlap-grid .h500 {
   margin-bottom: 0;
 }
-.cimlap-grid.articlelist-element-wrap + .cimlap-grid.articlelist-element-wrap {
-  margin-top: 30px;
-}
 /* banner teszt */
 @media screen and (max-width: 1199px) {
   .adtype-multipanel .adtype-multipanel-wrapper .panel-position .panel-parent .expand-button {
