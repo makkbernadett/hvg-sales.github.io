@@ -1,13 +1,17 @@
 /* custom desktop */
 .article-content .article-menu {
-  width: 120px;
-  margin-right: 0;
+  padding-top: 0;
+  width: 112px;
+  margin-right: 20px;
 }
 .article-content .article-menu .share .item.print {
   margin-left: 0;
 }
 .article-content .article-share-holder {
   margin-left: 20px;
+}
+.article-content .article-body {
+  margin-right: 0;
 }
 .footer .icon-huawei span {
   width: 28px;
