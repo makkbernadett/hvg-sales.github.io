@@ -3,8 +3,8 @@
   margin: 10px auto;
   max-width: 600px;
 }
-.article-content p:before {
-  content: "\A";
+.article-content div + p {
+  margin-top: 40px;
 }
 body.read-mode .embedly-card {
   background: #d6d6d6;
