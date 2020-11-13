@@ -3,12 +3,8 @@
   margin: 10px auto;
   max-width: 600px;
 }
-.article-content p,
-.article-content h6 {
-  display: inline-block;
-  width: 100%;
-  text-align: left;
-  margin-top: 5px;
+.article-content p:before {
+  content: "\A";
 }
 body.read-mode .embedly-card {
   background: #d6d6d6;
