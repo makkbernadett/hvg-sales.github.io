@@ -2,6 +2,9 @@
 .site-header-nav .nav-weather {
   display: none;
 }
+.mainpage-weatherbox {
+  display: none;
+}
 .article-content .article-menu {
   padding-top: 0;
   width: 112px;
