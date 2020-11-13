@@ -3,6 +3,13 @@
   margin: 10px auto;
   max-width: 600px;
 }
+.article-content p,
+.article-content h6 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  text-align: left;
+}
 body.read-mode .embedly-card {
   background: #d6d6d6;
   margin: 10px auto;
