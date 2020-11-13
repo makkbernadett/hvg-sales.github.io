@@ -1,10 +1,3 @@
-.embedly-card {
-  margin: 10px auto;
-  max-width: 600px;
-}
-.article-content div + p {
-  margin-top: 40px;
-}
 body.read-mode .embedly-card {
   background: #d6d6d6;
   margin: 10px auto;
