@@ -2,14 +2,13 @@
 .embedly-card {
   margin: 10px auto;
   max-width: 600px;
-  display: inline-block;
 }
 .article-content p,
 .article-content h6 {
-  display: flex;
-  flex-wrap: wrap;
+  display: inline-block;
   width: 100%;
   text-align: left;
+  margin-top: 5px;
 }
 body.read-mode .embedly-card {
   background: #d6d6d6;
