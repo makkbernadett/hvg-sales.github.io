@@ -143,13 +143,41 @@ body:not(.main-page) .container .cimlap-grid {
 .hirdetesfelho-wrapper + .articlebox {
     margin-top: 20px;
 }
-body.settings-sepia .placeholder-ad {
-    background: #333;
-}
 .h500 {
     min-height: 516px;
     height: auto !important;
 }
+
+// dark mode
+body.settings-sepia {
+    .placeholder-ad {
+        background: #1a1a1a;
+    }
+    .articlebox .articleitem.timeitem:last-of-type {
+        border-bottom: 1px solid #444;
+    }
+    .cimlap-grid-elem {
+        &.home-pr-cikk-1, &.home-pr-cikk-2 {
+            padding: 0;
+            .articlelist-element:only-child {
+                border-bottom: 0;
+            }
+        }
+    }
+    .articlelist-element-wrap {
+        .articlelist-element {
+            &:last-of-type {
+                border-bottom: 0;
+            }
+        }
+    }
+    .cimlap-grid.home-pr-cikk-grid {
+        background: #111111;
+        margin: 0;
+        padding: 0 20px;
+    }
+}
+
 // mac safari >> ipad
 @media only screen and (min-device-width: 768px) and (max-device-width: 992px) and (orientation:portrait) {
 	.site-header-nav .nav-categories .category-button {
@@ -307,72 +335,69 @@ body.settings-sepia .placeholder-ad {
 
 /* banner teszt */
 @media screen and (max-width: 1199px) {
-    .adtype-multipanel .adtype-multipanel-wrapper .panel-position .panel-parent .expand-button {
-        width: 240px;
-        height: 36px;
-        left: 5px;
-        animation: none;
-        border: 0;
-        border-radius: 0;
-        background: transparent;
-        box-shadow: none;
-    }
+    .adtype-multipanel .adtype-multipanel-wrapper .panel-position .panel-parent {
+        .expand-button {
+            width: 240px;
+            height: 36px;
+            left: 5px;
+            animation: none;
+            border: 0;
+            border-radius: 0;
+            background: transparent;
+            box-shadow: none;
 
-    .adtype-multipanel .adtype-multipanel-wrapper .panel-position .panel-parent .expand-button::before {
-        content: '';
-        transform: rotate(0);
-        right: auto;
-        position: absolute;
-        bottom: auto;
-        border-radius: 50%;
-        border: 2px solid #fff;
-        background: rgba(0,0,0,0.3);
-        box-shadow: none;
-        cursor: pointer;
-        transition: none;
-        z-index: 2;
-        animation: none;
-        font-size: 20px;
-        width: 30px;
-        height: 30px;
-        top: 0;
-        left: 0;
+            &:before {
+                content: '';
+                transform: rotate(0);
+                right: auto;
+                position: absolute;
+                bottom: auto;
+                border-radius: 50%;
+                border: 2px solid #fff;
+                background: rgba(0,0,0,0.3);
+                box-shadow: none;
+                cursor: pointer;
+                transition: none;
+                z-index: 2;
+                animation: none;
+                font-size: 20px;
+                width: 30px;
+                height: 30px;
+                top: 0;
+                left: 0;
+            }
+            &:after {
+                content: '';
+                background: transparent;
+                box-sizing: border-box;
+                height: 15px;
+                width: 15px;
+                border-style: solid;
+                border-color: white;
+                border-width: 0px 2px 2px 0px;
+                box-shadow: none;
+                transform: rotate(45deg);
+                transition: none;
+                position: absolute;
+                left: 9px;
+                top: 6px;
+                z-index: 2;
+            }
+        }
+        .close-button {
+            width: 36px;
+            height: 36px;
+            &:before, &:after {
+                width: 24px;
+                top: 15px
+            }
+        }
     }
-    .adtype-multipanel .adtype-multipanel-wrapper .panel-position .panel-parent .expand-button::after {
-        content: '';
-        background: transparent;
-        box-sizing: border-box;
-        height: 15px;
-        width: 15px;
-        border-style: solid;
-        border-color: white;
-        border-width: 0px 2px 2px 0px;
-        box-shadow: none;
-        transform: rotate(45deg);
-        transition: none;
-        position: absolute;
-        left: 9px;
-        top: 6px;
-        z-index: 2;
-    }
-
-    .adtype-multipanel .adtype-multipanel-wrapper .panel-position .panel-parent .close-button {
-        width: 36px;
-        height: 36px;
-    }
-
-    .adtype-multipanel .adtype-multipanel-wrapper .panel-position .panel-parent .close-button::before, 
-    .adtype-multipanel .adtype-multipanel-wrapper .panel-position .panel-parent .close-button::after {
-        width: 24px;
-        top: 15px
-    }
-
     .multipanel-wide .adtype-multipanel-wrapper:hover .panel-parent.panel-basic.current + .panel-parent {
         animation: none; 
+        .panel {
+            animation: none;
+            animation-fill-mode: none;
+        }
     }
-    .multipanel-wide .adtype-multipanel-wrapper:hover .panel-parent.panel-basic.current + .panel-parent .panel {
-        animation: none;
-        animation-fill-mode: none;
-    }
-
 }
