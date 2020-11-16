@@ -153,8 +153,15 @@ body.settings-sepia {
     .placeholder-ad {
         background: #1a1a1a;
     }
-    .articlebox .articleitem.timeitem:last-of-type {
-        border-bottom: 1px solid #444;
+    .articlebox {
+        .articleitem {
+            &.timeitem:last-of-type {
+                border-bottom: 1px solid #444;
+            }
+            &.big-pictured-article {
+                border-bottom: 0;
+            }
+        }
     }
     .cimlap-grid-elem {
         &.home-pr-cikk-1, &.home-pr-cikk-2 {
@@ -176,6 +183,7 @@ body.settings-sepia {
         margin: 0;
         padding: 0 20px;
     }
+
 }
 
 // mac safari >> ipad

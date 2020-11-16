@@ -110,6 +110,9 @@ body.settings-sepia .placeholder-ad {
 body.settings-sepia .articlebox .articleitem.timeitem:last-of-type {
   border-bottom: 1px solid #444;
 }
+body.settings-sepia .articlebox .articleitem.big-pictured-article {
+  border-bottom: 0;
+}
 body.settings-sepia .cimlap-grid-elem.home-pr-cikk-1,
 body.settings-sepia .cimlap-grid-elem.home-pr-cikk-2 {
   padding: 0;
