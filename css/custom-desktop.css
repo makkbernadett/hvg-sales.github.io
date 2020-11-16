@@ -73,11 +73,13 @@ body:not(.main-page) .container .cimlap-grid .h500 {
   padding-left: 20px;
 }
 .article-page .cimlap-grid.articlelist-element-wrap,
-.column-page .cimlap-grid.articlelist-element-wrap {
+.column-page .cimlap-grid.articlelist-element-wrap,
+body:not(.main-page) .cimlap-grid.articlelist-element-wrap {
   padding-bottom: 20px;
 }
 .article-page .cimlap-grid.articlelist-element-wrap .cimlap-grid-elem .boxheader .info,
-.column-page .cimlap-grid.articlelist-element-wrap .cimlap-grid-elem .boxheader .info {
+.column-page .cimlap-grid.articlelist-element-wrap .cimlap-grid-elem .boxheader .info,
+body:not(.main-page) .cimlap-grid.articlelist-element-wrap .cimlap-grid-elem .boxheader .info {
   line-height: 26px;
   font-size: 14px;
   font-weight: bold;
