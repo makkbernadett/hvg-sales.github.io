@@ -46,7 +46,12 @@ body:not(.main-page) .container .cimlap-grid .h500 {
   padding-left: 15px;
   padding-top: 6px;
 }
-.article-page .cimlap-grid.articlelist-element-wrap .cimlap-grid-elem .boxheader .info {
+.cimlap-grid.articlelist-element-wrap .cimlap-grid-elem.elem-675 .articleitem .text-holder {
+  padding-left: 20px;
+  padding-right: 0;
+}
+.article-page .cimlap-grid.articlelist-element-wrap .cimlap-grid-elem .boxheader .info,
+.column-page .cimlap-grid.articlelist-element-wrap .cimlap-grid-elem .boxheader .info {
   line-height: 26px;
   font-size: 14px;
   font-weight: bold;
@@ -54,6 +59,69 @@ body:not(.main-page) .container .cimlap-grid .h500 {
   color: #e25900;
   padding-left: 15px;
   padding-top: 6px;
+}
+.cimlap-grid .cimlap-grid-elem.elem-805 .boxheader {
+  margin-bottom: 0;
+}
+.cimlap-grid .cimlap-grid-elem.elem-805 .boxheader .info {
+  padding: 5px 20px 5px 20px;
+}
+.cimlap-grid .cimlap-grid-elem.elem-805 .articleitem {
+  padding-bottom: 0;
+}
+.cimlap-grid .cimlap-grid-elem.elem-805 .articleitem .text-holder {
+  padding-left: 20px;
+  padding-right: 0;
+}
+.cimlap-grid .cimlap-grid-elem.elem-805 .articleitem.emphasized {
+  padding-left: 20px;
+}
+.cimlap-grid .cimlap-grid-elem.elem-675 .articleitem {
+  padding-bottom: 0;
+}
+.cimlap-grid .cimlap-grid-elem.elem-675 .articleitem .text-holder {
+  padding-left: 20px;
+  padding-right: 0;
+}
+.cimlap-grid .cimlap-grid-elem.elem-675 .articleitem.emphasized {
+  padding-left: 20px;
+}
+.grid-item.articlebox .articlebox article.articleitem.emphasized.featured {
+  border-bottom: 0;
+}
+.articleitem + .boxheader {
+  margin-top: -1px;
+  z-index: 1;
+  position: relative;
+}
+.articleitem + .boxheader .topborder {
+  border-top: 0;
+}
+.hirdetesfelho-wrapper + .articlebox {
+  margin-top: 20px;
+}
+body.settings-sepia .placeholder-ad {
+  background: #333;
+}
+.h500 {
+  min-height: 516px;
+  height: auto !important;
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 992px) and (orientation: portrait) {
+  .site-header-nav .nav-categories .category-button {
+    padding: 5px 4px;
+  }
+  .site-header-sponsor .sponsor-header {
+    margin-top: 2px;
+  }
+  .site-header-sponsor .sponsor-header .sponsor-link {
+    font-size: 12px;
+  }
+  .site-header-sponsor .sponsor-header img {
+    max-width: 60px;
+    filter: none;
+    margin: 0 2px 0 2px;
+  }
 }
 /* PT doboz */
 /* banner teszt */
