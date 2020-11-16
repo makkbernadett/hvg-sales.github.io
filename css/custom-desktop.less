@@ -67,8 +67,8 @@ body:not(.main-page) .container .cimlap-grid {
 }
 
 .cimlap-grid {
-    &.articlelist-element-wrap {
-        .cimlap-grid-elem.elem-675 {
+    .cimlap-grid-elem {
+        &.elem-675 {
             .boxheader {
                 .info {
                     padding-left: 15px;
@@ -76,35 +76,20 @@ body:not(.main-page) .container .cimlap-grid {
                 }
             }
             .articleitem {
+                padding-bottom: 0;
                 .text-holder {
                     padding-left: 20px;
                     padding-right: 0;
                 }
+                &.emphasized {
+                    padding-left: 20px;
+                }
             }
         }
-    }
-}
 
-.article-page, .column-page {
-    .cimlap-grid.articlelist-element-wrap .cimlap-grid-elem .boxheader .info {
-        line-height: 26px;
-        font-size: 14px;
-        font-weight: bold;
-        margin-bottom: 0;
-        color: #e25900;
-        padding-left: 15px;
-        padding-top: 6px;
-    }
-}
-
-
-// cimlap 
-.cimlap-grid {
-    .cimlap-grid-elem {
         &.elem-805 {
             .boxheader {
                 margin-bottom: 0;
-            
                 .info {
                     padding: 5px 20px 5px 20px;
                 }
@@ -120,15 +105,25 @@ body:not(.main-page) .container .cimlap-grid {
                 }
             }
         }
-        &.elem-675 {
-            .articleitem {
-                padding-bottom: 0;
-                .text-holder {
-                    padding-left: 20px;
-                    padding-right: 0;
-                }
-                &.emphasized {
-                    padding-left: 20px;
+    }
+}
+
+.article-page, .column-page {
+    .cimlap-grid {
+        &.articlelist-element-wrap {
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            .cimlap-grid-elem {
+                .boxheader {
+                    .info {
+                        line-height: 26px;
+                        font-size: 14px;
+                        font-weight: bold;
+                        margin-bottom: 0;
+                        color: #e25900;
+                        padding-left: 15px;
+                        padding-top: 6px;
+                    }
                 }
             }
         }
