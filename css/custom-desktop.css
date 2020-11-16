@@ -106,6 +106,12 @@ body:not(.main-page) .cimlap-grid.articlelist-element-wrap .cimlap-grid-elem .bo
   min-height: 516px;
   height: auto !important;
 }
+body.settings-sepia .site-header-nav .nav-categories .category-sub {
+  background-color: #333;
+}
+body.settings-sepia .site-header-nav .nav-categories .category.group:hover {
+  box-shadow: none;
+}
 body.settings-sepia .placeholder-ad {
   background: #1a1a1a;
 }
