@@ -596,7 +596,7 @@ background:transparent;
 
 .slick-list { height:100%; position: relative; display: block; margin: 0; padding: 0 !important; }
 .slick-list:focus { outline: none; }
-.slick-loading .slick-list {  }
+/* .slick-loading .slick-list {  } */
 .slick-list.dragging { cursor: pointer; cursor: hand; }
 
 .slick-slider .slick-track { -webkit-transform: translate3d(0, 0, 0); -moz-transform: translate3d(0, 0, 0); -ms-transform: translate3d(0, 0, 0); -o-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); }
@@ -775,7 +775,7 @@ position: relative;
         perspective-origin: left top;
     }
 
-/* FF47 */
+    /* FF47 */
     .firefox47 .advorient-left .container {
         transform-origin: left 50%;
     }
@@ -804,8 +804,7 @@ position: relative;
         perspective-origin: left top;
     }
 
-}
-/* FF48 */
+    /* FF48 */
     .firefox48 .advorient-left .container {
         transform-origin: left 50%;
     }
@@ -833,9 +832,8 @@ position: relative;
         perspective-origin: left top;
     }
 
-}
 
-/* FF49 */
+    /* FF49 */
     .firefox49 .advorient-left .container {
         transform-origin: left 50%;
     }
@@ -879,8 +877,8 @@ position: relative;
         transform-origin: 50% top;
     }
     .firefox .advorient-left.animate .container {
-        //transform: perspective(700px) translateZ(200px) translateX(100px) rotateY(75deg) scale(0.26);
-        //transform-origin: left 50%;
+        /*transform: perspective(700px) translateZ(200px) translateX(100px) rotateY(75deg) scale(0.26);
+        transform-origin: left 50%;*/
         transform: perspective(800px) translateZ(200px) translateX(100px) rotateY(65deg) scale(0.30);
         transform-origin: -100px 53%;
     }
@@ -959,9 +957,9 @@ position: relative;
         -webkit-transform: perspective(1000px) translateZ(-1000px) translateX(-1200px) rotateY(115deg);
         transform: perspective(1000px) translateZ(-1000px) translateX(-1200px) rotateY(115deg);
     }
-    #perspective.perspective-gallery.animate .ad-perspective-container {
+    /* #perspective.perspective-gallery.animate .ad-perspective-container {
         background-size: auto 1024px;
-    }
+    } */
     .slick-slider {
         transform: translateY(-50%) translateX(-40%);
     }
