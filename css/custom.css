@@ -123,6 +123,16 @@ body.read-mode .grid-view .grid-article-blog .image-holder a.no-image {
   margin: 0 auto;
   padding: 0 20px;
 }
+@media screen and (min-width: 768px) {
+  .placeholder-ad + .boxheader:nth-of-type(2) {
+    padding: 0 30px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .placeholder-ad + .boxheader:nth-of-type(2) {
+    padding: 0;
+  }
+}
 .placeholder-ad + .boxheader:nth-of-type(2) .info {
   padding-left: 0;
 }
