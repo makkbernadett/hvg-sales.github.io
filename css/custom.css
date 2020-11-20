@@ -1,6 +1,9 @@
 @media screen and (min-width: 768px) {
-  .adtype-tagbox .articlebox .articlebox.tag-box .articleitem {
+  .adtype-tagbox .articlebox .articlebox .articleitem {
     padding: 20px;
+  }
+  .adtype-tagbox .articlebox .articlebox .articleitem:first-of-type {
+    padding: 0;
   }
 }
 .adtype-tagbox .articlebox .articlebox:first-of-type .more {

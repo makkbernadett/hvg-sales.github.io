@@ -12,13 +12,15 @@
 .adtype-tagbox {
 	.articlebox {
 		.articlebox {
-			&.tag-box {
-				.articleitem {
-					@media screen and (min-width: 768px) {
-						padding: 20px;
-					}
-				}
+            .articleitem {
+                @media screen and (min-width: 768px) {
+                    padding: 20px;
+                    &:first-of-type {
+                        padding: 0;
+                    }
+                }
             }
+
             &:first-of-type {
                 .more {
                     margin: 20px auto !important;
