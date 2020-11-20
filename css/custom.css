@@ -12,6 +12,10 @@
     margin: 0 auto;
   }
 }
+.adtype-tagbox .caption,
+.adtype-tematic .caption {
+  border: 0;
+}
 body.read-mode .embedly-card {
   background: #d6d6d6;
 }
