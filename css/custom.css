@@ -119,6 +119,9 @@ body.read-mode .grid-view .grid-article-blog .image-holder a.no-image {
     width: 100vw !important;
   }
 }
+.placeholder-ad + .boxheader:nth-of-type(2) {
+  margin: 0 auto;
+}
 /* PT doboz mobile */
 /* parallax FPA */
 body.parallax-ad:before {
