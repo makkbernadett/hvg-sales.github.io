@@ -8,6 +8,31 @@
 //         margin-top: 40px;
 //     }
 // }
+
+.adtype-tagbox {
+	.articlebox {
+		.articlebox {
+			&.tag-box {
+				.articleitem {
+					@media screen and (min-width: 992px) {
+						padding: 20px;
+					}
+				}
+            }
+            &:first-of-type {
+                .more {
+                    margin: 20px auto !important;
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width: 992px) {
+        max-width: 690px;
+        margin: 0 auto;
+    }
+}
+
 body {
     &.read-mode {
         .embedly-card {

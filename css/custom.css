@@ -1,3 +1,17 @@
+@media screen and (min-width: 992px) {
+  .adtype-tagbox .articlebox .articlebox.tag-box .articleitem {
+    padding: 20px;
+  }
+}
+.adtype-tagbox .articlebox .articlebox:first-of-type .more {
+  margin: 20px auto !important;
+}
+@media screen and (min-width: 992px) {
+  .adtype-tagbox {
+    max-width: 690px;
+    margin: 0 auto;
+  }
+}
 body.read-mode .embedly-card {
   background: #d6d6d6;
 }
