@@ -63,7 +63,8 @@ body.font-size .site-header-sponsor a.sponsor-link {
   display: none;
 }
 .grid-view .grid-article-blog .image-holder a {
-  background-position: center center;
+  background-position: 50% 50%;
+  background-size: 120%;
 }
 @media screen and (min-width: 768px) {
   .grid-view .grid-article-blog .image-holder a {
