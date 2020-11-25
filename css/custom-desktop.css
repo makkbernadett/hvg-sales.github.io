@@ -102,8 +102,8 @@ body:not(.main-page) .cimlap-grid.articlelist-element-wrap .cimlap-grid-elem .bo
 .hirdetesfelho-wrapper + .articlebox {
   margin-top: 20px;
 }
-.hirdetesfelho-wrapper + .cimlap-grid-elem.elem-380 .boxheader {
-  margin-top: 20px;
+.hirdetesfelho-wrapper .articlebox.hirdetesfelho-lista .articleitem:last-of-type {
+  padding-bottom: 20px;
 }
 .h500 {
   min-height: 516px;
