@@ -1,3 +1,8 @@
+button,
+.button,
+input[type=button] {
+  background: #e25900;
+}
 @media screen and (min-width: 768px) {
   .adtype-tagbox .articlebox .articlebox .articleitem {
     padding: 20px;
