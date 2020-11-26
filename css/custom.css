@@ -17,6 +17,9 @@ input[type=button] {
 .adtype-tagbox .articlebox .articlebox.tag-box .articleitem:first-of-type {
   padding: 0;
 }
+.adtype-tagbox .articlebox .articlebox.tag-box:after {
+  border-bottom: 0;
+}
 @media screen and (min-width: 992px) {
   .adtype-tagbox {
     max-width: 690px;
