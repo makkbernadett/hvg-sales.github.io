@@ -14,8 +14,15 @@ input[type=button] {
 .adtype-tagbox .articlebox .articlebox:first-of-type .more {
   margin: 20px auto !important;
 }
+.adtype-tagbox .articlebox .articlebox.tag-box .articleitem .text-holder p,
+.adtype-tagbox .articlebox .articlebox.tag-box .articleitem .text-holder .article-lead {
+  padding-bottom: 0;
+}
 .adtype-tagbox .articlebox .articlebox.tag-box .articleitem:first-of-type {
   padding: 0;
+}
+.adtype-tagbox .articlebox .articlebox.tag-box .articleitem:first-of-type .text-holder {
+  padding: 0 20px 20px;
 }
 .adtype-tagbox .articlebox .articlebox.tag-box:after {
   border-bottom: 0;
