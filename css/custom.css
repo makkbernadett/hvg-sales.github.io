@@ -42,6 +42,13 @@ body.read-mode .article-content .adtype-tematic a {
 body.read-mode .placeholder-ad:first-child {
   padding-top: 0;
 }
+body.read-mode .adtype-tagbox section.articlebox.tag-box:after {
+  border-bottom: 0;
+}
+body.read-mode .adtype-tagbox .articlebox {
+  border-bottom: 0;
+  padding: 0;
+}
 body.font-size .font-settings .info {
   font-size: 12px;
 }
