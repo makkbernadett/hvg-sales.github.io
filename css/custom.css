@@ -39,6 +39,9 @@ body.read-mode .article-content .mobile-pr-article a.caption {
 body.read-mode .article-content .adtype-tematic a {
   color: #fff;
 }
+body.read-mode .placeholder-ad:first-child {
+  padding-top: 0;
+}
 body.font-size .font-settings .info {
   font-size: 12px;
 }
