@@ -29,6 +29,9 @@ body.main-page .cimlap-grid .dark.h500.articlebox header.boxheader:before {
 body.main-page .cimlap-grid .dark.h500.articlebox .articleitem:last-of-type {
   padding-bottom: 30px;
 }
+body:not(.main-page) .container .sidebar .ad-sticky {
+  background: transparent;
+}
 body:not(.main-page) .container .cimlap-grid .dark {
   padding-bottom: 0;
   margin-bottom: 0;

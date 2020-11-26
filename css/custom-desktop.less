@@ -46,23 +46,32 @@ body.main-page {
     }
 }
 
-body:not(.main-page) .container .cimlap-grid {
-    .dark {
-        padding-bottom: 0;
-        margin-bottom: 0;
-        &.h500 {
-            &.articlebox {
-                header.boxheader:before {
-                    background: #1e1e1e;
-                }
-                .articleitem:last-of-type {
-                    padding-bottom: 30px;
-                }
+body:not(.main-page) {
+    .container {
+        .sidebar {
+            .ad-sticky {
+                background: transparent;
             }
         }
-    }
-    .h500 {
-        margin-bottom: 0;
+        .cimlap-grid {
+            .dark {
+                padding-bottom: 0;
+                margin-bottom: 0;
+                &.h500 {
+                    &.articlebox {
+                        header.boxheader:before {
+                            background: #1e1e1e;
+                        }
+                        .articleitem:last-of-type {
+                            padding-bottom: 30px;
+                        }
+                    }
+                }
+            }
+            .h500 {
+                margin-bottom: 0;
+            }
+        }
     }
 }
 
