@@ -143,6 +143,9 @@ body.settings-sepia .cimlap-grid.home-pr-cikk-grid {
   margin: 0;
   padding: 0 20px;
 }
+body.settings-sepia .adtype-l-ribbon {
+  background: #1a1a1a;
+}
 @media only screen and (min-device-width: 768px) and (max-device-width: 992px) and (orientation: portrait) {
   .site-header-nav .nav-categories .category-button {
     padding: 5px 4px;
