@@ -115,6 +115,9 @@ body:not(.main-page) .cimlap-grid.articlelist-element-wrap .cimlap-grid-elem .bo
 .grid-layout {
   margin-bottom: 20px;
 }
+aside .icon-article-series {
+  color: #999;
+}
 body.settings-sepia .site-header-nav .nav-categories .category-sub {
   background-color: #333;
 }
