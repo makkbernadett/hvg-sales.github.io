@@ -61,6 +61,10 @@ button, .button, input[type=button] {
 }
 
 body {
+    &:not(.article-page) .main-tag-container {
+        margin: 0;
+        padding-bottom: 0;
+    }
     &.read-mode {
         .embedly-card {
             background: #d6d6d6;
