@@ -5,6 +5,11 @@
 .mainpage-weatherbox {
   display: none;
 }
+.L-color_button:hover,
+.L-color_button:focus {
+  background: #e25900;
+  box-shadow: none;
+}
 .article-content .article-menu {
   padding-top: 0;
   width: 112px;
@@ -63,7 +68,7 @@ body:not(.main-page) .container .cimlap-grid .h500 {
   margin-bottom: 0;
 }
 .cimlap-grid .cimlap-grid-elem.elem-805 .boxheader .info {
-  padding: 5px 20px 5px 20px;
+  padding: 5px 0 5px 20px;
 }
 .cimlap-grid .cimlap-grid-elem.elem-805 .articleitem {
   padding-bottom: 0;
