@@ -911,6 +911,12 @@ position: relative;
     .ad-perspective-container {
         background-color: #1a1a1a !important;
     }
+    [data-item-type="landscape"] .slick-next{
+        right:90px;
+    }
+    [data-item-type="landscape"] .slick-prev{
+        left:90px;
+    }
 }
 @media only screen and (max-width: 1199px) {
     .advorient-left.animate .container {
