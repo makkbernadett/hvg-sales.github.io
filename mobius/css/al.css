@@ -979,6 +979,12 @@ position: relative;
         height: 320px;
         width: 700px;
     }
+    [data-item-type="landscape"] .slick-next {
+        right: 60px;
+    }
+    [data-item-type="landscape"] .slick-prev {
+        left: 60px;
+    }
     .slick-next {
         right: -20px;
     }
