@@ -946,6 +946,12 @@ position: relative;
     #perspective.perspective-gallery.animate .ad-perspective-container {
         background-size: 100% auto;
     }
+    [data-item-type="landscape"] .slick-next {
+        right: 40px;
+    }
+    [data-item-type="landscape"] .slick-prev {
+        left: 40px;
+    }
 }
 @media only screen and (max-width: 992px) {
     .advorient-left.animate .container {
