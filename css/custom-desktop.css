@@ -80,6 +80,9 @@ body:not(.main-page) .container .cimlap-grid .h500 {
 .cimlap-grid .cimlap-grid-elem.elem-805 .articleitem.emphasized {
   padding-left: 20px;
 }
+.cimlap-big_square_article + .articlelist-element {
+  padding-left: 20px;
+}
 .article-page .cimlap-grid.articlelist-element-wrap,
 .column-page .cimlap-grid.articlelist-element-wrap,
 body:not(.main-page) .cimlap-grid.articlelist-element-wrap {
