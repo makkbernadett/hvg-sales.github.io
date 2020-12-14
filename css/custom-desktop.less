@@ -90,6 +90,7 @@ body:not(.main-page) {
                     padding: 5px 35px 5px 15px !important;
                     position: relative;
                     line-height: 20px;
+                    transition: all 0.3s ease;
 
                     &:after {
                         background: url(https://hvg.hu/Content/redesign/i/hvg-icons-sprite.svg) -42px -324px no-repeat;
@@ -104,6 +105,13 @@ body:not(.main-page) {
                         z-index: 1;
                         filter: brightness(1);
                         transform-origin: 0 center;
+                        transition: all 0.3s ease;
+                    }
+                    &:hover {
+                        color: #000;
+                        &:after {
+                            filter: brightness(0.1);
+                        }
                     }
                 }
                 .topborder {
