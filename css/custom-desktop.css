@@ -179,6 +179,9 @@ aside .icon-article-series {
 .user-profile-page .profile-page-header + div h3 {
   padding-left: 40px;
 }
+.user-profile-page .user-profile-page .author-page-header {
+  margin-right: 0;
+}
 .user-profile-page .column-articlelist {
   padding: 0 0 0 40px;
 }
