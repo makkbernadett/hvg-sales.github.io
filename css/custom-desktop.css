@@ -176,6 +176,12 @@ body:not(.main-page) .cimlap-grid.articlelist-element-wrap {
 aside .icon-article-series {
   color: #999;
 }
+.user-profile-page .profile-page-header + div h3 {
+  padding-left: 40px;
+}
+.user-profile-page .column-articlelist {
+  padding: 0 0 0 40px;
+}
 body.settings-sepia .site-header-nav .nav-categories .category-sub {
   background-color: #333;
 }
