@@ -60,6 +60,72 @@ button, .button, input[type=button] {
     }
 }
 
+// boxheader home first of type
+.placeholder-ad {
+    + .boxheader {
+        &:first-of-type {
+            margin: 0 auto;
+            padding: 10px 10px 10px 20px;
+            max-width: 460px;
+            background: transparent;
+
+            .info {
+                padding: 0 35px 0 15px !important;
+                background-color: transparent;
+                color: #e25900;
+                text-decoration: none;
+                transition: all .5s ease;
+                position: relative;
+                font-family: 'PT Sans',Arial,sans-serif;
+                line-height: 20px;
+                font-size: 14px;
+                text-transform: uppercase;
+                margin-top: 0;
+
+                &:after {
+                    background: url(https://m.hvg.hu/Content/hvgmobile/i/hvg-icons-sprite.svg) -42px -324px no-repeat;
+                    content: '';
+                    width: 18px;
+                    height: 18px;
+                    position: absolute;
+                    top: 50%;
+                    left: auto;
+                    right: -10px;
+                    transform: rotate(-90deg) translateX(0px) translateY(-50%);
+                    z-index: 1;
+                    filter: brightness(1);
+                    transform-origin: 0 center;
+                }
+            }
+
+            .emp {
+                display: block;
+                border-top: 0;
+                margin-top: 0;
+            }
+
+            .topborder {
+                border-top: 0;
+                border-left: 4px solid #e25900;
+            }
+        }
+
+        &:nth-of-type(2) {
+            margin: 0 auto;
+            padding: 0 20px;
+            @media screen and (min-width: 768px) {
+                padding: 0 30px;
+            }
+            @media screen and (min-width: 992px) {
+                padding: 0;
+            }
+            .info {
+                padding-left: 0;
+            }
+        }
+    }
+}
+
 body {
 
     &.article-page {
@@ -150,16 +216,7 @@ body {
 /* blog no image */
 .grid-view {
     .grid-article-blog {
-        .text-holder {
-            span.info {
-                flex-wrap: wrap;
-            }
-        }
         .image-holder {
-            img:not([src]), img[src=""] {
-                height: 100%;
-                display: none;
-            }
             a {
                 background-position: 50% 50%;
                 background-size: 120%;
@@ -167,14 +224,7 @@ body {
                     background-position: 50% 50%;
                     background-size: 120%;
                 }
-                .inner {
-                    padding-top: 56%;
-                    @media screen and (min-width: 768px) {
-                        padding-top: 68%;
-                    }
-                }
                 &.no-image {
-                    display: none;
                     @media screen and (min-width: 768px) {
                         background-image: url("https://m.hvg.hu/Content/hvgmobile/i/hvg-hu-logo.svg") !important;
 						background-size: 40%;
@@ -205,7 +255,6 @@ body {
 }
 
 /* google adSense */
-
 .adsense-dfp {
     margin: 20px 0 5px;
 }
@@ -221,248 +270,7 @@ body {
     }
 }
 
-// boxheader
-.placeholder-ad {
-    +.boxheader {
-        &:nth-of-type(2) {
-            margin: 0 auto;
-            padding: 0 20px;
-            @media screen and (min-width: 768px) {
-                padding: 0 30px;
-            }
-            @media screen and (min-width: 992px) {
-                padding: 0;
-            }
-            .info {
-                padding-left: 0;
-            }
-        }
-    }
-}
-
-
-/* PT doboz mobile */
-// .block-ms-box2 {
-//     padding: 0px 15px 20px 15px;
-//     border: 0;
-//     position: relative;
-//     margin: 20px 0 30px;
-//     background: #fecc00!important;
-//     box-shadow: 0px 0px 10px rgba(0,0,0,0.2) inset;
-//     display: flex;
-//     flex-wrap: wrap;
-//     max-width: 640px;
-//     transition: all 0.5s ease;
-// }
-// .p-box {
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-//     width: 120px;
-//     height: 125px;
-//     overflow: hidden;
-// }
-// .partolo-tagsag-logo {
-//     background-image: url(https://static.hvgrt.hu/kulcs/2019/partolo-logo-vektoros.png);
-//     position: absolute;
-//     padding: 0;
-//     width: 90px !important;
-//     margin: 10px 0 0 4px;
-//     display: block;
-//     height: auto;
-//     z-index: 1;
-//     background-size: cover;
-//     height: 90px !important;
-//     right: 24px !important;
-//     top: 0px !important;
-// }
-// .p-shape {
-//     position: absolute;
-//     height: 121px;
-//     width: 223px;
-//     background-color: #ffffff;
-//     border-radius: 150px;
-//     transform: rotate(0deg) skew(0deg) translateX(-111px) translateY(-5px);
-//     box-shadow: 3px 2px 8px rgba(0,0,0,0.2);
-// }
-// .partolo-tagsag-content-box {
-//     padding: 0;
-//     width: 100%;
-//     @media screen and (max-width: 640px) {
-//         width:100%;
-//     }
-// }
-// .block-ms-box-h1 {
-//     margin: 0 !important;
-//     font-family: 'PT Sans', sans-serif !important;
-//     font-size: 24px !important;
-//     color: #222222;
-//     font-weight: bold;
-//     border: 0;
-//     padding: 10px 10px 0 122px;
-//     min-height: 116px;
-//     display: flex;
-//     align-items: center;
-
-//     @media screen and (max-width: 1024px) {
-//         font-size: 22px !important;
-//     }
-//     @media screen and (max-width: 640px) {
-//         font-size: 21px !important;
-//         padding: 0 0 0 110px;
-//     }
-// }
-// .block-ms-box-div {
-//     display: flex;
-//     width: 100%;
-//     @media screen and (max-width: 640px) {
-//         display: flex;
-//         width: 100%;
-//         flex-wrap: wrap;
-//     }
-// }
-// .block-ms-box-span {
-//     display: block;
-//     font-size: 16px;
-//     margin: 10px 0 0;
-//     line-height: 22px !important;
-//     font-family: 'PT Sans', sans-serif;
-//     font-weight: 400;
-//     color: #222222;
-//     width: 75%;
-//     padding: 0 15px 0 0;
-//     @media screen and (max-width: 640px) {
-//         margin: 10px 0;
-//         padding: 0;
-//         width: 100%;
-//     }
-// }
-// .partolo-tagsag-cover-box {
-//     border-left: 1px solid #fff;
-//     padding-left: 15px;
-//     width: 25%;
-//     text-align: center;
-//     display: flex;
-//     flex-direction: column;
-//     flex-wrap: wrap;
-//     max-width: 190px;
-//     min-width: 170px;
-//     @media screen and (max-width: 640px) {
-//         border-left: 0;
-//         padding-left: 0;
-//         width: 100%;
-//         display: flex;
-//         flex-direction: row;
-//         flex-wrap: wrap;
-//         max-width: 100%;
-//         min-width: 170px;
-//         align-items: center;
-//     }
-
-//     img {
-//         width: 154px;
-//         max-width: 100%;
-//         display: block;
-//         height: auto;
-//         margin-bottom: 0;
-//         order: 1;
-//         @media screen and (max-width: 640px) {
-//             width: auto;
-//             max-width: 30%;
-//             display: block;
-//             height: auto;
-//             order: 2;
-//             margin: 0 auto;
-//         }
-//         @media screen and (max-width: 480px) {
-//             max-width: 40%;
-//         }
-//     }
-// }
-// .btn-class3 {
-//     padding-top: 0;
-//     max-width: 154px;
-//     margin: 20px 0 0;
-//     display: flex;
-//     justify-content: start;
-//     flex-wrap: wrap;
-//     order: 2;
-//     a {
-//         &:nth-child(2) {
-//             margin: 0 0 10px 0;
-//         }
-//         &:last-child {
-//             margin: 0;
-//         }
-//     }
-//     @media screen and (max-width: 640px) {
-//         min-width: 135px;
-//         padding-top: 0;
-//         max-width: 50%;
-//         margin: 0;
-//         display: flex;
-//         flex-direction: row;
-//         order: 2;
-//     }
-// }
-// .block-ms-box-btn2 {
-//     background-color: #5b5b5b !important;
-//     color: #fff !important;
-//     padding: 0 5px;
-//     text-decoration: none !important;
-//     font: bold 14px/1 'PT Sans', sans-serif;
-//     line-height: 38px;
-//     border-radius: 5px;
-//     box-shadow: 0 3px 6px rgba(0,0,0,0.15), 0 3px 6px rgba(0,0,0,0.15);
-//     transition: all 0.5s ease;
-//     margin-bottom: 10px;
-//     width: 100%;
-//     @media screen and (max-width: 640px) {
-//         padding: 0 5px;
-//     }
-// }
-
-// .read-mode {
-//     .block-ms-box2 {
-//         color: #222222;
-//         border: 5px solid #fff;
-//     }
-//     .p-box {
-//         width: 100px;
-//         height: 100px;
-//     }
-//     .partolo-tagsag-logo {
-//         width: 70px !important;
-//         height: 70px !important;
-//         margin: 8px 0 0 4px;
-//     }
-//     .p-shape {
-//         position: absolute;
-//         height: 96px;
-//         width: 200px;
-//     }
-//     @media screen and (max-width: 640px) {
-//         .block-ms-box-h1 {
-//             padding: 0 0 0 90px;
-//             min-height: 95px;
-//         }
-//     }
-// }
-
-// @media screen and (max-width: 640px) {
-// 	.pt-box {
-// 		margin: 0 -20px;
-// 	}
-// }
-
-// @media all and (-ms-high-contrast:active), all and (-ms-high-contrast:none) {
-// 	.block-ms-box-h1 {
-// 		line-height: 116px;
-// 	}
-// }
-
 /* parallax FPA */
-
 body {
     &.parallax-ad {
         &:before {
