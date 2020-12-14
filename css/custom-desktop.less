@@ -113,6 +113,15 @@ body:not(.main-page) {
                             filter: brightness(0.1);
                         }
                     }
+
+                    body.settings-sepia & {
+                        &:hover {
+                            color: #eaeaea;
+                            &:after {
+                                filter: brightness(4);
+                            }
+                        }
+                    }
                 }
                 .topborder {
                     border-top: 0;

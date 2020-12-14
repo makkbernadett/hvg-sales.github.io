@@ -95,6 +95,18 @@ body:not(.main-page) .container .cimlap-grid .h500 {
 .cimlap-grid .cimlap-grid-elem.elem-505 .boxheader .info:hover:after {
   filter: brightness(0.1);
 }
+body.settings-sepia .cimlap-grid .cimlap-grid-elem.elem-805 .boxheader .info:hover,
+body.settings-sepia .cimlap-grid .cimlap-grid-elem.elem-675 .boxheader .info:hover,
+body.settings-sepia .cimlap-grid .cimlap-grid-elem.elem-375 .boxheader .info:hover,
+body.settings-sepia .cimlap-grid .cimlap-grid-elem.elem-505 .boxheader .info:hover {
+  color: #eaeaea;
+}
+body.settings-sepia .cimlap-grid .cimlap-grid-elem.elem-805 .boxheader .info:hover:after,
+body.settings-sepia .cimlap-grid .cimlap-grid-elem.elem-675 .boxheader .info:hover:after,
+body.settings-sepia .cimlap-grid .cimlap-grid-elem.elem-375 .boxheader .info:hover:after,
+body.settings-sepia .cimlap-grid .cimlap-grid-elem.elem-505 .boxheader .info:hover:after {
+  filter: brightness(4);
+}
 .cimlap-grid .cimlap-grid-elem.elem-805 .boxheader .topborder,
 .cimlap-grid .cimlap-grid-elem.elem-675 .boxheader .topborder,
 .cimlap-grid .cimlap-grid-elem.elem-375 .boxheader .topborder,
