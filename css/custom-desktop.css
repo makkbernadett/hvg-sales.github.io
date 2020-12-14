@@ -185,6 +185,12 @@ aside .icon-article-series {
 .user-profile-page .column-articlelist {
   padding: 0 0 0 40px;
 }
+.user-profile-page .articlelist-element .image-holder {
+  min-height: 150px;
+}
+.user-profile-page .articlelist-element .image-holder img[src*="bcfde2b3-9795-41eb-be9e-80e12c05addd"] {
+  opacity: 0;
+}
 body.settings-sepia .site-header-nav .nav-categories .category-sub {
   background-color: #333;
 }
