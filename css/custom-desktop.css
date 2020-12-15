@@ -147,6 +147,10 @@ body.settings-sepia .cimlap-grid .cimlap-grid-elem.elem-505 .boxheader .info:hov
 .cimlap-grid .cimlap-grid-elem.elem-505 .articleitem.big-pictured-article {
   padding-top: 0;
 }
+.cimlap-grid .cimlap-grid-elem.elem-375 .articleitem.big-pictured-article:not(:first-child),
+.cimlap-grid .cimlap-grid-elem.elem-505 .articleitem.big-pictured-article:not(:first-child) {
+  padding-top: 20px;
+}
 .cimlap-grid .cimlap-grid-elem.elem-375 .boxheader,
 .cimlap-grid .cimlap-grid-elem.elem-505 .boxheader {
   padding: 20px 0;
