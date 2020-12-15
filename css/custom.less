@@ -55,7 +55,7 @@ button, .button, input[type=button] {
 }
 
 // boxheader home first of type
-.placeholder-ad {
+.placeholder-ad, .article-page .article-view-wrap {
     + .boxheader {
         &:first-of-type {
             margin: 0 auto;
@@ -132,6 +132,10 @@ body {
                 padding: 15px 0 0 0;
             }
         }
+
+        // .article-view-wrap {
+        //     +.boxheader {}
+        // }
     }
     &:not(.article-page) .main-tag-container {
         margin: 0;
