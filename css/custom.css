@@ -156,7 +156,7 @@ body.read-mode .adtype-tagbox .articlebox {
   padding: 0;
 }
 body.read-mode .m-breadcrumb {
-  padding: 0;
+  padding: 0 !important;
 }
 body.font-size .font-settings .info {
   font-size: 12px;
