@@ -168,6 +168,27 @@ body.settings-sepia .cimlap-grid .cimlap-grid-elem.elem-375 .boxheader:first-of-
 body.settings-sepia .cimlap-grid .cimlap-grid-elem.elem-505 .boxheader:first-of-type {
   border-bottom: 1px solid #444;
 }
+.cimlap-grid .cimlap-grid-elem.elem-1180 .articleitem.timeitem.newarticle {
+  background-color: transparent;
+}
+.cimlap-grid .cimlap-grid-elem.elem-1180 .articleitem.timeitem.newarticle h1 a {
+  text-decoration: none;
+  background-size: 0% 21px;
+  background-image: linear-gradient(#ffdcbf, #ffdcbf);
+  animation-name: highlighter;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+}
+@keyframes highlighter {
+  0% {
+    background-size: 0% 21px;
+  }
+  100% {
+    background-size: 100% 21px;
+  }
+}
 .article-page .cimlap-grid.articlelist-element-wrap,
 .column-page .cimlap-grid.articlelist-element-wrap,
 body:not(.main-page) .cimlap-grid.articlelist-element-wrap {

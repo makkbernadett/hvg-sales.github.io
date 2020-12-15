@@ -181,6 +181,29 @@ body:not(.main-page) {
                 }
             }
         }
+        // cimlap frisshirek highlighter
+        &.elem-1180 {
+            .articleitem.timeitem {
+                &.newarticle {
+                    background-color: transparent;
+                    h1 a {
+                        text-decoration: none;
+                        background-size: 0% 21px;
+                        background-image: linear-gradient(#ffdcbf,#ffdcbf);
+                        animation-name: highlighter;
+                        animation-duration: 2s;
+                        animation-iteration-count: 1;
+                        animation-direction: alternate; 
+                        animation-fill-mode: forwards;
+                    }
+
+                    @keyframes highlighter {
+                        0% {background-size: 0% 21px;}
+                        100% {background-size: 100% 21px;}
+                    }
+                }
+            }
+        }
     }
 }
 
