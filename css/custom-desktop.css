@@ -133,7 +133,7 @@ body.settings-sepia .cimlap-grid .cimlap-grid-elem.elem-505 .boxheader .info:hov
 .cimlap-grid .cimlap-grid-elem.elem-805 .articleitem .text-holder,
 .cimlap-grid .cimlap-grid-elem.elem-675 .articleitem .text-holder {
   padding-left: 20px;
-  padding-right: 0;
+  padding-right: 20px;
 }
 .cimlap-grid .cimlap-grid-elem.elem-805 .articleitem.emphasized,
 .cimlap-grid .cimlap-grid-elem.elem-675 .articleitem.emphasized {
