@@ -139,6 +139,10 @@ body.settings-sepia .cimlap-grid .cimlap-grid-elem.elem-505 .boxheader .info:hov
 .cimlap-grid .cimlap-grid-elem.elem-675 .articleitem.emphasized {
   padding-left: 20px;
 }
+.cimlap-grid .cimlap-grid-elem.elem-375 .articlelist-element-wrap .big-pictured-article,
+.cimlap-grid .cimlap-grid-elem.elem-505 .articlelist-element-wrap .big-pictured-article {
+  padding-top: 20px;
+}
 .cimlap-grid .cimlap-grid-elem.elem-375 .boxheader,
 .cimlap-grid .cimlap-grid-elem.elem-505 .boxheader {
   padding: 20px 0;
