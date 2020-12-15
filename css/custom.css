@@ -146,6 +146,9 @@ body.read-mode .adtype-tagbox .articlebox {
   border-bottom: 0;
   padding: 0;
 }
+body.read-mode .m-breadcrumb {
+  padding: 0;
+}
 body.font-size .font-settings .info {
   font-size: 12px;
 }
