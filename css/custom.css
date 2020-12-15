@@ -117,6 +117,9 @@ input[type=button] {
     padding: 15px 0 0 0;
   }
 }
+body.article-page .article-content p {
+  clear: both;
+}
 body:not(.article-page) .main-tag-container {
   margin: 0;
   padding-bottom: 0;
