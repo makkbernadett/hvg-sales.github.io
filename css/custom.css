@@ -38,6 +38,9 @@ input[type=button] {
 .adtype-tematic .caption {
   border: 0;
 }
+.author-page-header .text-holder a {
+  display: block;
+}
 .placeholder-ad + .boxheader:first-of-type,
 .article-page .article-view-wrap + .boxheader:first-of-type {
   margin: 0 auto;
