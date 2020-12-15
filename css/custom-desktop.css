@@ -60,10 +60,14 @@ body:not(.main-page) .container .cimlap-grid .h500 {
 .cimlap-grid .cimlap-grid-elem.elem-675 .boxheader .info,
 .cimlap-grid .cimlap-grid-elem.elem-375 .boxheader .info,
 .cimlap-grid .cimlap-grid-elem.elem-505 .boxheader .info {
-  padding: 5px 35px 5px 15px !important;
+  padding: 5px 35px 5px 15px;
   position: relative;
   line-height: 20px;
   transition: all 0.3s ease;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 0;
+  color: #e25900;
 }
 .cimlap-grid .cimlap-grid-elem.elem-805 .boxheader .info:after,
 .cimlap-grid .cimlap-grid-elem.elem-675 .boxheader .info:after,
@@ -123,8 +127,8 @@ body.settings-sepia .cimlap-grid .cimlap-grid-elem.elem-505 .boxheader .info:hov
 }
 .cimlap-grid .cimlap-grid-elem.elem-805 .boxheader .info,
 .cimlap-grid .cimlap-grid-elem.elem-675 .boxheader .info {
-  padding-top: 7px !important;
-  padding-bottom: 7px !important;
+  padding-top: 7px;
+  padding-bottom: 7px;
 }
 .cimlap-grid .cimlap-grid-elem.elem-805 .articleitem,
 .cimlap-grid .cimlap-grid-elem.elem-675 .articleitem {
