@@ -139,8 +139,8 @@ body.settings-sepia .cimlap-grid .cimlap-grid-elem.elem-505 .boxheader .info:hov
 .cimlap-grid .cimlap-grid-elem.elem-675 .articleitem.emphasized {
   padding-left: 20px;
 }
-.cimlap-grid .cimlap-grid-elem.elem-375 .articlelist-element-wrap .big-pictured-article,
-.cimlap-grid .cimlap-grid-elem.elem-505 .articlelist-element-wrap .big-pictured-article {
+.cimlap-grid .cimlap-grid-elem.elem-375 .articleitem.big-pictured-article,
+.cimlap-grid .cimlap-grid-elem.elem-505 .articleitem.big-pictured-article {
   padding-top: 20px;
 }
 .cimlap-grid .cimlap-grid-elem.elem-375 .boxheader,
