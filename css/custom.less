@@ -121,6 +121,11 @@ button, .button, input[type=button] {
             padding: 20px 0;
             max-width: 100%;
 
+            body.read-mode & {
+                border-top: 0;
+                border-bottom: 1px solid #464545;
+            }
+
             @media screen and (min-width: 768px) {
                 width: calc(100% - 60px);
             }

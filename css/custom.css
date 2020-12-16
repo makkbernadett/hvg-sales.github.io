@@ -100,6 +100,11 @@ body.read-mode .article-page .article-view-wrap + .boxheader .topborder {
   padding: 20px 0;
   max-width: 100%;
 }
+body.read-mode .placeholder-ad + .boxheader:nth-of-type(2),
+body.read-mode .article-page .article-view-wrap + .boxheader:nth-of-type(2) {
+  border-top: 0;
+  border-bottom: 1px solid #464545;
+}
 @media screen and (min-width: 768px) {
   .placeholder-ad + .boxheader:nth-of-type(2),
   .article-page .article-view-wrap + .boxheader:nth-of-type(2) {
