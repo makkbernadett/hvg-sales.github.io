@@ -88,6 +88,10 @@ input[type=button] {
   border-top: 0;
   border-left: 4px solid #e25900;
 }
+body.read-mode .placeholder-ad + .boxheader .topborder,
+body.read-mode .article-page .article-view-wrap + .boxheader .topborder {
+  border-top: 0;
+}
 .placeholder-ad + .boxheader:nth-of-type(2),
 .article-page .article-view-wrap + .boxheader:nth-of-type(2) {
   border-bottom: 1px solid #d8d8d8;
