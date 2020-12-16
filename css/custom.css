@@ -62,20 +62,31 @@ input[type=button] {
   text-transform: uppercase;
   margin-top: 0;
 }
+body.read-mode .placeholder-ad + .boxheader .info,
+body.read-mode .article-page .article-view-wrap + .boxheader .info {
+  color: #f67a17;
+}
 .placeholder-ad + .boxheader .info:after,
 .article-page .article-view-wrap + .boxheader .info:after {
-  background: url(https://m.hvg.hu/Content/hvgmobile/i/hvg-icons-sprite.svg) -42px -324px no-repeat;
+  background: url(https://static.hvgrt.hu/img/hvg-icons-sprite4.svg) -9px -324px no-repeat;
   content: '';
   width: 18px;
   height: 18px;
   position: absolute;
   top: 50%;
   left: auto;
-  right: -10px;
-  transform: rotate(-90deg) translateX(0px) translateY(-50%);
+  right: 10px;
+  transform: rotate(0deg) translateX(0px) translateY(-50%);
   z-index: 1;
-  filter: brightness(1);
+  filter: none;
   transform-origin: 0 center;
+}
+body.read-mode .placeholder-ad + .boxheader .info:after,
+body.read-mode .article-page .article-view-wrap + .boxheader .info:after {
+  background: url(https://static.hvgrt.hu/img/hvg-icons-sprite4.svg) -42px -350px no-repeat;
+  right: 10px;
+  transform: rotate(0deg) translateX(0px) translateY(-50%);
+  filter: none;
 }
 .placeholder-ad + .boxheader .emp,
 .article-page .article-view-wrap + .boxheader .emp {
@@ -91,6 +102,7 @@ input[type=button] {
 body.read-mode .placeholder-ad + .boxheader .topborder,
 body.read-mode .article-page .article-view-wrap + .boxheader .topborder {
   border-top: 0;
+  border-left-color: #f67a17;
 }
 .placeholder-ad + .boxheader:nth-of-type(2),
 .article-page .article-view-wrap + .boxheader:nth-of-type(2) {
