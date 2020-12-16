@@ -61,79 +61,75 @@ button, .button, input[type=button] {
 // boxheader home first of type
 .placeholder-ad, .article-page .article-view-wrap {
     + .boxheader {
-        margin: 0 auto;
-        padding: 10px 10px 10px 20px;
-        max-width: 460px;
-        background: transparent;
+        // margin: 0 auto;
+        // padding: 10px 10px 10px 20px;
+        // max-width: 460px;
+        // background: transparent;
 
         .info {
-            padding: 0 35px 0 15px !important;
-            background-color: transparent;
-            color: #e25900;
-            text-decoration: none;
-            transition: all .5s ease;
-            position: relative;
-            font-family: 'PT Sans',Arial,sans-serif;
-            line-height: 20px;
-            font-size: 14px;
-            text-transform: uppercase;
-            margin-top: 0;
+            // padding: 0 35px 0 15px !important;
+            // background-color: transparent;
+            // color: #e25900;
+            // text-decoration: none;
+            // transition: all .5s ease;
+            // position: relative;
+            // font-family: 'PT Sans',Arial,sans-serif;
+            // line-height: 20px;
+            // font-size: 14px;
+            // text-transform: uppercase;
+            // margin-top: 0;
 
-            &:after {
-                background: url(https://m.hvg.hu/Content/hvgmobile/i/hvg-icons-sprite.svg) -42px -324px no-repeat;
-                content: '';
-                width: 18px;
-                height: 18px;
-                position: absolute;
-                top: 50%;
-                left: auto;
-                right: -10px;
-                transform: rotate(-90deg) translateX(0px) translateY(-50%);
-                z-index: 1;
-                filter: brightness(1);
-                transform-origin: 0 center;
-            }
+            // &:after {
+            //     background: url(https://m.hvg.hu/Content/hvgmobile/i/hvg-icons-sprite.svg) -42px -324px no-repeat;
+            //     content: '';
+            //     width: 18px;
+            //     height: 18px;
+            //     position: absolute;
+            //     top: 50%;
+            //     left: auto;
+            //     right: -10px;
+            //     transform: rotate(-90deg) translateX(0px) translateY(-50%);
+            //     z-index: 1;
+            //     filter: brightness(1);
+            //     transform-origin: 0 center;
+            // }
         }
 
-        .emp {
-            display: block;
-            border-top: 0;
-            margin-top: 0;
-        }
+        // .emp {
+        //     display: block;
+        //     border-top: 0;
+        //     margin-top: 0;
+        // }
 
-        .topborder {
-            border-top: 0;
-            border-left: 4px solid #e25900;
+        // .topborder {
+        //     border-top: 0;
+        //     border-left: 4px solid #e25900;
 
-            body.read-mode & {
-                border-top: 0;
-            }
-        }
-
-        &:first-of-type {
-
-        }
+        //     body.read-mode & {
+        //         border-top: 0;
+        //     }
+        // }
 
         &:nth-of-type(2) {
-            border-bottom: 1px solid #d8d8d8;
-            margin-bottom: 10px;
-            width: calc(100% - 40px);
-            padding: 20px 0;
-            max-width: 100%;
+            // border-bottom: 1px solid #d8d8d8;
+            // margin-bottom: 10px;
+            width: calc(~'100% - 40px');
+            // padding: 20px 0;
+            // max-width: 100%;
 
-            body.read-mode & {
-                border-top: 0;
-                border-bottom: 1px solid #464545;
-            }
+            // body.read-mode & {
+            //     border-top: 0;
+            //     border-bottom: 1px solid #464545;
+            // }
 
             @media screen and (min-width: 768px) {
-                width: calc(100% - 60px);
+                width: calc(~'100% - 60px');
             }
-            @media screen and (min-width: 992px) {
-                width: 100%;
-                padding: 20px 0;
-                max-width: 690px;
-            }
+            // @media screen and (min-width: 992px) {
+            //     width: 100%;
+            //     padding: 20px 0;
+            //     max-width: 690px;
+            // }
         }
     }
 }
@@ -141,7 +137,7 @@ button, .button, input[type=button] {
 .article-page .article-view-wrap + .boxheader:first-of-type {
     margin-bottom: 20px;
     @media screen and (min-width: 768px) {
-        width: calc(100% - 60px);
+        width: calc(~'100% - 60px');
     }
     @media screen and (min-width: 992px) {
         width: 100%;

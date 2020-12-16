@@ -41,82 +41,14 @@ input[type=button] {
 .author-page-header .text-holder a {
   display: block;
 }
-.placeholder-ad + .boxheader,
-.article-page .article-view-wrap + .boxheader {
-  margin: 0 auto;
-  padding: 10px 10px 10px 20px;
-  max-width: 460px;
-  background: transparent;
-}
-.placeholder-ad + .boxheader .info,
-.article-page .article-view-wrap + .boxheader .info {
-  padding: 0 35px 0 15px !important;
-  background-color: transparent;
-  color: #e25900;
-  text-decoration: none;
-  transition: all 0.5s ease;
-  position: relative;
-  font-family: 'PT Sans', Arial, sans-serif;
-  line-height: 20px;
-  font-size: 14px;
-  text-transform: uppercase;
-  margin-top: 0;
-}
-.placeholder-ad + .boxheader .info:after,
-.article-page .article-view-wrap + .boxheader .info:after {
-  background: url(https://m.hvg.hu/Content/hvgmobile/i/hvg-icons-sprite.svg) -42px -324px no-repeat;
-  content: '';
-  width: 18px;
-  height: 18px;
-  position: absolute;
-  top: 50%;
-  left: auto;
-  right: -10px;
-  transform: rotate(-90deg) translateX(0px) translateY(-50%);
-  z-index: 1;
-  filter: brightness(1);
-  transform-origin: 0 center;
-}
-.placeholder-ad + .boxheader .emp,
-.article-page .article-view-wrap + .boxheader .emp {
-  display: block;
-  border-top: 0;
-  margin-top: 0;
-}
-.placeholder-ad + .boxheader .topborder,
-.article-page .article-view-wrap + .boxheader .topborder {
-  border-top: 0;
-  border-left: 4px solid #e25900;
-}
-body.read-mode .placeholder-ad + .boxheader .topborder,
-body.read-mode .article-page .article-view-wrap + .boxheader .topborder {
-  border-top: 0;
-}
 .placeholder-ad + .boxheader:nth-of-type(2),
 .article-page .article-view-wrap + .boxheader:nth-of-type(2) {
-  border-bottom: 1px solid #d8d8d8;
-  margin-bottom: 10px;
   width: calc(100% - 40px);
-  padding: 20px 0;
-  max-width: 100%;
-}
-body.read-mode .placeholder-ad + .boxheader:nth-of-type(2),
-body.read-mode .article-page .article-view-wrap + .boxheader:nth-of-type(2) {
-  border-top: 0;
-  border-bottom: 1px solid #464545;
 }
 @media screen and (min-width: 768px) {
   .placeholder-ad + .boxheader:nth-of-type(2),
   .article-page .article-view-wrap + .boxheader:nth-of-type(2) {
     width: calc(100% - 60px);
-  }
-}
-@media screen and (min-width: 992px) {
-  .placeholder-ad + .boxheader:nth-of-type(2),
-  .article-page .article-view-wrap + .boxheader:nth-of-type(2) {
-    width: 100%;
-    padding: 20px 0;
-    max-width: 690px;
   }
 }
 .article-page .article-view-wrap + .boxheader:first-of-type {
