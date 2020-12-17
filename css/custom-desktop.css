@@ -11,7 +11,7 @@
 }
 .article-content .article-menu {
   padding-top: 0;
-  width: 100px;
+  width: 90px;
   margin-right: 20px;
 }
 .article-content .article-menu .share .item.print {
@@ -23,9 +23,12 @@
 .article-content .article-body {
   margin-right: 0;
 }
-.footer .icon-huawei span {
-  width: 28px;
-  height: 28px;
+.article-content .article-info a {
+  font-weight: normal;
+}
+.article-content .article-info a:hover {
+  background: none;
+  text-decoration: underline;
 }
 body.main-page .cimlap-grid .dark.h500.articlebox header.boxheader:before {
   background: #1e1e1e;
