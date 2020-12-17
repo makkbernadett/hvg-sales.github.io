@@ -308,6 +308,13 @@ body:not(.main-page) {
     body.settings-sepia & {
         border-bottom-color: #444;
     }
+    &:last-of-type {
+        border-bottom-color: transparent;
+
+        body.settings-sepia & {
+            border-bottom-color: transparent;
+        }
+    }
 }
 
 
