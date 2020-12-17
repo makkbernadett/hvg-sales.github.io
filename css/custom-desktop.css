@@ -133,6 +133,10 @@ body.settings-sepia .cimlap-grid .cimlap-grid-elem.elem-505 .boxheader .info:hov
   padding-left: 20px;
   padding-right: 20px;
 }
+.cimlap-grid .cimlap-grid-elem.elem-805 .articleitem .text-holder .bookmark,
+.cimlap-grid .cimlap-grid-elem.elem-675 .articleitem .text-holder .bookmark {
+  right: 4px;
+}
 .cimlap-grid .cimlap-grid-elem.elem-805 .articleitem.emphasized,
 .cimlap-grid .cimlap-grid-elem.elem-675 .articleitem.emphasized {
   padding-left: 20px;
