@@ -253,6 +253,9 @@ body.settings-sepia .site-header-nav .nav-categories .category-sub {
 body.settings-sepia .site-header-nav .nav-categories .category.group:hover {
   box-shadow: none;
 }
+body.settings-sepia .articlebox .articleitem.timeitem:last-of-type {
+  border-bottom-color: transparent;
+}
 @media only screen and (min-device-width: 768px) and (max-device-width: 992px) and (orientation: portrait) {
   .site-header-nav .nav-categories .category-button {
     padding: 5px 4px;
