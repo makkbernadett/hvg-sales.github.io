@@ -208,6 +208,9 @@ body.settings-sepia .cimlap-grid .cimlap-grid-elem.elem-505 .boxheader:first-of-
 .cimlap-grid.cimlap-grid-blog .cimlap-grid-elem.elem-580 .cimlap-big_square_article .content:before {
   left: 40px;
 }
+.cimlap-grid.cimlap-grid-blog .cimlap-grid-elem.elem-580 .cimlap-big_square_article .content-inner {
+  padding: 60px 40px 35px;
+}
 .article-page .cimlap-grid.articlelist-element-wrap,
 .column-page .cimlap-grid.articlelist-element-wrap,
 body:not(.main-page) .cimlap-grid.articlelist-element-wrap {
