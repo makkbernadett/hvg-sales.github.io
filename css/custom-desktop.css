@@ -165,30 +165,6 @@ body.settings-sepia .cimlap-grid .cimlap-grid-elem.elem-505 .boxheader:first-of-
 .cimlap-grid .cimlap-grid-elem.elem-1180.articlebox {
   margin-bottom: 0;
 }
-.cimlap-grid .cimlap-grid-elem.elem-1180 .articleitem.timeitem.newarticle {
-  background-color: transparent;
-}
-.cimlap-grid .cimlap-grid-elem.elem-1180 .articleitem.timeitem.newarticle h1 a {
-  text-decoration: none;
-  background-size: 0% 21px;
-  background-image: linear-gradient(#ffdcbf, #ffdcbf);
-  animation-name: highlighter;
-  animation-duration: 2s;
-  animation-iteration-count: 1;
-  animation-direction: alternate;
-  animation-fill-mode: forwards;
-}
-.settings-sepia .cimlap-grid .cimlap-grid-elem.elem-1180 .articleitem.timeitem.newarticle h1 a {
-  background-image: linear-gradient(#444, #444);
-}
-@keyframes highlighter {
-  0% {
-    background-size: 0% 21px;
-  }
-  100% {
-    background-size: 100% 21px;
-  }
-}
 .cimlap-grid .dark .cimlap-grid-elem .boxheader:first-of-type,
 .cimlap-grid .dark .cimlap-grid-elem .boxheader:first-of-type {
   border-bottom: 1px solid #444;
@@ -208,6 +184,30 @@ body.settings-sepia .cimlap-grid .cimlap-grid-elem.elem-505 .boxheader:first-of-
   background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 1%, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0.8) 100%);
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 1%, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0.8) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#cc000000', GradientType=0);
+}
+.articleitem.timeitem.newarticle {
+  background-color: transparent;
+}
+.articleitem.timeitem.newarticle h1 a {
+  text-decoration: none;
+  background-size: 0% 21px;
+  background-image: linear-gradient(#ffdcbf, #ffdcbf);
+  animation-name: highlighter;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+}
+.settings-sepia .articleitem.timeitem.newarticle h1 a {
+  background-image: linear-gradient(#444, #444);
+}
+@keyframes highlighter {
+  0% {
+    background-size: 0% 21px;
+  }
+  100% {
+    background-size: 100% 21px;
+  }
 }
 .article-page .cimlap-grid.articlelist-element-wrap,
 .column-page .cimlap-grid.articlelist-element-wrap,
