@@ -243,6 +243,10 @@ body.settings-sepia .grid-layout .grid-item .articleitem {
 body.settings-sepia .grid-layout .grid-item .articleitem:last-of-type {
   border-bottom-color: transparent;
 }
+.sidebar .latest-news-box .timeitem .text-holder {
+  padding-left: 80px;
+  padding-right: 20px;
+}
 body.settings-sepia .site-header-nav .nav-categories .category-sub {
   background-color: #333;
 }
