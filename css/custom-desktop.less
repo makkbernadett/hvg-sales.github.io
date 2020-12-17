@@ -39,28 +39,28 @@
 
 body.main-page {
     .cimlap-grid {
-        .dark {
-            &.h500 {
-                &.articlebox {
-                    header.boxheader:before {
-                        background: #1e1e1e;
-                    }
-                    .articleitem:last-of-type {
-                        padding-bottom: 30px;
-                    }
-                }
-            }
-        }
+        // .dark {
+        //     &.h500 {
+        //         &.articlebox {
+        //             header.boxheader:before {
+        //                 background: #1e1e1e;
+        //             }
+        //             .articleitem:last-of-type {
+        //                 padding-bottom: 30px;
+        //             }
+        //         }
+        //     }
+        // }
     }
 }
 
 body:not(.main-page) {
     .container {
-        .sidebar {
-            .ad-sticky {
-                background: transparent;
-            }
-        }
+        // .sidebar {
+        //     .ad-sticky {
+        //         background: transparent;
+        //     }
+        // }
         .cimlap-grid {
             .dark {
                 padding-bottom: 0;
@@ -187,6 +187,9 @@ body:not(.main-page) {
         }
         // cimlap frisshirek highlighter
         &.elem-1180 {
+            &.articlebox {
+                margin-bottom: 0;
+            }
             .articleitem.timeitem {
                 &.newarticle {
                     background-color: transparent;
@@ -199,6 +202,10 @@ body:not(.main-page) {
                         animation-iteration-count: 1;
                         animation-direction: alternate; 
                         animation-fill-mode: forwards;
+
+                        .settings-sepia & {
+                            background-image: linear-gradient(#444,#444);
+                        }
                     }
 
                     @keyframes highlighter {
@@ -209,6 +216,13 @@ body:not(.main-page) {
             }
         }
     }
+
+    .dark {
+		.cimlap-grid-elem .boxheader:first-of-type,
+		.cimlap-grid-elem .boxheader:first-of-type {
+			border-bottom: 1px solid #444;
+		}
+	}
 
     &.cimlap-grid-blog {
         .cimlap-grid-elem {
@@ -282,18 +296,10 @@ body:not(.main-page) {
         }
     }
 }
-.h500 {
-    min-height: 516px;
-    height: auto !important;
-}
 
-.grid-layout {
-    margin-bottom: 20px;
-}
-
-aside .icon-article-series {
-    color: #999;
-}
+// aside .icon-article-series {
+//     color: #999;
+// }
 
 
 // dark mode
@@ -342,9 +348,9 @@ body.settings-sepia {
     .adtype-l-ribbon {
         background: #1a1a1a;
     }
-    aside .icon-article-series {
-        color: #999;
-    }
+    // aside .icon-article-series {
+    //     color: #999;
+    // }
 
     .newarticle {
         background: #111;

@@ -30,15 +30,6 @@
   background: none;
   text-decoration: underline;
 }
-body.main-page .cimlap-grid .dark.h500.articlebox header.boxheader:before {
-  background: #1e1e1e;
-}
-body.main-page .cimlap-grid .dark.h500.articlebox .articleitem:last-of-type {
-  padding-bottom: 30px;
-}
-body:not(.main-page) .container .sidebar .ad-sticky {
-  background: transparent;
-}
 body:not(.main-page) .container .cimlap-grid .dark {
   padding-bottom: 0;
   margin-bottom: 0;
@@ -171,6 +162,9 @@ body.settings-sepia .cimlap-grid .cimlap-grid-elem.elem-375 .boxheader:first-of-
 body.settings-sepia .cimlap-grid .cimlap-grid-elem.elem-505 .boxheader:first-of-type {
   border-bottom: 1px solid #444;
 }
+.cimlap-grid .cimlap-grid-elem.elem-1180.articlebox {
+  margin-bottom: 0;
+}
 .cimlap-grid .cimlap-grid-elem.elem-1180 .articleitem.timeitem.newarticle {
   background-color: transparent;
 }
@@ -184,6 +178,9 @@ body.settings-sepia .cimlap-grid .cimlap-grid-elem.elem-505 .boxheader:first-of-
   animation-direction: alternate;
   animation-fill-mode: forwards;
 }
+.settings-sepia .cimlap-grid .cimlap-grid-elem.elem-1180 .articleitem.timeitem.newarticle h1 a {
+  background-image: linear-gradient(#444, #444);
+}
 @keyframes highlighter {
   0% {
     background-size: 0% 21px;
@@ -191,6 +188,10 @@ body.settings-sepia .cimlap-grid .cimlap-grid-elem.elem-505 .boxheader:first-of-
   100% {
     background-size: 100% 21px;
   }
+}
+.cimlap-grid .dark .cimlap-grid-elem .boxheader:first-of-type,
+.cimlap-grid .dark .cimlap-grid-elem .boxheader:first-of-type {
+  border-bottom: 1px solid #444;
 }
 .cimlap-grid.cimlap-grid-blog .cimlap-grid-elem.elem-580 .cimlap-big_square_article .content {
   height: 100%;
@@ -230,16 +231,6 @@ body:not(.main-page) .cimlap-grid.articlelist-element-wrap {
 .hirdetesfelho-wrapper .articlebox.hirdetesfelho-lista .articleitem:last-of-type {
   padding-bottom: 20px;
 }
-.h500 {
-  min-height: 516px;
-  height: auto !important;
-}
-.grid-layout {
-  margin-bottom: 20px;
-}
-aside .icon-article-series {
-  color: #999;
-}
 body.settings-sepia .site-header-nav .nav-categories .category-sub {
   background-color: #333;
 }
@@ -273,9 +264,6 @@ body.settings-sepia .cimlap-grid.home-pr-cikk-grid {
 }
 body.settings-sepia .adtype-l-ribbon {
   background: #1a1a1a;
-}
-body.settings-sepia aside .icon-article-series {
-  color: #999;
 }
 body.settings-sepia .newarticle {
   background: #111;
