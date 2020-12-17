@@ -276,6 +276,7 @@ body:not(.main-page) {
 .grid-item.articlebox .articlebox article.articleitem.emphasized.featured {
     border-bottom: 0;
 }
+
 .articleitem + .boxheader {
     margin-top: -1px;
     z-index: 1;
@@ -284,6 +285,7 @@ body:not(.main-page) {
         border-top: 0;
     }
 }
+
 .hirdetesfelho-wrapper {
     + .articlebox {
         margin-top: 20px;
@@ -300,6 +302,13 @@ body:not(.main-page) {
 // aside .icon-article-series {
 //     color: #999;
 // }
+
+.grid-layout .grid-item .articleitem {
+    border-bottom: 1px solid #d8d8d8;
+    body.settings-sepia & {
+        border-bottom-color: #444;
+    }
+}
 
 
 // dark mode

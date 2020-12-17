@@ -231,6 +231,12 @@ body:not(.main-page) .cimlap-grid.articlelist-element-wrap {
 .hirdetesfelho-wrapper .articlebox.hirdetesfelho-lista .articleitem:last-of-type {
   padding-bottom: 20px;
 }
+.grid-layout .grid-item .articleitem {
+  border-bottom: 1px solid #d8d8d8;
+}
+body.settings-sepia .grid-layout .grid-item .articleitem {
+  border-bottom-color: #444;
+}
 body.settings-sepia .site-header-nav .nav-categories .category-sub {
   background-color: #333;
 }
