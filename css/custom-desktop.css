@@ -138,6 +138,12 @@ body.settings-sepia .cimlap-grid .cimlap-grid-elem.elem-505 .boxheader .info:hov
 .cimlap-grid .cimlap-grid-elem.elem-675 .articlelist-element {
   padding-left: 20px;
 }
+.article-page .cimlap-grid .cimlap-grid-elem.elem-805 .articlelist-element,
+.article-page .cimlap-grid .cimlap-grid-elem.elem-675 .articlelist-element,
+.column-page .cimlap-grid .cimlap-grid-elem.elem-805 .articlelist-element,
+.column-page .cimlap-grid .cimlap-grid-elem.elem-675 .articlelist-element {
+  padding-left: 0px;
+}
 .cimlap-grid .cimlap-grid-elem.elem-805 .articleitem,
 .cimlap-grid .cimlap-grid-elem.elem-675 .articleitem {
   padding-bottom: 0;
