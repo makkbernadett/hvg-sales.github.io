@@ -119,6 +119,16 @@ body.settings-sepia .cimlap-grid .cimlap-grid-elem.elem-505 .boxheader .info:hov
   margin-top: 0;
   border-left: 4px solid #e25900;
 }
+.article-page .cimlap-grid .cimlap-grid-elem.elem-805 .boxheader,
+.article-page .cimlap-grid .cimlap-grid-elem.elem-675 .boxheader,
+.article-page .cimlap-grid .cimlap-grid-elem.elem-375 .boxheader,
+.article-page .cimlap-grid .cimlap-grid-elem.elem-505 .boxheader,
+.column-page .cimlap-grid .cimlap-grid-elem.elem-805 .boxheader,
+.column-page .cimlap-grid .cimlap-grid-elem.elem-675 .boxheader,
+.column-page .cimlap-grid .cimlap-grid-elem.elem-375 .boxheader,
+.column-page .cimlap-grid .cimlap-grid-elem.elem-505 .boxheader {
+  padding: 20px 20px 20px 0;
+}
 .cimlap-grid .cimlap-grid-elem.elem-805 .boxheader .info,
 .cimlap-grid .cimlap-grid-elem.elem-675 .boxheader .info {
   padding-top: 7px;
@@ -133,12 +143,34 @@ body.settings-sepia .cimlap-grid .cimlap-grid-elem.elem-505 .boxheader .info:hov
   padding-left: 20px;
   padding-right: 20px;
 }
+.article-page .cimlap-grid .cimlap-grid-elem.elem-805 .articleitem .text-holder,
+.article-page .cimlap-grid .cimlap-grid-elem.elem-675 .articleitem .text-holder,
+.column-page .cimlap-grid .cimlap-grid-elem.elem-805 .articleitem .text-holder,
+.column-page .cimlap-grid .cimlap-grid-elem.elem-675 .articleitem .text-holder {
+  padding-left: 0px;
+}
 .cimlap-grid .cimlap-grid-elem.elem-805 .articleitem .text-holder .bookmark,
 .cimlap-grid .cimlap-grid-elem.elem-675 .articleitem .text-holder .bookmark {
   right: 4px;
 }
 .cimlap-grid .cimlap-grid-elem.elem-805 .articleitem.emphasized,
 .cimlap-grid .cimlap-grid-elem.elem-675 .articleitem.emphasized {
+  padding-left: 20px;
+}
+.cimlap-grid .cimlap-grid-elem.elem-805 .articleitem.emphasized .text-holder,
+.cimlap-grid .cimlap-grid-elem.elem-675 .articleitem.emphasized .text-holder {
+  padding-left: 20px;
+}
+.article-page .cimlap-grid .cimlap-grid-elem.elem-805 .articleitem.emphasized,
+.article-page .cimlap-grid .cimlap-grid-elem.elem-675 .articleitem.emphasized,
+.column-page .cimlap-grid .cimlap-grid-elem.elem-805 .articleitem.emphasized,
+.column-page .cimlap-grid .cimlap-grid-elem.elem-675 .articleitem.emphasized {
+  padding-left: 0px;
+}
+.article-page .cimlap-grid .cimlap-grid-elem.elem-805,
+.article-page .cimlap-grid .cimlap-grid-elem.elem-675,
+.column-page .cimlap-grid .cimlap-grid-elem.elem-805,
+.column-page .cimlap-grid .cimlap-grid-elem.elem-675 {
   padding-left: 20px;
 }
 .cimlap-grid .cimlap-grid-elem.elem-375 .articleitem.big-pictured-article,
@@ -224,6 +256,24 @@ body.settings-sepia .cimlap-grid .cimlap-grid-elem.elem-505 .boxheader:first-of-
 .column-page .cimlap-grid.articlelist-element-wrap,
 body:not(.main-page) .cimlap-grid.articlelist-element-wrap {
   padding-bottom: 20px;
+}
+.article-page .random-article-page-box,
+.column-page .random-article-page-box {
+  justify-content: center;
+}
+.article-page .random-article-page-box .article-page-widget,
+.column-page .random-article-page-box .article-page-widget {
+  margin: 0 10px;
+}
+.article-page .random-article-box-container,
+.column-page .random-article-box-container {
+  justify-content: center;
+  padding: 0 10px;
+}
+.article-page .random-article-box-container .article-box-widget,
+.column-page .random-article-box-container .article-box-widget {
+  width: 20%;
+  margin: 0 10px;
 }
 .grid-item.articlebox .articlebox article.articleitem.emphasized.featured {
   border-bottom: 0;
