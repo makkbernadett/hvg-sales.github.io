@@ -209,10 +209,17 @@ body:not(.main-page) {
                 }
             }
         }
-        // cimlap frisshirek highlighter
+        
         &.elem-1180 {
             &.articlebox {
                 margin-bottom: 0;
+                // .latest-news-box .more {
+                //     body.main-page & {
+                //         bottom: -2px;
+                //         border-left: 5px solid #fff;
+                //         border-bottom: 2px solid #fff;
+                //     }
+                // }
             }
         }
     }
@@ -306,6 +313,10 @@ body:not(.main-page) {
             // }
         }
     }
+
+    .cimlap-tematikus-box .articlelist-element-wrap .articlelist-element:first-child {
+        padding-top: 0;
+    }
 }
 
 .article-page, .column-page {
@@ -374,6 +385,9 @@ body:not(.main-page) {
     padding-right: 20px;
 }
 
+.articlebox .timeitem .text-holder {
+    padding-left: 85px;
+}
 
 // dark mode
 body.settings-sepia {

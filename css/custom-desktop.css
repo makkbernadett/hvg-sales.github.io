@@ -261,6 +261,11 @@ body.settings-sepia .cimlap-grid .cimlap-grid-elem.elem-505 .boxheader:first-of-
 body:not(.main-page) .cimlap-grid.articlelist-element-wrap {
   padding-bottom: 20px;
 }
+.article-page .cimlap-tematikus-box .articlelist-element-wrap .articlelist-element:first-child,
+.column-page .cimlap-tematikus-box .articlelist-element-wrap .articlelist-element:first-child,
+body:not(.main-page) .cimlap-tematikus-box .articlelist-element-wrap .articlelist-element:first-child {
+  padding-top: 0;
+}
 .article-page .random-article-page-box,
 .column-page .random-article-page-box {
   justify-content: center;
@@ -311,6 +316,9 @@ body.settings-sepia .grid-layout .grid-item .articleitem:last-of-type {
 .sidebar .latest-news-box .timeitem .text-holder {
   padding-left: 80px;
   padding-right: 20px;
+}
+.articlebox .timeitem .text-holder {
+  padding-left: 85px;
 }
 body.settings-sepia .site-header-nav .nav-categories .category-sub {
   background-color: #333;
