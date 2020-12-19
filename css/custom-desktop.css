@@ -238,6 +238,9 @@ body.settings-sepia .cimlap-grid .cimlap-grid-elem.elem-505 .boxheader:first-of-
 .cimlap-grid.cimlap-grid-blog .cimlap-grid-elem.elem-580 .cimlap-big_square_article:hover a.img {
   transform: scale(1.1);
 }
+.cimlap-big_square_article .content {
+  bottom: 0;
+}
 .articleitem.timeitem.newarticle {
   background-color: transparent;
 }
