@@ -279,7 +279,8 @@ body:not(.main-page) .cimlap-tematikus-box .articlelist-element-wrap .articlelis
 .article-page .random-article-page-box,
 .column-page .random-article-page-box,
 body:not(.main-page) .random-article-page-box {
-  justify-content: center;
+  justify-content: flex-start;
+  padding-left: 30px;
 }
 .article-page .random-article-page-box .article-page-widget,
 .column-page .random-article-page-box .article-page-widget,
