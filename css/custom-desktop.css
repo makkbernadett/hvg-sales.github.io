@@ -11,8 +11,6 @@
 }
 .article-content .article-menu {
   padding-top: 0;
-  width: 90px;
-  margin-right: 20px;
 }
 .article-content .article-menu .share .item.print {
   margin-left: 0;
@@ -276,20 +274,24 @@ body:not(.main-page) .cimlap-tematikus-box .articlelist-element-wrap .articlelis
   padding-top: 0;
 }
 .article-page .random-article-page-box,
-.column-page .random-article-page-box {
+.column-page .random-article-page-box,
+body:not(.main-page) .random-article-page-box {
   justify-content: center;
 }
 .article-page .random-article-page-box .article-page-widget,
-.column-page .random-article-page-box .article-page-widget {
+.column-page .random-article-page-box .article-page-widget,
+body:not(.main-page) .random-article-page-box .article-page-widget {
   margin: 0 10px;
 }
 .article-page .random-article-box-container,
-.column-page .random-article-box-container {
+.column-page .random-article-box-container,
+body:not(.main-page) .random-article-box-container {
   justify-content: center;
   padding: 20px 10px 0;
 }
 .article-page .random-article-box-container .article-box-widget,
-.column-page .random-article-box-container .article-box-widget {
+.column-page .random-article-box-container .article-box-widget,
+body:not(.main-page) .random-article-box-container .article-box-widget {
   width: 20%;
   margin: 0 10px;
 }
