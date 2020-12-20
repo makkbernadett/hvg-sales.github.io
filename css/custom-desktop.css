@@ -388,9 +388,6 @@ body.settings-sepia .articlebox .articleitem.timeitem:last-of-type {
 .articlelist-element img[src*="data:image/gif;base64"] {
   min-height: 110px;
 }
-.articlelist-element-wrap .articlelist-element:last-of-type {
-  padding-bottom: 0;
-}
 .articlelist-element-wrap .big-pictured-article img[src*="data:image/gif;base64"] {
   min-height: 230px;
 }
