@@ -212,6 +212,9 @@ body.settings-sepia .cimlap-grid .cimlap-grid-elem.elem-505 .boxheader:first-of-
 .cimlap-grid .cimlap-grid-elem.elem-1180.articlebox {
   margin-bottom: 0;
 }
+.cimlap-grid .cimlap-grid-elem.elem-380 .articlelist-element-wrap .articlelist-element:last-of-type {
+  padding-bottom: 0;
+}
 .cimlap-grid .cimlap-grid-elem.elem-380 .articlebox .more {
   margin-top: 40px;
 }
