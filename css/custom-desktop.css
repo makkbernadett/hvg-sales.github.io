@@ -303,12 +303,6 @@ body:not(.main-page) .random-article-page-box {
 body:not(.main-page) .random-article-page-box .article-page-widget {
   margin: 0 10px;
 }
-.article-body .article-page .random-article-page-box,
-.article-body .column-page .random-article-page-box,
-.article-body body:not(.main-page) .random-article-page-box {
-  padding-left: 0;
-  margin-left: -10px;
-}
 .article-page .random-article-box-container,
 .column-page .random-article-box-container,
 body:not(.main-page) .random-article-box-container {
@@ -320,6 +314,12 @@ body:not(.main-page) .random-article-box-container {
 body:not(.main-page) .random-article-box-container .article-box-widget {
   width: 20%;
   margin: 0 10px;
+}
+.article-page .article-body .random-article-page-box,
+.column-page .article-body .random-article-page-box,
+body:not(.main-page) .article-body .random-article-page-box {
+  padding-left: 0;
+  margin-left: -10px;
 }
 .grid-item.articlebox .articlebox article.articleitem.emphasized.featured {
   border-bottom: 0;
