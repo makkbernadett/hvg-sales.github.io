@@ -81,6 +81,8 @@ body:not(.main-page) .container .cimlap-grid .h500 {
   filter: brightness(1);
   transform-origin: 0 center;
   transition: all 0.3s ease;
+  padding: 0;
+  margin: 0;
 }
 .cimlap-grid .cimlap-grid-elem.elem-805 .boxheader .info:hover,
 .cimlap-grid .cimlap-grid-elem.elem-675 .boxheader .info:hover,
@@ -356,6 +358,16 @@ body.settings-sepia .grid-layout .grid-item .articleitem:last-of-type {
 }
 .articlebox .timeitem .text-holder {
   padding-left: 85px;
+}
+.box-article .text-holder {
+  background: none;
+}
+.box-article .text-holder .text {
+  background: rgba(0, 0, 0, 0.4);
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 1%, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0.8) 100%);
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 1%, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0.8) 100%);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 1%, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0.8) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#cc000000', GradientType=0);
 }
 body.settings-sepia .site-header-nav .nav-categories .category-sub {
   background-color: #333;
