@@ -380,6 +380,9 @@ body.settings-sepia .grid-layout .grid-item .articleitem:last-of-type {
 .info span.blog-icon + a.uppercase {
   letter-spacing: 0.5px;
 }
+.blog-list-box .info span.blog-icon {
+  margin-top: 0;
+}
 body.settings-sepia .site-header-nav .nav-categories .category-sub {
   background-color: #333;
 }
