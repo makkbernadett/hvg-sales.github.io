@@ -453,8 +453,15 @@ body:not(.main-page) {
     }
 }
 .blog-list-box {
-    .info span.blog-icon {
-        margin-top: 0;
+    .info {
+        span.blog-icon {
+            margin-top: 1px;
+        }
+        time {
+            + a.uppercase {
+                letter-spacing: 0.5px;
+            }
+        }
     }
 }
 
