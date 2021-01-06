@@ -323,6 +323,16 @@ body:not(.main-page) .article-body .random-article-page-box {
   padding-left: 0;
   margin-left: -10px;
 }
+.article-page .article-body .random-article-page-box {
+  padding-left: 0;
+  margin-left: 0;
+}
+.article-page .article-body .random-article-page-box .article-page-widget:first-child {
+  margin-left: 0;
+}
+.article-page .article-body .random-article-page-box .article-page-widget:last-child {
+  margin-right: 0;
+}
 .grid-item.articlebox .articlebox article.articleitem.emphasized.featured {
   border-bottom: 0;
 }

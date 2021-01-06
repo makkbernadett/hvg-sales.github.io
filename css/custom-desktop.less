@@ -330,25 +330,13 @@ body:not(.main-page) {
     .cimlap-grid {
         &.articlelist-element-wrap {
             padding-bottom: 20px;
-            // .cimlap-grid-elem {
-            //     .boxheader {
-            //         .info {
-            //             line-height: 26px;
-            //             font-size: 14px;
-            //             font-weight: bold;
-            //             margin-bottom: 0;
-            //             color: #e25900;
-            //             padding-left: 15px;
-            //             padding-top: 6px;
-            //         }
-            //     }
-            // }
         }
     }
 
     .cimlap-tematikus-box .articlelist-element-wrap .articlelist-element:first-child {
         padding-top: 0;
     }
+
     .random-article-page-box {
         justify-content: flex-start;
         padding-left: 30px;
@@ -370,12 +358,22 @@ body:not(.main-page) {
     }
 }
 
-// .article-page {
-//     .random-article-page-box {
-//         padding-left: 0;
-//         margin-left: -10px;
-//     }
-// }
+.article-page {
+    .article-body {
+        .random-article-page-box {
+            padding-left: 0;
+            margin-left: 0;
+            .article-page-widget {
+                &:first-child {
+                    margin-left: 0;
+                }
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}
 
 .grid-item.articlebox .articlebox article.articleitem.emphasized.featured {
     border-bottom: 0;
