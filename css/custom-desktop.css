@@ -395,6 +395,9 @@ body.settings-sepia .site-header-nav .nav-categories .category.group:hover {
 body.settings-sepia .articlebox .articleitem.timeitem:last-of-type {
   border-bottom-color: transparent;
 }
+body.settings-sepia .cimlap-grid .cimlap-grid-elem.elem-380 .articlebox .more:before {
+  border-top-color: #444444;
+}
 @media only screen and (min-device-width: 768px) and (max-device-width: 992px) and (orientation: portrait) {
   .site-header-nav .nav-categories .category-button {
     padding: 5px 4px;
