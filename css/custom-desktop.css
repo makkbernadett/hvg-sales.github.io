@@ -397,6 +397,9 @@ body.settings-sepia .grid-layout .grid-item .articleitem:last-of-type {
 .articlebox .articleitem *:not(.bullet) + .text-holder {
   margin-top: 0;
 }
+.articleitem .image-holder + .text-holder .info {
+  margin-top: 0;
+}
 body.settings-sepia .site-header-nav .nav-categories .category-sub {
   background-color: #333;
 }
