@@ -465,6 +465,20 @@ body:not(.main-page) {
     }
 }
 
+.articlebox .articleitem.smallimage .text-holder .bookmark {
+    top: 0;
+}
+.image-holder {
+    margin-bottom: 10px;
+}
+
+.articlebox .articleitem *:not(.bullet)+.articleholder, 
+.articlebox .articleitem *:not(.bullet)+.image-holder, 
+.articlebox .articleitem *:not(.bullet)+.text-holder {
+    margin-top: 0;
+
+}
+
 // dark mode
 body.settings-sepia {
     .site-header-nav .nav-categories {

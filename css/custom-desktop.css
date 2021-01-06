@@ -386,6 +386,17 @@ body.settings-sepia .grid-layout .grid-item .articleitem:last-of-type {
 .blog-list-box .info time + a.uppercase {
   letter-spacing: 0.5px;
 }
+.articlebox .articleitem.smallimage .text-holder .bookmark {
+  top: 0;
+}
+.image-holder {
+  margin-bottom: 10px;
+}
+.articlebox .articleitem *:not(.bullet) + .articleholder,
+.articlebox .articleitem *:not(.bullet) + .image-holder,
+.articlebox .articleitem *:not(.bullet) + .text-holder {
+  margin-top: 0;
+}
 body.settings-sepia .site-header-nav .nav-categories .category-sub {
   background-color: #333;
 }
