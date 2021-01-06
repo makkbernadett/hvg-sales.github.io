@@ -402,7 +402,6 @@ body.settings-sepia .grid-layout .grid-item .articleitem:last-of-type {
 .image-holder {
   margin-bottom: 10px;
 }
-.articlebox .articleitem *:not(.bullet) + .articleholder,
 .articlebox .articleitem *:not(.bullet) + .image-holder,
 .articlebox .articleitem *:not(.bullet) + .text-holder {
   margin-top: 0;
