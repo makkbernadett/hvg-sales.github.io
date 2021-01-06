@@ -317,12 +317,6 @@ body:not(.main-page) .random-article-box-container .article-box-widget {
   width: 20%;
   margin: 0 10px;
 }
-.article-page .article-body .random-article-page-box,
-.column-page .article-body .random-article-page-box,
-body:not(.main-page) .article-body .random-article-page-box {
-  padding-left: 0;
-  margin-left: -10px;
-}
 .article-page .article-body .random-article-page-box {
   padding-left: 0;
   margin-left: 0;
