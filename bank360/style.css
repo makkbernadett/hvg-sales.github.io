@@ -1175,130 +1175,128 @@ body .container.border:after {
     font-size: 7px;
   }
 }
-@media screen and (max-width: 560px) {
-  .bank360 .calculator #calculator-mobile-wrapper {
-    height: auto;
-    padding: 5px 15px 14px;
-  }
-  .bank360 .calculator #calculator-mobile-wrapper .credit,
-  .bank360 .calculator #calculator-mobile-wrapper .term {
-    float: none;
-    width: 100%;
-  }
-  .bank360 .calculator #calculator-mobile-wrapper .term {
-    margin-top: 11px;
-  }
-  .bank360 .calculator .bank360-refresh .refresh {
-    width: 97.1%;
-  }
-  .bank360 .list-table {
-    margin-top: 27px;
-  }
-  .bank360 .list-table .content {
-    height: 131px;
-    display: block;
-  }
-  .bank360 .list-table .content .promotion {
-    font-size: 11px;
-    left: -17px;
-    top: 29px;
-  }
-  .bank360 .list-table .content div.mobile-upper {
-    display: block;
-    width: 100%;
-  }
-  .bank360 .list-table .content div.logo {
-    float: left;
-    width: 41%;
-    height: 59px;
-    display: inline-block;
-    padding-left: 17px;
-    margin-top: 4px;
-    margin-bottom: 2px;
-    margin-left: 0.5rem;
-  }
-  .bank360 .list-table .content div.marketing-mobile {
-    display: flex;
-    align-items: center;
-    float: right;
-    width: 56%;
-    text-align: left;
-    font-size: 13px;
-    margin-right: 9px;
-    height: 65px;
-    line-height: 13px;
-    border-right: none;
-  }
-  .bank360 .list-table .content div.mobile-lower {
-    display: block;
-    border-top: 1px solid #ebebeb;
-    width: 91.4%;
-    margin: auto;
-  }
-  .bank360 .list-table .content div.data-torlesztoreszlet {
-    float: left;
-    width: 40%;
-    margin-top: 0.5rem;
-  }
-  .bank360 .list-table .content div.data-thm {
-    float: left;
-    width: 28%;
-    border-left: 1px solid #ebebeb;
-    border-right: 1px solid #ebebeb;
-    margin-top: 0.5rem;
-  }
-  .bank360 .list-table .content div.marketing {
-    display: none;
-  }
-  .bank360 .list-table .content div.reszletek {
-    float: left;
-    width: 32%;
-  }
-  .bank360 .list-table .content div.reszletek * {
-    width: 75.83%;
-    margin-top: 19px;
-    margin-left: 16%;
-  }
-  .bank360 .links {
-    width: 95%;
-    margin-right: 14px;
-  }
-  .bank360 .links .legal-link {
-    font-size: 11px;
-    line-height: 11px;
-    max-width: 25%;
-    display: inline-block;
-  }
-  .bank360 .blog {
-    position: relative;
-    right: unset;
-    width: 95.3%;
-    margin: 16px auto 0;
-  }
-  .bank360 .blog .bank360-blog-image {
-    width: 234px;
-    float: left;
-  }
-  .bank360 .blog .bank360-text {
-    float: right;
-    width: calc(100% - 240px);
-    height: 110px;
-    margin: 0 0 0 6px;
-  }
-  .bank360 .blog .bank360-text .bank360-blog-title {
-    font-size: 16px;
-    font-weight: 900;
-    line-height: 1.25;
-  }
-  .bank360 .blog .bank360-text .bank360-blog-summary {
-    font-size: 12px;
-    line-height: 1.33;
-  }
-  .bank360 .blog .more {
-    position: initial;
-    right: 0;
-    bottom: 0;
-  }
+.bank360 .calculator #calculator-mobile-wrapper {
+  height: auto;
+  padding: 5px 15px 14px;
+}
+.bank360 .calculator #calculator-mobile-wrapper .credit,
+.bank360 .calculator #calculator-mobile-wrapper .term {
+  float: none;
+  width: 100%;
+}
+.bank360 .calculator #calculator-mobile-wrapper .term {
+  margin-top: 11px;
+}
+.bank360 .calculator .bank360-refresh .refresh {
+  width: 97.1%;
+}
+.bank360 .list-table {
+  margin-top: 27px;
+}
+.bank360 .list-table .content {
+  height: 131px;
+  display: block;
+}
+.bank360 .list-table .content .promotion {
+  font-size: 11px;
+  left: -17px;
+  top: 29px;
+}
+.bank360 .list-table .content div.mobile-upper {
+  display: block;
+  width: 100%;
+}
+.bank360 .list-table .content div.logo {
+  float: left;
+  width: 41%;
+  height: 59px;
+  display: inline-block;
+  padding-left: 17px;
+  margin-top: 4px;
+  margin-bottom: 2px;
+  margin-left: 0.5rem;
+}
+.bank360 .list-table .content div.marketing-mobile {
+  display: flex;
+  align-items: center;
+  float: right;
+  width: 56%;
+  text-align: left;
+  font-size: 13px;
+  margin-right: 9px;
+  height: 65px;
+  line-height: 13px;
+  border-right: none;
+}
+.bank360 .list-table .content div.mobile-lower {
+  display: block;
+  border-top: 1px solid #ebebeb;
+  width: 91.4%;
+  margin: auto;
+}
+.bank360 .list-table .content div.data-torlesztoreszlet {
+  float: left;
+  width: 40%;
+  margin-top: 0.5rem;
+}
+.bank360 .list-table .content div.data-thm {
+  float: left;
+  width: 28%;
+  border-left: 1px solid #ebebeb;
+  border-right: 1px solid #ebebeb;
+  margin-top: 0.5rem;
+}
+.bank360 .list-table .content div.marketing {
+  display: none;
+}
+.bank360 .list-table .content div.reszletek {
+  float: left;
+  width: 32%;
+}
+.bank360 .list-table .content div.reszletek * {
+  width: 75.83%;
+  margin-top: 19px;
+  margin-left: 16%;
+}
+.bank360 .links {
+  width: 95%;
+  margin-right: 14px;
+}
+.bank360 .links .legal-link {
+  font-size: 11px;
+  line-height: 11px;
+  max-width: 25%;
+  display: inline-block;
+}
+.bank360 .blog {
+  position: relative;
+  right: unset;
+  width: 95.3%;
+  margin: 16px auto 0;
+}
+.bank360 .blog .bank360-blog-image {
+  width: 234px;
+  float: left;
+}
+.bank360 .blog .bank360-text {
+  float: right;
+  width: calc(100% - 240px);
+  height: 110px;
+  margin: 0 0 0 6px;
+}
+.bank360 .blog .bank360-text .bank360-blog-title {
+  font-size: 16px;
+  font-weight: 900;
+  line-height: 1.25;
+}
+.bank360 .blog .bank360-text .bank360-blog-summary {
+  font-size: 12px;
+  line-height: 1.33;
+}
+.bank360 .blog .more {
+  position: initial;
+  right: 0;
+  bottom: 0;
 }
 @media screen and (max-width: 480px) {
   .bank360 .blog {
