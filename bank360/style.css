@@ -1298,23 +1298,21 @@ body .container.border:after {
   right: 0;
   bottom: 0;
 }
-@media screen and (max-width: 480px) {
-  .bank360 .blog {
-    display: block;
-    width: 97.38%;
-    padding-bottom: 16px;
-  }
-  .bank360 .blog .bank360-blog-image {
-    float: none;
-    width: 100%;
-    height: 9rem;
-  }
-  .bank360 .blog .bank360-text {
-    float: none;
-    width: 100%;
-  }
-  .bank360 .blog .more {
-    bottom: 13px;
-    margin-right: 9px;
-  }
+.bank360 .blog {
+  display: block;
+  width: 97.38%;
+  padding-bottom: 16px;
+}
+.bank360 .blog .bank360-blog-image {
+  float: none;
+  width: 100%;
+  height: 9rem;
+}
+.bank360 .blog .bank360-text {
+  float: none;
+  width: 100%;
+}
+.bank360 .blog .more {
+  bottom: 13px;
+  margin-right: 9px;
 }
