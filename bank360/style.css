@@ -864,7 +864,7 @@ body .container.border:after {
     transform: rotate(360deg);
   }
 }
-@media screen and (min-width: 970px) and (max-width: 1116px) {
+@media screen and (min-width: 970px) {
   .bank360 .calculator {
     width: 20.91%;
     padding: 0 25px 0 12px;
@@ -895,7 +895,7 @@ body .container.border:after {
     letter-spacing: -1px;
   }
 }
-@media screen and (max-width: 969px) {
+@media screen and (max-width: 969px) and (min-width: 970px) {
   .bank360 {
     height: auto;
     border: none;
