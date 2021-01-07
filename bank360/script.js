@@ -89,7 +89,7 @@ function setControllers() {
         $('.bank360 .calculator select').each(function () {
             let $controller = $(this);
             let type = $controller.prop('class').split(/\s+/)[0];
-            $controller.dropdown({mobile: true});
+            //$controller.dropdown({mobile: true});
             calculatorSetting[type] = FillRangeSelect($controller, config[type + '_min'], config[type + '_max'], config[type + '_step'], config[type + '_default']);
         });
     } else {
