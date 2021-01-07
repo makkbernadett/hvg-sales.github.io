@@ -865,35 +865,6 @@ body .container.border:after {
   }
 }
 @media screen and (min-width: 970px) {
-  .bank360 .calculator {
-    width: 20.91%;
-    padding: 0 25px 0 12px;
-  }
-  .bank360 .calculator .bank360-logo img {
-    width: 100%;
-  }
-  .bank360 .list-table {
-    width: 49.29%;
-  }
-  .bank360 .list-table .content {
-    width: 32.08%;
-  }
-  .bank360 .list-table .content:not(.last-content) {
-    margin-right: 1.43%;
-  }
-  .bank360 .list-table .content div.logo img {
-    max-width: 73%;
-  }
-  .bank360 .links {
-    width: 48.5%;
-  }
-  .bank360 .blog {
-    width: 24.35%;
-    margin-right: 7px;
-  }
-  .bank360 .blog .more a {
-    letter-spacing: -1px;
-  }
 }
 @media screen and (max-width: 969px) and (min-width: 970px) {
   .bank360 {
