@@ -3,48 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>HVG.hu címlap</title>
-    <link rel="stylesheet" href="https://bank360.hu/bank360/partner.css" type="text/css">
+    <title>HVG címlap</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
 </head>
-<body class="wideleft">
+<body>
 
-<!-- Beillesztendo html resz -->
-<section class="bank360 max350 bank360-hvg-widget">
-    <div class="header">
-        <div class="title">
-            BANK360 SZEMÉLYI KÖLCSÖN AJÁNLATOK
-        </div>
-    </div>
+<!-- Beillesztendő html rész -->
+<section class="bank360 container border">
+    <div id="mobile-title">Bank360<br>Személyi kölcsön kalkulátor</div>
     <div class="calculator">
         <div class="bank360-logo">
-            <a href="https://bank360.hu/" target="_blank"><img src="https://bank360.hu/bank360/c/bank360hu.svg" alt="bank360.hu"></a>
-            <span class="desktop-title">Személyi kölcsön kalkulátor</span>
+            <a href="https://bank360.hu/" target="_blank"><img src="assets/images/bank360/bank360hu.svg" alt="bank360.hu"></a>
         </div>
-        <div class="input-wrapper">
-            <div id="calculator-mobile-wrapper" class="clear_float">
-                <span class="mobile-title">Személyi kölcsön kalkulátor</span>
-                <div class="credit">
-                    <span class="title">Hitel összege (Ft)</span>
-                    <div class="input">
-                        <div class="button prev" data-direction="prev" unselectable="on" onselectstart="return false;" onmousedown="return false;">-</div><input class="credit" type="text" name="credit" maxlength="10"><select class="credit"></select><div class="button next" data-direction="next" unselectable="on" onselectstart="return false;" onmousedown="return false;"><span>+</span></div>
-                    </div>
+        <div id="calculator-mobile-wrapper" class="clear_float">
+            <div class="credit">
+                <span class="title">Hitel összege (Ft)</span>
+                <div class="input">
+                    <div class="button prev" data-direction="prev" unselectable="on" onselectstart="return false;" onmousedown="return false;">-</div><input class="credit" type="text" name="credit" maxlength="10"><select class="credit"></select><div class="button next" data-direction="next" unselectable="on" onselectstart="return false;" onmousedown="return false;">+</div>
                 </div>
+                <div class="min-max"><div class="min"></div><div class="max"></div></div>
+            </div>
 
-                <div class="term">
-                    <span class="title">Futamidő (<span class="term-unit"></span>)</span>
-                    <div class="input">
-                        <div class="button prev" data-direction="prev" unselectable="on" onselectstart="return false;" onmousedown="return false;">-</div><input class="term" type="text" name="term" maxlength="3"><select class="term"></select><div class="button next" data-direction="next" unselectable="on" onselectstart="return false;" onmousedown="return false;"><span>+</span></div>
-                    </div>
+            <div class="term">
+                <span class="title">Futamidő (<span class="term-unit"></span>)</span>
+                <div class="input">
+                    <div class="button prev" data-direction="prev" unselectable="on" onselectstart="return false;" onmousedown="return false;">-</div><input class="term" type="text" name="term" maxlength="3"><select class="term"></select><div class="button next" data-direction="next" unselectable="on" onselectstart="return false;" onmousedown="return false;">+</div>
                 </div>
+                <div class="min-max"><div class="min"></div><div class="max"></div></div>
             </div>
         </div>
+        <div class="bank360-refresh">
+            <button class="refresh">Kalkuláció frissítése</button>
+        </div>
     </div>
-      <a href="#" class="more-button"><span>Ajánlatok megtekintése</span></a>
+    <div id="subtitle">Bank360 Személyi kölcsön kalkulátor</div>
     <div class="list-table"></div>
     <div class="links">
-        <a href="https://bank360.hu/jogi-informaciok" target="_blank" class="legal-info">Bank360 Jogi információ</a>
-        <a href="https://bank360.hvg.hu/szemelyi-kolcson" target="_blank" class="more">További hitelajánlatok</a>
+        <a href="https://bank360.hu/jogi-informaciok" target="_blank" class="legal-link">Bank360 Jogi információ</a>
+        <div class="list-table-more more"><a href="https://bank360.hu/szemelyi-kolcson/" target="_blank">További személyi kölcsön ajánlatok</a></div>
     </div>
+    <div class="blog clear_float"></div>
     <div class="list-loader-box">
         <div class="list-loader-bg"></div>
         <div class="list-loader">
@@ -54,9 +52,9 @@
         </div>
     </div>
 </section>
-<!-- Beillesztendo html resz vege -->
 
-<script>var partner = 'hvg';</script>
-<script type="application/javascript" src="https://bank360.hu/bank360/partner.js"></script>
+<script>var partner = 'hvg_big';</script>
+<script type="application/javascript" src="script.js"></script>
+<!-- Beillesztendő html rész vége -->
 </body>
 </html>
