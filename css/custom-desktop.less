@@ -484,8 +484,13 @@ body:not(.main-page) {
     margin-bottom: 0;
 }
 
-.L-color_button.grey.gallery {
-    padding-bottom: 12px;
+.L-color_button.grey {
+    &:hover {
+        background: #5e5e5e;
+    }
+    &.gallery {
+        padding-bottom: 12px;
+    }
 }
 
 // dark mode
