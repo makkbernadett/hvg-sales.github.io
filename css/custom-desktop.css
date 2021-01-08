@@ -406,11 +406,11 @@ body.settings-sepia .grid-layout .grid-item .articleitem:last-of-type {
 .article-info.byline .info {
   margin-bottom: 0;
 }
-.L-color_button.grey:hover {
-  background: #5e5e5e;
-}
 .L-color_button.grey.gallery {
   padding-bottom: 12px;
+}
+.article-content .article-info .L-color_button.grey:hover {
+  background: #5e5e5e;
 }
 body.settings-sepia .site-header-nav .nav-categories .category-sub {
   background-color: #333;
