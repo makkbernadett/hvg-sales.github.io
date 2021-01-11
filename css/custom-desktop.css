@@ -327,6 +327,9 @@ body:not(.main-page) .random-article-box-container .article-box-widget {
 .article-page .article-body .random-article-page-box .article-page-widget:last-child {
   margin-right: 0;
 }
+.article-page .article-body .random-article-page-box .article-page-widget .bch .bch-title {
+  background: transparent;
+}
 .article-page .article-body .random-article-page-box .article-page-widget.bch-element .bch.posted-text-area .bch-icon {
   width: 25px;
   height: 25px;
