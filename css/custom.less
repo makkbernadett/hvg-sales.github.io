@@ -219,14 +219,19 @@ body {
 .main-tag-container {
     .main-tag {
         .main-tag-follow {
-            padding: 5px 10px 7px 11px;
+            padding: 0 10px 0 11px;
+            height: 30px;
+            line-height: 18px;
         }
         .main-tag-link {
             padding: 7px 10px 8px;
             float: left;
         }
-        &.tag-active .main-tag-follow {
-            border-left: 0!important;
+        &.tag-active {
+            .main-tag-link {
+                //width: 101%; 
+                margin-right: -1px;// android pixel bug
+            }
         }
     }
 }

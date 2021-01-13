@@ -179,14 +179,16 @@ body.read-mode .grid-view .grid-article-blog .image-holder a.no-image {
 }
 /* tag follow */
 .main-tag-container .main-tag .main-tag-follow {
-  padding: 5px 10px 7px 11px;
+  padding: 0 10px 0 11px;
+  height: 30px;
+  line-height: 18px;
 }
 .main-tag-container .main-tag .main-tag-link {
   padding: 7px 10px 8px;
   float: left;
 }
-.main-tag-container .main-tag.tag-active .main-tag-follow {
-  border-left: 0!important;
+.main-tag-container .main-tag.tag-active .main-tag-link {
+  margin-right: -1px;
 }
 /* google adSense */
 .adsense-dfp {
