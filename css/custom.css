@@ -177,6 +177,10 @@ body.font-size .site-header-sponsor a.sponsor-link {
 body.read-mode .grid-view .grid-article-blog .image-holder a.no-image {
   background-color: #313131;
 }
+/* tag follow */
+.main-tag-container .main-tag .main-tag-follow {
+  padding: 5px 10px 7px 11px;
+}
 /* google adSense */
 .adsense-dfp {
   margin: 20px 0 5px;
