@@ -185,6 +185,9 @@ body.read-mode .grid-view .grid-article-blog .image-holder a.no-image {
   padding: 7px 10px 8px;
   float: left;
 }
+.main-tag-container .main-tag.tag-active .main-tag-follow {
+  border-left: 0!important;
+}
 /* google adSense */
 .adsense-dfp {
   margin: 20px 0 5px;
