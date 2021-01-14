@@ -194,6 +194,11 @@ body.read-mode .grid-view .grid-article-blog .image-holder a.no-image {
 .user-profile-page .interest-page-header + div > h3 {
   margin-top: 10px;
 }
+@media screen and (max-width: 360px) {
+  .user-profile-page .sidebar label.button-filter {
+    padding: 6px;
+  }
+}
 body.read-mode .user-profile-page .author-page-header {
   border-bottom: 0;
 }
