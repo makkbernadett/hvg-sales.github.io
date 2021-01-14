@@ -197,7 +197,7 @@ body.read-mode .grid-view .grid-article-blog .image-holder a.no-image {
   }
 }
 body.android .sidebar.user-profile-sidebar {
-  height: calc(100vh - 60px);
+  height: 100%;
 }
 .user-profile-page .interest-page-header + div > h3 {
   margin-top: 10px;
