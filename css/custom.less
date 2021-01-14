@@ -242,11 +242,15 @@ body {
     .interest-page-header + div > h3 {
         margin-top: 10px;
     }
-    .sidebar label.button-filter {
-        @media screen and (max-width: 360px) {
-            padding: 6px;
+    .sidebar {
+        label.button-filter {
+            @media screen and (max-width: 360px) {
+                padding: 6px;
+            }
         }
-
+        .sidebar {
+            min-height: 100vh;
+        }
     }
 }
 body.read-mode .user-profile-page {

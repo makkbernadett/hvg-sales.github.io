@@ -199,6 +199,9 @@ body.read-mode .grid-view .grid-article-blog .image-holder a.no-image {
     padding: 6px;
   }
 }
+.user-profile-page .sidebar .sidebar {
+  min-height: 100vh;
+}
 body.read-mode .user-profile-page .author-page-header {
   border-bottom: 0;
 }
