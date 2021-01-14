@@ -191,16 +191,16 @@ body.read-mode .grid-view .grid-article-blog .image-holder a.no-image {
   margin-right: -1px;
 }
 /* user profile page */
-.user-profile-page .interest-page-header + div > h3 {
-  margin-top: 10px;
-}
-.user-profile-page .sidebar {
-  min-height: 100vh;
-}
 @media screen and (max-width: 360px) {
-  .user-profile-page .sidebar label.button-filter {
+  .sidebar label.button-filter {
     padding: 6px;
   }
+}
+.sidebar.user-profile-sidebar {
+  min-height: 100vh;
+}
+.user-profile-page .interest-page-header + div > h3 {
+  margin-top: 10px;
 }
 body.read-mode .user-profile-page .author-page-header {
   border-bottom: 0;

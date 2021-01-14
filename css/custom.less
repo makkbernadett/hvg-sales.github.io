@@ -238,17 +238,19 @@ body {
 }
 
 /* user profile page */
+.sidebar {
+    label.button-filter {
+        @media screen and (max-width: 360px) {
+            padding: 6px;
+        }
+    }
+    &.user-profile-sidebar {
+        min-height: 100vh;
+    }
+}
 .user-profile-page {
     .interest-page-header + div > h3 {
         margin-top: 10px;
-    }
-    .sidebar {
-        label.button-filter {
-            @media screen and (max-width: 360px) {
-                padding: 6px;
-            }
-        }
-        min-height: 100vh;
     }
 }
 body.read-mode .user-profile-page {
