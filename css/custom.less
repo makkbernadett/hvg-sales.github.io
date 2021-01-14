@@ -244,8 +244,13 @@ body {
             padding: 6px;
         }
     }
-    &.user-profile-sidebar {
-        min-height: 100vh;
+}
+
+body.android {
+    .sidebar {
+        &.user-profile-sidebar {
+            min-height: calc(~"100vh - 60px");
+        }
     }
 }
 .user-profile-page {
