@@ -190,6 +190,10 @@ body.read-mode .grid-view .grid-article-blog .image-holder a.no-image {
 .main-tag-container .main-tag.tag-active .main-tag-link {
   margin-right: -1px;
 }
+/* user profile page */
+body.read-mode .user-profile-page .author-page-header {
+  border-bottom: 0;
+}
 /* google adSense */
 .adsense-dfp {
   margin: 20px 0 5px;
