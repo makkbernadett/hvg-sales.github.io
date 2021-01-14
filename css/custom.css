@@ -196,7 +196,7 @@ body.read-mode .grid-view .grid-article-blog .image-holder a.no-image {
     padding: 6px;
   }
 }
-body.android .sidebar.user-profile-sidebar {
+.sidebar.user-profile-sidebar {
   height: 100%;
 }
 .user-profile-page .interest-page-header + div > h3 {
