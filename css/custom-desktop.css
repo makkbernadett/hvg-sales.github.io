@@ -213,6 +213,10 @@ body.settings-sepia .cimlap-grid .cimlap-grid-elem.elem-505 .boxheader:first-of-
 .cimlap-grid .cimlap-grid-elem.elem-380 .articlelist-element-wrap .articlelist-element:last-of-type {
   padding-bottom: 0;
 }
+.cimlap-grid .cimlap-grid-elem.elem-380 .articlelist-element-wrap > .boxheader-nyuzsi .articlelist-element {
+  border-bottom: 1px solid #e4e4e4;
+  padding: 20px 0;
+}
 .cimlap-grid .cimlap-grid-elem.elem-380 .articlebox .more {
   margin-top: 40px;
 }
