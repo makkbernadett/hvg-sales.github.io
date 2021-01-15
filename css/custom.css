@@ -190,6 +190,12 @@ body.read-mode .grid-view .grid-article-blog .image-holder a.no-image {
 .main-tag-container .main-tag.tag-active .main-tag-link {
   margin-right: -1px;
 }
+/* nyüzsi fejléc */
+@media screen and (min-width: 320px) {
+  .boxheader-nyuzsi header.boxheader {
+    width: calc(100% - 40px);
+  }
+}
 /* user profile page */
 @media screen and (max-width: 360px) {
   .sidebar label.button-filter {
