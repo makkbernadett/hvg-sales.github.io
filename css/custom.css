@@ -368,6 +368,9 @@ body.parallax-ad .grid-article + div[id^="zone"].goAdverticum.goa-embedded > div
   padding-top: 20px;
   background: #fff;
 }
+body.parallax-ad .article-view-wrap .lead-article h1 {
+  padding-bottom: 10px;
+}
 @media screen and (max-width: 767px) {
   body.parallax-ad .article-view {
     padding: 0;
