@@ -196,6 +196,11 @@ body.read-mode .grid-view .grid-article-blog .image-holder a.no-image {
     width: calc(100% - 40px);
   }
 }
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .boxheader-nyuzsi header.boxheader {
+    width: calc(100% - 60px);
+  }
+}
 /* user profile page */
 @media screen and (max-width: 360px) {
   .sidebar label.button-filter {
