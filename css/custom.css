@@ -197,6 +197,10 @@ body.read-mode .grid-view .grid-article-blog .image-holder a.no-image {
   text-align: left;
   line-height: normal;
 }
+.main-tag-container .main-tag .interest::before {
+  top: 50%;
+  transform: translateY(-50%);
+}
 /* nyüzsi fejléc */
 @media screen and (min-width: 320px) {
   .boxheader-nyuzsi header.boxheader {
