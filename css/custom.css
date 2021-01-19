@@ -178,9 +178,12 @@ body.read-mode .grid-view .grid-article-blog .image-holder a.no-image {
   background-color: #313131;
 }
 /* tag follow */
+.main-tag-container .main-tag {
+  display: flex;
+}
 .main-tag-container .main-tag .main-tag-follow {
   padding: 0 10px 0 11px;
-  height: 30px;
+  height: 100%;
   line-height: 18px;
 }
 .main-tag-container .main-tag .main-tag-link {
@@ -189,6 +192,10 @@ body.read-mode .grid-view .grid-article-blog .image-holder a.no-image {
 }
 .main-tag-container .main-tag.tag-active .main-tag-link {
   margin-right: -1px;
+}
+.main-tag-container .main-tag .interest {
+  text-align: left;
+  line-height: normal;
 }
 /* nyüzsi fejléc */
 @media screen and (min-width: 320px) {
