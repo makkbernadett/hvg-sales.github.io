@@ -1,8 +1,8 @@
 //customcss
-html, 
-body {
-    -webkit-tap-highlight-color: rgba(255,102,0,0.2);
-}
+// html, 
+// body {
+//     -webkit-tap-highlight-color: rgba(255,102,0,0.2);
+// }
 button, .button, input[type=button] {
     background: #e25900;
 }
@@ -181,30 +181,6 @@ body {
             a {
                 background-position: 50% 50%;
                 background-size: 120%;
-                @media screen and (min-width: 768px) {
-                    background-position: 50% 50%;
-                    background-size: 120%;
-                }
-                &.no-image {
-                    @media screen and (min-width: 768px) {
-                        background-image: url("https://m.hvg.hu/Content/hvgmobile/i/hvg-hu-logo.svg") !important;
-						background-size: 40%;
-						background-position: center center;
-						background-repeat: no-repeat;
-						background-color: #bbbfc0;
-						position: absolute;
-						top: 0;
-						left: 0;
-						bottom: 0;
-						right: 0;
-						width: 100%;
-						display: block;
-						border: 0;
-						outline: none;
-						box-shadow: none;
-                        height: 100%;
-                    }
-                }
             }
             body.read-mode & {
                 a.no-image {
@@ -269,16 +245,6 @@ body {
         height: 100%;
     }
 }
-
-// body.android {
-//     .sidebar {
-//         &.user-profile-sidebar {
-//             //min-height: calc(~"100vh - 60px");
-//             //height: calc(~"100vh - 60px");
-//             height: 100%;
-//         }
-//     }
-// }
 .user-profile-page {
     .interest-page-header + div > h3 {
         margin-top: 10px;
