@@ -108,7 +108,7 @@
     <Company></Company>
     <Description></Description>
     <Photo></Photo>
-    <IsActive>1</IsActive>
+    <IsActive>0</IsActive>
   </Expert>
   <Expert>
     <Id>f9f748b2-07c7-4c9a-8ffb-ca1dd1fcdf42</Id>
@@ -603,7 +603,7 @@
     <Company>Dr. Nagy András Zoltán Ügyvédi Iroda</Company>
     <Description></Description>
     <Photo></Photo>
-    <IsActive>1</IsActive>
+    <IsActive>0</IsActive>
   </Expert>
   <Expert>
     <Id>b7e326b8-5bab-4396-a1f9-9e3a47511998</Id>
