@@ -2,6 +2,9 @@
   .placeholder-ad a.caption {
     color: #8f8f8f !important;
   }
+  .share-widget-container .info {
+    text-align: left;
+  }
   .read-mode .main-tag-container .main-tag.tag-active .interest {
     background: #e25900;
   }
