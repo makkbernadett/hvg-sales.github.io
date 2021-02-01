@@ -1,4 +1,7 @@
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .placeholder-ad a.caption {
+    color: #8f8f8f !important;
+  }
   .read-mode .main-tag-container .main-tag.tag-active .interest {
     background: #e25900;
   }
