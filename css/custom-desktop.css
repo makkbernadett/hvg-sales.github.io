@@ -442,6 +442,9 @@ body.settings-sepia .cimlap-grid .cimlap-grid-elem.elem-380 .articlebox .more:be
 body.settings-sepia .hvg-aszf-content {
   background-color: transparent;
 }
+body.settings-sepia .hvg-aszf-content .panelgap_aszf {
+  margin-right: 0;
+}
 body.settings-sepia .hvg-aszf-content a.aszf-top {
   background-size: 0% 1px;
   font-size: 14px;
@@ -466,12 +469,16 @@ body.settings-sepia .hvg-aszf-content .aszf-content-left-box {
 }
 body.settings-sepia .hvg-aszf-content .aszf-content-right-box {
   background-color: transparent;
+  border-left: 10px solid #333;
+  padding-left: 30px;
+  width: 800px;
 }
 body.settings-sepia .hvg-aszf-content .aszf-content-right-box .article-content span {
   color: unset;
 }
 body.settings-sepia .hvg-aszf-content .aszf-scroll-to-top-right {
   background-color: transparent;
+  width: 60px;
 }
 @media only screen and (min-device-width: 768px) and (max-device-width: 992px) and (orientation: portrait) {
   .site-header-nav .nav-categories .category-button {
