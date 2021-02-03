@@ -424,6 +424,37 @@ body.settings-sepia .grid-layout .grid-item .articleitem:last-of-type {
 .article-content .article-info .L-color_button.grey:hover {
   background: #5e5e5e;
 }
+.hvg-aszf-content .aszf-button-scroll {
+  width: 40px;
+  padding: 10px;
+  border-radius: 2px;
+}
+.hvg-aszf-content .aszf-button-scroll img {
+  width: 15px;
+}
+.hvg-aszf-content a {
+  color: #12b6ec;
+}
+.hvg-aszf-content a a:hover {
+  transition: background-size 0.2s ease;
+}
+.hvg-aszf-content a.aszf-top {
+  background-size: 0% 1px;
+  font-size: 14px;
+  color: #e25900;
+  font-weight: normal;
+  transition: background-size 0.2s ease;
+}
+.hvg-aszf-content a.aszf-top:hover {
+  background-size: 100% 1px;
+}
+.hvg-aszf-content .aszf-scroll-to-top-right {
+  width: 60px;
+}
+.hvg-aszf-content .aszf-content-right-box {
+  padding-left: 30px;
+  width: 800px;
+}
 body.settings-sepia .site-header-nav .nav-categories .category-sub {
   background-color: #333;
 }
@@ -445,24 +476,8 @@ body.settings-sepia .hvg-aszf-content {
 body.settings-sepia .hvg-aszf-content .panelgap_aszf {
   margin-right: 0;
 }
-body.settings-sepia .hvg-aszf-content a.aszf-top {
-  background-size: 0% 1px;
-  font-size: 14px;
-  color: #e25900;
-  font-weight: normal;
-  transition: background-size 0.2s ease;
-}
-body.settings-sepia .hvg-aszf-content a.aszf-top:hover {
-  background-size: 100% 1px;
-}
 body.settings-sepia .hvg-aszf-content .aszf-button-scroll {
   background-color: transparent;
-  width: 40px;
-  padding: 10px;
-  border-radius: 2px;
-}
-body.settings-sepia .hvg-aszf-content .aszf-button-scroll img {
-  width: 15px;
 }
 body.settings-sepia .hvg-aszf-content .aszf-content-left-box {
   background-color: transparent;
@@ -470,15 +485,12 @@ body.settings-sepia .hvg-aszf-content .aszf-content-left-box {
 body.settings-sepia .hvg-aszf-content .aszf-content-right-box {
   background-color: transparent;
   border-left: 10px solid #111;
-  padding-left: 30px;
-  width: 800px;
 }
 body.settings-sepia .hvg-aszf-content .aszf-content-right-box .article-content span {
   color: unset;
 }
 body.settings-sepia .hvg-aszf-content .aszf-scroll-to-top-right {
   background-color: transparent;
-  width: 60px;
 }
 @media only screen and (min-device-width: 768px) and (max-device-width: 992px) and (orientation: portrait) {
   .site-header-nav .nav-categories .category-button {
