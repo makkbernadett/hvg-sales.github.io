@@ -206,6 +206,13 @@ body.read-mode .grid-view .grid-article-blog .image-holder a.no-image {
   padding: 20px;
   box-shadow: none;
 }
+.aszf-container .scroll-to-top-aszf-mobile {
+  background-color: #222;
+  width: 40px;
+  padding: 10px;
+  border-radius: 2px;
+  display: none;
+}
 .aszf-container hr {
   height: 1px;
 }
