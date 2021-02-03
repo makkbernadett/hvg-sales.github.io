@@ -454,6 +454,12 @@ body.settings-sepia .hvg-aszf-content a.aszf-top:hover {
 }
 body.settings-sepia .hvg-aszf-content .aszf-button-scroll {
   background-color: transparent;
+  width: 40px;
+  padding: 10px;
+  border-radius: 2px;
+}
+body.settings-sepia .hvg-aszf-content .aszf-button-scroll img {
+  width: 15px;
 }
 body.settings-sepia .hvg-aszf-content .aszf-content-left-box {
   background-color: transparent;
