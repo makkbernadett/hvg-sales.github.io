@@ -439,6 +439,33 @@ body.settings-sepia .articlebox .more:hover:after {
 body.settings-sepia .cimlap-grid .cimlap-grid-elem.elem-380 .articlebox .more:before {
   border-top-color: #444444;
 }
+body.settings-sepia .hvg-aszf-content {
+  background-color: transparent;
+}
+body.settings-sepia .hvg-aszf-content a.aszf-top {
+  background-size: 0% 1px;
+  font-size: 14px;
+  color: #e25900;
+  font-weight: normal;
+}
+body.settings-sepia .hvg-aszf-content a.aszf-top:hover {
+  background-size: 100% 1px;
+}
+body.settings-sepia .hvg-aszf-content .aszf-button-scroll {
+  background-color: transparent;
+}
+body.settings-sepia .hvg-aszf-content .aszf-content-left-box {
+  background-color: transparent;
+}
+body.settings-sepia .hvg-aszf-content .aszf-content-right-box {
+  background-color: transparent;
+}
+body.settings-sepia .hvg-aszf-content .aszf-content-right-box .article-content span {
+  color: unset;
+}
+body.settings-sepia .hvg-aszf-content .aszf-scroll-to-top-right {
+  background-color: transparent;
+}
 @media only screen and (min-device-width: 768px) and (max-device-width: 992px) and (orientation: portrait) {
   .site-header-nav .nav-categories .category-button {
     padding: 5px 4px;
