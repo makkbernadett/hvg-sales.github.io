@@ -5,6 +5,11 @@
 // }
 button, .button, input[type=button] {
     background: #e25900;
+/* aszf */
+
+    &.accordion-mobile-aszf {
+        background: transparent;
+    }
 }
 
 .adtype-tagbox {
@@ -250,9 +255,33 @@ body {
         margin-top: 10px;
     }
 }
-body.read-mode .user-profile-page {
-    .author-page-header {
-        border-bottom: 0;
+body.read-mode {
+    .user-profile-page {
+        .author-page-header {
+            border-bottom: 0;
+        }
+    }
+
+    button.accordion-mobile-aszf {
+        background: #2f2f2f !important;
+
+        &.active {
+            background: #e25900!important;
+        }
+    }
+    .aszf-container {
+        background: transparent;
+        padding: 20px;
+        box-shadow: none;
+        hr {
+            height: 1px;
+        }
+        .panel-content {
+            background-color: #222;
+        } 
+        .scroll-to-top-aszf-mobile {
+            background-color: transparent;
+        }
     }
 }
 
