@@ -447,6 +447,7 @@ body.settings-sepia .hvg-aszf-content a.aszf-top {
   font-size: 14px;
   color: #e25900;
   font-weight: normal;
+  transition: background-size 0.2s ease;
 }
 body.settings-sepia .hvg-aszf-content a.aszf-top:hover {
   background-size: 100% 1px;
