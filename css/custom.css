@@ -9,6 +9,13 @@ button.accordion-mobile-aszf,
 input[type=button].accordion-mobile-aszf {
   background: transparent;
 }
+/* dark mode sponsor */
+.site-header-sponsor {
+  display: none;
+}
+.layer-holder .tab-content iframe#btn-dark-mode {
+  display: none;
+}
 @media screen and (min-width: 768px) {
   .adtype-tagbox .articlebox .articlebox .articleitem {
     padding: 20px;
@@ -125,9 +132,6 @@ body.read-mode .m-breadcrumb {
 }
 body.font-size .font-settings .info {
   font-size: 12px;
-}
-body.font-size .site-header-sponsor a.sponsor-link {
-  font-size: 14px;
 }
 .font-settings {
   width: 100%;
