@@ -7,18 +7,8 @@ body {
         &.hvg-mobile-admin-ad {
             .hvg {
                 .scroller {
-                    .lead-article {
-                        h1+p, h2+p {
-                            display: none;
-                        }
-                    }
                     .grid-view {
                         div[data-bind*="with"] {
-                            width: 100%;
-                        }
-                        .row {
-                            display: flex;
-                            flex-wrap: wrap;
                             width: 100%;
                         }
                         .grid-article {
@@ -40,11 +30,6 @@ body {
             .hvg {
                 .scroller {
                     .grid-view {
-                        .row {
-                            display: flex;
-                            flex-wrap: wrap;
-                            width: 100%;
-                        }
                         .grid-article {
                             width: 33.3333%;
                             &:only-child {
@@ -70,9 +55,22 @@ body {
             }
         }
 
-        &.hvg-mobile-admin-ad, &.hvg-mobile-admin-page-layout {
+        &.hvg-mobile-admin-ad, 
+        &.hvg-mobile-admin-page-layout {
             .hvg {
                 .scroller {
+                    .grid-view {
+                        .row {
+                            display: flex;
+                            flex-wrap: wrap;
+                            width: 100%;
+                        }
+                    }
+                    .lead-article {
+                        h1+p, h2+p {
+                            display: none;
+                        }
+                    }
                     // blog cage header
                     .boxheader.blog-header {
                         &:before {
