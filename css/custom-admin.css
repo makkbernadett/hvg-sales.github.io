@@ -20,6 +20,7 @@ body.cmsadmin.hvg-mobile-admin-ad .hvg .scroller .grid-view .grid-article {
 }
 body.cmsadmin.hvg-mobile-admin-ad .hvg .scroller .grid-view .grid-article.container-adzone {
   display: block;
+  width: 100%;
 }
 body.cmsadmin.hvg-mobile-admin-ad .hvg .scroller .grid-view .grid-article.full-image-article-box {
   display: block;
