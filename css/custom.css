@@ -75,9 +75,12 @@ input[type=button].accordion-mobile-aszf {
     max-width: 690px;
   }
 }
+body.article-page .main-tag-container {
+  padding-bottom: 20px;
+}
 @media screen and (min-width: 768px) {
   body.article-page .main-tag-container {
-    padding: 20px 0 0 0;
+    padding: 20px 0;
   }
 }
 @media screen and (min-width: 992px) {
@@ -88,6 +91,10 @@ input[type=button].accordion-mobile-aszf {
 }
 body.article-page .article-content p {
   clear: both;
+}
+body.article-page .article-content p.extract,
+body.article-page .article-content h6.extract {
+  padding-top: 0;
 }
 body:not(.article-page) .main-tag-container {
   margin: 0;
