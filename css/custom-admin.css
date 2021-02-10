@@ -7,6 +7,10 @@ body.cmsadmin {
 body.cmsadmin .hvg .body .perspective-wrapper .container .wrapper .cimlap-konyvajanlo .actions {
   min-height: unset;
 }
+body.cmsadmin.hvg-mobile-admin-ad .hvg .scroller .grid-view {
+  margin: 0;
+  max-width: 100%;
+}
 body.cmsadmin.hvg-mobile-admin-ad .hvg .scroller .grid-view div[data-bind*="with"] {
   width: 100%;
 }
@@ -34,7 +38,7 @@ body.cmsadmin.hvg-mobile-admin-ad .hvg .scroller .list-view {
   width: 100%;
   max-width: 100%;
 }
-body.cmsadmin.hvg-mobile-admin-ad .hvg .scroller .lead-article.column-lead.lead-mobile {
+body.cmsadmin.hvg-mobile-admin-ad .hvg .scroller .lead-article {
   max-width: 100%;
 }
 body.cmsadmin.hvg-mobile-admin-ad .adtype-tagbox,
