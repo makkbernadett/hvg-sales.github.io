@@ -1,4 +1,7 @@
 /* cms admin custom css */
+body.cmsadmin {
+  /* mobil admin */
+}
 body.cmsadmin.hvg-mobile-admin-page-layout .hvg .scroller .grid-view .row {
   display: flex;
   flex-wrap: wrap;
