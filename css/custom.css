@@ -244,6 +244,9 @@ body.read-mode .aszf-container .panel-content {
 body.read-mode .aszf-container .scroll-to-top-aszf-mobile {
   background-color: transparent;
 }
+body.read-mode iframe[src*="https://www.facebook.com"] {
+  background-color: #f1f1f1;
+}
 /* google adSense */
 .adsense-dfp {
   margin: 20px 0 5px;
