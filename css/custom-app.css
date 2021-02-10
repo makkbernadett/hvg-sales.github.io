@@ -2,10 +2,10 @@
   .share-widget-container .info {
     text-align: left;
   }
-  .article-content a.adcaption {
+  a.adcaption {
     color: #888 !important;
   }
-  .article-content a.caption {
+  a.caption {
     color: #888 !important;
   }
   .read-mode .main-tag-container .main-tag.tag-active .interest {
