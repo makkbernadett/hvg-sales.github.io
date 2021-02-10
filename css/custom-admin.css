@@ -29,6 +29,20 @@ body.cmsadmin.hvg-mobile-admin-ad .hvg .scroller .grid-view .grid-article.full-i
 body.cmsadmin.hvg-mobile-admin-ad .hvg .scroller .grid-view-paralell-articles {
   display: none;
 }
+body.cmsadmin.hvg-mobile-admin-ad .hvg .scroller .list-view {
+  margin: 0;
+  width: 100%;
+  max-width: 100%;
+}
+body.cmsadmin.hvg-mobile-admin-ad .hvg .scroller .lead-article.column-lead.lead-mobile {
+  max-width: 100%;
+}
+body.cmsadmin.hvg-mobile-admin-ad .adtype-tagbox,
+body.cmsadmin.hvg-mobile-admin-ad .adtype-tematic {
+  margin: 0;
+  max-width: 100%;
+  width: 100%;
+}
 body.cmsadmin.hvg-mobile-admin-page-layout .hvg .scroller .row {
   display: flex;
   flex-wrap: wrap;
