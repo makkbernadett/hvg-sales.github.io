@@ -7,8 +7,10 @@ body.cmsadmin {
 body.cmsadmin.hvg-mobile-admin-ad .hvg .scroller .grid-view div[data-bind*="with"] {
   width: 100%;
 }
-body.cmsadmin.hvg-mobile-admin-ad .hvg .scroller .grid-view .grid-article {
-  display: none;
+body.cmsadmin.hvg-mobile-admin-ad .hvg .scroller .grid-view .row {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
 }
 body.cmsadmin.hvg-mobile-admin-ad .hvg .scroller .grid-view .grid-article.container-adzone {
   display: block;
@@ -17,11 +19,10 @@ body.cmsadmin.hvg-mobile-admin-ad .hvg .scroller .grid-view .grid-article.full-i
   display: block;
   width: 50%;
 }
-body.cmsadmin.hvg-mobile-admin-page-layout .hvg .scroller .grid-view .grid-article {
-  width: 33.3333%;
-}
-body.cmsadmin.hvg-mobile-admin-page-layout .hvg .scroller .grid-view .grid-article:only-child {
-  display: none;
+body.cmsadmin.hvg-mobile-admin-page-layout .hvg .scroller .row {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
 }
 body.cmsadmin.hvg-mobile-admin-page-layout .hvg .scroller .grid-view .grid-article .text-holder .info {
   display: flex;
@@ -33,12 +34,6 @@ body.cmsadmin.hvg-mobile-admin-page-layout .hvg .scroller .container-adzone {
   float: none;
   width: 100%;
   margin: 20px 0;
-}
-body.cmsadmin.hvg-mobile-admin-ad .hvg .scroller .grid-view .row,
-body.cmsadmin.hvg-mobile-admin-page-layout .hvg .scroller .grid-view .row {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
 }
 body.cmsadmin.hvg-mobile-admin-ad .hvg .scroller .lead-article h1 + p,
 body.cmsadmin.hvg-mobile-admin-page-layout .hvg .scroller .lead-article h1 + p,
