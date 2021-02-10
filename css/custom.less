@@ -119,8 +119,26 @@ body {
 
         //android
         @media screen and (min-resolution: 192dpi) {
-            .main-tag-container .main-tag.tag-active .main-tag-link {
-                margin: -1px;
+            .main-tag-container .main-tag {
+                .main-tag-link {
+                    margin: -1px;
+                }
+                &.tag-active .main-tag-link {
+                    border-radius: 2px;
+                }
+            }
+        }
+    }
+    //android
+    &.chrome.android {
+        &.article-page {
+            .main-tag-container .main-tag {
+                .main-tag-link {
+                    margin: -1px;
+                }
+                &.tag-active .main-tag-link {
+                    border-radius: 2px;
+                }
             }
         }
     }

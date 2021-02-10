@@ -97,9 +97,18 @@ body.article-page .article-content h6.extract {
   padding-top: 0;
 }
 @media screen and (min-resolution: 192dpi) {
-  body.article-page .main-tag-container .main-tag.tag-active .main-tag-link {
+  body.article-page .main-tag-container .main-tag .main-tag-link {
     margin: -1px;
   }
+  body.article-page .main-tag-container .main-tag.tag-active .main-tag-link {
+    border-radius: 2px;
+  }
+}
+body.chrome.android.article-page .main-tag-container .main-tag .main-tag-link {
+  margin: -1px;
+}
+body.chrome.android.article-page .main-tag-container .main-tag.tag-active .main-tag-link {
+  border-radius: 2px;
 }
 body:not(.article-page) .main-tag-container {
   margin: 0;
