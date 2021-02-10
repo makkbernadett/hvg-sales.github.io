@@ -4,9 +4,11 @@
   }
   a.adcaption {
     color: #888 !important;
+    text-transform: uppercase;
   }
   a.caption {
     color: #888 !important;
+    text-transform: uppercase;
   }
   .read-mode .main-tag-container .main-tag.tag-active .interest {
     background: #e25900;
