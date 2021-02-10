@@ -117,13 +117,20 @@ body {
                             color: #fff;
                         }
                     }
-                    // blog cage header
-                    .boxheader.blog-header {
-                        &:before {
-                            width: 70px;
+                    .boxheader {
+                        &:not(.blog-header) {
+                            margin: 0;
+                            max-width: 100%;
+                            padding: 10px 0;
                         }
-                        &:after {
-                            width: 68px;
+                        // blog cage header
+                        &.blog-header {
+                            &:before {
+                                width: 70px;
+                            }
+                            &:after {
+                                width: 68px;
+                            }
                         }
                     }
                 }

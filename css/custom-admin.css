@@ -76,6 +76,12 @@ body.cmsadmin.hvg-mobile-admin-ad .hvg .scroller .block-title a,
 body.cmsadmin.hvg-mobile-admin-page-layout .hvg .scroller .block-title a {
   color: #fff;
 }
+body.cmsadmin.hvg-mobile-admin-ad .hvg .scroller .boxheader:not(.blog-header),
+body.cmsadmin.hvg-mobile-admin-page-layout .hvg .scroller .boxheader:not(.blog-header) {
+  margin: 0;
+  max-width: 100%;
+  padding: 10px 0;
+}
 body.cmsadmin.hvg-mobile-admin-ad .hvg .scroller .boxheader.blog-header:before,
 body.cmsadmin.hvg-mobile-admin-page-layout .hvg .scroller .boxheader.blog-header:before {
   width: 70px;
