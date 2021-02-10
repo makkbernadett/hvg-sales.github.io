@@ -23,9 +23,6 @@ body {
                         }
                         .grid-article {
                             display: none;
-                            &:only-child {
-                                display: none;
-                            }
                             &.container-adzone {
                                 display: block;
                             }
@@ -49,7 +46,10 @@ body {
                             width: 100%;
                         }
                         .grid-article {
-                            display: none;
+                            width: 33.3333%;
+                            &:only-child {
+                                display: none;
+                            }
                             .text-holder {
                                 .info {
                                     display: flex;
