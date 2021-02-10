@@ -1,3 +1,29 @@
+/* cms admin custom css */
+body.cmsadmin.hvg-mobile-admin-page-layout .hvg .scroller .grid-view .row {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+body.cmsadmin.hvg-mobile-admin-page-layout .hvg .scroller .grid-view .grid-article {
+  display: none;
+}
+body.cmsadmin.hvg-mobile-admin-page-layout .hvg .scroller .grid-view .grid-article .text-holder .info {
+  display: flex;
+}
+body.cmsadmin.hvg-mobile-admin-page-layout .hvg .scroller .grid-view .grid-article.full-image-article-box {
+  display: block;
+}
+body.cmsadmin.hvg-mobile-admin-page-layout .hvg .scroller .container-adzone {
+  float: none;
+  width: 100%;
+  margin: 20px 0;
+}
+body.cmsadmin.hvg-mobile-admin-page-layout .hvg .scroller .boxheader.blog-header:before {
+  width: 70px;
+}
+body.cmsadmin.hvg-mobile-admin-page-layout .hvg .scroller .boxheader.blog-header:after {
+  width: 68px;
+}
 /* pt doboz admin */
 .hvg .block-ms-box2 {
   padding: 0px 15px 20px 15px;

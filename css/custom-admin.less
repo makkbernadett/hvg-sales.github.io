@@ -1,3 +1,49 @@
+/* cms admin custom css */
+body {
+    &.cmsadmin {
+        &.hvg-mobile-admin-ad {
+
+        }
+        &.hvg-mobile-admin-page-layout {
+            .hvg {
+                .scroller {
+                    .grid-view {
+                        .row {
+                            display: flex;
+                            flex-wrap: wrap;
+                            width: 100%;
+                        }
+                        .grid-article {
+                            display: none;
+                            .text-holder {
+                                .info {
+                                    display: flex;
+                                }
+                            }
+                            &.full-image-article-box {
+                                display: block;
+                            }
+                        }
+                    }
+                    .container-adzone {
+                        float: none;
+                        width: 100%;
+                        margin: 20px 0;
+                    }
+                    // blog cage header
+                    .boxheader.blog-header {
+                        &:before {
+                            width: 70px;
+                        }
+                        &:after {
+                            width: 68px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 /* pt doboz admin */
 .hvg {
     .block-ms-box2 {
