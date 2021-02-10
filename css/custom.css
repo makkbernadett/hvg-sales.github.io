@@ -96,6 +96,11 @@ body.article-page .article-content p.extract,
 body.article-page .article-content h6.extract {
   padding-top: 0;
 }
+@media screen and (min-resolution: 192dpi) {
+  body.article-page .main-tag-container .main-tag.tag-active .main-tag-link {
+    margin-bottom: -1px;
+  }
+}
 body:not(.article-page) .main-tag-container {
   margin: 0;
   padding-bottom: 0;
