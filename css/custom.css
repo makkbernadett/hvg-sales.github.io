@@ -98,7 +98,7 @@ body.article-page .article-content h6.extract {
 }
 @media screen and (min-resolution: 192dpi) {
   body.article-page .main-tag-container .main-tag.tag-active .main-tag-link {
-    margin-bottom: -1px;
+    margin: -1px;
   }
 }
 body:not(.article-page) .main-tag-container {
