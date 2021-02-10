@@ -4,6 +4,9 @@ body.cmsadmin {
   /* mobil admin */
   /*end mobile admins*/
 }
+body.cmsadmin .hvg .body .perspective-wrapper .container .wrapper .cimlap-konyvajanlo .actions {
+  min-height: unset;
+}
 body.cmsadmin.hvg-mobile-admin-ad .hvg .scroller .grid-view div[data-bind*="with"] {
   width: 100%;
 }
@@ -11,6 +14,9 @@ body.cmsadmin.hvg-mobile-admin-ad .hvg .scroller .grid-view .row {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+}
+body.cmsadmin.hvg-mobile-admin-ad .hvg .scroller .grid-view .grid-article {
+  width: 33.3333%;
 }
 body.cmsadmin.hvg-mobile-admin-ad .hvg .scroller .grid-view .grid-article.container-adzone {
   display: block;
@@ -26,6 +32,9 @@ body.cmsadmin.hvg-mobile-admin-page-layout .hvg .scroller .row {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+}
+body.cmsadmin.hvg-mobile-admin-page-layout .hvg .scroller .grid-view .grid-article {
+  width: 33.3333%;
 }
 body.cmsadmin.hvg-mobile-admin-page-layout .hvg .scroller .grid-view .grid-article .text-holder .info {
   display: flex;
