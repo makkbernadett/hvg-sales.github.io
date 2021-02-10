@@ -1,10 +1,44 @@
 /* cms admin custom css */
 body {
     &.cmsadmin {
+        /* desktop admin */
+
         /* mobil admin */
         &.hvg-mobile-admin-ad {
-
+            .hvg {
+                .scroller {
+                    .lead-article {
+                        h1+p, h2+p {
+                            display: none;
+                        }
+                    }
+                    .grid-view {
+                        div[data-bind*="with"] {
+                            width: 100%;
+                        }
+                        .row {
+                            display: flex;
+                            flex-wrap: wrap;
+                            width: 100%;
+                        }
+                        .grid-article {
+                            display: none;
+                            &:only-child {
+                                display: none;
+                            }
+                            &.container-adzone {
+                                display: block;
+                            }
+                            &.full-image-article-box {
+                                display: block;
+                                width:50%;
+                            }
+                        }
+                    }
+                }
+            }
         }
+
         &.hvg-mobile-admin-page-layout {
             .hvg {
                 .scroller {
@@ -31,6 +65,14 @@ body {
                         width: 100%;
                         margin: 20px 0;
                     }
+
+                }
+            }
+        }
+
+        &.hvg-mobile-admin-ad, &.hvg-mobile-admin-page-layout {
+            .hvg {
+                .scroller {
                     // blog cage header
                     .boxheader.blog-header {
                         &:before {
@@ -43,6 +85,8 @@ body {
                 }
             }
         }
+        /*end mobile admins*/
+
     }
 }
 /* pt doboz admin */
