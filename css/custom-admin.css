@@ -33,9 +33,6 @@ body.cmsadmin.hvg-mobile-admin-ad .hvg .scroller .grid-view .grid-article.home-v
   padding: 20px 0;
   display: flex;
 }
-body.cmsadmin.hvg-mobile-admin-ad .hvg .scroller .grid-view-paralell-articles {
-  display: none;
-}
 body.cmsadmin.hvg-mobile-admin-ad .hvg .scroller .list-view {
   margin: 0;
   width: 100%;
