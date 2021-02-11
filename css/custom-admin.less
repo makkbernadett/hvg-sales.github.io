@@ -60,6 +60,9 @@ body {
                     }
                     .lead-article {
                         max-width: 100%;
+                        .text-holder {
+                            height: auto;
+                        }
                     }
                 }
             }
@@ -73,6 +76,11 @@ body {
         &.hvg-mobile-admin-page-layout {
             .hvg {
                 .scroller {
+                    .lead-article {
+                        h1+p, h2+p {
+                            display: none;
+                        }
+                    }
                     .row {
                         display: flex;
                         flex-wrap: wrap;
@@ -108,11 +116,6 @@ body {
         &.hvg-mobile-admin-page-layout {
             .hvg {
                 .scroller {
-                    .lead-article {
-                        h1+p, h2+p {
-                            display: none;
-                        }
-                    }
                     .block-title {
                         a {
                             color: #fff;

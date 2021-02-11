@@ -42,11 +42,18 @@ body.cmsadmin.hvg-mobile-admin-ad .hvg .scroller .list-view {
 body.cmsadmin.hvg-mobile-admin-ad .hvg .scroller .lead-article {
   max-width: 100%;
 }
+body.cmsadmin.hvg-mobile-admin-ad .hvg .scroller .lead-article .text-holder {
+  height: auto;
+}
 body.cmsadmin.hvg-mobile-admin-ad .adtype-tagbox,
 body.cmsadmin.hvg-mobile-admin-ad .adtype-tematic {
   margin: 0;
   max-width: 100%;
   width: 100%;
+}
+body.cmsadmin.hvg-mobile-admin-page-layout .hvg .scroller .lead-article h1 + p,
+body.cmsadmin.hvg-mobile-admin-page-layout .hvg .scroller .lead-article h2 + p {
+  display: none;
 }
 body.cmsadmin.hvg-mobile-admin-page-layout .hvg .scroller .row {
   display: flex;
@@ -66,12 +73,6 @@ body.cmsadmin.hvg-mobile-admin-page-layout .hvg .scroller .container-adzone {
   float: none;
   width: 100%;
   margin: 20px 0;
-}
-body.cmsadmin.hvg-mobile-admin-ad .hvg .scroller .lead-article h1 + p,
-body.cmsadmin.hvg-mobile-admin-page-layout .hvg .scroller .lead-article h1 + p,
-body.cmsadmin.hvg-mobile-admin-ad .hvg .scroller .lead-article h2 + p,
-body.cmsadmin.hvg-mobile-admin-page-layout .hvg .scroller .lead-article h2 + p {
-  display: none;
 }
 body.cmsadmin.hvg-mobile-admin-ad .hvg .scroller .block-title a,
 body.cmsadmin.hvg-mobile-admin-page-layout .hvg .scroller .block-title a {
