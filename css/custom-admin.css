@@ -31,6 +31,12 @@ body.cmsadmin.hvg-mobile-admin-ad .hvg .scroller .grid-view .grid-article.full-i
   display: block;
   width: 50%;
 }
+body.cmsadmin.hvg-mobile-admin-ad .hvg .scroller .grid-view .grid-article.home-video-article {
+  max-width: 100%;
+  margin: 0;
+  padding: 20px 0;
+  display: flex;
+}
 body.cmsadmin.hvg-mobile-admin-ad .hvg .scroller .grid-view-paralell-articles {
   display: none;
 }
