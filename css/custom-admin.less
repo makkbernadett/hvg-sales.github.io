@@ -43,10 +43,6 @@ body {
                                 display: block;
                                 width: 100%;
                             }
-                            &.full-image-article-box {
-                                display: block;
-                                width:50%;
-                            }
                             &.home-video-article {
                                 max-width: 100%;
                                 margin: 0;
@@ -139,11 +135,28 @@ body {
                         }
                         // blog cage header
                         &.blog-header {
+                            margin: 0;
                             &:before {
                                 width: 70px;
                             }
                             &:after {
                                 width: 68px;
+                            }
+                        }
+                    }
+                    #blogCageLead {
+                        .grid-article {
+                            &.full-image-article-box {
+                                display: block;
+                                padding: 20px 0;
+                                .text-holder {
+                                    .info {
+                                        display: flex;
+                                    }
+                                    h2 {
+                                        margin: 0;
+                                    }
+                                }
                             }
                         }
                     }
