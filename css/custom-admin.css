@@ -51,6 +51,11 @@ body.cmsadmin.hvg-mobile-admin-ad .adtype-tematic {
   max-width: 100%;
   width: 100%;
 }
+body.cmsadmin.hvg-mobile-admin-ad textarea.form-control {
+  resize: both;
+  min-height: 150px;
+  min-width: 100%;
+}
 body.cmsadmin.hvg-mobile-admin-page-layout .hvg .scroller .lead-article h1 + p,
 body.cmsadmin.hvg-mobile-admin-page-layout .hvg .scroller .lead-article h2 + p {
   display: none;
