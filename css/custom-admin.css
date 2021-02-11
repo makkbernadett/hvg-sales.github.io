@@ -13,6 +13,7 @@ body.cmsadmin.hvg-mobile-admin-ad .hvg .scroller .grid-view {
 }
 body.cmsadmin.hvg-mobile-admin-ad .hvg .scroller .grid-view div[data-bind*="with"] {
   width: 100%;
+  padding-left: 20px;
 }
 body.cmsadmin.hvg-mobile-admin-ad .hvg .scroller .grid-view .row {
   display: flex;
