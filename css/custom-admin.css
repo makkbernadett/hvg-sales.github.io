@@ -78,6 +78,12 @@ body.cmsadmin.hvg-mobile-admin-page-layout .hvg .scroller .container-adzone {
   width: 100%;
   margin: 20px 0;
 }
+body.cmsadmin.hvg-mobile-admin-ad .hvg .scroller .block-title,
+body.cmsadmin.hvg-mobile-admin-page-layout .hvg .scroller .block-title {
+  float: left;
+  width: 100%;
+  max-width: 100%;
+}
 body.cmsadmin.hvg-mobile-admin-ad .hvg .scroller .block-title a,
 body.cmsadmin.hvg-mobile-admin-page-layout .hvg .scroller .block-title a {
   color: #fff;
@@ -99,6 +105,23 @@ body.cmsadmin.hvg-mobile-admin-page-layout .hvg .scroller .boxheader.blog-header
 body.cmsadmin.hvg-mobile-admin-ad .hvg .scroller .boxheader.blog-header:after,
 body.cmsadmin.hvg-mobile-admin-page-layout .hvg .scroller .boxheader.blog-header:after {
   width: 68px;
+}
+body.cmsadmin.hvg-mobile-admin-ad .hvg .scroller .grid-view-latest-news-list,
+body.cmsadmin.hvg-mobile-admin-page-layout .hvg .scroller .grid-view-latest-news-list {
+  margin: 0;
+  max-width: 100%;
+  padding: 0;
+}
+body.cmsadmin.hvg-mobile-admin-ad .hvg .scroller .grid-view-latest-news-list .list-article .latest-list,
+body.cmsadmin.hvg-mobile-admin-page-layout .hvg .scroller .grid-view-latest-news-list .list-article .latest-list {
+  padding: 20px;
+  margin: 0;
+  width: 100%;
+}
+body.cmsadmin.hvg-mobile-admin-ad .hvg .scroller .grid-view-latest-news-list .list-article .latest-list .text-holder,
+body.cmsadmin.hvg-mobile-admin-page-layout .hvg .scroller .grid-view-latest-news-list .list-article .latest-list .text-holder {
+  padding-left: 60px;
+  padding-right: 0;
 }
 body.cmsadmin.hvg-mobile-admin-ad .hvg .scroller #blogCageLead .grid-article.full-image-article-box,
 body.cmsadmin.hvg-mobile-admin-page-layout .hvg .scroller #blogCageLead .grid-article.full-image-article-box {

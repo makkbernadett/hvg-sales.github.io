@@ -120,9 +120,13 @@ body {
             .hvg {
                 .scroller {
                     .block-title {
+                        float: left;
+                        width: 100%;
+                        max-width: 100%;
                         a {
                             color: #fff;
                         }
+
                     }
                     .boxheader {
                         &:not(.blog-header) {
@@ -138,6 +142,22 @@ body {
                             }
                             &:after {
                                 width: 68px;
+                            }
+                        }
+                    }
+                    .grid-view-latest-news-list {
+                        margin: 0;
+                        max-width: 100%;
+                        padding: 0;
+                        .list-article {
+                            .latest-list {
+                                padding: 20px;
+                                margin: 0;
+                                width: 100%;
+                                .text-holder {
+                                    padding-left: 60px;
+                                    padding-right: 0;
+                                }
                             }
                         }
                     }
